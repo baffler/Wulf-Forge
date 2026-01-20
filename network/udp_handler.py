@@ -31,8 +31,11 @@ class UDPHandler:
             0x02: self.handle_ack,
             0x03: self.handle_d_handshake,
             0x08: self.handle_hello_ack,
+            0x09: self.handle_process_root,
+            0x0A: self.handle_process_voice,
             0x13: self.handle_session_key,
             0x20: self.handle_comm_req,  # Chat (If sent unreliably)
+            0x25: self.handle_reincarnate,
             0x33: self.handle_ack2, 
             0x40: self.handle_keep_alive,
         }
@@ -373,11 +376,58 @@ class UDPHandler:
         if not self.root_event.is_set():
             print("    > UDP Link Verified. Signaling TCP Thread.")
             self.root_event.set()
+    
+    def handle_process_root(self, data, addr):
+        # 0x09: PROCESS_ROOT
+        pass
+
+    def handle_process_voice(self, data, addr):
+        # 0x0A: PROCESS_VOICE
+        pass
 
     def handle_keep_alive(self, data, addr):
         # 0x40: KEEP_ALIVE
         # Just a heartbeat. We can ignore it or log it sparingly.
         pass
+
+    def handle_reincarnate(self, data, addr):
+        # 0x25: REINCARNATE
+        if len(data) < 8: return
+
+        reader = PacketReader(data)
+        sequence_num = reader.read_int16()
+        payload_len = reader.read_int16()
+
+        # 0 = spawn request (and we read more bytes and such)
+        #(0x25) | Len=43  | Addr=('127.0.0.1', 51875)
+        #Body=00 12 00 16 00 00 00 00 00 00 00 00 00 00 00 07D0000002BC2500120016000000000000000000000007D0000002BC
+        # 1 = team switch request (and we read just 2 more ints)
+        is_team_switch = reader.read_byte() == 0x01
+
+        team_id = reader.read_int32() # passed as an arg, this is the team id ! red = 1, blue = 2
+        unk_int2 = reader.read_int32() # always 0 ?
+
+        print(f"    > RECV REINCARNATE (Sequence {sequence_num} | Len {payload_len}): IsTeamSwitch?: {is_team_switch} | Team Number: {team_id} | {unk_int2}")
+
+        if (not is_team_switch):
+            unk_int3 = reader.read_int32() # 2000
+            unk_int4 = reader.read_int32() # 700
+
+            print(f"    > SPAWN IN? : {unk_int3} | {unk_int4}")
+            self.send_reincarnate(addr, 4, "") #Can't enter yet. Game not ready.
+            self.send_tank_packet(addr, net_id=1337, unit_type=0, pos=(100.0, 100.0, 100.0), vel=(100.0, 100.0, 100.0))
+
+        self.send_standard_ack(addr, sequence_num, 0x25)
+
+        # Switch their teams
+        # Team 0: is *maybe* a spawn request? Or a request to spawn when there's no repair pads?
+        if (team_id == 1):
+            self.send_update_stats(addr, account_id=1337, team_id=1)
+        elif (team_id == 2):
+            self.send_update_stats(addr, account_id=1337, team_id=2)
+        
+        #Sends message about team switched successfully
+        self.send_reincarnate(addr, 17, "")
 
     def handle_comm_req(self, data, addr):
         """
@@ -394,7 +444,7 @@ class UDPHandler:
         unk_id = reader.read_int16()
         message = reader.read_string()
 
-        print(f"unknow id: {unk_id} | source: {source} | message: {message}")
+        print(f"unknown id: {unk_id} | source: {source} | message: {message}")
         
         # 1. Update Sequence State (Simplistic)
         #self.stream_states[stream_id] = sequence_num
@@ -421,6 +471,86 @@ class UDPHandler:
         pkt.write_string(message)
         
         self._send(0x1F, pkt.get_bytes(), addr)
+
+    def send_update_stats(self, addr, account_id, team_id):
+        """Packet 0x1C: UPDATE_STATS
+        [Type 0x1C]
+        [Int32] Account ID
+        [Int32] Team ID
+        [Int16] Stat 1
+        [Int16] Stat 2
+        [Int16] Stat 3
+        [Int16] Stat 4
+        [Int16] Stat 5
+        [Double] Value 1
+        [Double] Value 2
+        [Int32] Extra / Flags
+
+        All fields have defaults so you can change only what you need.
+        """
+        pkt = PacketWriter()
+        
+        pkt.write_int32(account_id)
+        pkt.write_int32(6)            # Unknown Int 1
+        pkt.write_int16(team_id)      # Team ID
+        pkt.write_int16(33)           # Unknown Short 1
+        
+        # 3 Stats (Shorts)
+        pkt.write_int16(3)
+        pkt.write_int16(5)
+        pkt.write_int16(9)
+        
+        # Fixed Point values
+        pkt.write_fixed1616(1.0)
+        pkt.write_fixed1616(1.0)
+        
+        pkt.write_int32(10)           # Extra / Flags
+        
+        self._send(0x1C, pkt.get_bytes(), addr)
+
+    def send_reincarnate(self, addr, code: int, message: str):
+        """
+        Sends the Reincarnate response (Server -> Client).
+        Structure: [OpCode 0x25] [Byte code] [String message]
+        
+        Recv: (Client ->) [0x25] [int (Team ID)] [int (?)]
+        """
+        print(f"[SEND] Sending ReIncarnate (0x25): code={code} '{message}'")
+        pkt = PacketWriter()
+        
+        pkt.write_byte(code)
+        pkt.write_string(message)
+        
+        self._send(0x25, pkt.get_bytes(), addr)
+
+    def send_tank_packet(self, addr, net_id, unit_type, pos, vel, flags=1):
+        print(f"[SEND] TANK (0x18) ID={net_id} Type={unit_type}")
+        
+        pkt = PacketWriter()
+        
+        # 1. Timestamp (Int32)
+        tick_count = get_ticks()
+        pkt.write_int32(tick_count)
+        
+        # 2. Optional Header (1 Bit)
+        pkt.write_bits(0, 1) 
+        
+        # 3. Unit Type (Int32) - Note: This will handle the unaligned write internally!
+        pkt.write_int32(unit_type)
+        
+        # 4. Net ID (Int32)
+        pkt.write_int32(net_id)
+        
+        # 5. Flags (Byte)
+        pkt.write_byte(flags)
+        
+        # 6. Position (Vector3 - Fixed 16.16)
+        pkt.write_vector3(pos[0], pos[1], pos[2])
+        
+        # 7. Velocity (Vector3 - Fixed 16.16)
+        pkt.write_vector3(vel[0], vel[1], vel[2])
+        
+        self._send(0x18, pkt.get_bytes(), addr)
 
     def handle_stream_check(self, data, addr):
         # 0x00: Often just a keep-alive/ping inside a reliable container

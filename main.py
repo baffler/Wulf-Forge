@@ -23,6 +23,9 @@ udp_root_received = threading.Event()
 udp_client_addr = None
 udp_client_addr_lock = threading.Lock()
 
+def to_fixed(value):
+    return int(round(value * 65536.0))
+
 # TODO: put in a helper module
 def get_ticks():
     """
@@ -809,14 +812,41 @@ def send_behavior_packet(sock):
     # --- SECTION 1: HEADER (123 Bytes) ---
     # Based on your previous snippet
     # [Byte] [5 Dbl] [3 Int] [1 Dbl] [2 Int] [1 Dbl] [11 Flt] [Byte] [Byte]
-    h_flag0 = b'\x01'
-    h_doubles_1 = struct.pack(">5d", 60.0, 1.0, 1.0, 1.0, 1.0)
+    h_flag0 = b'\x01' # some kind of team switch or spawn flag, it checks if != 0
+    # 1: Construction Timeout
+    # 2: Unknown
+    # 3: Velocity?
+    # 4: 
+    h_doubles_1 = struct.pack(">5i", 
+        to_fixed(5.0), 
+        to_fixed(100.0), 
+        to_fixed(100.0), 
+        to_fixed(100.0), 
+        to_fixed(100.0),
+    )
     h_maxTeamSize = struct.pack(">i", 20) # TotalTeamSize
     h_ints_1 = struct.pack(">2i", 1, 1)
-    h_double_2 = struct.pack(">d", 1.0)
+    h_double_2 = struct.pack(">i", to_fixed(100.0))
     h_ints_2 = struct.pack(">2i", 1, 1)
-    h_double_3 = struct.pack(">d", 1.0)
-    h_floats = struct.pack(">11f", 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0)
+
+    # Pulse Cannon value?
+    h_double_3 = struct.pack(">i", to_fixed(100.0))
+
+    # 1: Some move velocity thing
+    # 2: Some move velocity thing
+    h_floats = struct.pack(">11i", 
+                            to_fixed(100.0), 
+                            to_fixed(100.0), 
+                            to_fixed(100.0), 
+                            to_fixed(100.0),
+                            to_fixed(100.0), 
+                            to_fixed(100.0), 
+                            to_fixed(100.0), 
+                            to_fixed(100.0),
+                            to_fixed(100.0), 
+                            to_fixed(100.0), 
+                            to_fixed(100.0), 
+                           )
     h_flag2 = b'\x01' # behaviorFlag1
     h_flag3 = b'\x01' # behaviorFlag2
 
@@ -875,8 +905,7 @@ def send_behavior_packet(sock):
     print(f"[DEBUG] Final Sizes -> Header: {len(header)}, Array1: {len(array1_payload)}, Array2: {len(array2_payload)}, Padding: {len(padding)}")
     print(f"[DEBUG] Total Payload Size: {len(payload)} bytes")
     
-    # send_packet(sock, payload) # Uncomment to send
-    return payload
+    send_packet(sock, payload)
 
 def send_behavior_packet_old(sock):
     """
@@ -1061,9 +1090,6 @@ def udp_server_loop():
             
         except Exception as e:
             print(f"[UDP] Loop Error: {e}")
-                        
-        except Exception as e:
-            print(f"[UDP] Error: {e}")
             
 def start_heartbeat(sock):
     """
@@ -1264,7 +1290,8 @@ def main():
             # Order seems not matter much from testing..
             send_player_info(client) # REQUIRED: Will get spammed [UDP] RECV Packet 19 (Session Key) from ('127.0.0.1', 52984): WulframSessionKey123
             send_motd(client, "Party like it's 1999!")
-            #send_team_info(client) # REQUIRED (crashed without): Team Info has to be somewhere around here, if it comes in much later it crashes
+            send_behavior_packet(client)
+            send_team_info(client) # REQUIRED (crashed without): Team Info has to be somewhere around here, if it comes in much later it crashes
             send_world_stats(client) # REQUIRED (crashed without)
             
             #Server Access Denied with message (popup box on client)
@@ -1303,29 +1330,22 @@ def main():
                         # For now, we can just log it. Later, this starts the UDP stream.
                         print(">>> Client is ready for World Updates (0x39)")
                         send_chat_message(client, "System: Welcome to Wulfram!", source_id=0, target_id=0)
-                        send_behavior_packet(client)
-                        #You have changed teams successfully
-                        #send_reincarnate(client, 17, "")
+                        #send_behavior_packet(client)
                         #send_birth_notice(client)
                         # Hope this works... !
                         #send_update_array_empty(client) # doesn't work rn
-                        send_update_stats(client, account_id=1337, team_id=1)
+                        #send_update_stats(client, account_id=1337, team_id=1)
                         send_process_translation(client)
-                        send_reincarnate(client, 17, "Just a test.")
                         send_add_to_roster(client, account_id=1337, name="baff")
                         
                     elif pkt_type == 0x4F:
                         print(">>> !kudos (0x4F)")
-                        #send_behavior_packet(client)
-                        #send_team_info(client)
-                        #send_reincarnate(client, 17, "Just a test.")
-                        send_update_stats(client, account_id=1337, team_id=2)
                         send_update_array_empty(client)
-                        send_add_to_roster(client, account_id=69, name="gotcha")
+
                         send_chat_message(client, "System: Testing Complete.", source_id=0, target_id=0)
-                        send_birth_notice(client, 1337)
+                        #send_birth_notice(client, 1337)
                         #send_tank_packet(client, net_id=1337, unit_type=0, pos=(100.0, 100.0, 100.0), vel=(100.0, 100.0, 100.0))
-                        send_birth_notice(client, 1337)
+                        #send_birth_notice(client, 1337)
                         #send_repair_packet(client)
                         #time.sleep(0.25)
                         #send_repair_packet(client)
