@@ -5,8 +5,10 @@ from .streams import PacketReader, PacketWriter
 from .packet_logger import PacketLogger
 
 # Helper for Wulfram 32-bit timestamp
+SERVER_START = time.monotonic()
+
 def get_ticks():
-    return int(time.time() * 1000) & 0x7FFFFFFF
+    return int((time.monotonic() - SERVER_START) * 1000) & 0xFFFFFFFF
 
 class UDPHandler:
     def __init__(self, sock, root_event):
@@ -28,6 +30,7 @@ class UDPHandler:
         # The Dispatcher
         self.packet_map = {
             0x00: self.handle_debug_string,
+            0x0C: self.handle_ping,
             0x02: self.handle_ack,
             0x03: self.handle_d_handshake,
             0x08: self.handle_hello_ack,
@@ -101,7 +104,7 @@ class UDPHandler:
             # --- DISPATCH ---
             if pkt_type in self.packet_map:
                 try:
-                    self.logger.log(f"UDP BATCH #{batch_index}", pkt_type, packet_body, addr)
+                    #self.logger.log(f"UDP BATCH #{batch_index}", pkt_type, packet_body, addr)
                     self.packet_map[pkt_type](packet_body, addr)
                 except Exception as e:
                     print(f"[ERROR] Handler 0x{pkt_type:02X} failed: {e}")
@@ -508,6 +511,14 @@ class UDPHandler:
         
         self._send(0x1C, pkt.get_bytes(), addr)
 
+    def send_ping_response(self, addr, timestamp):
+        """
+        Packet 0x0C: Echoes the timestamp back via UDP.
+        """
+        pkt = PacketWriter()
+        pkt.write_int32(timestamp)
+        self._send(0x0C, pkt.get_bytes(), addr)
+
     def send_reincarnate(self, addr, code: int, message: str):
         """
         Sends the Reincarnate response (Server -> Client).
@@ -552,6 +563,23 @@ class UDPHandler:
         
         self._send(0x18, pkt.get_bytes(), addr)
 
+    def handle_ping(self, data, addr):
+        """
+        Packet 0x0C: PING (Client -> Server)
+        This is the response to OUR 'send_ping_request'.
+        This packet arriving is exactly what counts towards the "Packet Count" histogram.
+        """
+        reader = PacketReader(data)
+        client_ts = reader.read_int32()
+        
+        # Calculate RTT (Round Trip Time)
+        current_time = get_ticks()
+        rtt = current_time - client_ts
+        
+        print(f"    > RECV UDP PONG (0x0C): RTT={rtt}ms")
+
+        self.send_ping_response(addr, current_time)
+        
     def handle_stream_check(self, data, addr):
         # 0x00: Often just a keep-alive/ping inside a reliable container
         pass

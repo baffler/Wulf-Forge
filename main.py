@@ -27,14 +27,10 @@ def to_fixed(value):
     return int(round(value * 65536.0))
 
 # TODO: put in a helper module
+SERVER_START = time.monotonic()
+
 def get_ticks():
-    """
-    Returns the current server time in milliseconds, masked to 32-bit.
-    Using time.time() (Epoch) ensures the timestamp is always higher 
-    than the previous run, preventing the client from ignoring packets 
-    if you restart the server without restarting the client.
-    """
-    return int(time.time() * 1000) & 0xFFFFFFFF
+    return int((time.monotonic() - SERVER_START) * 1000) & 0xFFFFFFFF
 
 # --- 1. Pretty Print / Logging Helpers ---
 
@@ -431,10 +427,8 @@ def send_tank_packet(sock, net_id, unit_type, pos, vel, flags=1):
     print(f"[SEND] TANK (0x18) ID={net_id} Type={unit_type}")
     
     pkt = PacketWriter()
-    
-    # 1. Timestamp (Int32)
-    tick_count = get_ticks()
-    pkt.write_int32(tick_count)
+
+    pkt.write_int32(1337) # Player ID
     
     # 2. Optional Header (1 Bit)
     pkt.write_bits(0, 1) 
@@ -568,8 +562,8 @@ def send_update_stats(sock, account_id, team_id=1):
     pkt.write_int16(9)
     
     # Fixed Point values
-    pkt.write_fixed1616(1.0)
-    pkt.write_fixed1616(1.0)
+    pkt.write_fixed1616(100.0)
+    pkt.write_fixed1616(100.0)
     
     pkt.write_int32(10)           # Extra / Flags
     
@@ -631,10 +625,9 @@ def send_add_to_roster(sock, account_id, name, nametag="DEV", team=2):
 def send_player_info(sock):
     """
     Packet 0x17: PLAYER
-    Structure from decompilation:
     [Type 0x17]
     [4 Bytes] Player ID (local_4)
-    [1 Byte]  Flag (local_5)
+    [1 Byte]  Is Guest?
     """
     
     # 1. Player ID (4 Bytes) - Use struct.pack(">I") for Big-Endian Int
@@ -812,7 +805,7 @@ def send_behavior_packet(sock):
     # --- SECTION 1: HEADER (123 Bytes) ---
     # Based on your previous snippet
     # [Byte] [5 Dbl] [3 Int] [1 Dbl] [2 Int] [1 Dbl] [11 Flt] [Byte] [Byte]
-    h_flag0 = b'\x01' # some kind of team switch or spawn flag, it checks if != 0
+    h_flag0 = b'\x00' # some kind of team switch or spawn flag, it checks if != 0
     # 1: Construction Timeout
     # 2: Unknown
     # 3: Velocity?
@@ -825,7 +818,8 @@ def send_behavior_packet(sock):
         to_fixed(100.0),
     )
     h_maxTeamSize = struct.pack(">i", 20) # TotalTeamSize
-    h_ints_1 = struct.pack(">2i", 1, 1)
+    # Glimpse Timer Length Ms, Push Timer Length Ms
+    h_ints_1 = struct.pack(">2i", 25000, 35000) # Glimpse, Push
     h_double_2 = struct.pack(">i", to_fixed(100.0))
     h_ints_2 = struct.pack(">2i", 1, 1)
 
@@ -1011,6 +1005,72 @@ def send_birth_notice(sock, net_id=1):
     payload = b'\x1E' + p_userid + p_net_id
     send_packet(sock, payload)
 
+def send_view_update_health(sock, player_id, net_id, x, y, z):
+    print(f"[SEND] VIEW_UPDATE (Alive) ID={net_id}")
+    pkt = PacketWriter() # Assuming your bit-writer helper
+
+    # 1. Packet Header (Implicit or Explicit depending on wrapper)
+    # 2. Player ID (matches 'myPlayerID_from_update_array')
+    pkt.write_int32(player_id)
+
+    # 3. Turret State (1 Bit) -> 0 (No update)
+    pkt.write_bits(0, 1)
+
+    # 4. Count (8 Bits) -> Updating 1 entity
+    pkt.write_bits(1, 8)
+
+    # --- ENTITY START ---
+    
+    # 5. Net ID (32 Bits)
+    pkt.write_int32(net_id)
+
+    # 6. Local Player Optimization (1 Bit) -> 1 (Yes, this is me)
+    pkt.write_bits(1, 1)
+
+    # 7. UPDATE MASK (10 Bits)
+    # Bit 2: Position (1)
+    # Bit 6: Energy (1)
+    # Bit 8: Health (1)
+    # Binary: 0101000100 -> Decimal 324
+    pkt.write_bits(324, 10)
+
+    # --- THE MISSING LINK ---
+    # The client ALWAYS reads this Index to know which Config Slot to use for vectors.
+    # Reads 'Config[0].id_1' bits. You set this to 16 in TRANSLATION.
+    # We will send '0' (Use Config Slot 0 for vectors).
+    pkt.write_bits(0, 16)
+
+    # --- DATA PAYLOAD (Order is Fixed by Shift Logic) ---
+
+    # [Bit 2] Position Vector (The Crash Fix)
+    # Logic: Read Header(id_1 bits) -> Size = Header + id_2
+    # Your TRANSLATION: id_1=16, id_2=0.
+    #pkt.write_bits(16, 16)      # Header: Tells client "Read 16 bits next"
+    #pkt.write_fixed1616(x)        # X (16 bits)
+    #pkt.write_fixed1616(y)        # Y (16 bits)
+    #pkt.write_fixed1616(z)        # Z (16 bits)
+
+    # WARNING: write_fixed1616 usually writes 32 bits (16 int, 16 frac).
+    # Since we told the client to read 16 bits, we MUST write exactly 16 bits.
+    # Let's manually pack them as 16-bit integers (Shorts).
+    # Range is usually -32768 to 32767. 
+    pkt.write_bits(int(x), 16) 
+    pkt.write_bits(int(y), 16)
+    pkt.write_bits(int(z), 16)
+
+    # [Bit 6] Energy
+    # Reads bits determined by Config[5].id_1 (You set to 16)
+    pkt.write_bits(65535, 16)   # 100% Energy (1.0 in 16-bit fixed)
+
+    # [Bit 8] Health
+    # Reads bits determined by Config[8].id_1 (You set to 16)
+    pkt.write_bits(65535, 16)   # 100% Health (1.0 in 16-bit fixed)
+
+    # --- ENTITY END ---
+    
+    payload = b'\x0E' + pkt.get_bytes()
+    #send_packet(sock, payload)
+
 def send_process_translation(sock):
     """
     Packet 0x32: PROCESS_TRANSLATION
@@ -1028,14 +1088,106 @@ def send_process_translation(sock):
     
     # 28 Definitions
     for i in range(28):
-        pkt.write_int32(i)        # ID
-        pkt.write_int32(0)        # Flags
-        pkt.write_int32(16)       # Bits
+        pkt.write_int32(16)        # 1. Bit Count (v3). Set to 16 for high precision on all axes.
+        pkt.write_int32(0)         # 2. Unknown/Flags (v5). Keep as 0.
+        pkt.write_int32(i)         # 3. ID / Config Type (v4). Send the index here.
+
         pkt.write_string("-1024.0") # Min
         pkt.write_string("1024.0")  # Max
         
     payload = b'\x32' + pkt.get_bytes()
     send_packet(sock, payload)
+
+def send_game_clock(sock):
+    print(f"[SEND] GAME_CLOCK 0x2F")
+    pkt = PacketWriter()
+
+    pkt.write_int32(get_ticks())
+
+    pkt.write_byte(0x01) # Is active or enabled? not sure
+
+    pkt.write_int32(1) # Maybe Phase flag (0 = Push, 1 = Glimpse), 0 or 1
+    pkt.write_int32(30000) # Length of next Push/Glimpse (in Ms)
+
+    payload = b'\x2F' + pkt.get_bytes()
+    send_packet(sock, payload)
+
+def send_ping(sock):
+    print(f"[SEND] PING 0x0C")
+    pkt = PacketWriter()
+
+    pkt.write_int32(get_ticks())
+
+    payload = b'\x0C' + pkt.get_bytes()
+    send_packet(sock, payload)
+
+def send_ping_request(sock):
+    print(f"[SEND] PING_REQUEST 0x0B")
+    pkt = PacketWriter()
+
+    pkt.write_int32(get_ticks())
+
+    payload = b'\x0B' + pkt.get_bytes()
+    send_packet(sock, payload)
+
+def send_routing_ping(sock):
+    print(f"[SEND] ROUTING_PING 0x4C")
+    pkt = PacketWriter()
+
+    pkt.write_byte(0x01)
+    pkt.write_byte(0x01)
+
+    payload = b'\x4C' + pkt.get_bytes()
+    send_packet(sock, payload)
+
+def send_hud_message(sock):
+    print(f"[SEND] HUD_MESSAGE 0x11")
+    pkt = PacketWriter()
+
+    pkt.write_string("This is a test HUD message. Hi.")
+
+    payload = b'\x11' + pkt.get_bytes()
+    send_packet(sock, payload)
+
+def send_ping_response(sock, echo_timestamp):
+    """
+    Packet 0x0C: PING
+    Echoes the timestamp back to the client.
+    """
+    print(f"[SEND] PING (0x0C) - Echoing {echo_timestamp}")
+    pkt = PacketWriter()
+    pkt.write_int32(echo_timestamp)
+    payload = b'\x0C' + pkt.get_bytes()
+    send_packet(sock, payload)
+
+def start_ping_loop(sock, stop_event):
+    """
+    Sends a PING_REQUEST every 2 seconds
+    Stops immediately if stop_event is set.
+    """
+    def ping_thread():
+        print("[INFO] Starting Ping Loop (Every 2.0s)...")
+        while not stop_event.is_set():
+            try:
+                # Send 0x0B - Ask client to ping us back
+                # TCP Ping (Even if you send it on TCP, it will reply back on UDP)
+                send_ping_request(sock)
+                
+                # UDP Ping
+                #udp_handler.send_ping_request(client_addr)
+                
+                # Wait 2 seconds, checking for the stop signal frequently
+                stop_event.wait(2.0)
+            except OSError:
+                print("[INFO] Ping loop stopping (socket closed).")
+                break
+            except Exception as e:
+                print(f"[ERROR] Ping loop failed: {e}")
+                break
+
+    # Daemon ensures it dies when the server stops
+    t = threading.Thread(target=ping_thread, daemon=True)
+    t.start()
 
 # --- Receiver Utility ---
 def recv_exact(sock: socket.socket, n: int) -> bytes | None:
@@ -1153,6 +1305,7 @@ def main():
             try:
                 # This will block for 1 second, then raise socket.timeout
                 client, addr = s.accept()
+                stop_ping_event = threading.Event()
             except socket.timeout:
                 # Timeout reached, loop back to check for KeyboardInterrupt
                 continue
@@ -1289,10 +1442,16 @@ def main():
             
             # Order seems not matter much from testing..
             send_player_info(client) # REQUIRED: Will get spammed [UDP] RECV Packet 19 (Session Key) from ('127.0.0.1', 52984): WulframSessionKey123
+            #send_ping(client)
+            send_game_clock(client)
             send_motd(client, "Party like it's 1999!")
             send_behavior_packet(client)
+            send_process_translation(client)
+            send_add_to_roster(client, account_id=1337, name="baff")
             send_team_info(client) # REQUIRED (crashed without): Team Info has to be somewhere around here, if it comes in much later it crashes
             send_world_stats(client) # REQUIRED (crashed without)
+
+            start_ping_loop(client, stop_ping_event)
             
             #Server Access Denied with message (popup box on client)
             #send_reincarnate(client, 18, "Just a test.")
@@ -1330,30 +1489,45 @@ def main():
                         # For now, we can just log it. Later, this starts the UDP stream.
                         print(">>> Client is ready for World Updates (0x39)")
                         send_chat_message(client, "System: Welcome to Wulfram!", source_id=0, target_id=0)
+                        send_ping_request(client)
+                        #send_repair_packet(client)
                         #send_behavior_packet(client)
                         #send_birth_notice(client)
                         # Hope this works... !
                         #send_update_array_empty(client) # doesn't work rn
                         #send_update_stats(client, account_id=1337, team_id=1)
-                        send_process_translation(client)
-                        send_add_to_roster(client, account_id=1337, name="baff")
+                        #send_process_translation(client)
+                        #send_add_to_roster(client, account_id=1337, name="baff")
                         
                     elif pkt_type == 0x4F:
                         print(">>> !kudos (0x4F)")
                         send_update_array_empty(client)
-
+                        send_ping(client) 
                         send_chat_message(client, "System: Testing Complete.", source_id=0, target_id=0)
                         #send_birth_notice(client, 1337)
-                        #send_tank_packet(client, net_id=1337, unit_type=0, pos=(100.0, 100.0, 100.0), vel=(100.0, 100.0, 100.0))
+                        send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
+                        send_tank_packet(client, net_id=1337, unit_type=0, pos=(100.0, 100.0, 100.0), vel=(100.0, 100.0, 100.0))
+                        send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
+                        send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
+                        send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
+                        send_hud_message(client)
+                        #send_routing_ping(client)
+                        
                         #send_birth_notice(client, 1337)
                         #send_repair_packet(client)
                         #time.sleep(0.25)
                         #send_repair_packet(client)
 
-                    # 3. SPAWN / TEAM SELECT
-                    #elif pkt_type == 0x2B: 
-                        #print(">>> SPAWN REQUEST RECEIVED!")
-                        #send_reincarnate(client)
+                    elif pkt_type == 0x0C: # PING (Client is replying to our Request)
+                        # Structure: [0x0C] [Int32 Timestamp]
+                        if len(body) >= 5:
+                            (client_ts,) = struct.unpack(">I", body[1:5])
+                            print(f">>> Client PONG received! TS={client_ts}")
+                            
+                            # Optional: Echo it back if the client expects a server-side confirmation
+                            # send_ping_response(client, client_ts)
+                        else:
+                            print("[WARN] Malformed PING packet")
 
                 except ConnectionResetError:
                     break
@@ -1361,6 +1535,7 @@ def main():
                     break
                     
             print("[-] Client disconnected")
+            stop_ping_event.set()
             client.close()
 
     except KeyboardInterrupt:
