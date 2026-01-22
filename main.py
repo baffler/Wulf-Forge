@@ -208,7 +208,7 @@ def log_packet(direction, payload, show_ascii=True):
     print("-" * 60)
 
 # --- 2. Helper Function to Send Any Packet ---
-def send_packet(sock: socket.socket, payload: bytes, show_ascii=True):
+def send_packet(sock: socket.socket, payload: bytes, show_ascii=True, do_log=True):
     """
     Wraps a raw payload with the 2-byte Big-Endian length header 
     and sends it to the client.
@@ -224,7 +224,8 @@ def send_packet(sock: socket.socket, payload: bytes, show_ascii=True):
         sock.sendall(header + payload)
         
         # Log it using our new function
-        log_packet("SEND", payload, show_ascii)
+        if do_log:
+            log_packet("SEND", payload, show_ascii)
     except socket.error as e:
         print(f"[ERROR] Failed to send packet: {e}")
     
@@ -1113,7 +1114,7 @@ def send_game_clock(sock):
     send_packet(sock, payload)
 
 def send_ping(sock):
-    print(f"[SEND] PING 0x0C")
+    #print(f"[SEND] PING 0x0C")
     pkt = PacketWriter()
 
     pkt.write_int32(get_ticks())
@@ -1122,13 +1123,13 @@ def send_ping(sock):
     send_packet(sock, payload)
 
 def send_ping_request(sock):
-    print(f"[SEND] PING_REQUEST 0x0B")
+    #print(f"[SEND] PING_REQUEST 0x0B")
     pkt = PacketWriter()
 
     pkt.write_int32(get_ticks())
 
     payload = b'\x0B' + pkt.get_bytes()
-    send_packet(sock, payload)
+    send_packet(sock, payload, False, False)
 
 def send_routing_ping(sock):
     print(f"[SEND] ROUTING_PING 0x4C")

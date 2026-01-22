@@ -206,8 +206,12 @@ class PacketReader:
 
     def read_int32(self) -> int:
         val = self.read_bits(32)
-        # Sign extension for 32-bit:
-        # if val & 0x80000000: val -= 0x100000000
+        
+        # Check the 32nd bit (the sign bit)
+        if val & 0x80000000: 
+            # If set, subtract 2^32 to "wrap" it around to negative
+            val -= 0x100000000
+        
         return val
 
     def read_string(self) -> str:

@@ -39,7 +39,9 @@ class UDPHandler:
             0x13: self.handle_session_key,
             0x20: self.handle_comm_req,  # Chat (If sent unreliably)
             0x25: self.handle_reincarnate,
+            0x26: self.handle_retarget,
             0x33: self.handle_ack2, 
+            0x35: self.handle_viewpoint_info,
             0x40: self.handle_keep_alive,
         }
 
@@ -245,7 +247,7 @@ class UDPHandler:
         
         pkt.write_int16(sequence_num)   # should be OUR sequence num (not sure yet!)
         
-        self._send(0x02, pkt.get_bytes(), addr)
+        self._send(0x02, pkt.get_bytes(), addr, False)
         
 
     def send_timed_ack(self, addr, stream_id, sequence_num, packet_id):
@@ -335,11 +337,13 @@ class UDPHandler:
         print(f"[?] Unknown OpCode: 0x{pkt_type:02X} Len={len(data)}")
         pass
 
-    def _send(self, opcode, payload, addr):
+    def _send(self, opcode, payload, addr, do_log=True):
         full_pkg = self._pack(opcode, payload)
 
         self.sock.sendto(full_pkg, addr)
-        self.logger.log("SEND", opcode, payload, addr)
+
+        if (do_log):
+            self.logger.log("SEND", opcode, payload, addr)
 
     def send_reliable_packet(self, addr, stream_id, sequence_num, opcode, payload):
         pkt = PacketWriter()
@@ -393,6 +397,20 @@ class UDPHandler:
         # Just a heartbeat. We can ignore it or log it sparingly.
         pass
 
+    def handle_viewpoint_info(self, data, addr):
+        # 0x35: VIEWPOINT_INFO
+        if len(data) < 8: return
+        
+        reader = PacketReader(data)
+        sequence_num = reader.read_int16()
+        payload_len = reader.read_int16()
+
+        client_net_id = reader.read_int32() # It's -1 if they have not spawned in
+
+        print(f"    > RECV VIEWPOINT_INFO: client net id {client_net_id}")
+
+        self.send_standard_ack(addr, sequence_num, 0x35)
+
     def handle_reincarnate(self, data, addr):
         # 0x25: REINCARNATE
         if len(data) < 8: return
@@ -431,6 +449,20 @@ class UDPHandler:
         
         #Sends message about team switched successfully
         self.send_reincarnate(addr, 17, "")
+
+    def handle_retarget(self, data, addr):
+        # 0x26: RETARGET
+        if len(data) < 8: return
+        
+        reader = PacketReader(data)
+        sequence_num = reader.read_int16()
+        payload_len = reader.read_int16()
+
+        some_id = reader.read_int32() # Assumed to be net id of target, but initially get 33554431
+
+        print(f"    > RECV RETARGET: {some_id}")
+
+        self.send_standard_ack(addr, sequence_num, 0x26)
 
     def handle_comm_req(self, data, addr):
         """
@@ -517,7 +549,7 @@ class UDPHandler:
         """
         pkt = PacketWriter()
         pkt.write_int32(timestamp)
-        self._send(0x0C, pkt.get_bytes(), addr)
+        self._send(0x0C, pkt.get_bytes(), addr, False)
 
     def send_reincarnate(self, addr, code: int, message: str):
         """
