@@ -3,6 +3,7 @@ import time
 import threading
 from .streams import PacketReader, PacketWriter
 from .packet_logger import PacketLogger
+from .update_array import UpdateArrayPacket
 
 # Helper for Wulfram 32-bit timestamp
 SERVER_START = time.monotonic()
@@ -37,7 +38,7 @@ class UDPHandler:
             0x09: self.handle_process_root,
             0x0A: self.handle_process_voice,
             0x13: self.handle_session_key,
-            0x20: self.handle_comm_req,  # Chat (If sent unreliably)
+            0x20: self.handle_comm_req,
             0x25: self.handle_reincarnate,
             0x26: self.handle_retarget,
             0x33: self.handle_ack2, 
@@ -495,6 +496,11 @@ class UDPHandler:
         
         #source = 5 # admin message
         #self.send_chat_message(addr, 5, 1337, source, 0, message)
+        #testing spawn and such
+        #self.send_update_tick(addr, health_val=1.0, energy_val=1.0)
+        self.send_tank_packet(addr, net_id=1337, unit_type=0, pos=(100.0, 100.0, 100.0), vel=(0,0,0))
+        self.send_update_tick(addr, health_val=1.0, energy_val=1.0)
+        #self.start_update_loop(addr)
 
     def send_chat_message(self, addr, message_type, source_player_id, chat_scope_id, recepient_id, message):
         """Packet 0x1F: COMM_MESSAGE (Server -> Client)"""
@@ -615,3 +621,86 @@ class UDPHandler:
     def handle_stream_check(self, data, addr):
         # 0x00: Often just a keep-alive/ping inside a reliable container
         pass
+
+
+    # ==========================
+    #      TICK LOOP LOGIC
+    # ==========================
+
+    def start_update_loop(self, target_addr):
+        """
+        Starts a background thread that sends World State updates 30 times a second.
+        """
+        if hasattr(self, '_update_thread') and self._update_thread.is_alive():
+            print("[WARN] Update loop already running.")
+            return
+
+        print(f"[SYSTEM] Starting 30Hz Update Loop for {target_addr}...")
+        
+        # Event to safely stop the thread later if needed
+        self._stop_updates = threading.Event()
+        
+        self._update_thread = threading.Thread(
+            target=self._run_tick_loop, 
+            args=(target_addr,),
+            daemon=True # Ensures thread dies if main app closes
+        )
+        self._update_thread.start()
+
+
+    # ==========================
+    #      TICK LOOP LOGIC
+    # ==========================
+    def stop_update_loop(self):
+        if hasattr(self, '_stop_updates'):
+            self._stop_updates.set()
+
+    def _run_tick_loop(self, target_addr):
+        """
+        The actual loop running at 30Hz.
+        """
+        TICK_RATE = 30
+        INTERVAL = 1.0 / TICK_RATE
+        
+        # For visual testing: Make the health bar pulse
+        import math
+        counter = 0.0
+
+        while not self._stop_updates.is_set():
+            frame_start = time.monotonic()
+
+            # 1. Calculate Test Values (Pulse Health 0% to 100%)
+            # sin() goes -1 to 1. We map it to 0.0 to 1.0
+            val = (math.sin(counter) + 1.0) / 2.0 
+            
+            # 2. Send the Packet
+            self.send_update_tick(target_addr, health_val=val, energy_val=val)
+
+            # 3. Sleep for the remainder of the tick
+            counter += 0.1 # Speed of the pulse
+            
+            frame_time = time.monotonic() - frame_start
+            sleep_time = INTERVAL - frame_time
+            
+            if sleep_time > 0:
+                time.sleep(sleep_time)
+
+    def send_update_tick(self, addr, health_val, energy_val):
+        """
+        Sends a single snapshot of the game state (Packet 0x0E).
+        """
+        # 1. Get current Sequence ID (Timestamp based)
+        # Note: In a real server, you might use an incrementing integer (1, 2, 3...)
+        # instead of time, depending on what 'sequence_id' the client expects for interpolation.
+        seq = get_ticks()
+        
+        # 2. Construct Packet
+        pkt = UpdateArrayPacket(seq)
+        
+        # 3. Add Entity Update (ID 1337 = You)
+        pkt.update_state(1337, energy=energy_val, health=health_val)
+        
+        # 4. Send
+        # Packet 0x0E (UPDATE_ARRAY)
+        self._send(0x0E, pkt.get_bytes(), addr, do_log=False) 
+        # do_log=False keeps your console clean!

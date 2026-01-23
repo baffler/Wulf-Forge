@@ -7,6 +7,7 @@ import struct
 
 from network.streams import PacketWriter, PacketReader
 from network.udp_handler import UDPHandler
+from network.update_array import UpdateArrayPacket
 
 HOST = "127.0.0.1"
 PORT = 2627
@@ -453,63 +454,33 @@ def send_tank_packet(sock, net_id, unit_type, pos, vel, flags=1):
     payload = b'\x18' + pkt.get_bytes()
     
     send_packet(sock, payload)
-    
 
-def send_repair_packet_WIP(sock):
-    """
-    Packet 0x0E: UPDATE_ARRAY (Repair)
-    Updates Entity 1337 with 100% Health and Energy.
-    """
-    print("[SEND] UPDATE_ARRAY (0x0E) - Sending REPAIR...")
-    pkt = PacketWriter()
+def print_bits(data: bytes):
+    bit_string = ""
+    for byte in data:
+        # Format as 8 bits, replace standard space with nothing for continuous stream
+        bit_string += f"{byte:08b} "
     
-    # --- HEADER ---
-    # 1. PlayerID / Tick Count (Int32)
-    pkt.write_int32(1337)
+    print(f"[DEBUG BITS]: {bit_string}")
+
+"""
+def send_health_update_test(sock):
+    # Packet 0x0E = UPDATE_ARRAY
+
+    seq = get_ticks()
+    pkt = UpdateArrayPacket(seq)
+
+    print(f" SEND > send_health_update_test > seq: {seq}")
     
-    # 2. Turret State Header (1 Bit)
-    # 0 = No turret data follows.
-    pkt.write_bits(0, 1)
-    
-    # 3. Entity Count (8 Bits)
-    # We are updating 1 entity.
-    pkt.write_bits(1, 8)
-    
-    # --- ENTITY 1 ---
-    
-    # 4. Net ID (Int32)
-    # Since PacketWriter handles bits, this writes 32 bits into the stream.
-    pkt.write_int32(1337)
-    
-    # 5. Flag A (1 Bit)
-    pkt.write_bits(0, 1)
-    
-    # 6. Update Mask (10 Bits)
-    # We want Bit 5 (Energy) and Bit 7 (Health).
-    # Mask: 0010100000 (Binary) = 160 (Decimal)
-    # We leave Bit 0 (Physics) OFF to avoid sending position data.
-    mask = (1 << 5) | (1 << 7)
-    pkt.write_bits(mask, 10)
-    
-    # 7. Input ID (5 Bits) - [CRITICAL]
-    # The code reads an index for the Input Table. 
-    # Since you have ~28 inputs, this is likely 5 bits.
-    #pkt.write_bits(0, 8) 
-    
-    # --- DATA PAYLOAD ---
-    # The read order is determined by the mask (Right to Left / LSB to MSB)
-    
-    # Bit 5: Energy (8 Bits)
-    # Sending 255 = 100% (or Max defined in Behavior packet)
-    pkt.write_bits(255, 8)
-    
-    # Bit 7: Health (8 Bits)
-    # Sending 255 = 100%
-    pkt.write_bits(255, 8)
-    
+    # Set to 100% Health and Energy
+    pkt.update_state(1337, energy=1.0, health=1.0)
+
     payload = b'\x0E' + pkt.get_bytes()
-    #send_packet(sock, payload)
-    #send_packet_udp(sock, udp_client_addr, payload)
+
+    print_bits(payload)
+
+    send_packet(sock, payload)
+"""
 
 def send_update_array_empty(sock):
     """
@@ -1074,28 +1045,76 @@ def send_view_update_health(sock, player_id, net_id, x, y, z):
 
 def send_process_translation(sock):
     """
-    Packet 0x32: PROCESS_TRANSLATION
-    Initializes the Input Compression Table (dword_678134).
-    The client expects exactly 28 definitions.
+    Packet 0x32: TRANSLATION (Configuration)
+    Configures the floating-point quantization table.
+    The client reads exactly 28 entries.
     """
-    # 28 Definitions to match the client's hardcoded loop (16 + 12)
-    # We will generate generic definitions for all 28 slots.
-    # ID: 0..27
-    # Bits: 16 (Standard precision)
-    # Min/Max: -1000.0 to 1000.0 (Safe range for position/velocity)
-    
-    print("[SEND] PROCESS_TRANSLATION (0x32) - Initializing Inputs...")
+    print("[SEND] TRANSLATION (0x32) - Configuring Compression Table...")
     pkt = PacketWriter()
-    
-    # 28 Definitions
-    for i in range(28):
-        pkt.write_int32(16)        # 1. Bit Count (v3). Set to 16 for high precision on all axes.
-        pkt.write_int32(0)         # 2. Unknown/Flags (v5). Keep as 0.
-        pkt.write_int32(i)         # 3. ID / Config Type (v4). Send the index here.
 
-        pkt.write_string("-1024.0") # Min
-        pkt.write_string("1024.0")  # Max
+    # --- 1. Define the Configuration Table ---
+    # Format: (Fixed_Bits, Max_Total_Bits, Max_Value_String, Range_Value_String)
+    # Range = (Max - Min). Example: -4096 to 4096 has a Range of 8192.
+    
+    # Default: Safe fallback for unknown indices (Range -1000 to 1000)
+    # Fixed=0 means "Use Dynamic Bits"
+    default_config = (0, 10, "1000.0", "2000.0") 
+
+    # Initialize list with defaults
+    configs = []
+    for _ in range(28):
+        configs.append(default_config)
+
+    # --- 2. Override Critical Indices ---
+    
+    # Index 0: Position (Needs high precision, large world bounds)
+    # Max: 4096, Min: -4096 -> Range: 8192
+    configs[0] = (2, 12, "4096.0", "8192.0")
+
+    # Index 1: Velocity (Medium precision)
+    # Max: 200, Min: -200 -> Range: 400
+    configs[1] = (2, 10, "200.0", "400.0")
+
+    # Index 2: Rotation (Euler/Direction Vectors)
+    # Max: 1.0, Min: -1.0 -> Range: 2.0
+    configs[2] = (0, 8, "1.0", "2.0")
+
+    # Index 3: Spin / Angular Velocity
+    # Max: 10.0, Min: -10.0 -> Range: 20.0
+    configs[3] = (0, 8, "10.0", "20.0")
+
+    # Index 5: Energy (0.0 to 1.0)
+    # CRITICAL: Must use FIXED bits (Field 0 = 8). 
+    # The client reads this specific field to know how many bits to read.
+    # (Fixed=8, MaxTotal=Ignored, Max=1.0, Range=1.0)
+    configs[5] = (8, 0, "1.0", "1.0")
+
+    # Index 8: Health (0.0 to 1.0)
+    configs[8] = (8, 0, "1.0", "1.0")
+
+    # --- 3. Write the Packet ---
+    for i in range(28):
+        cfg = configs[i]
         
+        # Field 1: Fixed ID Bits (Field 1 in parser)
+        # Usually 0 for dynamic floats.
+        pkt.write_int32(cfg[0])
+
+        # Field 2: Padding (Field 2 in parser)
+        # CRITICAL: Client reads this and ignores it. Must be present.
+        pkt.write_int32(0)
+
+        # Field 3: Max Total Bits (Field 3 in parser)
+        # The dynamic resolution ceiling (e.g. 10 or 12).
+        pkt.write_int32(cfg[1])
+
+        # Field 4: Max Value String
+        pkt.write_string(cfg[2])
+
+        # Field 5: Range Value String (Max - Min)
+        pkt.write_string(cfg[3])
+
+    # Send Packet 0x32
     payload = b'\x32' + pkt.get_bytes()
     send_packet(sock, payload)
 
@@ -1254,7 +1273,7 @@ def start_heartbeat(sock):
         while True:
             try:
                 # Send the repair/update packet
-                #send_repair_packet(sock)
+                #send_health_update_test(sock)
                 
                 # Sleep for 100ms
                 time.sleep(0.5)
@@ -1515,9 +1534,9 @@ def main():
                         #send_routing_ping(client)
                         
                         #send_birth_notice(client, 1337)
-                        #send_repair_packet(client)
+                        #send_health_update_test(client)
                         #time.sleep(0.25)
-                        #send_repair_packet(client)
+                        #send_health_update_test(client)
 
                     elif pkt_type == 0x0C: # PING (Client is replying to our Request)
                         # Structure: [0x0C] [Int32 Timestamp]
