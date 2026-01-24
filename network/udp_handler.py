@@ -498,8 +498,8 @@ class UDPHandler:
         #self.send_chat_message(addr, 5, 1337, source, 0, message)
         #testing spawn and such
         #self.send_update_tick(addr, health_val=1.0, energy_val=1.0)
-        self.send_tank_packet(addr, net_id=1337, unit_type=0, pos=(100.0, 100.0, 100.0), vel=(0,0,0))
-        self.send_update_tick(addr, health_val=1.0, energy_val=1.0)
+        #self.send_tank_packet(addr, net_id=1337, unit_type=0, pos=(100.0, 100.0, 100.0), vel=(0,0,0))
+        #self.send_update_tick(addr, health_val=1.0, energy_val=1.0)
         #self.start_update_loop(addr)
 
     def send_chat_message(self, addr, message_type, source_player_id, chat_scope_id, recepient_id, message):

@@ -8,6 +8,7 @@ import struct
 from network.streams import PacketWriter, PacketReader
 from network.udp_handler import UDPHandler
 from network.update_array import UpdateArrayPacket
+from network.compressor import COMPRESSOR_POS, COMPRESSOR_VEL, COMPRESSOR_ROT, COMPRESSOR_STAT
 
 HOST = "127.0.0.1"
 PORT = 2627
@@ -417,10 +418,10 @@ def send_world_stats(sock):
     """
     pkt = PacketWriter()
     
-    pkt.write_string("tron")      # Map Name
+    pkt.write_string("survival")      # Map Name
     pkt.write_byte(1)             # Unused Flag (local_d)
     pkt.write_byte(1)             # Map ID (local_e)
-    pkt.write_int32(100)          # Value (local_8)
+    pkt.write_fixed1616(1.0)          # Value (local_8) # Is actually a float
     
     payload = b'\x16' + pkt.get_bytes()
     send_packet(sock, payload)
@@ -430,29 +431,61 @@ def send_tank_packet(sock, net_id, unit_type, pos, vel, flags=1):
     
     pkt = PacketWriter()
 
-    pkt.write_int32(1337) # Player ID
+    # 1. Sequence ID (Int32)
+    pkt.write_int32(1337) 
     
-    # 2. Optional Header (1 Bit)
-    pkt.write_bits(0, 1) 
+    # --- VITAL STATS BLOCK (Start) ---
     
-    # 3. Unit Type (Int32) - Note: This will handle the unaligned write internally!
+    # 2. "Has Data" Flag (1 Bit)
+    # Critical: Must be 1 to spawn alive.
+    pkt.write_bits(1, 1) 
+    
+    # 3. Weapon ID (2 Bits)
+    # Uses Config Index 1 (Fixed 2 bits).
+    weapon_id = 0
+    pkt.write_bits(weapon_id, 2)
+    
+    # 4. Health Multiplier (8 Bits)
+    # Uses Config Index 5 (Fixed 8 bits). 255 = 100% HP.
+    pkt.write_bits(1, 8) 
+    
+    #pkt.write_bits(COMPRESSOR_STAT.compress(1.0), 8)
+    
+    # 5. Energy Multiplier (8 Bits)
+    # Uses Config Index 8 (Fixed 8 bits). 255 = 100% Energy.
+    pkt.write_bits(1, 8)
+
+    #pkt.write_bits(COMPRESSOR_STAT.compress(1.0), 8)
+    
+    # 6. Ammo Count (13 Bits!)
+    # The client reads this because dword_5B9A44 has '13' at offset +8.
+    # We send 100 ammo (or max it out if you want). 
+    # Max value for 13 bits is 8191.
+    pkt.write_bits(100, 13)
+
+    # 7. Extras
+    # Weapon 0 (Tank Gun) likely has no extras, so we stop here.
+    
+    # --- VITAL STATS BLOCK (End) ---
+
+    # 8. Unit Type (Int32)
+    # Now that we fed the ammo bits, this will be aligned correctly!
     pkt.write_int32(unit_type)
     
-    # 4. Net ID (Int32)
+    # 9. Net ID (Int32)
     pkt.write_int32(net_id)
     
-    # 5. Flags (Byte)
+    # 10. Flags (Byte)
     pkt.write_byte(flags)
     
-    # 6. Position (Vector3 - Fixed 16.16)
+    # 11. Position (Vector3)
     pkt.write_vector3(pos[0], pos[1], pos[2])
     
-    # 7. Velocity (Vector3 - Fixed 16.16)
+    # 12. Velocity (Vector3)
     pkt.write_vector3(vel[0], vel[1], vel[2])
     
-    # Get the final aligned bytes
+    # Finalize
     payload = b'\x18' + pkt.get_bytes()
-    
     send_packet(sock, payload)
 
 def print_bits(data: bytes):
@@ -1083,13 +1116,13 @@ def send_process_translation(sock):
     # Max: 10.0, Min: -10.0 -> Range: 20.0
     configs[3] = (0, 8, "10.0", "20.0")
 
-    # Index 5: Energy (0.0 to 1.0)
+    # Index 5: Health (0.0 to 1.0)
     # CRITICAL: Must use FIXED bits (Field 0 = 8). 
     # The client reads this specific field to know how many bits to read.
     # (Fixed=8, MaxTotal=Ignored, Max=1.0, Range=1.0)
     configs[5] = (8, 0, "1.0", "1.0")
 
-    # Index 8: Health (0.0 to 1.0)
+    # Index 8: Energy (0.0 to 1.0)
     configs[8] = (8, 0, "1.0", "1.0")
 
     # --- 3. Write the Packet ---
@@ -1525,11 +1558,11 @@ def main():
                         send_ping(client) 
                         send_chat_message(client, "System: Testing Complete.", source_id=0, target_id=0)
                         #send_birth_notice(client, 1337)
-                        send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
+                        #send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
                         send_tank_packet(client, net_id=1337, unit_type=0, pos=(100.0, 100.0, 100.0), vel=(100.0, 100.0, 100.0))
-                        send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
-                        send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
-                        send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
+                        #send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
+                        #send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
+                        #send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
                         send_hud_message(client)
                         #send_routing_ping(client)
                         

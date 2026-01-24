@@ -44,22 +44,22 @@ class UpdateArrayPacket:
         self.writer.write_bool(True)
         
         # 3. Build Mask
-        # Bit 5 = Energy
-        # Bit 7 = Health
+        # Bit 5 = Health
+        # Bit 7 = Energy / Fuel
         mask = 0
-        if energy is not None: mask |= (1 << 5)
-        if health is not None: mask |= (1 << 7)
+        if health is not None: mask |= (1 << 5)
+        if energy is not None: mask |= (1 << 7)
         
         # Write Mask (10 bits)
         """
         Bit Index: [9] [8] [7] [6] [5] [4] [3] [2] [1] [0]
         Value:      0   0   1   0   1   0   0   0   0   0
-        Function:  [H] [?] [HP] [?] [EN] [S] [R] [V] [P] [D]
+        Function:  [H] [?] [EN] [?] [HP] [S] [R] [V] [P] [D]
 
         Bit 0 (D)  = Delta Update (0 for Delta, 1 for Definition)
-        Bit 5 (EN) = Energy (You set this)
+        Bit 5 (HP) = Health (You set this)
         Bit 6 (?)  = Unknown/Driver State (You skip this, which is correct)
-        Bit 7 (HP) = Health (You set this)
+        Bit 7 (EN) = Energy / Fuel (You set this)
         Bit 9 (H)  = Hard Update (For positions)
         """
         self.writer.write_bits(mask, 10)
@@ -72,18 +72,18 @@ class UpdateArrayPacket:
         
         # ... Bits 0-4 skipped ...
         
-        # Bit 5: Energy
+        # Bit 5: Health
+        if health is not None:
+            val = COMPRESSOR_STAT.compress(health)
+            self.writer.write_bits(val, 8)
+            
+        # ... Bit 6 skipped ...
+        
+        # Bit 7: Energy
         if energy is not None:
             val = COMPRESSOR_STAT.compress(energy)
             # Write 8 bits (Matches config)
             self.writer.write_bits(val, 8) 
-            
-        # ... Bit 6 skipped ...
-        
-        # Bit 7: Health
-        if health is not None:
-            val = COMPRESSOR_STAT.compress(health)
-            self.writer.write_bits(val, 8)
 
     def add_creation(self, net_id, unit_type, team_id, pos, rot):
         """
