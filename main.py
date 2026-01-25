@@ -465,20 +465,22 @@ def send_tank_packet(sock, net_id, unit_type, pos, vel, flags=1):
     Value:      0     0      0     0     0    0    0    0    0    0    0    0    0
     Function:  [CRM] [MSR] [FLR]  [MN] [HNT] [CT] [TM] [PM] [PS] [HM] [SM] [RB] [AC]
     """
-    pkt.write_bits(0, 13)
+    #pkt.write_bits(0, 13)
 
     # 7. Extras
     # I thought this depended on the weapon id you sent above
     # but it seems it requires both of these for now (Until I figure out why!)
     # and it's the ammo for the pulse, and then the repair beam (CONFIRMED)
 
-    # Weapon 0?? (Pulse Cannon) offset 368
+    # This will be setup in the BEHAVIOR packet to determine
+    # if the pulse cannon and repair beam will be enabled here
+    # Weapon 0 (Pulse Cannon) offset 368
     # Float for extra_val_A, uses config id = 13
-    pkt.write_bits(1, 8)
+    #pkt.write_bits(1, 8)
 
-    # Weapon 1?? (Repair Beam) offset 104
+    # Weapon 1 (Repair Beam) offset 104
     # Float for extra_val_B, uses config id = 14
-    pkt.write_bits(1, 8)
+    #pkt.write_bits(1, 8)
     
     # --- VITAL STATS BLOCK (End) ---
 
@@ -829,16 +831,8 @@ import struct
 def send_behavior_packet(sock):
     """
     Packet 0x24: BEHAVIOR_UPDATE
-    
-    THEORY OF FIX:
-    The padding calculation showed exactly 45 bytes remaining.
-    45 bytes is exactly the size of one Weapon Slot (13 slots per class).
-    Wait, 45 * 13 = 585 bytes. 
-    
-    Actually, let's stick to the 4 Classes we know exist, but fix the read order 
-    and ensure we aren't short-changing the Entity/Physics loops.
     """
-    print("[SEND] Behavior Packet (0x24) - Syncing Read Order...")
+    print("[SEND] Behavior Packet (0x24) - ...")
     packet_type = b'\x24'
     pkt = PacketWriter()
 
@@ -855,7 +849,7 @@ def send_behavior_packet(sock):
     pkt.write_fixed1616(100.0)            # dbl_5738B8
     pkt.write_int32(1)                    # dword_6791B8
     pkt.write_int32(1)                    # dword_6791BC
-    pkt.write_fixed1616(100.0)            # pulse cannon value?
+    pkt.write_fixed1616(1.0)            # max pulse charge?
     
     # 11 Floats
     for _ in range(11):
@@ -864,80 +858,141 @@ def send_behavior_packet(sock):
     pkt.write_byte(1)                     # Flag 1
     pkt.write_byte(1)                     # Flag 2
 
+    # 95 total bytes for the header
+
     # --- SECTION 2: WEAPON CONFIGS ---
     # We will stick to 4 classes, as Init_Weapon_System_Configs explicitly inits 4.
     
-    weapon_classes_count = 4 
+    weapons_units_count = 4
     weapon_slots_count = 13
     
-    for c in range(weapon_classes_count):
-        for s in range(weapon_slots_count):
+    for u in range(weapons_units_count):
+        for i in range(weapon_slots_count):
             
             # --- 1. BOOLS (5 Bytes) ---
-            # Using the read order from your "messed up" snippet
             
-            # Bool 1 (is_turret)
-            # We enable this for the first 4 slots to ensure Recalculate bits works later
-            pkt.write_byte(1 if s < 4 else 0) 
-            
-            # Bool 2
+            # Bool 1 (is_enabled)
             pkt.write_byte(0) 
             
-            # Bool 3
+            # Bool 2 (flags[0])
             pkt.write_byte(0) 
             
-            # Bool 4 (has_recoil)
-            pkt.write_byte(1 if s < 4 else 0) 
+            # Bool 3 (flags[1])
+            pkt.write_byte(0) 
             
-            # Bool 5
+            # Bool 4 (flags[2])
+            # CRITICAL FIX 1: flags[2] -> Controls "firing_state" bit width
+            # If set to 1, the client reads 1 bit per weapon in the Tank packet.
+            pkt.write_byte(0) 
+            
+            # Bool 5 (flags[3])
             pkt.write_byte(0) 
             
             # --- 2. FIXED POINT A (4 Bytes) ---
-            # Snippet 2 reads this into 'damage_amount', Snippet 1 into 'recoil'
+            # Targeting Cone
             pkt.write_fixed1616(1.0)
             
             # --- 3. INTS (20 Bytes) ---
-            pkt.write_int32(0) # Pad 0
-            pkt.write_int32(0) # Pad 1
-            pkt.write_int32(0) # Pad 2
-            pkt.write_int32(0) # Pad 3
-            pkt.write_int32(0) # Pad 4
+            # CRITICAL FIX 2: param_1000 -> Controls Special Floats (Pulse/Repair)
+            # Slot 1 = Repair Beam, Slot 4 = Pulse Shell
+            # param_1000
+            # LOGIC: Only enable the specific special weapon for the specific class
+            """
+            has_special_stat = False
+            
+            if u == 0 and i == 4:         # Tank + Pulse Shell
+                has_special_stat = True
+            elif u == 1 and i == 1:       # Scout + Repair Beam
+                has_special_stat = True
+            
+            if has_special_stat:
+                pkt.write_int32(0)        # Enable Special Float Read
+            else:
+                pkt.write_int32(0)        # Disable Special Float Read
+            """
+            pkt.write_int32(0) # param_1000
+            pkt.write_int32(0) # unk_int_36
+            pkt.write_int32(0) # unk_int_40
+            pkt.write_int32(0) # unk_int_44
+            pkt.write_int32(0) # Ammo Count Per Cost (Refuel Pad Use)
             
             # --- 4. FIXED POINTS B (16 Bytes) ---
-            # Snippet 2: Unknown, Range, Speed, FireRate
-            pkt.write_fixed1616(0.0)    # Unknown
-            pkt.write_fixed1616(1000.0) # Range
-            pkt.write_fixed1616(500.0)  # Speed
-            pkt.write_fixed1616(10.0)   # Fire Rate Delay (Matches Snippet 2)
+            pkt.write_fixed1616(100.0)    # Cost (Refuel Pad Use)
+            pkt.write_fixed1616(1000.0) # Damage
+            pkt.write_fixed1616(500.0)  # Gun Range
+            pkt.write_fixed1616(1.0)   # Fire Rate Delay
 
             # Total: 5 + 4 + 20 + 16 = 45 Bytes
+        # 585 total bytes for 13 items
+    # 585 x 4 == 2340
 
     # --- SECTION 3: ENTITY DEFINITIONS ---
-    # User said 41 units.
-    unit_count = 41
+
+    unit_count = 39
     for i in range(unit_count):
-        pkt.write_fixed1616(1.0)      # Default Scale
-        pkt.write_fixed1616(100.0)    # Health
-        pkt.write_int32(5)            # Regen Rate
+        pkt.write_fixed1616(1.0)      # Default Scale (MOST LIKELY ISNT SCALE ALKJDAKJDS)
+        pkt.write_fixed1616(100.0)    # Health regen? or health related somehow
+        pkt.write_int32(100)          # Max Health
+    # 12 bytes x 38 == 456 total bytes (468 for 39 items) (480 for 40)
         
     # --- SECTION 4: VEHICLE PHYSICS ---
-    # Matches Weapon Classes (4)
-    vehicle_physics_count = 4
-    for c in range(vehicle_physics_count):
-        pkt.write_fixed1616(100.0)    # Mass
-        pkt.write_fixed1616(100.0)    # ?
-        
-        pkt.write_int32(100)          # ?
-        pkt.write_int32(100)          # ?
-        
-        pkt.write_fixed1616(1.0)      # Friction
-        pkt.write_fixed1616(1.0)
-        pkt.write_fixed1616(1.0)
-        
-        pkt.write_int32(0)            # ?
-        pkt.write_int32(0)            # ?
 
-    # --- SECTION 5: PADDING ---
+    vehicle_physics_count = 2
+    for c in range(vehicle_physics_count):
+        pkt.write_fixed1616(20.0)     # Speed
+        pkt.write_fixed1616(4.0)      # Acceleration
+        
+        pkt.write_int32(700)          # Engine Torque
+        pkt.write_int32(550)          # Suspension Stiffness
+        
+        pkt.write_fixed1616(1.0)      # Ground Friction
+        pkt.write_fixed1616(0.2)      # Turn Rate
+        pkt.write_fixed1616(2.0)      # Suspension Dampening
+        
+        pkt.write_int32(0)            # unknown_int_30
+        pkt.write_int32(33000)            # mass
+
+    # 36 bytes x 2 == 72 total bytes for 2 vehicles
+
+    # --- SECTION 5: HARDPOINTS ---
+
+    # 1. TANK DEFINITION (ID 0)
+    # Block A: Weapons (e.g., 1 Main Cannon)
+    write_hardpoint_block(pkt, count=0, is_thruster=False)
+    # Block B: Thrusters (e.g., 2 Rear Exhausts)
+    write_hardpoint_block(pkt, count=0, is_thruster=True)
+
+    # 2. SCOUT DEFINITION (ID 1)
+    # Block A: Weapons (e.g., 2 Light Guns)
+    write_hardpoint_block(pkt, count=0, is_thruster=False)
+    # Block B: Thrusters (e.g., 1 Main Jet)
+    write_hardpoint_block(pkt, count=0, is_thruster=True)
+    # 8 bytes x 4 = 32 bytes
+
+
+    # --- SECTION 6: ACTIVE VEHICLE PHYSICS (TankClass_ReadPacket) ---
+    # This corresponds to the loop: "while(v1) { vtable->ReadPacket() ... }"
+    # These are the 7 FixedPoint values you found (Turn, Move, Strafe, MaxVel, LowFuel, MaxAlt, Gravity).
+    
+    # IMPORTANT: The client reads this ONLY if it has vehicles in its "wip_manned_vehicle_list".
+    # On initial login/load, this list is usually EMPTY.
+    # Therefore, we write 0 bytes here.
+    
+    # Technically 3 vehicles because they include the Bomber
+    active_vehicles_count = 3
+    
+    for _ in range(active_vehicles_count):
+        pkt.write_fixed1616(4.5)    # Turn Adjust
+        pkt.write_fixed1616(85.0)   # Move Adjust
+        pkt.write_fixed1616(69.7)   # Strafe Adjust
+        pkt.write_fixed1616(80.0)   # Max Velocity
+        pkt.write_fixed1616(2000.0) # Low Fuel Level
+        pkt.write_fixed1616(3.25)   # Max Altitude
+        pkt.write_fixed1616(1.0)    # Gravity %
+        # 28 bytes
+    # 28 x 3 == 84
+
+    # --- SECTION 8: PADDING ---
     current_payload = pkt.get_bytes() 
     current_size = len(packet_type) + len(current_payload)
     
@@ -959,6 +1014,37 @@ def send_behavior_packet(sock):
     print(f"[DEBUG] Final Payload Size: {len(final_payload)}")
     
     send_packet(sock, final_payload)
+
+
+# This section defines the "Hardpoints" (Barrels, Exhausts) for Tank and Scout.
+# It runs UNCONDITIONALLY (it always happens).
+# Structure: Tank(Weapons), Tank(Thrusters), Scout(Weapons), Scout(Thrusters).
+def write_hardpoint_block(pkt, count, is_thruster):
+    pkt.write_int32(count) # The "v7" Count
+    
+    if count > 0:
+        for i in range(count):
+            # 1. Position Vector (x, y, z) - 12 Bytes
+            # Offsets relative to model center
+            z_offset = -2.0 if is_thruster else 2.0
+            x_offset = 1.5 if (count > 1 and i == 1) else -1.5 if (count > 1) else 0.0
+            
+            pkt.write_fixed1616(float(x_offset))
+            pkt.write_fixed1616(0.5)
+            pkt.write_fixed1616(float(z_offset))
+
+            # 2. Normal/Direction Vector (x, y, z) - 12 Bytes
+            # 0,0,1 = Forward, 0,0,-1 = Backward
+            pkt.write_fixed1616(0.0)
+            pkt.write_fixed1616(0.0)
+            pkt.write_fixed1616(-1.0 if is_thruster else 1.0)
+
+            # 3. Flag (Int32 read as Bool) - 4 Bytes
+            pkt.write_int32(1) 
+
+    # 4. Property Value (Float) - 4 Bytes
+    # (Fire Rate or Emitter Scale)
+    pkt.write_fixed1616(0.0)
 
 def send_behavior_packet_old(sock):
     """
@@ -1597,7 +1683,9 @@ def main():
             #send_ping(client)
             send_game_clock(client)
             send_motd(client, "Party like it's 1999!")
-            send_behavior_packet_old(client)
+            #send_behavior_packet_old(client)
+            send_behavior_packet(client)
+
             send_process_translation(client)
             send_add_to_roster(client, account_id=1337, name="baff")
             send_team_info(client) # REQUIRED (crashed without): Team Info has to be somewhere around here, if it comes in much later it crashes
@@ -1665,7 +1753,7 @@ def main():
                         #send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
                         #send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
                         #send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
-                        send_hud_message(client)
+                        #send_hud_message(client)
                         #send_routing_ping(client)
                         
                         #send_birth_notice(client, 1337)
