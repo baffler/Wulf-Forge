@@ -432,7 +432,7 @@ def send_tank_packet(sock, net_id, unit_type, pos, vel, flags=1):
     pkt = PacketWriter()
 
     # 1. Sequence ID (Int32)
-    pkt.write_int32(1337) 
+    pkt.write_int32(get_ticks()) 
     
     # --- VITAL STATS BLOCK (Start) ---
     
@@ -440,31 +440,45 @@ def send_tank_packet(sock, net_id, unit_type, pos, vel, flags=1):
     # Critical: Must be 1 to spawn alive.
     pkt.write_bits(1, 1) 
     
-    # 3. Weapon ID (2 Bits)
-    # Uses Config Index 1 (Fixed 2 bits).
+    # 3. Weapon ID
+    # Uses Config Index 1 (Fixed 5 bits).
     weapon_id = 0
-    pkt.write_bits(weapon_id, 2)
+    pkt.write_bits(weapon_id, 5)
     
-    # 4. Health Multiplier (8 Bits)
-    # Uses Config Index 5 (Fixed 8 bits). 255 = 100% HP.
-    pkt.write_bits(1, 8) 
+    # 4. Health Multiplier (10 Bits)
+    # Uses Config Index 5 (Fixed 10 bits). 1 = 100% HP.
+    pkt.write_bits(1, 10) 
     
     #pkt.write_bits(COMPRESSOR_STAT.compress(1.0), 8)
     
-    # 5. Energy Multiplier (8 Bits)
-    # Uses Config Index 8 (Fixed 8 bits). 255 = 100% Energy.
-    pkt.write_bits(1, 8)
+    # 5. Energy Multiplier (10 Bits)
+    # Uses Config Index 8 (Fixed 10 bits). 1 = 100% Energy.
+    pkt.write_bits(1, 10)
 
     #pkt.write_bits(COMPRESSOR_STAT.compress(1.0), 8)
     
-    # 6. Ammo Count (13 Bits!)
-    # The client reads this because dword_5B9A44 has '13' at offset +8.
-    # We send 100 ammo (or max it out if you want). 
-    # Max value for 13 bits is 8191.
-    pkt.write_bits(100, 13)
+    # 6. Weapon Firing State - Bitmask
+    # Why would we wanna spawn in firing? I have no clue... but you can!
+    # Write Mask (13 bits)
+    """
+    Bit Index: [12]  [11]  [10]   [9]   [8]  [7]  [6]  [5]  [4]  [3]  [2]  [1]  [0]
+    Value:      0     0      0     0     0    0    0    0    0    0    0    0    0
+    Function:  [CRM] [MSR] [FLR]  [MN] [HNT] [CT] [TM] [PM] [PS] [HM] [SM] [RB] [AC]
+    """
+    pkt.write_bits(0, 13)
 
     # 7. Extras
-    # Weapon 0 (Tank Gun) likely has no extras, so we stop here.
+    # I thought this depended on the weapon id you sent above
+    # but it seems it requires both of these for now (Until I figure out why!)
+    # and it's the ammo for the pulse, and then the repair beam (CONFIRMED)
+
+    # Weapon 0?? (Pulse Cannon) offset 368
+    # Float for extra_val_A, uses config id = 13
+    pkt.write_bits(1, 8)
+
+    # Weapon 1?? (Repair Beam) offset 104
+    # Float for extra_val_B, uses config id = 14
+    pkt.write_bits(1, 8)
     
     # --- VITAL STATS BLOCK (End) ---
 
@@ -496,24 +510,37 @@ def print_bits(data: bytes):
     
     print(f"[DEBUG BITS]: {bit_string}")
 
-"""
-def send_health_update_test(sock):
-    # Packet 0x0E = UPDATE_ARRAY
-
-    seq = get_ticks()
-    pkt = UpdateArrayPacket(seq)
-
-    print(f" SEND > send_health_update_test > seq: {seq}")
+def send_tank_packet_no_stats(sock, net_id, unit_type, pos, vel, flags=1):
+    print(f"[SEND] TANK (NO STATS) (0x18) ID={net_id} Type={unit_type}")
     
-    # Set to 100% Health and Energy
-    pkt.update_state(1337, energy=1.0, health=1.0)
+    pkt = PacketWriter()
 
-    payload = b'\x0E' + pkt.get_bytes()
+    # 1. Sequence ID (Int32)
+    pkt.write_int32(get_ticks()) 
+    
+    # --- VITAL STATS BLOCK (Start) ---
+    
+    # 2. "Has Data" Flag (1 Bit)
+    pkt.write_bits(0, 1) 
 
-    print_bits(payload)
-
+    # 3. Unit Type (Int32)
+    pkt.write_int32(unit_type)
+    
+    # 4. Net ID (Int32)
+    pkt.write_int32(net_id)
+    
+    # 5. Flags (Byte)
+    pkt.write_byte(flags)
+    
+    # 6. Position (Vector3)
+    pkt.write_vector3(pos[0], pos[1], pos[2])
+    
+    # 7. Velocity (Vector3)
+    pkt.write_vector3(vel[0], vel[1], vel[2])
+    
+    # Finalize
+    payload = b'\x18' + pkt.get_bytes()
     send_packet(sock, payload)
-"""
 
 def send_update_array_empty(sock):
     """
@@ -802,6 +829,140 @@ import struct
 def send_behavior_packet(sock):
     """
     Packet 0x24: BEHAVIOR_UPDATE
+    
+    THEORY OF FIX:
+    The padding calculation showed exactly 45 bytes remaining.
+    45 bytes is exactly the size of one Weapon Slot (13 slots per class).
+    Wait, 45 * 13 = 585 bytes. 
+    
+    Actually, let's stick to the 4 Classes we know exist, but fix the read order 
+    and ensure we aren't short-changing the Entity/Physics loops.
+    """
+    print("[SEND] Behavior Packet (0x24) - Syncing Read Order...")
+    packet_type = b'\x24'
+    pkt = PacketWriter()
+
+    # --- SECTION 1: HEADER (95 Bytes) ---
+    pkt.write_byte(0)                     # spawn_related
+    pkt.write_fixed1616(5.0)              # timeout
+    pkt.write_fixed1616(100.0)            # dbl_6792F8
+    pkt.write_fixed1616(100.0)            # velocity?
+    pkt.write_fixed1616(100.0)            # dbl_679308
+    pkt.write_fixed1616(100.0)            # dbl_679310
+    pkt.write_int32(20)                   # TotalTeamSize
+    pkt.write_int32(25000)                # Glimpse ms
+    pkt.write_int32(35000)                # Push ms
+    pkt.write_fixed1616(100.0)            # dbl_5738B8
+    pkt.write_int32(1)                    # dword_6791B8
+    pkt.write_int32(1)                    # dword_6791BC
+    pkt.write_fixed1616(100.0)            # pulse cannon value?
+    
+    # 11 Floats
+    for _ in range(11):
+        pkt.write_fixed1616(1.0)
+        
+    pkt.write_byte(1)                     # Flag 1
+    pkt.write_byte(1)                     # Flag 2
+
+    # --- SECTION 2: WEAPON CONFIGS ---
+    # We will stick to 4 classes, as Init_Weapon_System_Configs explicitly inits 4.
+    
+    weapon_classes_count = 4 
+    weapon_slots_count = 13
+    
+    for c in range(weapon_classes_count):
+        for s in range(weapon_slots_count):
+            
+            # --- 1. BOOLS (5 Bytes) ---
+            # Using the read order from your "messed up" snippet
+            
+            # Bool 1 (is_turret)
+            # We enable this for the first 4 slots to ensure Recalculate bits works later
+            pkt.write_byte(1 if s < 4 else 0) 
+            
+            # Bool 2
+            pkt.write_byte(0) 
+            
+            # Bool 3
+            pkt.write_byte(0) 
+            
+            # Bool 4 (has_recoil)
+            pkt.write_byte(1 if s < 4 else 0) 
+            
+            # Bool 5
+            pkt.write_byte(0) 
+            
+            # --- 2. FIXED POINT A (4 Bytes) ---
+            # Snippet 2 reads this into 'damage_amount', Snippet 1 into 'recoil'
+            pkt.write_fixed1616(1.0)
+            
+            # --- 3. INTS (20 Bytes) ---
+            pkt.write_int32(0) # Pad 0
+            pkt.write_int32(0) # Pad 1
+            pkt.write_int32(0) # Pad 2
+            pkt.write_int32(0) # Pad 3
+            pkt.write_int32(0) # Pad 4
+            
+            # --- 4. FIXED POINTS B (16 Bytes) ---
+            # Snippet 2: Unknown, Range, Speed, FireRate
+            pkt.write_fixed1616(0.0)    # Unknown
+            pkt.write_fixed1616(1000.0) # Range
+            pkt.write_fixed1616(500.0)  # Speed
+            pkt.write_fixed1616(10.0)   # Fire Rate Delay (Matches Snippet 2)
+
+            # Total: 5 + 4 + 20 + 16 = 45 Bytes
+
+    # --- SECTION 3: ENTITY DEFINITIONS ---
+    # User said 41 units.
+    unit_count = 41
+    for i in range(unit_count):
+        pkt.write_fixed1616(1.0)      # Default Scale
+        pkt.write_fixed1616(100.0)    # Health
+        pkt.write_int32(5)            # Regen Rate
+        
+    # --- SECTION 4: VEHICLE PHYSICS ---
+    # Matches Weapon Classes (4)
+    vehicle_physics_count = 4
+    for c in range(vehicle_physics_count):
+        pkt.write_fixed1616(100.0)    # Mass
+        pkt.write_fixed1616(100.0)    # ?
+        
+        pkt.write_int32(100)          # ?
+        pkt.write_int32(100)          # ?
+        
+        pkt.write_fixed1616(1.0)      # Friction
+        pkt.write_fixed1616(1.0)
+        pkt.write_fixed1616(1.0)
+        
+        pkt.write_int32(0)            # ?
+        pkt.write_int32(0)            # ?
+
+    # --- SECTION 5: PADDING ---
+    current_payload = pkt.get_bytes() 
+    current_size = len(packet_type) + len(current_payload)
+    
+    # We will pad to a slightly larger size to prevent "Out of Hunks"
+    # if the client expects slightly more data (e.g. alignment).
+    # But if the client has a strict 3116 size check, we must match it.
+    target_size = 3116
+    padding_needed = target_size - current_size
+    
+    if padding_needed > 0:
+        print(f"[DEBUG] Padding {padding_needed} bytes.")
+        padding = b'\x00' * padding_needed
+    else:
+        if padding_needed < 0:
+            print(f"[WARN] Payload oversize by {abs(padding_needed)} bytes!")
+        padding = b''
+        
+    final_payload = packet_type + current_payload + padding
+    print(f"[DEBUG] Final Payload Size: {len(final_payload)}")
+    
+    send_packet(sock, final_payload)
+
+def send_behavior_packet_old(sock):
+    """
+    Packet 0x24: BEHAVIOR_UPDATE
     Target Size: 3116 bytes (Payload)
     """
     print("[SEND] Behavior Packet (0x24) - Robust Structure...")
@@ -906,97 +1067,6 @@ def send_behavior_packet(sock):
     
     send_packet(sock, payload)
 
-def send_behavior_packet_old(sock):
-    """
-    Packet 0x24: BEHAVIOR_UPDATE
-    This needs to be exactly 3116 bytes (3118 with the 2 bytes for packet length)
-    """
-    print("[SEND] Behavior Packet (0x24) - Payload without Array 3...")
-    packet_type = b'\x24'
-
-    # --- SECTION 1: HEADER (123 Bytes) ---
-    # [Byte] [5 Dbl] [3 Int] [1 Dbl] [2 Int] [1 Dbl] [11 Flt] [Byte] [Byte]
-    h_flag0 = b'\x01' 
-    h_doubles_1 = struct.pack(">5d", 60.0, 1.0, 1.0, 1.0, 1.0) 
-    h_maxTeamSize = struct.pack("i", 20)
-    h_ints_1 = struct.pack(">2i", 1, 1)
-    h_double_2 = struct.pack(">d", 1.0)
-    h_ints_2 = struct.pack(">2i", 1, 1)
-    h_double_3 = struct.pack(">d", 1.0)
-    h_floats = struct.pack(">11f", 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0)
-    h_flag2 = b'\x01'
-    h_flag3 = b'\x01'
-
-    header = h_flag0 + h_doubles_1 + h_maxTeamSize + h_ints_1 + h_double_2 + h_ints_2 + h_double_3 + h_floats + h_flag2 + h_flag3
-    
-    padding = b'\x00' * 2992
-
-    # --- COMBINE ---
-    payload = packet_type + header + padding
-    
-    # Expected Size: 1 + 123 + 3380 + 780 + 0 = 4284 bytes
-    print(f"[DEBUG] Behavior Payload Size: {len(payload)} bytes")
-    send_packet(sock, payload)
-
-def send_behavior_packet2(sock):
-    """
-    Packet 0x24: BEHAVIOR_UPDATE
-    This needs to be exactly 3116 bytes (3118 with the 2 bytes for packet length)
-    """
-    print("[SEND] Behavior Packet (0x24) - Payload without Array 3...")
-    packet_type = b'\x24' 
-
-    # --- SECTION 1: HEADER (123 Bytes) ---
-    # [Byte] [5 Dbl] [3 Int] [1 Dbl] [2 Int] [1 Dbl] [11 Flt] [Byte] [Byte]
-    h_flag0 = b'\x01' 
-    h_doubles_1 = struct.pack(">5d", 1.0, 1.0, 1.0, 1.0, 1.0) 
-    h_ints_1 = struct.pack(">3i", 1, 1, 1)
-    h_double_2 = struct.pack(">d", 1.0)
-    h_ints_2 = struct.pack(">2i", 1, 1)
-    h_double_3 = struct.pack(">d", 1.0)
-    h_floats = struct.pack(">11f", 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0)
-    h_flag2 = b'\x01'
-    h_flag3 = b'\x01'
-
-    header = h_flag0 + h_doubles_1 + h_ints_1 + h_double_2 + h_ints_2 + h_double_3 + h_floats + h_flag2 + h_flag3
-
-    # --- SECTION 2: ARRAY 1 (Weapon Systems) ---
-    # 4 Nodes * 13 Items = 52 Items
-    # Size: 52 * 65 bytes
-    # Active Bools set to FALSE (0) to avoid Null Pointer Crash
-    array1 = bytearray()
-    item_blob = (
-        b'\x00\x00\x00\x00\x00' +                # 5 Bools (FALSE)
-        struct.pack(">d", 0.0) +                 # 1 Double
-        struct.pack(">5i", 0, 0, 0, 0, 0) +      # 5 Ints
-        struct.pack(">4d", 0.0, 0.0, 0.0, 0.0)   # 4 Doubles
-    )
-    
-    padding = b'\x00' * 2992
-    
-    # 13 items
-    #for _ in range(4 * 13):
-        #array1.extend(item_blob)
-
-    # --- SECTION 3: ARRAY 2 (Entity Definitions) ---
-    # 39 Items * 20 bytes
-    #array2 = bytearray()
-    #def_blob = struct.pack(">ddi", 0.0, 0.0, 0)
-    #for _ in range(4):
-        #array2.extend(def_blob)
-
-    # --- SECTION 4: ARRAY 3 (Vehicles) ---
-    # TESTING: Sending Empty Array (0 bytes)
-    # If the client list is empty, this is correct.
-    #array3 = b'' 
-
-    # --- COMBINE ---
-    payload = packet_type + header + padding
-    
-    # Expected Size: 1 + 123 + 3380 + 780 + 0 = 4284 bytes
-    print(f"[DEBUG] Behavior Payload Size: {len(payload)} bytes")
-    send_packet(sock, payload)
-
 def send_birth_notice(sock, net_id=1):
     """
     Packet 0x1e (30): BIRTH_NOTICE
@@ -1015,8 +1085,7 @@ def send_view_update_health(sock, player_id, net_id, x, y, z):
     pkt = PacketWriter() # Assuming your bit-writer helper
 
     # 1. Packet Header (Implicit or Explicit depending on wrapper)
-    # 2. Player ID (matches 'myPlayerID_from_update_array')
-    pkt.write_int32(player_id)
+    pkt.write_int32(get_ticks())
 
     # 3. Turret State (1 Bit) -> 0 (No update)
     pkt.write_bits(0, 1)
@@ -1076,80 +1145,110 @@ def send_view_update_health(sock, player_id, net_id, x, y, z):
     payload = b'\x0E' + pkt.get_bytes()
     #send_packet(sock, payload)
 
+
+
 def send_process_translation(sock):
     """
     Packet 0x32: TRANSLATION (Configuration)
     Configures the floating-point quantization table.
-    The client reads exactly 28 entries.
     """
     print("[SEND] TRANSLATION (0x32) - Configuring Compression Table...")
     pkt = PacketWriter()
 
-    # --- 1. Define the Configuration Table ---
-    # Format: (Fixed_Bits, Max_Total_Bits, Max_Value_String, Range_Value_String)
-    # Range = (Max - Min). Example: -4096 to 4096 has a Range of 8192.
+    # --- CONFIGURATION DEFAULTS ---
     
-    # Default: Safe fallback for unknown indices (Range -1000 to 1000)
-    # Fixed=0 means "Use Dynamic Bits"
-    default_config = (0, 10, "1000.0", "2000.0") 
+    # 1. SCALARS (Indices 0-15)
+    # Default for generic scalars: High precision, wide range just in case.
+    # Format: (Precision_Header_Bits, Max_Total_Bits, Max_String, Range_String)
+    scalar_configs = []
+    default_scalar = (16, 0, "1000.0", "2000.0") 
 
-    # Initialize list with defaults
-    configs = []
-    for _ in range(28):
-        configs.append(default_config)
+    for _ in range(16):
+        scalar_configs.append(default_scalar)
 
-    # --- 2. Override Critical Indices ---
+    # --- SCALAR OVERRIDES (Known Indices) ---
+
+    # Index 1: Weapon ID 
+    # Logic: Uses precision_header_bits to read a raw integer ID.
+    # Setting to 5 bits (32 possible weapons). Max/Range are ignored by client.
+    scalar_configs[1] = (5, 0, "0.0", "0.0")
+
+    # Index 5: Health Multiplier
+    # Logic: Reads X bits, then unpacks float 0.0-1.0.
+    scalar_configs[5] = (10, 0, "1.0", "1.0")
+
+    # Index 8: Energy Multiplier
+    # Logic: Same as health.
+    scalar_configs[8] = (10, 0, "1.0", "1.0")
     
-    # Index 0: Position (Needs high precision, large world bounds)
-    # Max: 4096, Min: -4096 -> Range: 8192
-    configs[0] = (2, 12, "4096.0", "8192.0")
+    # Index 13 & 14: Extra Vital Stats (A & B)
+    # Logic: Same as health.
+    scalar_configs[13] = (8, 0, "1.0", "1.0")
+    scalar_configs[14] = (8, 0, "1.0", "1.0")
 
-    # Index 1: Velocity (Medium precision)
-    # Max: 200, Min: -200 -> Range: 400
-    configs[1] = (2, 10, "200.0", "400.0")
 
-    # Index 2: Rotation (Euler/Direction Vectors)
-    # Max: 1.0, Min: -1.0 -> Range: 2.0
-    configs[2] = (0, 8, "1.0", "2.0")
+    # 2. VECTORS (Indices 16-27)
+    # Organized as 3 Banks of 4 Vectors (Pos, Vel, Rot, Spin).
+    # Format: (Header_Bits, Max_Total_Bits, Max_String, Range_String)
+    
+    # We will use the same "High Quality" config for all 3 banks for now (Testing Mode).
+    # Position: Max 4096, Range 8192 (Min -4096)
+    # Velocity: Max 200, Range 400 (Min -200) - Adjusted for likely speeds
+    # Rotation: Max 1.0, Range 2.0 (Min -1.0)
+    # Spin: Max 10.0, Range 20.0 (Min -10.0)
+    
+    vector_templates = [
+        (4, 16, "4096.0", "8192.0"), # Slot 0: Position
+        (4, 14, "200.0",  "400.0"),  # Slot 1: Velocity
+        (4, 12, "1.0",    "2.0"),    # Slot 2: Rotation
+        (4, 12, "10.0",   "20.0")    # Slot 3: Spin
+    ]
 
-    # Index 3: Spin / Angular Velocity
-    # Max: 10.0, Min: -10.0 -> Range: 20.0
-    configs[3] = (0, 8, "10.0", "20.0")
+    # --- WRITING THE PACKET ---
 
-    # Index 5: Health (0.0 to 1.0)
-    # CRITICAL: Must use FIXED bits (Field 0 = 8). 
-    # The client reads this specific field to know how many bits to read.
-    # (Fixed=8, MaxTotal=Ignored, Max=1.0, Range=1.0)
-    configs[5] = (8, 0, "1.0", "1.0")
+    # LOOP 1: Write Scalars (0-15)
+    for i in range(16):
+        cfg = scalar_configs[i]
+        write_config_entry(pkt, cfg)
 
-    # Index 8: Energy (0.0 to 1.0)
-    configs[8] = (8, 0, "1.0", "1.0")
-
-    # --- 3. Write the Packet ---
-    for i in range(28):
-        cfg = configs[i]
-        
-        # Field 1: Fixed ID Bits (Field 1 in parser)
-        # Usually 0 for dynamic floats.
-        pkt.write_int32(cfg[0])
-
-        # Field 2: Padding (Field 2 in parser)
-        # CRITICAL: Client reads this and ignores it. Must be present.
-        pkt.write_int32(0)
-
-        # Field 3: Max Total Bits (Field 3 in parser)
-        # The dynamic resolution ceiling (e.g. 10 or 12).
-        pkt.write_int32(cfg[1])
-
-        # Field 4: Max Value String
-        pkt.write_string(cfg[2])
-
-        # Field 5: Range Value String (Max - Min)
-        pkt.write_string(cfg[3])
-
-    # Send Packet 0x32
+    # LOOP 2: Write Vector Banks (16-27)
+    # 3 Banks (High, Med, Low Detail)
+    for bank in range(3):
+        # Inner Loop: 4 Vectors per Bank
+        for vec_idx in range(4):
+            # For now, we use the same template for all banks
+            cfg = vector_templates[vec_idx]
+            write_config_entry(pkt, cfg)
+    
+    # The client code calls Weapon_Slot_Constructor here (likely clears memory).
+    # Then sends ACK2 (Command 0x33, Subcommand 2).
+    # If your send_start/send_stop handles that separately, do it there.
+    # Otherwise, you might append the ACK2 bytes here if they travel together.
+    
     payload = b'\x32' + pkt.get_bytes()
     send_packet(sock, payload)
+
+def write_config_entry(pkt, cfg):
+    """Helper to write a single TranslationConfig entry"""
+    fixed_bits, max_total, max_str, range_str = cfg
+    
+    # 1. Fixed ID Bits / Precision Header Bits
+    pkt.write_int32(fixed_bits)
+    
+    # 2. Padding (The "Missing" Int)
+    pkt.write_int32(0)
+    
+    # 3. Max Total Bits (Resolution)
+    pkt.write_int32(max_total)
+    
+    # 4. Max Value (String)
+    pkt.write_string(max_str)
+    
+    # 5. Range Value (String)
+    pkt.write_string(range_str)
+
+
+
 
 def send_game_clock(sock):
     print(f"[SEND] GAME_CLOCK 0x2F")
@@ -1498,7 +1597,7 @@ def main():
             #send_ping(client)
             send_game_clock(client)
             send_motd(client, "Party like it's 1999!")
-            send_behavior_packet(client)
+            send_behavior_packet_old(client)
             send_process_translation(client)
             send_add_to_roster(client, account_id=1337, name="baff")
             send_team_info(client) # REQUIRED (crashed without): Team Info has to be somewhere around here, if it comes in much later it crashes
@@ -1559,7 +1658,10 @@ def main():
                         send_chat_message(client, "System: Testing Complete.", source_id=0, target_id=0)
                         #send_birth_notice(client, 1337)
                         #send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
+                        
                         send_tank_packet(client, net_id=1337, unit_type=0, pos=(100.0, 100.0, 100.0), vel=(100.0, 100.0, 100.0))
+                        #send_tank_packet_no_stats(client, net_id=1337, unit_type=0, pos=(100.0, 100.0, 100.0), vel=(100.0, 100.0, 100.0))
+
                         #send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
                         #send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
                         #send_view_update_health(client, player_id=1337, net_id=1337, x=100.0, y=100.0, z=100.0)
