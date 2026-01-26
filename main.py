@@ -418,7 +418,7 @@ def send_world_stats(sock):
     """
     pkt = PacketWriter()
     
-    pkt.write_string("survival")      # Map Name
+    pkt.write_string("bpass")      # Map Name
     pkt.write_byte(1)             # Unused Flag (local_d)
     pkt.write_byte(1)             # Map ID (local_e)
     pkt.write_fixed1616(1.0)          # Value (local_8) # Is actually a float

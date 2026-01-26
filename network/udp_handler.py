@@ -2,7 +2,7 @@ import struct
 import time
 import threading
 from .streams import PacketReader, PacketWriter
-from .packet_logger import PacketLogger
+from .packets.packet_logger import PacketLogger
 from .update_array import UpdateArrayPacket
 
 # Helper for Wulfram 32-bit timestamp

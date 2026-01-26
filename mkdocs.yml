@@ -1,0 +1,15 @@
+site_name: Wulf-Forge Docs
+theme:
+  name: material
+  palette: 
+    scheme: slate   # "slate" is Dark Mode! Change to "default" for light mode.
+    primary: indigo
+    accent: cyan
+  features:
+    - content.code.copy
+    - navigation.tabs
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
