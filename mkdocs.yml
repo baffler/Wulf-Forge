@@ -1,8 +1,12 @@
 site_name: Wulf-Forge Docs
+repo_url: https://github.com/baffler/Wulf-Forge
+repo_name: Wulf-Forge
+copyright: Copyright &copy; Charmware
+edit_uri: edit/main/docs/
 theme:
   name: material
   palette: 
-    scheme: slate   # "slate" is Dark Mode! Change to "default" for light mode.
+    scheme: slate
     primary: indigo
     accent: cyan
   features:
@@ -10,6 +14,16 @@ theme:
     - navigation.tabs
 
 markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format

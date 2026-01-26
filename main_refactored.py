@@ -6,34 +6,29 @@ import time
 import struct
 
 from network.transport.tcp_transport import TcpTransport
-from network.registry import PacketRegistry
 from network.dispatcher import PacketDispatcher
 
-from network.streams import PacketWriter
+#from network.streams import PacketWriter
 from network.udp_handler import UDPHandler
 
-from config import Config
-from packet_config import PacketConfig
-from network.packets.tank import build_tank_payload
-from network.packets.behavior import build_behavior_payload
-
-HOST = "127.0.0.1"
-PORT = 2627
-SESSION_KEY = "WulframSessionKey123"
+from core.config import Config
+from network.packets.packet_config import PacketConfig
+from network.packets import (
+    Packet, TankPacket, BehaviorPacket, MotdPacket, 
+    GameClockPacket, HelloPacket
+)
 
 udp_root_received = threading.Event()
 
 from network.packets.packet_logger import PacketLogger, log_packet
 
-# ---- outgoing packets (leave as free functions for now) ----
+# ---- outgoing packets  ----
 from main import (
-    send_hello_udp, send_identified_udp, send_hello_final,
+    send_identified_udp,
     send_login_status, send_team_info, send_player_info,
-    send_game_clock, send_motd, send_behavior_packet,
     send_process_translation, send_add_to_roster, send_world_stats,
     send_bps_reply, send_chat_message, send_ping_request,
-    send_update_array_empty, send_ping, send_tank_packet,
-    handle_hello_packet,
+    send_ping, handle_hello_packet,
 )
 
 class ServerContext:
@@ -47,6 +42,30 @@ class ServerContext:
         self.stop_ping_event = threading.Event()
         self.logger = PacketLogger()
 
+    def send(self, packet_data: bytes | Packet):
+        """
+        Sends data. Can accept raw bytes OR a Packet object
+        """
+        # Type guarding: explicitly separate bytes from Packets
+        if isinstance(packet_data, Packet):
+            payload = packet_data.serialize()
+        else:
+            payload = packet_data
+
+        packet_len = len(payload) + 2
+        header = struct.pack(">H", packet_len)
+        
+        try:
+            self.tcp.sock.sendall(header + payload)
+            self.logger.log_packet(
+                "SEND", 
+                payload, 
+                show_ascii=self.cfg.debug.show_ascii, 
+                include_tcp_len_prefix=True
+            )
+        except OSError as e:
+            print(f"[ERR] Failed to send packet: {e}")
+
 def start_ping_loop(ctx: ServerContext):
     def run():
         while not ctx.stop_ping_event.is_set():
@@ -59,33 +78,28 @@ def start_ping_loop(ctx: ServerContext):
                 break
     threading.Thread(target=run, daemon=True).start()
 
-def send_tcp(sock: socket.socket, logger: PacketLogger, payload: bytes, *, show_ascii: bool) -> None:
-    # TCP framing: 2-byte big-endian length includes the header itself
-    packet_len = len(payload) + 2
-    header = struct.pack(">H", packet_len)
-    sock.sendall(header + payload)
-
-    # payload already includes opcode as first byte
-    logger.log_packet("SEND", payload, show_ascii=show_ascii, include_tcp_len_prefix=True)
-
 def unknown_packet(ctx: ServerContext, payload: bytes):
     opcode = payload[0]
     print(f"[TCP] Unknown opcode 0x{opcode:02X} (len={len(payload)})")
 
+# Create dispatcher early here
+dispatcher = PacketDispatcher(on_unknown=unknown_packet)
+
 # ------------------ TCP HANDLERS ------------------
 
+@dispatcher.route(0x13)
 def on_hello(ctx: ServerContext, payload: bytes):
-    # Let your existing logic consume it.
-    # If it handled it, it may send hello_key, etc.
     log_packet("RECV", payload)
     handle_hello_packet(ctx.tcp.sock, payload)
 
+@dispatcher.route(0x21)
 def on_login_request(ctx: ServerContext, payload: bytes):
-    # This is 0x21 in your code; you currently treat both username and password as 0x21.
+    # 0x21
     log_packet("RECV", payload)
     # Minimal: do nothing here; your main flow can wait on flags if you want.
     # Or parse it here later (move parsing responsibility into this handler).
 
+@dispatcher.route(0x4E)
 def on_bps_request(ctx: ServerContext, payload: bytes):
     log_packet("RECV", payload)
     if len(payload) >= 5:
@@ -94,28 +108,30 @@ def on_bps_request(ctx: ServerContext, payload: bytes):
     else:
         print("[WARN] Malformed BPS Request")
 
+@dispatcher.route(0x39)
 def on_want_updates(ctx: ServerContext, payload: bytes):
     log_packet("RECV", payload)
-    print(">>> Client is ready for World Updates (0x39)")
+    print(">>> Client is ready for updates (0x39)")
     send_chat_message(ctx.tcp.sock, "System: Welcome to Wulfram!", source_id=0, target_id=0)
     send_ping_request(ctx.tcp.sock)
 
+@dispatcher.route(0x4F)
 def on_kudos(ctx: ServerContext, payload: bytes):
     log_packet("RECV", payload)
     print(">>> !kudos (0x4F)")
-    send_update_array_empty(ctx.tcp.sock)
+    #send_update_array_empty(ctx.tcp.sock)
     send_ping(ctx.tcp.sock)
     send_chat_message(ctx.tcp.sock, "System: Testing Complete.", source_id=0, target_id=0)
-    #send_tank_packet(ctx.tcp.sock, net_id=1337, unit_type=0, pos=(100.0, 100.0, 100.0), vel=(100.0, 100.0, 100.0))
-    payload = build_tank_payload(
+    # Spawn the player!
+    pkt = TankPacket(
         net_id=1337,
         tank_cfg=ctx.packet_cfg.tank,
         pos=(100.0, 100.0, 100.0),
-        vel=(100.0, 100.0, 100.0),
+        vel=(50.0, 0.0, 50.0)
     )
-    send_tcp(ctx.tcp.sock, ctx.logger, payload, show_ascii=ctx.cfg.debug.show_ascii)
+    ctx.send(pkt)
 
-
+@dispatcher.route(0x0C)
 def on_ping(ctx: ServerContext, payload: bytes):
     log_packet("RECV", payload)
     if len(payload) >= 5:
@@ -123,16 +139,6 @@ def on_ping(ctx: ServerContext, payload: bytes):
         print(f">>> Client PONG received! TS={client_ts}")
     else:
         print("[WARN] Malformed PING packet")
-
-def build_registry() -> PacketRegistry:
-    reg = PacketRegistry()
-    reg.register(0x13, on_hello)
-    reg.register(0x21, on_login_request)
-    reg.register(0x4E, on_bps_request)
-    reg.register(0x39, on_want_updates)
-    reg.register(0x4F, on_kudos)
-    reg.register(0x0C, on_ping)
-    return reg
 
 # ------------------ UDP THREAD ------------------
 
@@ -150,11 +156,12 @@ def udp_server_loop():
 # ------------------ MAIN ------------------
 
 def do_login_and_bootstrap(client_sock: socket.socket, ctx: ServerContext, dispatcher: PacketDispatcher):
-    # Keep your existing “server speaks first” sequence
     udp_root_received.clear()
 
     time.sleep(1.0)
-    send_hello_udp(client_sock, PORT)
+    
+    # This let's the client know which ip and port to connect to with UDP
+    ctx.send(HelloPacket.create_udp_config(port=ctx.cfg.network.udp_port, host=ctx.cfg.network.server_ip))
 
     print("[INFO] Waiting for Client UDP init...")
     if udp_root_received.wait(timeout=5.0):
@@ -164,13 +171,14 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: ServerContext, dispa
         print("[WARN] UDP Timeout. Sending Confirmation blindly.")
         send_identified_udp(client_sock)
 
-    send_hello_final(client_sock)
+    # Let's the client know they are now verified
+    ctx.send(HelloPacket.create_verified())
 
     # --- Username stage ---
     print(">>> Waiting for USERNAME (0x21)...")
     client_sock.settimeout(None)
 
-    # Minimal approach: keep waiting until we see opcode 0x21.
+    # keep waiting until we see opcode 0x21.
     while True:
         payload = ctx.tcp.recv_payload()
         if payload is None:
@@ -196,11 +204,9 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: ServerContext, dispa
     send_login_status(client_sock, code=8, is_donor=True)
 
     send_player_info(client_sock)
-    send_game_clock(client_sock)
-    send_motd(client_sock, "Party like it's 1999!")
-    #send_behavior_packet(client_sock)
-    behavior_payload = build_behavior_payload(ctx.packet_cfg.behavior)
-    send_tcp(ctx.tcp.sock, ctx.logger, behavior_payload, show_ascii=ctx.cfg.debug.show_ascii)
+    ctx.send(GameClockPacket())
+    ctx.send(MotdPacket("Party like it's 1999!"))
+    ctx.send(BehaviorPacket(ctx.packet_cfg.behavior))
 
     send_process_translation(client_sock)
     send_add_to_roster(client_sock, account_id=1337, name="baff")
@@ -210,21 +216,21 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: ServerContext, dispa
     start_ping_loop(ctx)
 
 def main():
-    cfg = Config()
-    packet_cfg = PacketConfig()
+    cfg = Config.load()
+    packet_cfg = PacketConfig.load("packets.toml")
 
     threading.Thread(target=udp_server_loop, daemon=True).start()
 
+    host = cfg.network.host
+    port = cfg.network.tcp_port
+
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    s.bind((HOST, PORT))
+    s.bind((host, port))
     s.listen(1)
     s.settimeout(1.0)
 
-    reg = build_registry()
-    dispatcher = PacketDispatcher(reg, on_unknown=unknown_packet)
-
-    print(f"Server listening on {HOST}:{PORT}...")
+    print(f"Server listening on {host}:{port}...")
 
     try:
         while True:

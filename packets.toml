@@ -1,0 +1,48 @@
+# packets.toml
+
+[tank]
+unit_type = 0
+flags = 1
+default_pos = [100.0, 100.0, 100.0]
+default_vel = [0.0, 0.0, 0.0]
+
+[tank.stats]
+include_vitals = true
+weapon_id = 0
+health_mult_bits = 1
+energy_mult_bits = 1
+
+[behavior]
+target_size = 3116
+weapons_units_count = 4
+weapon_slots_count = 13
+unit_count = 39
+vehicle_physics_count = 2
+active_vehicles_count = 3
+
+[behavior.header]
+spawn_related = 0
+timeout = 5.0
+# ... add other header floats here ...
+unk11 = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+
+[behavior.unit_defaults]
+scale = 1.0
+max_health = 100
+regen_or_health_related = 100.0
+
+[behavior.vehicle_physics]
+speed = 20.0
+accel = 4.0
+engine_torque = 700
+suspension_stiffness = 550
+ground_friction = 0.5
+turn_rate = 0.2
+suspension_dampening = 2.0
+mass = 33000
+
+[behavior.active_vehicle_physics]
+turn_adjust = 4.5
+move_adjust = 85.0
+max_velocity = 80.0
+gravity_pct = 0.5

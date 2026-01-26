@@ -1,136 +1,139 @@
 # network/packets/behavior.py
 from __future__ import annotations
 
-from typing import Tuple
+from dataclasses import dataclass, field
+from network.packets.base import Packet
 from network.streams import PacketWriter
-from packet_config import BehaviorConfig
+from .packet_config import BehaviorConfig
 
-
-def build_behavior_payload(cfg: BehaviorConfig) -> bytes:
+@dataclass
+class BehaviorPacket(Packet):
     """
-    Builds packet 0x24 payload (includes opcode as first byte).
-    Keeps weapons + hardpoints logic intact for now,
-    but exposes header, units, vehicle physics, and active vehicle physics via cfg.
+    0x24 payload
     """
-    pkt = PacketWriter()
+    cfg: BehaviorConfig = field(repr=False)
 
-    # --------------------------
-    # SECTION 1: HEADER
-    # --------------------------
-    h = cfg.header
+    def serialize(self) -> bytes:
+        pkt = PacketWriter()
+        cfg = self.cfg
 
-    pkt.write_byte(int(h.spawn_related) & 0xFF)
-    pkt.write_fixed1616(h.timeout)
-    pkt.write_fixed1616(h.dbl_6792F8)
-    pkt.write_fixed1616(h.velocity_q)
-    pkt.write_fixed1616(h.dbl_679308)
-    pkt.write_fixed1616(h.dbl_679310)
+        # --------------------------
+        # SECTION 1: HEADER
+        # --------------------------
+        h = cfg.header
 
-    pkt.write_int32(h.total_team_size)
-    pkt.write_int32(h.glimpse_ms)
-    pkt.write_int32(h.push_ms)
+        pkt.write_byte(int(h.spawn_related) & 0xFF)
+        pkt.write_fixed1616(h.timeout)
+        pkt.write_fixed1616(h.dbl_6792F8)
+        pkt.write_fixed1616(h.velocity_q)
+        pkt.write_fixed1616(h.dbl_679308)
+        pkt.write_fixed1616(h.dbl_679310)
 
-    pkt.write_fixed1616(h.dbl_5738B8)
-    pkt.write_int32(h.dword_6791B8)
-    pkt.write_int32(h.dword_6791BC)
-    pkt.write_fixed1616(h.max_pulse_charge)
+        pkt.write_int32(h.total_team_size)
+        pkt.write_int32(h.glimpse_ms)
+        pkt.write_int32(h.push_ms)
 
-    if len(h.unk11) != 11:
-        raise ValueError(f"BehaviorHeader.unk11 must be exactly 11 floats, got {len(h.unk11)}")
+        pkt.write_fixed1616(h.dbl_5738B8)
+        pkt.write_int32(h.dword_6791B8)
+        pkt.write_int32(h.dword_6791BC)
+        pkt.write_fixed1616(h.max_pulse_charge)
 
-    for v in h.unk11:
-        pkt.write_fixed1616(v)
+        if len(h.unk11) != 11:
+            raise ValueError(f"BehaviorHeader.unk11 must be exactly 11 floats, got {len(h.unk11)}")
 
-    pkt.write_byte(int(h.flag1) & 0xFF)
-    pkt.write_byte(int(h.flag2) & 0xFF)
+        for v in h.unk11:
+            pkt.write_fixed1616(v)
 
-    # --------------------------
-    # SECTION 2: WEAPONS (unchanged, hard-coded)
-    # --------------------------
-    for _u in range(cfg.weapons_units_count):
-        for _i in range(cfg.weapon_slots_count):
-            # 5 bool bytes
-            pkt.write_byte(0)
-            pkt.write_byte(0)
-            pkt.write_byte(0)
-            pkt.write_byte(0)
-            pkt.write_byte(0)
+        pkt.write_byte(int(h.flag1) & 0xFF)
+        pkt.write_byte(int(h.flag2) & 0xFF)
 
-            # targeting cone
-            pkt.write_fixed1616(1.0)
+        # --------------------------
+        # SECTION 2: WEAPONS (unchanged, hard-coded)
+        # --------------------------
+        for _u in range(cfg.weapons_units_count):
+            for _i in range(cfg.weapon_slots_count):
+                # 5 bool bytes
+                pkt.write_byte(0)
+                pkt.write_byte(0)
+                pkt.write_byte(0)
+                pkt.write_byte(0)
+                pkt.write_byte(0)
 
-            # 5 ints
-            pkt.write_int32(0)
-            pkt.write_int32(0)
-            pkt.write_int32(0)
-            pkt.write_int32(0)
-            pkt.write_int32(0)
+                # targeting cone
+                pkt.write_fixed1616(1.0)
 
-            # 4 fixeds
-            pkt.write_fixed1616(100.0)
-            pkt.write_fixed1616(1000.0)
-            pkt.write_fixed1616(500.0)
-            pkt.write_fixed1616(1.0)
+                # 5 ints
+                pkt.write_int32(0)
+                pkt.write_int32(0)
+                pkt.write_int32(0)
+                pkt.write_int32(0)
+                pkt.write_int32(0)
 
-    # --------------------------
-    # SECTION 3: UNITS (configurable defaults)
-    # --------------------------
-    ud = cfg.unit_defaults
-    for _ in range(cfg.unit_count):
-        pkt.write_fixed1616(ud.scale)
-        pkt.write_fixed1616(ud.regen_or_health_related)
-        pkt.write_int32(ud.max_health)
+                # 4 fixeds
+                pkt.write_fixed1616(100.0)
+                pkt.write_fixed1616(1000.0)
+                pkt.write_fixed1616(500.0)
+                pkt.write_fixed1616(1.0)
 
-    # --------------------------
-    # SECTION 4: VEHICLE PHYSICS (configurable)
-    # --------------------------
-    vp = cfg.vehicle_physics
-    for _ in range(cfg.vehicle_physics_count):
-        pkt.write_fixed1616(vp.speed)
-        pkt.write_fixed1616(vp.accel)
+        # --------------------------
+        # SECTION 3: UNITS (configurable defaults)
+        # --------------------------
+        ud = cfg.unit_defaults
+        for _ in range(cfg.unit_count):
+            pkt.write_fixed1616(ud.scale)
+            pkt.write_fixed1616(ud.regen_or_health_related)
+            pkt.write_int32(ud.max_health)
 
-        pkt.write_int32(vp.engine_torque)
-        pkt.write_int32(vp.suspension_stiffness)
+        # --------------------------
+        # SECTION 4: VEHICLE PHYSICS (configurable)
+        # --------------------------
+        vp = cfg.vehicle_physics
+        for _ in range(cfg.vehicle_physics_count):
+            pkt.write_fixed1616(vp.speed)
+            pkt.write_fixed1616(vp.accel)
 
-        pkt.write_fixed1616(vp.ground_friction)
-        pkt.write_fixed1616(vp.turn_rate)
-        pkt.write_fixed1616(vp.suspension_dampening)
+            pkt.write_int32(vp.engine_torque)
+            pkt.write_int32(vp.suspension_stiffness)
 
-        pkt.write_int32(vp.unknown_int_30)
-        pkt.write_int32(vp.mass)
+            pkt.write_fixed1616(vp.ground_friction)
+            pkt.write_fixed1616(vp.turn_rate)
+            pkt.write_fixed1616(vp.suspension_dampening)
 
-    # --------------------------
-    # SECTION 5: HARDPOINTS (unchanged for now)
-    # --------------------------
-    _write_hardpoint_block(pkt, count=0, is_thruster=False)
-    _write_hardpoint_block(pkt, count=0, is_thruster=True)
-    _write_hardpoint_block(pkt, count=0, is_thruster=False)
-    _write_hardpoint_block(pkt, count=0, is_thruster=True)
+            pkt.write_int32(vp.unknown_int_30)
+            pkt.write_int32(vp.mass)
 
-    # --------------------------
-    # SECTION 6: ACTIVE VEHICLE PHYSICS (configurable)
-    # --------------------------
-    av = cfg.active_vehicle_physics
-    for _ in range(cfg.active_vehicles_count):
-        pkt.write_fixed1616(av.turn_adjust)
-        pkt.write_fixed1616(av.move_adjust)
-        pkt.write_fixed1616(av.strafe_adjust)
-        pkt.write_fixed1616(av.max_velocity)
-        pkt.write_fixed1616(av.low_fuel_level)
-        pkt.write_fixed1616(av.max_altitude)
-        pkt.write_fixed1616(av.gravity_pct)
+        # --------------------------
+        # SECTION 5: HARDPOINTS (unchanged for now)
+        # --------------------------
+        _write_hardpoint_block(pkt, count=0, is_thruster=False)
+        _write_hardpoint_block(pkt, count=0, is_thruster=True)
+        _write_hardpoint_block(pkt, count=0, is_thruster=False)
+        _write_hardpoint_block(pkt, count=0, is_thruster=True)
 
-    # --------------------------
-    # FINAL: PADDING TO TARGET
-    # --------------------------
-    body = pkt.get_bytes()
-    payload = b"\x24" + body
+        # --------------------------
+        # SECTION 6: ACTIVE VEHICLE PHYSICS (configurable)
+        # --------------------------
+        av = cfg.active_vehicle_physics
+        for _ in range(cfg.active_vehicles_count):
+            pkt.write_fixed1616(av.turn_adjust)
+            pkt.write_fixed1616(av.move_adjust)
+            pkt.write_fixed1616(av.strafe_adjust)
+            pkt.write_fixed1616(av.max_velocity)
+            pkt.write_fixed1616(av.low_fuel_level)
+            pkt.write_fixed1616(av.max_altitude)
+            pkt.write_fixed1616(av.gravity_pct)
 
-    padding_needed = cfg.target_size - len(payload)
-    if padding_needed > 0:
-        payload += b"\x00" * padding_needed
+        # --------------------------
+        # FINAL: PADDING TO TARGET
+        # --------------------------
+        body = pkt.get_bytes()
+        payload = b"\x24" + body
 
-    return payload
+        padding_needed = cfg.target_size - len(payload)
+        if padding_needed > 0:
+            payload += b"\x00" * padding_needed
+
+        return payload
 
 
 def _write_hardpoint_block(pkt: PacketWriter, count: int, is_thruster: bool) -> None:

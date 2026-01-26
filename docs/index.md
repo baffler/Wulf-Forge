@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+# Welcome to Wulf-Forge
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+**Wulf-Forge** is the central documentation hub for the reverse engineering, server emulation, and modding tools for *Wulfram*. This project aims to modernize the game with custom servers, updated client hooks, and new asset pipelines.
 
-## Commands
+---
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Project Architecture
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+TBD
