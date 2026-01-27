@@ -4,6 +4,8 @@ import socket
 import threading
 import time
 import struct
+import math
+import random
 from typing import Dict, Tuple, Optional
 
 from network.transport.tcp_transport import TcpTransport
@@ -18,11 +20,13 @@ from network.packets import (
     Packet, MotdPacket, IdentifiedUdpPacket, LoginStatusPacket, PlayerInfoPacket,
     BpsReplyPacket, PingRequestPacket, AddToRosterPacket, WorldStatsPacket,
     DeathNoticePacket, CarryingInfoPacket, DockingPacket, ResetGamePacket,
-    GameClockPacket, HelloPacket, TeamInfoPacket,
+    GameClockPacket, HelloPacket, TeamInfoPacket, ReincarnatePacket,
     TankPacket, BehaviorPacket, TranslationPacket,
     UpdateStatsPacket, CommMessagePacket,
 )
 from network.packets.packet_logger import PacketLogger, log_packet
+
+from network.update_array import UpdateArrayPacket
 
 # -------------------------------------------------------------------------
 # CONTEXTS
@@ -47,6 +51,7 @@ class WulframServerContext:
         # Shared State
         self.udp_root_received = threading.Event()
         self.stop_event = threading.Event()
+        self.stop_update_event = threading.Event()
         
         # Sockets
         self.tcp_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -144,6 +149,7 @@ class WulframServerContext:
             print(f"[-] Client Disconnected: {e}")
         finally:
             ctx.stop_ping_event.set()
+            ctx.server.stop_update_event.set()
             client_sock.close()
 
 class TcpContext:
@@ -225,6 +231,58 @@ class UdpContext:
 # -------------------------------------------------------------------------
 # DISPATCHER & HANDLERS
 # -------------------------------------------------------------------------
+
+def start_update_loop(ctx: UdpContext, net_id: int):
+    """
+    Spins up a thread that sends 0x49 Update Arrays 
+    at 10Hz (100ms) indefinitely.
+    """
+    def run():
+        print(f"[UDP] Starting Update Loop for NetID {net_id}")
+        
+        # Start at 0, 0, 0
+        x, y, z = 0.0, 0.0, 0.0
+        angle = 0.0
+        
+        # Use the context's outgoing sequence or track our own for updates
+        update_seq = 0
+        
+        while not ctx.server.stop_update_event.is_set():
+            try:
+                # --- SIMULATE PHYSICS ---
+                # Move in a circle radius 20 around origin
+                angle += 0.1
+                x = math.sin(angle) * 20.0
+                z = math.cos(angle) * 20.0
+                
+                # --- BUILD PACKET ---
+                pkt = UpdateArrayPacket(sequence_id=update_seq)
+
+                num = random.uniform(0.5, 1.0)
+                pkt.update_state(net_id=ctx.server.cfg.player.player_id, health=num, energy=num)
+                
+                """pkt.add_movement(
+                    net_id=net_id,
+                    pos=(x, 0.0, z),    # Y is up/down usually
+                    vel=(0.0, 0.0, 0.0),# Ignored for now
+                    rot=(0.0, angle, 0.0) # Rotate with the circle
+                )"""
+                
+                print("    > UDP UPDATE ARRAY 0x0E")
+                # --- SEND (FIRE AND FORGET) ---
+                # ctx.send automatically logs it and sends via UDP
+                ctx.send(b'\x0E' + pkt.get_bytes())
+                
+                update_seq += 1
+                time.sleep(0.5) # 100ms delay = 10 Updates Per Second
+                
+            except Exception as e:
+                print(f"[ERR] Update Loop Died: {e}")
+                break
+                
+    t = threading.Thread(target=run, daemon=True)
+    print("    > Starting Update Loop...")
+    t.start()
 
 def start_ping_loop(ctx: TcpContext):
     def run():
@@ -486,11 +544,11 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
 
     # Check if this is a team switch or spawn request
     if (not is_team_switch):
-        unk_int3 = reader.read_int32() # 2000
-        unk_int4 = reader.read_int32() # 700
+        unk_int3 = reader.read_int32() # double/float, maybe x cord
+        unk_int4 = reader.read_int32() # double/float, maybe y cord
 
         print(f"    > SPAWN IN? : {unk_int3} | {unk_int4}")
-        #self.send_reincarnate(addr, 4, "") #Can't enter yet. Game not ready.
+        ctx.send(ReincarnatePacket(code=4)) # Can't enter yet. Game not ready.
         #self.send_tank_packet(addr, net_id=ctx.server.cfg.player.player_id, unit_type=0, pos=(100.0, 100.0, 100.0), vel=(100.0, 100.0, 100.0))
 
     # Switch their teams
@@ -502,8 +560,8 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
         ctx.server.player.team = 2
         ctx.send(UpdateStatsPacket(player_id=ctx.server.cfg.player.player_id, team_id=2))
     
-    #Sends message about team switched successfully
-    #self.send_reincarnate(addr, 17, "")
+    # Sends message code about team switched successfully
+    ctx.send(ReincarnatePacket(code=17))
 
 @dispatcher.route(0x20)
 def on_chat_comm_req(ctx: UdpContext, payload: bytes):
@@ -543,6 +601,7 @@ def on_chat_comm_req(ctx: UdpContext, payload: bytes):
             )
             ctx.send(pkt)
             send_system_message(ctx, "Spawning in...")
+            #start_update_loop(ctx, ctx.server.cfg.player.player_id)
         elif (inc_message == "map"):
             ctx.send(WorldStatsPacket(map_name="tron"))
             send_system_message(ctx, "Changing map?")

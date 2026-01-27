@@ -1,41 +1,57 @@
+from dataclasses import dataclass, field
 from .streams import PacketWriter
 from .compressor import COMPRESSOR_POS, COMPRESSOR_VEL, COMPRESSOR_ROT, COMPRESSOR_STAT
+from network.packets.packet_config import TankPacketConfig
+from core.config import get_ticks
 
 class UpdateArrayPacket:
     def __init__(self, sequence_id):
         self.sequence_id = sequence_id
         self.writer = PacketWriter()
         self.entity_count = 0
+        #self.tank_cfg: TankPacketConfig = field(repr=False) # specific config for this packet type
         
         # --- 1. WRITE GLOBAL HEADER ---
         # Packet ID 0x49 (UPDATE_ARRAY)
         
         # Sequence (Monotonic time/frame ID)
-        self.writer.write_int32(sequence_id)
-        
+        self.writer.write_int32(get_ticks())
+
+    def update_state(self, net_id=0, energy=None, health=None):
+        """
+        Updates Health/Energy for an existing entity.
+        """
+
         # Weapon State (The "Reader within a Reader")
         # The client calls 'Read_Weapon_State'. 
         # Writing a single '0' bit tells it "No Weapon Changes".
-        self.writer.write_bits(0, 1) 
+
+        self.writer.write_bits(1, 1)
+
+        if True:
+            v_health = 1.0
+            v_energy = 1.0
+
+            if health is not None: v_health = health
+            if energy is not None: v_energy = energy
+
+            self.writer.write_bits(0, 5)
+            self.writer.write_bits(COMPRESSOR_STAT.compress(v_health), 10)
+            self.writer.write_bits(COMPRESSOR_STAT.compress(v_energy), 10)
+
+            #self.writer.write_bits(0, 13)
+
         
         # Entity Count Placeholder (We will overwrite this later or assume 1)
         # For now, let's just write 1 because we know we are testing 1 tank.
         self.writer.write_bits(1, 8) 
-
-        #Write all 1s (11111111)
-        #self.writer.write_bits(0xFF, 8)
-
-    def update_state(self, seq, energy=None, health=None):
-        """
-        Updates Health/Energy for an existing entity.
-        """
 
         # We just wrote 1 bit (Weapon) + 8 bits (Count) = 9 bits total offset.
         # We are at Bit 41. The client likely aligns to Bit 48 before reading Int32.
         #self.writer.align()
 
         # 1. Net ID
-        self.writer.write_int32(seq)
+        self.writer.write_int32(net_id)
         
         # 2. Is Manned? (True)
         self.writer.write_bool(True)
@@ -64,23 +80,23 @@ class UpdateArrayPacket:
         # 4. Write Data (Order matters! Low bit to High bit)
 
         # This is the Precision Selector.
-        # Why 0 works: By sending 0 (Binary 00), you are telling the client to use "Precision Profile 0" (Index 16 in the table). As long as you aren't doing complex vector compression requiring different profiles, sending 0 is perfectly safe.
-        self.writer.write_bits(0, 2)
+        # 16 bits for index [0] (In our current translation config)
+        self.writer.write_bits(1, 16)
         
         # ... Bits 0-4 skipped ...
         
         # Bit 5: Health
         if health is not None:
             val = COMPRESSOR_STAT.compress(health)
-            self.writer.write_bits(val, 8)
+            self.writer.write_bits(val, 10)
             
         # ... Bit 6 skipped ...
         
         # Bit 7: Energy
         if energy is not None:
             val = COMPRESSOR_STAT.compress(energy)
-            # Write 8 bits (Matches config)
-            self.writer.write_bits(val, 8) 
+            # Write 10 bits (Matches config)
+            self.writer.write_bits(val, 10) 
 
     def add_creation(self, net_id, unit_type, team_id, pos, rot):
         """
@@ -99,6 +115,10 @@ class UpdateArrayPacket:
         # Bit 3 = 1 (Has Rotation)
         mask = 0b0000001011 # Dec: 11
         self.writer.write_bits(mask, 10)
+
+        # The client ALWAYS expects the Translation Config ID here.
+        # Sending 0 uses the default float precision table.
+        self.writer.write_bits(0, 2)
         
         # --- CREATION BLOCK (Bit 0) ---
         # Unit Type ID (Config 2 defines bits, usually 8)
@@ -136,6 +156,10 @@ class UpdateArrayPacket:
         # Bit 9 = 1 (Hard Update / Keyframe) -> 0x200
         mask = 0b1000001110 # Hex: 0x20E
         self.writer.write_bits(mask, 10)
+
+        # The client ALWAYS expects the Translation Config ID here.
+        # Sending 0 uses the default float precision table.
+        self.writer.write_bits(0, 2)
         
         # --- UPDATE BLOCK ---
         self._write_vectors(pos, vel, rot)

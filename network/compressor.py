@@ -71,7 +71,8 @@ def compress_fixed(self, value):
 
 # --- GLOBAL CONFIGURATION (Must match the Translation Packet!) ---
 # Index 0: Position (12 bits, Range 8192)
-COMPRESSOR_POS = FloatCompressor(4096.0, 8192.0, 12)
+#COMPRESSOR_POS = FloatCompressor(4096.0, 8192.0, 12)
+COMPRESSOR_POS = FloatCompressor(1000.0, 2000.0, 16)
 
 # Index 1: Velocity (10 bits, Range 400)
 COMPRESSOR_VEL = FloatCompressor(200.0, 400.0, 10)
@@ -99,4 +100,4 @@ class FixedCompressor:
         normalized = (value - self.min_val) / self.range_val
         return int(normalized * self.max_step)
 
-COMPRESSOR_STAT = FixedCompressor(1.0, 1.0, 8)
+COMPRESSOR_STAT = FixedCompressor(1.0, 1.0, 10)

@@ -5,6 +5,20 @@ from network.packets.base import Packet
 from core.config import get_ticks
 
 @dataclass
+class ReincarnatePacket(Packet):
+    """
+    Packet 0x25: REINCARNATE
+    """
+    code: int
+    message: str = ""
+
+    def serialize(self) -> bytes:
+        pkt = PacketWriter()
+        pkt.write_byte(self.code)
+        pkt.write_string(self.message)
+        return b'\x25' + pkt.get_bytes()
+
+@dataclass
 class DeathNoticePacket(Packet):
     """
     Packet 0x1D: DEATH_NOTICE
