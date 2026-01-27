@@ -639,7 +639,7 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
         nametag=ctx.server.cfg.player.nametag,
         team=ctx.server.player.team))
 
-    ctx.send(WorldStatsPacket(map_name="bpass"))
+    ctx.send(WorldStatsPacket(map_name=ctx.server.cfg.game.map_name))
 
     start_ping_loop(ctx)
 

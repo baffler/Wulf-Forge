@@ -9,12 +9,13 @@ udp_port = 2627
 [game]
 session_key = "WulframSessionKey123"
 motd = "Welcome to Wulf-Forge!"
+map_name = "bpass"
 
 [player]
 player_id = 1337
-name = "baff"
+name = "default"
 nametag = "DEV"
-team = 2
+team = 1
 unit_type = 0
 
 [debug]

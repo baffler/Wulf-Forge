@@ -24,6 +24,7 @@ class NetworkConfig:
 class GameConfig:
     session_key: str = "WulframSessionKey123"
     motd: str = "Welcome to Wulf-Forge! Wulfram 2 server emulator brought to you by baffler."
+    map_name: str = "bpass"
 
 @dataclass(frozen=True, slots=True)
 class PlayerConfig:
@@ -38,7 +39,9 @@ class DebugConfig:
     debug_packets: bool = True
     show_ascii: bool = True
 
-# ---- Not part of the config, these will change at runtime
+# ----------------------------------------------------------------------
+# ---- Not part of the static config, these will change at runtime
+# ----------------------------------------------------------------------
 @dataclass(slots=True)
 class PlayerSession:
     player_id: int = 0
