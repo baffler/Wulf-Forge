@@ -1,4 +1,4 @@
-# main_refactored.py
+# main.py
 from __future__ import annotations
 import socket
 import threading
@@ -17,6 +17,7 @@ from network.packets.packet_config import PacketConfig
 from network.packets import (
     Packet, MotdPacket, IdentifiedUdpPacket, LoginStatusPacket, PlayerInfoPacket,
     BpsReplyPacket, PingRequestPacket, AddToRosterPacket, WorldStatsPacket,
+    DeathNoticePacket, CarryingInfoPacket, DockingPacket, ResetGamePacket,
     GameClockPacket, HelloPacket, TeamInfoPacket,
     TankPacket, BehaviorPacket, TranslationPacket,
     UpdateStatsPacket, CommMessagePacket,
@@ -536,18 +537,43 @@ def on_chat_comm_req(ctx: UdpContext, payload: bytes):
             pkt = TankPacket(
                 net_id=ctx.server.cfg.player.player_id,
                 tank_cfg=ctx.server.packet_cfg.tank,
+                team_id=ctx.server.player.team,
                 pos=(100.0, 100.0, 100.0),
                 vel=(0.0, 0.0, 0.0)
             )
             ctx.send(pkt)
+            send_system_message(ctx, "Spawning in...")
+        elif (inc_message == "map"):
+            ctx.send(WorldStatsPacket(map_name="tron"))
+            send_system_message(ctx, "Changing map?")
+        elif (inc_message == "reset"):
+            ctx.send(ResetGamePacket())
+            send_system_message(ctx, "Resetting game...")
+        elif (inc_message == "die"):
+            ctx.send(DeathNoticePacket(ctx.server.cfg.player.player_id))
+            send_system_message(ctx, "Die!")
+        elif (inc_message == "dock"):
+            ctx.send(DockingPacket(entity_id=0, is_docked=True))
+            send_system_message(ctx, "Docking...")
+        elif (inc_message == "undock"):
+            ctx.send(DockingPacket(entity_id=0, is_docked=False))
+            send_system_message(ctx, "Undocking...")
+        elif (inc_message == "carry"):
+            ctx.send(CarryingInfoPacket(
+                player_id=ctx.server.cfg.player.player_id,
+                has_cargo=True,
+                unk_v2=1,
+                item_id=13
+                ))
+        elif (inc_message == "drop"):
+            ctx.send(CarryingInfoPacket(
+                player_id=ctx.server.cfg.player.player_id,
+                has_cargo=False,
+                unk_v2=1,
+                item_id=13
+                ))
         else:
-            ctx.send(CommMessagePacket(
-                message_type=0,
-                source_player_id=ctx.server.cfg.player.player_id, 
-                chat_scope_id=0, 
-                recepient_id=0, 
-                message="Unknown command."
-            ))
+            send_system_message(ctx, "Unknown command.")
     else:
         ctx.send(CommMessagePacket(
             message_type=5,
@@ -564,6 +590,32 @@ def on_chat_comm_req(ctx: UdpContext, payload: bytes):
         #self.send_tank_packet(addr, net_id=ctx.server.cfg.player.player_id, unit_type=0, pos=(100.0, 100.0, 100.0), vel=(0,0,0))
         #self.send_update_tick(addr, health_val=1.0, energy_val=1.0)
         #self.start_update_loop(addr)
+
+@dispatcher.route(0x3A)
+def on_beacon_request(ctx: UdpContext, payload: bytes):
+    """
+    Packet 0x3A: BEACON REQUEST
+    """
+    if len(payload) < 5: return
+    reader = PacketReader(payload)
+    reader.read_byte() # Op (3A)
+    sequence_num = reader.read_int16()
+    payload_len = reader.read_int16()
+
+    some_id = reader.read_int32()
+    
+
+# -------------------------------------------------------------------------
+# HELPERS
+# -------------------------------------------------------------------------
+def send_system_message(ctx: UdpContext | TcpContext, message: str, receipient_id: int = 0):
+    ctx.send(CommMessagePacket(
+                message_type=0,
+                source_player_id=ctx.server.cfg.player.player_id, 
+                chat_scope_id=0, 
+                recepient_id=receipient_id, 
+                message=message
+            ))
 
 # -------------------------------------------------------------------------
 # BOOTSTRAP LOGIC
@@ -630,6 +682,7 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
     ctx.send(MotdPacket(ctx.server.cfg.game.motd))
     ctx.send(BehaviorPacket(ctx.server.packet_cfg.behavior))
 
+    print("[SEND] TRANSLATION (0x32) - Configuration Compression Table...")
     ctx.send(TranslationPacket())
 
     # TODO: check if this is actually team, since this is sent before we select a team
@@ -644,6 +697,7 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
     start_ping_loop(ctx)
 
 def main():
+    pass
     server = WulframServerContext()
     server.run()
 

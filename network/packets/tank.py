@@ -12,7 +12,7 @@ class TankPacket(Packet):
     
     # Optional overrides (default to None so we can fallback to config)
     unit_type: int | None = None
-    flags: int | None = None
+    team_id: int | None = None
     pos: tuple[float, float, float] | None = None
     vel: tuple[float, float, float] | None = None
 
@@ -20,7 +20,7 @@ class TankPacket(Packet):
         # 1. Resolve Defaults
         # We prefer the instance value; if None, fallback to the config object
         _unit_type = self.unit_type if self.unit_type is not None else self.tank_cfg.unit_type
-        _flags = self.flags if self.flags is not None else self.tank_cfg.flags
+        _team_id = self.team_id if self.team_id is not None else self.tank_cfg.team_id
         _pos = self.pos if self.pos is not None else self.tank_cfg.default_pos
         _vel = self.vel if self.vel is not None else self.tank_cfg.default_vel
 
@@ -45,7 +45,7 @@ class TankPacket(Packet):
 
         pkt.write_int32(_unit_type)
         pkt.write_int32(self.net_id)
-        pkt.write_byte(_flags)
+        pkt.write_byte(_team_id)
         pkt.write_vector3(_pos[0], _pos[1], _pos[2])
         pkt.write_vector3(_vel[0], _vel[1], _vel[2])
 

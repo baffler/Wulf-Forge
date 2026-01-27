@@ -11,7 +11,6 @@ class TranslationPacket(Packet):
     Packet 0x32: TRANSLATION (Configuration)
     Configures the floating-point quantization table.
     """
-    print("[SEND] TRANSLATION (0x32) - Configuring Compression Table...")
 
     def serialize(self) -> bytes:
         pkt = PacketWriter()

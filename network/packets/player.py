@@ -5,6 +5,18 @@ from network.packets.base import Packet
 from core.config import get_ticks
 
 @dataclass
+class DeathNoticePacket(Packet):
+    """
+    Packet 0x1D: DEATH_NOTICE
+    """
+    player_id: int
+
+    def serialize(self) -> bytes:
+        pkt = PacketWriter()
+        pkt.write_int32(self.player_id)
+        return b'\x1D' + pkt.get_bytes()
+
+@dataclass
 class AddToRosterPacket(Packet):
     """
     Packet 0x1A: ADD_TO_ROSTER
@@ -15,7 +27,6 @@ class AddToRosterPacket(Packet):
     nametag: str
 
     def serialize(self) -> bytes:
-        
         pkt = PacketWriter()
         pkt.write_int32(self.account_id)
         pkt.write_int32(self.team)

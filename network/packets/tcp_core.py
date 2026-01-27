@@ -23,7 +23,7 @@ class PlayerInfoPacket(Packet):
     def serialize(self) -> bytes:
         pkt = PacketWriter()
         pkt.write_int32(self.player_id)
-        pkt.write_byte(self.player_guest_flag)
+        pkt.write_byte(1 if self.player_guest_flag else 0)
         return b'\x17' + pkt.get_bytes()
 
 @dataclass
