@@ -23,20 +23,28 @@ class NetworkConfig:
 @dataclass(frozen=True, slots=True)
 class GameConfig:
     session_key: str = "WulframSessionKey123"
-    motd: str = "Welcome to Wulf-Forge!"
+    motd: str = "Welcome to Wulf-Forge! Wulfram 2 server emulator brought to you by baffler."
 
 @dataclass(frozen=True, slots=True)
 class PlayerConfig:
     player_id: int = 1337
-    name: str = "baff"
+    name: str = "default"
     nametag: str = "DEV"
-    team: int = 2
+    team:int = 0
     unit_type: int = 0
 
 @dataclass(frozen=True, slots=True)
 class DebugConfig:
     debug_packets: bool = True
     show_ascii: bool = True
+
+# ---- Not part of the config, these will change at runtime
+@dataclass(slots=True)
+class PlayerSession:
+    player_id: int = 0
+    name: str = ""
+    team: int = 0
+    # These get initialized later by defaults
 
 # ---- Main Config ----
 

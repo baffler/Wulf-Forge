@@ -8,10 +8,7 @@ class UpdateArrayPacket:
         self.entity_count = 0
         
         # --- 1. WRITE GLOBAL HEADER ---
-        # Packet ID 0x49 (UPDATE_ARRAY - verified from context)
-        # Note: In your UDP handler, you might send the ID separately. 
-        # If so, just remove this line.
-        #self.writer.write_byte(0x0E) 
+        # Packet ID 0x49 (UPDATE_ARRAY)
         
         # Sequence (Monotonic time/frame ID)
         self.writer.write_int32(sequence_id)

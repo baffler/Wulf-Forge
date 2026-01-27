@@ -3,9 +3,6 @@ from dataclasses import dataclass, field
 from network.streams import PacketWriter
 from .packet_config import TankPacketConfig
 from core.config import get_ticks
-
-# Assuming you created the base class in network/packets/base.py
-# If not, you can remove the (Packet) inheritance for now.
 from network.packets.base import Packet 
 
 @dataclass
