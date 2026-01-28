@@ -1,5 +1,5 @@
 from network.streams import PacketWriter
-from network.compressor import FloatCompressor, COMPRESSOR_POS, COMPRESSOR_VEL, COMPRESSOR_ROT, COMPRESSOR_STAT
+from network.translation_config import *
 from core.config import get_ticks
 from core.entity import GameEntity, UpdateMask
 
@@ -21,24 +21,22 @@ class EntitySerializer:
             
         # 2. Write Header (Standard for every entity)
         self.writer.write_int32(entity.net_id)
-        
-        # bool_isManned
         self.writer.write_bool(entity.is_manned)
-        
-        # r_update_bitmask
         self.writer.write_bits(mask, 10)
         
-        # Translation Config Header (start at 16, write 16 bits)
-        self.writer.write_bits(16, 16) 
+        # Bank Selector
+        # C++ reads Index[0].header bits. We defined this as BANK_SELECTOR_BITS (16).
+        # We write '0' to choose Bank 0 (Index 16).
+        self.writer.write_bits(0, BANK_SELECTOR_BITS) 
 
         # 3. Handle Bit 0: Definition (The "Creation" block)
         if mask & UpdateMask.DEFINITION:
             # unit_type (8 bits usually)
-            self.writer.write_bits(entity.unit_type, 16)
+            self.writer.write_bits(entity.unit_type, ID_BITS_UNIT)
             # team_id (8 bits)
-            self.writer.write_bits(entity.team_id, 16)
+            self.writer.write_bits(entity.team_id, ID_BITS_TEAM)
             # team_id_also_maybe (State/Sub-team)
-            self.writer.write_bits(entity.team_id, 16) 
+            self.writer.write_bits(entity.team_id, ID_BITS_TEAM) 
             
             # is_teleport_or_snap (Force Snap)
             self.writer.write_bool(True) 
@@ -61,12 +59,12 @@ class EntitySerializer:
         # Bit 4: Spin (Angular Velocity)
         if mask & UpdateMask.SPIN:
             # Assuming 0 spin for now, using ROT compressor
-            self._write_vec((0,0,0), COMPRESSOR_ROT) 
+            self._write_vec((0,0,0), COMPRESSOR_SPIN) 
 
         # Bit 5: Health
         if mask & UpdateMask.HEALTH:
-            val = COMPRESSOR_STAT.compress(entity.health)
-            self.writer.write_bits(val, 10) 
+            _, val, bits = COMPRESSOR_STAT.compress(entity.health)
+            self.writer.write_bits(val, bits) 
 
         # Bit 6: Weapon Inventory
         if mask & UpdateMask.WEAPON:
@@ -75,8 +73,8 @@ class EntitySerializer:
 
         # Bit 7: Energy
         if mask & UpdateMask.ENERGY:
-             val = COMPRESSOR_STAT.compress(entity.energy)
-             self.writer.write_bits(val, 10)
+             _, val, bits = COMPRESSOR_STAT.compress(entity.energy)
+             self.writer.write_bits(val, bits)
 
         # Bit 8: Owner/New Player
         if mask & UpdateMask.OWNER:
@@ -87,12 +85,27 @@ class EntitySerializer:
         # No payload; just a flag.
         pass
 
-    def _write_vec(self, vec, compressor: FloatCompressor):
-        """Writes X, Y, Z using the provided compressor."""
-        self.writer.write_bits(4, 4)
+    def _write_vec(self, vec, compressor: TranslationConfig):
+        """
+        Writes a 3D vector dynamically matching C++ logic:
+        [Header] [X_Data] [Y_Data] [Z_Data]
+        """
+        # 1. Determine "High Quality" Priority
+        # We want the max resolution defined in the config.
+        # If header_bits is 2, max value is 3 (binary 11).
+        priority = (1 << compressor.precision_header_bits) - 1
+        
+        # 2. Write the Header ONCE
+        # The client reads 'precision_header_bits' here.
+        self.writer.write_bits(priority, compressor.precision_header_bits)
+
+        # 3. Write X, Y, Z
         for val in vec:
-            h, v, bc = compressor.compress(val)
-            self.writer.write_bits(v, 20)
+            # We enforce the priority we just wrote
+            p, compressed_val, num_bits = compressor.compress(val, priority=priority)
+            
+            # Write the compressed int using the calculated bit count
+            self.writer.write_bits(compressed_val, num_bits)
 
 class UpdateArrayPacket:
     def __init__(self, sequence_id=None):
@@ -131,11 +144,11 @@ class UpdateArrayPacket:
             # 5 bits padding/ID (based on your trace)
             self.writer.write_bits(0, 5) 
             
-            h_val = COMPRESSOR_STAT.compress(self.local_stats[0])
-            e_val = COMPRESSOR_STAT.compress(self.local_stats[1])
+            _, h_val, h_bits = COMPRESSOR_STAT.compress(self.local_stats[0])
+            _, e_val, e_bits = COMPRESSOR_STAT.compress(self.local_stats[1])
             
-            self.writer.write_bits(h_val, 10)
-            self.writer.write_bits(e_val, 10)
+            self.writer.write_bits(h_val, h_bits)
+            self.writer.write_bits(e_val, e_bits)
         else:
             # If 0, client skips Parse_SpawnVitalStats
             self.writer.write_bool(False) 

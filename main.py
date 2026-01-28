@@ -27,6 +27,7 @@ from network.packets import (
 from network.packets.packet_logger import PacketLogger, log_packet
 
 from core.entity import GameEntity, UpdateMask
+from core.commands import commands
 from network.packets.update_array import UpdateArrayPacket
 
 # -------------------------------------------------------------------------
@@ -41,6 +42,7 @@ class WulframServerContext:
         self.cfg = Config.load()
         self.packet_cfg = PacketConfig.load("packets.toml")
         self.logger = PacketLogger()
+        self.entity_counter = 0
 
         defaults = self.cfg.player
         self.player = PlayerSession(
@@ -591,71 +593,10 @@ def on_chat_comm_req(ctx: UdpContext, payload: bytes):
     ctx.send_ack(packet_id=0x20, seq_num=sequence_num)
 
     if (source == 1): # /s system message
-        if (inc_message == "spawn"):
-            # Spawn the player!
-            pkt = TankPacket(
-                net_id=ctx.server.cfg.player.player_id,
-                tank_cfg=ctx.server.packet_cfg.tank,
-                team_id=ctx.server.player.team,
-                pos=(100.0, 100.0, 100.0),
-                vel=(0.0, 0.0, 0.0)
-            )
-            ctx.send(pkt)
-            send_system_message(ctx, "Spawning in...")
-            #start_update_loop(ctx, ctx.server.cfg.player.player_id)
-        elif (inc_message == "enemy"):
-            # 1. SETUP: Create enemy entity
-            my_tank = GameEntity(net_id=500, unit_type=0, team_id=1)
-
-            # 2. LOGIC: Something happens in the game
-            my_tank.set_pos(100.0, 100.0, 50.0)
-            my_tank.set_stats(health=0.85)
-
-            # 3. NETWORK: Time to send updates
-            packet = UpdateArrayPacket()
-
-            # Set the stats for the CLIENT receiving the packet (HUD)
-            #packet.set_local_stats(health=1.0, energy=0.9)
-
-            # Add the tank entity (it will auto-detect position and health changes)
-            packet.add_entity(my_tank, force_spawn=True)
-
-            # Get bytes and send
-            data = b'\x0E' + packet.get_bytes()
-            ctx.send(data)
-
-            # 4. CLEANUP: Clear dirty flags so we don't resend data next frame
-            my_tank.clear_dirty()
-        elif (inc_message == "map"):
-            ctx.send(WorldStatsPacket(map_name="tron"))
-            send_system_message(ctx, "Changing map?")
-        elif (inc_message == "reset"):
-            ctx.send(ResetGamePacket())
-            send_system_message(ctx, "Resetting game...")
-        elif (inc_message == "die"):
-            ctx.send(DeathNoticePacket(ctx.server.cfg.player.player_id))
-            send_system_message(ctx, "Die!")
-        elif (inc_message == "dock"):
-            ctx.send(DockingPacket(entity_id=0, is_docked=True))
-            send_system_message(ctx, "Docking...")
-        elif (inc_message == "undock"):
-            ctx.send(DockingPacket(entity_id=0, is_docked=False))
-            send_system_message(ctx, "Undocking...")
-        elif (inc_message == "carry"):
-            ctx.send(CarryingInfoPacket(
-                player_id=ctx.server.cfg.player.player_id,
-                has_cargo=True,
-                unk_v2=1,
-                item_id=13
-                ))
-        elif (inc_message == "drop"):
-            ctx.send(CarryingInfoPacket(
-                player_id=ctx.server.cfg.player.player_id,
-                has_cargo=False,
-                unk_v2=1,
-                item_id=13
-                ))
-        else:
+        # Try to process as a command
+        found = commands.process(ctx, inc_message)
+        
+        if not found:
             send_system_message(ctx, "Unknown command.")
     else:
         ctx.send(CommMessagePacket(
@@ -686,7 +627,99 @@ def on_beacon_request(ctx: UdpContext, payload: bytes):
     payload_len = reader.read_int16()
 
     some_id = reader.read_int32()
+
+
+# --------------------
+# COMMANDS
+# --------------------
+@commands.command("spawn")
+def cmd_spawn(ctx, unit_type_str=None):
+    """
+    Usage:
+      /s spawn       -> Spawns the player (self)
+      /s spawn 5     -> Spawns an enemy of unit_type 5
+    """
+    # CASE 1: No arguments -> Spawn Player
+    if unit_type_str is None:
+        pkt = TankPacket(
+            net_id=ctx.server.cfg.player.player_id,
+            tank_cfg=ctx.server.packet_cfg.tank,
+            team_id=ctx.server.player.team,
+            pos=(100.0, 100.0, 100.0),
+            vel=(0.0, 0.0, 0.0)
+        )
+        ctx.send(pkt)
+        send_system_message(ctx, "Spawning Local Player...")
+        return
+
+    # CASE 2: Argument provided -> Spawn Enemy/Entity
+    try:
+        u_type = int(unit_type_str)
+    except ValueError:
+        send_system_message(ctx, "Invalid Number.")
+        return
+
+    ctx.server.entity_counter += 1
+    # Create the entity
+    enemy = GameEntity(net_id=ctx.server.entity_counter, unit_type=u_type, team_id=1)
     
+    # Randomize Pos
+    v_big = random.uniform(45.0, 75.0)
+    v_small = random.uniform(0.0, 12.0)
+    enemy.set_pos(80.0 + v_big, 80.0 + v_big, v_small) #15.0 + v_small)
+    enemy.set_stats(health=0.85)
+
+    # Send Packet
+    packet = UpdateArrayPacket()
+    packet.set_local_stats(health=0.95, energy=0.5)
+    packet.add_entity(enemy, force_spawn=True)
+    
+    ctx.send(b'\x0E' + packet.get_bytes())
+    enemy.clear_dirty()
+    
+    send_system_message(ctx, f"Spawned Unit Type {u_type}")
+
+@commands.command("map")
+def cmd_map(ctx, map_name="tron"):
+    ctx.send(WorldStatsPacket(map_name=map_name))
+    send_system_message(ctx, f"Changing map to {map_name}...")
+
+@commands.command("reset")
+def cmd_reset(ctx):
+    ctx.send(ResetGamePacket())
+    send_system_message(ctx, "Resetting game...")
+
+@commands.command("die")
+def cmd_die(ctx):
+    ctx.send(DeathNoticePacket(ctx.server.cfg.player.player_id))
+    send_system_message(ctx, "You died.")
+
+@commands.command("dock")
+def cmd_dock(ctx, state="1"):
+    # "dock" -> dock
+    # "dock 0" -> undock
+    should_dock = (state != "0")
+    ctx.send(DockingPacket(entity_id=0, is_docked=should_dock))
+    msg = "Docking..." if should_dock else "Undocking..."
+    send_system_message(ctx, msg)
+
+@commands.command("carry")
+def cmd_carry(ctx, item_id="13"):
+    ctx.send(CarryingInfoPacket(
+        player_id=ctx.server.cfg.player.player_id,
+        has_cargo=True,
+        unk_v2=1,
+        item_id=int(item_id)
+    ))
+
+@commands.command("drop")
+def cmd_drop(ctx):
+    ctx.send(CarryingInfoPacket(
+        player_id=ctx.server.cfg.player.player_id,
+        has_cargo=False,
+        unk_v2=1,
+        item_id=0
+    ))
 
 # -------------------------------------------------------------------------
 # HELPERS
