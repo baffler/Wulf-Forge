@@ -59,9 +59,9 @@ class TranslationPacket(Packet):
         
         vector_templates = [
             (4, 16, "4096.0", "8192.0"), # Slot 0: Position
-            (4, 14, "200.0",  "400.0"),  # Slot 1: Velocity
-            (4, 12, "1.0",    "2.0"),    # Slot 2: Rotation
-            (4, 12, "10.0",   "20.0")    # Slot 3: Spin
+            (4, 16, "200.0",  "400.0"),  # Slot 1: Velocity
+            (4, 16, "1.0",    "2.0"),    # Slot 2: Rotation
+            (4, 16, "10.0",   "20.0")    # Slot 3: Spin
         ]
 
         # --- WRITING THE PACKET ---

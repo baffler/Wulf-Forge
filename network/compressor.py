@@ -71,14 +71,13 @@ def compress_fixed(self, value):
 
 # --- GLOBAL CONFIGURATION (Must match the Translation Packet!) ---
 # Index 0: Position (12 bits, Range 8192)
-#COMPRESSOR_POS = FloatCompressor(4096.0, 8192.0, 12)
-COMPRESSOR_POS = FloatCompressor(1000.0, 2000.0, 16)
+COMPRESSOR_POS = FloatCompressor(4096.0, 8192.0, 20)
 
 # Index 1: Velocity (10 bits, Range 400)
-COMPRESSOR_VEL = FloatCompressor(200.0, 400.0, 10)
+COMPRESSOR_VEL = FloatCompressor(4096.0, 8192.0, 20)
 
 # Index 2: Rotation (8 bits, Range 2.0)
-COMPRESSOR_ROT = FloatCompressor(1.0, 2.0, 8)
+COMPRESSOR_ROT = FloatCompressor(4096.0, 8192.0, 20)
 
 # Index 5 & 8: 8 bits, Range 1.0 (0.0 to 1.0)
 # We pass '8' as the bits. The logic in __init__ subtracts 2 for header, 

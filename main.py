@@ -26,7 +26,8 @@ from network.packets import (
 )
 from network.packets.packet_logger import PacketLogger, log_packet
 
-from network.update_array import UpdateArrayPacket
+from core.entity import GameEntity, UpdateMask
+from network.packets.update_array import UpdateArrayPacket
 
 # -------------------------------------------------------------------------
 # CONTEXTS
@@ -259,7 +260,7 @@ def start_update_loop(ctx: UdpContext, net_id: int):
                 pkt = UpdateArrayPacket(sequence_id=update_seq)
 
                 num = random.uniform(0.5, 1.0)
-                pkt.update_state(net_id=ctx.server.cfg.player.player_id, health=num, energy=num)
+                #pkt.update_state(net_id=ctx.server.cfg.player.player_id, health=num, energy=num)
                 
                 """pkt.add_movement(
                     net_id=net_id,
@@ -602,6 +603,29 @@ def on_chat_comm_req(ctx: UdpContext, payload: bytes):
             ctx.send(pkt)
             send_system_message(ctx, "Spawning in...")
             #start_update_loop(ctx, ctx.server.cfg.player.player_id)
+        elif (inc_message == "enemy"):
+            # 1. SETUP: Create enemy entity
+            my_tank = GameEntity(net_id=500, unit_type=0, team_id=1)
+
+            # 2. LOGIC: Something happens in the game
+            my_tank.set_pos(100.0, 100.0, 50.0)
+            my_tank.set_stats(health=0.85)
+
+            # 3. NETWORK: Time to send updates
+            packet = UpdateArrayPacket()
+
+            # Set the stats for the CLIENT receiving the packet (HUD)
+            #packet.set_local_stats(health=1.0, energy=0.9)
+
+            # Add the tank entity (it will auto-detect position and health changes)
+            packet.add_entity(my_tank, force_spawn=True)
+
+            # Get bytes and send
+            data = b'\x0E' + packet.get_bytes()
+            ctx.send(data)
+
+            # 4. CLEANUP: Clear dirty flags so we don't resend data next frame
+            my_tank.clear_dirty()
         elif (inc_message == "map"):
             ctx.send(WorldStatsPacket(map_name="tron"))
             send_system_message(ctx, "Changing map?")

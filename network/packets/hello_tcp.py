@@ -54,7 +54,7 @@ class HelloPacket(Packet):
 
         return b'\x13' + pkt.get_bytes()
 
-    # --- Factory Methods (Optional, but very "C#" and cleaner to use) ---
+    # --- Factory Methods ---
 
     @classmethod
     def create_version(cls, version: int = 0x4E89) -> HelloPacket:
