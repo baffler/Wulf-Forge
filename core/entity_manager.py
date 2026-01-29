@@ -13,7 +13,7 @@ class EntityManager:
         net_id = self._next_net_id
         self._next_net_id += 1
 
-        entity = GameEntity(net_id=net_id, unit_type=unit_type, team_id=1)
+        entity = GameEntity(net_id=net_id, unit_type=unit_type, team_id=team_id)
         entity.pos = pos
         entity.health = 1.0
         # Marking DEFINITION as dirty will make sure it gets spawned

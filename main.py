@@ -715,7 +715,7 @@ def cmd_spawn(ctx, unit_type_str=None):
     # This automatically handles ID generation and marks it as created (Dirty)
     new_ent = ctx.server.entities.create_entity(
         unit_type=u_type, 
-        team_id=1,
+        team_id=ctx.server.player.team,
         pos=(80.0 + v_big, 80.0 + v_big, 25.0 + v_small),
     )
 
