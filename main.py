@@ -5,6 +5,7 @@ import threading
 import time
 import struct
 import math
+import os
 import random
 from typing import Dict, Tuple, Optional
 
@@ -28,6 +29,7 @@ from network.packets.packet_logger import PacketLogger, log_packet
 
 from core.entity import GameEntity, UpdateMask
 from core.entity_manager import EntityManager
+from core.map_loader import MapLoader
 from core.commands import commands
 from network.packets.update_array import UpdateArrayPacket
 
@@ -745,6 +747,42 @@ def cmd_list(ctx):
 def cmd_map(ctx, map_name="tron"):
     ctx.send(WorldStatsPacket(map_name=map_name))
     send_system_message(ctx, f"Changing map to {map_name}...")
+
+@commands.command("loadmap")
+def cmd_loadmap(ctx, map_name="bpass"):
+    """
+    Loads map entities from: ./shared/data/maps/<map_name>/state
+    Usage: /s loadmap bpass
+    """
+    # Construct the path: ./shared/data/maps/{map_name}/state
+    file_path = os.path.join("shared", "data", "maps", map_name, "state")
+    
+    if not os.path.exists(file_path):
+        send_system_message(ctx, f"Could not find map file at: {file_path}")
+        print(f"[MapLoader] File not found: {file_path}")
+        return
+
+    try:
+        with open(file_path, "r") as f:
+            data = f.read()
+        
+        # Initialize the loader with the current entity manager
+        loader = MapLoader(ctx.server.entities)
+        loader.load_from_string(data)
+        
+        send_system_message(ctx, f"Loaded map state: {map_name}")
+        
+        # Force a full update to the client so they see the new buildings
+        # This usually happens automatically via dirty flags, but ensures it.
+        # ctx.server.entities.get_dirty_packet(...) 
+
+        # Just send the full snapshot
+        snapshot = ctx.server.entities.get_snapshot_packet(health=1.0, energy=1.0)
+        ctx.send(snapshot)
+        
+    except Exception as e:
+        print(f"Failed to load map: {e}")
+        send_system_message(ctx, "Error loading map.")
 
 @commands.command("reset")
 def cmd_reset(ctx):
