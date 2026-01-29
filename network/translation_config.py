@@ -98,6 +98,8 @@ GLOBAL_CONFIGS[1] = {"head": 5, "total": 0, "max": "0.0", "range": "0.0"}
 GLOBAL_CONFIGS[2] = {"head": 8, "total": 0, "max": "0.0", "range": "0.0"} # Unit Type
 GLOBAL_CONFIGS[3] = {"head": 8, "total": 0, "max": "0.0", "range": "0.0"} # Team ID
 
+GLOBAL_CONFIGS[4] = {"head": 8, "total": 0, "max": "0.0", "range": "0.0"} # Unit Type Stored within Cargo
+
 # Index 5: Health (0.0 to 1.0)
 # --- 1. FIXED STAT CONFIG (Health) ---
 # Logic: "I want exactly 10 bits of data. No header."
@@ -120,9 +122,16 @@ GLOBAL_CONFIGS[14] = {"head": 8, "total": 0, "max": "1.0", "range": "1.0"}
 # Setup: head=4, total=16.
 # Math: Range of header is 4 (0-3). Base = 16 - 4 + 1 = 13.
 # Result: Header 0=13 bits, Header 3=16 bits.
-VEC_POS  = {"head": 4, "total": 16, "max": "4096.0", "range": "8192.0"} # +/- 4096
+VEC_POS  = {"head": 4, "total": 16, "max": "8192.0", "range": "16384.0"} # +/- 8192
+
+# +/- 200 *should* enough for tank velocity
 VEC_VEL  = {"head": 4, "total": 16, "max": "200.0",  "range": "400.0"}  # +/- 200
-VEC_ROT  = {"head": 4, "total": 16, "max": "1.0",    "range": "2.0"}    # +/- 1.0
+
+# Increased to cover 2*PI (approx 6.28). 
+# Range 12.6 allows for -6.3 to +6.3, covering full rotation safely.
+VEC_ROT  = {"head": 4, "total": 16, "max": "6.3",    "range": "12.6"}    # +/- 2*PI
+
+# Angular velocity of 10 rads/sec should be fast enough (~1.5 full spins/sec)
 VEC_SPIN = {"head": 4, "total": 16, "max": "10.0",   "range": "20.0"}   # +/- 10.0
 
 # --- APPLY VECTORS TO BANKS (Indices 16-27) ---
@@ -151,4 +160,5 @@ COMPRESSOR_STAT = _make(GLOBAL_CONFIGS[5]) # Health/Energy
 # Also export the ID bit counts so the packet writer doesn't need to guess
 ID_BITS_UNIT = GLOBAL_CONFIGS[2]['head']
 ID_BITS_TEAM = GLOBAL_CONFIGS[3]['head']
+ID_BITS_UNIT_CARGO = GLOBAL_CONFIGS[4]['head']
 BANK_SELECTOR_BITS = GLOBAL_CONFIGS[0]['head']

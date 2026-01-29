@@ -37,6 +37,14 @@ class EntitySerializer:
             self.writer.write_bits(entity.team_id, ID_BITS_TEAM)
             # team_id_also_maybe (State/Sub-team)
             self.writer.write_bits(entity.team_id, ID_BITS_TEAM) 
+
+            # TODO: 37 = decoration, figure out what the ints are for
+            if entity.unit_type == 37:
+                self.writer.write_int32(0)
+                self.writer.write_int32(0)
+            elif entity.unit_type == 19:
+                # Need to store/get actual unit id value, hardcoding 25 for now (Power Cell)
+                self.writer.write_bits(25, ID_BITS_UNIT_CARGO) 
             
             # is_teleport_or_snap (Force Snap)
             self.writer.write_bool(True) 

@@ -7,10 +7,10 @@ from core.entity import UpdateMask
 # --- CONFIGURATION ---
 UNIT_TYPE_MAP = {
     "e": 25, # Power Cell
-    "s": 32, # Missile Launcher ?
+    "s": 29, # Flak Turret
     "g": 30, # Gun Turret
     "r": 27, # Repair Pad
-    "f": 29, # Flak Turret
+    "f": 26, # Refuel Pad
     "u": 20, # Uplink
     "h": 35, # Not sure, going with darklight for now
 }
