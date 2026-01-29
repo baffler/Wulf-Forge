@@ -292,7 +292,7 @@ def start_ping_loop(ctx: TcpContext):
         while not ctx.stop_ping_event.is_set():
             try:
                 ctx.send(PingRequestPacket())
-                ctx.stop_ping_event.wait(2.0)
+                ctx.stop_ping_event.wait(10.0)
             except OSError:
                 break
             except Exception:
@@ -301,6 +301,10 @@ def start_ping_loop(ctx: TcpContext):
 
 def unknown_packet(ctx, payload: bytes):
     opcode = payload[0]
+    
+    if opcode in [0x09, 0x0A, 0x0B, 0x0C, 0x40, 0x49]:
+            return
+    
     print(f"[?] Unknown opcode 0x{opcode:02X} (len={len(payload)})")
 
 # Create dispatcher early here
@@ -416,8 +420,8 @@ def on_d_handshake(ctx: UdpContext, payload: bytes):
     # 2. Send Our Handshake Definitions
     # (Simplified for brevity, full impl in original udp_handler)
     pkt_hs = PacketWriter()
-    pkt_hs.write_int32(get_ticks())
-    pkt_hs.write_int32(1001) # Player ID
+    pkt_hs.write_int32(get_ticks()) # Server timestamp
+    pkt_hs.write_int32(ctx.server.cfg.player.player_id) # Player ID?
     # --- STREAM DEFINITIONS ---
     # We define 4 streams to match the client's expectations
     pkt_hs.write_int32(4) # Def Count
@@ -477,20 +481,47 @@ def on_hello_ack(ctx: UdpContext, payload: bytes):
         print("    > UDP Link Verified via 0x08.")
         ctx.server.udp_root_received.set()
 
+@dispatcher.route(0x0B)
+def on_client_ping_request(ctx: UdpContext, payload: bytes):
+    """
+    UDP Packet 0x0B: Client Pinging Server.
+    The Client sends this to measure RTT. We must reply with 0x0C.
+    """
+    if len(payload) < 5: return
+    
+    reader = PacketReader(payload)
+    reader.read_byte() # Op
+    
+    # 1. Read the timestamp the Client sent us
+    client_ts = reader.read_int32()
+    
+    # 2. Reply with 0x0C (Pong), echoing that timestamp exactly
+    w = PacketWriter()
+    w.write_int32(client_ts) # Doesn't seem to change the ping in the client no matter what this is set to?
+    ctx.send(b'\x0C' + w.get_bytes())
+    #print(f"    > Replying to Client Ping (Time: {client_ts})")
+
 @dispatcher.route(0x0C)
 def on_udp_ping(ctx: UdpContext, payload: bytes):
-    """Ping Reply"""
+    """
+    UDP Packet 0x0C: Client Replying to Server.
+    This is the response to OUR 0x0B packet (sent via TCP/UDP).
+    """
     if len(payload) >= 5:
         reader = PacketReader(payload)
         reader.read_byte() # Op
-        ts = reader.read_int32()
-        rtt = get_ticks() - ts
-        print(f"    > UDP PONG RTT={rtt}ms")
+        # This is the timestamp WE sent originally (Server Time)
+        server_ts = reader.read_int32()
+
+        # Calculate RTT for server logs
+        rtt = get_ticks() - server_ts
+
+        #print(f"    > Server Ping Confirmed. RTT: {rtt}ms")
         
-        # Echo back
-        w = PacketWriter()
-        w.write_int32(get_ticks())
-        ctx.send(b'\x0C' + w.get_bytes())
+        # Shouldn't have to echo it back here, since it's a PONG
+        #w = PacketWriter()
+        #w.write_int32(client_ts)
+        #ctx.send(b'\x0C' + w.get_bytes())
 
 @dispatcher.route(0x33)
 def on_ack2(ctx: UdpContext, payload: bytes):

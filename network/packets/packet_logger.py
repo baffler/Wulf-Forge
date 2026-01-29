@@ -53,6 +53,10 @@ class PacketLogger:
         pkt_type = payload[0]
         name = self.packet_names.get(pkt_type, "UNKNOWN")
 
+        # Ignore spammy packets
+        if pkt_type in [0x09, 0x0B, 0x0C, 0x40, 0x49]:
+            return
+
         # Displayed length: match your old style (just the bytes you pass in)
         # But we also optionally show the TCP framing in the hex dump.
         length = len(payload)
