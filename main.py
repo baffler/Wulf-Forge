@@ -27,6 +27,7 @@ from network.packets import (
 from network.packets.packet_logger import PacketLogger, log_packet
 
 from core.entity import GameEntity, UpdateMask
+from core.entity_manager import EntityManager
 from core.commands import commands
 from network.packets.update_array import UpdateArrayPacket
 
@@ -42,7 +43,7 @@ class WulframServerContext:
         self.cfg = Config.load()
         self.packet_cfg = PacketConfig.load("packets.toml")
         self.logger = PacketLogger()
-        self.entity_counter = 0
+        self.entities = EntityManager()
 
         defaults = self.cfg.player
         self.player = PlayerSession(
@@ -235,53 +236,43 @@ class UdpContext:
 # DISPATCHER & HANDLERS
 # -------------------------------------------------------------------------
 
-def start_update_loop(ctx: UdpContext, net_id: int):
-    """
-    Spins up a thread that sends 0x49 Update Arrays 
-    at 10Hz (100ms) indefinitely.
-    """
+def start_update_loop(ctx: UdpContext):
     def run():
-        print(f"[UDP] Starting Update Loop for NetID {net_id}")
-        
-        # Start at 0, 0, 0
-        x, y, z = 0.0, 0.0, 0.0
-        angle = 0.0
-        
-        # Use the context's outgoing sequence or track our own for updates
-        update_seq = 0
+        print(f"[UDP] Starting Global Update Loop")
+
+        TARGET_FPS = 5
+        FRAME_TIME = 1.0 / TARGET_FPS
         
         while not ctx.server.stop_update_event.is_set():
-            try:
-                # --- SIMULATE PHYSICS ---
-                # Move in a circle radius 20 around origin
-                angle += 0.1
-                x = math.sin(angle) * 20.0
-                z = math.cos(angle) * 20.0
-                
-                # --- BUILD PACKET ---
-                pkt = UpdateArrayPacket(sequence_id=update_seq)
+            start_time = time.time()
 
-                num = random.uniform(0.5, 1.0)
-                #pkt.update_state(net_id=ctx.server.cfg.player.player_id, health=num, energy=num)
+            try:
+                # 1. SIMULATE (Move entities, etc.)
+                # In a real engine, you'd iterate entities and update .pos here
+                for ent in ctx.server.entities.get_all():
+                    ent.pos = (ent.pos[0] + 0.33, ent.pos[1] + 0.33, ent.pos[2])
+                    ent.mark_dirty(UpdateMask.POS)
+                    # Example: Spin everyone just to test
+                    #ent.rot = (0, ent.rot[1] + 0.1, 0)
+                    #ent.mark_dirty(UpdateMask.ROT)
+
+                # 2. GATHER DELTAS
+                # Pass health and energy/fuel for our local tank
+                update_payload = ctx.server.entities.get_dirty_packet(health=1.0, energy=1.0)
                 
-                """pkt.add_movement(
-                    net_id=net_id,
-                    pos=(x, 0.0, z),    # Y is up/down usually
-                    vel=(0.0, 0.0, 0.0),# Ignored for now
-                    rot=(0.0, angle, 0.0) # Rotate with the circle
-                )"""
-                
-                print("    > UDP UPDATE ARRAY 0x0E")
-                # --- SEND (FIRE AND FORGET) ---
-                # ctx.send automatically logs it and sends via UDP
-                ctx.send(b'\x0E' + pkt.get_bytes())
-                
-                update_seq += 1
-                time.sleep(0.5) # 100ms delay = 10 Updates Per Second
+                # 3. BROADCAST (Send to this client)
+                if update_payload:
+                    ctx.send(update_payload)
                 
             except Exception as e:
-                print(f"[ERR] Update Loop Died: {e}")
+                print(f"[ERR] Update Loop: {e}")
                 break
+
+            # 3. PRECISE SLEEP
+            # Calculates exactly how long to sleep to maintain 10Hz
+            elapsed = time.time() - start_time
+            sleep_time = max(0.0, FRAME_TIME - elapsed)
+            time.sleep(sleep_time)
                 
     t = threading.Thread(target=run, daemon=True)
     print("    > Starting Update Loop...")
@@ -302,7 +293,7 @@ def start_ping_loop(ctx: TcpContext):
 def unknown_packet(ctx, payload: bytes):
     opcode = payload[0]
     
-    if opcode in [0x09, 0x0A, 0x0B, 0x0C, 0x40, 0x49]:
+    if opcode in [0x09, 0x0A, 0x0B, 0x0C, 0x10, 0x40, 0x49]:
             return
     
     print(f"[?] Unknown opcode 0x{opcode:02X} (len={len(payload)})")
@@ -372,7 +363,10 @@ def on_want_updates(ctx: TcpContext, payload: bytes):
                 recepient_id=0, 
                 message="To spawn in type /s spawn"
             ))
-    #send_ping_request(ctx.transport.sock)
+    # SEND FULL WORLD SNAPSHOT
+    snapshot = ctx.server.entities.get_snapshot_packet(health=1.0, energy=1.0)
+    # We send this over TCP to ensure they get the initial world state reliably
+    ctx.send(snapshot)
 
 @dispatcher.route(0x4F)
 def on_kudos(ctx: TcpContext, payload: bytes):
@@ -565,10 +559,10 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
     seq = reader.read_int16()
     length = reader.read_int16()
     is_team_switch = reader.read_byte() == 0x01
-    team_id = reader.read_int32() # passed as an arg, this is the team id ! red = 1, blue = 2
-    unk_int2 = reader.read_int32() # always 0 ?
-
-    print(f"    > RECV REINCARNATE (Sequence {seq} | Len {length}): IsTeamSwitch?: {is_team_switch} | Team Number: {team_id} | {unk_int2}")
+    # This is team_id if is_team_switch is 1 (true)
+    # If is_team_switch is 0 (false) then it's the repair pad's net id
+    team_id_or_repaid_pad = reader.read_int32()
+    unit_id = reader.read_int32() # Tank or Scout
     
     # [Op] [Seq] [Len] [Data...]
     # Logic to spawn would go here
@@ -578,15 +572,35 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
 
     # Check if this is a team switch or spawn request
     if (not is_team_switch):
-        unk_int3 = reader.read_int32() # double/float, maybe x cord
-        unk_int4 = reader.read_int32() # double/float, maybe y cord
+        unk_int3 = float(reader.read_int32()) # double/float, maybe x cord
+        unk_int4 = float(reader.read_int32()) # double/float, maybe y cord
 
-        print(f"    > SPAWN IN? : {unk_int3} | {unk_int4}")
-        ctx.send(ReincarnatePacket(code=4)) # Can't enter yet. Game not ready.
-        #self.send_tank_packet(addr, net_id=ctx.server.cfg.player.player_id, unit_type=0, pos=(100.0, 100.0, 100.0), vel=(100.0, 100.0, 100.0))
+        net_id = team_id_or_repaid_pad
+        print(f"    > RECV REINCARNATE (SPAWN REQ): Unit ID: {unit_id} | net_id #{net_id}")
+        print(f"    > Unknown values: {unk_int3} | {unk_int4}")
+        
+        # Find the selected entity (the repair pad they clicked on to spawn in)
+        repair_pad = ctx.server.entities.get_entity(net_id)
+        if not repair_pad:
+            send_system_message(ctx, "Can't find selected spawn point.")
+            ctx.send(ReincarnatePacket(code=4)) # Can't enter yet. Game not ready.
+            return
 
+        pkt = TankPacket(
+            net_id=ctx.server.cfg.player.player_id,
+            tank_cfg=ctx.server.packet_cfg.tank,
+            team_id=ctx.server.player.team,
+            unit_type=unit_id,
+            pos=repair_pad.pos,
+            vel=(0.0, 0.0, 0.0)
+        )
+        ctx.send(pkt)
+        send_system_message(ctx, "Spawning Local Player...")
+        return
+
+    team_id = team_id_or_repaid_pad
+    print(f"    > RECV REINCARNATE (TEAM SWITCH): Team : {team_id}")
     # Switch their teams
-    # Team 0: is *maybe* a spawn request? Or a request to spawn when there's no repair pads?
     if (team_id == 1):
         ctx.server.player.team = 1
         ctx.send(UpdateStatsPacket(player_id=ctx.server.cfg.player.player_id, team_id=1))
@@ -681,6 +695,7 @@ def cmd_spawn(ctx, unit_type_str=None):
         )
         ctx.send(pkt)
         send_system_message(ctx, "Spawning Local Player...")
+        start_update_loop(ctx)
         return
 
     # CASE 2: Argument provided -> Spawn Enemy/Entity
@@ -689,26 +704,42 @@ def cmd_spawn(ctx, unit_type_str=None):
     except ValueError:
         send_system_message(ctx, "Invalid Number.")
         return
-
-    ctx.server.entity_counter += 1
-    # Create the entity
-    enemy = GameEntity(net_id=ctx.server.entity_counter, unit_type=u_type, team_id=1)
     
     # Randomize Pos
-    v_big = random.uniform(45.0, 75.0)
-    v_small = random.uniform(0.0, 12.0)
-    enemy.set_pos(80.0 + v_big, 80.0 + v_big, v_small) #15.0 + v_small)
-    enemy.set_stats(health=0.85)
+    v_big = random.uniform(45.0, 85.0)
+    v_small = random.uniform(0.0, 10.0)
 
-    # Send Packet
-    packet = UpdateArrayPacket()
-    packet.set_local_stats(health=0.95, energy=0.5)
-    packet.add_entity(enemy, force_spawn=True)
+    # Create via Manager
+    # This automatically handles ID generation and marks it as created (Dirty)
+    new_ent = ctx.server.entities.create_entity(
+        unit_type=u_type, 
+        team_id=1,
+        pos=(80.0 + v_big, 80.0 + v_big, 25.0 + v_small),
+    )
+
+    update_payload = ctx.server.entities.get_dirty_packet(health=0.9, energy=0.5)
+    if update_payload:
+        ctx.send(update_payload)
     
-    ctx.send(b'\x0E' + packet.get_bytes())
-    enemy.clear_dirty()
+    send_system_message(ctx, f"Spawned Entity #{new_ent.net_id} (Type {u_type})")
+
+@commands.command("list")
+def cmd_list(ctx):
+    """Lists all active entities."""
+    entities = ctx.server.entities.get_all()
+    count = len(entities)
     
-    send_system_message(ctx, f"Spawned Unit Type {u_type}")
+    send_system_message(ctx, f"--- Entity List ({count}) ---")
+    
+    if count == 0:
+        send_system_message(ctx, "No entities found.")
+        return
+
+    for e in entities:
+        # Format: [ID: 1] Type: 5 | Pos: 100.0, 100.0, 50.0
+        msg = (f"[ID:{e.net_id}] Type:{e.unit_type} | "
+               f"Pos: {e.pos[0]:.1f}, {e.pos[1]:.1f}, {e.pos[2]:.1f}")
+        send_system_message(ctx, msg)
 
 @commands.command("map")
 def cmd_map(ctx, map_name="tron"):
@@ -844,7 +875,6 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
     start_ping_loop(ctx)
 
 def main():
-    pass
     server = WulframServerContext()
     server.run()
 
