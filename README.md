@@ -1,14 +1,16 @@
 # Wulf Forge: Wulfram 2 Server Emulator
+
+## Getting Started
 * Download client: https://download.cnet.com/wulfram-ii/3000-2119_4-10077757.html
 * Download the source code for Wulf-Forge: https://github.com/baffler/Wulf-Forge/archive/refs/heads/main.zip
 * Install the client and extract Wulf-Forge where best convenient
 
-# To get the server running
+### To get the server running
 * Install python (I've tested with Python 3.12)
 * Go to the directory where you extracted Wulf-Forge
 * Open a terminal and run `python main.py`
 
-# Make Wulfram 2 connect to the server
+### Make Wulfram 2 connect to the server
 * You'll need to pass a couple of parameters to get it working
 * You can run wulfram2.exe with command arguments `-root -windowed`
 * The simpliest way to do this is to create a text file alongside the exe (wherever you installed Wulfram 2)
@@ -24,7 +26,14 @@
 * Save it as `_override_args` (No file extension)
 * Then you can just launch the wulfram exe and it will let you connect to the local server
 
-# History
+## Loading Maps
+* Before spawning in you can use `/s map <map name>`
+* You can copy all the maps from `<Wulfram Install>\data\maps` into `<Wulf-Forge Folder>\shared\data\maps`
+* And (depending on the map) you can use `/s loadmap <map name>` to load in the `state` file from the map
+* This will load the initial base setup, with repair pads and other base units
+* Not all maps have state files, some have multiple
+
+## History
 (From the Facebook group)
 
 The best free game which refuses to die. As of October 2010, Slurpy-the Divine One-has resurrected the game once again. And sometime in 2011, the game went down again. Shit.
