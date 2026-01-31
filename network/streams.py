@@ -231,3 +231,22 @@ class PacketReader:
             raw_bytes.pop()
             
         return raw_bytes.decode('ascii', errors='ignore')
+    
+    def read_quantized_float(self, config) -> float:
+        """
+        Reads a quantized float using the provided TranslationConfig.
+        Handles both Fixed Mode (Stats, Actions) and Dynamic Mode (Vectors).
+        """
+        # 1. Check if we are in Fixed Mode or Dynamic Mode
+        if config.max_total_bits <= 0:
+            # Fixed Mode: No Header is written. Priority is implicitly 0.
+            priority = 0
+            current_bits = config.precision_base_bits
+            raw_val = self.read_bits(current_bits)
+            return config.decompress(priority, raw_val)
+        else:
+            # Dynamic Mode: Read Header first.
+            priority = self.read_bits(config.precision_header_bits)
+            current_bits = config.precision_base_bits + priority
+            raw_val = self.read_bits(current_bits)
+            return config.decompress(priority, raw_val)

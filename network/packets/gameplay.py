@@ -5,6 +5,19 @@ from .packet_config import TankPacketConfig
 from core.config import get_ticks
 from network.packets.base import Packet
 
+# TODO: Add loop to delete more than 1 object at a time
+@dataclass
+class DeleteObjectPacket(Packet):
+    entity_id: int
+
+    def serialize(self) -> bytes:
+        pkt = PacketWriter()
+        pkt.write_int32(get_ticks())
+        pkt.write_byte(1) # 1 Object
+        pkt.write_int32(self.entity_id)
+        pkt.write_byte(1) # True
+        return b'\x15' + pkt.get_bytes()
+
 @dataclass
 class DockingPacket(Packet):
     entity_id: int # or net_id ?

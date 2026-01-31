@@ -77,6 +77,36 @@ class TranslationConfig:
             raw_val = int(scaled) + 1
 
         return priority, raw_val, current_bits
+    
+    def decompress(self, priority: int, raw_val: int) -> float:
+        """
+        Reconstructs the float value from the raw integer and priority header.
+        Matches C++ 'Unpack_Float_From_Int'.
+        """
+        # 1. Determine Total Bits
+        if self.max_total_bits <= 0:
+            current_bits = self.precision_base_bits
+        else:
+            current_bits = self.precision_base_bits + priority
+
+        # 2. Special Case: Zero
+        if raw_val == 0:
+            return 0.0
+
+        # 3. Calculate Denominator
+        denom = (1 << current_bits) - 2
+        if denom <= 0: denom = 1
+
+        # 4. Calculate Float
+        if self.range == 0:
+            return self.max_value
+        
+        # Formula: Result = Max - ((Raw - 1) * Range / Denom)
+        scaled = raw_val - 1
+        delta = (scaled * self.range) / denom
+        result = self.max_value - delta
+
+        return result
 
 # --- GLOBAL CONFIGURATION ---
 # --- THE SOURCE OF TRUTH (DATA) ---
@@ -162,3 +192,17 @@ ID_BITS_UNIT = GLOBAL_CONFIGS[2]['head']
 ID_BITS_TEAM = GLOBAL_CONFIGS[3]['head']
 ID_BITS_UNIT_CARGO = GLOBAL_CONFIGS[4]['head']
 BANK_SELECTOR_BITS = GLOBAL_CONFIGS[0]['head']
+
+
+# Simple Cache for reusing TranslationConfig objects for Action lookups
+_config_cache = {}
+
+def get_config_by_index(index: int) -> TranslationConfig:
+    """Returns the TranslationConfig object for a given global table index."""
+    if index < 0 or index >= len(GLOBAL_CONFIGS):
+        return _make(SCALAR_DEFAULT) # Fallback
+    
+    if index not in _config_cache:
+        _config_cache[index] = _make(GLOBAL_CONFIGS[index])
+    
+    return _config_cache[index]

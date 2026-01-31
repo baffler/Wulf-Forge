@@ -66,8 +66,7 @@ class EntitySerializer:
             
         # Bit 4: Spin (Angular Velocity)
         if mask & UpdateMask.SPIN:
-            # Assuming 0 spin for now, using ROT compressor
-            self._write_vec((0,0,0), COMPRESSOR_SPIN) 
+            self._write_vec(entity.spin, COMPRESSOR_SPIN) 
 
         # Bit 5: Health
         if mask & UpdateMask.HEALTH:

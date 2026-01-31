@@ -19,6 +19,19 @@ class ReincarnatePacket(Packet):
         return b'\x25' + pkt.get_bytes()
 
 @dataclass
+class BirthNoticePacket(Packet):
+    """
+    Packet 0x1E: BIRTH
+    """
+    player_id: int
+
+    def serialize(self) -> bytes:
+        pkt = PacketWriter()
+        pkt.write_int32(self.player_id)
+        pkt.write_int32(1) # Unknown
+        return b'\x1E' + pkt.get_bytes()
+
+@dataclass
 class DeathNoticePacket(Packet):
     """
     Packet 0x1D: DEATH_NOTICE

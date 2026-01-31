@@ -20,7 +20,8 @@ from network.packets.packet_config import PacketConfig
 from network.packets import (
     Packet, MotdPacket, IdentifiedUdpPacket, LoginStatusPacket, PlayerInfoPacket,
     BpsReplyPacket, PingRequestPacket, AddToRosterPacket, WorldStatsPacket,
-    DeathNoticePacket, CarryingInfoPacket, DockingPacket, ResetGamePacket,
+    DeathNoticePacket, BirthNoticePacket, CarryingInfoPacket, DockingPacket, 
+    ResetGamePacket, DeleteObjectPacket,
     GameClockPacket, HelloPacket, TeamInfoPacket, ReincarnatePacket,
     TankPacket, BehaviorPacket, TranslationPacket,
     UpdateStatsPacket, CommMessagePacket,
@@ -32,6 +33,7 @@ from core.entity_manager import EntityManager
 from core.map_loader import MapLoader
 from core.commands import commands
 from network.packets.update_array import UpdateArrayPacket
+from network.translation_config import get_config_by_index, GLOBAL_CONFIGS
 
 # -------------------------------------------------------------------------
 # CONTEXTS
@@ -46,6 +48,7 @@ class WulframServerContext:
         self.packet_cfg = PacketConfig.load("packets.toml")
         self.logger = PacketLogger()
         self.entities = EntityManager()
+        self.my_entity: Optional[GameEntity] = None
 
         defaults = self.cfg.player
         self.player = PlayerSession(
@@ -252,15 +255,63 @@ def start_update_loop(ctx: UdpContext):
                 # 1. SIMULATE (Move entities, etc.)
                 # In a real engine, you'd iterate entities and update .pos here
                 for ent in ctx.server.entities.get_all():
-                    ent.pos = (ent.pos[0] + 0.33, ent.pos[1] + 0.33, ent.pos[2])
-                    ent.mark_dirty(UpdateMask.POS)
+                    #ent.vel = (ent.vel[0] + 0.5, ent.vel[1] + 0.5, ent.vel[2] + 0.5)
+                    #ent.mark_dirty(UpdateMask.VEL)
+                    #ent.spin = (ent.spin[0] + 0.5, ent.spin[1] + 0.5, ent.spin[2] + 0.5)
+                    #ent.mark_dirty(UpdateMask.SPIN)
+                    #ent.pos = (ent.pos[0], ent.pos[1], ent.pos[2] + 0.5)
+                    #ent.mark_dirty(UpdateMask.POS)
                     # Example: Spin everyone just to test
-                    #ent.rot = (0, ent.rot[1] + 0.1, 0)
-                    #ent.mark_dirty(UpdateMask.ROT)
+                    # We preserve X (Roll) and Y (Roll), only modifying Z (Yaw)
+                    """current_roll = ent.rot[0]    # Roll
+                    current_pitch = ent.rot[1]   # Pitch
+                    current_yaw  = ent.rot[2]    # Yaw
+
+                    # Increment Yaw
+                    new_yaw = current_yaw + 0.1
+
+                    # Wrap the angle to stay within -PI to +PI
+                    # (This prevents it from hitting the 6.3 clamp limit in the config)
+                    if new_yaw > math.pi:
+                        new_yaw -= 2 * math.pi
+                    elif new_yaw < -math.pi:
+                        new_yaw += 2 * math.pi
+
+                    # Apply and Mark Dirty
+                    ent.rot = (current_roll, current_pitch, new_yaw)
+                    ent.mark_dirty(UpdateMask.ROT)"""
+
+                    if (ctx.server.my_entity is not None) and (ctx.server.my_entity.net_id is not None):
+                        if (ent.net_id == ctx.server.my_entity.net_id):
+                            
+                            # FIX: Use .get() to avoid KeyError: 4
+                            jump_val = ent.actions.get(4, 0.0)
+                            hover_val = ent.actions.get(5, 0.0) # Default to 0!
+                            
+                            if jump_val >= 1.0:
+                                # Apply Jump Velocity (Z axis)
+                                # We keep X and Y momentum
+                                vx, vy, vz = ent.vel
+                            
+                                # Wake up physics if stopped (Epsilon check)
+                                final_x = vx if abs(vx) > 0.01 else 0.001
+                                final_y = vy if abs(vy) > 0.01 else 0.001
+                                # Apply Jump
+                                ent.vel = (final_x, final_y, 100.0)
+                                ent.mark_dirty(UpdateMask.VEL)
+                                #ent.actions[4] = 0.0
+                                print(f"Apply Jump Jets! {ent.vel}")
+                            elif abs(hover_val) > 0.01:
+                                vx, vy, vz = ent.vel
+                                final_x = vx if abs(vx) > 0.01 else 0.001
+                                final_y = vy if abs(vy) > 0.01 else 0.001
+                                
+                                ent.vel = (final_x, final_y, hover_val * 20.0)
+                                ent.mark_dirty(UpdateMask.VEL)
 
                 # 2. GATHER DELTAS
                 # Pass health and energy/fuel for our local tank
-                update_payload = ctx.server.entities.get_dirty_packet(health=1.0, energy=1.0)
+                update_payload = ctx.server.entities.get_dirty_packet(health=0.9, energy=1.0)
                 
                 # 3. BROADCAST (Send to this client)
                 if update_payload:
@@ -598,6 +649,17 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
         )
         ctx.send(pkt)
         send_system_message(ctx, "Spawning Local Player...")
+        ctx.server.my_entity = ctx.server.entities.create_entity(
+            unit_type=unit_id, 
+            override_net_id=ctx.server.cfg.player.player_id, 
+            team_id=ctx.server.player.team,
+            pos=repair_pad.pos
+        )
+        # Don't update with anything for now, sending the TankPacket to the player
+        # Will create the entity on their end
+        ctx.server.my_entity.pending_mask = 0
+        ctx.server.my_entity.is_manned = True
+        #start_update_loop(ctx)
         return
 
     team_id = team_id_or_repaid_pad
@@ -675,10 +737,127 @@ def on_beacon_request(ctx: UdpContext, payload: bytes):
 
     some_id = reader.read_int32()
 
+# --- ACTION PARSING ---
+
+def parse_action_packet(ctx: UdpContext, payload: bytes, is_dump: bool):
+    """
+    Parses ACTION_UPDATE (0x0A) or ACTION_DUMP (0x09).
+    Both share the same structure: Count + List of Actions.
+    """
+    reader = PacketReader(payload)
+    reader.read_byte() # Opcode
+    
+    # 1. Read Header
+    count = reader.read_byte() # Number of actions
+    
+    # These ints are likely timestamps/sequences
+    time1 = reader.read_int32()
+    time2 = reader.read_int32() 
+    
+    print(f"    > ACTION {'DUMP' if is_dump else 'UPDATE'} | Count: {count} | T1: {time1}")
+
+    # 2. Get Configs needed for decoding
+    # Config 15: Bits used for the Action ID itself
+    cfg_id_bits = get_config_by_index(15) 
+    
+    # Config 10: Analog Actions (ID 5)
+    cfg_analog_5 = get_config_by_index(10)
+    
+    # Config 11: Analog Actions (Other IDs)
+    cfg_analog_std = get_config_by_index(11)
+
+    # Find the entity associated with this connection
+    # For now, we assume the session player_id is the entity we control
+    #my_entity = ctx.server.entities.get_entity(ctx.server.cfg.player.player_id)
+
+    for _ in range(count):
+        # A. Read Action ID
+        action_id = reader.read_bits(cfg_id_bits.precision_header_bits)
+        
+        value = 0.0
+
+        # B. Parse Value based on Action ID logic
+        # Digital Action (1 Bit)
+        if action_id >= 8 or action_id == 4:
+            bit_val = reader.read_bits(1)
+            value = 1.0 if bit_val else 0.0
+            
+        # Upward Thrust (Hover) - SPECIAL CASE
+        # Analog Action ID 5 (always uses Config index 10)
+        elif action_id == 5:
+            value = reader.read_quantized_float(cfg_analog_5)
+            
+        # Analog Action 0-3, 6-7 (Config 11)
+        else:
+            value = reader.read_quantized_float(cfg_analog_std)
+
+        # --- UPDATE THE ENTITY ---
+        if ctx.server.my_entity and value != 0.0:
+            ctx.server.my_entity.actions[action_id] = value
+            #print(f"       Updated Action {action_id} -> {value:.2f}")
+
+        action_names = {
+            1: "Turn",
+            2: "Forward",
+            3: "Stafe",
+            4: "JumpJet",
+            5: "Hover (Up/Down)", 
+        }
+        name = action_names.get(action_id, f"Unknown_{action_id}")
+
+        # Log it to verify inputs
+        #if value != 0.0:
+            #print(f"       Action: {name} [{action_id}]: {value}")
+
+#@dispatcher.route(0x09)
+#def on_action_dump(ctx: UdpContext, payload: bytes):
+#    parse_action_packet(ctx, payload, is_dump=True)
+
+@dispatcher.route(0x0A)
+def on_action_update(ctx: UdpContext, payload: bytes):
+    parse_action_packet(ctx, payload, is_dump=False)
 
 # --------------------
 # COMMANDS
 # --------------------
+
+from core.entity import UpdateMask
+
+@commands.command("jump")
+def cmd_jump(ctx, force="80"):
+    """
+    Applies a vertical velocity impulse to the player.
+    Usage: /s jump [force]
+    """
+    player_id = ctx.server.cfg.player.player_id
+    player = ctx.server.entities.get_entity(player_id)
+    
+    if not player:
+        send_system_message(ctx, "Player entity not found.")
+        return
+
+    try:
+        force_val = float(force)
+    except ValueError:
+        force_val = 80.0
+
+    # 1. Keep existing X/Y velocity (momentum), but set Z to jump speed
+    current_x, current_y, _ = player.vel
+    player.vel = (0.01, 0.01, float(force_val))
+
+    # 2. Mark ONLY the VEL flag. 
+    # CRITICAL: Do NOT use UpdateMask.HARD_SYNC!
+    # If you define UpdateMask.POS, it's fine, but unnecessary for a jump.
+    player.mark_dirty(UpdateMask.VEL)
+    player.mark_dirty(UpdateMask.HARD_SYNC)
+    
+    # 3. (Optional) Force the packet to send immediately
+    update_payload = ctx.server.entities.get_dirty_packet()
+    if update_payload:
+        ctx.send(update_payload)
+        
+    send_system_message(ctx, "Jump Jets Activated!")
+
 @commands.command("spawn")
 def cmd_spawn(ctx, unit_type_str=None):
     """
@@ -697,7 +876,18 @@ def cmd_spawn(ctx, unit_type_str=None):
         )
         ctx.send(pkt)
         send_system_message(ctx, "Spawning Local Player...")
-        start_update_loop(ctx)
+
+        ctx.send(BirthNoticePacket(ctx.server.cfg.player.player_id))
+
+        ctx.server.my_entity = ctx.server.entities.create_entity(
+            unit_type=ctx.server.packet_cfg.tank.unit_type, 
+            override_net_id=ctx.server.cfg.player.player_id, 
+            team_id=ctx.server.player.team,
+            pos=(100.0, 100.0, 100.0),
+        )
+        ctx.server.my_entity.pending_mask = 0
+        ctx.server.my_entity.is_manned = True
+        #start_update_loop(ctx)
         return
 
     # CASE 2: Argument provided -> Spawn Enemy/Entity
@@ -745,6 +935,10 @@ def cmd_list(ctx):
 
 @commands.command("map")
 def cmd_map(ctx, map_name="tron"):
+    if (ctx.server.my_entity):
+        kill_local_player(ctx)
+        time.sleep(0.1) # Wait before we send map change
+
     ctx.send(WorldStatsPacket(map_name=map_name))
     send_system_message(ctx, f"Changing map to {map_name}...")
 
@@ -791,8 +985,10 @@ def cmd_reset(ctx):
 
 @commands.command("die")
 def cmd_die(ctx):
-    ctx.send(DeathNoticePacket(ctx.server.cfg.player.player_id))
-    send_system_message(ctx, "You died.")
+    if (ctx.server.my_entity):
+        kill_local_player(ctx)
+    else:
+        send_system_message(ctx, "You may already be dead.")
 
 @commands.command("dock")
 def cmd_dock(ctx, state="1"):
@@ -832,6 +1028,16 @@ def send_system_message(ctx: UdpContext | TcpContext, message: str, receipient_i
                 recepient_id=receipient_id, 
                 message=message
             ))
+    
+def kill_local_player(ctx: UdpContext | TcpContext):
+    player_id = ctx.server.cfg.player.player_id
+    if (ctx.server.entities.get_entity(player_id)):
+        ctx.send(DeathNoticePacket(player_id))
+        ctx.send(DeleteObjectPacket(player_id))
+        ctx.server.entities.remove_entity(player_id)
+        send_system_message(ctx, "You died.")
+
+    ctx.server.my_entity = None
 
 # -------------------------------------------------------------------------
 # BOOTSTRAP LOGIC

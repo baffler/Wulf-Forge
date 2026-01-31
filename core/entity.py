@@ -30,8 +30,14 @@ class GameEntity:
     pos: tuple = (0.0, 0.0, 0.0)
     vel: tuple = (0.0, 0.0, 0.0)
     rot: tuple = (0.0, 0.0, 0.0)
+    spin: tuple = (0.0, 0.0, 0.0)
     health: float = 1.0
     energy: float = 1.0
+
+    # Input / Actions State
+    # Maps ActionID (int) -> Value (float)
+    # e.g. { 5: 0.5, 1: 1.0 }
+    actions: dict = field(default_factory=dict)
     
     # Flags
     is_manned: bool = True

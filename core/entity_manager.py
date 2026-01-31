@@ -8,10 +8,13 @@ class EntityManager:
         self._entities: Dict[int, GameEntity] = {}
         self._next_net_id = 1  # Start at 1, 0 might be reserved or null
 
-    def create_entity(self, unit_type: int, team_id: int, pos: tuple = (0,0,0)) -> GameEntity:
+    def create_entity(self, unit_type: int, team_id: int, pos: tuple = (0,0,0), override_net_id: Optional[int] = None) -> GameEntity:
         """Creates, stores, and returns a new entity."""
-        net_id = self._next_net_id
-        self._next_net_id += 1
+        if override_net_id is not None:
+            net_id = override_net_id
+        else:
+            net_id = self._next_net_id
+            self._next_net_id += 1
 
         entity = GameEntity(net_id=net_id, unit_type=unit_type, team_id=team_id)
         entity.pos = pos
