@@ -8,13 +8,13 @@ from network.packets.base import Packet
 # TODO: Add loop to delete more than 1 object at a time
 @dataclass
 class DeleteObjectPacket(Packet):
-    entity_id: int
+    net_id: int
 
     def serialize(self) -> bytes:
         pkt = PacketWriter()
         pkt.write_int32(get_ticks())
         pkt.write_byte(1) # 1 Object
-        pkt.write_int32(self.entity_id)
+        pkt.write_int32(self.net_id)
         pkt.write_byte(1) # True
         return b'\x15' + pkt.get_bytes()
 

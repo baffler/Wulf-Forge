@@ -2,6 +2,7 @@
 from typing import Dict, List, Optional
 from core.entity import GameEntity, UpdateMask
 from network.packets.update_array import UpdateArrayPacket
+from network.packets.gameplay import DeleteObjectPacket
 
 class EntityManager:
     def __init__(self):
@@ -26,10 +27,10 @@ class EntityManager:
         self._entities[net_id] = entity
         return entity
 
-    def remove_entity(self, net_id: int):
+    def remove_entity(self, ctx, net_id: int):
         if net_id in self._entities:
             del self._entities[net_id]
-            # TODO: need to send a "Destroy Entity" packet here.
+            ctx.send(DeleteObjectPacket(net_id=net_id))
 
     def get_entity(self, net_id: int) -> Optional[GameEntity]:
         return self._entities.get(net_id)

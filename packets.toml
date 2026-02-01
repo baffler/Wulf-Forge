@@ -4,7 +4,7 @@
 unit_type = 0
 team_id = 1 # this will change at runtime, just leaving it here for now
 default_pos = [100.0, 100.0, 100.0]
-default_vel = [0.0, 0.0, 0.0]
+default_rot = [0.0, 0.0, 0.0]
 
 [tank.stats]
 include_vitals = true

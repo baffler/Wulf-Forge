@@ -48,6 +48,7 @@ class WulframServerContext:
         self.packet_cfg = PacketConfig.load("packets.toml")
         self.logger = PacketLogger()
         self.entities = EntityManager()
+        self.first_map_load = False
         self.my_entity: Optional[GameEntity] = None
 
         defaults = self.cfg.player
@@ -645,7 +646,7 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
             team_id=ctx.server.player.team,
             unit_type=unit_id,
             pos=repair_pad.pos,
-            vel=(0.0, 0.0, 0.0)
+            rot=repair_pad.rot
         )
         ctx.send(pkt)
         send_system_message(ctx, "Spawning Local Player...")
@@ -653,7 +654,7 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
             unit_type=unit_id, 
             override_net_id=ctx.server.cfg.player.player_id, 
             team_id=ctx.server.player.team,
-            pos=repair_pad.pos
+            pos=repair_pad.pos,
         )
         # Don't update with anything for now, sending the TankPacket to the player
         # Will create the entity on their end
@@ -872,7 +873,7 @@ def cmd_spawn(ctx, unit_type_str=None):
             tank_cfg=ctx.server.packet_cfg.tank,
             team_id=ctx.server.player.team,
             pos=(100.0, 100.0, 100.0),
-            vel=(0.0, 0.0, 0.0)
+            rot=(0.0, 0.0, 0.0)
         )
         ctx.send(pkt)
         send_system_message(ctx, "Spawning Local Player...")
@@ -935,12 +936,23 @@ def cmd_list(ctx):
 
 @commands.command("map")
 def cmd_map(ctx, map_name="tron"):
+    if not verify_map_land_exists(map_name):
+        file_path = _get_map_land_path(map_name)
+        send_system_message(ctx, f"Could not find map file at: {file_path}")
+        print(f"[MapLoader] File not found: {file_path}")
+        return
+
+    destroy_all_entities(ctx)
+    time.sleep(0.1)
+    
     if (ctx.server.my_entity):
         kill_local_player(ctx)
         time.sleep(0.1) # Wait before we send map change
 
     ctx.send(WorldStatsPacket(map_name=map_name))
     send_system_message(ctx, f"Changing map to {map_name}...")
+    time.sleep(0.1)
+    cmd_loadmap(ctx, map_name)
 
 @commands.command("loadmap")
 def cmd_loadmap(ctx, map_name="bpass"):
@@ -948,13 +960,16 @@ def cmd_loadmap(ctx, map_name="bpass"):
     Loads map entities from: ./shared/data/maps/<map_name>/state
     Usage: /s loadmap bpass
     """
-    # Construct the path: ./shared/data/maps/{map_name}/state
-    file_path = os.path.join("shared", "data", "maps", map_name, "state")
-    
-    if not os.path.exists(file_path):
+    # 1. Verify the map exists
+    if not verify_map_state_exists(map_name):
+        # We reconstruct the path here just for the error message
+        file_path = _get_map_state_path(map_name)
         send_system_message(ctx, f"Could not find map file at: {file_path}")
         print(f"[MapLoader] File not found: {file_path}")
         return
+
+    # 2. Proceed to load
+    file_path = _get_map_state_path(map_name)
 
     try:
         with open(file_path, "r") as f:
@@ -966,10 +981,6 @@ def cmd_loadmap(ctx, map_name="bpass"):
         
         send_system_message(ctx, f"Loaded map state: {map_name}")
         
-        # Force a full update to the client so they see the new buildings
-        # This usually happens automatically via dirty flags, but ensures it.
-        # ctx.server.entities.get_dirty_packet(...) 
-
         # Just send the full snapshot
         snapshot = ctx.server.entities.get_snapshot_packet(health=1.0, energy=1.0)
         ctx.send(snapshot)
@@ -1029,15 +1040,48 @@ def send_system_message(ctx: UdpContext | TcpContext, message: str, receipient_i
                 message=message
             ))
     
+def destroy_all_entities(ctx: UdpContext | TcpContext):
+    for e in ctx.server.entities.get_all():
+        ctx.server.entities.remove_entity(ctx, e.net_id)
+
 def kill_local_player(ctx: UdpContext | TcpContext):
     player_id = ctx.server.cfg.player.player_id
     if (ctx.server.entities.get_entity(player_id)):
         ctx.send(DeathNoticePacket(player_id))
-        ctx.send(DeleteObjectPacket(player_id))
-        ctx.server.entities.remove_entity(player_id)
+        ctx.server.entities.remove_entity(ctx, player_id)
         send_system_message(ctx, "You died.")
 
     ctx.server.my_entity = None
+
+def _get_map_state_path(map_name):
+    """
+    Helper to construct the map file path. 
+    Keeps the path definition in one place to avoid bugs.
+    """
+    return os.path.join("shared", "data", "maps", map_name, "state")
+
+def _get_map_land_path(map_name):
+    """
+    Helper to construct the map file path. 
+    Keeps the path definition in one place to avoid bugs.
+    """
+    return os.path.join("shared", "data", "maps", map_name, "land")
+
+def verify_map_state_exists(map_name):
+    """
+    Verifies if the map state file exists.
+    Returns: True if exists, False otherwise.
+    """
+    file_path = _get_map_state_path(map_name)
+    return os.path.exists(file_path)
+
+def verify_map_land_exists(map_name):
+    """
+    Verifies if the map land file exists.
+    Returns: True if exists, False otherwise.
+    """
+    file_path = _get_map_land_path(map_name)
+    return os.path.exists(file_path)
 
 # -------------------------------------------------------------------------
 # BOOTSTRAP LOGIC
@@ -1115,6 +1159,10 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
         team=ctx.server.player.team))
 
     ctx.send(WorldStatsPacket(map_name=ctx.server.cfg.game.map_name))
+
+    if (not ctx.server.first_map_load):
+        cmd_loadmap(ctx, ctx.server.cfg.game.map_name)
+        ctx.server.first_map_load = True
 
     start_ping_loop(ctx)
 

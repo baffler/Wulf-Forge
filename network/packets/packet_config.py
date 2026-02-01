@@ -75,7 +75,7 @@ class TankPacketConfig:
     unit_type: int = 0
     team_id: int = 1
     default_pos: Tuple[float, float, float] = (100.0, 100.0, 100.0)
-    default_vel: Tuple[float, float, float] = (0.0, 0.0, 0.0)
+    default_rot: Tuple[float, float, float] = (0.0, 0.0, 0.0)
     stats: TankStatsConfig = field(default_factory=TankStatsConfig)
 
 @dataclass(slots=True)
