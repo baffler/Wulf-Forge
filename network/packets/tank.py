@@ -8,6 +8,7 @@ from network.packets.base import Packet
 @dataclass
 class TankPacket(Packet):
     net_id: int
+    sequence_id: int
     tank_cfg: TankPacketConfig = field(repr=False) # specific config for this packet type
     
     # Optional overrides (default to None so we can fallback to config)
@@ -26,7 +27,7 @@ class TankPacket(Packet):
 
         # 2. Build the Payload
         pkt = PacketWriter()
-        pkt.write_int32(get_ticks())
+        pkt.write_int32(self.sequence_id if self.sequence_id is not None else get_ticks())
 
         stats = self.tank_cfg.stats
         pkt.write_bits(1 if stats.include_vitals else 0, 1)

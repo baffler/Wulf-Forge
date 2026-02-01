@@ -155,14 +155,14 @@ GLOBAL_CONFIGS[14] = {"head": 8, "total": 0, "max": "1.0", "range": "1.0"}
 VEC_POS  = {"head": 4, "total": 16, "max": "8192.0", "range": "16384.0"} # +/- 8192
 
 # +/- 200 *should* enough for tank velocity
-VEC_VEL  = {"head": 4, "total": 16, "max": "200.0",  "range": "400.0"}  # +/- 200
+VEC_VEL  = {"head": 4, "total": 16, "max": "1000.0",  "range": "2000.0"}  # +/- 1000
 
 # Increased to cover 2*PI (approx 6.28). 
 # Range 12.6 allows for -6.3 to +6.3, covering full rotation safely.
 VEC_ROT  = {"head": 4, "total": 16, "max": "6.3",    "range": "12.6"}    # +/- 2*PI
 
 # Angular velocity of 10 rads/sec should be fast enough (~1.5 full spins/sec)
-VEC_SPIN = {"head": 4, "total": 16, "max": "10.0",   "range": "20.0"}   # +/- 10.0
+VEC_SPIN = {"head": 4, "total": 16, "max": "200.0",   "range": "400.0"}   # +/- 10.0
 
 # --- APPLY VECTORS TO BANKS (Indices 16-27) ---
 # Bank 0 (16-19), Bank 1 (20-23), Bank 2 (24-27)

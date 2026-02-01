@@ -246,18 +246,50 @@ def start_update_loop(ctx: UdpContext):
     def run():
         print(f"[UDP] Starting Global Update Loop")
 
-        TARGET_FPS = 5
+        TARGET_FPS = 30
         FRAME_TIME = 1.0 / TARGET_FPS
         
         while not ctx.server.stop_update_event.is_set():
             start_time = time.time()
 
             try:
-                # 1. SIMULATE (Move entities, etc.)
-                # In a real engine, you'd iterate entities and update .pos here
+                if (ctx.server.my_entity is not None) and (ctx.server.my_entity.net_id is not None):
+                    my_ent = ctx.server.my_entity
+                    # FIX: Use .get() to avoid KeyError: 4
+                    jump_val = my_ent.actions.get(4, 0.0)
+                    hover_val = my_ent.actions.get(5, 0.0) # Default to 0!
+                    
+                    if jump_val >= 1.0:
+                        # Apply Jump Velocity (Z axis)
+                        # We keep X and Y momentum
+                        vx, vy, vz = my_ent.vel
+                    
+                        # Wake up physics if stopped (Epsilon check)
+                        final_x = vx if abs(vx) > 0.01 else 0.001
+                        final_y = vy if abs(vy) > 0.01 else 0.001
+                        # Apply Jump
+                        my_ent.vel = (final_x, final_y, 100.0)
+                        my_ent.mark_dirty(UpdateMask.VEL)
+                        my_ent.actions[4] = 0.0
+                        print(f"Apply Jump Jets! {ent.vel}")
+                    """elif abs(hover_val) > 0.01:
+                        vx, vy, vz = my_ent.vel
+                        final_x = vx if abs(vx) > 0.01 else 0.001
+                        final_y = vy if abs(vy) > 0.01 else 0.001
+                        
+                        my_ent.vel = (final_x, final_y, hover_val * 10.0)
+                        my_ent.mark_dirty(UpdateMask.VEL)"""
+                    
+                    # Todo: just update the local player's tank, no need to get dirty for all entities here
+                    update_view_payload = ctx.server.entities.get_dirty_packet_view(sequence_num=get_ticks(), health=0.9, energy=1.0)
+                
+                    # 3. BROADCAST (Send to this client)
+                    if update_view_payload:
+                        ctx.send(update_view_payload)
+
                 for ent in ctx.server.entities.get_all():
                     #ent.vel = (ent.vel[0] + 0.5, ent.vel[1] + 0.5, ent.vel[2] + 0.5)
-                    #ent.mark_dirty(UpdateMask.VEL)
+                    #ent.mark_dirty(UpdateMask.VEL | UpdateMask.HEALTH | UpdateMask.ENERGY)
                     #ent.spin = (ent.spin[0] + 0.5, ent.spin[1] + 0.5, ent.spin[2] + 0.5)
                     #ent.mark_dirty(UpdateMask.SPIN)
                     #ent.pos = (ent.pos[0], ent.pos[1], ent.pos[2] + 0.5)
@@ -282,37 +314,10 @@ def start_update_loop(ctx: UdpContext):
                     ent.rot = (current_roll, current_pitch, new_yaw)
                     ent.mark_dirty(UpdateMask.ROT)"""
 
-                    if (ctx.server.my_entity is not None) and (ctx.server.my_entity.net_id is not None):
-                        if (ent.net_id == ctx.server.my_entity.net_id):
-                            
-                            # FIX: Use .get() to avoid KeyError: 4
-                            jump_val = ent.actions.get(4, 0.0)
-                            hover_val = ent.actions.get(5, 0.0) # Default to 0!
-                            
-                            if jump_val >= 1.0:
-                                # Apply Jump Velocity (Z axis)
-                                # We keep X and Y momentum
-                                vx, vy, vz = ent.vel
-                            
-                                # Wake up physics if stopped (Epsilon check)
-                                final_x = vx if abs(vx) > 0.01 else 0.001
-                                final_y = vy if abs(vy) > 0.01 else 0.001
-                                # Apply Jump
-                                ent.vel = (final_x, final_y, 100.0)
-                                ent.mark_dirty(UpdateMask.VEL)
-                                #ent.actions[4] = 0.0
-                                print(f"Apply Jump Jets! {ent.vel}")
-                            elif abs(hover_val) > 0.01:
-                                vx, vy, vz = ent.vel
-                                final_x = vx if abs(vx) > 0.01 else 0.001
-                                final_y = vy if abs(vy) > 0.01 else 0.001
-                                
-                                ent.vel = (final_x, final_y, hover_val * 20.0)
-                                ent.mark_dirty(UpdateMask.VEL)
-
                 # 2. GATHER DELTAS
                 # Pass health and energy/fuel for our local tank
-                update_payload = ctx.server.entities.get_dirty_packet(health=0.9, energy=1.0)
+                #ctx.outgoing_seq += 1
+                update_payload = ctx.server.entities.get_dirty_packet(sequence_num=get_ticks(), health=0.9, energy=1.0)
                 
                 # 3. BROADCAST (Send to this client)
                 if update_payload:
@@ -418,7 +423,7 @@ def on_want_updates(ctx: TcpContext, payload: bytes):
                 message="To spawn in type /s spawn"
             ))
     # SEND FULL WORLD SNAPSHOT
-    snapshot = ctx.server.entities.get_snapshot_packet(health=1.0, energy=1.0)
+    snapshot = ctx.server.entities.get_snapshot_packet(sequence_num=get_ticks(), health=1.0, energy=1.0)
     # We send this over TCP to ensure they get the initial world state reliably
     ctx.send(snapshot)
 
@@ -426,8 +431,6 @@ def on_want_updates(ctx: TcpContext, payload: bytes):
 def on_kudos(ctx: TcpContext, payload: bytes):
     log_packet("TCP-RECV", payload)
     print(">>> !kudos (0x4F)")
-    #send_update_array_empty(ctx.tcp.sock)
-    #send_ping(ctx.transport.sock)
 
 
 # --- UDP Routes ---
@@ -640,8 +643,10 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
             ctx.send(ReincarnatePacket(code=4)) # Can't enter yet. Game not ready.
             return
 
+        #ctx.outgoing_seq += 1
         pkt = TankPacket(
             net_id=ctx.server.cfg.player.player_id,
+            sequence_id=get_ticks(),
             tank_cfg=ctx.server.packet_cfg.tank,
             team_id=ctx.server.player.team,
             unit_type=unit_id,
@@ -660,7 +665,7 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
         # Will create the entity on their end
         ctx.server.my_entity.pending_mask = 0
         ctx.server.my_entity.is_manned = True
-        #start_update_loop(ctx)
+        start_update_loop(ctx)
         return
 
     team_id = team_id_or_repaid_pad
@@ -755,7 +760,7 @@ def parse_action_packet(ctx: UdpContext, payload: bytes, is_dump: bool):
     time1 = reader.read_int32()
     time2 = reader.read_int32() 
     
-    print(f"    > ACTION {'DUMP' if is_dump else 'UPDATE'} | Count: {count} | T1: {time1}")
+    #print(f"    > ACTION {'DUMP' if is_dump else 'UPDATE'} | Count: {count} | T1: {time1}")
 
     # 2. Get Configs needed for decoding
     # Config 15: Bits used for the Action ID itself
@@ -844,16 +849,17 @@ def cmd_jump(ctx, force="80"):
 
     # 1. Keep existing X/Y velocity (momentum), but set Z to jump speed
     current_x, current_y, _ = player.vel
-    player.vel = (0.01, 0.01, float(force_val))
+    player.vel = (0.001, 0.001, float(force_val))
 
     # 2. Mark ONLY the VEL flag. 
     # CRITICAL: Do NOT use UpdateMask.HARD_SYNC!
     # If you define UpdateMask.POS, it's fine, but unnecessary for a jump.
     player.mark_dirty(UpdateMask.VEL)
-    player.mark_dirty(UpdateMask.HARD_SYNC)
+    #player.mark_dirty(UpdateMask.HARD_SYNC)
     
     # 3. (Optional) Force the packet to send immediately
-    update_payload = ctx.server.entities.get_dirty_packet()
+    #ctx.outgoing_seq += 1
+    update_payload = ctx.server.entities.get_dirty_packet_view(sequence_num=get_ticks(), health=0.75, energy=0.25)
     if update_payload:
         ctx.send(update_payload)
         
@@ -868,8 +874,11 @@ def cmd_spawn(ctx, unit_type_str=None):
     """
     # CASE 1: No arguments -> Spawn Player
     if unit_type_str is None:
+        #ctx.outgoing_seq += 1
+
         pkt = TankPacket(
             net_id=ctx.server.cfg.player.player_id,
+            sequence_id=get_ticks(),
             tank_cfg=ctx.server.packet_cfg.tank,
             team_id=ctx.server.player.team,
             pos=(100.0, 100.0, 100.0),
@@ -878,7 +887,7 @@ def cmd_spawn(ctx, unit_type_str=None):
         ctx.send(pkt)
         send_system_message(ctx, "Spawning Local Player...")
 
-        ctx.send(BirthNoticePacket(ctx.server.cfg.player.player_id))
+        #ctx.send(BirthNoticePacket(ctx.server.cfg.player.player_id))
 
         ctx.server.my_entity = ctx.server.entities.create_entity(
             unit_type=ctx.server.packet_cfg.tank.unit_type, 
@@ -888,7 +897,7 @@ def cmd_spawn(ctx, unit_type_str=None):
         )
         ctx.server.my_entity.pending_mask = 0
         ctx.server.my_entity.is_manned = True
-        #start_update_loop(ctx)
+        start_update_loop(ctx)
         return
 
     # CASE 2: Argument provided -> Spawn Enemy/Entity
@@ -982,7 +991,8 @@ def cmd_loadmap(ctx, map_name="bpass"):
         send_system_message(ctx, f"Loaded map state: {map_name}")
         
         # Just send the full snapshot
-        snapshot = ctx.server.entities.get_snapshot_packet(health=1.0, energy=1.0)
+        #ctx.outgoing_seq += 1
+        snapshot = ctx.server.entities.get_snapshot_packet(sequence_num=get_ticks(), health=1.0, energy=1.0)
         ctx.send(snapshot)
         
     except Exception as e:

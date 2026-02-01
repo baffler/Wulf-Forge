@@ -54,7 +54,7 @@ class PacketLogger:
         name = self.packet_names.get(pkt_type, "UNKNOWN")
 
         # Ignore spammy packets
-        if pkt_type in [0x09, 0x0B, 0x0C, 0x0E, 0x40, 0x49]:
+        if pkt_type in [0x09, 0x0B, 0x0C, 0x0E, 0x0F, 0x40, 0x49]:
             return
 
         # Displayed length: match your old style (just the bytes you pass in)

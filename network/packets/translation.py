@@ -16,7 +16,8 @@ class TranslationPacket(Packet):
         pkt = PacketWriter()
 
         # Iterate through the Source of Truth
-        for cfg in GLOBAL_CONFIGS:
+        for i, cfg in enumerate(GLOBAL_CONFIGS):
+            print(f"[DEBUG] {i}: Max={cfg['max']} Range={cfg['range']}")
             # 1. Fixed ID / Header Bits
             pkt.write_int32(cfg['head'])
             

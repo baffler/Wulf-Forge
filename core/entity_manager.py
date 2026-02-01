@@ -17,6 +17,8 @@ class EntityManager:
             net_id = self._next_net_id
             self._next_net_id += 1
 
+        print(f"[DEBUG] create_entity: net_id={net_id} unit_type={unit_type} team_id={team_id} pos={pos}")
+
         entity = GameEntity(net_id=net_id, unit_type=unit_type, team_id=team_id)
         entity.pos = pos
         entity.health = 1.0
@@ -40,11 +42,11 @@ class EntityManager:
 
     # --- PACKET GENERATION ---
 
-    def get_snapshot_packet(self, health: float = 1.0, energy: float = 1.0) -> bytes:
+    def get_snapshot_packet(self, sequence_num: int, health: float = 1.0, energy: float = 1.0) -> bytes:
         """
         Returns a packet containing the FULL state of the world + Local Stats.
         """
-        packet = UpdateArrayPacket()
+        packet = UpdateArrayPacket(sequence_id=sequence_num, is_view_update=True)
 
         # Tell the client it is alive
         packet.set_local_stats(health=health, energy=energy)
@@ -72,9 +74,9 @@ class EntityManager:
             # Restore original mask
             entity.pending_mask = original_mask
 
-        return b'\x0E' + payload
+        return b'\x0F' + payload
 
-    def get_dirty_packet(self, health: float = 1.0, energy: float = 1.0) -> Optional[bytes]:
+    def get_dirty_packet(self, sequence_num: int, health: float = 1.0, energy: float = 1.0) -> Optional[bytes]:
         """
         Returns a packet containing ONLY changed entities.
         Used in the main 10Hz update loop.
@@ -88,7 +90,7 @@ class EntityManager:
         if not dirty_entities:
             return None
 
-        packet = UpdateArrayPacket()
+        packet = UpdateArrayPacket(sequence_id=sequence_num, is_view_update=False)
         packet.set_local_stats(health=health, energy=energy)
         
         for entity in dirty_entities:
@@ -102,3 +104,32 @@ class EntityManager:
             entity.clear_dirty()
 
         return b'\x0E' + payload
+    
+    def get_dirty_packet_view(self, sequence_num: int, health: float = 1.0, energy: float = 1.0) -> Optional[bytes]:
+        """
+        Returns a packet containing ONLY changed entities.
+        Used in the main update loop.
+        Automatically clears the dirty flags of processed entities.
+        """
+        dirty_entities = [e for e in self._entities.values() if e.pending_mask > 0]
+        
+        # OPTIMIZATION: If nothing changed, we MIGHT still want to send stats 
+        # to keep the health bar synced, but usually we only send if entities move.
+        # For now, let's only send if there are entity updates OR if we want to force a heartbeat.
+        if not dirty_entities:
+            return None
+
+        packet = UpdateArrayPacket(sequence_id=sequence_num, is_view_update=True)
+        packet.set_local_stats(health=health, energy=energy)
+        
+        for entity in dirty_entities:
+            packet.add_entity(entity, force_spawn=False)
+
+        payload = packet.get_bytes()
+
+        # Need to clear_dirty AFTER we call packet.get_bytes()!
+        for entity in dirty_entities:
+            # Reset flags so we don't send it again until it changes
+            entity.clear_dirty()
+
+        return b'\x0F' + payload

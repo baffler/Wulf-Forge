@@ -33,16 +33,16 @@ regen_or_health_related = 100.0
 
 [behavior.vehicle_physics]
 speed = 20.0
-accel = 4.0
+accel = 8.0
 engine_torque = 700
-suspension_stiffness = 550
-ground_friction = 0.5
+suspension_stiffness = 550 # Doesn't change much
+ground_friction = 0.5 # Doesn't seem to do anything, maybe just used for hill climbing?
 turn_rate = 0.2
-suspension_dampening = 2.0
-mass = 33000
+suspension_dampening = 1.25 # Very sensitive, lower values are pretty speedy and chaotic
+mass = 33000 # Doesn't change much, but very low values seem to make you heavy for some reason?
 
 [behavior.active_vehicle_physics]
 turn_adjust = 4.5
-move_adjust = 85.0
+move_adjust = 125.0 # Default: 85.0
 max_velocity = 80.0
-gravity_pct = 0.5
+gravity_pct = 0.65

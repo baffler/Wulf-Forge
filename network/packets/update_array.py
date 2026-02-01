@@ -110,23 +110,22 @@ class EntitySerializer:
         for val in vec:
             # We enforce the priority we just wrote
             p, compressed_val, num_bits = compressor.compress(val, priority=priority)
+
+            #print(f"[DEBUG] pri={p} val={compressed_val} bits={num_bits}")
             
             # Write the compressed int using the calculated bit count
             self.writer.write_bits(compressed_val, num_bits)
 
 class UpdateArrayPacket:
-    def __init__(self, sequence_id=None):
-        if sequence_id is None:
-            sequence_id = get_ticks()
-            
+    def __init__(self, sequence_id:int, is_view_update=False):
         self.writer = PacketWriter()
         self.sequence_id = sequence_id
         self.entities = []
         self.local_stats = None # Tuple: (Health, Energy)
-        
-        # --- WRITE PACKET HEADER ---
-        # Note: If your system handles Packet IDs outside this class, remove this line.
-        # self.writer.write_int8(0x49) 
+
+        # Timestamp
+        if (is_view_update):
+            self.writer.write_int32(get_ticks())
         
         # Server Sequence
         self.writer.write_int32(self.sequence_id)
