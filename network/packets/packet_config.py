@@ -99,11 +99,13 @@ class VehiclePhysics:
 @dataclass(slots=True)
 class ActiveVehiclePhysics:
     turn_adjust: float = 4.5
-    move_adjust: float = 85.0
+    move_adjust: float = 85.0 # move_forward_adjust
+    move_backward_adjust: float = 38.0
     strafe_adjust: float = 69.7
     max_velocity: float = 80.0
     low_fuel_level: float = 2000.0
-    max_altitude: float = 5.0 
+    max_altitude: float = 5.0
+    max_speed_height_pickup: float = 3.5
     gravity_pct: float = 0.5
 
 @dataclass(slots=True)
@@ -117,7 +119,7 @@ class BehaviorHeader:
     total_team_size: int = 20
     glimpse_ms: int = 25000
     push_ms: int = 35000
-    gravity_force: float = 28.0 # Gravity Force
+    gravity_force: float = 100.0 # Gravity Force
     dword_6791B8: int = 1
     dword_6791BC: int = 1
     max_pulse_charge: float = 1.0

@@ -22,7 +22,7 @@ active_vehicles_count = 3
 [behavior.header]
 spawn_related = 0
 timeout = 5.0
-gravity_force = 28.0
+gravity_force = 100.0
 unk11 = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
 
 [behavior.unit_defaults]
@@ -43,8 +43,10 @@ mass = 33000            # Default: Tank: 33000 Scout: 13000
 [behavior.active_vehicle_physics]
 turn_adjust = 4.5   # Default: 4.5
 move_adjust = 85.0  # Default: 85.0
-strafe_adjust = 69.7 # Default: 69.7
-max_velocity = 80.0  # Default: 80.0
+move_backward_adjust = 38.0 # Default: 38.0 (Scout only?)
+strafe_adjust = 69.7 # Default: Tank: 69.7 Scout: 72.0
+max_velocity = 80.0  # Default: Tank: 80.0 Scout: 85.0
 low_fuel_level = 2000.0 # Default: 2000.0
-max_altitude = 3.25  # Default: 3.25
+max_altitude = 3.25  # Default: Tank: 3.25 Scout: 4.9
+max_speed_height_pickup = 3.5 # Default: 3.5 (Scout only?)
 gravity_pct = 1.0   # Default: 1.0

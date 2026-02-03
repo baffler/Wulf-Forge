@@ -123,35 +123,45 @@ class BehaviorPacket(Packet):
         av = cfg.active_vehicle_physics
 
         for i in range(cfg.active_vehicles_count):
-            # Shared Base Values (All vehicles read at least these 7)
-            pkt.write_fixed1616(av.turn_adjust)
-            pkt.write_fixed1616(av.move_adjust)
-            pkt.write_fixed1616(av.strafe_adjust)
-            pkt.write_fixed1616(av.max_velocity)
-            pkt.write_fixed1616(av.low_fuel_level)
-            pkt.write_fixed1616(av.max_altitude)
-            pkt.write_fixed1616(av.gravity_pct)
 
-            # --- VEHICLE SPECIFIC EXTRAS ---
+            # --- VEHICLE SPECIFIC ---
             
             if i == 0: 
-                # TANK (Reads 7 values)
-                # Done!
+                pkt.write_fixed1616(av.turn_adjust)
+                pkt.write_fixed1616(av.move_adjust)
+                pkt.write_fixed1616(av.strafe_adjust)
+                pkt.write_fixed1616(av.max_velocity)
+                pkt.write_fixed1616(av.low_fuel_level)
+                pkt.write_fixed1616(av.max_altitude)
+                pkt.write_fixed1616(av.gravity_pct)
                 pass
                 
             elif i == 1:
                 # SCOUT (Reads 9 values)
-                # We need 2 extra values to satisfy sub_4F6860
-                pkt.write_fixed1616(0.0) # Extra A
-                pkt.write_fixed1616(0.0) # Extra B (Maybe Turbo or Afterburner?)
+                pkt.write_fixed1616(av.turn_adjust)
+                pkt.write_fixed1616(av.move_adjust) # Move Forward Adjust
+                pkt.write_fixed1616(38.0) # Move Backward Adjust
+                pkt.write_fixed1616(72.0) # Strafe Adjust
+                pkt.write_fixed1616(85.0) # Max Velocity
+                pkt.write_fixed1616(av.low_fuel_level)
+                pkt.write_fixed1616(4.9) # Max Altitude
+                pkt.write_fixed1616(3.5) # Max Speed Height Pickup
+                pkt.write_fixed1616(av.gravity_pct)
                 
             elif i == 2:
                 # BOMBER (Reads 11 values)
+                pkt.write_fixed1616(-2.5132741233144) # ax_mag
+                pkt.write_fixed1616(2.35619449060725) # ay_mag
+                pkt.write_fixed1616(80.0) # forward_mag
+                pkt.write_fixed1616(45.0)  # low_airspeed
+                pkt.write_fixed1616(0.5) # angfac
+                pkt.write_fixed1616(70.0)  # turn_low
+                pkt.write_fixed1616(110.0)  # turn_high
                 # We need 4 extra values to satisfy sub_5012D0
-                pkt.write_fixed1616(0.0) 
-                pkt.write_fixed1616(0.0)
-                pkt.write_fixed1616(0.0)
-                pkt.write_fixed1616(0.0)
+                pkt.write_fixed1616(340.0) # turn_zero
+                pkt.write_fixed1616(1000.0) # very_high
+                pkt.write_fixed1616(1800.0) # ceiling
+                pkt.write_fixed1616(av.low_fuel_level) # low_fuel_level
 
         # --------------------------
         # FINAL: PAYLOAD
@@ -175,12 +185,12 @@ def _write_hardpoint_block(pkt: PacketWriter, count: int, is_thruster: bool) -> 
                 # --- TUNING VALUES ---
                 
                 # 1. WIDTH (How far out are the wings?)
-                wing_width = 2.5 
+                wing_width = 2.0
                 
                 # 2. LATERAL BIAS (Fixes Side Tipping)
                 # Tilts Right -> Try 0.2, 0.5, 1.0
                 # Tilts Left  -> Try -0.2, -0.5, -1.0
-                lateral_bias = 0.5 
+                lateral_bias = 0.0 
 
                 # 3. LONGITUDINAL BIAS (Fixes Nose Dive)
                 # Tips Forward -> Increase (0.5, 1.0)
@@ -208,7 +218,9 @@ def _write_hardpoint_block(pkt: PacketWriter, count: int, is_thruster: bool) -> 
 
                 # --- NORMAL (Thrust Direction) ---
                 # Pointing DOWN (-Z)
-                nx, ny, nz = 0.0, 0.0, -1.0
+                # Setting this too high (-1.0) can cause a weird bug
+                # where you will start flipping upside down
+                nx, ny, nz = 0.0, 0.0, -0.75
                 
             else:
                 # Weapons (Keep valid defaults just in case)
