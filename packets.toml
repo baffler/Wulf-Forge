@@ -13,7 +13,6 @@ health_mult_bits = 1
 energy_mult_bits = 1
 
 [behavior]
-target_size = 3116
 weapons_units_count = 4
 weapon_slots_count = 13
 unit_count = 39
@@ -23,7 +22,7 @@ active_vehicles_count = 3
 [behavior.header]
 spawn_related = 0
 timeout = 5.0
-# ... add other header floats here ...
+gravity_force = 28.0
 unk11 = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
 
 [behavior.unit_defaults]
@@ -32,17 +31,20 @@ max_health = 100
 regen_or_health_related = 100.0
 
 [behavior.vehicle_physics]
-speed = 20.0
-accel = 8.0
-engine_torque = 700
-suspension_stiffness = 550 # Doesn't change much
-ground_friction = 0.5 # Doesn't seem to do anything, maybe just used for hill climbing?
-turn_rate = 0.2
-suspension_dampening = 1.25 # Very sensitive, lower values are pretty speedy and chaotic
-mass = 33000 # Doesn't change much, but very low values seem to make you heavy for some reason?
+speed = 20.0            # Default: 20.0
+accel = 4.0             # Default: 4.0
+engine_torque = 700     # Default: 700
+suspension_stiffness = 550 # Default: 550
+ground_friction = 0.8   # Default: 0.8
+turn_rate = 0.05        # Default: Tank: 0.05 Scout: 0.15
+suspension_dampening = 1.3 # Default: Tank: 1.3 Scout: 1.1
+mass = 33000            # Default: Tank: 33000 Scout: 13000
 
 [behavior.active_vehicle_physics]
-turn_adjust = 4.5
-move_adjust = 125.0 # Default: 85.0
-max_velocity = 80.0
-gravity_pct = 0.65
+turn_adjust = 4.5   # Default: 4.5
+move_adjust = 85.0  # Default: 85.0
+strafe_adjust = 69.7 # Default: 69.7
+max_velocity = 80.0  # Default: 80.0
+low_fuel_level = 2000.0 # Default: 2000.0
+max_altitude = 3.25  # Default: 3.25
+gravity_pct = 1.0   # Default: 1.0

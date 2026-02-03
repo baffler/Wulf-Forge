@@ -33,7 +33,7 @@ class BehaviorPacket(Packet):
         pkt.write_int32(h.glimpse_ms)
         pkt.write_int32(h.push_ms)
 
-        pkt.write_fixed1616(h.dbl_5738B8)
+        pkt.write_fixed1616(h.gravity_force)
         pkt.write_int32(h.dword_6791B8)
         pkt.write_int32(h.dword_6791BC)
         pkt.write_fixed1616(h.max_pulse_charge)
@@ -105,16 +105,25 @@ class BehaviorPacket(Packet):
         # --------------------------
         # SECTION 5: HARDPOINTS (unchanged for now)
         # --------------------------
-        _write_hardpoint_block(pkt, count=0, is_thruster=False)
-        _write_hardpoint_block(pkt, count=0, is_thruster=True)
-        _write_hardpoint_block(pkt, count=0, is_thruster=False)
-        _write_hardpoint_block(pkt, count=0, is_thruster=True)
+        #pkt.align()
+        _write_hardpoint_block(pkt, count=0, is_thruster=False) # Tank Weapons
+        #pkt.align()
+        _write_hardpoint_block(pkt, count=2, is_thruster=True)  # Tank Thrusters
+        #pkt.align()
+        _write_hardpoint_block(pkt, count=0, is_thruster=False) # Scout Weapons
+        #pkt.align()
+        _write_hardpoint_block(pkt, count=2, is_thruster=True)  # Scout Thrusters
 
         # --------------------------
-        # SECTION 6: ACTIVE VEHICLE PHYSICS (configurable)
+        # SECTION 6: ACTIVE VEHICLE PHYSICS (Configurable)
         # --------------------------
+        # The client iterates: Tank -> Scout -> Bomber
+        # We must write the exact amount of data each class expects.
+        
         av = cfg.active_vehicle_physics
-        for _ in range(cfg.active_vehicles_count):
+
+        for i in range(cfg.active_vehicles_count):
+            # Shared Base Values (All vehicles read at least these 7)
             pkt.write_fixed1616(av.turn_adjust)
             pkt.write_fixed1616(av.move_adjust)
             pkt.write_fixed1616(av.strafe_adjust)
@@ -123,15 +132,32 @@ class BehaviorPacket(Packet):
             pkt.write_fixed1616(av.max_altitude)
             pkt.write_fixed1616(av.gravity_pct)
 
+            # --- VEHICLE SPECIFIC EXTRAS ---
+            
+            if i == 0: 
+                # TANK (Reads 7 values)
+                # Done!
+                pass
+                
+            elif i == 1:
+                # SCOUT (Reads 9 values)
+                # We need 2 extra values to satisfy sub_4F6860
+                pkt.write_fixed1616(0.0) # Extra A
+                pkt.write_fixed1616(0.0) # Extra B (Maybe Turbo or Afterburner?)
+                
+            elif i == 2:
+                # BOMBER (Reads 11 values)
+                # We need 4 extra values to satisfy sub_5012D0
+                pkt.write_fixed1616(0.0) 
+                pkt.write_fixed1616(0.0)
+                pkt.write_fixed1616(0.0)
+                pkt.write_fixed1616(0.0)
+
         # --------------------------
-        # FINAL: PADDING TO TARGET
+        # FINAL: PAYLOAD
         # --------------------------
         body = pkt.get_bytes()
         payload = b"\x24" + body
-
-        padding_needed = cfg.target_size - len(payload)
-        if padding_needed > 0:
-            payload += b"\x00" * padding_needed
 
         return payload
 
@@ -141,17 +167,73 @@ def _write_hardpoint_block(pkt: PacketWriter, count: int, is_thruster: bool) -> 
 
     if count > 0:
         for i in range(count):
-            z_offset = -2.0 if is_thruster else 2.0
-            x_offset = 1.5 if (count > 1 and i == 1) else -1.5 if (count > 1) else 0.0
+            # ---------------------------------------------------------
+            # COORDINATE SYSTEM: Z-UP
+            # ---------------------------------------------------------
+            
+            if is_thruster:
+                # --- TUNING VALUES ---
+                
+                # 1. WIDTH (How far out are the wings?)
+                wing_width = 2.5 
+                
+                # 2. LATERAL BIAS (Fixes Side Tipping)
+                # Tilts Right -> Try 0.2, 0.5, 1.0
+                # Tilts Left  -> Try -0.2, -0.5, -1.0
+                lateral_bias = 0.5 
 
-            pkt.write_fixed1616(float(x_offset))
-            pkt.write_fixed1616(0.5)
-            pkt.write_fixed1616(float(z_offset))
+                # 3. LONGITUDINAL BIAS (Fixes Nose Dive)
+                # Tips Forward -> Increase (0.5, 1.0)
+                # Tips Backward -> Decrease (-0.5, -1.0)
+                forward_bias = 0.0
 
-            pkt.write_fixed1616(0.0)
-            pkt.write_fixed1616(0.0)
-            pkt.write_fixed1616(-1.0 if is_thruster else 1.0)
+                # --- CALCULATE POSITIONS ---
 
-            pkt.write_int32(1)
+                # X: Left (-width) vs Right (+width), plus the bias shift
+                if i % 2 == 1:
+                    x_pos = wing_width + lateral_bias  # Right Thruster
+                else:
+                    x_pos = -wing_width + lateral_bias # Left Thruster
 
-    pkt.write_fixed1616(0.0)
+                # --- Y: BALANCE (Forward/Back) ---
+                # Start at 0.0. 
+                # If NOSE DIVES -> Change to +1.0 or +2.0
+                # If LOOKING AT SKY -> Change to -1.0 or -2.0
+                y_pos = forward_bias 
+
+                # --- Z: HEIGHT (Up/Down) ---
+                # Since Z is up, 0.0 is the center of the tank vertically.
+                # -1.0 puts the thruster slightly below the hull.
+                z_pos = -0.5 
+
+                # --- NORMAL (Thrust Direction) ---
+                # Pointing DOWN (-Z)
+                nx, ny, nz = 0.0, 0.0, -1.0
+                
+            else:
+                # Weapons (Keep valid defaults just in case)
+                x_pos = 1.5 if (i % 2 == 1) else -1.5
+                y_pos = 2.0 # Forward mounted guns?
+                z_pos = 0.5 # Slightly raised
+                nx, ny, nz = 0.0, 1.0, 0.0 # Point Forward (+Y)
+
+            # Write Position (Fixed 16.16)
+            pkt.write_fixed1616(float(x_pos))
+            pkt.write_fixed1616(float(y_pos))
+            pkt.write_fixed1616(float(z_pos))
+
+            # Write Normal
+            pkt.write_fixed1616(float(nx))
+            pkt.write_fixed1616(float(ny))
+            pkt.write_fixed1616(float(nz))
+
+            pkt.write_int32(0) # Flag
+
+    # FIX: Send a non-zero value for thrusters
+    if is_thruster:
+        # -5.0 is a safe guess for "Thrusters are 5 units below the tank center"
+        # This value will populate VehicleContext offset 0x18
+        pkt.write_fixed1616(-5.0) 
+    else:
+        # For weapons, this might be range or cooldown, 0.0 might be fine for now
+        pkt.write_fixed1616(0.0)

@@ -110,14 +110,14 @@ class ActiveVehiclePhysics:
 class BehaviorHeader:
     spawn_related: int = 0
     timeout: float = 5.0
-    dbl_6792F8: float = 100.0
-    velocity_q: float = 100.0
-    dbl_679308: float = 100.0
-    dbl_679310: float = 100.0
+    dbl_6792F8: float = 10.0
+    velocity_q: float = 10.0
+    dbl_679308: float = 10.0
+    dbl_679310: float = 10.0
     total_team_size: int = 20
     glimpse_ms: int = 25000
     push_ms: int = 35000
-    dbl_5738B8: float = 100.0
+    gravity_force: float = 28.0 # Gravity Force
     dword_6791B8: int = 1
     dword_6791BC: int = 1
     max_pulse_charge: float = 1.0
@@ -136,7 +136,6 @@ class BehaviorConfig:
     vehicle_physics: VehiclePhysics = field(default_factory=VehiclePhysics)
     active_vehicles_count: int = 3
     active_vehicle_physics: ActiveVehiclePhysics = field(default_factory=ActiveVehiclePhysics)
-    target_size: int = 3116
 
 @dataclass(frozen=True, slots=True)
 class PacketConfig:
