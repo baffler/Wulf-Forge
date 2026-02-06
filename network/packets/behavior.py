@@ -105,14 +105,12 @@ class BehaviorPacket(Packet):
         # --------------------------
         # SECTION 5: HARDPOINTS (unchanged for now)
         # --------------------------
-        #pkt.align()
-        _write_hardpoint_block(pkt, count=0, is_thruster=False) # Tank Weapons
-        #pkt.align()
-        _write_hardpoint_block(pkt, count=2, is_thruster=True)  # Tank Thrusters
-        #pkt.align()
-        _write_hardpoint_block(pkt, count=0, is_thruster=False) # Scout Weapons
-        #pkt.align()
-        _write_hardpoint_block(pkt, count=2, is_thruster=True)  # Scout Thrusters
+        # May or may not have got the teams correctly labeled for these
+        # Also, thinking is_thruster might be something else entirely
+        _write_hardpoint_block(pkt, count=2, is_thruster=True)  # Red Tank
+        _write_hardpoint_block(pkt, count=2, is_thruster=True)  # Blue Tank
+        _write_hardpoint_block(pkt, count=2, is_thruster=True)  # Red Scout
+        _write_hardpoint_block(pkt, count=2, is_thruster=True)  # Blue Scout
 
         # --------------------------
         # SECTION 6: ACTIVE VEHICLE PHYSICS (Configurable)
