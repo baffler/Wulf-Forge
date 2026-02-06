@@ -7,6 +7,7 @@ import struct
 import math
 import os
 import random
+import secrets
 from typing import Dict, Tuple, Optional
 
 from network.transport.tcp_transport import TcpTransport
@@ -53,6 +54,14 @@ class ClientSession:
         self.player_id: int = 0
         self.name: str = "Unknown"
         self.team: int = 0
+
+        # --- SESSION KEY LOGIC ---
+        # Generate a random 10-char key (Wulfram seems to like strings)
+        self.session_key = "Key" + secrets.token_hex(4) 
+        
+        # Placeholder: We don't know the real algo yet, so we will 
+        # temporarily TRUST the client's TCP echo to link this.
+        self.expected_udp_id = 0
         
         # Game Object associated with this client
         self.entity: Optional[GameEntity] = None
@@ -65,8 +74,11 @@ class ClientSession:
         self.udp_context: Optional[UdpContext] = None
         
         # Synchronization Events (Specific to this client now)
+        self.waiting_for_udp = False
         self.udp_root_received = threading.Event()
         self.stop_ping_event = threading.Event()
+        # Wait for client to echo our key back
+        self.key_echoed_event = threading.Event()
 
     def cleanup(self):
         """Helper to close sockets and events when client disconnects."""
@@ -466,8 +478,17 @@ dispatcher = PacketDispatcher(on_unknown=unknown_packet)
 # --- TCP Routes ---
 
 @dispatcher.route(0x13)
-def on_hello(ctx: TcpContext, payload: bytes):
-    log_packet("TCP-RECV", payload)
+def on_hello(ctx: TcpContext | UdpContext, payload: bytes):
+    if isinstance(ctx, TcpContext):
+        log_packet("TCP-RECV", payload)
+    elif isinstance(ctx, UdpContext):
+        log_packet("UDP-RECV", payload)
+    else:
+        print("[ERROR] on_hello: Unknown context type")
+
+    if (ctx.session is None):
+        print("[ERROR] on_hello: No session found")
+        return
     
     if len(payload) < 2: return
     reader = PacketReader(payload)
@@ -475,17 +496,34 @@ def on_hello(ctx: TcpContext, payload: bytes):
     subcmd = reader.read_byte()
 
     if subcmd == 0x00:
-        #version = struct.unpack(">I", body[2:6])[0]
+        # Client sent Version (Sub 0) - This comes from start_udp_send_hello_root
+        # payload usually contains the version int (20105)
+        #version = reader.read_int32()
         print(f">>> Client HELLO(version)")# = 0x{version:08X}")
 
     # HELLO subcmd 1: UDP config request/ack
     elif subcmd == 0x01:
-        print(">>> Client HELLO(UDP) received")
+        # Client Echoed Key (Sub 1) - This comes from send_hello2
+        client_key = reader.read_string()
+        print(f">>> Client Echoed Key: {client_key}")
+
+        # Verify and trigger the event so do_login_and_bootstrap can continue
+        if ctx.session and client_key == ctx.session.session_key:
+            print(f">>> [{type(ctx).__name__}] Key Verified: {client_key}")
+            ctx.session.key_echoed_event.set()
+            
+            # Reply immediately on the SAME transport (UDP or TCP)
+            # If they sent it via UDP, they expect the reply via UDP.
+            ctx.send(HelloPacket.create_verified())
+        else:
+            print(f"    [FAIL] Key Mismatch! Expected {ctx.session.session_key}")
 
     # HELLO subcmd 2: Session key request
     elif subcmd == 0x02:
+        # Client Requested Session Key (Sub 2) - This comes from send_hello3
         print(">>> Client HELLO(SessionKey request) -> sending hello_key now")
-        ctx.send(HelloPacket.create_key(ctx.server.cfg.game.session_key))
+        if ctx.session:
+            ctx.send(HelloPacket.create_key(ctx.session.session_key))
 
     else:
         print(f">>> Client HELLO unknown subcmd=0x{subcmd:02X}")
@@ -635,6 +673,8 @@ def on_d_handshake(ctx: UdpContext, payload: bytes):
 @dispatcher.route(0x08)
 def on_hello_ack(ctx: UdpContext, payload: bytes):
     # Client confirms they heard our TCP "UDP Config" packet
+    ctx.server.logger.log_packet("UDP-RECV (HELLO-ACK)", payload=payload, show_ascii=True)
+    
     if ctx.session:
         if not ctx.session.udp_root_received.is_set():
             print(f"    > UDP Link Verified for {ctx.session.name} via 0x08.")
@@ -1251,23 +1291,59 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
     """
     Handles the initial sequence: Hello -> UDP Link -> Login -> World Entry.
     """
+    # 1. Send UDP Config (Hello Sub 1)
+    print(f"[INFO] Setting session {ctx.session.address} to WAIT for UDP...")
+    ctx.session.waiting_for_udp = True
     ctx.session.udp_root_received.clear()
-    time.sleep(1.0)
     
     # This let's the client know which ip and port to connect to with UDP
     ctx.send(HelloPacket.create_udp_config(
         port=ctx.server.cfg.network.udp_port, 
-        host=ctx.server.cfg.network.server_ip))
+        host=ctx.server.cfg.network.server_ip
+    ))
 
-    print("[INFO] Waiting for Client UDP init...")
+    # 2. Wait for UDP Probe (Packet 0x08)
+    print(f"[INFO] Waiting for UDP handshake from {ctx.session.address}...")
     if ctx.session.udp_root_received.wait(timeout=5.0):
-        print(">>> UDP ROOT Verified! Sending TCP Confirmation.")
+        print(">>> UDP ROOT Verified! Sending TCP Confirmation (0x4D).")
         ctx.send(IdentifiedUdpPacket())
     else:
         print("[WARN] UDP Timeout. Sending Confirmation blindly.")
         ctx.send(IdentifiedUdpPacket())
 
-    # Let's the client know they are now verified
+    # 3. The Key Exchange Loop
+    # We do NOT send Sub 3 yet. We wait for the client to ask for the key 
+    # or send version info, and we wait for them to echo the key back.
+    print(">>> Waiting for Client Key Exchange...")
+    ctx.session.key_echoed_event.clear()
+
+    # Set a timeout so we don't block forever if client uses UDP
+    client_sock.settimeout(0.1) 
+    
+    start_wait = time.time()
+    while not ctx.session.key_echoed_event.is_set():
+        if time.time() - start_wait > 10.0:
+            print("[WARN] Key Exchange Timed Out!")
+            break
+            
+        try:
+            # Try to read TCP packets (in case they use TCP for something else)
+            payload = ctx.transport.recv_payload()
+            if payload:
+                dispatcher.dispatch_payload(ctx, payload)
+        except socket.timeout:
+            # This is GOOD. It means no TCP data, so we loop back 
+            # and check ctx.session.key_echoed_event again.
+            pass
+        except Exception as e:
+            print(f"[ERR] TCP Recv Error: {e}")
+            break
+
+    # 4. NOW we send Verified (Hello Sub 3)
+    # This tells the client: "UDP is good, Key is good, GO TO LOGIN."
+    print(">>> Handshake Complete. Sending Verified (Sub 3).")
+    # Note: on_hello already sent the Verified packet, but sending it again 
+    # via TCP here as a backup is harmless and ensures the client gets it.
     ctx.send(HelloPacket.create_verified())
 
     # --- Login Flow ---
@@ -1280,6 +1356,14 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
         if payload is None:
             raise ConnectionError("Client disconnected during username stage.")
         dispatcher.dispatch_payload(ctx, payload)
+        
+        ctx.server.logger.log_packet(
+                "TCP-LOGIN", 
+                payload, 
+                show_ascii=True, 
+                include_tcp_len_prefix=True
+            )
+        
         if payload and payload[0] == 0x21:
             pktl = PacketReader(payload)
             pktl.read_byte() # Op
@@ -1297,6 +1381,14 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
         if payload is None:
             raise ConnectionError("Client disconnected during password stage.")
         dispatcher.dispatch_payload(ctx, payload)
+
+        ctx.server.logger.log_packet(
+                "TCP-LOGIN", 
+                payload, 
+                show_ascii=True, 
+                include_tcp_len_prefix=True
+            )
+        
         if payload and payload[0] == 0x21:
             break
 

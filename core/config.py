@@ -22,7 +22,6 @@ class NetworkConfig:
 
 @dataclass(frozen=True, slots=True)
 class GameConfig:
-    session_key: str = "WulframSessionKey123"
     motd: str = "Welcome to Wulf-Forge! Wulfram 2 server emulator brought to you by baffler."
     map_name: str = "bpass"
 

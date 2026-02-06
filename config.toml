@@ -7,7 +7,6 @@ tcp_port = 2627
 udp_port = 2627
 
 [game]
-session_key = "WulframSessionKey123"
 motd = "Welcome to Wulf-Forge!"
 map_name = "crossroads"
 
