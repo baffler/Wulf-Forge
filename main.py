@@ -835,10 +835,10 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
     print(f"    > RECV REINCARNATE (TEAM SWITCH): Team : {team_id}")
     # Switch their teams
     if (team_id == 1):
-        ctx.session.team = 1 # Update Session
+        ctx.session.team = 1
         broadcast(ctx.server, UpdateStatsPacket(player_id=ctx.session.player_id, team_id=1))
     elif (team_id == 2):
-        ctx.session.team = 2 # Update Session
+        ctx.session.team = 2
         broadcast(ctx.server, UpdateStatsPacket(player_id=ctx.session.player_id, team_id=2))
     
     # Sends message code about team switched successfully
@@ -1010,7 +1010,7 @@ def cmd_jump(ctx, force="80"):
     Applies a vertical velocity impulse to the player.
     Usage: /s jump [force]
     """
-    player_id = ctx.server.cfg.player.player_id
+    player_id = ctx.session.player_id
     player = ctx.server.entities.get_entity(player_id)
     
     if not player:
@@ -1049,13 +1049,19 @@ def cmd_spawn(ctx, unit_type_str=None):
     """
     # CASE 1: No arguments -> Spawn Player
     if unit_type_str is None:
-        #ctx.outgoing_seq += 1
+        ctx.session.entity = ctx.server.entities.create_entity(
+            unit_type=ctx.server.packet_cfg.tank.unit_type, 
+            team_id=ctx.session.team,
+            pos=(100.0, 100.0, 100.0),
+        )
+        ctx.session.entity.pending_mask = 0
+        ctx.session.entity.is_manned = True
 
         pkt = TankPacket(
-            net_id=ctx.server.cfg.player.player_id,
+            net_id=ctx.session.entity.net_id,
             sequence_id=get_ticks(),
             tank_cfg=ctx.server.packet_cfg.tank,
-            team_id=ctx.server.player.team,
+            team_id=ctx.session.team,
             pos=(100.0, 100.0, 100.0),
             rot=(0.0, 0.0, 0.0)
         )
@@ -1064,14 +1070,6 @@ def cmd_spawn(ctx, unit_type_str=None):
 
         #ctx.send(BirthNoticePacket(ctx.server.cfg.player.player_id))
 
-        ctx.server.my_entity = ctx.server.entities.create_entity(
-            unit_type=ctx.server.packet_cfg.tank.unit_type, 
-            override_net_id=ctx.server.cfg.player.player_id, 
-            team_id=ctx.server.player.team,
-            pos=(100.0, 100.0, 100.0),
-        )
-        ctx.server.my_entity.pending_mask = 0
-        ctx.server.my_entity.is_manned = True
         #start_update_loop(ctx)
         return
 
@@ -1090,7 +1088,7 @@ def cmd_spawn(ctx, unit_type_str=None):
     # This automatically handles ID generation and marks it as created (Dirty)
     new_ent = ctx.server.entities.create_entity(
         unit_type=u_type, 
-        team_id=ctx.server.player.team,
+        team_id=ctx.session.team,
         pos=(80.0 + v_big, 80.0 + v_big, 25.0 + v_small),
     )
 
@@ -1181,7 +1179,7 @@ def cmd_reset(ctx):
 
 @commands.command("die")
 def cmd_die(ctx):
-    if (ctx.server.my_entity):
+    if (ctx.session.entity):
         kill_local_player(ctx)
     else:
         send_system_message(ctx, "You may already be dead.")
@@ -1237,14 +1235,14 @@ def kill_local_player(ctx: UdpContext | TcpContext):
         send_system_message(ctx, "You may already be dead.")
         return
     
-    player_id = ctx.session.entity.net_id
+    net_id = ctx.session.entity.net_id
 
     # 3. Perform Logic
     # Notify client of death
-    ctx.send(DeathNoticePacket(player_id))
+    ctx.send(DeathNoticePacket(net_id))
     
     # Remove from World
-    ctx.server.entities.remove_entity(ctx, player_id)
+    ctx.server.entities.remove_entity(ctx, net_id)
     send_system_message(ctx, "You died.")
 
     # 4. Clear Session State
