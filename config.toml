@@ -12,7 +12,6 @@ motd = "Welcome to Wulf-Forge!"
 map_name = "crossroads"
 
 [player]
-player_id = 1337
 name = "default"
 nametag = "DEV"
 team = 1

@@ -28,7 +28,6 @@ class GameConfig:
 
 @dataclass(frozen=True, slots=True)
 class PlayerConfig:
-    player_id: int = 1337
     name: str = "default"
     nametag: str = "DEV"
     team:int = 0

@@ -127,6 +127,7 @@ class BehaviorPacket(Packet):
             # --- VEHICLE SPECIFIC ---
             
             if i == 0: 
+                # TANK (Reads 7 values)
                 pkt.write_fixed1616(av.turn_adjust)
                 pkt.write_fixed1616(av.move_adjust)
                 pkt.write_fixed1616(av.strafe_adjust)

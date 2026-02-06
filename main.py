@@ -39,6 +39,46 @@ from network.translation_config import get_config_by_index, GLOBAL_CONFIGS
 # CONTEXTS
 # -------------------------------------------------------------------------
 
+class ClientSession:
+    """
+    Encapsulates the state for a single connected player.
+    Replaces the global 'player' and 'my_entity' from the server context.
+    """
+    def __init__(self, server: WulframServerContext, tcp_sock: socket.socket, addr: Tuple[str, int]):
+        self.server = server
+        self.tcp_sock = tcp_sock
+        self.address = addr  # (IP, Port) from TCP connection
+        
+        # Identity
+        self.player_id: int = 0
+        self.name: str = "Unknown"
+        self.team: int = 0
+        
+        # Game Object associated with this client
+        self.entity: Optional[GameEntity] = None
+        
+        # Connection State
+        self.is_logged_in: bool = False
+        
+        # UDP Linkage
+        self.udp_addr: Optional[Tuple[str, int]] = None
+        self.udp_context: Optional[UdpContext] = None
+        
+        # Synchronization Events (Specific to this client now)
+        self.udp_root_received = threading.Event()
+        self.stop_ping_event = threading.Event()
+
+    def cleanup(self):
+        """Helper to close sockets and events when client disconnects."""
+        self.stop_ping_event.set()
+        try:
+            self.tcp_sock.close()
+        except:
+            pass
+        if self.entity:
+            # Logic to remove entity from world could go here
+            pass
+
 class WulframServerContext:
     """
     Holds configuration, the logger, shared state, and controls the sockets.
@@ -49,17 +89,14 @@ class WulframServerContext:
         self.logger = PacketLogger()
         self.entities = EntityManager()
         self.first_map_load = False
-        self.my_entity: Optional[GameEntity] = None
 
-        defaults = self.cfg.player
-        self.player = PlayerSession(
-            player_id=defaults.player_id,
-            name=defaults.name,
-            team=defaults.team
-        )
+        # Session Management
+        self.sessions: list[ClientSession] = []
+
+        # ID Counters
+        self._next_player_id = 1
         
         # Shared State
-        self.udp_root_received = threading.Event()
         self.stop_event = threading.Event()
         self.stop_update_event = threading.Event()
         
@@ -72,6 +109,12 @@ class WulframServerContext:
         
         # UDP Session Cache (Addr -> UdpContext)
         self.udp_sessions: Dict[Tuple[str, int], UdpContext] = {}
+
+    def get_next_player_id(self) -> int:
+        """Generates a unique Player/Account ID."""
+        pid = self._next_player_id
+        self._next_player_id += 1
+        return pid
 
     def run(self):
         """Starts the UDP listener thread and the TCP accept loop."""
@@ -87,7 +130,7 @@ class WulframServerContext:
         # 2. Setup TCP
         self.tcp_sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         self.tcp_sock.bind((self.cfg.network.host, self.cfg.network.tcp_port))
-        self.tcp_sock.listen(1)
+        self.tcp_sock.listen(5)
         self.tcp_sock.settimeout(1.0)
         print(f"[TCP] Listening on {self.cfg.network.host}:{self.cfg.network.tcp_port}")
 
@@ -107,7 +150,43 @@ class WulframServerContext:
                 
                 # Get or Create UDP Session Context
                 if addr not in self.udp_sessions:
-                    self.udp_sessions[addr] = UdpContext(transport, addr, self)
+                    # Attempt to find the session by matching IP address
+                    matched_session = None
+
+                    # Try Exact IP Match
+                    for s in self.sessions:
+                        if s.address[0] == addr[0]:
+                            matched_session = s
+                            # Link the session to this UDP address for future reference
+                            s.udp_addr = addr 
+                            break
+
+                    # Loose Match (Fix for Localhost vs LAN IP)
+                    # If we didn't find an exact match, but the incoming UDP is from localhost,
+                    # accept the first session that is waiting for UDP.
+                    if not matched_session and addr[0] == "127.0.0.1":
+                         for s in self.sessions:
+                            # If this session doesn't have a UDP link yet
+                            if s.udp_addr is None:
+                                matched_session = s
+                                print(f"[UDP] Loose match: Linked localhost UDP to {s.address}")
+                                break
+                    
+                    if matched_session:
+                        # Link the session to this UDP address
+                        matched_session.udp_addr = addr
+                        ctx = UdpContext(transport, addr, self, session=matched_session)
+                        matched_session.udp_context = ctx
+                        self.udp_sessions[addr] = ctx
+                        print(f"[UDP] Linked {addr} to Player '{matched_session.name}'")
+                    else:
+                        # Create a sessionless context (will be ignored by handlers)
+                        # print(f"[UDP] Warning: Unknown UDP client {addr}")
+                        ctx = UdpContext(transport, addr, self, session=None)
+                        self.udp_sessions[addr] = ctx
+
+                    self.udp_sessions[addr] = ctx
+
                 ctx = self.udp_sessions[addr]
 
                 # Parse & Dispatch
@@ -116,7 +195,8 @@ class WulframServerContext:
                     dispatcher.dispatch_payload(ctx, packet_payload)
 
             except Exception as e:
-                print(f"[UDP-ERR] {e}")
+                # print(f"[UDP-ERR] {e}") # Optional: reduce spam
+                pass
 
     def _tcp_accept_loop(self):
         """The main blocking loop that accepts TCP connections."""
@@ -132,8 +212,18 @@ class WulframServerContext:
                 
                 print(f"\n[+] Client connected from {addr}")
                 
-                # Handle the new TCP client in its own thread or blocking (blocking for now as per original)
-                self._handle_tcp_client(client_sock)
+                # --- STEP 2 LOGIC PREVIEW ---
+                # Create the session
+                new_session = ClientSession(self, client_sock, addr)
+                self.sessions.append(new_session)
+
+                # Handle in a thread (Non-blocking)
+                t = threading.Thread(
+                    target=self._handle_tcp_client, 
+                    args=(new_session,), 
+                    daemon=True
+                )
+                t.start()
                 
         except KeyboardInterrupt:
             print("\n[!] Stopping server...")
@@ -142,9 +232,15 @@ class WulframServerContext:
             self.tcp_sock.close()
             self.udp_sock.close()
 
-    def _handle_tcp_client(self, client_sock: socket.socket):
+    def _handle_tcp_client(self, session: ClientSession):
+        """
+        Threaded handler for a single TCP client.
+        """
+        client_sock = session.tcp_sock
+        
+        # Update TcpContext to use the session
         tcp_transport = TcpTransport(client_sock)
-        ctx = TcpContext(tcp_transport, self)
+        ctx = TcpContext(tcp_transport, self, session)
         
         try:
             do_login_and_bootstrap(client_sock, ctx, dispatcher)
@@ -156,21 +252,26 @@ class WulframServerContext:
                 dispatcher.dispatch_payload(ctx, payload)
                 
         except Exception as e:
-            print(f"[-] Client Disconnected: {e}")
+            print(f"[-] Client {session.address} Disconnected: {e}")
         finally:
-            ctx.stop_ping_event.set()
-            ctx.server.stop_update_event.set()
-            client_sock.close()
+            session.cleanup()
+            if session in self.sessions:
+                self.sessions.remove(session)
 
 class TcpContext:
     """
     Context for a specific TCP Client connection.
     Reference `server` to access global config/state.
+    Reference `session` to access specific player state.
     """
-    def __init__(self, transport: TcpTransport, server: WulframServerContext):
+    def __init__(self, transport: TcpTransport, server: WulframServerContext, session: ClientSession):
         self.transport = transport
         self.server = server # <--- Access to Config, Logger, etc.
-        self.stop_ping_event = threading.Event()
+        self.session = session # <--- Added this linkage
+        
+        # This is now redundant since it's in session, but we can keep it for compatibility 
+        # or map it to session.stop_ping_event
+        self.stop_ping_event = session.stop_ping_event
 
     def send(self, packet_data: bytes | Packet):
         """
@@ -198,10 +299,11 @@ class TcpContext:
 
 class UdpContext:
     """Context for a UDP Endpoint (Sessionless or Session-bound)"""
-    def __init__(self, transport: UdpTransport, addr: Tuple[str, int], server: WulframServerContext):
+    def __init__(self, transport: UdpTransport, addr: Tuple[str, int], server: WulframServerContext, session: Optional[ClientSession] = None):
         self.transport = transport
         self.addr = addr
         self.server = server # <--- Access to Config, Logger, etc.
+        self.session = session # <--- The specific player this packet came from
         self.outgoing_seq = 0
         self.stream_states = {0: 0, 1: 0, 2: 0, 3: 0}
 
@@ -253,8 +355,9 @@ def start_update_loop(ctx: UdpContext):
             start_time = time.time()
 
             try:
-                if (ctx.server.my_entity is not None) and (ctx.server.my_entity.net_id is not None):
-                    my_ent = ctx.server.my_entity
+                # Use SESSION entity
+                if ctx.session and ctx.session.entity:
+                    my_ent = ctx.session.entity
                     # FIX: Use .get() to avoid KeyError: 4
                     jump_val = my_ent.actions.get(4, 0.0)
                     hover_val = my_ent.actions.get(5, 0.0) # Default to 0!
@@ -410,14 +513,14 @@ def on_want_updates(ctx: TcpContext, payload: bytes):
     print(">>> Client is ready for updates (0x39)")
     ctx.send(CommMessagePacket(
                 message_type=0,
-                source_player_id=ctx.server.cfg.player.player_id, 
+                source_player_id=ctx.session.player_id, 
                 chat_scope_id=0, 
                 recepient_id=0, 
                 message="Server: Welcome to Wulfram on Wulf-Forge!"
             ))
     ctx.send(CommMessagePacket(
                 message_type=0,
-                source_player_id=ctx.server.cfg.player.player_id, 
+                source_player_id=ctx.session.player_id, 
                 chat_scope_id=0, 
                 recepient_id=0, 
                 message="To spawn in type /s spawn"
@@ -455,6 +558,10 @@ def on_d_handshake(ctx: UdpContext, payload: bytes):
     """
     log_packet("RECV-UDP", payload)
 
+    if not ctx.session:
+        print("[WARN] Ignored packet from unknown UDP source")
+        return
+
     reader = PacketReader(payload)
     reader.read_byte() # Op
     timestamp = reader.read_int32()
@@ -472,7 +579,7 @@ def on_d_handshake(ctx: UdpContext, payload: bytes):
     # (Simplified for brevity, full impl in original udp_handler)
     pkt_hs = PacketWriter()
     pkt_hs.write_int32(get_ticks()) # Server timestamp
-    pkt_hs.write_int32(ctx.server.cfg.player.player_id) # Player ID?
+    pkt_hs.write_int32(ctx.session.player_id) # Player ID?
     # --- STREAM DEFINITIONS ---
     # We define 4 streams to match the client's expectations
     pkt_hs.write_int32(4) # Def Count
@@ -528,9 +635,12 @@ def on_d_handshake(ctx: UdpContext, payload: bytes):
 @dispatcher.route(0x08)
 def on_hello_ack(ctx: UdpContext, payload: bytes):
     # Client confirms they heard our TCP "UDP Config" packet
-    if not ctx.server.udp_root_received.is_set():
-        print("    > UDP Link Verified via 0x08.")
-        ctx.server.udp_root_received.set()
+    if ctx.session:
+        if not ctx.session.udp_root_received.is_set():
+            print(f"    > UDP Link Verified for {ctx.session.name} via 0x08.")
+            ctx.session.udp_root_received.set()
+    else:
+        print("    > [WARN] Received 0x08 from unknown session.")
 
 @dispatcher.route(0x0B)
 def on_client_ping_request(ctx: UdpContext, payload: bytes):
@@ -627,6 +737,11 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
     # Acknowledge
     ctx.send_ack(packet_id=0x25, seq_num=seq)
 
+    # Validate Session
+    if not ctx.session:
+        print("[WARN] Reincarnate request from sessionless UDP")
+        return
+
     # Check if this is a team switch or spawn request
     if (not is_team_switch):
         unk_int3 = float(reader.read_int32()) # double/float, maybe x cord
@@ -643,40 +758,57 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
             ctx.send(ReincarnatePacket(code=4)) # Can't enter yet. Game not ready.
             return
 
-        #ctx.outgoing_seq += 1
+        # 1. Create the Entity (Dynamic ID)
+        # We DO NOT pass override_net_id, so EntityManager assigns a new unique ID.
+        new_entity = ctx.server.entities.create_entity(
+            unit_type=unit_id, 
+            team_id=ctx.session.team,
+            pos=repair_pad.pos,
+        )
+
+        # 2. Assign to Session
+        # Remove old entity if exists
+        if ctx.session.entity:
+            ctx.server.entities.remove_entity(ctx, ctx.session.entity.net_id)
+
+        ctx.session.entity = new_entity
+        ctx.session.entity.is_manned = True
+
+        # 3. Notify the Client
+        send_system_message(ctx, f"Spawning Player #{new_entity.net_id}...")
+
+        # 4. Send TankPacket with the NEW Dynamic ID
+        # The client will receive this and now know "I am NetID X"
         pkt = TankPacket(
-            net_id=ctx.server.cfg.player.player_id,
+            net_id=new_entity.net_id, # <--- IMPORTANT: Use the new ID
             sequence_id=get_ticks(),
             tank_cfg=ctx.server.packet_cfg.tank,
-            team_id=ctx.server.player.team,
+            team_id=ctx.session.team,
             unit_type=unit_id,
             pos=repair_pad.pos,
             rot=repair_pad.rot
         )
         ctx.send(pkt)
-        send_system_message(ctx, "Spawning Local Player...")
-        ctx.server.my_entity = ctx.server.entities.create_entity(
-            unit_type=unit_id, 
-            override_net_id=ctx.server.cfg.player.player_id, 
-            team_id=ctx.server.player.team,
-            pos=repair_pad.pos,
-        )
+        
+        
+        
         # Don't update with anything for now, sending the TankPacket to the player
         # Will create the entity on their end
-        ctx.server.my_entity.pending_mask = 0
-        ctx.server.my_entity.is_manned = True
-        start_update_loop(ctx)
+        #ctx.server.my_entity.pending_mask = 0
+        #ctx.server.my_entity.is_manned = True
+
+        #start_update_loop(ctx)
         return
 
     team_id = team_id_or_repaid_pad
     print(f"    > RECV REINCARNATE (TEAM SWITCH): Team : {team_id}")
     # Switch their teams
     if (team_id == 1):
-        ctx.server.player.team = 1
-        ctx.send(UpdateStatsPacket(player_id=ctx.server.cfg.player.player_id, team_id=1))
+        ctx.session.team = 1 # Update Session
+        ctx.send(UpdateStatsPacket(player_id=ctx.session.player_id, team_id=1))
     elif (team_id == 2):
-        ctx.server.player.team = 2
-        ctx.send(UpdateStatsPacket(player_id=ctx.server.cfg.player.player_id, team_id=2))
+        ctx.session.team = 2 # Update Session
+        ctx.send(UpdateStatsPacket(player_id=ctx.session.player_id, team_id=2))
     
     # Sends message code about team switched successfully
     ctx.send(ReincarnatePacket(code=17))
@@ -687,6 +819,9 @@ def on_chat_comm_req(ctx: UdpContext, payload: bytes):
     Packet 0x20: CHAT / COMM REQUEST
     """
     if len(payload) < 10: return
+    if not ctx.session:
+        print("[WARN] Ignored packet from unknown UDP source")
+        return
 
     reader = PacketReader(payload)
     reader.read_byte() # Op (20)
@@ -716,7 +851,7 @@ def on_chat_comm_req(ctx: UdpContext, payload: bytes):
     else:
         ctx.send(CommMessagePacket(
             message_type=5,
-            source_player_id=ctx.server.cfg.player.player_id, 
+            source_player_id=ctx.session.player_id, 
             chat_scope_id=source, 
             recepient_id=0, 
             message=inc_message
@@ -798,18 +933,21 @@ def parse_action_packet(ctx: UdpContext, payload: bytes, is_dump: bool):
             value = reader.read_quantized_float(cfg_analog_std)
 
         # --- UPDATE THE ENTITY ---
-        if ctx.server.my_entity and value != 0.0:
-            ctx.server.my_entity.actions[action_id] = value
-            #print(f"       Updated Action {action_id} -> {value:.2f}")
+        if ctx.session and ctx.session.entity:
+            my_ent = ctx.session.entity
 
-        action_names = {
-            1: "Turn",
-            2: "Forward",
-            3: "Stafe",
-            4: "JumpJet",
-            5: "Hover (Up/Down)", 
-        }
-        name = action_names.get(action_id, f"Unknown_{action_id}")
+            if value != 0.0:
+                my_ent.actions[action_id] = value
+                #print(f"       Updated Action {action_id} -> {value:.2f}")
+
+            action_names = {
+                1: "Turn",
+                2: "Forward",
+                3: "Stafe",
+                4: "JumpJet",
+                5: "Hover (Up/Down)", 
+            }
+            name = action_names.get(action_id, f"Unknown_{action_id}")
 
         # Log it to verify inputs
         #if value != 0.0:
@@ -1044,7 +1182,7 @@ def cmd_drop(ctx):
 def send_system_message(ctx: UdpContext | TcpContext, message: str, receipient_id: int = 0):
     ctx.send(CommMessagePacket(
                 message_type=0,
-                source_player_id=ctx.server.cfg.player.player_id, 
+                source_player_id=0, #ctx.server.cfg.player.player_id, 
                 chat_scope_id=0, 
                 recepient_id=receipient_id, 
                 message=message
@@ -1055,13 +1193,25 @@ def destroy_all_entities(ctx: UdpContext | TcpContext):
         ctx.server.entities.remove_entity(ctx, e.net_id)
 
 def kill_local_player(ctx: UdpContext | TcpContext):
-    player_id = ctx.server.cfg.player.player_id
-    if (ctx.server.entities.get_entity(player_id)):
-        ctx.send(DeathNoticePacket(player_id))
-        ctx.server.entities.remove_entity(ctx, player_id)
-        send_system_message(ctx, "You died.")
+    if not ctx.session:
+        return
+    
+    if not ctx.session.entity:
+        send_system_message(ctx, "You may already be dead.")
+        return
+    
+    player_id = ctx.session.entity.net_id
 
-    ctx.server.my_entity = None
+    # 3. Perform Logic
+    # Notify client of death
+    ctx.send(DeathNoticePacket(player_id))
+    
+    # Remove from World
+    ctx.server.entities.remove_entity(ctx, player_id)
+    send_system_message(ctx, "You died.")
+
+    # 4. Clear Session State
+    ctx.session.entity = None
 
 def _get_map_state_path(map_name):
     """
@@ -1101,7 +1251,7 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
     """
     Handles the initial sequence: Hello -> UDP Link -> Login -> World Entry.
     """
-    ctx.server.udp_root_received.clear()
+    ctx.session.udp_root_received.clear()
     time.sleep(1.0)
     
     # This let's the client know which ip and port to connect to with UDP
@@ -1110,7 +1260,7 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
         host=ctx.server.cfg.network.server_ip))
 
     print("[INFO] Waiting for Client UDP init...")
-    if ctx.server.udp_root_received.wait(timeout=5.0):
+    if ctx.session.udp_root_received.wait(timeout=5.0):
         print(">>> UDP ROOT Verified! Sending TCP Confirmation.")
         ctx.send(IdentifiedUdpPacket())
     else:
@@ -1134,8 +1284,8 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
             pktl = PacketReader(payload)
             pktl.read_byte() # Op
             pktl.read_byte() # SubCmd
-            ctx.server.player.name = pktl.read_string()
-            print(f">>> Username: {ctx.server.player.name}")
+            ctx.session.name = pktl.read_string()
+            print(f">>> Username: {ctx.session.name}")
             break
 
     print(">>> Requesting Password (Status Code 1)...")
@@ -1150,10 +1300,14 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
         if payload and payload[0] == 0x21:
             break
 
-    print(">>> Login Complete!")
+    # 1. Assign Unique Player ID
+    ctx.session.player_id = ctx.server.get_next_player_id()
+    ctx.session.is_logged_in = True
+    print(f">>> Login Complete! Assigned Player ID: {ctx.session.player_id}")
+
     ctx.send(TeamInfoPacket())
     ctx.send(LoginStatusPacket(code=8, is_donor=True))
-    ctx.send(PlayerInfoPacket(ctx.server.cfg.player.player_id, False))
+    ctx.send(PlayerInfoPacket(ctx.session.player_id, False))
     ctx.send(GameClockPacket())
     ctx.send(MotdPacket(ctx.server.cfg.game.motd))
     ctx.send(BehaviorPacket(ctx.server.packet_cfg.behavior))
@@ -1163,10 +1317,10 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
 
     # TODO: check if this is actually team, since this is sent before we select a team
     ctx.send(AddToRosterPacket(
-        account_id=ctx.server.cfg.player.player_id, 
-        name=ctx.server.player.name,
+        account_id=ctx.session.player_id,
+        name=ctx.session.name,
         nametag=ctx.server.cfg.player.nametag,
-        team=ctx.server.player.team))
+        team=0))
 
     ctx.send(WorldStatsPacket(map_name=ctx.server.cfg.game.map_name))
 
