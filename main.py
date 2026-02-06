@@ -836,10 +836,10 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
     # Switch their teams
     if (team_id == 1):
         ctx.session.team = 1 # Update Session
-        ctx.send(UpdateStatsPacket(player_id=ctx.session.player_id, team_id=1))
+        broadcast(ctx.server, UpdateStatsPacket(player_id=ctx.session.player_id, team_id=1))
     elif (team_id == 2):
         ctx.session.team = 2 # Update Session
-        ctx.send(UpdateStatsPacket(player_id=ctx.session.player_id, team_id=2))
+        broadcast(ctx.server, UpdateStatsPacket(player_id=ctx.session.player_id, team_id=2))
     
     # Sends message code about team switched successfully
     ctx.send(ReincarnatePacket(code=17))
@@ -859,11 +859,11 @@ def on_chat_comm_req(ctx: UdpContext, payload: bytes):
     sequence_num = reader.read_int16()
     payload_len = reader.read_int16()
 
-    source = reader.read_int16()
+    source_scope = reader.read_int16()
     unk_id = reader.read_int16()
     inc_message = reader.read_string()
 
-    print(f"CHAT: id: {unk_id} | source: {source} | message: {inc_message}")
+    print(f"CHAT: id: {unk_id} | source: {source_scope} | message: {inc_message}")
     
     # 1. Update Sequence State (Simplistic)
     #self.stream_states[stream_id] = sequence_num
@@ -873,20 +873,26 @@ def on_chat_comm_req(ctx: UdpContext, payload: bytes):
     # 2. SEND ACK
     ctx.send_ack(packet_id=0x20, seq_num=sequence_num)
 
-    if (source == 1): # /s system message
+    if (source_scope == 1): # /s system message
         # Try to process as a command
         found = commands.process(ctx, inc_message)
         
         if not found:
             send_system_message(ctx, "Unknown command.")
     else:
-        ctx.send(CommMessagePacket(
+        broadcast_chat(
+            server=ctx.server,
+            message=inc_message,
+            source_player_id=ctx.session.player_id,
+            scope_id=source_scope
+        )
+        """ctx.send(CommMessagePacket(
             message_type=5,
             source_player_id=ctx.session.player_id, 
             chat_scope_id=source, 
             recepient_id=0, 
             message=inc_message
-            ))
+            ))"""
         
         #source = 5 # admin message
         #self.send_chat_message(addr, 5, ctx.server.cfg.player.player_id, source, 0, message)
@@ -1244,6 +1250,73 @@ def kill_local_player(ctx: UdpContext | TcpContext):
     # 4. Clear Session State
     ctx.session.entity = None
 
+def broadcast(server: WulframServerContext, packet_data: bytes | Packet, exclude_session: ClientSession | None = None):
+    """
+    Generic broadcaster. Serializes a packet once and sends it to all logged-in players.
+    """
+
+    if isinstance(packet_data, Packet):
+        payload = packet_data.serialize()
+    else:
+        payload = packet_data
+    
+    # We need to frame it for TCP if we fall back, so calculate header once
+    tcp_header = struct.pack(">H", len(payload) + 2)
+
+    for session in server.sessions:
+        # Skip not logged in or excluded sessions
+        if not session.is_logged_in or session == exclude_session:
+            continue
+            
+        try:
+            # Prefer UDP (Reliable Stream 1 is typical for game events)
+            if session.udp_context:
+                session.udp_context.send(payload)
+            elif session.tcp_sock:
+                session.tcp_sock.sendall(tcp_header + payload)
+        except Exception as e:
+            print(f"[Broadcast] Error sending to {session.name}: {e}")
+
+def broadcast_chat(server: WulframServerContext, message: str, source_player_id: int, scope_id: int):
+    """
+    Sends a CommMessagePacket to all connected players (including the sender).
+    """
+    packet = CommMessagePacket(
+        message_type=5, # 5 = User Chat? (0=System, 1=?, 5=Chat)
+        source_player_id=source_player_id, 
+        chat_scope_id=scope_id, 
+        recepient_id=0, 
+        message=message
+    )
+    
+    encoded = packet.serialize()
+    
+    count = 0
+    for session in server.sessions:
+        # Only send to players who are fully logged in
+        if not session.is_logged_in:
+            continue
+            
+        # Prefer UDP for chat (Reliable Stream 1), fallback to TCP if necessary
+        try:
+            if session.udp_context:
+                # We reuse the raw byte payload to avoid re-serializing 50 times
+                # Note: UdpContext.send handles framing
+                session.udp_context.send(encoded)
+                count += 1
+            elif session.tcp_sock:
+                # If for some reason they have no UDP yet (rare for chat), use TCP
+                # We need to manually frame it for TCP if we don't use the wrapper
+                # ideally we'd reconstruct a TcpContext, but raw send is easier here:
+                # length + payload
+                header = struct.pack(">H", len(encoded) + 2)
+                session.tcp_sock.sendall(header + encoded)
+                count += 1
+        except Exception as e:
+            print(f"[Broadcast] Failed to send to {session.name}: {e}")
+            
+    print(f"[Chat] Broadcasted to {count} players.")
+
 def _get_map_state_path(map_name):
     """
     Helper to construct the map file path. 
@@ -1348,6 +1421,7 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
 
     # Assign Unique Player ID
     ctx.session.player_id = ctx.server.get_next_player_id()
+    ctx.session.team = 0
     ctx.session.is_logged_in = True
     print(f">>> Login Complete! Assigned Player ID: {ctx.session.player_id}")
 
@@ -1372,13 +1446,36 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
 
     print("[SEND] TRANSLATION (0x32) - Configuration Compression Table...")
     ctx.send(TranslationPacket())
-
-    # TODO: check if this is actually team, since this is sent before we select a team
-    ctx.send(AddToRosterPacket(
+    
+    # --- ROSTER SYNC ---
+    
+    # 1. Create the Roster Packet for THIS new player
+    my_roster_pkt = AddToRosterPacket(
         account_id=ctx.session.player_id,
         name=ctx.session.name,
         nametag=ctx.server.cfg.player.nametag,
-        team=0))
+        team=ctx.session.team
+    )
+
+    # 2. Tell ME about MYSELF (so I see myself in the list)
+    ctx.send(my_roster_pkt)
+
+    # 3. Tell EVERYONE ELSE about ME
+    broadcast(ctx.server, my_roster_pkt, exclude_session=ctx.session)
+
+    # 4. Tell ME about EVERYONE ELSE (Catch up on existing players)
+    for other_session in ctx.server.sessions:
+        if other_session.is_logged_in and other_session != ctx.session:
+            # Create a packet for the existing player
+            other_pkt = AddToRosterPacket(
+                account_id=other_session.player_id,
+                name=other_session.name,
+                nametag=ctx.server.cfg.player.nametag,
+                team=other_session.team
+            )
+            print(f"Me: {ctx.session.player_id} | Team: {ctx.session.team} | Other player: {other_session.player_id} | Team: {other_session.team}")
+            # Send it to the NEW player (ctx)
+            ctx.send(other_pkt)
 
     ctx.send(WorldStatsPacket(map_name=ctx.server.cfg.game.map_name))
 

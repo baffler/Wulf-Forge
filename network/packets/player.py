@@ -56,15 +56,15 @@ class AddToRosterPacket(Packet):
     def serialize(self) -> bytes:
         pkt = PacketWriter()
         pkt.write_int32(self.account_id)
-        pkt.write_int32(self.team)
-        pkt.write_int16(3)           # kills
-        pkt.write_int16(5)            # unk14, deaths
+        pkt.write_int32(0)   # unknown
+        pkt.write_int16(self.team)    # team
+        pkt.write_int16(2)            # unk14, deaths
         pkt.write_string(self.name)
         pkt.write_string(self.nametag)
-        pkt.write_int16(7)           # kills?
+        pkt.write_int16(2)           # kills?
         pkt.write_int16(2)            # deaths?
-        pkt.write_fixed1616(6.7)      # Score
-        pkt.write_int32(9)            # ?
+        pkt.write_fixed1616(6.9)      # Score
+        pkt.write_int32(2)            # ?
 
         return b'\x1A' + pkt.get_bytes()
 
