@@ -27,7 +27,7 @@ class HelloPacket(Packet):
     session_key: str = ""          # Default for SubCmd 2
 
     def serialize(self) -> bytes:
-        print(f"[SEND] HELLO 0x13: {self.sub_cmd}")
+        print(f"[SERIALIZE] HELLO 0x13: Sub-Cmd -> {self.sub_cmd}")
         pkt = PacketWriter()
         
         # 1. Write the Sub-Command (Common to all)
