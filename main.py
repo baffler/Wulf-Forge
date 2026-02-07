@@ -107,6 +107,7 @@ class WulframServerContext:
         self.logger = PacketLogger()
         self.entities = EntityManager()
         self.first_map_load = False
+        self.current_map_name = self.cfg.game.map_name
 
         # Session Management
         self.sessions: list[ClientSession] = []
@@ -1233,6 +1234,7 @@ def cmd_map(ctx, map_name="tron"):
     destroy_all_entities(ctx)
     time.sleep(0.1)
 
+    ctx.server.current_map_name = map_name
     broadcast(ctx.server, WorldStatsPacket(map_name=map_name))
     send_system_message(ctx, f"Changing map to {map_name}...")
     time.sleep(0.1)
@@ -1298,7 +1300,7 @@ def cmd_dock(ctx, state="1"):
 @commands.command("carry")
 def cmd_carry(ctx, item_id="13"):
     ctx.send(CarryingInfoPacket(
-        player_id=ctx.server.cfg.player.player_id,
+        player_id=ctx.session.player_id,
         has_cargo=True,
         unk_v2=1,
         item_id=int(item_id)
@@ -1307,7 +1309,7 @@ def cmd_carry(ctx, item_id="13"):
 @commands.command("drop")
 def cmd_drop(ctx):
     ctx.send(CarryingInfoPacket(
-        player_id=ctx.server.cfg.player.player_id,
+        player_id=ctx.session.player_id,
         has_cargo=False,
         unk_v2=1,
         item_id=0
@@ -1580,10 +1582,10 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
             # Send it to the NEW player (ctx)
             ctx.send(other_pkt)
 
-    ctx.send(WorldStatsPacket(map_name=ctx.server.cfg.game.map_name))
+    ctx.send(WorldStatsPacket(map_name=ctx.server.current_map_name))
 
     if (not ctx.server.first_map_load):
-        cmd_loadmap(ctx, ctx.server.cfg.game.map_name)
+        cmd_loadmap(ctx, ctx.server.current_map_name)
         ctx.server.first_map_load = True
 
     start_ping_loop(ctx)
