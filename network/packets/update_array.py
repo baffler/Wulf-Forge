@@ -11,9 +11,10 @@ class EntitySerializer:
     def __init__(self, writer: PacketWriter):
         self.writer = writer
 
-    def serialize(self, entity: GameEntity, force_definition=False):
+    def serialize(self, entity: GameEntity, force_definition=False, forced_mask: int | None = None):
         # 1. Determine the Mask
-        mask = entity.pending_mask
+        # If forced_mask is provided, use it. Otherwise, use entity's current dirty state.
+        mask = forced_mask if forced_mask is not None else entity.pending_mask
         
         # If forcing definition (spawning), ensure Bit 0 is set
         if force_definition:
@@ -22,6 +23,8 @@ class EntitySerializer:
         # 2. Write Header (Standard for every entity)
         self.writer.write_int32(entity.net_id)
         self.writer.write_bool(entity.is_manned)
+
+        # Ensure we write the calculated 'mask', NOT entity.pending_mask
         self.writer.write_bits(mask, 10)
         
         # Bank Selector
@@ -137,9 +140,9 @@ class UpdateArrayPacket:
         """
         self.local_stats = (health, energy)
 
-    def add_entity(self, entity: GameEntity, force_spawn=False):
+    def add_entity(self, entity: GameEntity, force_spawn=False, forced_mask: int | None = None):
         """Adds an entity to be serialized in this packet."""
-        self.entities.append((entity, force_spawn))
+        self.entities.append((entity, force_spawn, forced_mask))
 
     def get_bytes(self):
         # --- SECTION 1: Local Stats (The "Weapon State/Vital Stats" part) ---
@@ -167,7 +170,7 @@ class UpdateArrayPacket:
 
         serializer = EntitySerializer(self.writer)
         
-        for entity, force_spawn in self.entities:
-            serializer.serialize(entity, force_definition=force_spawn)
+        for entity, force_spawn, forced_mask in self.entities:
+            serializer.serialize(entity, force_definition=force_spawn, forced_mask=forced_mask)
 
         return self.writer.get_bytes()

@@ -20,9 +20,9 @@ from core.config import Config, PlayerSession, get_ticks
 from network.packets.packet_config import PacketConfig
 from network.packets import (
     Packet, MotdPacket, IdentifiedUdpPacket, LoginStatusPacket, PlayerInfoPacket,
-    BpsReplyPacket, PingRequestPacket, AddToRosterPacket, WorldStatsPacket,
+    BpsReplyPacket, PingRequestPacket, AddToRosterPacket, RemoveFromRosterPacket,
+    WorldStatsPacket, ResetGamePacket, DeleteObjectPacket,
     DeathNoticePacket, BirthNoticePacket, CarryingInfoPacket, DockingPacket, 
-    ResetGamePacket, DeleteObjectPacket,
     GameClockPacket, HelloPacket, TeamInfoPacket, ReincarnatePacket,
     TankPacket, BehaviorPacket, TranslationPacket,
     UpdateStatsPacket, CommMessagePacket,
@@ -68,6 +68,9 @@ class ClientSession:
         
         # Connection State
         self.is_logged_in: bool = False
+
+        # Gate flag for the global loop
+        self.is_ready_for_updates: bool = False
         
         # UDP Linkage
         self.udp_addr: Optional[Tuple[str, int]] = None
@@ -86,9 +89,13 @@ class ClientSession:
             self.tcp_sock.close()
         except:
             pass
+        
+        if (self.is_logged_in):
+            broadcast(self.server, RemoveFromRosterPacket(self.player_id))
+
         if self.entity:
-            # Logic to remove entity from world could go here
-            pass
+            del_pkt = self.server.entities.remove_entity(net_id=self.entity.net_id)
+            if (del_pkt is not None): broadcast(self.server, del_pkt)
 
 class WulframServerContext:
     """
@@ -120,6 +127,10 @@ class WulframServerContext:
         
         # UDP Session Cache (Addr -> UdpContext)
         self.udp_sessions: Dict[Tuple[str, int], UdpContext] = {}
+
+        # Global Game Thread
+        game_thread = threading.Thread(target=global_game_loop, args=(self,), daemon=True)
+        game_thread.start()
 
     def get_next_player_id(self) -> int:
         """Generates a unique Player/Account ID."""
@@ -322,6 +333,100 @@ class UdpContext:
 # -------------------------------------------------------------------------
 # DISPATCHER & HANDLERS
 # -------------------------------------------------------------------------
+
+def global_game_loop(server: WulframServerContext):
+    """
+    Main Server Tick (Targeting ~10Hz).
+    Updates physics, processes inputs, and broadcasts distinct views to clients.
+    """
+    print("[Server] Starting Global Game Loop...")
+    TARGET_FPS = 10
+    FRAME_TIME = 1.0 / TARGET_FPS
+
+    while not server.stop_update_event.is_set():
+        start_time = time.time()
+        
+        # --- 1. Process Inputs (Physics/Actions) ---
+        # Apply actions (jump/hover) for every active player
+        for session in server.sessions:
+            if session.entity and session.is_logged_in:
+                my_ent = session.entity
+                
+                # Example: Jump Logic (from your previous code)
+                jump_val = my_ent.actions.get(4, 0.0)
+                if jump_val >= 1.0:
+                    vx, vy, _ = my_ent.vel
+                    # Apply Jump Velocity (Z axis)
+                    final_x = vx if abs(vx) > 0.01 else 0.001
+                    final_y = vy if abs(vy) > 0.01 else 0.001
+                    
+                    my_ent.vel = (final_x, final_y, 100.0)
+                    my_ent.mark_dirty(UpdateMask.VEL)
+                    my_ent.actions[4] = 0.0 # Reset trigger
+
+        # --- 2. Gather Dirty State ---
+        # We get the list ONCE. The state remains valid for all clients.
+        dirty_entities = server.entities.get_dirty_entities()
+        current_tick = get_ticks()
+
+        # --- 3. Broadcast Loop ---
+        if dirty_entities:
+            for session in server.sessions:
+                # CHECK: Must be logged in AND ready for updates
+                if not session.is_logged_in or not session.is_ready_for_updates:
+                    continue
+
+                # Skip players who aren't fully in the world yet
+                if not session.is_logged_in or not session.udp_context or not session.entity:
+                    continue
+                
+                my_entity = session.entity
+
+                # Always gather local stats for THIS session
+                # If we send a packet without this, the client HUD might zero out.
+                my_stats = (my_entity.health, my_entity.energy)
+                
+                # --- A. PACKET FOR "OTHERS" (0x0E - Update Array) ---
+                # Filter: Send updates for everyone who is NOT me
+                others = [e for e in dirty_entities if e.net_id != my_entity.net_id]
+                
+                if others:
+                    # Build payload (No Timestamp, No Local Stats)
+                    # We MUST pass local_stats here, even though it's an update for "others"
+                    payload = server.entities.build_update_packet(
+                        others, 
+                        sequence_num=current_tick, 
+                        is_view_update=False,
+                        local_stats=my_stats
+                    )
+                    if payload:
+                        # Prepend OpCode 0x0E
+                        session.udp_context.send(b'\x0E' + payload)
+
+                # --- B. PACKET FOR "SELF" (0x0F - View Update) ---
+                # Check if "I" am dirty. If so, send View Update.
+                if my_entity in dirty_entities:
+                    # Build payload (Includes Timestamp, Includes Local Stats)
+                    stats = (my_entity.health, my_entity.energy)
+                    
+                    payload = server.entities.build_update_packet(
+                        [my_entity], 
+                        sequence_num=current_tick, 
+                        is_view_update=True, 
+                        local_stats=stats
+                    )
+                    if payload:
+                        # Prepend OpCode 0x0F
+                        session.udp_context.send(b'\x0F' + payload)
+
+        # --- 4. Cleanup ---
+        # Now that everyone has been told about the updates, we can clear the flags.
+        server.entities.clear_all_dirty_flags()
+
+        # --- 5. Sleep to maintain tick rate ---
+        elapsed = time.time() - start_time
+        sleep_time = max(0.0, FRAME_TIME - elapsed)
+        time.sleep(sleep_time)
 
 def start_update_loop(ctx: UdpContext):
     def run():
@@ -564,6 +669,9 @@ def on_want_updates(ctx: TcpContext, payload: bytes):
     # We send this over TCP to ensure they get the initial world state reliably
     ctx.send(snapshot)
 
+    ctx.session.is_ready_for_updates = True
+    print(f">>> Snapshot sent. Client {ctx.session.name} is now SYNCED.")
+
 @dispatcher.route(0x4F)
 def on_kudos(ctx: TcpContext, payload: bytes):
     log_packet("TCP-RECV", payload)
@@ -800,7 +908,8 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
         # 2. Assign to Session
         # Remove old entity if exists
         if ctx.session.entity:
-            ctx.server.entities.remove_entity(ctx, ctx.session.entity.net_id)
+            del_pkt = ctx.server.entities.remove_entity(ctx.session.entity.net_id)
+            if del_pkt is not None: broadcast(ctx.server, del_pkt)
 
         ctx.session.entity = new_entity
         ctx.session.entity.is_manned = True
@@ -811,7 +920,7 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
         # 4. Send TankPacket with the NEW Dynamic ID
         # The client will receive this and now know "I am NetID X"
         pkt = TankPacket(
-            net_id=new_entity.net_id, # <--- IMPORTANT: Use the new ID
+            net_id=new_entity.net_id,
             sequence_id=get_ticks(),
             tank_cfg=ctx.server.packet_cfg.tank,
             team_id=ctx.session.team,
@@ -821,14 +930,10 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
         )
         ctx.send(pkt)
         
-        
-        
-        # Don't update with anything for now, sending the TankPacket to the player
-        # Will create the entity on their end
-        #ctx.server.my_entity.pending_mask = 0
-        #ctx.server.my_entity.is_manned = True
+        # TODO: what's this do exactly? And does it need to use
+        # net_id or player_id?
+        broadcast(ctx.server, BirthNoticePacket(ctx.session.entity.net_id))
 
-        #start_update_loop(ctx)
         return
 
     team_id = team_id_or_repaid_pad
@@ -1068,9 +1173,10 @@ def cmd_spawn(ctx, unit_type_str=None):
         ctx.send(pkt)
         send_system_message(ctx, "Spawning Local Player...")
 
-        #ctx.send(BirthNoticePacket(ctx.server.cfg.player.player_id))
+        # TODO: what's this do exactly? And does it need to use
+        # net_id or player_id?
+        broadcast(ctx.server, BirthNoticePacket(ctx.session.entity.net_id))
 
-        #start_update_loop(ctx)
         return
 
     # CASE 2: Argument provided -> Spawn Enemy/Entity
@@ -1225,7 +1331,8 @@ def send_system_message(ctx: UdpContext | TcpContext, message: str, receipient_i
     
 def destroy_all_entities(ctx: UdpContext | TcpContext):
     for e in ctx.server.entities.get_all():
-        ctx.server.entities.remove_entity(ctx, e.net_id)
+        del_packet = ctx.server.entities.remove_entity(e.net_id)
+        if del_packet is not None: broadcast(ctx.server, del_packet)
 
 def kill_local_player(ctx: UdpContext | TcpContext):
     if not ctx.session:
@@ -1239,14 +1346,16 @@ def kill_local_player(ctx: UdpContext | TcpContext):
 
     # 3. Perform Logic
     # Notify client of death
-    ctx.send(DeathNoticePacket(net_id))
+    broadcast(ctx.server, DeathNoticePacket(net_id))
     
     # Remove from World
-    ctx.server.entities.remove_entity(ctx, net_id)
-    send_system_message(ctx, "You died.")
+    del_packet = ctx.server.entities.remove_entity(net_id)
+    if del_packet is not None: broadcast(ctx.server, del_packet)
 
     # 4. Clear Session State
     ctx.session.entity = None
+
+    send_system_message(ctx, "You died.")
 
 def broadcast(server: WulframServerContext, packet_data: bytes | Packet, exclude_session: ClientSession | None = None):
     """

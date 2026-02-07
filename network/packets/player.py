@@ -44,6 +44,18 @@ class DeathNoticePacket(Packet):
         return b'\x1D' + pkt.get_bytes()
 
 @dataclass
+class RemoveFromRosterPacket(Packet):
+    """
+    Packet 0x1B: REMOVE_FROM_ROSTER
+    """
+    account_id: int
+
+    def serialize(self) -> bytes:
+        pkt = PacketWriter()
+        pkt.write_int32(self.account_id)
+        return b'\x1B' + pkt.get_bytes()
+
+@dataclass
 class AddToRosterPacket(Packet):
     """
     Packet 0x1A: ADD_TO_ROSTER

@@ -29,52 +29,82 @@ class EntityManager:
         self._entities[net_id] = entity
         return entity
 
-    def remove_entity(self, ctx, net_id: int):
+    def remove_entity(self, net_id: int) -> Optional[DeleteObjectPacket]:
+        """
+        Removes the entity from the registry and returns the DeleteObjectPacket.
+        The caller is responsible for broadcasting this packet.
+        """
         if net_id in self._entities:
             del self._entities[net_id]
-            ctx.send(DeleteObjectPacket(net_id=net_id))
+            return DeleteObjectPacket(net_id=net_id)
+        
+        return None
 
     def get_entity(self, net_id: int) -> Optional[GameEntity]:
         return self._entities.get(net_id)
 
     def get_all(self) -> List[GameEntity]:
         return list(self._entities.values())
+    
+    def get_dirty_entities(self) -> List[GameEntity]:
+        """Returns a list of all entities that have changed this tick."""
+        return [e for e in self._entities.values() if e.pending_mask > 0]
+
+    def clear_all_dirty_flags(self):
+        """Clears dirty flags for all entities. Call this AT THE END of a tick."""
+        for e in self._entities.values():
+            e.clear_dirty()
 
     # --- PACKET GENERATION ---
+
+    def build_update_packet(self, entities: List[GameEntity], sequence_num: int, 
+                           is_view_update: bool, 
+                           local_stats: tuple[float, float] | None = None) -> Optional[bytes]:
+        """
+        Constructs the payload for an UpdateArrayPacket.
+        Crucially, this does NOT clear dirty flags, allowing you to reuse 
+        the dirty state for multiple clients.
+        """
+        # If no entities changed and we aren't forcing local stats (like a heartbeat), return None
+        if not entities and not local_stats:
+            return None
+
+        packet = UpdateArrayPacket(sequence_id=sequence_num, is_view_update=is_view_update)
+        
+        # 1. Set Local Stats (Health/Energy) - Only used for 0x0F (View)
+        if local_stats:
+            packet.set_local_stats(health=local_stats[0], energy=local_stats[1])
+            
+        # 2. Add Entities
+        for entity in entities:
+             # If the DEFINITION bit is set, we must tell the packet to write the full spawn info
+             force_spawn = bool(entity.pending_mask & UpdateMask.DEFINITION)
+             packet.add_entity(entity, force_spawn=force_spawn)
+
+        return packet.get_bytes()
 
     def get_snapshot_packet(self, sequence_num: int, health: float = 1.0, energy: float = 1.0) -> bytes:
         """
         Returns a packet containing the FULL state of the world + Local Stats.
+        THREAD-SAFE: Does not modify entity state.
         """
         packet = UpdateArrayPacket(sequence_id=sequence_num, is_view_update=True)
 
         # Tell the client it is alive
         packet.set_local_stats(health=health, energy=energy)
+
+        # Define the mask we want for a full snapshot (Pos + Health + Def)
+        snapshot_mask = UpdateMask.POS | UpdateMask.HEALTH | UpdateMask.DEFINITION
         
         for entity in self._entities.values():
-            # TEMPORARY HACK: Force the POS bit on the entity's mask 
-            # just for this serialization moment, or handle it in the serializer.
-            # The cleanest way without mutating the entity state permanently:
-            
-            # 1. Save original mask
-            original_mask = entity.pending_mask
-            
-            # 2. Force POS + DEFINITION locally for this packet
-            # (set DEFINITION via force_spawn=True, but we need POS to ensure coords are sent)
-            entity.pending_mask |= UpdateMask.POS
-            entity.pending_mask |= UpdateMask.HEALTH
-            
-            # 3. Add to packet
-            packet.add_entity(entity, force_spawn=True)
+            # Pass the mask explicitly. Do NOT touch entity.pending_mask.
+            packet.add_entity(
+                entity, 
+                force_spawn=True, 
+                forced_mask=snapshot_mask
+            )
 
-        payload = packet.get_bytes()
-
-        # Have to restore the mask AFTER packet.get_bytes()
-        for entity in self._entities.values():
-            # Restore original mask
-            entity.pending_mask = original_mask
-
-        return b'\x0F' + payload
+        return b'\x0F' + packet.get_bytes()
 
     def get_dirty_packet(self, sequence_num: int, health: float = 1.0, energy: float = 1.0) -> Optional[bytes]:
         """
