@@ -1232,12 +1232,8 @@ def cmd_map(ctx, map_name="tron"):
 
     destroy_all_entities(ctx)
     time.sleep(0.1)
-    
-    if (ctx.server.my_entity):
-        kill_local_player(ctx)
-        time.sleep(0.1) # Wait before we send map change
 
-    ctx.send(WorldStatsPacket(map_name=map_name))
+    broadcast(ctx.server, WorldStatsPacket(map_name=map_name))
     send_system_message(ctx, f"Changing map to {map_name}...")
     time.sleep(0.1)
     cmd_loadmap(ctx, map_name)
@@ -1272,7 +1268,7 @@ def cmd_loadmap(ctx, map_name="bpass"):
         # Just send the full snapshot
         #ctx.outgoing_seq += 1
         snapshot = ctx.server.entities.get_snapshot_packet(sequence_num=get_ticks(), health=1.0, energy=1.0)
-        ctx.send(snapshot)
+        broadcast(ctx.server, snapshot)
         
     except Exception as e:
         print(f"Failed to load map: {e}")
