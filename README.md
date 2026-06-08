@@ -35,12 +35,12 @@
 
 ## Better Fullscreen Support (DDrawCompat)
 * This will require you to remove `-windowed` from the command arguments.
-* Download (DDrawCompat-v0.7.1.zip)[https://github.com/narzoul/DDrawCompat/releases/download/v0.7.1/DDrawCompat-v0.7.1.zip]
+* Download [DDrawCompat-v0.7.1.zip](https://github.com/narzoul/DDrawCompat/releases/download/v0.7.1/DDrawCompat-v0.7.1.zip)
 * Extract ddraw.dll next to the wulfram2.exe
 * You can run wulfram2 now, and login, and press Esc, go to Options->Configure Graphics
 * Switch to D3D Alpha, set Visibility and Landscape Quality all the way up.
 * Now close out of wulfram2
-* Download DDrawCompatOverlay-wulfram2.ini and put next to the wulfram2.exe
+* Download [DDrawCompatOverlay-wulfram2.ini](https://raw.githubusercontent.com/baffler/Wulf-Forge/refs/heads/main/DDrawCompatOverlay-wulfram2.ini) and put next to the wulfram2.exe
 * You can launch wulfram2.exe and fullscreen should be pretty flawless
 * You can also press Shift + F11 to bring up the configuration editor in game as well for DDrawCompat.
 
