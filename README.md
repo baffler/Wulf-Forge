@@ -40,7 +40,7 @@
 * You can run wulfram2 now, and login, and press Esc, go to Options->Configure Graphics
 * Switch to D3D Alpha, set Visibility and Landscape Quality all the way up.
 * Now close out of wulfram2
-* Download [DDrawCompatOverlay-wulfram2.ini](https://raw.githubusercontent.com/baffler/Wulf-Forge/refs/heads/main/DDrawCompatOverlay-wulfram2.ini) and put next to the wulfram2.exe
+* Download [DDrawCompat-wulfram2.ini](https://github.com/baffler/Wulf-Forge/blob/b84d60d93d2bf5c6b758c146edf96117501ecf94/DDrawCompat-wulfram2.ini) and put next to the wulfram2.exe
 * You can launch wulfram2.exe and fullscreen should be pretty flawless
 * You can also press Shift + F11 to bring up the configuration editor in game as well for DDrawCompat.
 
