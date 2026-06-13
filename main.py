@@ -17,6 +17,7 @@ from network.dispatcher import PacketDispatcher
 from network.streams import PacketWriter, PacketReader
 
 from core.config import Config, PlayerSession, get_ticks
+from core.logging_config import setup_logging
 from network.packets.packet_config import PacketConfig
 from network.packets import (
     Packet, MotdPacket, IdentifiedUdpPacket, LoginStatusPacket, PlayerInfoPacket,
@@ -25,13 +26,13 @@ from network.packets import (
     DeathNoticePacket, BirthNoticePacket, CarryingInfoPacket, DockingPacket, 
     GameClockPacket, HelloPacket, TeamInfoPacket, ReincarnatePacket,
     TankPacket, BehaviorPacket, TranslationPacket,
-    UpdateStatsPacket, CommMessagePacket,
+    UpdateStatsPacket, CommMessagePacket, parse_reincarnate_request,
 )
 from network.packets.packet_logger import PacketLogger, log_packet
 
 from core.entity import GameEntity, UpdateMask
 from core.entity_manager import EntityManager
-from core.map_loader import MapLoader
+from core.map_loader import MapLoader, ensure_team_repair_pads, resolve_spawn_entry
 from core.commands import commands
 from network.packets.update_array import UpdateArrayPacket
 from network.translation_config import get_config_by_index, GLOBAL_CONFIGS
@@ -343,6 +344,8 @@ def global_game_loop(server: WulframServerContext):
     print("[Server] Starting Global Game Loop...")
     TARGET_FPS = 10
     FRAME_TIME = 1.0 / TARGET_FPS
+    STATIC_ANCHOR_INTERVAL = 0.5
+    last_static_anchor_time = 0.0
 
     while not server.stop_update_event.is_set():
         start_time = time.time()
@@ -369,9 +372,14 @@ def global_game_loop(server: WulframServerContext):
         # We get the list ONCE. The state remains valid for all clients.
         dirty_entities = server.entities.get_dirty_entities()
         current_tick = get_ticks()
+        static_anchor_payload = None
+
+        if start_time - last_static_anchor_time >= STATIC_ANCHOR_INTERVAL:
+            static_anchor_payload = server.entities.build_static_anchor_packet(sequence_num=current_tick)
+            last_static_anchor_time = start_time
 
         # --- 3. Broadcast Loop ---
-        if dirty_entities:
+        if dirty_entities or static_anchor_payload:
             for session in server.sessions:
                 # CHECK: Must be logged in AND ready for updates
                 if not session.is_logged_in or not session.is_ready_for_updates:
@@ -419,6 +427,9 @@ def global_game_loop(server: WulframServerContext):
                     if payload:
                         # Prepend OpCode 0x0F
                         session.udp_context.send(b'\x0F' + payload)
+
+                if static_anchor_payload:
+                    session.udp_context.send(static_anchor_payload)
 
         # --- 4. Cleanup ---
         # Now that everyone has been told about the updates, we can clear the flags.
@@ -861,21 +872,10 @@ def on_viewpoint(ctx: UdpContext, payload: bytes):
 @dispatcher.route(0x25)
 def on_reincarnate(ctx: UdpContext, payload: bytes):
     """Spawn/Team Request"""
-    reader = PacketReader(payload)
-    reader.read_byte()
-    seq = reader.read_int16()
-    length = reader.read_int16()
-    is_team_switch = reader.read_byte() == 0x01
-    # This is team_id if is_team_switch is 1 (true)
-    # If is_team_switch is 0 (false) then it's the repair pad's net id
-    team_id_or_repaid_pad = reader.read_int32()
-    unit_id = reader.read_int32() # Tank or Scout
-    
-    # [Op] [Seq] [Len] [Data...]
-    # Logic to spawn would go here
-    
+    request = parse_reincarnate_request(payload)
+
     # Acknowledge
-    ctx.send_ack(packet_id=0x25, seq_num=seq)
+    ctx.send_ack(packet_id=0x25, seq_num=request.sequence)
 
     # Validate Session
     if not ctx.session:
@@ -883,19 +883,30 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
         return
 
     # Check if this is a team switch or spawn request
-    if (not is_team_switch):
-        unk_int3 = float(reader.read_int32()) # double/float, maybe x cord
-        unk_int4 = float(reader.read_int32()) # double/float, maybe y cord
+    if not request.is_team_switch:
+        selected_entry_id = request.selected_entry_id
+        base_id = request.base_id
+        unit_id = ctx.server.packet_cfg.tank.unit_type
+        print(
+            "    > RECV REINCARNATE (SPAWN REQ): "
+            f"Entry ID: {selected_entry_id} | base_id #{base_id} | unit_type {unit_id}"
+        )
+        print(f"    > Unknown values: {request.extra_x} | {request.extra_y}")
 
-        net_id = team_id_or_repaid_pad
-        print(f"    > RECV REINCARNATE (SPAWN REQ): Unit ID: {unit_id} | net_id #{net_id}")
-        print(f"    > Unknown values: {unk_int3} | {unk_int4}")
+        if ctx.session.team not in (1, 2):
+            send_system_message(ctx, "Choose a team before entering the map.")
+            ctx.send(ReincarnatePacket(code=4, message="Choose a team first."))
+            return
         
-        # Find the selected entity (the repair pad they clicked on to spawn in)
-        repair_pad = ctx.server.entities.get_entity(net_id)
+        repair_pad = resolve_spawn_entry(
+            ctx.server.entities,
+            selected_entry_id,
+            base_id,
+            ctx.session.team,
+        )
         if not repair_pad:
             send_system_message(ctx, "Can't find selected spawn point.")
-            ctx.send(ReincarnatePacket(code=4)) # Can't enter yet. Game not ready.
+            ctx.send(ReincarnatePacket(code=4, message="Invalid Entry Point."))
             return
 
         # 1. Create the Entity (Dynamic ID)
@@ -930,23 +941,22 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
             rot=repair_pad.rot
         )
         ctx.send(pkt)
-        
-        # TODO: what's this do exactly? And does it need to use
-        # net_id or player_id?
-        broadcast(ctx.server, BirthNoticePacket(ctx.session.entity.net_id))
+        ctx.send(ReincarnatePacket(code=0))
+
+        broadcast(ctx.server, BirthNoticePacket(ctx.session.player_id))
 
         return
 
-    team_id = team_id_or_repaid_pad
+    team_id = request.team_id
     print(f"    > RECV REINCARNATE (TEAM SWITCH): Team : {team_id}")
     # Switch their teams
-    if (team_id == 1):
-        ctx.session.team = 1
-        broadcast(ctx.server, UpdateStatsPacket(player_id=ctx.session.player_id, team_id=1))
-    elif (team_id == 2):
-        ctx.session.team = 2
-        broadcast(ctx.server, UpdateStatsPacket(player_id=ctx.session.player_id, team_id=2))
-    
+    if team_id not in (1, 2):
+        ctx.send(ReincarnatePacket(code=18, message="Invalid team."))
+        return
+
+    ctx.session.team = team_id
+    broadcast(ctx.server, UpdateStatsPacket(player_id=ctx.session.player_id, team_id=team_id))
+
     # Sends message code about team switched successfully
     ctx.send(ReincarnatePacket(code=17))
 
@@ -1174,9 +1184,8 @@ def cmd_spawn(ctx, unit_type_str=None):
         ctx.send(pkt)
         send_system_message(ctx, "Spawning Local Player...")
 
-        # TODO: what's this do exactly? And does it need to use
-        # net_id or player_id?
-        broadcast(ctx.server, BirthNoticePacket(ctx.session.entity.net_id))
+        ctx.send(ReincarnatePacket(code=0))
+        broadcast(ctx.server, BirthNoticePacket(ctx.session.player_id))
 
         return
 
@@ -1243,29 +1252,40 @@ def cmd_map(ctx, map_name="tron"):
 @commands.command("loadmap")
 def cmd_loadmap(ctx, map_name="bpass"):
     """
-    Loads map entities from: ./shared/data/maps/<map_name>/state
+    Loads map entities from: ./shared/data/maps/<map_name>/state when present.
+    Land-only maps are still bootstrapped with team repair pads.
     Usage: /s loadmap bpass
     """
     # 1. Verify the map exists
-    if not verify_map_state_exists(map_name):
-        # We reconstruct the path here just for the error message
-        file_path = _get_map_state_path(map_name)
+    if not verify_map_land_exists(map_name):
+        file_path = _get_map_land_path(map_name)
         send_system_message(ctx, f"Could not find map file at: {file_path}")
         print(f"[MapLoader] File not found: {file_path}")
         return
 
     # 2. Proceed to load
-    file_path = _get_map_state_path(map_name)
+    map_dir = _get_map_dir_path(map_name)
+    state_path = _get_map_state_path(map_name)
 
     try:
-        with open(file_path, "r") as f:
-            data = f.read()
-        
         # Initialize the loader with the current entity manager
         loader = MapLoader(ctx.server.entities)
-        loader.load_from_string(data)
-        
-        send_system_message(ctx, f"Loaded map state: {map_name}")
+
+        loaded_count = 0
+        if os.path.exists(state_path):
+            with open(state_path, "r", encoding="ascii", errors="replace") as f:
+                data = f.read()
+            loaded_count = loader.load_from_string(data)
+            send_system_message(ctx, f"Loaded map state: {map_name}")
+        else:
+            print(f"[MapLoader] No state file for {map_name}; bootstrapping empty map.")
+            send_system_message(ctx, f"Loaded empty map: {map_name}")
+
+        created_pads = ensure_team_repair_pads(ctx.server.entities, map_dir)
+        if created_pads:
+            send_system_message(ctx, f"Created {created_pads} fallback repair pads.")
+            print(f"[MapLoader] Created {created_pads} fallback repair pads for {map_name}.")
+        print(f"[MapLoader] Map {map_name}: loaded {loaded_count} state entities.")
         
         # Just send the full snapshot
         #ctx.outgoing_seq += 1
@@ -1427,14 +1447,17 @@ def _get_map_state_path(map_name):
     Helper to construct the map file path. 
     Keeps the path definition in one place to avoid bugs.
     """
-    return os.path.join("shared", "data", "maps", map_name, "state")
+    return os.path.join(_get_map_dir_path(map_name), "state")
 
 def _get_map_land_path(map_name):
     """
     Helper to construct the map file path. 
     Keeps the path definition in one place to avoid bugs.
     """
-    return os.path.join("shared", "data", "maps", map_name, "land")
+    return os.path.join(_get_map_dir_path(map_name), "land")
+
+def _get_map_dir_path(map_name):
+    return os.path.join("shared", "data", "maps", map_name)
 
 def verify_map_state_exists(map_name):
     """
@@ -1591,8 +1614,13 @@ def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatch
     start_ping_loop(ctx)
 
 def main():
-    server = WulframServerContext()
-    server.run()
+    logging_runtime = setup_logging()
+    try:
+        print(f"[LOG] Writing server log to {logging_runtime.log_file}")
+        server = WulframServerContext()
+        server.run()
+    finally:
+        logging_runtime.restore()
 
 if __name__ == "__main__":
     main()

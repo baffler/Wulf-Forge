@@ -104,9 +104,21 @@ class ActiveVehiclePhysics:
     strafe_adjust: float = 69.7
     max_velocity: float = 80.0
     low_fuel_level: float = 2000.0
-    max_altitude: float = 5.0
+    hover_height: float | None = None
+    max_altitude: float = 9.75
     max_speed_height_pickup: float = 3.5
     gravity_pct: float = 0.5
+    jet_reaction_width: float = 2.0
+    jet_reaction_length: float = 2.0
+    jet_reaction_z: float = -0.5
+    jet_reaction_normal_z: float = -0.75
+    jet_reaction_range: float = 5.0
+
+    @property
+    def tank_hover_height(self) -> float:
+        if self.hover_height is not None:
+            return self.hover_height
+        return self.max_altitude
 
 @dataclass(slots=True)
 class BehaviorHeader:
