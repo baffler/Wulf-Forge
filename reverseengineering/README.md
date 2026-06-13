@@ -20,6 +20,34 @@ current state can be reviewed and iterated on in pull requests.
 - `tools/ExportProgramText.java` - reusable Ghidra headless script used to
   refresh the text exports.
 
+## Using This Data
+
+Use `project_manifest.tsv` as the entry point. It lists every exported Ghidra
+program, the directory that contains its files, hashes for source binary
+identity, and row counts for the major export tables.
+
+Each `programs/<program>/` directory is a read-only analysis snapshot. The TSV
+files are meant for search, review, and small diffable follow-up PRs:
+
+- `functions.tsv` is the primary function inventory, including current names,
+  prototypes, comments, source types, thunk targets, and address ranges.
+- `defined_symbols.tsv`, `external_locations.tsv`, and
+  `external_entry_points.tsv` are useful for resolving imports, labels, and
+  public entry points.
+- `comments.tsv`, `bookmarks.tsv`, and `strings.tsv` capture analyst notes and
+  string anchors that can justify future names or protocol discoveries.
+- `memory_map.tsv` and `metadata.json` identify load ranges, image base,
+  language/compiler settings, executable paths, and binary hashes.
+
+Generated program exports should not be hand-edited. Make analysis changes in
+Ghidra, rerun `tools/ExportProgramText.java`, and commit the resulting text
+diff. Hand edits belong in README files, scripts, or follow-up notes, not in the
+generated TSV/JSON snapshots.
+
+TSV escaping is deliberately simple: `\N` means an empty field, `\t`, `\r`, and
+`\n` are escaped control characters, `\\` is a literal backslash, and leading or
+trailing spaces are written as `\s` so Git whitespace checks stay meaningful.
+
 ## Refreshing
 
 If Ghidra or the MCP bridge has `W2VULK` open, copy the project to a temporary
