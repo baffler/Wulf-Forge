@@ -1,0 +1,6 @@
+address	type	category	comment
+100935c4	Info	PE Header	IMAGE_DIRECTORY_ENTRY_EXPORT
+10093408	Info	PE Header	IMAGE_DIRECTORY_ENTRY_IMPORT
+10093000	Info	PE Header	IMAGE_DIRECTORY_ENTRY_RESOURCE
+10095664	Info	PE Header	IMAGE_DIRECTORY_ENTRY_BASERELOC
+10092eb5	Error	Bad Instruction	Disassembly not permitted within uninitialized memory block (flow from 10092eb5)

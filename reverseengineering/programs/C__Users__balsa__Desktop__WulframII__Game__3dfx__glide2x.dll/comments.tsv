@@ -1,0 +1,676 @@
+address	type	comment
+10000178	EOL	.text
+100001a0	EOL	.rdata
+100001c8	EOL	.data
+100001f0	EOL	.idata
+10000218	EOL	.rsrc
+10000240	EOL	.reloc
+10001090	PLATE	__stdcall grSplash,20
+10001090	PRE	0x1090  59  _grSplash@20
+100021a0	PLATE	__stdcall gu3dfGetInfo,8
+100021a0	PRE	0x21a0  99  _gu3dfGetInfo@8
+10002860	PLATE	__stdcall gu3dfLoad,8
+10002860	PRE	0x2860  100  _gu3dfLoad@8
+10002c60	PLATE	__stdcall guAlphaSource,4
+10002c60	PRE	0x2c60  102  _guAlphaSource@4
+10002cd0	PLATE	__stdcall guColorCombineFunction,4
+10002cd0	PRE	0x2cd0  103  _guColorCombineFunction@4
+10002e50	PLATE	__stdcall guEndianSwapWords,4
+10002e50	PRE	0x2e50  108  _guEndianSwapWords@4
+10002e70	PLATE	__stdcall guEndianSwapBytes,4
+10002e70	PRE	0x2e70  107  _guEndianSwapBytes@4
+10002e80	PLATE	__stdcall guFogTableIndexToW,4
+10002e80	PRE	0x2e80  114  _guFogTableIndexToW@4
+10002ed0	PLATE	__stdcall guFogGenerateExp,8
+10002ed0	PRE	0x2ed0  112  _guFogGenerateExp@8
+10002fa0	PLATE	__stdcall guFogGenerateExp2,8
+10002fa0	PRE	0x2fa0  111  _guFogGenerateExp2@8
+10003080	PLATE	__stdcall guFogGenerateLinear,12
+10003080	PRE	0x3080  113  _guFogGenerateLinear@12
+10003120	PLATE	__stdcall guTexCreateColorMipMap,0
+10003120	PRE	0x3120  125  _guTexCreateColorMipMap@0
+10003260	PLATE	__stdcall guEncodeRLE16,16
+10003260	PRE	0x3260  106  _guEncodeRLE16@16
+10003340	PLATE	__stdcall guDrawTriangleWithClip,12
+10003340	PRE	0x3340  105  _guDrawTriangleWithClip@12
+10003a30	PLATE	__stdcall guAADrawTriangleWithClip,12
+10003a30	PRE	0x3a30  101  _guAADrawTriangleWithClip@12
+10003cc0	PLATE	__stdcall guDrawPolygonVertexListWithClip,8
+10003cc0	PRE	0x3cc0  104  _guDrawPolygonVertexListWithClip@8
+100041b0	PLATE	__stdcall guMPInit,0
+100041b0	PRE	0x41b0  116  _guMPInit@0
+100041d0	PLATE	__stdcall guMPTexCombineFunction,4
+100041d0	PRE	0x41d0  117  _guMPTexCombineFunction@4
+100041e0	PLATE	__stdcall guMPTexSource,8
+100041e0	PRE	0x41e0  118  _guMPTexSource@8
+10004400	PLATE	__stdcall grGlideGetVersion,4
+10004400	PRE	0x4400  43  _grGlideGetVersion@4
+10004430	PLATE	__stdcall grGlideGetState,4
+10004430	PRE	0x4430  42  _grGlideGetState@4
+10004450	PLATE	__stdcall grHints,8
+10004450	PRE	0x4450  48  _grHints@8
+10004510	PLATE	__stdcall grGlideInit,0
+10004510	PRE	0x4510  44  _grGlideInit@0
+10004520	PLATE	__stdcall grGlideShamelessPlug,4
+10004520	PRE	0x4520  46  _grGlideShamelessPlug@4
+10004530	PLATE	__stdcall grResetTriStats,0
+10004530	PRE	0x4530  58  _grResetTriStats@0
+10004560	PLATE	__stdcall grTriStats,8
+10004560	PRE	0x4560  98  _grTriStats@8
+10004590	PLATE	__stdcall grSstQueryBoards,4
+10004590	PRE	0x4590  66  _grSstQueryBoards@4
+100045b0	PLATE	__stdcall grSstQueryHardware,4
+100045b0	PRE	0x45b0  67  _grSstQueryHardware@4
+100045f0	PLATE	__stdcall grSstSelect,4
+100045f0	PRE	0x45f0  71  _grSstSelect@4
+10004670	PLATE	__stdcall grSstScreenWidth,0
+10004670	PRE	0x4670  70  _grSstScreenWidth@0
+10004680	PLATE	__stdcall grSstScreenHeight,0
+10004680	PRE	0x4680  69  _grSstScreenHeight@0
+10004690	PLATE	__stdcall grSstVidMode,8
+10004690	PRE	0x4690  74  _grSstVidMode@8
+10004860	PLATE	__stdcall grTexCalcMemRequired,16
+10004860	PRE	0x4860  78  _grTexCalcMemRequired@16
+10004890	PLATE	__stdcall grTexDetailControl,16
+10004890	PRE	0x4890  82  _grTexDetailControl@16
+100048d0	PLATE	__stdcall grTexMinAddress,4
+100048d0	PRE	0x48d0  91  _grTexMinAddress@4
+100048f0	PLATE	__stdcall grTexMaxAddress,4
+100048f0	PRE	0x48f0  90  _grTexMaxAddress@4
+10004920	PLATE	__stdcall grTexTextureMemRequired,8
+10004920	PRE	0x4920  97  _grTexTextureMemRequired@8
+10004950	PLATE	__stdcall grTexDownloadMipMap,16
+10004950	PRE	0x4950  83  _grTexDownloadMipMap@16
+100049f0	PLATE	__stdcall grTexDownloadTablePartial,20
+100049f0	PRE	0x49f0  87  _grTexDownloadTablePartial@20
+10004a40	PLATE	__stdcall grTexDownloadMipMapLevel,32
+10004a40	PRE	0x4a40  84  _grTexDownloadMipMapLevel@32
+10004be0	PLATE	__stdcall grErrorSetCallback,4
+10004be0	PRE	0x4be0  37  _grErrorSetCallback@4
+10004c30	PLATE	__stdcall guMovieStart,0
+10004c30	PRE	0x4c30  120  _guMovieStart@0
+10004c50	PLATE	__stdcall guMovieStop,0
+10004c50	PRE	0x4c50  121  _guMovieStop@0
+10004c70	PLATE	__stdcall guMovieSetName,4
+10004c70	PRE	0x4c70  119  _guMovieSetName@4
+10004c90	PLATE	__stdcall guTexAllocateMemory,60
+10004c90	PRE	0x4c90  122  _guTexAllocateMemory@60
+10004f40	PLATE	__stdcall guTexChangeAttributes,48
+10004f40	PRE	0x4f40  123  _guTexChangeAttributes@48
+100050f0	PLATE	__stdcall grTexCombineFunction,8
+100050f0	PRE	0x50f0  81  _grTexCombineFunction@8
+10005110	PLATE	__stdcall guTexCombineFunction,8
+10005110	PRE	0x5110  124  _guTexCombineFunction@8
+10005280	PLATE	__stdcall guTexDownloadMipMap,12
+10005280	PRE	0x5280  126  _guTexDownloadMipMap@12
+10005300	PLATE	__stdcall guTexDownloadMipMapLevel,12
+10005300	PRE	0x5300  127  _guTexDownloadMipMapLevel@12
+100053a0	PLATE	__stdcall guTexGetCurrentMipMap,4
+100053a0	PRE	0x53a0  128  _guTexGetCurrentMipMap@4
+100053d0	PLATE	__stdcall guTexGetMipMapInfo,4
+100053d0	PRE	0x53d0  129  _guTexGetMipMapInfo@4
+10005400	PLATE	__stdcall guTexMemQueryAvail,4
+10005400	PRE	0x5400  130  _guTexMemQueryAvail@4
+10005440	PLATE	__stdcall guTexMemReset,0
+10005440	PRE	0x5440  131  _guTexMemReset@0
+10005600	PLATE	__stdcall guMPDrawTriangle,12
+10005600	PRE	0x5600  115  _guMPDrawTriangle@12
+10005e20	PLATE	__stdcall grAADrawPoint,4
+10005e20	PRE	0x5e20  3  _grAADrawPoint@4
+10005f70	PLATE	__stdcall grAADrawLine,8
+10005f70	PRE	0x5f70  2  _grAADrawLine@8
+10006170	PLATE	__stdcall grAADrawTriangle,24
+10006170	PRE	0x6170  6  _grAADrawTriangle@24
+10006980	PLATE	__stdcall grAADrawPolygon,12
+10006980	PRE	0x6980  4  _grAADrawPolygon@12
+10006a70	PLATE	__stdcall grAADrawPolygonVertexList,8
+10006a70	PRE	0x6a70  5  _grAADrawPolygonVertexList@8
+10006b00	PLATE	__stdcall grDrawPoint,4
+10006b00	PRE	0x6b00  33  _grDrawPoint@4
+10006df0	PLATE	__stdcall grDrawLine,8
+10006df0	PRE	0x6df0  30  _grDrawLine@8
+100076b0	PLATE	__stdcall grDrawTriangle,12
+100076b0	PRE	0x76b0  36  _grDrawTriangle@12
+100076d0	PLATE	__stdcall grDrawPlanarPolygon,12
+100076d0	PRE	0x76d0  31  _grDrawPlanarPolygon@12
+100076e0	PLATE	__stdcall grDrawPlanarPolygonVertexList,8
+100076e0	PRE	0x76e0  32  _grDrawPlanarPolygonVertexList@8
+10007750	PLATE	__stdcall grDrawPolygon,12
+10007750	PRE	0x7750  34  _grDrawPolygon@12
+100077b0	PLATE	__stdcall grDrawPolygonVertexList,8
+100077b0	PRE	0x77b0  35  _grDrawPolygonVertexList@8
+10007a40	PLATE	__stdcall grAlphaBlendFunction,16
+10007a40	PRE	0x7a40  7  _grAlphaBlendFunction@16
+10007b10	PLATE	__stdcall grAlphaCombine,20
+10007b10	PRE	0x7b10  8  _grAlphaCombine@20
+10007cf0	PLATE	__stdcall grAlphaControlsITRGBLighting,4
+10007cf0	PRE	0x7cf0  9  _grAlphaControlsITRGBLighting@4
+10007d80	PLATE	__stdcall grAlphaTestFunction,4
+10007d80	PRE	0x7d80  10  _grAlphaTestFunction@4
+10007e10	PLATE	__stdcall grAlphaTestReferenceValue,4
+10007e10	PRE	0x7e10  11  _grAlphaTestReferenceValue@4
+10007e90	PLATE	__stdcall grBufferClear,12
+10007e90	PRE	0x7e90  12  _grBufferClear@12
+100081f0	PLATE	__stdcall grBufferSwap,4
+100081f0	PRE	0x81f0  14  _grBufferSwap@4
+10008230	PLATE	__stdcall grBufferNumPending,0
+10008230	PRE	0x8230  13  _grBufferNumPending@0
+10008240	PLATE	__stdcall grChromakeyMode,4
+10008240	PRE	0x8240  16  _grChromakeyMode@4
+100082d0	PLATE	__stdcall grChromakeyValue,4
+100082d0	PRE	0x82d0  17  _grChromakeyValue@4
+10008350	PLATE	__stdcall grClipWindow,16
+10008350	PRE	0x8350  18  _grClipWindow@16
+10008450	PLATE	__stdcall grColorCombine,20
+10008450	PRE	0x8450  19  _grColorCombine@20
+10008660	PLATE	__stdcall grColorMask,8
+10008660	PRE	0x8660  20  _grColorMask@8
+10008710	PLATE	__stdcall grConstantColorValue,4
+10008710	PRE	0x8710  22  _grConstantColorValue@4
+100087e0	PLATE	__stdcall grConstantColorValue4,16
+100087e0	PRE	0x87e0  21  _grConstantColorValue4@16
+10008900	PLATE	__stdcall grCullMode,4
+10008900	PRE	0x8900  23  _grCullMode@4
+10008920	PLATE	__stdcall grDepthBiasLevel,4
+10008920	PRE	0x8920  24  _grDepthBiasLevel@4
+100089b0	PLATE	__stdcall grDepthBufferFunction,4
+100089b0	PRE	0x89b0  25  _grDepthBufferFunction@4
+10008a30	PLATE	__stdcall grDepthBufferMode,4
+10008a30	PRE	0x8a30  26  _grDepthBufferMode@4
+10008af0	PLATE	__stdcall grDepthMask,4
+10008af0	PRE	0x8af0  27  _grDepthMask@4
+10008b80	PLATE	__stdcall grDisableAllEffects,0
+10008b80	PRE	0x8b80  28  _grDisableAllEffects@0
+10008bc0	PLATE	__stdcall grDitherMode,4
+10008bc0	PRE	0x8bc0  29  _grDitherMode@4
+10008c70	PLATE	__stdcall grFogMode,4
+10008c70	PRE	0x8c70  39  _grFogMode@4
+10008d20	PLATE	__stdcall grFogColorValue,4
+10008d20	PRE	0x8d20  38  _grFogColorValue@4
+10008da0	PLATE	__stdcall grFogTable,4
+10008da0	PRE	0x8da0  40  _grFogTable@4
+10008e80	PLATE	__stdcall grGlideShutdown,0
+10008e80	PRE	0x8e80  47  _grGlideShutdown@0
+10008ef0	PLATE	__stdcall grGlideSetState,4
+10008ef0	PRE	0x8ef0  45  _grGlideSetState@4
+10009500	PLATE	__stdcall grRenderBuffer,4
+10009500	PRE	0x9500  57  _grRenderBuffer@4
+10009510	PLATE	__stdcall grCheckForRoom,4
+10009510	PRE	0x9510  15  _grCheckForRoom@4
+100098e0	PLATE	__stdcall grLfbConstantAlpha,4
+100098e0	PRE	0x98e0  49  _grLfbConstantAlpha@4
+10009900	PLATE	__stdcall grLfbConstantDepth,4
+10009900	PRE	0x9900  50  _grLfbConstantDepth@4
+10009920	PLATE	__stdcall grLfbLock,24
+10009920	PRE	0x9920  51  _grLfbLock@24
+10009a30	PLATE	__stdcall grLfbUnlock,8
+10009a30	PRE	0x9a30  53  _grLfbUnlock@8
+10009a70	PLATE	__stdcall grLfbWriteColorFormat,4
+10009a70	PRE	0x9a70  54  _grLfbWriteColorFormat@4
+10009a80	PLATE	__stdcall grLfbWriteColorSwizzle,8
+10009a80	PRE	0x9a80  55  _grLfbWriteColorSwizzle@8
+10009a90	PLATE	__stdcall grLfbWriteRegion,32
+10009a90	PRE	0x9a90  56  _grLfbWriteRegion@32
+10009c10	PLATE	__stdcall grLfbReadRegion,28
+10009c10	PRE	0x9c10  52  _grLfbReadRegion@28
+10009d60	PLATE	__stdcall grSstWinOpen,28
+10009d60	PRE	0x9d60  77  _grSstWinOpen@28
+1000a1d0	PLATE	__stdcall grSstWinClose,0
+1000a1d0	PRE	0xa1d0  76  _grSstWinClose@0
+1000a200	PLATE	__stdcall grSstControl,4
+1000a200	PRE	0xa200  61  _grSstControl@4
+1000a280	PLATE	__stdcall grSstPerfStats,4
+1000a280	PRE	0xa280  65  _grSstPerfStats@4
+1000a2c0	PLATE	__stdcall grSstResetPerfStats,0
+1000a2c0	PRE	0xa2c0  68  _grSstResetPerfStats@0
+1000a330	PLATE	__stdcall grSstStatus,0
+1000a330	PRE	0xa330  72  _grSstStatus@0
+1000a340	PLATE	__stdcall grSstVideoLine,0
+1000a340	PRE	0xa340  75  _grSstVideoLine@0
+1000a350	PLATE	__stdcall grSstVRetraceOn,0
+1000a350	PRE	0xa350  73  _grSstVRetraceOn@0
+1000a370	PLATE	__stdcall grSstIsBusy,0
+1000a370	PRE	0xa370  63  _grSstIsBusy@0
+1000a380	PLATE	__stdcall grGammaCorrectionValue,4
+1000a380	PRE	0xa380  41  _grGammaCorrectionValue@4
+1000a3a0	PLATE	__stdcall grSstIdle,0
+1000a3a0	PRE	0xa3a0  62  _grSstIdle@0
+1000a3b0	PLATE	__stdcall grSstOrigin,4
+1000a3b0	PRE	0xa3b0  64  _grSstOrigin@4
+1000a440	PLATE	__stdcall grSstConfigPipeline,12
+1000a440	PRE	0xa440  60  _grSstConfigPipeline@12
+1000a4d0	PLATE	__stdcall grTexClampMode,12
+1000a4d0	PRE	0xa4d0  79  _grTexClampMode@12
+1000a580	PLATE	__stdcall grTexCombine,28
+1000a580	PRE	0xa580  80  _grTexCombine@28
+1000a940	PLATE	__stdcall grTexFilterMode,12
+1000a940	PRE	0xa940  88  _grTexFilterMode@12
+1000a9f0	PLATE	__stdcall grTexLodBiasValue,8
+1000a9f0	PRE	0xa9f0  89  _grTexLodBiasValue@8
+1000aab0	PLATE	__stdcall grTexMipMapMode,12
+1000aab0	PRE	0xaab0  92  _grTexMipMapMode@12
+1000ac50	PLATE	__stdcall grTexNCCTable,8
+1000ac50	PRE	0xac50  95  _grTexNCCTable@8
+1000ad00	PLATE	__stdcall grTexSource,16
+1000ad00	PRE	0xad00  96  _grTexSource@16
+1000aed0	PLATE	__stdcall grTexMultibase,8
+1000aed0	PRE	0xaed0  93  _grTexMultibase@8
+1000af80	PLATE	__stdcall grTexMultibaseAddress,20
+1000af80	PRE	0xaf80  94  _grTexMultibaseAddress@20
+1000b2e0	PLATE	__stdcall grTexDownloadTable,12
+1000b2e0	PRE	0xb2e0  86  _grTexDownloadTable@12
+1000b330	PLATE	__stdcall grTexDownloadMipMapLevelPartial,40
+1000b330	PRE	0xb330  85  _grTexDownloadMipMapLevelPartial@40
+1000bd80	PRE	0xbd80  1  _ConvertAndDownloadRle@64
+1000c290	PLATE	__stdcall guTexSource,4
+1000c290	PRE	0xc290  132  _guTexSource@4
+1000ccd0	PLATE	__stdcall guFbReadRegion,24
+1000ccd0	PRE	0xccd0  109  _guFbReadRegion@24
+1000cdb0	PLATE	__stdcall guFbWriteRegion,24
+1000cdb0	PRE	0xcdb0  110  _guFbWriteRegion@24
+10011540	PLATE	__stdcall pciOpen,0
+10011540	PRE	0x11540  141  _pciOpen@0
+10011720	PLATE	__stdcall pciClose,0
+10011720	PRE	0x11720  133  _pciClose@0
+10011740	PLATE	__stdcall pciDeviceExists,4
+10011740	PRE	0x11740  134  _pciDeviceExists@4
+10011770	PLATE	__stdcall pciGetConfigData,20
+10011770	PRE	0x11770  137  _pciGetConfigData@20
+10011800	PLATE	__stdcall pciSetConfigData,20
+10011800	PRE	0x11800  142  _pciSetConfigData@20
+10011890	PLATE	__stdcall pciMapPhysicalToLinear,12
+10011890	PRE	0x11890  140  _pciMapPhysicalToLinear@12
+10011960	PLATE	__stdcall pciUnmapPhysical,8
+10011960	PRE	0x11960  143  _pciUnmapPhysical@8
+10011970	PLATE	__stdcall pciFindCardMulti,16
+10011970	PRE	0x11970  136  _pciFindCardMulti@16
+10011a40	PLATE	__stdcall pciFindCard,12
+10011a40	PRE	0x11a40  135  _pciFindCard@12
+10011a60	PLATE	__stdcall pciMapCardMulti,24
+10011a60	PRE	0x11a60  139  _pciMapCardMulti@24
+10011b90	PLATE	__stdcall pciMapCard,20
+10011b90	PRE	0x11b90  138  _pciMapCard@20
+1001caf0	PLATE	Library Function - Single Match\n __fpmath\n\nLibrary: Visual Studio 1998 Release
+1001cb58	PLATE	Library Function - Single Match\n __ftol\n\nLibrary: Visual Studio
+1001cb80	PLATE	Library Function - Single Match\n _fclose\n\nLibrary: Visual Studio 1998 Release
+1001cbf0	PLATE	Library Function - Single Match\n _sscanf\n\nLibrary: Visual Studio 1998 Release
+1001cc40	PLATE	Library Function - Single Match\n __filbuf\n\nLibrary: Visual Studio 1998 Release
+1001cd30	PLATE	Library Function - Single Match\n __fsopen\n\nLibrary: Visual Studio 1998 Release
+1001cd80	PLATE	Library Function - Single Match\n _fread\n\nLibrary: Visual Studio 1998 Release
+1001cf20	PLATE	Library Function - Single Match\n _malloc\n\nLibrary: Visual Studio 1998 Release
+1001cf40	PLATE	Library Function - Single Match\n __nh_malloc\n\nLibrary: Visual Studio 1998 Release
+1001cf90	PLATE	Library Function - Single Match\n __heap_alloc\n\nLibrary: Visual Studio 1998 Release
+1001d000	PLATE	Library Function - Single Match\n _atol\n\nLibrary: Visual Studio 1998 Release
+1001d0b0	PLATE	Library Function - Single Match\n _atoi\n\nLibrary: Visual Studio 1998 Release
+1001d0c0	PLATE	Library Function - Multiple Matches With Different Base Names\n __getenv_lk\n _getenv\n\nLibrary: Visual Studio 1998 Release
+1001d160	PLATE	Library Function - Single Match\n _sprintf\n\nLibrary: Visual Studio 1998 Release
+1001d1d0	PLATE	Library Function - Single Match\n _puts\n\nLibrary: Visual Studio 1998 Release
+1001d250	PLATE	Library Function - Single Match\n __cinit\n\nLibrary: Visual Studio 1998 Release
+1001d280	PLATE	Library Function - Single Match\n _exit\n\nLibrary: Visual Studio 1998 Release
+1001d2a0	PLATE	Library Function - Single Match\n __exit\n\nLibrary: Visual Studio 1998 Release
+1001d2c0	PLATE	Library Function - Single Match\n __cexit\n\nLibrary: Visual Studio 1998 Release
+1001d2d0	PLATE	Library Function - Single Match\n _doexit\n\nLibrary: Visual Studio 1998 Release
+1001d380	PLATE	Library Function - Single Match\n __initterm\n\nLibrary: Visual Studio 1998 Release
+1001d3a0	PLATE	Library Function - Single Match\n __CRT_INIT@12\n\nLibrary: Visual Studio 1998 Release
+1001d590	PLATE	Library Function - Single Match\n __amsg_exit\n\nLibrary: Visual Studio 1998 Release
+1001d6c0	PLATE	Library Function - Single Match\n _fflush\n\nLibrary: Visual Studio 1998 Release
+1001d710	PLATE	Library Function - Single Match\n __flush\n\nLibrary: Visual Studio 1998 Release
+1001d790	PLATE	Library Function - Single Match\n _flsall\n\nLibrary: Visual Studio 1998 Release
+1001d820	PLATE	Library Function - Single Match\n _vfprintf\n\nLibrary: Visual Studio 1998 Release
+1001d860	PLATE	Library Function - Single Match\n _fprintf\n\nLibrary: Visual Studio 1998 Release
+1001d8a0	PLATE	Library Function - Single Match\n _printf\n\nLibrary: Visual Studio 1998 Release
+1001d8e0	PLATE	Library Function - Multiple Matches With Different Base Names\n __toupper_lk\n _toupper\n\nLibrary: Visual Studio 1998 Release
+1001d9d0	PLATE	Library Function - Single Match\n __isctype\n\nLibrary: Visual Studio 1998 Release
+1001da70	PLATE	Library Function - Single Match\n _fgetc\n\nLibrary: Visual Studio 1998 Release
+1001daa0	PLATE	Library Function - Single Match\n _strtok\n\nLibrary: Visual Studio 1998 Release
+1001db80	PLATE	Library Function - Multiple Matches With Different Base Names\n __tolower_lk\n _tolower\n\nLibrary: Visual Studio 1998 Release
+1001dc70	PLATE	Library Function - Single Match\n _atof\n\nLibrary: Visual Studio 1998 Release
+1001dcd0	PLATE	Library Function - Single Match\n __setdefaultprecision\n\nLibrary: Visual Studio 1998 Release
+1001dcf0	PLATE	Library Function - Single Match\n __ms_p5_test_fdiv\n\nLibrary: Visual Studio 1998 Release
+1001dd40	PLATE	Library Function - Single Match\n __ms_p5_mp_test_fdiv\n\nLibrary: Visual Studio 1998 Release
+1001deb0	PLATE	Library Function - Single Match\n __cftoe\n\nLibrary: Visual Studio 1998 Release
+1001dff0	PLATE	Library Function - Single Match\n __cftof\n\nLibrary: Visual Studio 1998 Release
+1001e0f0	PLATE	Library Function - Single Match\n __cftog\n\nLibrary: Visual Studio 1998 Release
+1001e1a0	PLATE	Library Function - Single Match\n __cftoe_g\n\nLibrary: Visual Studio 1998 Release
+1001e1d0	PLATE	Library Function - Single Match\n __cftof_g\n\nLibrary: Visual Studio 1998 Release
+1001e270	PLATE	Library Function - Single Match\n __shift\n\nLibrary: Visual Studio 1998 Release
+1001e2a0	PLATE	Library Function - Single Match\n _free\n\nLibrary: Visual Studio 1998 Release
+1001e2f0	PLATE	Library Function - Single Match\n __close\n\nLibrary: Visual Studio 1998 Release
+1001e3c0	PLATE	Library Function - Single Match\n __freebuf\n\nLibrary: Visual Studio 1998 Release
+1001e400	PLATE	Library Function - Single Match\n __input\n\nLibrary: Visual Studio 1998 Release
+1001f0a0	PLATE	Library Function - Single Match\n __hextodec\n\nLibrary: Visual Studio 1998 Release
+1001f0e0	PLATE	Library Function - Single Match\n __inc\n\nLibrary: Visual Studio 1998 Release
+1001f110	PLATE	Library Function - Single Match\n __un_inc\n\nLibrary: Visual Studio 1998 Release
+1001f130	PLATE	Library Function - Single Match\n __whiteout\n\nLibrary: Visual Studio 1998 Release
+1001f160	PLATE	Library Function - Single Match\n __ioinit\n\nLibrary: Visual Studio 1998 Release
+1001f340	PLATE	Library Function - Single Match\n __ioterm\n\nLibrary: Visual Studio 1998 Release
+1001f370	PLATE	Library Function - Single Match\n __read\n\nLibrary: Visual Studio 1998 Release
+1001f5e0	PLATE	Library Function - Single Match\n __getbuf\n\nLibrary: Visual Studio 1998 Release
+1001f630	PLATE	Library Function - Single Match\n __openfile\n\nLibrary: Visual Studio 1998 Release
+1001f840	PLATE	Library Function - Single Match\n __getstream\n\nLibrary: Visual Studio 1998 Release
+1001fad0	PLATE	Library Function - Single Match\n __cintrindisp2\n\nLibraries: Visual Studio 1998, Visual Studio 2003, Visual Studio 2019
+1001fb0e	PLATE	Library Function - Single Match\n __cintrindisp1\n\nLibraries: Visual Studio 1998, Visual Studio 2003, Visual Studio 2019
+1001fb44	PLATE	Library Function - Single Match\n __ctrandisp2\n\nLibraries: Visual Studio 1998, Visual Studio 2003, Visual Studio 2019
+1001fcb5	PLATE	Library Function - Single Match\n __ctrandisp1\n\nLibraries: Visual Studio 1998, Visual Studio 2003, Visual Studio 2019
+1001fce1	PLATE	Library Function - Single Match\n __fload\n\nLibraries: Visual Studio 1998, Visual Studio 2003, Visual Studio 2019
+1001fd20	PLATE	Library Function - Single Match\n __callnewh\n\nLibrary: Visual Studio 1998 Release
+1001fd50	PLATE	Library Function - Single Match\n __heap_init\n\nLibrary: Visual Studio 1998 Release
+1001fd90	PLATE	Library Function - Single Match\n __heap_term\n\nLibrary: Visual Studio 1998 Release
+1001fdd0	PLATE	Library Function - Single Match\n ___sbh_new_region\n\nLibrary: Visual Studio 1998 Release
+1001ff40	PLATE	Library Function - Single Match\n ___sbh_release_region\n\nLibrary: Visual Studio 1998 Release
+1001ffa0	PLATE	Library Function - Single Match\n ___sbh_decommit_pages\n\nLibrary: Visual Studio 1998 Release
+10020080	PLATE	Library Function - Single Match\n ___sbh_find_block\n\nLibrary: Visual Studio 1998 Release
+100200e0	PLATE	Library Function - Single Match\n ___sbh_free_block\n\nLibrary: Visual Studio 1998 Release
+10020130	PLATE	Library Function - Single Match\n ___sbh_alloc_block\n\nLibrary: Visual Studio 1998 Release
+100203b0	PLATE	Library Function - Single Match\n ___sbh_alloc_block_from_page\n\nLibrary: Visual Studio 1998 Release
+10020530	PLATE	Library Function - Single Match\n ___sbh_resize_block\n\nLibrary: Visual Studio 1998 Release
+10020600	PLATE	Library Function - Single Match\n __allmul\n\nLibrary: Visual Studio 1998 Release
+10020640	PLATE	Library Function - Single Match\n __mbsnbicoll\n\nLibrary: Visual Studio 1998 Release
+10020680	PLATE	Library Function - Single Match\n ___wtomb_environ\n\nLibrary: Visual Studio 1998 Release
+10020710	PLATE	Library Function - Single Match\n __flsbuf\n\nLibrary: Visual Studio 1998 Release
+10020860	PLATE	Library Function - Single Match\n __output\n\nLibrary: Visual Studio 1998 Release
+10021210	PLATE	Library Function - Single Match\n _write_char\n\nLibrary: Visual Studio 1998 Release
+10021260	PLATE	Library Function - Single Match\n _write_multi_char\n\nLibrary: Visual Studio 1998 Release
+100212a0	PLATE	Library Function - Single Match\n _write_string\n\nLibrary: Visual Studio 1998 Release
+100212e0	PLATE	Library Function - Single Match\n _get_int_arg\n\nLibrary: Visual Studio 1998 Release
+100212f0	PLATE	Library Function - Single Match\n _get_int64_arg\n\nLibrary: Visual Studio 1998 Release
+10021310	PLATE	Library Function - Single Match\n _get_short_arg\n\nLibrary: Visual Studio 1998 Release
+10021320	PLATE	Library Function - Single Match\n __stbuf\n\nLibrary: Visual Studio 1998 Release
+100213c0	PLATE	Library Function - Single Match\n __ftbuf\n\nLibrary: Visual Studio 1998 Release
+10021410	PLATE	Library Function - Single Match\n _fwrite\n\nLibrary: Visual Studio 1998 Release
+10021590	PLATE	Library Function - Single Match\n __setenvp\n\nLibrary: Visual Studio 1998 Release
+10021680	PLATE	Library Function - Single Match\n __setargv\n\nLibrary: Visual Studio 1998 Release
+10021720	PLATE	Library Function - Single Match\n _parse_cmdline\n\nLibrary: Visual Studio 1998 Release
+10021900	PLATE	Library Function - Single Match\n __setmbcp\n\nLibrary: Visual Studio 1998 Release
+10021ae0	PLATE	Library Function - Single Match\n _getSystemCP\n\nLibrary: Visual Studio 1998 Release
+10021b30	PLATE	Library Function - Single Match\n _CPtoLCID\n\nLibrary: Visual Studio 1998 Release
+10021b90	PLATE	Library Function - Single Match\n _setSBCS\n\nLibrary: Visual Studio 1998 Release
+10021bc0	PLATE	Library Function - Single Match\n ___initmbctable\n\nLibrary: Visual Studio 1998 Release
+10021bd0	PLATE	Library Function - Single Match\n ___crtGetEnvironmentStringsA\n\nLibrary: Visual Studio 1998 Release
+10021d70	PLATE	Library Function - Single Match\n _DllMain@12\n\nLibrary: Visual Studio 1998 Release
+10021da0	PLATE	Library Function - Single Match\n __FF_MSGBANNER\n\nLibrary: Visual Studio 1998 Release
+10021de0	PLATE	Library Function - Single Match\n __NMSG_WRITE\n\nLibrary: Visual Studio 1998 Release
+10021fe0	PLATE	Library Function - Single Match\n _calloc\n\nLibrary: Visual Studio 1998 Release
+10022080	PLATE	Library Function - Single Match\n __fcloseall\n\nLibrary: Visual Studio 1998 Release
+10022100	PLATE	Library Function - Single Match\n __commit\n\nLibrary: Visual Studio 1998 Release
+10022170	PLATE	Library Function - Single Match\n __write\n\nLibrary: Visual Studio 1998 Release
+100223a0	PLATE	Library Function - Single Match\n ___crtLCMapStringW\n\nLibrary: Visual Studio 1998 Release
+100225b0	PLATE	Library Function - Single Match\n _wcsncnt\n\nLibrary: Visual Studio 1998 Release
+100225f0	PLATE	Library Function - Single Match\n ___crtLCMapStringA\n\nLibrary: Visual Studio 1998 Release
+10022820	PLATE	Library Function - Single Match\n _strncnt\n\nLibrary: Visual Studio 1998 Release
+10022850	PLATE	Library Function - Single Match\n ___crtGetStringTypeW\n\nLibrary: Visual Studio 1998 Release
+10022a10	PLATE	Library Function - Single Match\n ___crtGetStringTypeA\n\nLibrary: Visual Studio 1998 Release
+10022b40	PLATE	Library Function - Single Match\n __fltin\n\nLibrary: Visual Studio 1998 Release
+10022bf0	PLATE	Library Function - Single Match\n __control87\n\nLibrary: Visual Studio 1998 Release
+10022c40	PLATE	Library Function - Single Match\n __controlfp\n\nLibrary: Visual Studio 1998 Release
+10022c60	PLATE	Library Function - Single Match\n __abstract_cw\n\nLibrary: Visual Studio 1998 Release
+10022d10	PLATE	Library Function - Single Match\n __hw_cw\n\nLibrary: Visual Studio 1998 Release
+10022da0	PLATE	Library Function - Single Match\n __fptrap\n\nLibrary: Visual Studio 1998 Release
+10022db0	PLATE	Library Function - Single Match\n __ZeroTail\n\nLibrary: Visual Studio 1998 Release
+10022e20	PLATE	Library Function - Single Match\n __IncMan\n\nLibrary: Visual Studio 1998 Release
+10022e90	PLATE	Library Function - Single Match\n __RoundMan\n\nLibrary: Visual Studio 1998 Release
+10022f40	PLATE	Library Function - Single Match\n __CopyMan\n\nLibrary: Visual Studio 1998 Release
+10022f60	PLATE	Library Function - Single Match\n __FillZeroMan\n\nLibrary: Visual Studio 1998 Release
+10022f70	PLATE	Library Function - Single Match\n __IsZeroMan\n\nLibrary: Visual Studio 1998 Release
+10022f90	PLATE	Library Function - Single Match\n __ShrMan\n\nLibrary: Visual Studio 1998 Release
+10023040	PLATE	Library Function - Single Match\n __ld12cvt\n\nLibrary: Visual Studio 1998 Release
+10023210	PLATE	Library Function - Single Match\n __ld12tod\n\nLibrary: Visual Studio 1998 Release
+10023230	PLATE	Library Function - Multiple Matches With Different Base Names\n __ld12tod\n __ld12tof\n\nLibrary: Visual Studio 1998 Release
+10023250	PLATE	Library Function - Multiple Matches With Different Base Names\n __atodbl\n __atoflt\n\nLibrary: Visual Studio 1998 Release
+10023290	PLATE	Library Function - Multiple Matches With Different Base Names\n __atodbl\n __atoflt\n\nLibrary: Visual Studio 1998 Release
+100232d0	PLATE	Library Function - Single Match\n __fptostr\n\nLibrary: Visual Studio 1998 Release
+10023360	PLATE	Library Function - Single Match\n __fltout\n\nLibrary: Visual Studio 1998 Release
+100233d0	PLATE	Library Function - Single Match\n ___dtold\n\nLibrary: Visual Studio 1998 Release
+10023490	PLATE	Library Function - Multiple Matches With Different Base Names\n _memcpy\n _memmove\n\nLibraries: Visual Studio 1998 Debug, Visual Studio 1998 Release
+100235e0	PLATE	Library Function - Single Match\n __dosmaperr\n\nLibrary: Visual Studio 1998 Release
+10023650	PLATE	Library Function - Single Match\n __alloc_osfhnd\n\nLibrary: Visual Studio 1998 Release
+10023710	PLATE	Library Function - Single Match\n __set_osfhnd\n\nLibrary: Visual Studio 1998 Release
+100237c0	PLATE	Library Function - Single Match\n __free_osfhnd\n\nLibrary: Visual Studio 1998 Release
+10023850	PLATE	Library Function - Single Match\n __get_osfhandle\n\nLibrary: Visual Studio 1998 Release
+100238a0	PLATE	Library Function - Single Match\n _mbtowc\n\nLibrary: Visual Studio 1998 Release
+100239b0	PLATE	Library Function - Single Match\n _isspace\n\nLibrary: Visual Studio 1998 Release
+100239e0	PLATE	Library Function - Multiple Matches With Different Base Names\n __ungetc_lk\n _ungetc\n\nLibrary: Visual Studio 1998 Release
+10023a70	PLATE	Library Function - Single Match\n __lseek\n\nLibrary: Visual Studio 1998 Release
+10023b30	PLATE	Library Function - Single Match\n __sopen\n\nLibrary: Visual Studio 1998 Release
+10023f50	PLATE	Library Function - Single Match\n __trandisp1\n\nLibraries: Visual Studio 1998, Visual Studio 2003, Visual Studio 2019
+10023fb7	PLATE	Library Function - Single Match\n __trandisp2\n\nLibraries: Visual Studio 1998, Visual Studio 2003, Visual Studio 2019
+10024120	PLATE	Library Function - Single Match\n __powhlp\n\nLibrary: Visual Studio 1998 Release
+10024370	PLATE	Library Function - Single Match\n __d_inttype\n\nLibrary: Visual Studio 1998 Release
+10025180	PLATE	Library Function - Single Match\n __87except\n\nLibrary: Visual Studio 1998 Release
+100252a0	PLATE	Library Function - Single Match\n ___crtCompareStringW\n\nLibrary: Visual Studio 1998 Release
+100254e0	PLATE	Library Function - Single Match\n _wcsncnt\n\nLibrary: Visual Studio 1998 Release
+10025520	PLATE	Library Function - Single Match\n ___crtCompareStringA\n\nLibrary: Visual Studio 1998 Release
+10025810	PLATE	Library Function - Single Match\n _strncnt\n\nLibrary: Visual Studio 1998 Release
+10025840	PLATE	Library Function - Single Match\n ___crtsetenv\n\nLibrary: Visual Studio 1998 Release
+10025a90	PLATE	Library Function - Single Match\n _findenv\n\nLibrary: Visual Studio 1998 Release
+10025af0	PLATE	Library Function - Single Match\n _copy_environ\n\nLibrary: Visual Studio 1998 Release
+10025b70	PLATE	Library Function - Single Match\n __isatty\n\nLibrary: Visual Studio 1998 Release
+10025ba0	PLATE	Library Function - Single Match\n _wctomb\n\nLibrary: Visual Studio 1998 Release
+10025c40	PLATE	Library Function - Single Match\n __aulldiv\n\nLibrary: Visual Studio 1998 Release
+10025cb0	PLATE	Library Function - Single Match\n __aullrem\n\nLibrary: Visual Studio 1998 Release
+10025d50	PLATE	Library Function - Single Match\n ___crtMessageBoxA\n\nLibrary: Visual Studio 1998 Release
+10025df0	PLATE	Library Function - Single Match\n _strncpy\n\nLibrary: Visual Studio 1998 Release
+10025ef0	PLATE	Library Function - Single Match\n ___strgtold12\n\nLibrary: Visual Studio 1998 Release
+10026640	PLATE	Library Function - Single Match\n ___addl\n\nLibrary: Visual Studio 1998 Release
+10026670	PLATE	Library Function - Single Match\n ___add_12\n\nLibrary: Visual Studio 1998 Release
+100266e0	PLATE	Library Function - Single Match\n ___shl_12\n\nLibrary: Visual Studio 1998 Release
+10026720	PLATE	Library Function - Single Match\n ___shr_12\n\nLibrary: Visual Studio 1998 Release
+10026760	PLATE	Library Function - Single Match\n ___mtold12\n\nLibrary: Visual Studio 1998 Release
+10026850	PLATE	Library Function - Single Match\n _$I10_OUTPUT\n\nLibrary: Visual Studio 1998 Release
+10026bf0	PLATE	Library Function - Single Match\n __chsize\n\nLibrary: Visual Studio 1998 Release
+10026d60	PLATE	Library Function - Single Match\n __set_exp\n\nLibrary: Visual Studio 1998 Release
+10026da0	PLATE	Library Function - Single Match\n __sptype\n\nLibrary: Visual Studio 1998 Release
+10026e10	PLATE	Library Function - Single Match\n __decomp\n\nLibrary: Visual Studio 1998 Release
+10026f00	PLATE	Library Function - Single Match\n __frnd\n\nLibrary: Visual Studio 1998 Release
+10026f20	PLATE	Library Function - Single Match\n __fpclass\n\nLibrary: Visual Studio 1998 Release
+10026fd0	PLATE	Library Function - Single Match\n __raise_exc\n\nLibrary: Visual Studio 1998 Release
+10027340	PLATE	Library Function - Single Match\n __handle_exc\n\nLibrary: Visual Studio 1998 Release
+10027600	PLATE	Library Function - Single Match\n __set_errno\n\nLibrary: Visual Studio 1998 Release
+10027640	PLATE	Library Function - Single Match\n __statfp\n\nLibrary: Visual Studio 1998 Release
+10027660	PLATE	Library Function - Single Match\n __clrfp\n\nLibrary: Visual Studio 1998 Release
+10027680	PLATE	Library Function - Single Match\n __ctrlfp\n\nLibrary: Visual Studio 1998 Release
+10027720	PLATE	Library Function - Single Match\n _realloc\n\nLibrary: Visual Studio 1998 Release
+100278d0	PLATE	Library Function - Single Match\n __mbschr\n\nLibrary: Visual Studio 1998 Release
+10027960	PLATE	Library Function - Single Match\n __strdup\n\nLibrary: Visual Studio 1998 Release
+10027990	PLATE	Library Function - Single Match\n ___ld12mul\n\nLibrary: Visual Studio 1998 Release
+10027c40	PLATE	Library Function - Single Match\n ___multtenpow12\n\nLibrary: Visual Studio 1998 Release
+10027cc0	PLATE	Library Function - Single Match\n __setmode\n\nLibrary: Visual Studio 1998 Release
+10027d50	PLATE	Library Function - Single Match\n _strchr\n\nLibrary: Visual Studio 1998 Release
+10027e10	PLATE	Library Function - Single Match\n _strlen\n\nLibraries: Visual Studio 1998 Debug, Visual Studio 1998 Release
+10027e90	PLATE	Library Function - Multiple Matches With Different Base Names\n __mbscpy\n _strcpy\n\nLibraries: Visual Studio 1998 Debug, Visual Studio 1998 Release
+10027f80	PLATE	Library Function - Single Match\n __strupr\n\nLibrary: Visual Studio 1998 Release
+10028040	PLATE	Library Function - Multiple Matches With Different Base Names\n __putenv\n __putenv_lk\n\nLibrary: Visual Studio 1998 Release
+10028130	PLATE	Library Function - Single Match\n ___crtwsetenv\n\nLibrary: Visual Studio 1998 Release
+10028370	PLATE	Library Function - Single Match\n _wfindenv\n\nLibrary: Visual Studio 1998 Release
+100283d0	PLATE	Library Function - Single Match\n _copy_environ\n\nLibrary: Visual Studio 1998 Release
+10028450	PLATE	Library Function - Single Match\n _wcscpy\n\nLibrary: Visual Studio 1998 Release
+10028480	PLATE	Library Function - Single Match\n ___mbtow_environ\n\nLibrary: Visual Studio 1998 Release
+10028510	PLATE	Library Function - Single Match\n _wcschr\n\nLibrary: Visual Studio 1998 Release
+10028540	PLATE	Library Function - Single Match\n __wcsnicoll\n\nLibrary: Visual Studio 1998 Release
+100285f0	PLATE	Library Function - Single Match\n __wcsdup\n\nLibrary: Visual Studio 1998 Release
+10028630	PLATE	Library Function - Single Match\n _wcstol\n\nLibrary: Visual Studio 1998 Release
+10028650	PLATE	Library Function - Single Match\n _wcstoxl\n\nLibrary: Visual Studio 1998 Release
+10028860	PLATE	Library Function - Single Match\n ___crtGetLocaleInfoW\n\nLibrary: Visual Studio 1998 Release
+10028990	PLATE	Library Function - Single Match\n __wcsnicmp\n\nLibrary: Visual Studio 1998 Release
+10028a30	PLATE	Library Function - Single Match\n _towupper\n\nLibrary: Visual Studio 1998 Release
+10028ad0	PLATE	Library Function - Single Match\n _iswctype\n\nLibrary: Visual Studio 1998 Release
+10028b50	PLATE	Library Function - Single Match\n _towlower\n\nLibrary: Visual Studio 1998 Release
+10029ab8	PLATE	Export Function Pointers
+10029cf4	PLATE	Export Name Pointers
+10029f30	PLATE	Export Ordinal Values
+1002a04e	PLATE	Export Library Name
+10137000	PLATE	IMAGE_IMPORT_DESCRIPTOR
+10137014	PLATE	IMAGE_IMPORT_DESCRIPTOR
+10137028	PLATE	IMAGE_IMPORT_DESCRIPTOR
+10137050	EOL	IMAGE_THUNK_DATA32
+10137058	EOL	IMAGE_THUNK_DATA32
+1013705c	EOL	IMAGE_THUNK_DATA32
+10137060	EOL	IMAGE_THUNK_DATA32
+10137064	EOL	IMAGE_THUNK_DATA32
+10137068	EOL	IMAGE_THUNK_DATA32
+1013706c	EOL	IMAGE_THUNK_DATA32
+10137070	EOL	IMAGE_THUNK_DATA32
+10137074	EOL	IMAGE_THUNK_DATA32
+10137078	EOL	IMAGE_THUNK_DATA32
+1013707c	EOL	IMAGE_THUNK_DATA32
+10137080	EOL	IMAGE_THUNK_DATA32
+10137084	EOL	IMAGE_THUNK_DATA32
+10137088	EOL	IMAGE_THUNK_DATA32
+1013708c	EOL	IMAGE_THUNK_DATA32
+10137090	EOL	IMAGE_THUNK_DATA32
+10137094	EOL	IMAGE_THUNK_DATA32
+10137098	EOL	IMAGE_THUNK_DATA32
+1013709c	EOL	IMAGE_THUNK_DATA32
+101370a0	EOL	IMAGE_THUNK_DATA32
+101370a4	EOL	IMAGE_THUNK_DATA32
+101370a8	EOL	IMAGE_THUNK_DATA32
+101370ac	EOL	IMAGE_THUNK_DATA32
+101370b0	EOL	IMAGE_THUNK_DATA32
+101370b4	EOL	IMAGE_THUNK_DATA32
+101370b8	EOL	IMAGE_THUNK_DATA32
+101370bc	EOL	IMAGE_THUNK_DATA32
+101370c0	EOL	IMAGE_THUNK_DATA32
+101370c4	EOL	IMAGE_THUNK_DATA32
+101370c8	EOL	IMAGE_THUNK_DATA32
+101370cc	EOL	IMAGE_THUNK_DATA32
+101370d0	EOL	IMAGE_THUNK_DATA32
+101370d4	EOL	IMAGE_THUNK_DATA32
+101370d8	EOL	IMAGE_THUNK_DATA32
+101370dc	EOL	IMAGE_THUNK_DATA32
+101370e0	EOL	IMAGE_THUNK_DATA32
+101370e4	EOL	IMAGE_THUNK_DATA32
+101370e8	EOL	IMAGE_THUNK_DATA32
+101370ec	EOL	IMAGE_THUNK_DATA32
+101370f0	EOL	IMAGE_THUNK_DATA32
+101370f4	EOL	IMAGE_THUNK_DATA32
+101370f8	EOL	IMAGE_THUNK_DATA32
+101370fc	EOL	IMAGE_THUNK_DATA32
+10137100	EOL	IMAGE_THUNK_DATA32
+10137104	EOL	IMAGE_THUNK_DATA32
+10137108	EOL	IMAGE_THUNK_DATA32
+1013710c	EOL	IMAGE_THUNK_DATA32
+10137110	EOL	IMAGE_THUNK_DATA32
+10137114	EOL	IMAGE_THUNK_DATA32
+10137118	EOL	IMAGE_THUNK_DATA32
+1013711c	EOL	IMAGE_THUNK_DATA32
+10137120	EOL	IMAGE_THUNK_DATA32
+10137128	EOL	IMAGE_THUNK_DATA32
+1013712c	EOL	IMAGE_THUNK_DATA32
+10137130	EOL	IMAGE_THUNK_DATA32
+10137134	EOL	IMAGE_THUNK_DATA32
+1013713c	PRE	5  DirectDrawCreate  <<not bound>>
+10137144	PRE	253  GetModuleHandleA  <<not bound>>
+10137148	PRE	79  DeviceIoControl  <<not bound>>
+1013714c	PRE	48  CreateFileA  <<not bound>>
+10137150	PRE	251  GetModuleFileNameA  <<not bound>>
+10137154	PRE	598  VirtualAlloc  <<not bound>>
+10137158	PRE	264  GetOEMCP  <<not bound>>
+1013715c	PRE	156  GetACP  <<not bound>>
+10137160	PRE	246  GetLocaleInfoW  <<not bound>>
+10137164	PRE	245  GetLocaleInfoA  <<not bound>>
+10137168	PRE	359  HeapAlloc  <<not bound>>
+1013716c	PRE	106  ExitProcess  <<not bound>>
+10137170	PRE	577  TerminateProcess  <<not bound>>
+10137174	PRE	210  GetCurrentProcess  <<not bound>>
+10137178	PRE	169  GetCommandLineA  <<not bound>>
+1013717c	PRE	277  GetProcAddress  <<not bound>>
+10137180	PRE	331  GetVersion  <<not bound>>
+10137184	PRE	365  HeapFree  <<not bound>>
+10137188	PRE	243  GetLastError  <<not bound>>
+1013718c	PRE	23  CloseHandle  <<not bound>>
+10137190	PRE	534  SetHandleCount  <<not bound>>
+10137194	PRE	238  GetFileType  <<not bound>>
+10137198	PRE	297  GetStdHandle  <<not bound>>
+1013719c	PRE	295  GetStartupInfoA  <<not bound>>
+101371a0	PRE	466  ReadFile  <<not bound>>
+101371a4	PRE	363  HeapDestroy  <<not bound>>
+101371a8	PRE	361  HeapCreate  <<not bound>>
+101371ac	PRE	601  VirtualFree  <<not bound>>
+101371b0	PRE	395  LCMapStringA  <<not bound>>
+101371b4	PRE	617  WideCharToMultiByte  <<not bound>>
+101371b8	PRE	162  GetCPInfo  <<not bound>>
+101371bc	PRE	368  HeapReAlloc  <<not bound>>
+101371c0	PRE	525  SetEnvironmentVariableW  <<not bound>>
+101371c4	PRE	149  FreeEnvironmentStringsA  <<not bound>>
+101371c8	PRE	425  MultiByteToWideChar  <<not bound>>
+101371cc	PRE	224  GetEnvironmentStrings  <<not bound>>
+101371d0	PRE	150  FreeEnvironmentStringsW  <<not bound>>
+101371d4	PRE	226  GetEnvironmentStringsW  <<not bound>>
+101371d8	PRE	80  DisableThreadLibraryCalls  <<not bound>>
+101371dc	PRE	630  WriteFile  <<not bound>>
+101371e0	PRE	141  FlushFileBuffers  <<not bound>>
+101371e4	PRE	29  CompareStringA  <<not bound>>
+101371e8	PRE	396  LCMapStringW  <<not bound>>
+101371ec	PRE	298  GetStringTypeA  <<not bound>>
+101371f0	PRE	301  GetStringTypeW  <<not bound>>
+101371f4	PRE	548  SetStdHandle  <<not bound>>
+101371f8	PRE	532  SetFilePointer  <<not bound>>
+101371fc	PRE	30  CompareStringW  <<not bound>>
+10137200	PRE	524  SetEnvironmentVariableA  <<not bound>>
+10137204	PRE	398  LoadLibraryA  <<not bound>>
+10137208	PRE	523  SetEndOfFile  <<not bound>>
+1013720c	PRE	455  RaiseException  <<not bound>>
+10137214	PRE	405  MessageBoxA  <<not bound>>
+10137218	PRE	213  GetActiveWindow  <<not bound>>
+1013721c	PRE	228  GetClientRect  <<not bound>>
+10137220	PRE	54  ClientToScreen  <<not bound>>
+10137228	PLATE	IMAGE_IMPORT_BY_NAME
+1013723c	PLATE	IMAGE_IMPORT_DESCRIPTOR - DLL NAME
+10137246	PLATE	IMAGE_IMPORT_BY_NAME
+1013725c	PLATE	IMAGE_IMPORT_BY_NAME
+10137270	PLATE	IMAGE_IMPORT_BY_NAME
+10137282	PLATE	IMAGE_IMPORT_BY_NAME
+10137290	PLATE	IMAGE_IMPORT_DESCRIPTOR - DLL NAME
+1013729e	PLATE	IMAGE_IMPORT_BY_NAME
+101372ac	PLATE	IMAGE_IMPORT_BY_NAME
+101372be	PLATE	IMAGE_IMPORT_BY_NAME
+101372ce	PLATE	IMAGE_IMPORT_BY_NAME
+101372e0	PLATE	IMAGE_IMPORT_DESCRIPTOR - DLL NAME
+101372ec	PLATE	IMAGE_IMPORT_BY_NAME
+101372f8	PLATE	IMAGE_IMPORT_BY_NAME
+10137306	PLATE	IMAGE_IMPORT_BY_NAME
+1013731a	PLATE	IMAGE_IMPORT_BY_NAME
+1013732e	PLATE	IMAGE_IMPORT_BY_NAME
+10137340	PLATE	IMAGE_IMPORT_BY_NAME
+10137352	PLATE	IMAGE_IMPORT_BY_NAME
+10137360	PLATE	IMAGE_IMPORT_BY_NAME
+1013736c	PLATE	IMAGE_IMPORT_BY_NAME
+1013737c	PLATE	IMAGE_IMPORT_BY_NAME
+1013738a	PLATE	IMAGE_IMPORT_BY_NAME
+1013739c	PLATE	IMAGE_IMPORT_BY_NAME
+101373aa	PLATE	IMAGE_IMPORT_BY_NAME
+101373ba	PLATE	IMAGE_IMPORT_BY_NAME
+101373cc	PLATE	IMAGE_IMPORT_BY_NAME
+101373d8	PLATE	IMAGE_IMPORT_BY_NAME
+101373e6	PLATE	IMAGE_IMPORT_BY_NAME
+101373f4	PLATE	IMAGE_IMPORT_BY_NAME
+10137402	PLATE	IMAGE_IMPORT_BY_NAME
+10137412	PLATE	IMAGE_IMPORT_BY_NAME
+10137428	PLATE	IMAGE_IMPORT_BY_NAME
+10137434	PLATE	IMAGE_IMPORT_BY_NAME
+1013743e	PLATE	IMAGE_IMPORT_BY_NAME
+1013744a	PLATE	IMAGE_IMPORT_BY_NAME
+10137464	PLATE	IMAGE_IMPORT_BY_NAME
+1013747a	PLATE	IMAGE_IMPORT_BY_NAME
+10137492	PLATE	IMAGE_IMPORT_BY_NAME
+101374ac	PLATE	IMAGE_IMPORT_BY_NAME
+101374c6	PLATE	IMAGE_IMPORT_BY_NAME
+101374e2	PLATE	IMAGE_IMPORT_BY_NAME
+101374ee	PLATE	IMAGE_IMPORT_BY_NAME
+10137502	PLATE	IMAGE_IMPORT_BY_NAME
+10137512	PLATE	IMAGE_IMPORT_BY_NAME
+10137522	PLATE	IMAGE_IMPORT_BY_NAME
+10137534	PLATE	IMAGE_IMPORT_BY_NAME
+10137546	PLATE	IMAGE_IMPORT_BY_NAME
+10137556	PLATE	IMAGE_IMPORT_BY_NAME
+10137568	PLATE	IMAGE_IMPORT_BY_NAME
+1013757a	PLATE	IMAGE_IMPORT_BY_NAME
+1013758c	PLATE	IMAGE_IMPORT_BY_NAME
+101375a6	PLATE	IMAGE_IMPORT_BY_NAME
+101375b6	PLATE	IMAGE_IMPORT_BY_NAME
+101375c6	PLATE	IMAGE_IMPORT_BY_NAME
+101375d8	PLATE	IMAGE_IMPORT_BY_NAME
+101375e6	PLATE	IMAGE_IMPORT_BY_NAME
+10137600	PLATE	IMAGE_IMPORT_BY_NAME
+10137612	PLATE	IMAGE_IMPORT_BY_NAME
+10138060	PLATE	Rsrc_Version_1_409 Size of resource: 0x3a8 bytes

@@ -1,0 +1,26 @@
+{
+  "project_file": "/C/Users/balsa/Desktop/WulframII/Game/wvp.exe",
+  "program_name": "wvp.exe",
+  "executable_path": "/C/Users/balsa/Desktop/WulframII/Game/wvp.exe",
+  "executable_format": "Portable Executable (PE)",
+  "executable_md5": "5d8e64bc3bad24c3456d9ee04798b6b9",
+  "executable_sha256": "a190d31c280369360672dfcc763f6475d6bbb4411a6fd8822fd2a4f550360a45",
+  "language_id": "x86:LE:32:default",
+  "compiler": "visualstudio:unknown",
+  "compiler_spec": "windows",
+  "image_base": "00400000",
+  "min_address": "00400000",
+  "max_address": "005b7fff",
+  "default_pointer_size": "4",
+  "counts": {
+    "memory_blocks": 7,
+    "functions": 0,
+    "defined_symbols": 381,
+    "comments": 1244,
+    "bookmarks": 3,
+    "strings": 591,
+    "external_libraries": 11,
+    "external_locations": 278,
+    "external_entry_points": 1
+  }
+}

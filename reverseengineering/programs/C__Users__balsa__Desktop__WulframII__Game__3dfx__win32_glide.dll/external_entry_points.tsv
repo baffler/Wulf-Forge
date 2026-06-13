@@ -1,0 +1,6 @@
+address	primary_symbol
+100011e5	deallocate_winsys
+100011f9	detect_winsys
+10001073	instantiate_winsys
+100013bb	process_exit
+10014930	entry

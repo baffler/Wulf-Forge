@@ -1,0 +1,1192 @@
+address	length	data_type	value
+59a602c8	11	TerminatedCString	msvcrt.dll
+59a602d3	13	TerminatedCString	KERNEL32.dll
+59a602e0	10	string	NTDLL.DLL
+59a602ea	12	TerminatedCString	VERSION.dll
+59a602f6	13	TerminatedCString	ADVAPI32.dll
+59a60303	11	TerminatedCString	RPCRT4.dll
+59a6135c	8	string	SYMSRV*
+59a61364	11	string	debug(%s)\n
+59a61370	9	string	no file\n
+59a61384	22	string	mismatched timestamp\s
+59a6139c	43	string	FindExecutableImageEx-> Looking for %s...\s
+59a613c8	16	string	file not found\n
+59a613d8	16	string	path not found\n
+59a613e8	17	string	file error 0x%x\n
+59a613fc	22	string	mismatched timestamp\n
+59a61414	41	string	FindDebugInfoFileEx-> Looking for %s...\s
+59a61440	8	string	symbols
+59a6148b	9	string	Yfound\n
+59a61494	48	string	FindExecutableImageEx-> Searching %s for %s...\s
+59a614eb	17	string	YRECURSIVE %s\n
+59a614fc	16	string	pdb error 0x%x
+59a6150c	20	string	pdb has no symbols
+59a61520	16	string	E_PDB_RESERVED
+59a61530	28	string	image has invalid timestamp
+59a6154c	28	string	pdb is stripped of cv info
+59a61568	20	string	dbg file not found
+59a6157c	28	string	invalid executable image
+59a61598	24	string	E_PDB_ILLEGAL_TYPE_EDIT
+59a615b0	20	string	E_PDB_ACCESS_DENIED
+59a615d0	16	string	E_PDB_CORRUPT
+59a615e0	12	string	E_PDB_LIMIT
+59a615ec	44	string	file system or network error reading pdb
+59a61628	24	string	E_PDB_NOT_IMPLEMENTED
+59a61640	16	string	E_PDB_OUT_OF_TI
+59a61650	24	string	E_PDB_PRECOMP_REQUIRED
+59a61668	16	string	unmatched pdb
+59a61678	16	string	file not found
+59a61688	12	string	disk error
+59a61694	16	string	out of memory
+59a616a4	19	string	invalid parameters
+59a616bc	15	string	dia error 0x%x
+59a6179c	17	string	unknown pdb sig\s
+59a617b8	34	string	diaLocatePDB-> Looking for %s...\s
+59a617f4	12	unicode	PDATA
+59a61800	12	unicode	XDATA
+59a6180c	18	unicode	OMAPFROM
+59a61820	14	unicode	OMAPTO
+59a61834	13	string	IP not set!\n
+59a61844	12	string	`string'
+59a61858	55	string	\scouldn't match name! disp=0x%x rva=0x%x addr=0x%I64x\n
+59a61890	20	unicode	FrameData
+59a6197c	9	string	Reserved
+59a61988	21	string	Import Address Table
+59a619a0	13	string	Bound Import
+59a619b0	19	string	Load Configuration
+59a619c4	15	string	Thread Storage
+59a619d4	8	string	Special
+59a619dc	12	string	Description
+59a619e8	6	string	Debug
+59a619f0	16	string	Base Relocation
+59a61a00	9	string	Security
+59a61a0c	10	string	Exception
+59a61a18	9	string	Resource
+59a61a24	7	string	Import
+59a61a2c	7	string	Export
+59a61a34	10	string	Posix CUI
+59a61a40	12	string	Windows CUI
+59a61a4c	12	string	Windows GUI
+59a61a58	7	string	Native
+59a61a60	11	string	Intel IA64
+59a61a6c	12	string	Alpha AXP64
+59a61a78	10	string	Alpha AXP
+59a61a8c	8	string	Unknown
+59a61aa0	7	string	MEMORY
+59a61aa8	14	string	loaded memory
+59a61ab8	9	string	debugger
+59a61ac4	13	string	image header
+59a61ad4	14	string	symbol server
+59a61ae4	14	string	dbg file path
+59a61af4	11	string	image path
+59a61b00	19	string	symbol search path
+59a61b14	8	string	DIA PDB
+59a61b1c	6	string	SYM16
+59a61b24	9	string	DEFERRED
+59a61b30	7	string	EXPORT
+59a61b48	6	string	CLSID
+59a61b50	11	string	RESERVED10
+59a61b5c	21	string	OMAP FROM SRCBORLAND
+59a61b74	12	string	OMAP TO SRC
+59a61b80	6	string	FIXUP
+59a61b88	10	string	EXCEPTION
+59a61ba0	9	string	CODEVIEW
+59a61bb4	11	string	AMD X86-64
+59a61bc8	8	string	TRICORE
+59a61bfc	8	string	THUMB
+59a61c2c	12	string	POWERPCFP
+59a61c38	8	string	POWERPC
+59a61c40	8	string	ALPHA
+59a61c74	8	string	UNKNOWN
+59a61c7c	32	string	No error - symbol load deferred
+59a61c9c	24	string	Pdb read access denied
+59a61cb4	20	string	Cvinfo is corrupt
+59a61cc8	24	string	Unrecognized pdb format
+59a61ce0	24	string	Image header paged out
+59a61cf8	24	string	DBGHELP Out of memory
+59a61d10	24	string	Error in load symbols
+59a61d28	16	string	DBG not found
+59a61d38	16	string	PDB not found
+59a61d48	14	string	Unmatched PDB
+59a61d58	28	string	Symbols loaded successfully
+59a61d78	19	string	VC7FPO - Disabled\n
+59a61d8c	18	string	VC7FPO - Enabled\n
+59a61da0	16	string	Quiet mode on.\n
+59a61db0	16	string	Noisy mode on.\n
+59a61dc0	23	string	!sym <noisy//quiet> -\s
+59a61dd8	6	string	quiet
+59a61de0	6	string	noisy
+59a61df0	10	string	%08x`%08x
+59a61dfc	8	string	0x%s  \s
+59a61e04	8	string	0x%s -\s
+59a61e0c	32	string	\s     base -        end   name\n
+59a61e2c	50	string	\s              base -                 end   name\n
+59a61e60	22	string	%d loaded modules...\n
+59a61e78	28	string	Couldn't find process 0x%x\n
+59a61e94	30	string	Couldn't get process handle.\n
+59a61eb4	8	string	\s%s!%s\n
+59a61ebc	31	string	Cannot read Image header @ %p\n
+59a61edc	16	string	Unknown image.\n
+59a61eec	37	string	Cannot read Image Debug header @ %p\n
+59a61f14	34	string	Cannot read Image NT header @ %p\n
+59a61f38	28	string	Unknown NT Image signature\n
+59a61f54	36	string	Module does not have base address.\n
+59a61f78	45	string	[Data paged out] - unable to load COFF info.
+59a61fa8	28	string	NumSyms %#lx, Numlines %#lx
+59a61fc4	56	string	[Data not mapped] - can't validate symbols, if present.
+59a61ffc	29	string	Sig: %lx, Age: %lx,%sPdb: %s
+59a62020	17	string	\n              \s
+59a62034	33	string	\s              Age: %lx, Pdb: %s
+59a62058	85	string	GUID: (0x%8x, 0x%4x, 0x%4x, 0x%2x, 0x%2x, 0x%2x, 0x%2x, 0x%2x, 0x%2x, 0x%2x, 0x%2x)\n
+59a620b0	30	string	unrecognized symbol format ID
+59a620d0	12	string	%c%c%c%c -\s
+59a620dc	18	string	[Data not mapped]
+59a620f4	14	string	BBT Optimized
+59a62104	18	string	%4lx, %5lx, %7lx\s
+59a62118	6	string	%21s\s
+59a62124	44	string	Debug Data Dirs: Type Size     VA  Pointer\n
+59a62154	22	string	\n                 %s\n
+59a6216c	10	string	\sfrom %s.
+59a62180	22	string	\s   Symbol Type: %-9s
+59a62198	21	string	\n                 %s
+59a621b0	35	string	- Image read successfully from %s.
+59a621d4	22	string	\s    Image Type: %-9s
+59a621ec	31	string	Debug Directories not present\n
+59a6220c	28	string	Characteristics: %lx %s %s\n
+59a62228	9	string	stripped
+59a6223c	22	string	\s      CheckSum: %lx\n
+59a62254	22	string	\n     Time Stamp: %lx
+59a6226c	6	string	\s(%s)
+59a62274	20	string	\s  Machine Type: %d
+59a62288	21	string	\s    Image Name: %s\n
+59a622a0	22	string	\s  Base Address: %p%s
+59a622b8	13	string	\sis INVALID\n
+59a622c8	21	string	\s        Module: %s\n
+59a622e0	44	string	%8lX [%8lX] address [size] of %s Directory\n
+59a62310	97	string	%p size of stack reserve\n%p size of stack commit\n%p size of heap reserve\n%p size of heap commit\n
+59a62378	226	string	\s        ----- new -----\n%p image base\n%8lX section alignment\n%8lX file alignment\n%8hX subsystem (%s)\n%8s operating system version\n%8s image version\n%8s subsystem version\n%8lX size of image\n%8lX size of headers\n%8lX checksum\n
+59a6245c	10	string	%hu.%02hu
+59a62468	122	string	\s        ----- rom -----\n%8lX base of bss\n%8lX gpr mask\n         cpr mask\n         %08lX %08lX %08lX %08lX\n%8hX gp value\n
+59a624e8	183	string	\nOPTIONAL HEADER VALUES\n%8hX magic #\n%8s linker version\n%8lX size of code\n%8lX size of initialized data\n%8lX size of uninitialized data\n%8lX address of entry point\n%8lX base of code\n
+59a625a0	8	string	%u.%02u
+59a625a8	16	string	\s           %s\n
+59a625b8	20	string	32 bit word machine
+59a625cc	27	string	Debug information stripped
+59a625e8	7	string	System
+59a625f4	19	string	RESERVED - UNKNOWN
+59a62608	15	string	Bytes reversed
+59a62618	21	string	Relocations stripped
+59a62630	11	string	Executable
+59a6263c	22	string	Line numbers stripped
+59a62654	17	string	Symbols stripped
+59a62668	30	string	App can handle >2gb addresses
+59a62688	108	string	%8lX file pointer to symbol table\n%8lX number of symbols\n%8hX size of optional header\n%8hX characteristics\n
+59a626f8	82	string	FILE HEADER VALUES\n%8hX machine (%s)\n%8hX number of sections\n%8lX time date stamp
+59a6274c	25	string	\nFile Type: COFF OBJECT\n
+59a62768	30	string	\nFile Type: EXECUTABLE IMAGE\n
+59a62788	17	string	\nFile Type: DLL\n
+59a6279c	23	string	\nFile Type: ROM IMAGE\n
+59a627b4	21	string	\nFile Type: UNKNOWN\n
+59a627cc	13	string	Execute Only
+59a627dc	10	string	Read Only
+59a627e8	13	string	Execute Read
+59a627f8	11	string	Write Only
+59a62804	14	string	Execute Write
+59a62814	11	string	Read Write
+59a62820	19	string	Execute Read Write
+59a62834	21	string	Unknown Memory Flags
+59a6284c	13	string	1 byte align
+59a6285c	13	string	2 byte align
+59a6286c	13	string	4 byte align
+59a6287c	13	string	8 byte align
+59a6288c	14	string	16 byte align
+59a6289c	14	string	32 byte align
+59a628ac	14	string	64 byte align
+59a628bc	21	string	(no align specified)
+59a628d4	7	string	Shared
+59a628dc	10	string	Not Paged
+59a628e8	20	string	Purgeable or 16-Bit
+59a628fc	7	string	Locked
+59a62904	8	string	Preload
+59a6290c	12	string	Discardable
+59a62918	11	string	Not Cached
+59a62924	9	string	Sys Heap
+59a62930	7	string	Remove
+59a62938	9	string	Communal
+59a62944	10	string	Protected
+59a62950	9	string	Far Data
+59a62964	7	string	No Pad
+59a62974	17	string	Initialized Data
+59a62988	19	string	Uninitialized Data
+59a6299c	6	string	Other
+59a629a4	13	string	\s        %s\n
+59a629b4	6	string	UCode
+59a629bc	10	string	Literal 8
+59a629c8	10	string	Literal 4
+59a629d4	24	string	Non-Relocatable overlay
+59a629ec	8	string	Library
+59a629f4	10	string	Init Code
+59a62a00	12	string	Uninit Data
+59a62a0c	8	string	Regular
+59a62a1c	15	string	GP Uninit Data
+59a62a2c	13	string	GP Init Data
+59a62a48	101	string	%8lX file pointer to line numbers\n%8hX number of relocations\n%8hX number of line numbers\n%8lX flags\n
+59a62ab0	120	string	%8lX %s\n%8lX virtual address\n%8lX size of raw data\n%8lX file pointer to raw data\n%8lX file pointer to relocation table\n
+59a62b28	13	string	virtual size
+59a62b38	17	string	physical address
+59a62b4c	32	string	\nSECTION HEADER #%hX\n%8.8s name
+59a62b6c	32	string	%I64lx is not a valid address.\n
+59a62b8c	49	string	Couldn't find process 0x%x while looking for %s\n
+59a62bc0	30	string	couldn't get process handle.\n
+59a62be0	26	string	Loaded Module Info: [%s]\s
+59a62bfc	11	string	%8x ->%8x\n
+59a62c08	11	string	\nOMAP TO:\n
+59a62c14	11	string	%8x <-%8x\n
+59a62c20	13	string	\nOMAP FROM:\n
+59a62c30	17	string	Dump OMAP: [%s]\s
+59a62c44	20	string	Source Files: [%s]\n
+59a62c58	31	string	\tCan't read debug data cb=%lx\n
+59a62c78	17	string	\tFormat: UNKNOWN
+59a62c8c	28	string	\tFormat: RSDS, guid, %x, %s
+59a62ca8	23	string	Can't read debug data\n
+59a62cc0	16	string	\tImage Name: %s
+59a62cd0	26	string	\tFormat: NB10, %x, %x, %s
+59a62cec	26	string	\s[Debug data not mapped]\n
+59a62d08	15	string	%8x    %8x %8x
+59a62d18	8	string	\t(%6lu)
+59a62d20	9	string	\tpdata \s
+59a62d2c	9	string	\tsrc ->\s
+59a62d38	9	string	\t-> src\s
+59a62d44	9	string	\tfixup \s
+59a62d50	9	string	\tmisc  \s
+59a62d5c	9	string	\tfpo   \s
+59a62d68	9	string	\tcv    \s
+59a62d74	9	string	\tcoff  \s
+59a62d8b	25	string	YCan't read debug dir\n
+59a62da4	40	string	\tType       Size     Address  Pointer\n\n
+59a62dcc	25	string	\n\nDebug Directories(%d)\n
+59a62de8	8	string	.rdata
+59a62df0	17	string	No file header.\n
+59a62e04	55	string	\n***\n*** Some section headers may be missing ***\n***\n\n
+59a62e3c	29	string	Can't read section headers.\n
+59a62e5c	46	string	Cannot allocate memory for dumping sections.\n
+59a62e8c	18	string	Bad file header.\n
+59a62ea0	37	string	Can't read file header: error == %d\n
+59a62ed3	37	string	Y   -s      Dump section headers\n
+59a62ef8	30	string	\s  -f      Dump file headers\n
+59a62f18	28	string	\s  -a      Dump everything\n
+59a62f34	10	string	Options:\n
+59a62f40	47	string	Dumps headers from an image based at address.\n
+59a62f70	29	string	Usage: dh [options] address\n
+59a62f90	24	string	Invalid extra argument\n
+59a62ff4	7	string	.pdata
+59a62ffc	32	string	Unable to load msvcrt!__unDName
+59a6301c	10	string	__unDName
+59a63028	11	string	msvcrt.dll
+59a63063	41	string	YSYMSRV: %s needs a downstream store.\n
+59a6308c	51	string	SYMSRV: Compressed file needs a downstream store.\n
+59a630c0	19	string	symsrv error 0x%x\n
+59a630e4	6	string	MOD%p
+59a630f4	26	string	mdfnGetExecutableImage()\n
+59a63110	25	string	SymSrv load failure: %s\n
+59a6312c	23	string	SymbolServerSetOptions
+59a63144	18	string	SymbolServerClose
+59a63158	13	string	SymbolServer
+59a631b8	71	string	SymSetSymWithAddr64: symbol %s already exists at this address 0x%I64x\n
+59a6328c	6	string	ntdll
+59a63323	21	string	Y_NT_ALT_SYMBOL_PATH
+59a63338	16	string	_NT_SYMBOL_PATH
+59a63393	17	string	YDBGHELP_TOKEN
+59a633d3	29	string	YNtQueryInformationProcess
+59a633f0	10	string	ntdll.dll
+59a633fc	25	string	CreateToolhelp32Snapshot
+59a63418	14	string	Module32First
+59a63428	13	string	Module32Next
+59a63438	13	string	kernel32.dll
+59a63448	27	string	RtlDestroyQueryDebugBuffer
+59a63464	26	string	RtlCreateQueryDebugBuffer
+59a63480	32	string	RtlQueryProcessDebugInformation
+59a63518	97	string	SymCheckUserGenerated: We should not call this function. This is not a user generated symbol...\n
+59a6357c	8	string	Ordinal
+59a63584	26	string	CreateSymbolTable failed\n
+59a635a0	26	string	unrecognized OMF sig: %x\n
+59a635c0	82	string	LoadCodeViewSymbols:\n hProcess   %p\n mi         %p\n pCvData    %p\n dwSize     %x\n
+59a63614	19	string	no symbols loaded\n
+59a63628	25	string	export symbols %sloaded\n
+59a63644	23	string	coff symbols %sloaded\n
+59a6365c	27	string	codeview symbols %sloaded\n
+59a63680	41	string	No base address for %s:  Please specify\n
+59a636ac	40	string	GetModuleForPC(%p, %I64x, TRUE) failed\n
+59a636d4	43	string	GetDebugData(%p, %s, %s, %I64x, 0) failed\n
+59a63728	104	unicode	SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Hotfix
+59a63790	32	unicode	CRASH: Hotfixes
+59a637b0	10	unicode	none
+59a637bc	26	unicode	CRASH: OS SP
+59a637d8	18	unicode	DRW: QFE
+59a637f4	22	unicode	DRW: build
+59a63816	34	unicode	1DRW: OS version
+59a638a8	84	string	Can't find runtime function entry info for %08x`%08x, results might be unreliable!\n
+59a63964	31	string	Unknown ABI unwind descriptor\n
+59a63984	30	string	Format P9 not supported yet!\n
+59a639a4	32	string	Unsupported Unwind Descriptor!\n
+59a639c4	53	string	Can't read Unwind Info - StackWalk can not continue\n
+59a63a0c	10	unicode	IA64
+59a63a18	12	unicode	AMD64
+59a63a3c	26	unicode	mscorsvr.dll
+59a63a60	26	unicode	mscorwks.dll
+59a63a84	24	unicode	mscoree.dll
+59a63b68	16	string	GetProcessTimes
+59a63b78	17	string	GetLongPathNameW
+59a63b8c	17	string	GetLongPathNameA
+59a63ba0	14	string	Module32NextW
+59a63bb0	15	string	Module32FirstW
+59a63bc0	13	string	Thread32Next
+59a63bd0	14	string	Thread32First
+59a63be0	11	string	OpenThread
+59a63bec	21	string	GetModuleFileNameExW
+59a63c04	19	string	EnumProcessModules
+59a63c18	10	string	psapi.dll
+59a63c44	20	string	CreateCorDataAccess
+59a63c8b	13	string	YOpenProcess
+59a63e28	23	string	RtlGetUnloadEventTrace
+59a63e40	28	string	RtlGetFunctionTableListHead
+59a63e5c	12	string	RtlFreeHeap
+59a63e68	14	string	NtQueryObject
+59a63e78	25	string	NtQueryInformationThread
+59a63e94	25	string	NtQuerySystemInformation
+59a63eb0	13	string	NtOpenThread
+59a63ec0	10	unicode	File
+59a6437c	11	string	\s(ordinal)
+59a643c8	22	unicode	TestString
+59a64abc	20	unicode	compiland
+59a64ad0	24	unicode	compilandID
+59a64ae8	18	unicode	relocCRC
+59a64afc	16	unicode	dataCRC
+59a64b0c	12	unicode	write
+59a64b18	10	unicode	read
+59a64b24	16	unicode	execute
+59a64b34	12	unicode	share
+59a64b40	20	unicode	notCached
+59a64b54	24	unicode	discardable
+59a64b6c	14	unicode	comdat
+59a64b7c	14	unicode	remove
+59a64b8c	36	unicode	uninitializedData
+59a64bb0	32	unicode	initializedData
+59a64bd0	10	unicode	code
+59a64bdc	18	unicode	notPaged
+59a64bf0	14	unicode	length
+59a64c10	28	unicode	addressOffset
+59a64c2c	30	unicode	addressSection
+59a64c4c	14	unicode	Frame.
+59a64c5c	34	unicode	Execute allowed.
+59a64c80	30	unicode	Write allowed.
+59a64ca0	28	unicode	Read allowed.
+59a64cbc	56	unicode	Length in bytes of segment.
+59a64cf4	56	unicode	Offset in physical section.
+59a64d2c	42	unicode	CRC of source bytes.
+59a64d58	60	unicode	Source compression algorithm.
+59a64d94	36	unicode	Virtual filename.
+59a64db8	34	unicode	Object filename.
+59a64ddc	34	unicode	Source filename.
+59a64e00	54	unicode	Length of source in bytes.
+59a64e38	70	unicode	Frame data for enclosing function.
+59a64e80	10	unicode	type
+59a64e8c	42	unicode	allocatesBasePointer
+59a64eb8	28	unicode	functionStart
+59a64ed4	54	unicode	cplusplusExceptionHandling
+59a64f0c	48	unicode	systemExceptionHandling
+59a64f3c	16	unicode	program
+59a64f4c	42	unicode	lengthSavedRegisters
+59a64f78	26	unicode	lengthProlog
+59a64f94	18	unicode	maxStack
+59a64fa8	26	unicode	lengthParams
+59a64fc4	26	unicode	lengthLocals
+59a64fe0	24	unicode	lengthBlock
+59a64ff8	16	unicode	fUsesBP
+59a65008	20	unicode	funcStart
+59a6501c	14	unicode	fHasEH
+59a6502c	16	unicode	fHasSEH
+59a6503c	24	unicode	cbSavedRegs
+59a65054	18	unicode	cbProlog
+59a65068	18	unicode	cbParams
+59a6507c	18	unicode	cbLocals
+59a65090	30	unicode	base of locals
+59a650b0	56	unicode	return address of the frame
+59a650e8	46	unicode	size of frame in bytes
+59a65118	48	unicode	Base of the stack frame
+59a65188	110	unicode	$T2 $esp = $T0 .raSearch = $eip $T0 ^ = $esp $T0 4 + =
+59a651f8	112	unicode	$T0 $ebp = $eip $T0 4 + ^ = $ebp $T0 ^ = $esp $T0 8 + =
+59a65268	216	unicode	$T2 $esp .cbLocals + .cbSavedRegs + = $T0 .raSearchStart 4 - = $ebp $T0 ^ = $eip $T0 4 + ^ = $esp $T0 8 + =
+59a65340	174	unicode	$T2 $esp .cbLocals + .cbSavedRegs + = $T0 .raSearchStart = $eip $T0 ^ = $esp $T0 4 + =
+59a653f0	168	unicode	$T2 $esp = $T0 .raSearchStart = $eip $T0 ^ = $esp $T0 4 + = $ebp $ebp = $ebx $ebx =
+59a655ac	26	unicode	__SEH_prolog
+59a655c8	24	unicode	__EH_prolog
+59a656c8	18	unicode	raSearch
+59a656dc	28	unicode	raSearchStart
+59a656f8	20	unicode	frameFunc
+59a6570c	18	unicode	cbStkMax
+59a65720	16	unicode	cbBlock
+59a65730	22	unicode	ulRvaStart
+59a65748	10	string	Module %d
+59a65754	14	string	***globals***
+59a65764	10	string	***DIA***
+59a657c1	11	string	vfunctab
+59a65c94	30	unicode	InjectedSource
+59a65cb4	22	unicode	SegmentMap
+59a65ccc	18	unicode	Sections
+59a65ce0	24	unicode	SourceFiles
+59a65cf8	16	unicode	Symbols
+59a65d08	38	unicode	SECTIONHEADERSORIG
+59a65d30	30	unicode	SECTIONHEADERS
+59a65d50	14	unicode	NEWFPO
+59a65d60	24	unicode	TOKENRIDMAP
+59a65d78	12	unicode	FIXUP
+59a65d85	11	string	vfunctab
+59a68558	10	unicode	%08x
+59a68568	104	unicode	Unique id for the source file (in this data store).
+59a685d0	22	unicode	compilands
+59a685e8	26	unicode	checksumType
+59a68604	18	unicode	fileName
+59a68618	20	unicode	statement
+59a6862c	26	unicode	sourceFileID
+59a68648	32	unicode	columnNumberEnd
+59a68668	26	unicode	columnNumber
+59a68684	28	unicode	lineNumberEnd
+59a686a0	22	unicode	lineNumber
+59a686b8	22	unicode	sourceFile
+59a686d0	18	unicode	SymIndex
+59a686e4	16	unicode	UDTKind
+59a686f4	36	unicode	ObjectPointerType
+59a68718	24	unicode	OEMSymbolId
+59a68730	12	unicode	OEMId
+59a6873c	24	unicode	MachineType
+59a68754	42	unicode	TargetVirtualAddress
+59a68780	58	unicode	TargetRelativeVirtualAddress
+59a687bc	26	unicode	TargetOffset
+59a687d8	28	unicode	TargetSection
+59a687f4	26	unicode	UpperBoundId
+59a68810	26	unicode	LowerBoundId
+59a6882c	22	unicode	UpperBound
+59a68844	22	unicode	LowerBound
+59a6885c	10	unicode	Rank
+59a68868	26	unicode	AddressTaken
+59a68884	36	unicode	CompilerGenerated
+59a688a8	20	unicode	Signature
+59a688c4	32	unicode	UndecoratedName
+59a688e4	42	unicode	VirtualBaseDispIndex
+59a68910	10	unicode	MSIL
+59a6891c	16	unicode	Managed
+59a6892c	18	unicode	Function
+59a68940	10	unicode	Code
+59a6894c	40	unicode	VirtualTableShapeId
+59a68974	34	unicode	ArrayIndexTypeId
+59a68998	14	unicode	TypeId
+59a689a8	28	unicode	ClassParentId
+59a689c4	32	unicode	LexicalParentId
+59a689e4	36	unicode	VirtualTableShape
+59a68a08	50	unicode	VirtualBasePointerOffset
+59a68a3c	50	unicode	IndirectVirtualBaseClass
+59a68a70	34	unicode	VirtualBaseClass
+59a68a94	14	unicode	Scoped
+59a68aa4	32	unicode	HasCastOperator
+59a68ac4	44	unicode	HasAssignmentOperator
+59a68af0	30	unicode	HasNestedTypes
+59a68b10	14	unicode	Nested
+59a68b20	38	unicode	OverloadedOperator
+59a68b48	24	unicode	Constructor
+59a68b60	14	unicode	Packed
+59a68b70	30	unicode	ArrayIndexType
+59a68b90	24	unicode	BitPosition
+59a68ba8	12	unicode	Count
+59a68bb4	20	unicode	Reference
+59a68bc8	32	unicode	SymbolsFileName
+59a68be8	10	unicode	GUID
+59a68bf4	20	unicode	TimeStamp
+59a68c08	12	unicode	Token
+59a68c14	18	unicode	BaseType
+59a68c28	12	unicode	Value
+59a68c34	36	unicode	CallingConvention
+59a68c58	10	unicode	Pure
+59a68c64	12	unicode	Intro
+59a68c70	16	unicode	Virtual
+59a68c80	36	unicode	VirtualBaseOffset
+59a68ca4	22	unicode	ThisAdjust
+59a68cbc	26	unicode	ThunkOrdinal
+59a68cd8	30	unicode	ObjectFileName
+59a68cf8	30	unicode	SourceFileName
+59a68d18	26	unicode	BackEndBuild
+59a68d34	26	unicode	BackEndMinor
+59a68d50	26	unicode	BackEndMajor
+59a68d6c	28	unicode	FrontEndBuild
+59a68d88	28	unicode	FrontEndMinor
+59a68da4	28	unicode	FrontEndMajor
+59a68dc0	46	unicode	EditAndContinueEnabled
+59a68df0	18	unicode	Language
+59a68e04	18	unicode	Platform
+59a68e18	24	unicode	LibraryName
+59a68e30	14	unicode	Access
+59a68e40	28	unicode	UnalignedType
+59a68e5c	20	unicode	ConstType
+59a68e70	26	unicode	VolatileType
+59a68e8c	10	unicode	Slot
+59a68e98	14	unicode	Length
+59a68ea8	14	unicode	Offset
+59a68eb8	22	unicode	RegisterId
+59a68ed0	30	unicode	VirtualAddress
+59a68ef0	46	unicode	RelativeVirtualAddress
+59a68f20	28	unicode	AddressOffset
+59a68f3c	30	unicode	AddressSection
+59a68f5c	26	unicode	LocationType
+59a68f78	18	unicode	DataKind
+59a68f8c	10	unicode	Type
+59a68f98	24	unicode	ClassParent
+59a68fb0	28	unicode	LexicalParent
+59a68fcc	10	unicode	Name
+59a68fd8	14	unicode	SymTag
+59a6a9c5	11	string	vfunctab
+59a6b070	10	unicode	this
+59a6b081	11	string	vfunctab
+59a6b199	11	string	vfunctab
+59a6b73d	11	string	vfunctab
+59a6b8ba	18	string	\sProgram Database
+59a6b9c0	48	string	Cannot access 32-bit type pool with 16-bit APIs
+59a6ba9d	11	string	vfunctab
+59a6bab1	11	string	vfunctab
+59a6bb49	11	string	vfunctab
+59a6d58f	17	string	YS_LPROCMIPS_16t
+59a6d5a0	16	string	S_GPROCMIPS_16t
+59a6d5b0	16	string	S_GTHREAD32_16t
+59a6d5c0	16	string	S_LTHREAD32_16t
+59a6d5d0	16	string	S_REGREL32_16t
+59a6d5e0	16	string	S_VFTABLE32_16t
+59a6d5f0	16	string	S_LPROC32_16t
+59a6d600	16	string	S_GPROC32_16t
+59a6d610	12	string	S_PUB32_16t
+59a6d61c	16	string	S_GDATA32_16t
+59a6d62c	16	string	S_LDATA32_16t
+59a6d63c	16	string	S_BPREL32_16t
+59a6d64c	16	string	S_COBOLUDT_16t
+59a6d668	16	string	S_CONSTANT_16t
+59a6d678	16	string	S_MANYREG_16t
+59a6d688	16	string	S_REGISTER_16t
+59a6d698	16	string	S_ATTR_MANYREG
+59a6d6a8	16	string	S_ATTR_REGREL
+59a6d6b8	16	string	S_ATTR_REGISTER
+59a6d6c8	16	string	S_ATTR_FRAMEREL
+59a6d6d8	16	string	S_MANCONSTANT
+59a6d6e8	12	string	S_SEPCODE
+59a6d6f4	16	string	S_TRAMPOLINE
+59a6d704	16	string	S_UNAMESPACE_ST
+59a6d714	20	string	S_MANMANYREG2_ST
+59a6d728	16	string	S_MANREGREL_ST
+59a6d738	16	string	S_MANMANYREG_ST
+59a6d748	16	string	S_MANSLOT_ST
+59a6d758	20	string	S_MANREGISTER_ST
+59a6d76c	20	string	S_MANFRAMEREL_ST
+59a6d780	16	string	S_GMANDATA_ST
+59a6d790	16	string	S_LMANDATA_ST
+59a6d7a0	16	string	S_LMANPROC_ST
+59a6d7b0	16	string	S_GMANPROC_ST
+59a6d7c0	16	string	S_LPROCIA64_ST
+59a6d7d0	16	string	S_GPROCIA64_ST
+59a6d7e0	16	string	S_PARAMSLOT_ST
+59a6d7f0	16	string	S_LOCALSLOT_ST
+59a6d800	16	string	S_MANYREG2_ST
+59a6d810	16	string	S_COMPILE2_ST
+59a6d820	16	string	S_LPROCMIPS_ST
+59a6d830	16	string	S_GPROCMIPS_ST
+59a6d840	16	string	S_GTHREAD32_ST
+59a6d850	16	string	S_LTHREAD32_ST
+59a6d860	16	string	S_REGREL32_ST
+59a6d870	12	string	S_WITH32_ST
+59a6d87c	16	string	S_BLOCK32_ST
+59a6d88c	16	string	S_LABEL32_ST
+59a6d89c	16	string	S_THUNK32_ST
+59a6d8ac	16	string	S_LPROC32_ST
+59a6d8bc	16	string	S_GPROC32_ST
+59a6d8cc	12	string	S_PUB32_ST
+59a6d8d8	16	string	S_GDATA32_ST
+59a6d8e8	16	string	S_LDATA32_ST
+59a6d8f8	16	string	S_BPREL32_ST
+59a6d908	16	string	S_OBJNAME_ST
+59a6d918	16	string	S_COBOLUDT_ST
+59a6d928	12	string	S_UDT_ST
+59a6d934	16	string	S_CONSTANT_ST
+59a6d944	16	string	S_MANYREG_ST
+59a6d954	16	string	S_REGISTER_ST
+59a6d964	16	string	S_DATAREF_ST
+59a6d974	16	string	S_LPROCREF_ST
+59a6d984	16	string	S_PROCREF_ST
+59a6d994	16	string	S_UNAMESPACE
+59a6d9a4	12	string	S_MANTYPREF
+59a6d9b0	16	string	S_MANMANYREG2
+59a6d9c0	12	string	S_MANREGREL
+59a6d9cc	16	string	S_MANMANYREG
+59a6d9dc	12	string	S_MANSLOT
+59a6d9e8	16	string	S_MANREGISTER
+59a6d9f8	16	string	S_MANFRAMEREL
+59a6da08	12	string	S_GMANDATA
+59a6da14	12	string	S_LMANDATA
+59a6da20	12	string	S_RESERVED4
+59a6da2c	12	string	S_RESERVED3
+59a6da38	12	string	S_RESERVED2
+59a6da44	12	string	S_RESERVED1
+59a6da50	12	string	S_LMANPROC
+59a6da5c	12	string	S_GMANPROC
+59a6da70	12	string	S_TOKENREF
+59a6da7c	16	string	S_ANNOTATIONREF
+59a6da8c	12	string	S_LPROCIA64
+59a6da98	12	string	S_GPROCIA64
+59a6daa4	16	string	S_ANNOTATION
+59a6dab4	12	string	S_PARAMSLOT
+59a6dac0	12	string	S_LOCALSLOT
+59a6dacc	12	string	S_MANYREG2
+59a6dad8	12	string	S_COMPILE2
+59a6dae4	12	string	S_FRAMEPROC
+59a6daf0	12	string	S_SLINK32
+59a6dafc	12	string	S_DATAREF
+59a6db08	12	string	S_LPROCREF
+59a6db14	12	string	S_PROCREF
+59a6db20	12	string	S_LPROCMIPS
+59a6db2c	12	string	S_GPROCMIPS
+59a6db38	12	string	S_GTHREAD32
+59a6db44	12	string	S_LTHREAD32
+59a6db50	12	string	S_REGREL32
+59a6db5c	12	string	S_VFTABLE32
+59a6db68	12	string	S_WITH32
+59a6db74	12	string	S_BLOCK32
+59a6db80	12	string	S_LABEL32
+59a6db8c	12	string	S_THUNK32
+59a6db98	12	string	S_LPROC32
+59a6dba4	12	string	S_GPROC32
+59a6dbb0	8	string	S_PUB32
+59a6dbb8	12	string	S_GDATA32
+59a6dbc4	12	string	S_LDATA32
+59a6dbd0	12	string	S_BPREL32
+59a6dbdc	12	string	S_REGREL16
+59a6dbe8	12	string	S_VFTABLE16
+59a6dbf4	16	string	S_CEXMODEL32
+59a6dc04	16	string	S_CEXMODEL16
+59a6dc14	12	string	S_WITH16
+59a6dc20	12	string	S_BLOCK16
+59a6dc2c	12	string	S_LABEL16
+59a6dc38	12	string	S_THUNK16
+59a6dc44	12	string	S_GPROC16
+59a6dc50	12	string	S_LPROC16
+59a6dc5c	12	string	S_GDATA16
+59a6dc68	12	string	S_LDATA16
+59a6dc74	12	string	S_BPREL16
+59a6dc80	12	string	S_ENTRYTHIS
+59a6dc8c	12	string	S_RETURN
+59a6dc98	12	string	S_ENDARG
+59a6dca4	8	string	S_END
+59a6dcac	12	string	S_OBJNAME
+59a6dcb8	12	string	S_COMPILE
+59a6dcc4	12	string	S_SSEARCH
+59a6dcd0	12	string	S_COBOLUDT
+59a6dce4	12	string	S_CONSTANT
+59a6dcf0	12	string	S_MANYREG
+59a6dcfc	12	string	S_REGISTER
+59a6dd08	16	string	LF_MEMBERMODIFY
+59a6dd18	16	string	LF_NESTTYPEEX
+59a6dd28	16	string	LF_NESTTYPE_16t
+59a6dd38	20	string	LF_ONEMETHOD_16t
+59a6dd4c	16	string	LF_METHOD_16t
+59a6dd5c	16	string	LF_VFUNCOFF_16t
+59a6dd6c	16	string	LF_VFUNCTAB_16t
+59a6dd7c	16	string	LF_STMEMBER_16t
+59a6dd8c	16	string	LF_MEMBER_16t
+59a6dd9c	20	string	LF_FRIENDFCN_16t
+59a6ddb0	20	string	LF_FRIENDCLS_16t
+59a6ddc4	16	string	LF_IVBCLASS_16t
+59a6ddd4	16	string	LF_VBCLASS_16t
+59a6dde4	16	string	LF_BCLASS_16t
+59a6ddf4	16	string	LF_INDEX_16t
+59a6de04	16	string	LF_DIMVARLU_16t
+59a6de24	16	string	LF_DIMCONLU_16t
+59a6de34	16	string	LF_DIMCONU_16t
+59a6de44	16	string	LF_BITFIELD_16t
+59a6de54	20	string	LF_METHODLIST_16t
+59a6de68	20	string	LF_FIELDLIST_16t
+59a6de7c	16	string	LF_DEFARG_16t
+59a6de8c	16	string	LF_DERIVED_16t
+59a6de9c	16	string	LF_ARGLIST_16t
+59a6dec4	16	string	LF_PRECOMP_16t
+59a6ded4	16	string	LF_VFTPATH_16t
+59a6dee4	16	string	LF_DIMARRAY_16t
+59a6def4	16	string	LF_BARRAY_16t
+59a6df14	20	string	LF_MFUNCTION_16t
+59a6df28	20	string	LF_PROCEDURE_16t
+59a6df3c	12	string	LF_ENUM_16t
+59a6df48	16	string	LF_UNION_16t
+59a6df58	20	string	LF_STRUCTURE_16t
+59a6df6c	16	string	LF_CLASS_16t
+59a6df7c	16	string	LF_ARRAY_16t
+59a6df8c	16	string	LF_POINTER_16t
+59a6df9c	16	string	LF_MODIFIER_16t
+59a6dfac	20	string	LF_MEMBERMODIFY_ST
+59a6dfc0	20	string	LF_NESTTYPEEX_ST
+59a6dfd4	16	string	LF_ONEMETHOD_ST
+59a6dfe4	16	string	LF_NESTTYPE_ST
+59a6dff4	16	string	LF_METHOD_ST
+59a6e004	16	string	LF_STMEMBER_ST
+59a6e014	16	string	LF_MEMBER_ST
+59a6e024	16	string	LF_FRIENDFCN_ST
+59a6e034	16	string	LF_DEFARG_ST
+59a6e044	16	string	LF_PRECOMP_ST
+59a6e054	16	string	LF_DIMARRAY_ST
+59a6e064	16	string	LF_MANAGED_ST
+59a6e074	12	string	LF_ALIAS_ST
+59a6e080	12	string	LF_ENUM_ST
+59a6e08c	12	string	LF_UNION_ST
+59a6e098	16	string	LF_STRUCTURE_ST
+59a6e0a8	12	string	LF_CLASS_ST
+59a6e0b4	12	string	LF_ARRAY_ST
+59a6e0c0	16	string	LF_ENUMERATE_ST
+59a6e0d0	20	string	LF_TYPESERVER_ST
+59a6e0e4	12	string	LF_NESTTYPE
+59a6e0f0	16	string	LF_ENUMERATE
+59a6e100	16	string	LF_ONEMETHOD
+59a6e110	12	string	LF_METHOD
+59a6e11c	12	string	LF_VFUNCOFF
+59a6e128	12	string	LF_VFUNCTAB
+59a6e134	12	string	LF_STMEMBER
+59a6e140	12	string	LF_MEMBER
+59a6e14c	16	string	LF_FRIENDFCN
+59a6e15c	16	string	LF_FRIENDCLS
+59a6e16c	12	string	LF_IVBCLASS
+59a6e178	12	string	LF_VBCLASS
+59a6e184	12	string	LF_BCLASS
+59a6e190	12	string	LF_INDEX
+59a6e19c	12	string	LF_REFSYM
+59a6e1a8	12	string	LF_DIMVARLU
+59a6e1c0	12	string	LF_DIMCONLU
+59a6e1cc	12	string	LF_DIMCONU
+59a6e1d8	12	string	LF_BITFIELD
+59a6e1e4	16	string	LF_METHODLIST
+59a6e1f4	16	string	LF_FIELDLIST
+59a6e204	8	string	LF_LIST
+59a6e20c	12	string	LF_DEFARG
+59a6e218	12	string	LF_DERIVED
+59a6e224	12	string	LF_ARGLIST
+59a6e238	16	string	LF_TYPESERVER2
+59a6e248	16	string	LF_TYPESERVER
+59a6e268	16	string	LF_ENDPRECOMP
+59a6e278	12	string	LF_PRECOMP
+59a6e284	12	string	LF_VFTPATH
+59a6e290	12	string	LF_DIMARRAY
+59a6e29c	8	string	LF_NULL
+59a6e2a4	12	string	LF_LABEL
+59a6e2b0	12	string	LF_BARRAY
+59a6e2bc	12	string	LF_COBOL1
+59a6e2c8	12	string	LF_COBOL0
+59a6e2d4	12	string	LF_VTSHAPE
+59a6e2e0	16	string	LF_MFUNCTION
+59a6e2f0	16	string	LF_PROCEDURE
+59a6e300	12	string	LF_MANAGED
+59a6e30c	12	string	LF_ALIAS
+59a6e318	8	string	LF_ENUM
+59a6e320	12	string	LF_UNION
+59a6e32c	16	string	LF_STRUCTURE
+59a6e33c	12	string	LF_CLASS
+59a6e348	12	string	LF_ARRAY
+59a6e354	12	string	LF_POINTER
+59a6e360	12	string	LF_MODIFIER
+59a6e36d	11	string	vfunctab
+59a6e384	24	unicode	SystemRoot
+59a6e39c	32	unicode	_NT_SYMBOL_PATH
+59a6e3bc	40	unicode	_NT_ALT_SYMBOL_PATH
+59a6e3e4	34	unicode	SymbolSearchPath
+59a6e408	17	string	SymbolSearchPath
+59a6e41c	38	string	Software\\Microsoft\\VisualStudio\\MSPDB
+59a6e444	11	string	SYMSRV.DLL
+59a6e450	7	string	%ws%ws
+59a6e458	24	unicode	SYMSRV.DLL*
+59a6e470	10	unicode	.dbg
+59a6e47c	16	unicode	SYMSRV*
+59a6e48c	10	unicode	SRV*
+59a6e498	18	unicode	symbols\\
+59a6e4ac	10	string	/LinkInfo
+59a6e4c0	65	string	0x%4.4x\t0x%4.4x\t0x%4.4x\t0x%4.4x\t0x%4.4x\t0x%4.4x\t0x%8.8x\t0x%8.8x\n
+59a6e504	51	string	flags\tovl\tgroup\tframe\tsegname\tclass\toffset\t\tcbseg\n
+59a6e538	47	string	Section Map cSeg = 0x%4.4x, cSegLog = 0x%4.4x\n
+59a6e568	8	string	%s\\%s%s
+59a6e570	73	string	0x%4.4x 0x%8.8x 0x%8.8x 0x%06lx 0x%06lx 0x%08lx 0x%4.4x 0x%8.8x 0x%8.8x\n
+59a6e5c0	110	string	Section Contributions\nisect  off        cb         deltaOff cbExcess dwChar     imod   dwDataCrc  dwRelocCrc\n
+59a6e630	15	string	%5.5d %s (%s)\n
+59a6e640	27	string	%5.5d %s (%s) MFC symbols\n
+59a6e65c	29	string	does not support lazy types\n
+59a6e67c	21	string	supports lazy types\n
+59a6e810	48	string	0x%04X %-20.20s %-30.30s %3d %6ld %7ld %5ld %s\n
+59a6e840	63	string	imod   %-20.20s %-30.30s  sn cbSyms cbLines cbC13Lines source\n
+59a6e880	7	string	module
+59a6e8c8	7	string	/names
+59a6f018	10	string	'%s'!'%s'
+59a6f11c	9	string	@ILT+%d(
+59a6f128	6	string	.Base
+59a6f179	7	string	nnamed
+59a6f220	17	string	/src/headerblock
+59a6f234	12	string	/src/files/
+59a6f285	11	string	vfunctab
+59a6f370	26	string	Error finding ordinal %d\n
+59a6f38c	29	string	Function #%d is really "%s"\n
+59a6f3ac	22	string	Function #%d at 0x%x\n
+59a6f3c4	26	string	Error finding ordinal %s\n
+59a6f3e0	28	string	Function %s is really "%s"\n
+59a6f3fc	21	string	Function %s at 0x%x\n
+59a6f414	25	string	Import from library: %s\n
+59a6f430	32	unicode	CHKSUM_TYPE_MD5
+59a6f450	34	unicode	CHKSUM_TYPE_NONE
+59a6f614	22	string	\t%d bytes of symbols\n
+59a6f62c	19	string	Symbols SubSection
+59a6f640	11	string	expression
+59a6f758	38	string	Unknown subsection: 0x%X (%ld bytes)\n
+59a6f780	48	string	Ignored subsection: 0x%X, was 0x%X (%ld bytes)\n
+59a6fa14	24	unicode	\t0x%X: %ws\n
+59a6fa2c	36	string	\tFailed to get a string enumerator\n
+59a6fa50	25	string	String Table SubSection\n
+59a6fa6c	6	string	%02X\s
+59a6fa74	44	unicode	\t0x%X: str(0x%X) %ws\s
+59a6faa0	39	string	\tFailed to get a file info enumerator\n
+59a6fac8	23	string	File Table SubSection\n
+59a6fae0	27	string	\tline %d to %d at %08X %s\n
+59a6fafc	21	string	\tline %d at %08X %s\n
+59a6fb14	37	string	\tline %d [%d] to %d [%d] at %08X %s\n
+59a6fb3c	32	string	\tline %d [%d to %d] at %08X %s\n
+59a6fb5c	15	string	\tFileid: 0x%x\n
+59a6fb6c	40	string	\tFailed to get a line block enumerator\n
+59a6fb94	30	string	\tSection at %X:%X (%d bytes)\n
+59a6fbb4	25	string	\s(CV_LINES_HAVE_COLUMNS)
+59a6fbd0	13	string	\tflags: 0x%X
+59a6fbe0	18	string	Lines SubSection\n
+59a6fbf4	44	string	%08X  %8X %8X %8X %8X %8d %8X %8X %s %s %s\n
+59a6fc20	6	string	false
+59a6fc28	6	string	\strue
+59a6fc30	93	string	\s    rva     Block   Locals   Params   StkMax StringId   Prolog SavedReg   SEH    EH IsFunc\n
+59a6fc90	40	string	Failed to get a frame data enumerator.\n
+59aedb46	10	TerminatedCString	_strnicmp
+59aedb52	7	TerminatedCString	strchr
+59aedb5c	9	TerminatedCString	_stricmp
+59aedb68	11	TerminatedCString	_splitpath
+59aedb76	17	TerminatedCString	_except_handler3
+59aedb8a	8	TerminatedCString	strncpy
+59aedb94	8	TerminatedCString	strrchr
+59aedb9e	8	TerminatedCString	sprintf
+59aedba8	7	TerminatedCString	wcslen
+59aedbb2	9	TerminatedCString	isxdigit
+59aedbbe	8	TerminatedCString	strncmp
+59aedbc8	6	TerminatedCString	qsort
+59aedbd0	13	TerminatedCString	??3@YAXPAX@Z
+59aedbe0	13	TerminatedCString	??2@YAPAXI@Z
+59aedbf0	7	TerminatedCString	strstr
+59aedbfa	6	TerminatedCString	ctime
+59aedc02	8	TerminatedCString	isspace
+59aedc0c	8	TerminatedCString	_strlwr
+59aedc16	5	TerminatedCString	free
+59aedc1e	7	TerminatedCString	malloc
+59aedc28	10	TerminatedCString	_purecall
+59aedc34	10	TerminatedCString	_makepath
+59aedc40	9	TerminatedCString	_strcmpi
+59aedc4c	8	TerminatedCString	tolower
+59aedc56	8	TerminatedCString	strncat
+59aedc60	11	TerminatedCString	_vsnprintf
+59aedc6e	7	TerminatedCString	printf
+59aedc78	6	TerminatedCString	_itoa
+59aedc80	6	TerminatedCString	_ltoa
+59aedc88	7	TerminatedCString	wcscat
+59aedc92	7	TerminatedCString	calloc
+59aedc9c	9	TerminatedCString	swprintf
+59aedca8	6	TerminatedCString	_ftol
+59aedcb0	8	TerminatedCString	memmove
+59aedcba	5	TerminatedCString	time
+59aedcc2	10	TerminatedCString	_initterm
+59aedcce	13	TerminatedCString	_adjust_fdiv
+59aedcdc	11	TerminatedCString	msvcrt.dll
+59aedcea	12	TerminatedCString	__dllonexit
+59aedcf8	8	TerminatedCString	_onexit
+59aedd02	18	TerminatedCString	GetCurrentProcess
+59aedd16	16	TerminatedCString	UnmapViewOfFile
+59aedd28	24	TerminatedCString	GetEnvironmentVariableA
+59aedd42	13	TerminatedCString	SetLastError
+59aedd52	12	TerminatedCString	CloseHandle
+59aedd60	12	TerminatedCString	CreateFileA
+59aedd6e	13	TerminatedCString	GetLastError
+59aedd7e	15	TerminatedCString	SetFilePointer
+59aedd90	10	TerminatedCString	FindClose
+59aedd9c	14	TerminatedCString	FindNextFileA
+59aeddac	15	TerminatedCString	FindFirstFileA
+59aeddbe	17	TerminatedCString	CreateDirectoryA
+59aeddd2	17	TerminatedCString	GetFullPathNameA
+59aedde6	11	TerminatedCString	LocalAlloc
+59aeddf4	10	TerminatedCString	LocalFree
+59aede00	9	TerminatedCString	lstrcpyA
+59aede0c	12	TerminatedCString	TlsSetValue
+59aede1a	12	TerminatedCString	TlsGetValue
+59aede28	9	TerminatedCString	TlsAlloc
+59aede34	8	TerminatedCString	TlsFree
+59aede3e	12	TerminatedCString	HeapReAlloc
+59aede4c	10	TerminatedCString	HeapAlloc
+59aede58	9	TerminatedCString	HeapFree
+59aede64	15	TerminatedCString	IsDBCSLeadByte
+59aede76	15	TerminatedCString	GetProcAddress
+59aede88	17	TerminatedCString	GetModuleHandleA
+59aede9c	9	TerminatedCString	lstrlenA
+59aedea8	12	TerminatedCString	HeapDestroy
+59aedeb6	11	TerminatedCString	HeapCreate
+59aedec4	26	TerminatedCString	DisableThreadLibraryCalls
+59aedee0	14	TerminatedCString	GetVersionExA
+59aedef0	14	TerminatedCString	MapViewOfFile
+59aedf00	19	TerminatedCString	CreateFileMappingA
+59aedf16	12	TerminatedCString	FreeLibrary
+59aedf24	12	TerminatedCString	GetFileSize
+59aedf32	13	TerminatedCString	LoadLibraryA
+59aedf42	16	TerminatedCString	DuplicateHandle
+59aedf54	26	TerminatedCString	ExpandEnvironmentStringsA
+59aedf70	20	TerminatedCString	MultiByteToWideChar
+59aedf86	20	TerminatedCString	WideCharToMultiByte
+59aedf9c	20	TerminatedCString	GetCurrentProcessId
+59aedfb2	12	TerminatedCString	VirtualFree
+59aedfc0	13	TerminatedCString	SetErrorMode
+59aedfd0	19	TerminatedCString	GetFileAttributesA
+59aedfe6	18	TerminatedCString	ReadProcessMemory
+59aedffa	15	TerminatedCString	VirtualProtect
+59aee00c	13	TerminatedCString	VirtualAlloc
+59aee01c	12	TerminatedCString	DeleteFileW
+59aee02a	10	TerminatedCString	WriteFile
+59aee036	12	TerminatedCString	CreateFileW
+59aee044	19	TerminatedCString	OutputDebugStringA
+59aee05a	24	TerminatedCString	QueryPerformanceCounter
+59aee074	13	TerminatedCString	GetTickCount
+59aee084	19	TerminatedCString	GetCurrentThreadId
+59aee09a	24	TerminatedCString	GetSystemTimeAsFileTime
+59aee0b4	17	TerminatedCString	TerminateProcess
+59aee0c8	25	TerminatedCString	UnhandledExceptionFilter
+59aee0e4	28	TerminatedCString	SetUnhandledExceptionFilter
+59aee102	14	TerminatedCString	GetSystemInfo
+59aee112	14	TerminatedCString	GetVersionExW
+59aee122	15	TerminatedCString	GetProcessHeap
+59aee134	14	TerminatedCString	SuspendThread
+59aee144	13	TerminatedCString	ResumeThread
+59aee154	17	TerminatedCString	GetThreadContext
+59aee168	15	TerminatedCString	VirtualQueryEx
+59aee17a	13	TerminatedCString	LoadLibraryW
+59aee18a	16	TerminatedCString	TerminateThread
+59aee19c	13	TerminatedCString	CreateThread
+59aee1ac	23	TerminatedCString	GetThreadSelectorEntry
+59aee1c4	13	TerminatedCString	KERNEL32.dll
+59aee1d4	15	TerminatedCString	VerQueryValueA
+59aee1e6	20	TerminatedCString	GetFileVersionInfoW
+59aee1fc	20	TerminatedCString	GetFileVersionInfoA
+59aee212	24	TerminatedCString	GetFileVersionInfoSizeA
+59aee22c	24	TerminatedCString	GetFileVersionInfoSizeW
+59aee244	12	TerminatedCString	VERSION.dll
+59aee252	12	TerminatedCString	RegCloseKey
+59aee260	14	TerminatedCString	RegEnumKeyExW
+59aee270	17	TerminatedCString	RegQueryInfoKeyW
+59aee284	14	TerminatedCString	RegOpenKeyExW
+59aee294	26	TerminatedCString	SetSecurityDescriptorDacl
+59aee2b0	29	TerminatedCString	InitializeSecurityDescriptor
+59aee2ce	13	TerminatedCString	ADVAPI32.dll
+59aee2de	9	TerminatedCString	_wcsicmp
+59aee2ea	8	TerminatedCString	wcsncpy
+59aee2f4	7	TerminatedCString	wcscmp
+59aee2fe	8	TerminatedCString	wcsncmp
+59aee308	18	TerminatedCString	__CxxFrameHandler
+59aee31c	12	TerminatedCString	_wsplitpath
+59aee32a	10	TerminatedCString	_wcsnicmp
+59aee336	9	TerminatedCString	towlower
+59aee342	10	TerminatedCString	__unDName
+59aee34e	7	TerminatedCString	fclose
+59aee358	7	TerminatedCString	wcstol
+59aee362	19	TerminatedCString	_CxxThrowException
+59aee378	8	TerminatedCString	bsearch
+59aee382	11	TerminatedCString	_snwprintf
+59aee390	6	TerminatedCString	fread
+59aee398	6	TerminatedCString	fseek
+59aee3a0	8	TerminatedCString	_wfopen
+59aee3aa	6	TerminatedCString	fopen
+59aee3b2	7	TerminatedCString	_osver
+59aee3bc	10	TerminatedCString	_mbsnbcpy
+59aee3c8	7	TerminatedCString	fflush
+59aee3d2	5	TerminatedCString	_iob
+59aee3da	11	TerminatedCString	_wmakepath
+59aee3e8	8	TerminatedCString	wcsrchr
+59aee3f2	7	TerminatedCString	wcscpy
+59aee3fc	8	TerminatedCString	_wcsdup
+59aee406	6	TerminatedCString	ftell
+59aee40e	9	TerminatedCString	_wgetenv
+59aee41a	9	TerminatedCString	_mbsicmp
+59aee426	8	TerminatedCString	_access
+59aee430	10	TerminatedCString	_fullpath
+59aee43c	8	TerminatedCString	_fsopen
+59aee446	9	TerminatedCString	_wfsopen
+59aee452	7	TerminatedCString	_sopen
+59aee45c	8	TerminatedCString	_wsopen
+59aee466	11	TerminatedCString	_wfullpath
+59aee474	6	TerminatedCString	_read
+59aee47c	7	TerminatedCString	_write
+59aee486	10	TerminatedCString	_lseeki64
+59aee492	8	TerminatedCString	_chsize
+59aee49c	7	TerminatedCString	_close
+59aee4a6	15	TerminatedCString	_get_osfhandle
+59aee4b8	16	TerminatedCString	_open_osfhandle
+59aee4ca	10	TerminatedCString	_winminor
+59aee4d6	10	TerminatedCString	_winmajor
+59aee4e2	8	TerminatedCString	_mbscmp
+59aee4ec	9	TerminatedCString	_memicmp
+59aee4f8	8	TerminatedCString	wcsncat
+59aee502	18	TerminatedCString	?terminate@@YAXXZ
+59aee516	21	TerminatedCString	??1type_info@@UAE@XZ
+59aee52e	21	TerminatedCString	InterlockedDecrement
+59aee546	21	TerminatedCString	InterlockedIncrement
+59aee55e	26	TerminatedCString	InitializeCriticalSection
+59aee57a	22	TerminatedCString	DeleteCriticalSection
+59aee592	21	TerminatedCString	EnterCriticalSection
+59aee5aa	21	TerminatedCString	LeaveCriticalSection
+59aee5c2	19	TerminatedCString	SetFileAttributesW
+59aee5d8	19	TerminatedCString	GetFileAttributesW
+59aee5ee	10	TerminatedCString	CopyFileW
+59aee5fa	19	TerminatedCString	SetFileAttributesA
+59aee610	10	TerminatedCString	CopyFileA
+59aee61c	38	TerminatedCString	InitializeCriticalSectionAndSpinCount
+59aee644	26	TerminatedCString	ExpandEnvironmentStringsW
+59aee660	16	TerminatedCString	DeviceIoControl
+59aee672	6	TerminatedCString	Sleep
+59aee67a	12	TerminatedCString	GetFileType
+59aee688	19	TerminatedCString	CreateFileMappingW
+59aee69e	13	TerminatedCString	LCMapStringW
+59aee6ae	14	TerminatedCString	GetDriveTypeW
+59aee6be	14	TerminatedCString	GetDriveTypeA
+59aee6ce	13	TerminatedCString	SetEndOfFile
+59aee6de	16	TerminatedCString	MapViewOfFileEx
+59aee6f0	16	TerminatedCString	FlushViewOfFile
+59aee702	11	TerminatedCString	UuidCreate
+59aee70e	11	TerminatedCString	RPCRT4.dll
+59aee71c	17	TerminatedCString	RegQueryValueExW
+59aee730	17	TerminatedCString	RegQueryValueExA
+59aee744	14	TerminatedCString	RegOpenKeyExA
+59aee754	20	TerminatedCString	CryptReleaseContext
+59aee76a	15	TerminatedCString	CryptGenRandom
+59aee77c	21	TerminatedCString	CryptAcquireContextA
+59aee794	8	TerminatedCString	wprintf
+59aeeb9c	12	TerminatedCString	DBGHELP.dll
+59aeeba8	22	TerminatedCString	DbgHelpCreateUserDump
+59aeebbe	23	TerminatedCString	DbgHelpCreateUserDumpW
+59aeebd5	25	TerminatedCString	EnumerateLoadedModules64
+59aeebee	23	TerminatedCString	EnumerateLoadedModules
+59aeec05	20	TerminatedCString	ExtensionApiVersion
+59aeec19	18	TerminatedCString	FindDebugInfoFile
+59aeec2b	20	TerminatedCString	FindDebugInfoFileEx
+59aeec3f	20	TerminatedCString	FindExecutableImage
+59aeec53	22	TerminatedCString	FindExecutableImageEx
+59aeec69	15	TerminatedCString	FindFileInPath
+59aeec78	21	TerminatedCString	FindFileInSearchPath
+59aeec8d	29	TerminatedCString	GetTimestampForLoadedLibrary
+59aeecaa	26	TerminatedCString	ImageDirectoryEntryToData
+59aeecc4	28	TerminatedCString	ImageDirectoryEntryToDataEx
+59aeece0	14	TerminatedCString	ImageNtHeader
+59aeecee	18	TerminatedCString	ImageRvaToSection
+59aeed00	13	TerminatedCString	ImageRvaToVa
+59aeed0d	19	TerminatedCString	ImagehlpApiVersion
+59aeed20	21	TerminatedCString	ImagehlpApiVersionEx
+59aeed35	28	TerminatedCString	MakeSureDirectoryPathExists
+59aeed51	20	TerminatedCString	MapDebugInformation
+59aeed65	23	TerminatedCString	MiniDumpReadDumpStream
+59aeed7c	18	TerminatedCString	MiniDumpWriteDump
+59aeed8e	18	TerminatedCString	SearchTreeForFile
+59aeeda0	12	TerminatedCString	StackWalk64
+59aeedac	10	TerminatedCString	StackWalk
+59aeedb6	11	TerminatedCString	SymCleanup
+59aeedc1	19	TerminatedCString	SymEnumSourceFiles
+59aeedd4	11	TerminatedCString	SymEnumSym
+59aeeddf	15	TerminatedCString	SymEnumSymbols
+59aeedee	13	TerminatedCString	SymEnumTypes
+59aeedfb	22	TerminatedCString	SymEnumerateModules64
+59aeee11	20	TerminatedCString	SymEnumerateModules
+59aeee25	22	TerminatedCString	SymEnumerateSymbols64
+59aeee3b	20	TerminatedCString	SymEnumerateSymbols
+59aeee4f	23	TerminatedCString	SymEnumerateSymbolsW64
+59aeee66	21	TerminatedCString	SymEnumerateSymbolsW
+59aeee7b	18	TerminatedCString	SymFindFileInPath
+59aeee8d	12	TerminatedCString	SymFromAddr
+59aeee99	12	TerminatedCString	SymFromName
+59aeeea5	25	TerminatedCString	SymFunctionTableAccess64
+59aeeebe	23	TerminatedCString	SymFunctionTableAccess
+59aeeed5	24	TerminatedCString	SymGetFileLineOffsets64
+59aeeeed	21	TerminatedCString	SymGetLineFromAddr64
+59aeef02	19	TerminatedCString	SymGetLineFromAddr
+59aeef15	21	TerminatedCString	SymGetLineFromName64
+59aeef2a	19	TerminatedCString	SymGetLineFromName
+59aeef3d	17	TerminatedCString	SymGetLineNext64
+59aeef4e	15	TerminatedCString	SymGetLineNext
+59aeef5d	17	TerminatedCString	SymGetLinePrev64
+59aeef6e	15	TerminatedCString	SymGetLinePrev
+59aeef7d	19	TerminatedCString	SymGetModuleBase64
+59aeef90	17	TerminatedCString	SymGetModuleBase
+59aeefa1	19	TerminatedCString	SymGetModuleInfo64
+59aeefb4	17	TerminatedCString	SymGetModuleInfo
+59aeefc5	20	TerminatedCString	SymGetModuleInfoW64
+59aeefd9	18	TerminatedCString	SymGetModuleInfoW
+59aeefeb	14	TerminatedCString	SymGetOptions
+59aeeff9	17	TerminatedCString	SymGetSearchPath
+59aef00a	20	TerminatedCString	SymGetSymFromAddr64
+59aef01e	18	TerminatedCString	SymGetSymFromAddr
+59aef030	20	TerminatedCString	SymGetSymFromName64
+59aef044	18	TerminatedCString	SymGetSymFromName
+59aef056	16	TerminatedCString	SymGetSymNext64
+59aef066	14	TerminatedCString	SymGetSymNext
+59aef074	16	TerminatedCString	SymGetSymPrev64
+59aef084	14	TerminatedCString	SymGetSymPrev
+59aef092	19	TerminatedCString	SymGetTypeFromName
+59aef0a5	15	TerminatedCString	SymGetTypeInfo
+59aef0b4	14	TerminatedCString	SymInitialize
+59aef0c2	16	TerminatedCString	SymLoadModule64
+59aef0d2	14	TerminatedCString	SymLoadModule
+59aef0e0	16	TerminatedCString	SymLoadModuleEx
+59aef0f0	17	TerminatedCString	SymMatchFileName
+59aef101	15	TerminatedCString	SymMatchString
+59aef110	22	TerminatedCString	SymRegisterCallback64
+59aef126	20	TerminatedCString	SymRegisterCallback
+59aef13a	35	TerminatedCString	SymRegisterFunctionEntryCallback64
+59aef15d	33	TerminatedCString	SymRegisterFunctionEntryCallback
+59aef17e	14	TerminatedCString	SymSetContext
+59aef18c	14	TerminatedCString	SymSetOptions
+59aef19a	17	TerminatedCString	SymSetSearchPath
+59aef1ab	20	TerminatedCString	SymSetSymWithAddr64
+59aef1bf	13	TerminatedCString	SymUnDName64
+59aef1cc	11	TerminatedCString	SymUnDName
+59aef1d7	18	TerminatedCString	SymUnloadModule64
+59aef1e9	16	TerminatedCString	SymUnloadModule
+59aef1f9	21	TerminatedCString	UnDecorateSymbolName
+59aef20e	22	TerminatedCString	UnmapDebugInformation
+59aef224	23	TerminatedCString	WinDbgExtensionDllInit
+59aef23b	8	TerminatedCString	dbghelp
+59aef243	3	TerminatedCString	dh
+59aef246	3	TerminatedCString	lm
+59aef249	4	TerminatedCString	lmi
+59aef24d	5	TerminatedCString	omap
+59aef252	9	TerminatedCString	srcfiles
+59aef25b	4	TerminatedCString	sym
+59aef25f	7	TerminatedCString	vc7fpo
+59af50c2	30	TerminatedUnicode	StringFileInfo
+59af50e6	18	TerminatedUnicode	040904B0
+59af50fe	24	TerminatedUnicode	CompanyName
+59af5118	44	TerminatedUnicode	Microsoft Corporation
+59af514a	32	TerminatedUnicode	FileDescription
+59af516c	42	TerminatedUnicode	Windows Image Helper
+59af519e	24	TerminatedUnicode	FileVersion
+59af51b8	82	TerminatedUnicode	5.1.2600.2180 (xpsp_sp2_rtm.040803-2158)
+59af5212	26	TerminatedUnicode	InternalName
+59af522c	24	TerminatedUnicode	DBGHELP.DLL
+59af524a	30	TerminatedUnicode	LegalCopyright
+59af5268	92	TerminatedUnicode	© Microsoft Corporation. All rights reserved.
+59af52ca	34	TerminatedUnicode	OriginalFilename
+59af52ec	24	TerminatedUnicode	DBGHELP.DLL
+59af530a	24	TerminatedUnicode	ProductName
+59af5324	74	TerminatedUnicode	Microsoft® Windows® Operating System
+59af5376	30	TerminatedUnicode	ProductVersion
+59af5394	28	TerminatedUnicode	5.1.2600.2180
+59af53b6	24	TerminatedUnicode	VarFileInfo
+59af53d6	24	TerminatedUnicode	Translation
+ffdff1ac	36	uchar[36]	\N
+ffdffc00	522	wchar16[261]	\N
