@@ -1,0 +1,6 @@
+name	start	end	size	read	write	execute	initialized	loaded	overlay	type	source	comment
+Headers	10000000	10000fff	4096	true	false	false	true	true	false	Default	\N	\N
+UPX0	10001000	1006dfff	446464	true	true	true	false	true	false	Default	\N	\N
+UPX1	1006e000	10092fff	151552	true	true	true	true	true	false	Default	\N	\N
+.rsrc	10093000	10095fff	12288	true	true	false	true	true	false	Default	\N	\N
+tdb	ffdff000	ffdfffff	4096	true	true	false	true	true	false	Default	\N	\N

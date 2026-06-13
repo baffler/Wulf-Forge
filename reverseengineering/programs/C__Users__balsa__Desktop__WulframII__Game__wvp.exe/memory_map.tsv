@@ -1,0 +1,8 @@
+name	start	end	size	read	write	execute	initialized	loaded	overlay	type	source	comment
+Headers	00400000	00400fff	4096	true	false	false	true	true	false	Default	\N	\N
+.text	00401000	004c4fff	802816	true	false	true	true	true	false	Default	\N	\N
+.rdata	004c5000	004d1fff	53248	true	false	false	true	true	false	Default	\N	\N
+.data	004d2000	005a177f	849792	true	true	false	true	true	false	Default	\N	\N
+.data1	005a2000	005a2fff	4096	true	true	false	true	true	false	Default	\N	\N
+.CRT	005a3000	005a3fff	4096	true	true	false	true	true	false	Default	\N	\N
+.rsrc	005a4000	005b7fff	81920	true	false	false	true	true	false	Default	\N	\N

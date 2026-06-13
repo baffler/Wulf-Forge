@@ -1,0 +1,7 @@
+name	start	end	size	read	write	execute	initialized	loaded	overlay	type	source	comment
+Headers	59a60000	59a603ff	1024	true	false	false	true	true	false	Default	\N	\N
+.text	59a61000	59aef3ff	582656	true	false	true	true	true	false	Default	\N	\N
+.data	59af0000	59af4a6f	19056	true	true	false	true	true	false	Default	\N	\N
+.rsrc	59af5000	59af53ff	1024	true	false	false	true	true	false	Default	\N	\N
+.reloc	59af6000	59b001ff	41472	true	false	false	true	true	false	Default	\N	\N
+tdb	ffdff000	ffdfffff	4096	true	true	false	true	true	false	Default	\N	\N

@@ -1,0 +1,661 @@
+address	length	data_type	value
+10036244	37	string	Microsoft Visual C++ Runtime Library
+1003626c	61	string	(Press Retry to debug the application - JIT must be enabled)
+100362ac	112	string	For information on how your program can cause an assertion\nfailure, see the Visual C++ documentation on asserts
+1003631c	13	string	Expression:\s
+1003632c	7	string	Line:\s
+10036334	7	string	File:\s
+1003633c	23	string	<program name unknown>
+10036354	10	string	Program:\s
+10036360	18	string	Assertion failed!
+10036374	7	string	Client
+1003637c	7	string	Ignore
+10036388	7	string	Normal
+100363a4	50	string	Error: memory allocation: bad memory block type.\n
+100363d8	36	string	Invalid allocation size: %u bytes.\n
+10036400	33	string	Client hook allocation failure.\n
+10036424	53	string	Client hook allocation failure at file %hs line %d.\n
+1003645c	10	string	dbgheap.c
+10036468	18	string	_CrtCheckMemory()
+1003648c	26	string	_pFirstBlock == pOldBlock
+100364a8	25	string	_pLastBlock == pOldBlock
+100364c4	50	string	fRealloc || (!fRealloc && pNewBlock == pOldBlock)
+100364f8	58	string	_BLOCK_TYPE(pOldBlock->nBlockUse)==_BLOCK_TYPE(nBlockUse)
+10036534	69	string	pOldBlock->nLine == IGNORE_LINE && pOldBlock->lRequest == IGNORE_REQ
+1003657c	34	string	_CrtIsValidHeapPointer(pUserData)
+100365a0	45	string	Allocation too large or negative: %u bytes.\n
+100365d0	36	string	Client hook re-allocation failure.\n
+100365f4	56	string	Client hook re-allocation failure at file %hs line %d.\n
+1003664c	22	string	_pFirstBlock == pHead
+10036664	21	string	_pLastBlock == pHead
+1003667c	30	string	pHead->nBlockUse == nBlockUse
+1003669c	61	string	pHead->nLine == IGNORE_LINE && pHead->lRequest == IGNORE_REQ
+100366dc	42	string	DAMAGE: after %hs block (#%d) at 0x%08X.\n
+10036708	43	string	DAMAGE: before %hs block (#%d) at 0x%08X.\n
+10036734	39	string	_BLOCK_TYPE_IS_VALID(pHead->nBlockUse)
+1003675c	27	string	Client hook free failure.\n
+10036794	58	string	memory check error at 0x%08X = 0x%02X, should be 0x%02X.\n
+100367d0	41	string	%hs located at 0x%08X is %u bytes long.\n
+100367fc	32	string	%hs allocated at file %hs(%d).\n
+1003681c	41	string	DAMAGE: on top of Free block at 0x%08X.\n
+10036848	8	string	DAMAGED
+10036850	43	string	_heapchk fails with unknown return value!\n
+1003687c	34	string	_heapchk fails with _HEAPBADPTR.\n
+100368a0	34	string	_heapchk fails with _HEAPBADEND.\n
+100368c4	35	string	_heapchk fails with _HEAPBADNODE.\n
+100368e8	36	string	_heapchk fails with _HEAPBADBEGIN.\n
+1003693c	35	string	Bad memory block found at 0x%08X.\n
+10036960	40	string	_CrtMemCheckPoint: NULL state pointer.\n
+10036994	40	string	_CrtMemDifference: NULL state pointer.\n
+100369bc	23	string	Object dump complete.\n
+100369d4	49	string	crt block at 0x%08X, subtype %x, %u bytes long.\n
+10036a08	40	string	normal block at 0x%08X, %u bytes long.\n
+10036a30	52	string	client block at 0x%08X, subtype %x, %u bytes long.\n
+10036a64	7	string	{%ld}\s
+10036a6c	11	string	%hs(%d) :\s
+10036a78	20	string	#File Error#(%d) :\s
+10036a8c	20	string	Dumping objects ->\n
+10036aac	16	string	\sData: <%s> %s\n
+10036abc	6	string	%.2X\s
+10036ac4	24	string	Detected memory leaks!\n
+10036adc	31	string	Total allocations: %ld bytes.\n
+10036afc	33	string	Largest number used: %ld bytes.\n
+10036b20	30	string	%ld bytes in %ld %hs Blocks.\n
+10036b6c	15	string	format != NULL
+10036b7c	10	string	sprintf.c
+10036b88	15	string	string != NULL
+10036b98	9	string	printf.c
+10036ba4	10	string	fprintf.c
+10036bb0	12	string	str != NULL
+10036bbc	8	string	_file.c
+10036bc4	11	string	vsprintf.c
+10036bd0	26	string	IsProcessorFeaturePresent
+10036bec	9	string	KERNEL32
+10036bf8	6	string	e+000
+10036c00	9	string	winsig.c
+10036c0c	19	string	GetLastActivePopup
+10036c20	16	string	GetActiveWindow
+10036c30	12	string	MessageBoxA
+10036c3c	11	string	user32.dll
+10036c48	10	string	setvbuf.c
+10036c9c	11	string	tidtable.c
+10036d24	8	string	mlock.c
+10036d48	17	string	Assertion Failed
+10036d5c	6	string	Error
+10036d64	8	string	Warning
+10036d6c	12	string	%s(%d) : %s
+10036d7c	19	string	Assertion failed:\s
+10036d90	43	string	_CrtDbgReport: String too long or IO Error
+10036dbc	50	string	Second Chance Assertion Failed: File %s, Line %d\n
+10036df0	10	string	wsprintfA
+10036dfc	35	string	Microsoft Visual C++ Debug Library
+10036e20	83	string	Debug %s!\n\nProgram: %s%s%s%s%s%s%s%s%s%s%s\n\n(Press Retry to debug the application)
+10036e74	10	string	\nModule:\s
+10036e80	8	string	\nFile:\s
+10036e88	8	string	\nLine:\s
+10036e94	115	string	\n\nFor information on how your program can cause an assertion\nfailure, see the Visual C++ documentation on asserts.
+10036f08	9	string	dbgrpt.c
+10036f14	22	string	szUserMessage != NULL
+10036f90	23	string	__GLOBAL_HEAP_SELECTED
+10036fa8	21	string	__MSVCRT_HEAP_SELECT
+10036fc0	64	string	("inconsistent IOB fields", stream->_ptr - stream->_base >= 0)
+10037000	10	string	_flsbuf.c
+1003706c	10	unicode	ull)
+10037080	9	string	output.c
+1003708c	15	string	ch != _T('\\0')
+1003709c	9	string	ioinit.c
+100370a8	10	string	stdenvp.c
+100370b4	10	string	stdargv.c
+100370c0	8	string	a_env.c
+100370c8	16	string	runtime error\s
+100370dc	16	string	TLOSS error\r\n
+100370ec	16	string	SING error\r\n
+100370fc	16	string	DOMAIN error\r\n
+1003710c	40	string	R6028\r\n- unable to initialize heap\r\n
+10037134	56	string	R6027\r\n- not enough space for lowio initialization\r\n
+1003716c	56	string	R6026\r\n- not enough space for stdio initialization\r\n
+100371a4	40	string	R6025\r\n- pure virtual function call\r\n
+100371cc	56	string	R6024\r\n- not enough space for _onexit/atexit table\r\n
+10037204	44	string	R6019\r\n- unable to open console device\r\n
+10037230	36	string	R6018\r\n- unexpected heap error\r\n
+10037254	48	string	R6017\r\n- unexpected multithread lock error\r\n
+10037284	44	string	R6016\r\n- not enough space for thread data\r\n
+100372b0	36	string	\r\nabnormal program termination\r\n
+100372d4	44	string	R6009\r\n- not enough space for environment\r\n
+10037300	44	string	R6008\r\n- not enough space for arguments\r\n
+1003732c	37	string	R6002\r\n- floating point not loaded\r\n
+10037354	26	string	Runtime Error!\n\nProgram:\s
+10037370	10	string	_sftbuf.c
+1003737c	23	string	flag == 0 || flag == 1
+100373d0	11	string	_freebuf.c
+100373dc	15	string	stream != NULL
+10037404	10	string	_getbuf.c
+10037410	9	string	fclose.c
+1003741c	8	string	LC_TIME
+10037424	11	string	LC_NUMERIC
+10037430	12	string	LC_MONETARY
+1003743c	9	string	LC_CTYPE
+10037448	11	string	LC_COLLATE
+10037454	8	string	LC_ALL
+10037464	11	string	setlocal.c
+10037498	7	string	1#QNAN
+100374a0	6	string	1#INF
+100374a8	6	string	1#IND
+100374b0	7	string	1#SNAN
+100374b8	10	string	osfinfo.c
+10037508	8	string	floor
+10037578	11	string	inittime.c
+10037584	10	string	initnum.c
+10037590	10	string	initmon.c
+1003759c	11	string	initctyp.c
+100375a8	12	string	Paraguay
+100375bc	8	string	Chile
+100375c4	8	string	Ecuador
+100375cc	12	string	Argentina
+100375e0	12	string	Colombia
+100375ec	12	string	Venezuela
+100375f8	20	string	Dominican Republic
+1003760c	16	string	South Africa
+1003761c	8	string	Panama
+10037624	12	string	Luxembourg
+10037630	12	string	Costa Rica
+1003763c	12	string	Switzerland
+10037648	12	string	Guatemala
+10037654	8	string	Canada
+1003765c	24	string	Spanish - Modern Sort
+10037674	12	string	Australia
+10037680	8	string	English
+10037688	8	string	Austria
+10037690	8	string	German
+10037698	8	string	Belgium
+100376a0	8	string	Mexico
+100376a8	8	string	Spanish
+100376b0	8	string	Basque
+100376b8	8	string	Sweden
+100376c0	8	string	Swedish
+100376c8	8	string	Iceland
+100376d0	12	string	Icelandic
+100376dc	8	string	France
+100376e4	8	string	French
+100376ec	8	string	Finland
+100376f4	8	string	Finnish
+100376fc	6	string	Spain
+10037704	27	string	Spanish - Traditional Sort
+10037720	16	string	united-states
+10037730	16	string	united-kingdom
+10037740	20	string	trinidad & tobago
+10037754	12	string	south-korea
+10037760	16	string	south-africa
+10037770	12	string	south korea
+1003777c	16	string	south africa
+10037794	12	string	puerto-rico
+100377a0	12	string	pr-china
+100377ac	12	string	pr china
+100377bc	12	string	new-zealand
+100377c8	12	string	hong-kong
+100377d4	8	string	holland
+100377dc	16	string	great britain
+100377ec	8	string	england
+100377fc	8	string	china
+10037804	8	string	britain
+1003780c	8	string	america
+10037820	8	string	swiss
+10037828	16	string	swedish-finland
+10037838	20	string	spanish-venezuela
+1003784c	16	string	spanish-uruguay
+1003785c	20	string	spanish-puerto rico
+10037870	16	string	spanish-peru
+10037880	20	string	spanish-paraguay
+10037894	16	string	spanish-panama
+100378a4	20	string	spanish-nicaragua
+100378b8	16	string	spanish-modern
+100378c8	16	string	spanish-mexican
+100378d8	20	string	spanish-honduras
+100378ec	20	string	spanish-guatemala
+10037900	20	string	spanish-el salvador
+10037914	16	string	spanish-ecuador
+10037924	28	string	spanish-dominican republic
+10037940	20	string	spanish-costa rica
+10037954	20	string	spanish-colombia
+10037968	16	string	spanish-chile
+10037978	16	string	spanish-bolivia
+10037988	20	string	spanish-argentina
+1003799c	24	string	portuguese-brazilian
+100379b4	20	string	norwegian-nynorsk
+100379c8	20	string	norwegian-bokmal
+100379dc	12	string	norwegian
+100379e8	16	string	italian-swiss
+100379f8	16	string	irish-english
+10037a08	16	string	german-swiss
+10037a18	20	string	german-luxembourg
+10037a2c	20	string	german-lichtenstein
+10037a40	16	string	german-austrian
+10037a50	16	string	french-swiss
+10037a60	20	string	french-luxembourg
+10037a74	16	string	french-canadian
+10037a84	16	string	french-belgian
+10037a94	12	string	english-usa
+10037aa0	12	string	english-us
+10037aac	12	string	english-uk
+10037ab8	28	string	english-trinidad y tobago
+10037ad4	24	string	english-south africa
+10037aec	12	string	english-nz
+10037af8	16	string	english-jamaica
+10037b08	12	string	english-ire
+10037b14	20	string	english-caribbean
+10037b28	12	string	english-can
+10037b34	16	string	english-belize
+10037b44	12	string	english-aus
+10037b50	20	string	english-american
+10037b64	16	string	dutch-belgian
+10037b74	20	string	chinese-traditional
+10037b88	20	string	chinese-singapore
+10037b9c	20	string	chinese-simplified
+10037bb0	20	string	chinese-hongkong
+10037bc4	8	string	chinese
+10037bd4	12	string	canadian
+10037be0	8	string	belgian
+10037be8	12	string	australian
+10037bf4	20	string	american-english
+10037c08	20	string	american english
+10037c1c	9	string	american
+10037c30	8	string	H:mm:ss
+10037c38	20	string	dddd, MMMM dd, yyyy
+10037c4c	7	string	M/d/yy
+10037c5c	9	string	December
+10037c68	9	string	November
+10037c74	8	string	October
+10037c7c	10	string	September
+10037c88	7	string	August
+10037ca0	6	string	April
+10037ca8	6	string	March
+10037cb0	9	string	February
+10037cbc	8	string	January
+10037cf4	9	string	Saturday
+10037d00	7	string	Friday
+10037d08	9	string	Thursday
+10037d14	10	string	Wednesday
+10037d20	8	string	Tuesday
+10037d28	7	string	Monday
+10037d30	7	string	Sunday
+10037d58	6	string	am/pm
+10037d60	11	string	inithelp.c
+10037d88	24	string	SunMonTueWedThuFriSat
+10037da0	40	string	JanFebMarAprMayJunJulAugSepOctNovDec
+10037dc8	8	string	tzset.c
+10037df4	11	string	wtombenv.c
+10037e00	8	string	a_cmp.c
+10037e08	61	string	cchCount1==0 && cchCount2==1 || cchCount1==1 && cchCount2==0
+10037e60	9	string	setenv.c
+10038770	16	TerminatedCString	win32_glide.dll
+10038780	37	TerminatedCString	?deallocate_winsys@@YAXPAVWinsys@@@Z
+100387a5	14	TerminatedCString	detect_winsys
+100387b3	19	TerminatedCString	instantiate_winsys
+100387c6	13	TerminatedCString	process_exit
+10039d50	57	string	D:\\ntank_cur_(with_super_server)\\client\\render_utils.cpp
+10039d8c	19	string	r->clip_min_x >= 0
+10039da0	57	string	D:\\ntank_cur_(with_super_server)\\client\\render_utils.cpp
+10039ddc	25	string	r->clip_max_x < r->width
+10039df8	57	string	D:\\ntank_cur_(with_super_server)\\client\\render_utils.cpp
+10039e34	19	string	r->clip_min_y >= 0
+10039e48	57	string	D:\\ntank_cur_(with_super_server)\\client\\render_utils.cpp
+10039e84	26	string	r->clip_max_y < r->height
+10039f48	38	string	Glide v2.43 (3dfx-specific rendering)
+10039f70	59	string	Glide v2.43, Voodoo2 Enhanced (Two-Fisted TMUs of Terror!)
+10039fac	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+10039ff0	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a034	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a074	8	string	x0 < x1
+1003a07c	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a0bc	8	string	y0 < y1
+1003a0c4	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a108	12	string	Shock Force
+1003a114	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a154	11	string	hwnd!=NULL
+1003a160	11	string	WRITE_ONLY
+1003a16c	10	string	READ_ONLY
+1003a178	8	string	UNKNOWN
+1003a180	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a1c0	29	string	g->the_winsys->should_render
+1003a1e0	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a220	11	string	oow <= 1.0
+1003a22c	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a26c	23	string	oow >= (1.0 / 65535.0)
+1003a284	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a2c4	21	string	!sys->not_yet_inited
+1003a2dc	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a31c	21	string	hwnd == sys->my_hwnd
+1003a334	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a374	10	string	hwnd != 0
+1003a380	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a3c4	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a404	29	string	g->the_winsys->should_render
+1003a424	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a464	19	string	sys->should_render
+1003a478	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a4b8	29	string	g->the_winsys->should_render
+1003a4d8	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a518	29	string	g->the_winsys->should_render
+1003a538	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a578	29	string	g->the_winsys->should_render
+1003a598	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a5d8	29	string	g->the_winsys->should_render
+1003a5f8	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a638	29	string	g->the_winsys->should_render
+1003a658	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a698	9	string	r >= 0.0
+1003a6a4	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a6e4	11	string	r <= 255.0
+1003a6f0	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a730	29	string	g->the_winsys->should_render
+1003a750	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a790	29	string	g->the_winsys->should_render
+1003a7b0	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a7f0	29	string	g->the_winsys->should_render
+1003a810	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a850	29	string	g->the_winsys->should_render
+1003a870	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a8b0	29	string	g->the_winsys->should_render
+1003a8d0	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a910	29	string	g->the_winsys->should_render
+1003a930	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a970	29	string	g->the_winsys->should_render
+1003a990	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003a9d0	25	string	t->type == tile::TEXTURE
+1003a9ec	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003aa2c	29	string	g->the_winsys->should_render
+1003aa4c	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003aa8c	29	string	g->the_winsys->should_render
+1003aaac	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003aaec	29	string	g->the_winsys->should_render
+1003ab0c	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003ab4c	7	string	c >= 0
+1003ab54	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003ab94	29	string	g->the_winsys->should_render
+1003abb4	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003abf4	7	string	c >= 0
+1003abfc	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003ac3c	29	string	g->the_winsys->should_render
+1003ac5c	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003ac9c	29	string	g->the_winsys->should_render
+1003acbc	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003acfc	29	string	g->the_winsys->should_render
+1003ad1c	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003ad5c	8	string	success
+1003ad64	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003ada4	29	string	g->the_winsys->should_render
+1003adc4	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003ae04	29	string	g->the_winsys->should_render
+1003ae24	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003ae64	29	string	g->the_winsys->should_render
+1003ae84	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003aec4	15	string	w <= max_width
+1003aed4	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003af14	15	string	h <= max_width
+1003af24	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003af64	29	string	g->the_winsys->should_render
+1003af84	11	string	3Dfx Glide
+1003af90	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003afd8	7	string	VOODOO
+1003afe0	6	string	SST96
+1003aff0	8	string	Unknown
+1003aff8	22	string	glide process_exit()\n
+1003b010	20	string	Board type is "%s"\n
+1003b024	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b06c	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b0b0	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b0f0	8	string	success
+1003b0f8	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b138	37	string	low_address == records_head->address
+1003b160	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b1a0	11	string	sr != NULL
+1003b1ac	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b1ec	11	string	sr != NULL
+1003b1f8	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b238	7	string	record
+1003b240	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b280	7	string	record
+1003b288	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b2cc	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b30c	8	string	success
+1003b314	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b354	30	string	record->tileno == BLOCK_EMPTY
+1003b374	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b3b4	11	string	or != NULL
+1003b3c0	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b400	37	string	or->last_tmu == my_tmu->my_tmu_index
+1003b428	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b468	33	string	or->current_arena == my_miplevel
+1003b48c	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b4cc	21	string	sr->tileno == tileno
+1003b4e4	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b524	26	string	num_allocated_blocks >= 0
+1003b540	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b580	18	string	arena_size_7 >= 0
+1003b594	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b5d4	25	string	beginning >= min_address
+1003b5f0	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b630	19	string	end <= max_address
+1003b644	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b684	29	string	min_miplevel == max_miplevel
+1003b6a4	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b6e4	29	string	max_miplevel >= min_miplevel
+1003b704	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b748	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b788	49	string	arena->num_allocated_blocks <= arena->num_blocks
+1003b7bc	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b7fc	24	string	sr->tileno == t->tileno
+1003b814	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003b854	16	string	t->data != NULL
+1003b864	7	string	%d: %d
+1003bd88	9	string	x <= 640
+1003bd94	7	string	x >= 0
+1003bd9c	63	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\win32_glide.cpp
+1003bde8	9	string	y <= 480
+1003bdf4	7	string	y >= 0
+1003be00	28	string	miplevel <= t->max_miplevel
+1003be24	28	string	miplevel >= t->min_miplevel
+1003be48	31	string	..\\..\\client\\cache_internals.h
+1003be70	23	string	land_stride < TCT_SIZE
+1003be8c	32	string	current_bucket->items_held >= 0
+1003beb4	22	string	..\\..\\shared\\fridge.h
+1003bed0	26	string	bucket->my_fridge == this
+1003bef0	58	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\winsys.cpp
+1003bf30	58	string	D:\\ntank_cur_(with_super_server)\\client\\winsys\\winsys.cpp
+1003bf6c	21	string	((char *)ptr) == end
+1003bfa0	53	string	D:\\ntank_cur_(with_super_server)\\shared\\geometry.cpp
+1003bfdc	23	string	[%%.%df,%%.%df,%%.%df]
+1003bff4	8	string	plane:\s
+1003bffc	7	string	ERROR\s
+1003c024	19	string	magnitude: % 7.2f\n
+1003c038	23	string	[%%.%df,%%.%df,%%.%df]
+1003c050	53	string	D:\\ntank_cur_(with_super_server)\\shared\\geometry.cpp
+1003c088	32	string	current_transform->next != NULL
+1003c0a8	23	string	[%%.%df,%%.%df,%%.%df]
+1003c0c0	31	string	{% 7.2f,% 7.2f,% 7.2f,% 7.2f}\s
+1003c0e0	53	string	D:\\ntank_cur_(with_super_server)\\shared\\geometry.cpp
+1003c118	11	string	fac != 0.0
+1003c124	52	string	D:\\ntank_cur_(with_super_server)\\shared\\fridge.h
+1003c158	52	string	D:\\ntank_cur_(with_super_server)\\shared\\fridge.cpp
+1003c18c	24	string	item_size >= item_size_
+1003c1a4	52	string	D:\\ntank_cur_(with_super_server)\\shared\\fridge.cpp
+1003c1d8	22	string	min_size > item_size_
+1003c1f0	52	string	D:\\ntank_cur_(with_super_server)\\shared\\fridge.cpp
+1003c224	22	string	item_size >= min_size
+1003c23c	51	string	D:\\ntank_cur_(with_super_server)\\shared\\fridge.cpp
+1003c270	22	string	items_per_bucket >= 1
+1003c288	51	string	D:\\ntank_cur_(with_super_server)\\shared\\fridge.cpp
+1003c2bc	32	string	current_bucket->items_held == 0
+1003c2dc	51	string	D:\\ntank_cur_(with_super_server)\\shared\\fridge.cpp
+1003c310	15	string	bucket != NULL
+1003c320	51	string	D:\\ntank_cur_(with_super_server)\\shared\\fridge.cpp
+1003c354	8	string	success
+1003c35c	51	string	D:\\ntank_cur_(with_super_server)\\shared\\fridge.cpp
+1003c390	26	string	bucket->my_fridge == this
+1003c3ac	51	string	D:\\ntank_cur_(with_super_server)\\shared\\fridge.cpp
+1003c3e0	8	string	success
+1003c3e8	51	string	D:\\ntank_cur_(with_super_server)\\shared\\fridge.cpp
+1003c41c	38	string	stamp->my_bucket->my_fridge == fridge
+1003c444	8	string	success
+1003c44c	51	string	D:\\ntank_cur_(with_super_server)\\shared\\fridge.cpp
+1003c480	25	string	FATAL RUNTIME ERROR: %s\n
+1003c49c	47	string	D:\\ntank_cur_(with_super_server)\\shared\\ds.cpp
+1003c4d0	47	string	D:\\ntank_cur_(with_super_server)\\shared\\ds.cpp
+1003c500	10	string	left >= 0
+1003c520	47	string	D:\\ntank_cur_(with_super_server)\\shared\\ds.cpp
+1003c550	16	string	len2 == len + 4
+1003c560	48	string	D:\\ntank_cur_(with_super_server)\\shared\\ds.cpp
+1003c590	10	string	b != NULL
+1003c59c	48	string	D:\\ntank_cur_(with_super_server)\\shared\\ds.cpp
+1003c5cc	10	string	i < items
+1003c5d8	47	string	D:\\ntank_cur_(with_super_server)\\shared\\ds.cpp
+1003c608	10	string	n != NULL
+1003c614	47	string	D:\\ntank_cur_(with_super_server)\\shared\\ds.cpp
+1003c644	11	string	item!=NULL
+1003c650	47	string	D:\\ntank_cur_(with_super_server)\\shared\\ds.cpp
+1003c680	13	string	head != NULL
+1003c690	47	string	D:\\ntank_cur_(with_super_server)\\shared\\ds.cpp
+1003c6c0	10	string	items > 0
+1003c6cc	47	string	D:\\ntank_cur_(with_super_server)\\shared\\ds.cpp
+1003c6fc	13	string	tail != NULL
+1003c70c	47	string	D:\\ntank_cur_(with_super_server)\\shared\\ds.cpp
+1003c73c	10	string	items > 0
+1003c75c	40	string	Assertion failed: %s, file %s, line %d\n
+1004664a	12	TerminatedCString	GlobalAlloc
+10046658	11	TerminatedCString	GlobalFree
+10046664	13	TerminatedCString	KERNEL32.dll
+10046674	13	TerminatedCString	UpdateWindow
+10046684	11	TerminatedCString	ShowWindow
+10046692	16	TerminatedCString	CreateWindowExA
+100466a4	11	TerminatedCString	ShowCursor
+100466b2	20	TerminatedCString	SetForegroundWindow
+100466c8	14	TerminatedCString	DestroyWindow
+100466d6	11	TerminatedCString	USER32.dll
+100466e4	17	TerminatedCString	_grClipWindow@16
+100466f8	25	TerminatedCString	_grTexCalcMemRequired@16
+10046714	19	TerminatedCString	_grGlideSetState@4
+1004672a	23	TerminatedCString	_grTexDownloadTable@12
+10046744	20	TerminatedCString	_grChromakeyValue@4
+1004675a	19	TerminatedCString	_grChromakeyMode@4
+10046770	19	TerminatedCString	_grTexClampMode@12
+10046786	20	TerminatedCString	_grTexMipMapMode@12
+1004679c	20	TerminatedCString	_grTexFilterMode@12
+100467b2	29	TerminatedCString	_grAlphaTestReferenceValue@4
+100467d2	23	TerminatedCString	_grAlphaTestFunction@4
+100467ec	17	TerminatedCString	_grTexCombine@28
+10046800	19	TerminatedCString	_grFogColorValue@4
+10046816	19	TerminatedCString	_grAlphaCombine@20
+1004682c	24	TerminatedCString	_grConstantColorValue@4
+10046846	19	TerminatedCString	_grColorCombine@20
+1004685c	25	TerminatedCString	_grAlphaBlendFunction@16
+10046878	19	TerminatedCString	_grGlideGetState@4
+1004688e	13	TerminatedCString	_grFogMode@4
+1004689e	15	TerminatedCString	_grDepthMask@4
+100468b0	25	TerminatedCString	_grDepthBufferFunction@4
+100468cc	21	TerminatedCString	_grDepthBufferMode@4
+100468e4	14	TerminatedCString	_grCullMode@4
+100468f4	18	TerminatedCString	_grRenderBuffer@4
+10046908	11	TerminatedCString	_grHints@8
+10046916	23	TerminatedCString	_grDisableAllEffects@0
+10046930	22	TerminatedCString	_grErrorSetCallback@4
+10046948	17	TerminatedCString	_grSstWinOpen@28
+1004695c	15	TerminatedCString	_grSstSelect@4
+1004696e	18	TerminatedCString	_grBufferClear@12
+10046982	13	TerminatedCString	_grSstIdle@0
+10046992	16	TerminatedCString	_grBufferSwap@4
+100469a4	17	TerminatedCString	_grSstWinClose@0
+100469b8	19	TerminatedCString	_grDrawTriangle@12
+100469ce	14	TerminatedCString	_grDrawLine@8
+100469de	16	TerminatedCString	_grAADrawLine@8
+100469f0	15	TerminatedCString	_grDrawPoint@4
+10046a02	17	TerminatedCString	_grAADrawPoint@4
+10046a16	27	TerminatedCString	_grDrawPolygonVertexList@8
+10046a34	16	TerminatedCString	_grTexSource@16
+10046a46	20	TerminatedCString	_grLfbReadRegion@28
+10046a5c	22	TerminatedCString	_grSstQueryHardware@4
+10046a74	15	TerminatedCString	_grGlideInit@0
+10046a86	20	TerminatedCString	_grSstQueryBoards@4
+10046a9c	19	TerminatedCString	_grGlideShutdown@0
+10046ab2	19	TerminatedCString	_grTexMaxAddress@4
+10046ac8	19	TerminatedCString	_grTexMinAddress@4
+10046ade	24	TerminatedCString	_grTexDownloadMipMap@16
+10046af6	12	TerminatedCString	glide2x.dll
+10046b04	19	TerminatedCString	GetModuleFileNameA
+10046b1a	10	TerminatedCString	RtlUnwind
+10046b26	14	TerminatedCString	IsBadWritePtr
+10046b36	13	TerminatedCString	IsBadReadPtr
+10046b46	13	TerminatedCString	HeapValidate
+10046b56	12	TerminatedCString	ExitProcess
+10046b64	17	TerminatedCString	TerminateProcess
+10046b78	18	TerminatedCString	GetCurrentProcess
+10046b8c	16	TerminatedCString	GetCommandLineA
+10046b9e	11	TerminatedCString	GetVersion
+10046bac	21	TerminatedCString	EnterCriticalSection
+10046bc4	21	TerminatedCString	LeaveCriticalSection
+10046bdc	15	TerminatedCString	GetProcAddress
+10046bee	17	TerminatedCString	GetModuleHandleA
+10046c02	13	TerminatedCString	GetLastError
+10046c12	22	TerminatedCString	SetConsoleCtrlHandler
+10046c2a	13	TerminatedCString	LoadLibraryA
+10046c3a	19	TerminatedCString	GetCurrentThreadId
+10046c50	12	TerminatedCString	TlsSetValue
+10046c5e	9	TerminatedCString	TlsAlloc
+10046c6a	8	TerminatedCString	TlsFree
+10046c74	13	TerminatedCString	SetLastError
+10046c84	12	TerminatedCString	TlsGetValue
+10046c92	17	TerminatedCString	GetCurrentThread
+10046ca6	26	TerminatedCString	InitializeCriticalSection
+10046cc2	22	TerminatedCString	DeleteCriticalSection
+10046cda	14	TerminatedCString	FatalAppExitA
+10046cea	10	TerminatedCString	HeapAlloc
+10046cf6	11	TerminatedCString	DebugBreak
+10046d04	13	TerminatedCString	GetStdHandle
+10046d14	10	TerminatedCString	WriteFile
+10046d20	21	TerminatedCString	InterlockedDecrement
+10046d38	19	TerminatedCString	OutputDebugStringA
+10046d4e	21	TerminatedCString	InterlockedIncrement
+10046d66	12	TerminatedCString	HeapReAlloc
+10046d74	9	TerminatedCString	HeapFree
+10046d80	12	TerminatedCString	VirtualFree
+10046d8e	13	TerminatedCString	VirtualAlloc
+10046d9e	24	TerminatedCString	GetEnvironmentVariableA
+10046db8	14	TerminatedCString	GetVersionExA
+10046dc8	12	TerminatedCString	HeapDestroy
+10046dd6	11	TerminatedCString	HeapCreate
+10046de4	15	TerminatedCString	SetHandleCount
+10046df6	12	TerminatedCString	GetFileType
+10046e04	16	TerminatedCString	GetStartupInfoA
+10046e16	24	TerminatedCString	FreeEnvironmentStringsA
+10046e30	24	TerminatedCString	FreeEnvironmentStringsW
+10046e4a	20	TerminatedCString	WideCharToMultiByte
+10046e60	22	TerminatedCString	GetEnvironmentStrings
+10046e78	23	TerminatedCString	GetEnvironmentStringsW
+10046e92	25	TerminatedCString	UnhandledExceptionFilter
+10046eae	17	TerminatedCString	FlushFileBuffers
+10046ec2	28	TerminatedCString	SetUnhandledExceptionFilter
+10046ee0	13	TerminatedCString	IsBadCodePtr
+10046ef0	20	TerminatedCString	MultiByteToWideChar
+10046f06	15	TerminatedCString	GetStringTypeA
+10046f18	15	TerminatedCString	GetStringTypeW
+10046f2a	15	TerminatedCString	SetFilePointer
+10046f3c	10	TerminatedCString	GetCPInfo
+10046f48	7	TerminatedCString	GetACP
+10046f52	9	TerminatedCString	GetOEMCP
+10046f5e	6	TerminatedCString	Sleep
+10046f66	13	TerminatedCString	LCMapStringA
+10046f76	13	TerminatedCString	LCMapStringW
+10046f86	13	TerminatedCString	SetStdHandle
+10046f96	15	TerminatedCString	RaiseException
+10046fa8	12	TerminatedCString	CloseHandle
+10046fb6	14	TerminatedCString	IsValidLocale
+10046fc6	16	TerminatedCString	IsValidCodePage
+10046fd8	15	TerminatedCString	GetLocaleInfoA
+10046fea	19	TerminatedCString	EnumSystemLocalesA
+10047000	19	TerminatedCString	GetUserDefaultLCID
+10047016	23	TerminatedCString	GetTimeZoneInformation
+10047030	15	TerminatedCString	GetLocaleInfoW
+10047042	15	TerminatedCString	CompareStringA
+10047054	15	TerminatedCString	CompareStringW
+10047066	24	TerminatedCString	SetEnvironmentVariableA
+ffdff1ac	36	uchar[36]	\N
+ffdffc00	522	wchar16[261]	\N

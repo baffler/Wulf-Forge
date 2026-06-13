@@ -1,0 +1,26 @@
+{
+  "project_file": "/C/Users/balsa/Desktop/WulframII/Game/bwau.exe",
+  "program_name": "bwau.exe",
+  "executable_path": "/C/Users/balsa/Desktop/WulframII/Game/bwau.exe",
+  "executable_format": "Portable Executable (PE)",
+  "executable_md5": "fee1a9dc85d9a79657eb62df56109f9d",
+  "executable_sha256": "79b4b6eda8cb78d36e430321b005230115f547a8672a65f495e9806a0c91384f",
+  "language_id": "x86:LE:32:default",
+  "compiler": "visualstudio:unknown",
+  "compiler_spec": "windows",
+  "image_base": "00400000",
+  "min_address": "00400000",
+  "max_address": "ffdfffff",
+  "default_pointer_size": "4",
+  "counts": {
+    "memory_blocks": 5,
+    "functions": 679,
+    "defined_symbols": 1402,
+    "comments": 530,
+    "bookmarks": 92,
+    "strings": 734,
+    "external_libraries": 5,
+    "external_locations": 164,
+    "external_entry_points": 1
+  }
+}

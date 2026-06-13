@@ -1,0 +1,94 @@
+address	type	category	comment
+10012640	Info	PE Header	IMAGE_DIRECTORY_ENTRY_EXPORT
+10011b48	Info	PE Header	IMAGE_DIRECTORY_ENTRY_IMPORT
+1001a000	Info	PE Header	IMAGE_DIRECTORY_ENTRY_BASERELOC
+10011000	Info	PE Header	IMAGE_DIRECTORY_ENTRY_IAT
+100023c0	Analysis	Found Code	Found code from operand reference
+10002460	Analysis	Found Code	Found code from operand reference
+10002470	Analysis	Found Code	Found code from operand reference
+10002500	Analysis	Found Code	Found code from operand reference
+10002660	Analysis	Found Code	Found code from operand reference
+10002770	Analysis	Found Code	Found code from operand reference
+100029f0	Analysis	Found Code	Found code from operand reference
+10002a40	Analysis	Found Code	Found code from operand reference
+10002aa0	Analysis	Found Code	Found code from operand reference
+10002c10	Analysis	Found Code	Found code from operand reference
+10002ca0	Analysis	Found Code	Found code from operand reference
+10002cd0	Analysis	Found Code	Found code from operand reference
+10002cf0	Analysis	Found Code	Found code from operand reference
+10002d10	Analysis	Found Code	Found code from operand reference
+10002d20	Analysis	Found Code	Found code from operand reference
+10002fd0	Analysis	Found Code	Found code from operand reference
+10003050	Analysis	Found Code	Found code from operand reference
+100031b0	Analysis	Found Code	Found code from operand reference
+10003300	Analysis	Found Code	Found code from operand reference
+10003680	Analysis	Found Code	Found code from operand reference
+10003ab0	Analysis	Found Code	Found code from operand reference
+10003b20	Analysis	Found Code	Found code from operand reference
+10003cd0	Analysis	Found Code	Found code from operand reference
+10004160	Analysis	Found Code	Found code from operand reference
+100042c0	Analysis	Found Code	Found code from operand reference
+10004930	Analysis	Found Code	Found code from operand reference
+10005150	Analysis	Found Code	Found code from operand reference
+10005220	Analysis	Found Code	Found code from operand reference
+100053d0	Analysis	Found Code	Found code from operand reference
+100055a0	Analysis	Found Code	Found code from operand reference
+10005730	Analysis	Found Code	Found code from operand reference
+10005c50	Analysis	Found Code	Found code from operand reference
+10006080	Analysis	Found Code	Found code from operand reference
+10006090	Analysis	Found Code	Found code from operand reference
+100060a0	Analysis	Found Code	Found code from operand reference
+10006c50	Analysis	Found Code	Found code from operand reference
+10006cf0	Analysis	Found Code	Found code from operand reference
+10006d80	Analysis	Found Code	Found code from operand reference
+10007080	Analysis	Found Code	Found code from operand reference
+100073c0	Analysis	Found Code	Found code from operand reference
+100073d0	Analysis	Found Code	Found code from operand reference
+10007420	Analysis	Found Code	Found code from operand reference
+100075b0	Analysis	Found Code	Found code from operand reference
+100075c0	Analysis	Found Code	Found code from operand reference
+100075e0	Analysis	Found Code	Found code from operand reference
+10008100	Analysis	Found Code	Found code from operand reference
+10009334	Analysis	Found Code	Found code from operand reference
+10009bc7	Analysis	Found Code	Found code from operand reference
+10009c21	Analysis	Found Code	Found code from operand reference
+10009c6f	Analysis	Found Code	Found code from operand reference
+10009ff8	Analysis	Found Code	Found code from operand reference
+10010b29	Analysis	Found Code	Found code from operand reference
+10010b53	Analysis	Found Code	Found code from operand reference
+10008e90	Analysis	Function ID Analyzer	Library Function - Single Match,  __ftol
+10009314	Analysis	Function ID Analyzer	Library Function - Single Match,  __global_unwind2
+10009356	Analysis	Function ID Analyzer	Library Function - Single Match,  __local_unwind2
+100093be	Analysis	Function ID Analyzer	Library Function - Single Match,  __abnormal_termination
+100093e1	Analysis	Function ID Analyzer	Library Function - Single Match,  __NLG_Notify1
+10009402	Analysis	Function ID Analyzer	Library Function - Single Match,  _rand
+10009462	Analysis	Function ID Analyzer	Library Function - Single Match,  __exit
+100096c9	Analysis	Function ID Analyzer	Library Function - Single Match,  __amsg_exit
+1000992b	Analysis	Function ID Analyzer	Library Function - Single Match,  _malloc
+1000993d	Analysis	Function ID Analyzer	Library Function - Single Match,  __nh_malloc
+10009c87	Analysis	Function ID Analyzer	Library Function - Single Match,  __fassign
+10009f77	Analysis	Function ID Analyzer	Library Function - Single Match,  __cfltcvt
+1000a990	Analysis	Function ID Analyzer	Library Function - Single Match,  __CallSettingFrame@12
+1000b8b7	Analysis	Function ID Analyzer	Library Function - Single Match,  __startOneArgErrorHandling
+1000b9ab	Analysis	Function ID Analyzer	Library Function - Single Match,  __math_exit
+1000d590	Analysis	Function ID Analyzer	Library Function - Single Match,  _memset
+1000d930	Analysis	Function ID Analyzer	Library Function - Single Match,  _strlen
+1000da80	Analysis	Function ID Analyzer	Library Function - Single Match,  _strcmp
+1000e7c0	Analysis	Function ID Analyzer	Library Function - Single Match,  _strchr
+1000e880	Analysis	Function ID Analyzer	Library Function - Single Match,  _strstr
+1000e900	Analysis	Function ID Analyzer	Library Function - Single Match,  _strncmp
+1000ea00	Analysis	Function ID Analyzer	Library Function - Single Match,  _strncpy
+1000f256	Analysis	Function ID Analyzer	Library Function - Single Match,  ___add_12
+1000d654	Analysis	Address Table	Address table[3] created
+1000d738	Analysis	Address Table	Address table[4] created
+1000d7dc	Analysis	Address Table	Address table[3] created
+1000d8d0	Analysis	Address Table	Address table[4] created
+1000e2b4	Analysis	Address Table	Address table[3] created
+1000e398	Analysis	Address Table	Address table[4] created
+1000e43c	Analysis	Address Table	Address table[3] created
+1000e530	Analysis	Address Table	Address table[4] created
+10013004	Analysis	Address Table	Address table[3] created
+10013018	Analysis	Address Table	Address table[3] created
+1001327c	Analysis	Address Table	Address table[3] created
+10015eb0	Analysis	Address Table	Address table[43] created
+10015f68	Analysis	Address Table	Address table[10] created

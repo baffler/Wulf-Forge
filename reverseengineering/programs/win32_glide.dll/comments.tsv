@@ -1,0 +1,605 @@
+address	type	comment
+100001d8	EOL	.text
+10000200	EOL	.rdata
+10000228	EOL	.data
+10000250	EOL	.idata
+10000278	EOL	.reloc
+10001073	PLATE	Creates the Glide winsys renderer object, captures the host game interface, fills its virtual dispatch table, and validates initialization.
+10001073	PRE	0x1073  3  instantiate_winsys
+100011e5	PLATE	Destroys a Glide winsys instance if one was allocated.
+100011e5	PRE	0x11e5  1  ?deallocate_winsys@@YAXPAVWinsys@@@Z
+100011f9	PLATE	Detects available 3dfx Glide hardware, fills the winsys display/mode names, initializes Glide for probing, and returns a renderer priority score.
+100011f9	PRE	0x11f9  2  detect_winsys
+100013bb	PLATE	Runs one-time Glide process shutdown and logs the renderer exit path.
+100013bb	PRE	0x13bb  4  process_exit
+100020b0	PLATE	Applies the active clipping rectangle, directly corresponding to glViewport/scissor-style behavior.
+10002217	PLATE	Restores one of the precomputed render-state blocks by index.
+10002560	PLATE	Builds the renderer's saved Glide state table for opaque, blended, textured, fogged, chromakey, and multitexture modes.
+1000336c	PLATE	Draws a texture region through Glide, splitting non-special textures into mip-sized tiles after checking that rendering is enabled.
+100036f2	PLATE	Selects SST 0, opens the Glide fullscreen/window context, and initializes render state.
+1000373d	EOL	Begins the real Glide SST window-open path when it is not already open.
+10003792	EOL	Calls grSstWinOpen after SST selection and HWND validation.
+100037c2	EOL	Common return for already-open or successfully initialized Glide windows.
+100039a7	PLATE	Resets render state and clears color/depth at frame start.
+10003a30	PLATE	Presents the back buffer and idles Glide, mapping to buffer swap in an OpenGL replacement.
+10003b43	PLATE	Toggles active rendering, opening/showing or closing/hiding the Glide window and maintaining should_render state.
+10003bbc	EOL	Enables rendering by opening/showing the Glide window and marking should_render true.
+10003bfb	EOL	Disables rendering, closes the Glide window path, and hides the HWND.
+10003c9f	PLATE	Closes Glide/window resources and disables rendering flags.
+10003d09	EOL	Releases the renderer texture-cache object during window shutdown.
+10003d3d	EOL	Clears renderer globals and render-enabled flags after shutdown.
+10003d6e	PLATE	Clears the render buffer to a palette-derived color and max depth.
+10003e6b	PLATE	Draws a solid screen-space rectangle as two Glide triangles.
+1000419f	PLATE	Clips a line segment against the current viewport before issuing the line draw.
+10004b28	PLATE	Draws a clipped textured tile quad using Glide polygon vertices.
+10004bf4	EOL	Continues quad setup after the clipping/cropping helper accepts the quad.
+10004cb4	EOL	Returns failure when the quad texture tile cannot be made resident.
+10004cbb	EOL	Binds texture state, builds four vertices, and submits the textured quad.
+100051a8	PLATE	Converts three engine vertices/UVs into Glide vertices and draws one textured triangle.
+1000533a	EOL	Counts a rejected triangle and returns failure after clip/projection rejection.
+1000538a	EOL	Starts the per-vertex conversion path for a Glide textured triangle.
+100055b2	EOL	Returns 0 when the triangle texture cannot be made resident or uploaded.
+100055b6	EOL	Binds the texture and submits the Glide triangle.
+100055df	PLATE	Draws one triangle using two TMUs, useful for detail/lightmap replacement behavior.
+10005799	EOL	After vertex conversion, ensures the primary texture is resident on TMU0.
+100057c1	EOL	Ensures the second texture is resident on TMU1 for dual-texture drawing.
+100057f3	EOL	Binds both TMUs and submits the dual-texture triangle.
+1000596d	PLATE	Submits a batch of triangle records, dispatching single-texture, dual-texture, or callback draw paths.
+10005996	EOL	Debug assert path when the renderer is asked to draw while should_render is false.
+100059ad	EOL	Initializes three temporary vertex records used for triangle submission.
+100059eb	EOL	Moves to the previous triangle record; the batch is processed in reverse order.
+100059f4	EOL	Checks whether any triangle records remain in the reverse traversal.
+100059fe	EOL	Loads the current 0x50-byte triangle record from the batch array.
+10005a20	EOL	Dispatches a callback-style batch record instead of drawing a normal textured triangle.
+10005a44	EOL	Copies the three source vertices into local scratch records for draw submission.
+10005ae1	EOL	Resolves a base texture alias when the primary texture record carries the redirect flag.
+10005afe	EOL	Chooses between single-texture, multipass, and dual-TMU draw paths.
+10005b2a	EOL	Checks whether the second texture can use the dual-TMU path.
+10005b36	EOL	Draws the triangle through the dual-texture/TMU path when supported.
+10005b9c	EOL	Draws the triangle with the primary texture through the single-texture path.
+10005bdc	EOL	Draws the second texture as a fallback multipass overlay when dual-TMU is unavailable.
+10005c29	EOL	Finishes this triangle record and returns to the reverse batch loop.
+10005c2e	EOL	Adds the submitted batch size to the renderer's triangle/batch counter before returning.
+10007823	PLATE	Reads a framebuffer region from Glide, converts RGB565 samples, and quantizes/copies them into an engine texture buffer.
+10007938	EOL	Outer loop converting LFB RGB565 rows into temporary RGB triples.
+1000797f	EOL	Inner loop expanding RGB565 source pixels into RGB component triples.
+10007a37	EOL	Outer loop converting temporary RGB rows into indexed texture bytes.
+10007a76	EOL	Inner loop maps RGB samples through the host palette/index callback and blends neighbors.
+10007b55	EOL	Frees both temporary readback buffers before returning.
+10007c1b	PLATE	Returns the Glide renderer display name, selecting the Voodoo2-enhanced label when multiple TMUs are detected.
+10007d8a	PLATE	Runs one-time Glide shutdown for the renderer DLL and logs the process-exit path.
+10007e50	PLATE	Allocates and initializes the Glide winsys renderer object, fills its method table, and validates required handlers.
+10008cee	PLATE	Builds per-TMU texture-memory arenas from Glide min/max texture addresses.
+10008fb4	PLATE	Downloads a prepared mipmap chain into Glide texture memory.
+100090e2	PLATE	Allocates texture memory for a tile and uploads its mipmap data.
+10009177	EOL	Continues once a texture-memory block record is available for the tile.
+100091d2	EOL	Downloads the tile mipmap into the selected texture-memory arena record.
+100094bd	PLATE	Ensures a texture tile/mipmap is resident on the requested TMU before drawing.
+10009599	EOL	Returns success when the requested mip level is already inside the resident tile range.
+100095e6	EOL	Falls through to allocate/upload because the current resident mip range is insufficient.
+1000c550	PLATE	Binds a resident tile to a Glide TMU for subsequent draw calls.
+100114e0	PLATE	Library Function - Single Match\n __ftol\n\nLibrary: Visual Studio
+10011850	PLATE	Library Function - Single Match\n _memset\n\nLibraries: Visual Studio 1998 Debug, Visual Studio 1998 Release
+100118f0	PLATE	Library Function - Single Match\n void __stdcall _CallMemberFunction0(void *,void *)\n\nLibraries: Visual Studio 2003 Debug, Visual Studio 2003 Release
+10011980	PLATE	Library Function - Multiple Matches With Different Base Names\n ___CxxFrameHandler\n ___CxxFrameHandler2\n ___CxxFrameHandler3\n\nLibraries: Visual Studio 2003, Visual Studio 2005, Visual Studio 2008, Visual Studio 2010
+100119c0	PLATE	Library Function - Single Match\n ___CxxLongjmpUnwind@4\n\nLibraries: Visual Studio 2003, Visual Studio 2005, Visual Studio 2008, Visual Studio 2010
+10011c90	PLATE	Library Function - Single Match\n __global_unwind2\n\nLibrary: Visual Studio
+10011cd2	PLATE	Library Function - Single Match\n __local_unwind2\n\nLibraries: Visual Studio 1998 Debug, Visual Studio 1998 Release, Visual Studio 2003 Debug, Visual Studio 2003 Release
+10011d3a	PLATE	Library Function - Single Match\n __abnormal_termination\n\nLibrary: Visual Studio
+10011d5d	PLATE	Library Function - Single Match\n __NLG_Notify1\n\nLibraries: Visual Studio 2017 Debug, Visual Studio 2017 Release, Visual Studio 2019 Debug, Visual Studio 2019 Release
+10011ef0	PLATE	Library Function - Single Match\n _rand\n\nLibraries: Visual Studio 2003 Debug, Visual Studio 2005 Debug, Visual Studio 2008 Debug
+10011f30	PLATE	Library Function - Single Match\n _malloc\n\nLibrary: Visual Studio
+10011f60	PLATE	Library Function - Single Match\n __malloc_dbg\n\nLibrary: Visual Studio
+10012390	PLATE	Library Function - Single Match\n _calloc\n\nLibrary: Visual Studio 2003 Debug
+100123c0	PLATE	Library Function - Single Match\n __calloc_dbg\n\nLibrary: Visual Studio 2003 Debug
+10012420	PLATE	Library Function - Multiple Matches With Different Base Names\n __expand\n _realloc\n\nLibrary: Visual Studio 2003 Debug
+10012450	PLATE	Library Function - Multiple Matches With Different Base Names\n __expand_dbg\n __realloc_dbg\n\nLibrary: Visual Studio 2003 Debug
+10012a00	PLATE	Library Function - Multiple Matches With Different Base Names\n __expand\n _realloc\n\nLibrary: Visual Studio 2003 Debug
+10012a30	PLATE	Library Function - Multiple Matches With Different Base Names\n __expand_dbg\n __realloc_dbg\n\nLibrary: Visual Studio 2003 Debug
+10012b00	PLATE	Library Function - Single Match\n __free_dbg\n\nLibrary: Visual Studio 2003 Debug
+10013750	PLATE	Library Function - Single Match\n __CrtIsValidPointer\n\nLibrary: Visual Studio 2003 Debug
+100138d0	PLATE	Library Function - Single Match\n __CrtIsMemoryBlock\n\nLibrary: Visual Studio 2003 Debug
+100142d0	PLATE	Library Function - Single Match\n __exit\n\nLibrary: Visual Studio 2003 Debug
+10014440	PLATE	Library Function - Single Match\n __initterm\n\nLibrary: Visual Studio 2003 Debug
+100145a0	PLATE	Library Function - Single Match\n int __cdecl ArrayUnwindFilter(struct _EXCEPTION_POINTERS *)\n\nLibrary: Visual Studio
+100145d0	PLATE	Library Function - Single Match\n void __stdcall `eh vector constructor iterator'(void *,unsigned int,int,void (__thiscall*)(void *),void (__thiscall*)(void *))\n\nLibraries: Visual Studio 2003 Debug, Visual Studio 2003 Release
+10014670	PLATE	Library Function - Single Match\n _strlen\n\nLibraries: Visual Studio 1998 Debug, Visual Studio 1998 Release
+10014a30	PLATE	Library Function - Single Match\n __amsg_exit\n\nLibrary: Visual Studio 2003 Debug
+100150f0	PLATE	Library Function - Single Match\n __setdefaultprecision\n\nLibrary: Visual Studio 2003 Debug
+10015170	PLATE	Library Function - Single Match\n __ms_p5_mp_test_fdiv\n\nLibraries: Visual Studio 2003, Visual Studio 2005, Visual Studio 2008
+10015270	PLATE	Library Function - Single Match\n __cropzeros\n\nLibraries: Visual Studio 2003 Debug, Visual Studio 2003 Release
+10015350	PLATE	Library Function - Single Match\n __positive\n\nLibraries: Visual Studio 2003 Debug, Visual Studio 2003 Release
+10015380	PLATE	Library Function - Single Match\n __fassign\n\nLibraries: Visual Studio 2003 Debug, Visual Studio 2003 Release
+10015860	PLATE	Library Function - Single Match\n __cfltcvt\n\nLibraries: Visual Studio 2003 Debug, Visual Studio 2003 Release
+100158c0	PLATE	Library Function - Single Match\n __shift\n\nLibrary: Visual Studio
+100158f0	PLATE	Library Function - Single Match\n _abort\n\nLibrary: Visual Studio 2003 Debug
+10015f60	PLATE	Library Function - Single Match\n __itoa\n\nLibrary: Visual Studio 2003 Debug
+10015fb0	PLATE	Library Function - Single Match\n _xtoa\n\nLibrary: Visual Studio 2003 Debug
+10016080	PLATE	Library Function - Single Match\n __ltoa\n\nLibrary: Visual Studio 2003 Debug
+100160c0	PLATE	Library Function - Single Match\n __ultoa\n\nLibrary: Visual Studio 2003 Debug
+100160e0	PLATE	Library Function - Single Match\n __i64toa\n\nLibrary: Visual Studio 2003 Debug
+10016130	PLATE	Library Function - Single Match\n _x64toa@20\n\nLibrary: Visual Studio 2003 Debug\n__stdcall x64toa,20
+10016230	PLATE	Library Function - Single Match\n __ui64toa\n\nLibrary: Visual Studio 2003 Debug
+10016250	PLATE	Library Function - Single Match\n _strncat\n\nLibraries: Visual Studio 1998 Debug, Visual Studio 1998 Release
+10016380	PLATE	Library Function - Single Match\n _strncpy\n\nLibraries: Visual Studio 1998 Debug, Visual Studio 1998 Release
+10017000	PLATE	Library Function - Single Match\n int __cdecl ArrayUnwindFilter(struct _EXCEPTION_POINTERS *)\n\nLibrary: Visual Studio
+10017030	PLATE	Library Function - Single Match\n void __cdecl CatchIt(struct EHExceptionRecord *,struct EHRegistrationNode *,struct _CONTEXT *,void *,struct _s_FuncInfo const *,struct _s_HandlerType const *,struct _s_CatchableType const *,struct _s_TryBlockMapEntry const *,int,struct EHRegistrationNode *,unsigned char)\n\nLibrary: Visual Studio
+10017510	PLATE	Library Function - Single Match\n ___DestructExceptionObject\n\nLibraries: Visual Studio 2003 Debug, Visual Studio 2003 Release
+100175a0	PLATE	Library Function - Multiple Matches With Different Base Names\n void * __cdecl AdjustPointer(void *,struct PMD const &)\n ___AdjustPointer\n\nLibrary: Visual Studio
+100175f0	PLATE	Library Function - Single Match\n __CallSettingFrame@12\n\nLibraries: Visual Studio 2017 Debug, Visual Studio 2017 Release, Visual Studio 2019 Debug, Visual Studio 2019 Release
+10017a30	PLATE	Library Function - Single Match\n __trandisp1\n\nLibrary: Visual Studio
+10017a97	PLATE	Library Function - Single Match\n __trandisp2\n\nLibraries: Visual Studio 1998, Visual Studio 2003, Visual Studio 2005, Visual Studio 2008
+10017c45	PLATE	Library Function - Single Match\n __fload_withFB\n\nLibrary: Visual Studio
+10017cab	PLATE	Library Function - Single Match\n __math_exit\n\nLibrary: Visual Studio
+10017da7	PLATE	Library Function - Single Match\n __startOneArgErrorHandling\n\nLibrary: Visual Studio
+10017df0	PLATE	Library Function - Single Match\n int (__cdecl*__cdecl _set_new_handler(int (__cdecl*)(unsigned int)))(unsigned int)\n\nLibrary: Visual Studio 2003 Debug
+10017e30	PLATE	Library Function - Single Match\n __callnewh\n\nLibrary: Visual Studio 2003 Debug
+10018100	PLATE	Library Function - Single Match\n __malloc_base\n\nLibrary: Visual Studio 2003 Debug
+10018120	PLATE	Library Function - Single Match\n __nh_malloc_base\n\nLibrary: Visual Studio 2003 Debug
+10018180	PLATE	Library Function - Single Match\n __heap_alloc_base\n\nLibrary: Visual Studio 2003 Debug
+10018350	PLATE	Library Function - Single Match\n __CrtSetReportFile\n\nLibrary: Visual Studio 2003 Debug
+10019290	PLATE	Library Function - Single Match\n __heapchk\n\nLibrary: Visual Studio 2003 Debug
+100193a0	PLATE	Library Function - Single Match\n __heapset\n\nLibrary: Visual Studio 2003 Debug
+100194f0	PLATE	Library Function - Single Match\n ___sbh_heap_init\n\nLibraries: Visual Studio 2003 Debug, Visual Studio 2005 Debug, Visual Studio 2008 Debug
+1001d9c0	PLATE	Library Function - Single Match\n __ioterm\n\nLibrary: Visual Studio
+1001e2f0	PLATE	Library Function - Single Match\n __FF_MSGBANNER\n\nLibrary: Visual Studio 2003 Debug
+1001e500	PLATE	Library Function - Single Match\n __GET_RTERRMSG\n\nLibrary: Visual Studio 2003 Debug
+1001e800	PLATE	Library Function - Single Match\n __cintrindisp2\n\nLibrary: Visual Studio
+1001e83e	PLATE	Library Function - Single Match\n __cintrindisp1\n\nLibrary: Visual Studio
+1001e87b	PLATE	Library Function - Single Match\n __ctrandisp2\n\nLibraries: Visual Studio 1998, Visual Studio 2003, Visual Studio 2005, Visual Studio 2008
+1001e9fb	PLATE	Library Function - Single Match\n __ctrandisp1\n\nLibrary: Visual Studio
+1001ea2e	PLATE	Library Function - Single Match\n __fload\n\nLibraries: Visual Studio 1998, Visual Studio 2003, Visual Studio 2005, Visual Studio 2008
+1001ebe0	PLATE	Library Function - Single Match\n __controlfp\n\nLibrary: Visual Studio 2003 Debug
+1001f260	PLATE	Library Function - Single Match\n __IncMan\n\nLibrary: Visual Studio
+1001f3f0	PLATE	Library Function - Single Match\n __CopyMan\n\nLibrary: Visual Studio
+1001f440	PLATE	Library Function - Single Match\n __FillZeroMan\n\nLibrary: Visual Studio
+1001f470	PLATE	Library Function - Single Match\n __IsZeroMan\n\nLibrary: Visual Studio
+1001f4b0	PLATE	Library Function - Single Match\n __ShrMan\n\nLibrary: Visual Studio
+1001ffe0	PLATE	Library Function - Single Match\n __fptrap\n\nLibrary: Visual Studio 2003 Debug
+1001fff0	PLATE	Library Function - Single Match\n __dosmaperr\n\nLibrary: Visual Studio 2003 Debug
+100200b0	PLATE	Library Function - Single Match\n __XcptFilter\n\nLibrary: Visual Studio 2003 Debug
+100202d0	PLATE	Library Function - Single Match\n __aulldiv\n\nLibrary: Visual Studio 2003 Debug
+10020340	PLATE	Library Function - Single Match\n __aullrem\n\nLibrary: Visual Studio 2003 Debug
+10020950	PLATE	Library Function - Single Match\n int __cdecl _ValidateExecute(int (__stdcall*)(void))\n\nLibraries: Visual Studio 2003 Debug, Visual Studio 2003 Release
+10020980	PLATE	Library Function - Single Match\n _strcmp\n\nLibraries: Visual Studio 1998 Debug, Visual Studio 1998 Release
+10021020	PLATE	Library Function - Single Match\n _strchr\n\nLibraries: Visual Studio 1998 Debug, Visual Studio 1998 Release
+100210e0	PLATE	Library Function - Single Match\n _strstr\n\nLibraries: Visual Studio 1998 Debug, Visual Studio 1998 Release
+10021160	PLATE	Library Function - Single Match\n _strncmp\n\nLibraries: Visual Studio 1998 Debug, Visual Studio 1998 Release
+10021580	PLATE	Library Function - Single Match\n __isatty\n\nLibrary: Visual Studio 2003 Debug
+10021a30	PLATE	Library Function - Single Match\n _getSystemCP\n\nLibrary: Visual Studio 2003 Debug
+10021b10	PLATE	Library Function - Single Match\n _setSBCS\n\nLibrary: Visual Studio 2003 Debug
+10022870	PLATE	Library Function - Single Match\n __strcats\n\nLibrary: Visual Studio 2003 Debug
+10022a20	PLATE	Library Function - Single Match\n ___lc_lctostr\n\nLibrary: Visual Studio 2003 Debug
+10022df0	PLATE	Library Function - Single Match\n ___addl\n\nLibrary: Visual Studio 2012 Debug
+10022e30	PLATE	Library Function - Single Match\n ___add_12\n\nLibrary: Visual Studio
+10022ee0	PLATE	Library Function - Single Match\n ___shl_12\n\nLibraries: Visual Studio 2003, Visual Studio 2005, Visual Studio 2008, Visual Studio 2010
+10022f40	PLATE	Library Function - Single Match\n ___shr_12\n\nLibraries: Visual Studio 2003, Visual Studio 2005, Visual Studio 2008, Visual Studio 2010
+10024380	PLATE	Library Function - Single Match\n __set_osfhnd\n\nLibrary: Visual Studio 2003 Debug
+10024730	PLATE	Library Function - Single Match\n __unlock_fhandle\n\nLibrary: Visual Studio 2003 Debug
+10025210	PLATE	Library Function - Single Match\n __umatherr\n\nLibrary: Visual Studio
+100252b0	PLATE	Library Function - Multiple Matches With Different Base Names\n __set_errno\n __set_errno_from_matherr\n\nLibrary: Visual Studio
+100252f0	PLATE	Library Function - Single Match\n __get_fname\n\nLibrary: Visual Studio
+100253b0	PLATE	Library Function - Single Match\n __matherr\n\nLibrary: Visual Studio
+10025720	PLATE	Library Function - Single Match\n __close_lk\n\nLibrary: Visual Studio 2003 Debug
+100257d0	PLATE	Library Function - Single Match\n ___init_time\n\nLibrary: Visual Studio 2003 Debug
+10025e40	PLATE	Library Function - Single Match\n ___free_lc_time\n\nLibrary: Visual Studio 2003 Debug
+10026400	PLATE	Library Function - Single Match\n _fix_grouping\n\nLibrary: Visual Studio
+100267c0	PLATE	Library Function - Single Match\n _fix_grouping\n\nLibrary: Visual Studio
+10027830	PLATE	Library Function - Single Match\n _crtGetLocaleInfoA@16\n\nLibrary: Visual Studio 2003 Debug\n__stdcall crtGetLocaleInfoA,16
+10027a40	PLATE	Library Function - Single Match\n _GetPrimaryLen\n\nLibraries: Visual Studio 2003 Debug, Visual Studio 2005 Debug, Visual Studio 2008 Debug, Visual Studio 2010 Debug
+10029010	PLATE	Library Function - Multiple Matches With Different Base Names\n void __cdecl _store_str(char *,char * *,unsigned int *)\n __store_str\n\nLibraries: Visual Studio 2003 Debug, Visual Studio 2005 Debug, Visual Studio 2008 Debug, Visual Studio 2010 Debug
+10029110	PLATE	Library Function - Multiple Matches With Different Base Names\n void __cdecl _store_number(int,char * *,unsigned int *)\n __store_number\n\nLibraries: Visual Studio 2003 Debug, Visual Studio 2005 Debug, Visual Studio 2008 Debug, Visual Studio 2010 Debug
+1002acb0	PLATE	Library Function - Single Match\n __allmul\n\nLibrary: Visual Studio
+1002ad20	PLATE	Library Function - Multiple Matches With Different Base Names\n __getenv_lk\n _getenv\n\nLibrary: Visual Studio 2003 Debug
+1002adf0	PLATE	Library Function - Single Match\n __mbsnbicoll\n\nLibrary: Visual Studio 2003 Debug
+1002b620	PLATE	Library Function - Single Match\n _findenv\n\nLibrary: Visual Studio 2003 Debug
+1002b6a0	PLATE	Library Function - Single Match\n _copy_environ\n\nLibrary: Visual Studio 2003 Debug
+10038748	PLATE	Export Function Pointers
+10038758	PLATE	Export Name Pointers
+10038768	PLATE	Export Ordinal Values
+10038770	PLATE	Export Library Name
+10046000	PLATE	IMAGE_IMPORT_DESCRIPTOR
+10046014	PLATE	IMAGE_IMPORT_DESCRIPTOR
+10046028	PLATE	IMAGE_IMPORT_DESCRIPTOR
+10046050	EOL	IMAGE_THUNK_DATA32
+10046054	EOL	IMAGE_THUNK_DATA32
+10046058	EOL	IMAGE_THUNK_DATA32
+1004605c	EOL	IMAGE_THUNK_DATA32
+10046060	EOL	IMAGE_THUNK_DATA32
+10046064	EOL	IMAGE_THUNK_DATA32
+10046068	EOL	IMAGE_THUNK_DATA32
+1004606c	EOL	IMAGE_THUNK_DATA32
+10046070	EOL	IMAGE_THUNK_DATA32
+10046074	EOL	IMAGE_THUNK_DATA32
+10046078	EOL	IMAGE_THUNK_DATA32
+1004607c	EOL	IMAGE_THUNK_DATA32
+10046080	EOL	IMAGE_THUNK_DATA32
+10046084	EOL	IMAGE_THUNK_DATA32
+10046088	EOL	IMAGE_THUNK_DATA32
+1004608c	EOL	IMAGE_THUNK_DATA32
+10046090	EOL	IMAGE_THUNK_DATA32
+10046094	EOL	IMAGE_THUNK_DATA32
+10046098	EOL	IMAGE_THUNK_DATA32
+1004609c	EOL	IMAGE_THUNK_DATA32
+100460a0	EOL	IMAGE_THUNK_DATA32
+100460a4	EOL	IMAGE_THUNK_DATA32
+100460a8	EOL	IMAGE_THUNK_DATA32
+100460ac	EOL	IMAGE_THUNK_DATA32
+100460b0	EOL	IMAGE_THUNK_DATA32
+100460b4	EOL	IMAGE_THUNK_DATA32
+100460b8	EOL	IMAGE_THUNK_DATA32
+100460bc	EOL	IMAGE_THUNK_DATA32
+100460c0	EOL	IMAGE_THUNK_DATA32
+100460c4	EOL	IMAGE_THUNK_DATA32
+100460c8	EOL	IMAGE_THUNK_DATA32
+100460cc	EOL	IMAGE_THUNK_DATA32
+100460d0	EOL	IMAGE_THUNK_DATA32
+100460d4	EOL	IMAGE_THUNK_DATA32
+100460d8	EOL	IMAGE_THUNK_DATA32
+100460dc	EOL	IMAGE_THUNK_DATA32
+100460e0	EOL	IMAGE_THUNK_DATA32
+100460e4	EOL	IMAGE_THUNK_DATA32
+100460e8	EOL	IMAGE_THUNK_DATA32
+100460ec	EOL	IMAGE_THUNK_DATA32
+100460f0	EOL	IMAGE_THUNK_DATA32
+100460f4	EOL	IMAGE_THUNK_DATA32
+100460f8	EOL	IMAGE_THUNK_DATA32
+100460fc	EOL	IMAGE_THUNK_DATA32
+10046100	EOL	IMAGE_THUNK_DATA32
+10046104	EOL	IMAGE_THUNK_DATA32
+10046108	EOL	IMAGE_THUNK_DATA32
+1004610c	EOL	IMAGE_THUNK_DATA32
+10046110	EOL	IMAGE_THUNK_DATA32
+10046114	EOL	IMAGE_THUNK_DATA32
+10046118	EOL	IMAGE_THUNK_DATA32
+1004611c	EOL	IMAGE_THUNK_DATA32
+10046120	EOL	IMAGE_THUNK_DATA32
+10046124	EOL	IMAGE_THUNK_DATA32
+10046128	EOL	IMAGE_THUNK_DATA32
+1004612c	EOL	IMAGE_THUNK_DATA32
+10046130	EOL	IMAGE_THUNK_DATA32
+10046134	EOL	IMAGE_THUNK_DATA32
+10046138	EOL	IMAGE_THUNK_DATA32
+1004613c	EOL	IMAGE_THUNK_DATA32
+10046140	EOL	IMAGE_THUNK_DATA32
+10046144	EOL	IMAGE_THUNK_DATA32
+10046148	EOL	IMAGE_THUNK_DATA32
+1004614c	EOL	IMAGE_THUNK_DATA32
+10046150	EOL	IMAGE_THUNK_DATA32
+10046154	EOL	IMAGE_THUNK_DATA32
+10046158	EOL	IMAGE_THUNK_DATA32
+1004615c	EOL	IMAGE_THUNK_DATA32
+10046160	EOL	IMAGE_THUNK_DATA32
+10046164	EOL	IMAGE_THUNK_DATA32
+10046168	EOL	IMAGE_THUNK_DATA32
+1004616c	EOL	IMAGE_THUNK_DATA32
+10046170	EOL	IMAGE_THUNK_DATA32
+10046174	EOL	IMAGE_THUNK_DATA32
+10046178	EOL	IMAGE_THUNK_DATA32
+1004617c	EOL	IMAGE_THUNK_DATA32
+10046180	EOL	IMAGE_THUNK_DATA32
+10046184	EOL	IMAGE_THUNK_DATA32
+10046188	EOL	IMAGE_THUNK_DATA32
+100461f4	EOL	IMAGE_THUNK_DATA32
+100461f8	EOL	IMAGE_THUNK_DATA32
+100461fc	EOL	IMAGE_THUNK_DATA32
+10046200	EOL	IMAGE_THUNK_DATA32
+10046204	EOL	IMAGE_THUNK_DATA32
+10046208	EOL	IMAGE_THUNK_DATA32
+1004623c	EOL	IMAGE_THUNK_DATA32
+10046240	EOL	IMAGE_THUNK_DATA32
+10046244	EOL	IMAGE_THUNK_DATA32
+10046248	EOL	IMAGE_THUNK_DATA32
+1004624c	EOL	IMAGE_THUNK_DATA32
+10046250	EOL	IMAGE_THUNK_DATA32
+10046254	EOL	IMAGE_THUNK_DATA32
+10046258	EOL	IMAGE_THUNK_DATA32
+1004625c	EOL	IMAGE_THUNK_DATA32
+10046260	EOL	IMAGE_THUNK_DATA32
+10046264	EOL	IMAGE_THUNK_DATA32
+10046268	EOL	IMAGE_THUNK_DATA32
+1004626c	EOL	IMAGE_THUNK_DATA32
+10046270	EOL	IMAGE_THUNK_DATA32
+10046274	EOL	IMAGE_THUNK_DATA32
+10046278	EOL	IMAGE_THUNK_DATA32
+1004627c	EOL	IMAGE_THUNK_DATA32
+10046280	EOL	IMAGE_THUNK_DATA32
+10046284	EOL	IMAGE_THUNK_DATA32
+10046288	EOL	IMAGE_THUNK_DATA32
+1004628c	EOL	IMAGE_THUNK_DATA32
+10046290	EOL	IMAGE_THUNK_DATA32
+10046294	EOL	IMAGE_THUNK_DATA32
+10046298	EOL	IMAGE_THUNK_DATA32
+1004629c	EOL	IMAGE_THUNK_DATA32
+100462a0	EOL	IMAGE_THUNK_DATA32
+100462a4	EOL	IMAGE_THUNK_DATA32
+100462a8	EOL	IMAGE_THUNK_DATA32
+100462ac	EOL	IMAGE_THUNK_DATA32
+100462b0	EOL	IMAGE_THUNK_DATA32
+100462b4	EOL	IMAGE_THUNK_DATA32
+100462b8	EOL	IMAGE_THUNK_DATA32
+100462bc	EOL	IMAGE_THUNK_DATA32
+100462c0	EOL	IMAGE_THUNK_DATA32
+100462c4	EOL	IMAGE_THUNK_DATA32
+100462c8	EOL	IMAGE_THUNK_DATA32
+100462cc	EOL	IMAGE_THUNK_DATA32
+100462d0	EOL	IMAGE_THUNK_DATA32
+100462d4	EOL	IMAGE_THUNK_DATA32
+100462d8	EOL	IMAGE_THUNK_DATA32
+100462dc	EOL	IMAGE_THUNK_DATA32
+100462e0	EOL	IMAGE_THUNK_DATA32
+100462e4	EOL	IMAGE_THUNK_DATA32
+100462e8	EOL	IMAGE_THUNK_DATA32
+100462ec	EOL	IMAGE_THUNK_DATA32
+100462f0	EOL	IMAGE_THUNK_DATA32
+100462f4	EOL	IMAGE_THUNK_DATA32
+100462f8	EOL	IMAGE_THUNK_DATA32
+1004634c	PRE	372  GetVersion  <<not bound>>
+10046350	PRE	392  GlobalFree  <<not bound>>
+10046354	PRE	102  EnterCriticalSection  <<not bound>>
+10046358	PRE	449  LeaveCriticalSection  <<not bound>>
+1004635c	PRE	411  HeapCreate  <<not bound>>
+10046360	PRE	413  HeapDestroy  <<not bound>>
+10046364	PRE	409  HeapAlloc  <<not bound>>
+10046368	PRE	133  FatalAppExitA  <<not bound>>
+1004636c	PRE	85  DeleteCriticalSection  <<not bound>>
+10046370	PRE	610  SetEnvironmentVariableA  <<not bound>>
+10046374	PRE	34  CompareStringW  <<not bound>>
+10046378	PRE	33  CompareStringA  <<not bound>>
+1004637c	PRE	285  GetLocaleInfoW  <<not bound>>
+10046380	PRE	368  GetTimeZoneInformation  <<not bound>>
+10046384	PRE	369  GetUserDefaultLCID  <<not bound>>
+10046388	PRE	119  EnumSystemLocalesA  <<not bound>>
+1004638c	PRE	284  GetLocaleInfoA  <<not bound>>
+10046390	PRE	445  IsValidCodePage  <<not bound>>
+10046394	PRE	446  IsValidLocale  <<not bound>>
+10046398	PRE	27  CloseHandle  <<not bound>>
+1004639c	PRE	523  RaiseException  <<not bound>>
+100463a0	PRE	636  SetStdHandle  <<not bound>>
+100463a4	PRE	448  LCMapStringW  <<not bound>>
+100463a8	PRE	447  LCMapStringA  <<not bound>>
+100463ac	PRE	662  Sleep  <<not bound>>
+100463b0	PRE	305  GetOEMCP  <<not bound>>
+100463b4	PRE	185  GetACP  <<not bound>>
+100463b8	PRE	191  GetCPInfo  <<not bound>>
+100463bc	PRE	618  SetFilePointer  <<not bound>>
+100463c0	PRE	342  GetStringTypeW  <<not bound>>
+100463c4	PRE	339  GetStringTypeA  <<not bound>>
+100463c8	PRE	484  MultiByteToWideChar  <<not bound>>
+100463cc	PRE	434  IsBadCodePtr  <<not bound>>
+100463d0	PRE	651  SetUnhandledExceptionFilter  <<not bound>>
+100463d4	PRE	170  FlushFileBuffers  <<not bound>>
+100463d8	PRE	685  UnhandledExceptionFilter  <<not bound>>
+100463dc	PRE	264  GetEnvironmentStringsW  <<not bound>>
+100463e0	PRE	262  GetEnvironmentStrings  <<not bound>>
+100463e4	PRE	722  WideCharToMultiByte  <<not bound>>
+100463e8	PRE	179  FreeEnvironmentStringsW  <<not bound>>
+100463ec	PRE	178  FreeEnvironmentStringsA  <<not bound>>
+100463f0	PRE	336  GetStartupInfoA  <<not bound>>
+100463f4	PRE	277  GetFileType  <<not bound>>
+100463f8	PRE	621  SetHandleCount  <<not bound>>
+100463fc	PRE	249  GetCurrentThread  <<not bound>>
+10046400	PRE	426  InitializeCriticalSection  <<not bound>>
+10046404	PRE	373  GetVersionExA  <<not bound>>
+10046408	PRE	265  GetEnvironmentVariableA  <<not bound>>
+1004640c	PRE	699  VirtualAlloc  <<not bound>>
+10046410	PRE	703  VirtualFree  <<not bound>>
+10046414	PRE	415  HeapFree  <<not bound>>
+10046418	PRE	418  HeapReAlloc  <<not bound>>
+1004641c	PRE	432  InterlockedIncrement  <<not bound>>
+10046420	PRE	501  OutputDebugStringA  <<not bound>>
+10046424	PRE	429  InterlockedDecrement  <<not bound>>
+10046428	PRE	735  WriteFile  <<not bound>>
+1004642c	PRE	338  GetStdHandle  <<not bound>>
+10046430	PRE	81  DebugBreak  <<not bound>>
+10046434	PRE	292  GetModuleFileNameA  <<not bound>>
+10046438	PRE	559  RtlUnwind  <<not bound>>
+1004643c	PRE	440  IsBadWritePtr  <<not bound>>
+10046440	PRE	437  IsBadReadPtr  <<not bound>>
+10046444	PRE	423  HeapValidate  <<not bound>>
+10046448	PRE	125  ExitProcess  <<not bound>>
+1004644c	PRE	670  TerminateProcess  <<not bound>>
+10046450	PRE	247  GetCurrentProcess  <<not bound>>
+10046454	PRE	202  GetCommandLineA  <<not bound>>
+10046458	PRE	385  GlobalAlloc  <<not bound>>
+1004645c	PRE	450  LoadLibraryA  <<not bound>>
+10046460	PRE	250  GetCurrentThreadId  <<not bound>>
+10046464	PRE	318  GetProcAddress  <<not bound>>
+10046468	PRE	294  GetModuleHandleA  <<not bound>>
+1004646c	PRE	282  GetLastError  <<not bound>>
+10046470	PRE	577  SetConsoleCtrlHandler  <<not bound>>
+10046474	PRE	625  SetLastError  <<not bound>>
+10046478	PRE	677  TlsSetValue  <<not bound>>
+1004647c	PRE	674  TlsAlloc  <<not bound>>
+10046480	PRE	675  TlsFree  <<not bound>>
+10046484	PRE	676  TlsGetValue  <<not bound>>
+100464f0	PRE	89  CreateWindowExA  <<not bound>>
+100464f4	PRE	657  UpdateWindow  <<not bound>>
+100464f8	PRE	142  DestroyWindow  <<not bound>>
+100464fc	PRE	560  SetForegroundWindow  <<not bound>>
+10046500	PRE	614  ShowCursor  <<not bound>>
+10046504	PRE	618  ShowWindow  <<not bound>>
+10046538	PRE	47  _grHints@8  <<not bound>>
+1004653c	PRE	82  _grTexDownloadMipMap@16  <<not bound>>
+10046540	PRE	90  _grTexMinAddress@4  <<not bound>>
+10046544	PRE	89  _grTexMaxAddress@4  <<not bound>>
+10046548	PRE	46  _grGlideShutdown@0  <<not bound>>
+1004654c	PRE	65  _grSstQueryBoards@4  <<not bound>>
+10046550	PRE	43  _grGlideInit@0  <<not bound>>
+10046554	PRE	66  _grSstQueryHardware@4  <<not bound>>
+10046558	PRE	51  _grLfbReadRegion@28  <<not bound>>
+1004655c	PRE	95  _grTexSource@16  <<not bound>>
+10046560	PRE	34  _grDrawPolygonVertexList@8  <<not bound>>
+10046564	PRE	2  _grAADrawPoint@4  <<not bound>>
+10046568	PRE	32  _grDrawPoint@4  <<not bound>>
+1004656c	PRE	1  _grAADrawLine@8  <<not bound>>
+10046570	PRE	29  _grDrawLine@8  <<not bound>>
+10046574	PRE	35  _grDrawTriangle@12  <<not bound>>
+10046578	PRE	75  _grSstWinClose@0  <<not bound>>
+1004657c	PRE	13  _grBufferSwap@4  <<not bound>>
+10046580	PRE	61  _grSstIdle@0  <<not bound>>
+10046584	PRE	11  _grBufferClear@12  <<not bound>>
+10046588	PRE	70  _grSstSelect@4  <<not bound>>
+1004658c	PRE	76  _grSstWinOpen@28  <<not bound>>
+10046590	PRE	36  _grErrorSetCallback@4  <<not bound>>
+10046594	PRE	27  _grDisableAllEffects@0  <<not bound>>
+10046598	PRE	56  _grRenderBuffer@4  <<not bound>>
+1004659c	PRE	22  _grCullMode@4  <<not bound>>
+100465a0	PRE	25  _grDepthBufferMode@4  <<not bound>>
+100465a4	PRE	24  _grDepthBufferFunction@4  <<not bound>>
+100465a8	PRE	26  _grDepthMask@4  <<not bound>>
+100465ac	PRE	38  _grFogMode@4  <<not bound>>
+100465b0	PRE	41  _grGlideGetState@4  <<not bound>>
+100465b4	PRE	6  _grAlphaBlendFunction@16  <<not bound>>
+100465b8	PRE	18  _grColorCombine@20  <<not bound>>
+100465bc	PRE	21  _grConstantColorValue@4  <<not bound>>
+100465c0	PRE	7  _grAlphaCombine@20  <<not bound>>
+100465c4	PRE	37  _grFogColorValue@4  <<not bound>>
+100465c8	PRE	79  _grTexCombine@28  <<not bound>>
+100465cc	PRE	9  _grAlphaTestFunction@4  <<not bound>>
+100465d0	PRE	10  _grAlphaTestReferenceValue@4  <<not bound>>
+100465d4	PRE	87  _grTexFilterMode@12  <<not bound>>
+100465d8	PRE	91  _grTexMipMapMode@12  <<not bound>>
+100465dc	PRE	78  _grTexClampMode@12  <<not bound>>
+100465e0	PRE	15  _grChromakeyMode@4  <<not bound>>
+100465e4	PRE	16  _grChromakeyValue@4  <<not bound>>
+100465e8	PRE	85  _grTexDownloadTable@12  <<not bound>>
+100465ec	PRE	44  _grGlideSetState@4  <<not bound>>
+100465f0	PRE	77  _grTexCalcMemRequired@16  <<not bound>>
+100465f4	PRE	17  _grClipWindow@16  <<not bound>>
+10046648	PLATE	IMAGE_IMPORT_BY_NAME
+10046656	PLATE	IMAGE_IMPORT_BY_NAME
+10046664	PLATE	IMAGE_IMPORT_DESCRIPTOR - DLL NAME
+10046672	PLATE	IMAGE_IMPORT_BY_NAME
+10046682	PLATE	IMAGE_IMPORT_BY_NAME
+10046690	PLATE	IMAGE_IMPORT_BY_NAME
+100466a2	PLATE	IMAGE_IMPORT_BY_NAME
+100466b0	PLATE	IMAGE_IMPORT_BY_NAME
+100466c6	PLATE	IMAGE_IMPORT_BY_NAME
+100466d6	PLATE	IMAGE_IMPORT_DESCRIPTOR - DLL NAME
+100466e2	PLATE	IMAGE_IMPORT_BY_NAME
+100466f6	PLATE	IMAGE_IMPORT_BY_NAME
+10046712	PLATE	IMAGE_IMPORT_BY_NAME
+10046728	PLATE	IMAGE_IMPORT_BY_NAME
+10046742	PLATE	IMAGE_IMPORT_BY_NAME
+10046758	PLATE	IMAGE_IMPORT_BY_NAME
+1004676e	PLATE	IMAGE_IMPORT_BY_NAME
+10046784	PLATE	IMAGE_IMPORT_BY_NAME
+1004679a	PLATE	IMAGE_IMPORT_BY_NAME
+100467b0	PLATE	IMAGE_IMPORT_BY_NAME
+100467d0	PLATE	IMAGE_IMPORT_BY_NAME
+100467ea	PLATE	IMAGE_IMPORT_BY_NAME
+100467fe	PLATE	IMAGE_IMPORT_BY_NAME
+10046814	PLATE	IMAGE_IMPORT_BY_NAME
+1004682a	PLATE	IMAGE_IMPORT_BY_NAME
+10046844	PLATE	IMAGE_IMPORT_BY_NAME
+1004685a	PLATE	IMAGE_IMPORT_BY_NAME
+10046876	PLATE	IMAGE_IMPORT_BY_NAME
+1004688c	PLATE	IMAGE_IMPORT_BY_NAME
+1004689c	PLATE	IMAGE_IMPORT_BY_NAME
+100468ae	PLATE	IMAGE_IMPORT_BY_NAME
+100468ca	PLATE	IMAGE_IMPORT_BY_NAME
+100468e2	PLATE	IMAGE_IMPORT_BY_NAME
+100468f2	PLATE	IMAGE_IMPORT_BY_NAME
+10046906	PLATE	IMAGE_IMPORT_BY_NAME
+10046914	PLATE	IMAGE_IMPORT_BY_NAME
+1004692e	PLATE	IMAGE_IMPORT_BY_NAME
+10046946	PLATE	IMAGE_IMPORT_BY_NAME
+1004695a	PLATE	IMAGE_IMPORT_BY_NAME
+1004696c	PLATE	IMAGE_IMPORT_BY_NAME
+10046980	PLATE	IMAGE_IMPORT_BY_NAME
+10046990	PLATE	IMAGE_IMPORT_BY_NAME
+100469a2	PLATE	IMAGE_IMPORT_BY_NAME
+100469b6	PLATE	IMAGE_IMPORT_BY_NAME
+100469cc	PLATE	IMAGE_IMPORT_BY_NAME
+100469dc	PLATE	IMAGE_IMPORT_BY_NAME
+100469ee	PLATE	IMAGE_IMPORT_BY_NAME
+10046a00	PLATE	IMAGE_IMPORT_BY_NAME
+10046a14	PLATE	IMAGE_IMPORT_BY_NAME
+10046a32	PLATE	IMAGE_IMPORT_BY_NAME
+10046a44	PLATE	IMAGE_IMPORT_BY_NAME
+10046a5a	PLATE	IMAGE_IMPORT_BY_NAME
+10046a72	PLATE	IMAGE_IMPORT_BY_NAME
+10046a84	PLATE	IMAGE_IMPORT_BY_NAME
+10046a9a	PLATE	IMAGE_IMPORT_BY_NAME
+10046ab0	PLATE	IMAGE_IMPORT_BY_NAME
+10046ac6	PLATE	IMAGE_IMPORT_BY_NAME
+10046adc	PLATE	IMAGE_IMPORT_BY_NAME
+10046af6	PLATE	IMAGE_IMPORT_DESCRIPTOR - DLL NAME
+10046b02	PLATE	IMAGE_IMPORT_BY_NAME
+10046b18	PLATE	IMAGE_IMPORT_BY_NAME
+10046b24	PLATE	IMAGE_IMPORT_BY_NAME
+10046b34	PLATE	IMAGE_IMPORT_BY_NAME
+10046b44	PLATE	IMAGE_IMPORT_BY_NAME
+10046b54	PLATE	IMAGE_IMPORT_BY_NAME
+10046b62	PLATE	IMAGE_IMPORT_BY_NAME
+10046b76	PLATE	IMAGE_IMPORT_BY_NAME
+10046b8a	PLATE	IMAGE_IMPORT_BY_NAME
+10046b9c	PLATE	IMAGE_IMPORT_BY_NAME
+10046baa	PLATE	IMAGE_IMPORT_BY_NAME
+10046bc2	PLATE	IMAGE_IMPORT_BY_NAME
+10046bda	PLATE	IMAGE_IMPORT_BY_NAME
+10046bec	PLATE	IMAGE_IMPORT_BY_NAME
+10046c00	PLATE	IMAGE_IMPORT_BY_NAME
+10046c10	PLATE	IMAGE_IMPORT_BY_NAME
+10046c28	PLATE	IMAGE_IMPORT_BY_NAME
+10046c38	PLATE	IMAGE_IMPORT_BY_NAME
+10046c4e	PLATE	IMAGE_IMPORT_BY_NAME
+10046c5c	PLATE	IMAGE_IMPORT_BY_NAME
+10046c68	PLATE	IMAGE_IMPORT_BY_NAME
+10046c72	PLATE	IMAGE_IMPORT_BY_NAME
+10046c82	PLATE	IMAGE_IMPORT_BY_NAME
+10046c90	PLATE	IMAGE_IMPORT_BY_NAME
+10046ca4	PLATE	IMAGE_IMPORT_BY_NAME
+10046cc0	PLATE	IMAGE_IMPORT_BY_NAME
+10046cd8	PLATE	IMAGE_IMPORT_BY_NAME
+10046ce8	PLATE	IMAGE_IMPORT_BY_NAME
+10046cf4	PLATE	IMAGE_IMPORT_BY_NAME
+10046d02	PLATE	IMAGE_IMPORT_BY_NAME
+10046d12	PLATE	IMAGE_IMPORT_BY_NAME
+10046d1e	PLATE	IMAGE_IMPORT_BY_NAME
+10046d36	PLATE	IMAGE_IMPORT_BY_NAME
+10046d4c	PLATE	IMAGE_IMPORT_BY_NAME
+10046d64	PLATE	IMAGE_IMPORT_BY_NAME
+10046d72	PLATE	IMAGE_IMPORT_BY_NAME
+10046d7e	PLATE	IMAGE_IMPORT_BY_NAME
+10046d8c	PLATE	IMAGE_IMPORT_BY_NAME
+10046d9c	PLATE	IMAGE_IMPORT_BY_NAME
+10046db6	PLATE	IMAGE_IMPORT_BY_NAME
+10046dc6	PLATE	IMAGE_IMPORT_BY_NAME
+10046dd4	PLATE	IMAGE_IMPORT_BY_NAME
+10046de2	PLATE	IMAGE_IMPORT_BY_NAME
+10046df4	PLATE	IMAGE_IMPORT_BY_NAME
+10046e02	PLATE	IMAGE_IMPORT_BY_NAME
+10046e14	PLATE	IMAGE_IMPORT_BY_NAME
+10046e2e	PLATE	IMAGE_IMPORT_BY_NAME
+10046e48	PLATE	IMAGE_IMPORT_BY_NAME
+10046e5e	PLATE	IMAGE_IMPORT_BY_NAME
+10046e76	PLATE	IMAGE_IMPORT_BY_NAME
+10046e90	PLATE	IMAGE_IMPORT_BY_NAME
+10046eac	PLATE	IMAGE_IMPORT_BY_NAME
+10046ec0	PLATE	IMAGE_IMPORT_BY_NAME
+10046ede	PLATE	IMAGE_IMPORT_BY_NAME
+10046eee	PLATE	IMAGE_IMPORT_BY_NAME
+10046f04	PLATE	IMAGE_IMPORT_BY_NAME
+10046f16	PLATE	IMAGE_IMPORT_BY_NAME
+10046f28	PLATE	IMAGE_IMPORT_BY_NAME
+10046f3a	PLATE	IMAGE_IMPORT_BY_NAME
+10046f46	PLATE	IMAGE_IMPORT_BY_NAME
+10046f50	PLATE	IMAGE_IMPORT_BY_NAME
+10046f5c	PLATE	IMAGE_IMPORT_BY_NAME
+10046f64	PLATE	IMAGE_IMPORT_BY_NAME
+10046f74	PLATE	IMAGE_IMPORT_BY_NAME
+10046f84	PLATE	IMAGE_IMPORT_BY_NAME
+10046f94	PLATE	IMAGE_IMPORT_BY_NAME
+10046fa6	PLATE	IMAGE_IMPORT_BY_NAME
+10046fb4	PLATE	IMAGE_IMPORT_BY_NAME
+10046fc4	PLATE	IMAGE_IMPORT_BY_NAME
+10046fd6	PLATE	IMAGE_IMPORT_BY_NAME
+10046fe8	PLATE	IMAGE_IMPORT_BY_NAME
+10046ffe	PLATE	IMAGE_IMPORT_BY_NAME
+10047014	PLATE	IMAGE_IMPORT_BY_NAME
+1004702e	PLATE	IMAGE_IMPORT_BY_NAME
+10047040	PLATE	IMAGE_IMPORT_BY_NAME
+10047052	PLATE	IMAGE_IMPORT_BY_NAME
+10047064	PLATE	IMAGE_IMPORT_BY_NAME

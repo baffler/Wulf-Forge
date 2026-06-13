@@ -1,0 +1,4295 @@
+address	length	data_type	value
+0053c78c	38	string	MD5 part of OpenSSL 0.9.6g 9 Aug 2002
+0053c7b8	14	string	CSN UI WINDOW
+0053c7c8	20	string	Total download size
+0053c7dc	8	string	KBytes
+0053c7e4	8	string	MBytes
+0053c7ec	29	string	[csnuilib] command line: %s\n
+0053c80c	16	string	Times New Roman
+0053c81c	16	string	Package Updater
+0053c838	22	string	%03.0f%%     %4.2f %s
+0053c850	23	string	%03.0f%%     %04.0f %s
+0053c870	22	string	Total files to update
+0053c888	6	string	Files
+0053c890	23	string	can't unregister class
+0053c8a8	37	string	[csnuilib] current package path: %s\n
+0053c8d0	49	string	fatal error: can't get current working directory
+0053ccbc	43	string	Application transferred too many scanlines
+0053cce8	43	string	Invalid SOS parameters for sequential JPEG
+0053cd14	56	string	Corrupt JPEG data: found marker 0x%02x instead of RST%d
+0053cd4c	27	string	Premature end of JPEG file
+0053cd68	46	string	Warning: unknown JFIF revision number %d.%02d
+0053cd98	36	string	Corrupt JPEG data: bad Huffman code
+0053cdbc	49	string	Corrupt JPEG data: premature end of data segment
+0053cdf0	60	string	Corrupt JPEG data: %u extraneous bytes before marker 0x%02x
+0053ce30	66	string	Inconsistent progression sequence for component %d coefficient %d
+0053ce74	38	string	Unknown Adobe color transform code %d
+0053ce9c	23	string	Obtained XMS handle %u
+0053ceb4	20	string	Freed XMS handle %u
+0053cec8	52	string	Unrecognized component IDs %d %d %d, assuming YCbCr
+0053cefc	54	string	JFIF extension marker: RGB thumbnail image, length %u
+0053cf34	58	string	JFIF extension marker: palette thumbnail image, length %u
+0053cf70	68	string	JFIF extension marker: JPEG-compressed thumbnail image, length %u
+0053cfb4	25	string	Opened temporary file %s
+0053cfd0	25	string	Closed temporary file %s
+0053cfec	29	string	\s Ss=%d, Se=%d, Ah=%d, Al=%d
+0053d00c	30	string	\s   Component %d: dc=%d ac=%d
+0053d02c	29	string	Start Of Scan: %d components
+0053d04c	15	string	Start of Image
+0053d05c	31	string	\s   Component %d: %dhx%dv q=%d
+0053d07c	58	string	Start Of Frame 0x%02x: width=%u, height=%u, components=%d
+0053d0b8	57	string	Smoothing not supported with nonstandard sampling ratios
+0053d0f4	6	string	RST%d
+0053d0fc	37	string	At marker 0x%02x, recovery action %d
+0053d124	36	string	Selected %d colors for quantization
+0053d148	24	string	Quantizing to %d colors
+0053d160	35	string	Quantizing to %d = %d*%d*%d colors
+0053d184	40	string	\s       %4u %4u %4u %4u %4u %4u %4u %4u
+0053d1ac	25	string	Unexpected marker 0x%02x
+0053d1c8	39	string	Miscellaneous marker 0x%02x, length %u
+0053d1f0	33	string	\s   with %d x %d thumbnail image
+0053d214	46	string	JFIF extension marker: type 0x%02x, length %u
+0053d244	60	string	Warning: thumbnail image size does not match data length %u
+0053d280	53	string	JFIF APP0 marker: version %d.%02d, density %dx%d  %d
+0053d2b8	40	string	\s       %3d %3d %3d %3d %3d %3d %3d %3d
+0053d2e0	13	string	End Of Image
+0053d2f0	23	string	Obtained EMS handle %u
+0053d308	20	string	Freed EMS handle %u
+0053d31c	27	string	Define Restart Interval %u
+0053d338	43	string	Define Quantization Table %d  precision %d
+0053d364	28	string	Define Huffman Table 0x%02x
+0053d380	39	string	Define Arithmetic Table 0x%02x: 0x%02x
+0053d3a8	44	string	Unknown APP14 marker (not Adobe), length %u
+0053d3d4	42	string	Unknown APP0 marker (not JFIF), length %u
+0053d400	66	string	Adobe APP14 marker: version %d, flags 0x%04x 0x%04x, transform %d
+0053d444	62	string	Caution: quantization tables are too coarse for baseline JPEG
+0053d484	16	string	6b  27-Mar-1998
+0053d494	35	string	Copyright (C) 1998, Thomas G. Lane
+0053d4b8	20	string	Write to XMS failed
+0053d4cc	21	string	Read from XMS failed
+0053d4e4	39	string	Image too wide for this implementation
+0053d50c	35	string	Virtual array controller messed up
+0053d530	31	string	Unsupported marker type 0x%02x
+0053d550	42	string	Application transferred too few scanlines
+0053d57c	54	string	Write failed on temporary file --- out of disk space?
+0053d5b4	30	string	Seek failed on temporary file
+0053d5d4	30	string	Read failed on temporary file
+0053d5f4	35	string	Failed to create temporary file %s
+0053d618	44	string	Invalid JPEG file structure: SOS before SOF
+0053d644	45	string	Invalid JPEG file structure: two SOI markers
+0053d674	42	string	Unsupported JPEG process: SOF type 0x%02x
+0053d6a0	48	string	Invalid JPEG file structure: missing SOS marker
+0053d6d0	45	string	Invalid JPEG file structure: two SOF markers
+0053d700	39	string	Cannot quantize to more than %d colors
+0053d728	40	string	Cannot quantize to fewer than %d colors
+0053d750	46	string	Cannot quantize more than %d color components
+0053d780	30	string	Insufficient memory (case %d)
+0053d7a0	43	string	Not a JPEG file: starts with 0x%02x 0x%02x
+0053d7cc	42	string	Quantization table 0x%02x was not defined
+0053d7f8	34	string	JPEG datastream contains no image
+0053d81c	37	string	Huffman table 0x%02x was not defined
+0053d844	28	string	Backing store not supported
+0053d860	46	string	Requested feature was omitted at compile time
+0053d890	20	string	Not implemented yet
+0053d8a4	39	string	Invalid color quantization mode change
+0053d8cc	39	string	Scan script does not transmit all data
+0053d8f4	62	string	Cannot transcode due to multiple use of quantization table %d
+0053d934	28	string	Premature end of input file
+0053d950	17	string	Empty input file
+0053d964	47	string	Maximum supported image dimension is %u pixels
+0053d994	33	string	Missing Huffman code table entry
+0053d9b8	33	string	Huffman code size table overflow
+0053d9dc	40	string	Fractional sampling not implemented yet
+0053da04	47	string	Output file write error --- out of disk space?
+0053da34	22	string	Input file read error
+0053da4c	33	string	Didn't expect more than one scan
+0053da70	20	string	Write to EMS failed
+0053da84	21	string	Read from EMS failed
+0053da9c	37	string	Empty JPEG image (DNL not supported)
+0053dac4	19	string	Bogus DQT index %d
+0053dad8	19	string	Bogus DHT index %d
+0053daec	21	string	Bogus DAC value 0x%x
+0053db04	19	string	Bogus DAC index %d
+0053db18	37	string	Unsupported color conversion request
+0053db40	38	string	Too many color components: %d, max %d
+0053db68	37	string	CCIR601 sampling not implemented yet
+0053db90	28	string	Suspension not allowed here
+0053dbac	43	string	Buffer passed to JPEG library is too small
+0053dbd8	27	string	Bogus virtual array access
+0053dbf8	77	string	JPEG parameter struct mismatch: library thinks size is %u, caller expects %u
+0053dc48	42	string	Improper call to JPEG library in state %d
+0053dc74	32	string	Invalid scan script at entry %d
+0053dc94	23	string	Bogus sampling factors
+0053dcac	55	string	Invalid progressive parameters at scan script entry %d
+0053dce4	55	string	Invalid progressive parameters Ss=%d Se=%d Ah=%d Al=%d
+0053dd1c	35	string	Unsupported JPEG data precision %d
+0053dd40	28	string	Invalid memory pool code %d
+0053dd5c	48	string	Sampling factors too large for interleaved scan
+0053dd8c	61	string	Wrong JPEG library version: library is %d, caller expects %d
+0053ddcc	20	string	Bogus marker length
+0053dde0	22	string	Bogus JPEG colorspace
+0053ddf8	23	string	Bogus input colorspace
+0053de10	31	string	Bogus Huffman table definition
+0053de30	40	string	IDCT output block size %d not supported
+0053de58	29	string	DCT coefficient out of range
+0053de78	31	string	Invalid component ID %d in SOS
+0053de98	26	string	Bogus buffer control mode
+0053deb4	37	string	MAX_ALLOC_CHUNK is wrong, please fix
+0053dedc	32	string	ALIGN_TYPE is wrong, please fix
+0053defc	57	string	Sorry, there are legal restrictions on arithmetic coding
+0053df38	22	string	Bogus message code %d
+0053e154	6	string	%ld%c
+0053e15c	8	string	JPEGMEM
+0053e38f	45	string	?Do not own input buffer: truncating input
+0053e3bc	48	string	Could not resize input buffer: truncating input
+0053e3ec	41	string	Packet is larger than allocated buffer:\s
+0053e418	37	string	Do not own input buffer: not packing
+0053e440	43	string	Could not resize input buffer: not packing
+0053e46c	30	string	Buffer too small to pack bits
+0053e48c	32	string	Unknown nb_mode_query request:\s
+0053e4ac	32	string	Unknown wb_mode_query request:\s
+0053eb6c	31	string	ultra-wideband (sub-band CELP)
+0053eb8c	25	string	wideband (sub-band CELP)
+0053eba8	11	string	narrowband
+0053ece3	41	string	BUnknown speex_preprocess_ctl request:\s
+0053ed0f	21	string	GFatal error: %s\n
+0053ed24	13	string	warning: %s\n
+0053ed34	16	string	warning: %s %d\n
+0053f2e5	47	string	p}?Invalid mode encountered: corrupted stream?
+0053f314	25	string	Unknown nb_ctl request:\s
+0053f907	21	string	?No fixed codebook
+0053f91c	34	string	No pitch prediction, what's wrong
+0053f978	55	string	More than two wideband layers found: corrupted stream?
+0053f9b0	53	string	Invalid wideband mode encountered: corrupted stream?
+0053f9e8	53	string	Invalid wideband mode encountered. Corrupted stream?
+005416b4	15	string	use_damper %d\n
+005416c4	12	string	abs_out %f\n
+005416d0	14	string	mul_prime %f\n
+005416e0	18	string	abs_max_prime %f\n
+005416f4	14	string	mul_error %f\n
+00541704	18	string	abs_max_error %f\n
+00541718	38	string	Could not find feedback table files!\n
+00541740	15	string	abs_out %.20f\n
+00541750	18	string	mul_prime %.20f\n\n
+00541764	21	string	abs_max_prime %.20f\n
+0054177c	17	string	mul_error %.20f\n
+00541790	21	string	abs_max_error %.20f\n
+005417b0	6	string	.atbl
+005417b8	12	string	data/tables
+005417c4	15	string	../data/tables
+005417d4	8	string	default
+005417dc	14	string	NOT_CATALOGED
+005417ec	9	string	TANK_RAM
+005417f8	15	string	TANK_SCRAPE_14
+00541808	15	string	TANK_SCRAPE_13
+00541818	15	string	TANK_SCRAPE_12
+00541828	15	string	TANK_SCRAPE_11
+00541838	15	string	TANK_SCRAPE_10
+00541848	14	string	TANK_SCRAPE_9
+00541858	14	string	TANK_SCRAPE_8
+00541868	14	string	TANK_SCRAPE_7
+00541878	14	string	TANK_SCRAPE_6
+00541888	14	string	TANK_SCRAPE_5
+00541898	14	string	TANK_SCRAPE_4
+005418a8	14	string	TANK_SCRAPE_3
+005418b8	14	string	TANK_SCRAPE_2
+005418c8	14	string	TANK_SCRAPE_1
+005418d8	12	string	TANK_SCRAPE
+005418e4	12	string	TANK_BUMP_4
+005418f0	12	string	TANK_BUMP_2
+005418fc	12	string	TANK_BUMP_1
+00541908	12	string	TANK_BANG_2
+00541914	12	string	TANK_BANG_1
+00541920	10	string	TANK_JUMP
+0054192c	15	string	TANK_POWERDOWN
+0054193c	13	string	TANK_TAKEOFF
+0054194c	15	string	TANK_TOUCHDOWN
+0054195c	18	string	UPLINK_DEACTIVATE
+00541970	16	string	UPLINK_ACTIVATE
+00541980	13	string	MISSILE_DOWN
+00541990	11	string	MISSILE_UP
+0054199c	13	string	CARGO_PICKUP
+005419ac	11	string	CARGO_DROP
+005419b8	6	string	%s_%s
+005419d0	6	string	.misc
+005419d8	14	string	zero_push %f\n
+005419e8	19	string	degen_on_slope %d\n
+005419fc	16	string	slope_react %f\n
+00541a0c	15	string	base_react %f\n
+00541a1c	20	string	roll_strafe_fac %f\n
+00541a30	18	string	roll_turn_fac %f\n
+00541a44	13	string	roll_max %f\n
+00541a54	13	string	tilt_max %f\n
+00541a64	17	string	roll_err_mag %f\n
+00541a78	17	string	tilt_err_mag %f\n
+00541a8c	18	string	jet_abate_max %f\n
+00541aa0	17	string	max_xy_speed %f\n
+00541ab4	20	string	zero_push       %f\n
+00541ac8	20	string	degen_on_slope  %d\n
+00541adc	20	string	slope_react     %f\n
+00541af0	20	string	base_react      %f\n
+00541b04	20	string	roll_turn_fac   %f\n
+00541b18	20	string	roll_max        %f\n
+00541b2c	20	string	tilt_max        %f\n
+00541b40	20	string	roll_err_mag    %f\n
+00541b54	20	string	tilt_err_mag    %f\n
+00541b68	20	string	jet_abate_max   %f\n
+00541b7c	20	string	max_xy_speed    %f\n
+00541b90	9	string	jet_misc
+00541b9c	11	string	speed_roll
+00541ba8	10	string	jet_abate
+00541bb4	20	string	jet_height_consider
+00541bc8	11	string	jet_height
+00541bd4	10	string	jet_speed
+00541be0	15	string	jet_slow_react
+00541bf0	15	string	jet_fast_react
+00541c00	6	string	medic
+00541c18	7	string	%.20f\n
+00541c20	8	string	\n%s %d\n
+00541c28	6	string	%s %d
+00541c30	23	string	[%%.%df,%%.%df,%%.%df]
+00541c4f	13	string	>contrail
+00541c60	10	string	cargo_pos
+00541c6c	12	string	missile_dir
+00541c78	12	string	missile_pos
+00541c9f	13	string	?Gun Turret
+00541ce6	18	string	r@25mm Dual Gun
+00541d06	14	string	I@Machine Gun
+00541d27	77	string	?%s:%d:  entity_info not yet initialized (wrong sequence of initialization)\n
+00541d74	28	string	..\\shared\\weapon_system.cpp
+00541d90	6	string	Maser
+00541d98	6	string	Flare
+00541da0	15	string	Cruise Missile
+00541db0	8	string	Caltrop
+00541db8	8	string	Thumper
+00541dc0	8	string	Piercer
+00541dd0	12	string	Pulse Shell
+00541ddc	14	string	Heavy Missile
+00541dec	7	string	Hunter
+00541df4	14	string	Short Missile
+00541e04	12	string	Repair Beam
+00541e10	11	string	Autocannon
+00541e1c	40	string	<<* CORRUPT ENTITY [TYPE NOT VALID] *>>
+00541e44	13	string	NULL POINTER
+00541e58	64	string	FATAL CONDITION: %s[%d] visible: %d is still in the OID TABLE!\n
+00541e98	12	string	\n\nIn %s:%d\n
+00541ea4	21	string	..\\shared\\entity.cpp
+00541ed8	8	string	ILLEGAL
+00541ee0	12	string	Ground Unit
+00541eec	11	string	Space Unit
+00541ef8	7	string	Weapon
+00541f00	12	string	Manned Unit
+00541f0c	35	string	%s %d: ENTITY[%d] is not defined!\n
+00541f30	26	string	..\\shared\\entity_info.cpp
+00541f4c	11	string	Decoration
+00541f58	8	string	Spy Bug
+00541f63	13	string	BDarklight
+00541f70	7	string	Portal
+00541f78	8	string	Skypump
+00541f82	22	string	HDMissile Launcher
+00541f98	19	string	Heavy Missile Silo
+00541fac	12	string	Flak Turret
+00541fbb	9	string	DShield
+00541fc4	11	string	Repair Pad
+00541fd3	13	string	ERefuel Pad
+00541fe0	11	string	Power Cell
+00541fee	18	string	zDSpace Explosion
+00542000	14	string	Particle Beam
+00542010	8	string	Torpedo
+00542018	10	string	Cargo Box
+00542024	13	string	Mortar Shell
+00542034	12	string	Aereal Bomb
+00542040	13	string	Orbital Bomb
+0054205a	14	string	HBFlak Shell
+00542068	10	string	Transport
+00542074	7	string	Bomber
+0054207c	17	string	Assault Platform
+00542090	6	string	Scout
+005420a0	24	string	\tTitle: %s Streams: %d\n
+005420b8	38	string	\nGraph Category Dump: <%s> %d graphs\n
+005420e0	12	string	/tmp/%s.log
+005420ec	11	string	%d @ %ld:\s
+005420f8	27	string	..\\shared\\vehicle_info.cpp
+00542114	19	string	%s source is NULL\n
+00542128	7	string	(null)
+00542130	26	string	Unable to find map '%s'!\n
+0054215c	16	string	Mb`?undefined
+00542184	28	string	!!! Failed to load shapes!\n
+005421a0	15	string	../data/shapes
+005421b4	44	string	%d %.12f %.12f %.12f  %.12f %.12f %.12f %d\n
+005421e0	13	string	saving %s%d\s
+005421f0	9	string	NOTFOUND
+00542204	8	string	* %s %d
+0054220c	10	string	mapstates
+00542220	35	string	DECORATION SUCCESS %d, wanted %d!\n
+00542244	7	string	t: %s\n
+0054224c	33	string	%d %d %lf %lf %lf %lf %lf %lf %d
+00542270	30	string	CARGO SUCCESS %d, wanted %d!\n
+00542290	33	string	%c %d %lf %lf %lf %lf %lf %lf %d
+005422b4	24	string	SUCCESS %d, wanted %d!\n
+005422cc	9	string	buf: %s\n
+005422d8	30	string	%d %lf %lf %lf %lf %lf %lf %d
+005422f8	41	string	Unable to open startstate file! '%s'\n\n\n\n
+00542324	12	string	unit_box
+00542340	12	string	darklight_1
+0054234c	12	string	darklight_2
+00542358	12	string	portal_1
+00542364	12	string	portal_2
+00542370	12	string	skypump_1
+0054237c	12	string	skypump_2
+00542388	20	string	missile_launcher_1
+0054239c	20	string	missile_launcher_2
+005423b0	16	string	heavy_silo_1
+005423c0	16	string	heavy_silo_2
+005423d0	16	string	gun_turret_1
+005423e0	16	string	gun_turret_2
+005423f0	16	string	flak_turret_1
+00542400	16	string	flak_turret_2
+00542410	12	string	shield_1
+0054241c	12	string	shield_2
+00542428	12	string	repair_1
+00542434	12	string	repair_2
+00542458	8	string	torpedo
+00542460	12	string	spaceship_1
+0054246c	12	string	spaceship_2
+00542478	12	string	uplinkblue
+00542484	12	string	uplinkred
+00542490	8	string	cargo
+00542498	12	string	caltrop_1
+005424a4	12	string	caltrop_2
+005424b0	12	string	rocket_1
+005424bc	12	string	rocket_2
+005424c8	12	string	p_rocket_1
+005424d4	12	string	p_rocket_2
+005424e8	16	string	heavy_missile_1
+005424f8	16	string	heavy_missile_2
+00542508	12	string	missile_1
+00542514	12	string	missile_2
+00542520	12	string	s_missile_1
+0054252c	12	string	s_missile_2
+00542538	12	string	pulse_shell
+00542544	12	string	flak_shell
+00542550	7	string	bomber
+00542558	12	string	refuel_1
+00542564	12	string	refuel_2
+00542570	8	string	scout_1
+00542578	8	string	scout_2
+00542594	7	string	%s%c%s
+005425a4	10	string	\t%02d\t%s\n
+005425b0	42	string	hunt directories is not set ... quitting\n
+005425dc	9	string	binload:
+005425e8	24	string	ferror for binary load\n
+00542600	36	string	No path specified to look for [%s]\n
+00542640	11	string	LAST_SOUND
+0054264c	11	string	FLARE_SHOT
+00542658	6	string	FLARE
+00542660	17	string	SCOUT_REPAIRBEAM
+00542674	14	string	SCOUT_TAKEOFF
+00542684	16	string	SCOUT_POWERDOWN
+00542694	15	string	SCOUT_GUN_FIRE
+005426a4	15	string	SCOUT_INTERNAL
+005426b4	6	string	SCOUT
+005426bc	10	string	KEY_PRESS
+005426c8	9	string	NEW_UNIT
+005426d4	10	string	MINE_SCAN
+005426e0	15	string	CALTROP_FLIGHT
+005426f0	14	string	ZOOM_CONSTANT
+00542700	13	string	ZOOM_IN_STOP
+00542710	14	string	ZOOM_IN_START
+00542720	12	string	UPLINK_BEEP
+0054272c	13	string	PIERCER_SHOT
+0054273c	13	string	THUMPER_SHOT
+0054274c	17	string	PULSE_SHELL_SHOT
+00542760	18	string	THUMPER_EXPLOSION
+00542774	18	string	PIERCER_EXPLOSION
+00542788	15	string	TANK_EXPLOSION
+00542798	16	string	PULSE_EXPLOSION
+005427a8	23	string	ORBITAL_BOMB_EXPLOSION
+005427c0	12	string	SHIP_STRESS
+005427cc	15	string	HEALTH_WARNING
+005427dc	13	string	MESSAGE_HAIL
+005427ec	13	string	ZOOMOUT_TAIL
+005427fc	12	string	ZOOMOUT_MID
+00542808	13	string	ZOOMOUT_HEAD
+00542818	12	string	ZOOMIN_TAIL
+00542824	11	string	ZOOMIN_MID
+00542830	12	string	ZOOMIN_HEAD
+0054283c	13	string	ZOOM_AMBIENT
+0054284c	10	string	DARKLIGHT
+00542858	14	string	TANK_INTERNAL
+00542868	12	string	SELECT_MENU
+00542874	15	string	SELECT_SUBMENU
+00542884	17	string	SELECT_ITEM_DOWN
+00542898	15	string	SELECT_ITEM_UP
+005428a8	13	string	PULSE_FLIGHT
+005428b8	15	string	THUMPER_FLIGHT
+005428c8	15	string	PIERCER_FLIGHT
+005428d8	17	string	SENTRY_TURN_TAIL
+005428ec	19	string	SENTRY_TURN_MIDDLE
+00542900	17	string	SENTRY_TURN_HEAD
+00542914	11	string	TEST_SOUND
+00542920	9	string	INCOMING
+0054292c	20	string	TOURNAMENT_MODE_OFF
+00542940	19	string	TOURNAMENT_MODE_ON
+00542954	17	string	OUT_OF_FIRE_CONE
+00542968	17	string	SPACESHIP_WARPIN
+0054297c	20	string	SPACESHIP_EXPLOSION
+00542990	18	string	GENERIC_EXPLOSION
+005429a4	10	string	CLICK_ERR
+005429b0	12	string	CLICK_MAJOR
+005429bc	12	string	CLICK_MINOR
+005429c8	17	string	SENTRY_RAID_WARN
+005429dc	15	string	UNIT_EXPLOSION
+005429ec	10	string	REPAIRING
+005429f8	10	string	REFUELING
+00542a04	11	string	ENTER_GAME
+00542a10	15	string	MISSILE_RELOAD
+00542a20	16	string	MISSILE_RELEASE
+00542a30	15	string	MISSILE_FLIGHT
+00542a40	16	string	MISSILE_SCHWOOP
+00542a50	18	string	MISSILE_EXPLOSION
+00542a64	11	string	BULLET_HIT
+00542a70	12	string	BULLET_MISS
+00542a7c	13	string	SKYPUMP_UNIT
+00542a8c	12	string	ENERGY_UNIT
+00542a98	12	string	FLAK_FLIGHT
+00542aa4	10	string	FLAK_SHOT
+00542ab0	15	string	FLAK_EXPLOSION
+00542ac0	9	string	GUN_FIRE
+00542acc	6	string	ERROR
+00542ad4	14	string	invalid sound
+00542ae8	56	string	seriously unknown, almost definitely catastrophic error
+00542b20	37	string	unknown, probably catastrophic error
+00542b48	13	string	end of input
+00542b58	12	string	parse error
+00542b64	14	string	type mismatch
+00542b74	17	string	no such variable
+00542b88	9	string	no error
+00542b94	12	string	<directory>
+00542ba8	6	string	false
+00542bb0	7	string	string
+00542bc0	8	string	integer
+00542bc8	8	string	boolean
+00542be0	7	string	, got\s
+00542be8	13	string	\sarguments (
+00542bf8	6	string	%lf%n
+00542c00	7	string	%s %s\n
+00542c08	6	string	\n:%s\n
+00542c10	23	string	Type mismatch: wanted\s
+00542c28	9	string	Too many
+00542c34	8	string	maximum
+00542c3c	11	string	Not enough
+00542c50	25	string	Parse error at argument\s
+00542c6c	19	string	Unknown command: "
+00542c80	37	string	%s: Line %d: Error setting '%s': %s\n
+00542ca8	45	string	%s: Line %d: Directory '%s' does not exist.\n
+00542cd8	12	string	*uncharted*
+00542cff	41	string	<seed_uni: ijkl = %d -- out of range\n\n
+00542d37	49	string	@******************** Landscape load failed!\n
+00542d68	6	string	%d %f
+00542d70	6	string	%fx%f
+00542d78	6	string	%dx%d
+00542d80	6	string	/land
+00542da6	42	string	x?Unable to open file '%s' for writing!\n
+00542dd7	73	string	=does_line_hit_shpere didn't find intersection with constructed plane!\n
+00542e37	49	string	>v1 (%.5f, %.5f, %.5f)  v2 (%.5f, %.5f, %.5f)\n
+00542e68	14	string	v1 %x; v2 %x\n
+00542ebd	19	string	@U@gravity_perc
+00542ed0	24	string	max_speed_height_pickup
+00542ee8	13	string	max_altitude
+00542ef8	15	string	low_fuel_level
+00542f08	13	string	max_velocity
+00542f18	14	string	strafe_adjust
+00542f28	21	string	move_backward_adjust
+00542f40	20	string	move_forward_adjust
+00542f54	12	string	turn_adjust
+00542f77	37	string	?%s %d, make_request: points: %.1f\n
+00542f9c	26	string	..\\shared\\kudos_proto.cpp
+00542fb8	31	string	Kudos_Proto::KUDO_GRANT_UPDATE
+00542fd8	22	string	Kudos_Proto::RESPONSE
+00542ff0	12	string	endorsement
+00542ffc	12	string	%15s %.2lf\n
+00543008	7	string	points
+00543010	12	string	dst_account
+0054301c	12	string	dst_accname
+00543028	9	string	%15s %u\n
+00543034	12	string	src_account
+00543040	21	string	Kudos_Proto::REQUEST
+00543058	9	string	%15s %s\n
+00543064	6	string	ptype
+0054306c	19	string	Kudos_Proto::ERROR
+0054308b	25	string	?              %s %d\n
+005430a4	18	string	Assert fails: %s\n
+005430b8	19	string	kassert violation\n
+005430d8	6	string	%.0lf
+00543115	15	string	lQ@move_adjust
+00543140	6	string	[%s]\s
+00543148	18	string	%Y %B %d %H:%M:%S
+0054315c	8	string	_errlog
+005431c8	8	string	ceiling
+005431d0	10	string	very_high
+005431dc	10	string	turn_zero
+005431e8	10	string	turn_high
+005431f4	9	string	turn_low
+00543200	7	string	angfac
+00543208	13	string	low_airspeed
+00543218	12	string	forward_mag
+00543224	7	string	ay_mag
+0054322c	7	string	ax_mag
+0054325f	49	string	?we made space for... why did we use more?  \n
+00543290	54	string	there is memory corruption because we used more than\n
+005432c8	29	string	..\\shared\\collision\\cbsp.cpp
+005432fc	15	string	Timer problems
+0054330c	41	string	Your CPU has issues with keeping time...
+00543348	20	string	Private Sequence %d
+0054335c	48	string	got D_ERR (which is illegal) --> protocol error
+0054338c	6	string	D_ACK
+00543394	12	string	D_SET_START
+005433a0	12	string	D_HANDSHAKE
+005433ac	25	string	* Private In Stream %d *
+005433c8	33	string	D_HANDSHAKE: insane stream_count
+005433ec	9	string	D_IGNORE
+005433f8	23	string	** resending packet **
+00543410	10	string	CONNECTED
+00543420	7	string	UNUSED
+00543430	39	string	[NET] KILLING SOCKET:  IGNORING ERROR\n
+00543458	39	string	[NET] KILLING SOCKET:  %d --> %d (%s)\n
+00543480	27	string	[NET] KILLING SOCKET:  %d\n
+0054349c	17	string	non_block_socket
+005434b0	33	string	too many consecutive soft errors
+005434d4	20	string	net.cpp: tcp_read()
+005434e8	11	string	Con::Con()
+005434f4	14	string	out of memory
+00543504	7	string	%d.%s.
+0054350c	18	string	%S.%M.%H.%d.%B.%Y
+00543520	21	string	unsupported Net_type
+00543538	11	string	Con::write
+00543544	11	string	Con::match
+00543550	21	string	unsupported net type
+00543568	35	string	[NET] Adding local IP address: %s\n
+0054358c	56	string	EXPECTING dotted decimal entries in ip-file!\n\tNOT '%s'\n
+005435c4	12	string	%d.%d.%d.%d
+005435d0	27	string	[NET] local host name: %s\n
+005435ec	11	string	_extra_ips
+005435f8	35	string	can't get nodelay on a tcp socket\n
+0054361c	37	string	can't get keepalive on a tcp socket\n
+00543644	18	string	CON is corrupted.
+00543658	34	string	CON is unused (not setup/active).
+0054367c	14	string	Net::send_udp
+0054368c	11	string	%s %f: %s\n
+00543698	15	string	..\\net\\net.cpp
+005436a8	84	string	UDP socket is in the connected state, and it SHOULD NEVER BE IN THAT STATE ANYMORE!
+005436fc	19	string	Net::send_udp (NC)
+00543710	33	string	[NET] SCKT:  port<%hu>  ip<%lu>\n
+00543734	22	string	Net::init_accept bind
+0054374c	24	string	Net::init_accept socket
+00543764	21	string	Bad Internet Address
+0054377c	23	string	Net::read_udp recvfrom
+00543794	23	string	Net::makesocket socket
+005437ac	16	string	Net::makesocket
+005437bc	10	string	sin==NULL
+005437c8	19	string	can't find con ptr
+005437dc	12	string	Net::kill()
+005437e8	10	string	sad==NULL
+005437f4	56	string	[NET] FD_UDP: %3d [%s] (Net::init_multi_udp_ip_accept)\n
+0054382c	29	string	Net::init_accept getsockname
+0054384c	17	string	Net::init_accept
+00543860	17	string	unsupported type
+00543874	24	string	Net::init_accept listen
+0054388c	28	string	Net::init_accept setsockopt
+005438a8	36	string	Net::core_connect (UDP) getsockname
+005438cc	24	string	Net::core_connect (UDP)
+005438e4	18	string	makesocket fails.
+005438f8	26	string	Net::core_connect connect
+00543914	23	string	Net::core_connect bind
+0054392c	17	string	Net:core_connect
+00543940	25	string	not TCP or UDP specified
+0054395c	24	string	net.cpp: Net::connect()
+00543980	45	string	Can't split up the packet over TWO DATAGRAMs
+005439b0	56	string	Mem_buff::make_room (target bytes: %d) > (max bytes %d)
+005439e8	41	string	This is most likely a protocol missmatch
+00543a14	56	string	Mem_buff::retrieve_bits out of hunks while reading [%s]
+00543a4c	52	string	Mem_buff::grab_data out of hunks while reading [%s]
+00543a80	34	string	%s %d:  Had to fix a string '%s'\n
+00543aa4	20	string	..\\net\\mem_buff.cpp
+00543ab8	59	string	Mem_buff::skip_bytes out of hunks while skipping data [%s]
+00543af4	16	string	not initialized
+00543b04	45	string	setup should not be finalized at this time.\n
+00543b38	73	string	send_start: unresolved service request (%x) for packet %s (%d) [%s: %d]\n
+00543b84	20	string	..\\net\\protocol.cpp
+00543b98	46	string	send_start: inf.c is NULL, and should not be\n
+00543bc8	28	string	packet type is not in range
+00543be4	43	string	Proto::handler [%s, %d] <packet type = %d>
+00543c10	24	string	Proto::protocol_error()
+00543c28	12	string	%s [%s, %d]
+00543c34	13	string	default_recv
+00543c44	33	string	in range packet, but not defined
+00543c68	72	string	send_stop: unresolved service request (%x) for packet %s (%d) [%s: %d]\n
+00543cb0	17	string	Stream::expect()
+00543cc4	57	string	packet size > MAX_STREAM_DATA (probably a protcol error)
+00543d00	40	string	Stream::expect:  bad packet length: %d\n
+00543d28	15	string	are you there?
+00543d38	13	string	STREAM_CHECK
+00543d48	26	string	null packet received: %s\n
+00543d64	54	string	Stream::recv() --> abort_this_connection_immediately\n
+00543da0	65	string	Stream::recv() --> (type %d < %d --> support packet not allowed\n
+00543de4	38	string	\tNo Packets Sent Over This Interface\n
+00543e0c	43	string	%+20s : %12.4f : %12.4f : %12.4f : %12.0f\n
+00543e38	68	string	%+20s    Packets/Sec      Bytes/Sec      Bytes/Pac      Bits Total\n
+00543e7c	12	string	packet type
+00543e88	30	string	Time Spent For This Con is 0\n
+00543ea8	12	string	DGP Traffic
+00543eb4	24	string	(Duration: %.3f secs)\n\n
+00543ecc	12	string	STP Traffic
+00543ed8	41	string	\n\nNetwork Traffic Profile For Con [%x]:\s
+00543f04	12	string	/tmp/%s.not
+00543f10	51	string	%s:%d File_Out::add(%x, %d) (%d > (buff_size %d))\n
+00543f44	21	string	..\\net\\net_delay.cpp
+00543f5c	6	string	%s_%d
+00543f64	13	string	Unkown Error
+00543f74	19	string	WSANOTINITIALISED:
+00543f88	20	string	WSAVERNOTSUPPORTED:
+00543f9c	16	string	WSASYSNOTREADY:
+00543fac	12	string	WSAEDISCON:
+00543fb8	12	string	WSAEREMOTE:
+00543fc4	11	string	WSAESTALE:
+00543fd0	11	string	WSAEDQUOT:
+00543fdc	11	string	WSAEUSERS:
+00543fe8	13	string	WSAEPROCLIM:
+00543ff8	14	string	WSAENOTEMPTY:
+00544008	92	string	WSAEHOSTUNREACH: No route to the host was found.  Check the address, network, and then ISP.
+00544068	77	string	WSAEHOSTDOWN: The specified host is down.  Retry, or select another address.
+005440b8	17	string	WSAENAMETOOLONG:
+005440cc	10	string	WSAELOOP:
+005440d8	67	string	WSAECONNREFUSED: The connection was refused.  Try another address.
+0054411c	52	string	WSAETIMEDOUT: The connection timed out.  Try again.
+00544150	17	string	WSAETOOMANYREFS:
+00544164	14	string	WSAESHUTDOWN:
+00544174	54	string	WSAENOTCONN: Not yet connected to server.  Try again.
+005441b0	64	string	WSAEISCONN: Already connected to server.  Restart this porgram.
+005441f0	12	string	WSAENOBUFS:
+005441fc	54	string	WSAECONNRESET: Connection was reset by other machine.
+00544234	61	string	WSAECONNABORTED: Connection request was aborted.  Try again.
+00544278	71	string	WSAENETRESET: Network dropped connection because of reset.  Try again.
+005442c0	65	string	WSAENETUNREACH: The network is unreachable.  Check your Network.
+00544304	55	string	WSAENETDOWN: The network is down.  Check your Network.
+00544340	70	string	WSAEADDRNOTAVAIL: Address isn't available.  Kill conflicting Program.
+00544388	69	string	WSAEADDRINUSE: Address is already in use.  Kill conflicting Program.
+005443d0	17	string	WSAEAFNOSUPPORT:
+005443e4	17	string	WSAEPFNOSUPPORT:
+005443f8	15	string	WSAEOPNOTSUPP:
+00544408	20	string	WSAESOCKTNOSUPPORT:
+0054441c	20	string	WSAEPROTONOSUPPORT:
+00544430	16	string	WSAENOPROTOOPT:
+00544440	15	string	WSAEPROTOTYPE:
+00544450	13	string	WSAEMSGSIZE:
+00544460	17	string	WSAEDESTADDRREQ:
+00544474	13	string	WSAENOTSOCK:
+00544484	13	string	WSAEALREADY:
+00544494	16	string	WSAEINPROGRESS:
+005444a4	16	string	WSAEWOULDBLOCK:
+005444b4	11	string	WSAEMFILE:
+005444c0	11	string	WSAEINVAL:
+005444cc	11	string	WSAEFAULT:
+005444d8	11	string	WSAEACCES:
+005444e4	10	string	WSAEBADF:
+005444f0	35	string	WSAEINTR: Interrupted System Call.
+00544514	21	string	\tMax UDP Data  : %d\n
+0054452c	21	string	\tMax Sockets   : %d\n
+00544544	21	string	\tSystem Status : %s\n
+0054455c	21	string	\tDescription   : %s\n
+00544574	24	string	\tHigh version  : %d.%d\n
+0054458c	24	string	\tUsing Version : %d.%d\n
+005445a4	14	string	WSASTartup: \n
+005445b4	31	string	WSAStartup foo didn't work...\n
+005445d4	29	string	WSAClean foo didn't work...\n
+005445f4	8	string	%s: %s\n
+005445fc	12	string	Wulfram: %s
+00544610	15	string	bad allocation
+00544634	15	string	CorExitProcess
+00544644	12	string	mscoree.dll
+00544698	9	string	HH:mm:ss
+005446a4	20	string	dddd, MMMM dd, yyyy
+005446b8	9	string	MM/dd/yy
+005446cc	9	string	December
+005446d8	9	string	November
+005446e4	8	string	October
+005446ec	10	string	September
+005446f8	7	string	August
+00544710	6	string	April
+00544718	6	string	March
+00544720	9	string	February
+0054472c	8	string	January
+00544764	9	string	Saturday
+00544770	7	string	Friday
+00544778	9	string	Thursday
+00544784	10	string	Wednesday
+00544790	8	string	Tuesday
+00544798	7	string	Monday
+005447a0	7	string	Sunday
+005447c8	6	string	am/pm
+0054484c	18	string	Unknown exception
+00544880	14	unicode	(null)
+005448ec	14	string	EncodePointer
+005448fc	13	string	KERNEL32.DLL
+0054490c	14	string	DecodePointer
+0054491c	8	string	FlsFree
+00544924	12	string	FlsSetValue
+00544930	12	string	FlsGetValue
+0054493c	9	string	FlsAlloc
+00544948	16	string	runtime error\s
+00544958	16	string	TLOSS error\r\n
+00544968	16	string	SING error\r\n
+00544978	16	string	DOMAIN error\r\n
+00544988	156	string	R6034\r\nAn application has made an attempt to load the C runtime library incorrectly.\nPlease contact the application's support team for more information.\r\n
+00544a28	248	string	R6033\r\n- Attempt to use MSIL code from this assembly during native code initialization\nThis indicates a bug in your application. It is most likely the result of calling an MSIL-compiled (/clr) function from a native constructor or from DllMain.\r\n
+00544b20	52	string	R6032\r\n- not enough space for locale information\r\n
+00544b58	100	string	R6031\r\n- Attempt to initialize the CRT more than once.\nThis indicates a bug in your application.\r\n
+00544bbc	32	string	R6030\r\n- CRT not initialized\r\n
+00544bdc	40	string	R6028\r\n- unable to initialize heap\r\n
+00544c04	56	string	R6027\r\n- not enough space for lowio initialization\r\n
+00544c3c	56	string	R6026\r\n- not enough space for stdio initialization\r\n
+00544c74	40	string	R6025\r\n- pure virtual function call\r\n
+00544c9c	56	string	R6024\r\n- not enough space for _onexit/atexit table\r\n
+00544cd4	44	string	R6019\r\n- unable to open console device\r\n
+00544d00	36	string	R6018\r\n- unexpected heap error\r\n
+00544d24	48	string	R6017\r\n- unexpected multithread lock error\r\n
+00544d54	44	string	R6016\r\n- not enough space for thread data\r\n
+00544d80	152	string	\r\nThis application has requested the Runtime to terminate it in an unusual way.\nPlease contact the application's support team for more information.\r\n
+00544e18	44	string	R6009\r\n- not enough space for environment\r\n
+00544e44	44	string	R6008\r\n- not enough space for arguments\r\n
+00544e70	40	string	R6002\r\n- floating point not loaded\r\n
+00544e98	37	string	Microsoft Visual C++ Runtime Library
+00544ec4	23	string	<program name unknown>
+00544edc	26	string	Runtime Error!\n\nProgram:\s
+00544f88	6	string	UTF-8
+00544f90	9	string	UTF-16LE
+00544f9c	8	string	UNICODE
+00544fa4	38	string	InitializeCriticalSectionAndSpinCount
+00544fcc	13	string	kernel32.dll
+0054505c	6	string	floor
+00545074	6	string	exp10
+00545090	6	string	log10
+005450a0	24	string	SunMonTueWedThuFriSat
+005450b8	40	string	JanFebMarAprMayJunJulAugSepOctNovDec
+00545144	6	string	e+000
+0054515e	30	string	GAIsProcessorFeaturePresent
+0054517c	9	string	KERNEL32
+00545198	14	string	bad exception
+0054f180	22	string	Illegal byte sequence
+0054f198	20	string	Directory not empty
+0054f1ac	25	string	Function not implemented
+0054f1c8	19	string	No locks available
+0054f1dc	18	string	Filename too long
+0054f1f0	26	string	Resource deadlock avoided
+0054f20c	17	string	Result too large
+0054f220	13	string	Domain error
+0054f230	12	string	Broken pipe
+0054f23c	15	string	Too many links
+0054f24c	22	string	Read-only file system
+0054f264	13	string	Invalid seek
+0054f274	24	string	No space left on device
+0054f28c	15	string	File too large
+0054f29c	36	string	Inappropriate I/O control operation
+0054f2c0	20	string	Too many open files
+0054f2d4	30	string	Too many open files in system
+0054f2f4	17	string	Invalid argument
+0054f308	15	string	Is a directory
+0054f318	16	string	Not a directory
+0054f328	15	string	No such device
+0054f338	14	string	Improper link
+0054f348	12	string	File exists
+0054f354	16	string	Resource device
+0054f364	12	string	Bad address
+0054f370	18	string	Permission denied
+0054f384	17	string	Not enough space
+0054f398	33	string	Resource temporarily unavailable
+0054f3bc	19	string	No child processes
+0054f3d0	20	string	Bad file descriptor
+0054f3e4	18	string	Exec format error
+0054f3f8	18	string	Arg list too long
+0054f40c	26	string	No such device or address
+0054f428	19	string	Input/output error
+0054f43c	26	string	Interrupted function call
+0054f458	16	string	No such process
+0054f468	26	string	No such file or directory
+0054f484	24	string	Operation not permitted
+0054f49c	9	string	No error
+0054f4a8	12	string	_nextafter
+0054fe3f	29	string	? Complete Object Locator'
+0054fe5c	29	string	\sClass Hierarchy Descriptor'
+0054fe7c	19	string	\sBase Class Array'
+0054fe90	28	string	\sBase Class Descriptor at (
+0054feac	18	string	\sType Descriptor'
+0054fec0	28	string	`local static thread guard'
+0054fedc	43	string	`managed vector copy constructor iterator'
+0054ff08	41	string	`vector vbase copy constructor iterator'
+0054ff34	35	string	`vector copy constructor iterator'
+0054ff58	33	string	`dynamic atexit destructor for '
+0054ff7c	27	string	`dynamic initializer for '
+0054ff98	44	string	`eh vector vbase copy constructor iterator'
+0054ffc4	38	string	`eh vector copy constructor iterator'
+0054ffec	37	string	`managed vector destructor iterator'
+00550014	38	string	`managed vector constructor iterator'
+0055003c	29	string	`placement delete[] closure'
+0055005c	27	string	`placement delete closure'
+00550078	16	string	`omni callsig'
+00550088	12	string	\sdelete[]
+00550094	7	string	\snew[]
+0055009c	36	string	`local vftable constructor closure'
+005500c0	16	string	`local vftable'
+005500d0	6	string	`RTTI
+005500dc	16	string	`udt returning'
+005500ec	27	string	`copy constructor closure'
+00550108	39	string	`eh vector vbase constructor iterator'
+00550130	32	string	`eh vector destructor iterator'
+00550150	33	string	`eh vector constructor iterator'
+00550174	27	string	`virtual displacement map'
+00550190	36	string	`vector vbase constructor iterator'
+005501b4	29	string	`vector destructor iterator'
+005501d4	30	string	`vector constructor iterator'
+005501f4	29	string	`scalar deleting destructor'
+00550214	30	string	`default constructor closure'
+00550234	29	string	`vector deleting destructor'
+00550254	19	string	`vbase destructor'
+00550268	9	string	`string'
+00550274	21	string	`local static guard'
+0055028c	9	string	`typeof'
+00550298	8	string	`vcall'
+005502a0	10	string	`vbtable'
+005502ac	10	string	`vftable'
+0055031c	9	string	operator
+00550340	8	string	\sdelete
+00550350	12	string	__unaligned
+0055035c	11	string	__restrict
+00550368	8	string	__ptr64
+00550370	10	string	__clrcall
+0055037c	11	string	__fastcall
+00550388	11	string	__thiscall
+00550394	10	string	__stdcall
+005503a0	9	string	__pascal
+005503ac	8	string	__cdecl
+005503b4	9	string	__based(
+00550540	24	string	GetProcessWindowStation
+00550558	26	string	GetUserObjectInformationA
+00550574	19	string	GetLastActivePopup
+00550588	16	string	GetActiveWindow
+00550598	12	string	MessageBoxA
+005505a4	11	string	USER32.DLL
+00550dc0	8	string	CONOUT$
+00550dcc	7	string	1#QNAN
+00550dd4	6	string	1#INF
+00550ddc	6	string	1#IND
+00550de4	7	string	1#SNAN
+00550dec	12	string	SystemRoot
+00550df8	7	string	xdigit
+00550e08	6	string	space
+00550e10	6	string	punct
+00550e18	6	string	graph
+00550e20	6	string	digit
+00550e28	6	string	cntrl
+00550e30	6	string	blank
+00550e38	6	string	ascii
+00550e40	6	string	alnum
+00550e48	6	string	upper
+00550e50	6	string	lower
+00550e58	6	string	alpha
+005510c0	28	string	Unknown uncompression error
+005510dc	16	string	BZ_CONFIG_ERROR
+005510ec	16	string	BZ_OUTBUFF_FULL
+005510fc	18	string	BZ_UNEXPECTED_EOF
+00551110	12	string	BZ_IO_ERROR
+0055111c	20	string	BZ_DATA_ERROR_MAGIC
+00551130	14	string	BZ_DATA_ERROR
+00551140	13	string	BZ_MEM_ERROR
+00551150	15	string	BZ_PARAM_ERROR
+00551160	18	string	BZ_SEQUENCE_ERROR
+00551174	14	string	BZ_STREAM_END
+00551184	13	string	BZ_FINISH_OK
+00551194	12	string	BZ_FLUSH_OK
+005511a0	10	string	BZ_RUN_OK
+005511ac	6	string	BZ_OK
+005511b4	28	string	CSN_HTTP::connect_to_server
+005511d0	33	string	can't connect to the server '%s'
+005511f4	39	string	failed to make the socket non blocking
+0055121c	47	string	failed to bind the local address to the socket
+0055124c	24	string	failed to make a socket
+00551264	16	string	written != used
+00551274	29	string	unable to allocate: %d bytes
+00551294	47	string	unable to start decompression of open file: %s
+005512c4	26	string	unable to create file: %s
+005512e0	51	string	uncompress of the file '%s' failed [tmp: '%s']\n%s\n
+00551314	35	string	unable to open compressed file: %s
+00551338	34	string	rename failed for '%s -> %s' [%s]
+00551360	81	string	[%s %d] HTTP_Con::finish_download: rename fails for '%s -> %s' (errno %d, '%s')\n
+005513b8	105	string	[%s %d] HTTP_Con::finish_download: os_unlink fails for file '%s' adding to rename_list (errno %d, '%s')\n
+00551424	14	string	.\\csnhttp.cpp
+00551434	15	string	Content-Length
+00551444	11	string	%100[^:]s:
+00551458	62	string	GET /%s/%s/%s.bz2?%s HTTP/1.0\r\nHost: %s\r\nRange: bytes=%d-\r\n\r\n
+00551498	44	string	GET /%s/%s/%s.bz2?%s HTTP/1.0\r\nHost: %s\r\n\r\n
+005514c4	41	string	open_path failed for file '%s' [(%d) %s]
+005514f4	13	string	%scsn_%s.bz2
+00551504	9	string	%scsn_%s
+00551510	12	string	not_known
+00551538	34	string	server address is invalid or NULL
+0055155c	34	string	prepare_update(): %d total_bytes\n
+00551580	34	string	prepare_update(): %d total_files\n
+005515a4	51	string	con[%d] has error (failed to download file '%s').\n
+005515d8	65	string	con[%d] has fatal error (failed to download file '%s' 4 times).\n
+0055161c	39	string	Failed to download file '%s' (4 times)
+00551644	24	string	CSN_HTTP::download_file
+0055165c	15	string	C:\\tmp\\csn.log
+00551670	65	string	%s %d: CSN_Request::add(src='%s', dst='%s', size=%d, myself=%d)\n
+005516b4	13	string	.\\csnlib.cpp
+005516c4	34	string	CSN, (constructor) unknown method
+00551704	18	string	CSN, (destructor)
+00551718	19	string	CSN::set_arguments
+0055172c	18	string	CSN::set_callback
+00551740	18	string	csn/done_flag.csn
+00551754	63	string	%s %d: not fingerprinting (/tmp/csn_skip_fingerprint present)\n
+00551794	33	string	CSN::check_for_completed_install
+005517b8	26	string	/tmp/csn_skip_fingerprint
+005517d4	32	string	%s %d: spawnl() fails (%d, %s)\n
+005517f4	11	string	helper.exe
+00551800	47	string	Couldn't get THREAD_PRIORITY_TIME_CRITICAL...\n
+00551830	41	string	Couldn't get REALTIME_PRIORITY_CLASS...\n
+0055185c	12	string	csn/csn_rmd
+00551868	54	string	%s %d: not running '%s'(/tmp/csn_no_restart present)\n
+005518a0	7	string	foobar
+005518a8	20	string	/tmp/csn_no_restart
+005518bc	25	string	%s %d: exit_fnc() start\n
+005518d8	16	string	%48s %ld %2000s
+005518e8	16	string	CSN::get_errors
+005518f8	18	string	CSN::clear_errors
+0055190c	9	string	%s\r\n%s%s
+00551918	10	string	%sexec_%s
+00551924	17	string	CSN::update_file
+00551940	26	string	CSN::get_file_fingerprint
+0055195c	20	string	file not found '%s'
+00551970	15	string	memory problem
+00551980	6	string	%s/%s
+00551988	24	string	package path is not set
+005519a0	12	string	%s %14d %s\n
+005519ac	15	string	Fingerprinting
+005519bc	36	string	could not open/write csn/update.csn
+005519e0	15	string	csn/update.csn
+005519f0	90	string	could not open/read csn/tmp/update.csn, and it's needed for generating local fingerprints
+00551a4c	27	string	CSN::generate_fingerprints
+00551a68	19	string	csn/tmp/update.csn
+00551a7c	56	string	finger print for '%s' does not match remote_master info
+00551ab4	38	string	can't get file fingerpoinrt for '%s'\n
+00551ae0	73	string	can't get the fingerprint of csn componenet '%s' from remote_master file
+00551b2c	19	string	csn/tmp/master.csn
+00551b40	23	string	mprintf memory problem
+00551b58	15	string	%s_fingerprint
+00551b68	8	string	master
+00551b70	15	string	csn/tmp/%s.csn
+00551b80	28	string	memory problem with mprintf
+00551b9c	23	string	CSN::get_csn_component
+00551bb4	11	string	csn/%s.csn
+00551bc0	43	string	dupstr(), can't allocate space for string\n
+00551bec	37	string	dupstr(), empty string not expected\n
+00551c14	29	string	dupstr(), NULL not expected\n
+00551c34	24	string	CSN::set_server_address
+00551c4c	21	string	CSN::set_server_path
+00551c64	22	string	CSN::set_package_path
+00551c7c	22	string	CSN::set_package_name
+00551c94	42	string	%s %d: Fails to get_dir_and_file(%s,...)\n
+00551cc0	21	string	%s %d: relaunch set\n
+00551cd8	23	string	/tmp/csn_skip_relaunch
+00551cf0	7	string	./%s%s
+00551cfc	9	string	%sold_%s
+00551d14	57	string	%s %d: Got get_dir_and_file(%s,...): dir: %s, fname: %s\n
+00551d50	18	string	csn/tmp/exist.csn
+00551d64	15	string	csn/master.csn
+00551d74	25	string	Completed Download [%s]\n
+00551d90	46	string	could not note that the install was completed
+00551dc4	28	string	CSN::note_completed_install
+00551de0	40	string	CSN::note_completed_install:  Self: %d\n
+00551e08	43	string	can't read csn/tmp/master.csn control file
+00551e34	19	string	master_fingerprint
+00551e48	28	string	can't connect to the server
+00551e64	23	string	CSN::check_for_updates
+00551e7c	39	string	file %s is new, and needs downloading\n
+00551ea4	10	string	Update...
+00551eb0	29	string	file %s needs to be deleted\n
+00551ed0	13	string	os_unlink...
+00551ee0	24	string	file %s needs updating\n
+00551ef8	11	string	Require...
+00551f04	24	string	comparing %30s\t%30s\t%d\n
+00551f1c	10	string	Preparing
+00551f28	14	string	the udpate...
+00551f38	44	string	file %s is should exist, but doesn't exist\n
+00551f64	7	string	%2000s
+00551f6c	54	string	could not read csn/tmp/exist.csn after downloading it
+00551fa4	12	string	Deciding...
+00551fb0	18	string	on what to update
+00551fc4	55	string	could not read csn/tmp/update.csn after downloading it
+00552000	67	string	could not read csn/update.csn after generating local fingerprints!
+00552044	26	string	/tmp/csn_exit_after_clear
+00552060	6	string	exist
+00552068	20	string	CSN::update_package
+0055207c	7	string	update
+00552084	29	string	%d%02d%02d:%02d:%02d:%02d:%d
+005520a8	64	string	Visual C++ CRT: Not enough memory to complete call to strerror.
+005520ec	13	string	CONFIG_ERROR
+005520fc	13	string	OUTBUFF_FULL
+0055210c	15	string	UNEXPECTED_EOF
+0055211c	9	string	IO_ERROR
+00552128	17	string	DATA_ERROR_MAGIC
+0055213c	11	string	DATA_ERROR
+00552148	10	string	MEM_ERROR
+00552154	12	string	PARAM_ERROR
+00552160	15	string	SEQUENCE_ERROR
+00552170	19	string	1.0.2, 30-Dec-2001
+00552188	1060	string	\n*** A special note about internal error number 1007 ***\n\nExperience suggests that a common cause of i.e. 1007\nis unreliable memory or other hardware.  The 1007 assertion\njust happens to cross-check the results of huge numbers of\nmemory reads/writes, and so acts (unintendedly) as a stress\ntest of your memory system.\n\nI suggest the following: try compressing the file again,\npossibly monitoring progress in detail with the -vv flag.\n\n* If the error cannot be reproduced, and/or happens at different\n  points in compression, you may have a flaky memory system.\n  Try a memory-test program.  I have used Memtest86\n  (www.memtest86.com).  At the time of writing it is free (GPLd).\n  Memtest86 tests memory much more thorougly than your BIOSs\n  power-on test, and may find failures that the BIOS doesn't.\n\n* If the error can be repeatably reproduced, this is a bug in\n  bzip2, and I would very much like to hear about it.  Please\n  let me know, and, ideally, save a copy of the file causing the\n  problem -- without which I will be unable to investigate it.\n\n
+005525b0	442	string	\n\nbzip2/libbzip2: internal error number %d.\nThis is a bug in bzip2/libbzip2, %s.\nPlease report it to me at: jseward@acm.org.  If this happened\nwhen you were using some program which uses libbzip2 as a\ncomponent, you should also report this bug to the author(s)\nof that program.  Please make an effort to report this bug;\ntimely and accurate bug reports eventually lead to higher\nquality software.  Thanks.  Julian Seward, 30 December 2001.\n\n
+0055276c	51	string	\n    combined CRCs: stored = 0x%x, computed = 0x%x
+005527a0	14	string	\s{0x%x, 0x%x}
+005527b0	7	string	rt+rld
+005527b8	20	string	\n    [%d: huff+mtf\s
+005527d8	20	string	Unknown Winsys (?)
+005527ec	41	string	detector: %s has no instantiated winsys\n
+00552818	100	string	Can't find a usable display mode.\nWulfram needs at least DirectX 7.0 at 640 by 480 with 256 colors!
+0055287c	30	string	Hokey Display Card or Driver?
+0055289c	15	string	Winsys %s: %d\n
+005528ac	28	string	Winsys %s, construct is %x\n
+005528c8	11	string	SlurpySoft
+005528d4	31	string	What key would result in '%c'?
+005528f4	28	string	We've got Keyboard Problems
+00552910	63	string	Can't figure out what key would result in [pos %d] (%d), '%c'!
+00552950	28	string	We've got Keyboard Problems
+0055296c	19	string	instantiate_winsys
+00552980	96	string	`1234567890-=\\qwertyuiop[]asdfghjkl;'zxcvbnm,./~!@#$%^&*()_+|QWERTYUIOP{}ASDFGHJKL:"ZXCVBNM<>?\s
+005529e0	32	string	..\\client\\winsys\\win32_misc.cpp
+00552a00	7	string	%s %d\n
+00552a08	24	string	--> getenv(%s) == %s\n
+00552a20	24	string	--> getenv(%s) fails\n
+00552a38	21	string	FX_GLIDE_NO_SPLASH=0
+00552a50	14	string	detect_winsys
+00552a60	13	string	process_exit
+00552a70	12	string	win32_glide
+00552a7c	12	string	Wulfram: %s
+00552a88	8	string	%s: %s\n
+00552a90	12	string	Wulfram: %s
+00552a9c	8	string	%s: %s\n
+00552aa4	8	string	Wulfram
+00552aac	9	string	play now
+00552ab8	24	string	http\\shell\\open\\command
+00552ad0	6	string	%s %s
+00552ae0	35	string	MAC: %02X-%02X-%02X-%02X-%02X-%02X
+00552b04	11	string	DINPUT.DLL
+00552b10	30	string	Couldn't LoadLibrary DInput\r\n
+00552b30	19	string	DirectInputCreateA
+00552b44	39	string	Couldn't GetProcAddress DInputCreate\r\n
+00552b6c	10	string	DDRAW.DLL
+00552b78	17	string	DirectDrawCreate
+00552b8c	29	string	Couldn't LoadLibrary DDraw\r\n
+00552bac	24	string	Couldn't create DDraw\r\n
+00552bc4	21	string	Couldn't QI DDraw2\r\n
+00552bdc	11	string	DINPUT.DLL
+00552be8	30	string	Couldn't LoadLibrary DInput\r\n
+00552c08	19	string	DirectInputCreateA
+00552c1c	39	string	Couldn't GetProcAddress DInputCreate\r\n
+00552c44	26	string	Couldn't Set coop level\r\n
+00552c60	25	string	Couldn't CreateSurface\r\n
+00552c7c	19	string	windowed_init(%x)\n
+00552c90	31	string	..\\client\\winsys\\win32_gdi.cpp
+00552cb0	7	string	%s %d\n
+00552cb8	26	string	Winsys_GDI__init(%x, %d)\n
+00552cd4	31	string	..\\client\\winsys\\win32_gdi.cpp
+00552cf4	7	string	%s %d\n
+00552cfc	31	string	..\\client\\winsys\\win32_gdi.cpp
+00552d1c	7	string	%s %d\n
+00552d24	31	string	..\\client\\winsys\\win32_gdi.cpp
+00552d44	7	string	%s %d\n
+00552d4c	31	string	..\\client\\winsys\\win32_gdi.cpp
+00552d6c	7	string	%s %d\n
+00552d74	63	string	gdi_ensure_main_window_exists(%x, %d) --> allready got window\n
+00552db4	52	string	gdi_ensure_main_window_exists(%x, %d) --> starting\n
+00552de8	8	string	Wulfram
+00552df0	39	string	gdi_ensure_main_window_exists --> end\n
+00552e18	16	string	GDI error code\s
+00552e30	25	string	i: %d r: %d g: %d b: %d\n
+00552e4c	27	string	allow_this_type (GDI): %d\n
+00552e68	38	string	Software rendering, GDI windowed blit
+00552e90	18	string	Software Windowed
+00552ea8	30	string	..\\client\\winsys\\win32_dx.cpp
+00552ec8	20	string	DX REPORT: [%s:%d]\n
+00552edc	15	string	DX REPORT: %s\n
+00552ef0	30	string	..\\client\\winsys\\win32_dx.cpp
+00552f10	20	string	DI REPORT: [%s:%d]\n
+00552f24	15	string	DI REPORT: %s\n
+00552f34	24	string	dx_mouse acquire fails\n
+00552f4c	34	string	dx_mouse failed GetCapabilities!\n
+00552f70	38	string	Joystick has %d axes and %d buttons.\n
+00552f98	48	string	lock_test: [%s %d] (primary %d) (offscreen %d)\n
+00552fc8	80	string	primary_and_offscreen_surfaces_are_in_system_memory: can't get surface caps. \n
+00553018	23	string	making sysmem surface\n
+00553034	30	string	..\\client\\winsys\\win32_dx.cpp
+00553054	19	string	DX FATAL: [%s:%d]\n
+00553068	14	string	DX FATAL: %s\n
+00553078	69	string	lpdd->CreateSurface(&surface_desc, (LPDIRECTDRAWSURFACE *) &surf, 0)
+005530c0	14	string	DX FATAL: %s\n
+005530d0	30	string	..\\client\\winsys\\win32_dx.cpp
+005530f0	10	string	%s:%d %s\n
+005530fc	24	string	Fatal Direct Draw Error
+00553118	30	string	..\\client\\winsys\\win32_dx.cpp
+00553138	19	string	DX FATAL: [%s:%d]\n
+0055314c	14	string	DX FATAL: %s\n
+00553160	74	string	surf->QueryInterface(IID_IDirectDrawSurface3, (LPVOID *) &sysmem_surface)
+005531ac	14	string	DX FATAL: %s\n
+005531bc	30	string	..\\client\\winsys\\win32_dx.cpp
+005531dc	10	string	%s:%d %s\n
+005531e8	24	string	Fatal Direct Draw Error
+00553200	39	string	width: %d\nheight: %d\nbytesperpixel:%d\n
+0055322c	30	string	..\\client\\winsys\\win32_dx.cpp
+0055324c	19	string	DX FATAL: [%s:%d]\n
+00553260	14	string	DX FATAL: %s\n
+00553270	46	string	sysmem_surface->GetSurfaceDesc(&surface_desc)
+005532a0	14	string	DX FATAL: %s\n
+005532b0	30	string	..\\client\\winsys\\win32_dx.cpp
+005532d0	10	string	%s:%d %s\n
+005532dc	24	string	Fatal Direct Draw Error
+005532f8	30	string	..\\client\\winsys\\win32_dx.cpp
+00553318	19	string	DX FATAL: [%s:%d]\n
+0055332c	14	string	DX FATAL: %s\n
+0055333c	49	string	sysmem_surface->SetSurfaceDesc(&surface_desc, 0)
+00553370	14	string	DX FATAL: %s\n
+00553380	30	string	..\\client\\winsys\\win32_dx.cpp
+005533a0	10	string	%s:%d %s\n
+005533ac	24	string	Fatal Direct Draw Error
+005533c4	20	string	primary_surface:\n
+005533d8	32	string	\t DDSCAPS_VIDEOMEMORY  : %d\n
+005533f8	32	string	\t DDSCAPS_SYSTEMMEMORY : %d\n
+00553418	20	string	offscreen_surface:\n
+0055342c	32	string	\t DDSCAPS_VIDEOMEMORY  : %d\n
+0055344c	32	string	\t DDSCAPS_SYSTEMMEMORY : %d\n
+0055346c	40	string	dump_caps: can't get surface caps. \n
+00553494	38	string	DirectDrawCreate returns NULL.\nPanic!
+005534bc	24	string	Fatal Direct Draw Error
+005534d8	30	string	..\\client\\winsys\\win32_dx.cpp
+005534f8	19	string	DX FATAL: [%s:%d]\n
+0055350c	14	string	DX FATAL: %s\n
+0055351c	55	string	dd->QueryInterface(IID_IDirectDraw2, (LPVOID *) &lpdd)
+00553554	14	string	DX FATAL: %s\n
+00553564	30	string	..\\client\\winsys\\win32_dx.cpp
+00553584	10	string	%s:%d %s\n
+00553590	24	string	Fatal Direct Draw Error
+005535ac	30	string	..\\client\\winsys\\win32_dx.cpp
+005535cc	19	string	DX FATAL: [%s:%d]\n
+005535e0	14	string	DX FATAL: %s\n
+005535f4	14	string	DX FATAL: %s\n
+00553604	30	string	..\\client\\winsys\\win32_dx.cpp
+00553624	10	string	%s:%d %s\n
+00553630	24	string	Fatal Direct Draw Error
+0055364c	32	string	..\\client\\winsys\\win32_dx.cpp
+0055366c	20	string	DX FATAL: [%s:%d]\n
+00553680	16	string	DX FATAL: %s\n
+00553690	12	string	dd_success
+0055369c	16	string	DX FATAL: %s\n
+005536ac	32	string	..\\client\\winsys\\win32_dx.cpp
+005536cc	12	string	%s:%d %s\n
+005536d8	24	string	Fatal Direct Draw Error
+005536f0	36	string	dd_surface_lock: too many retires\n
+00553714	44	string	Max retries exceeded in dd_surface_unlock\n
+00553744	30	string	..\\client\\winsys\\win32_dx.cpp
+00553764	19	string	DX ERROR: [%s:%d]\n
+00553778	14	string	DX ERROR: %s\n
+00553788	19	string	surface->Restore()
+0055379c	14	string	DX ERROR: %s\n
+005537b0	30	string	..\\client\\winsys\\win32_dx.cpp
+005537d0	19	string	DX FATAL: [%s:%d]\n
+005537e4	14	string	DX FATAL: %s\n
+005537f4	11	string	dd_success
+00553800	14	string	DX FATAL: %s\n
+00553810	30	string	..\\client\\winsys\\win32_dx.cpp
+00553830	10	string	%s:%d %s\n
+0055383c	24	string	Fatal Direct Draw Error
+00553858	30	string	..\\client\\winsys\\win32_dx.cpp
+00553878	19	string	DX ERROR: [%s:%d]\n
+0055388c	14	string	DX ERROR: %s\n
+0055389c	28	string	lpdd->GetDisplayMode(&surf)
+005538b8	14	string	DX ERROR: %s\n
+005538cc	30	string	..\\client\\winsys\\win32_dx.cpp
+005538ec	19	string	DX ERROR: [%s:%d]\n
+00553900	14	string	DX ERROR: %s\n
+00553910	87	string	lpdd->SetDisplayMode(best.width, best.height, best.bpp, best.refresh_rate, best.flags)
+00553968	14	string	DX ERROR: %s\n
+0055397c	30	string	..\\client\\winsys\\win32_dx.cpp
+0055399c	19	string	DX ERROR: [%s:%d]\n
+005539b0	14	string	DX ERROR: %s\n
+005539c0	27	string	primary_surface->Restore()
+005539dc	14	string	DX ERROR: %s\n
+005539f0	30	string	..\\client\\winsys\\win32_dx.cpp
+00553a10	19	string	DX ERROR: [%s:%d]\n
+00553a24	14	string	DX ERROR: %s\n
+00553a34	26	string	sysmem_surface->Restore()
+00553a50	14	string	DX ERROR: %s\n
+00553a60	25	string	Winsys_DX__init(%x, %d)\n
+00553a7c	30	string	Close all other applications.
+00553a9c	23	string	Exclusive Lock Failure
+00553ab4	35	string	Internal Application Snafu.\nPanic!
+00553ad8	19	string	Enumertation Error
+00553aec	8	string	Wulfram
+00553af8	30	string	..\\client\\winsys\\win32_dx.cpp
+00553b18	19	string	DX FATAL: [%s:%d]\n
+00553b2c	14	string	DX FATAL: %s\n
+00553b40	87	string	lpdd->SetDisplayMode(best.width, best.height, best.bpp, best.refresh_rate, best.flags)
+00553b98	14	string	DX FATAL: %s\n
+00553ba8	30	string	..\\client\\winsys\\win32_dx.cpp
+00553bc8	10	string	%s:%d %s\n
+00553bd4	24	string	Fatal Direct Draw Error
+00553bf0	30	string	..\\client\\winsys\\win32_dx.cpp
+00553c10	19	string	DX FATAL: [%s:%d]\n
+00553c24	14	string	DX FATAL: %s\n
+00553c34	48	string	lpdd->CreateSurface(&surface_desc, &surf, NULL)
+00553c64	14	string	DX FATAL: %s\n
+00553c74	30	string	..\\client\\winsys\\win32_dx.cpp
+00553c94	10	string	%s:%d %s\n
+00553ca0	24	string	Fatal Direct Draw Error
+00553cbc	30	string	..\\client\\winsys\\win32_dx.cpp
+00553cdc	19	string	DX FATAL: [%s:%d]\n
+00553cf0	14	string	DX FATAL: %s\n
+00553d00	75	string	surf->QueryInterface(IID_IDirectDrawSurface3, (LPVOID *) &primary_surface)
+00553d4c	14	string	DX FATAL: %s\n
+00553d5c	30	string	..\\client\\winsys\\win32_dx.cpp
+00553d7c	10	string	%s:%d %s\n
+00553d88	24	string	Fatal Direct Draw Error
+00553da4	30	string	..\\client\\winsys\\win32_dx.cpp
+00553dc4	19	string	DX FATAL: [%s:%d]\n
+00553dd8	14	string	DX FATAL: %s\n
+00553de8	63	string	primary_surface->GetAttachedSurface(&caps, &offscreen_surface)
+00553e28	14	string	DX FATAL: %s\n
+00553e38	30	string	..\\client\\winsys\\win32_dx.cpp
+00553e58	10	string	%s:%d %s\n
+00553e64	24	string	Fatal Direct Draw Error
+00553e7c	28	string	AVE FPS [%3.0f FRAMES] %.2f
+00553e9c	30	string	..\\client\\winsys\\win32_dx.cpp
+00553ebc	19	string	DX ERROR: [%s:%d]\n
+00553ed0	14	string	DX ERROR: %s\n
+00553ee0	69	string	offscreen_surface->Blt(NULL, sysmem_surface, NULL, DDBLT_WAIT, NULL)
+00553f28	14	string	DX ERROR: %s\n
+00553f3c	30	string	..\\client\\winsys\\win32_dx.cpp
+00553f5c	19	string	DX ERROR: [%s:%d]\n
+00553f70	14	string	DX ERROR: %s\n
+00553f80	38	string	primary_surface->Flip(0, DDFLIP_WAIT)
+00553fa8	14	string	DX ERROR: %s\n
+00553fb8	36	string	Software rendering, DirectDraw blit
+00553fdc	9	string	Software
+00553fe8	24	string	\tget_dx_verion == %.2f\n
+0055400c	25	string	DDERR_ALREADYINITIALIZED
+00554028	26	string	DDERR_CANNOTATTACHSURFACE
+00554044	26	string	DDERR_CANNOTDETACHSURFACE
+00554060	24	string	DDERR_CURRENTLYNOTAVAIL
+00554078	16	string	DDERR_EXCEPTION
+00554088	14	string	DDERR_GENERIC
+00554098	18	string	DDERR_HEIGHTALIGN
+005540ac	26	string	DDERR_INCOMPATIBLEPRIMARY
+005540c8	18	string	DDERR_INVALIDCAPS
+005540dc	22	string	DDERR_INVALIDCLIPLIST
+005540f4	18	string	DDERR_INVALIDMODE
+00554108	20	string	DDERR_INVALIDOBJECT
+0055411c	20	string	DDERR_INVALIDPARAMS
+00554130	25	string	DDERR_INVALIDPIXELFORMAT
+0055414c	18	string	DDERR_INVALIDRECT
+00554160	21	string	DDERR_LOCKEDSURFACES
+00554178	11	string	DDERR_NO3D
+00554184	16	string	DDERR_NOALPHAHW
+00554194	17	string	DDERR_NOCLIPLIST
+005541a8	20	string	DDERR_NOCOLORCONVHW
+005541bc	28	string	DDERR_NOCOOPERATIVELEVELSET
+005541d8	17	string	DDERR_NOCOLORKEY
+005541ec	19	string	DDERR_NOCOLORKEYHW
+00554200	26	string	DDERR_NODIRECTDRAWSUPPORT
+0055421c	22	string	DDERR_NOEXCLUSIVEMODE
+00554234	15	string	DDERR_NOFLIPHW
+00554244	12	string	DDERR_NOGDI
+00554250	17	string	DDERR_NOMIRRORHW
+00554264	15	string	DDERR_NOTFOUND
+00554274	18	string	DDERR_NOOVERLAYHW
+00554288	19	string	DDERR_NORASTEROPHW
+0055429c	19	string	DDERR_NOROTATIONHW
+005542b0	18	string	DDERR_NOSTRETCHHW
+005542c4	19	string	DDERR_NOT4BITCOLOR
+005542d8	24	string	DDERR_NOT4BITCOLORINDEX
+005542f0	19	string	DDERR_NOT8BITCOLOR
+00554304	18	string	DDERR_NOTEXTUREHW
+00554318	16	string	DDERR_NOVSYNCHW
+00554328	18	string	DDERR_NOZBUFFERHW
+0055433c	19	string	DDERR_NOZOVERLAYHW
+00554350	16	string	DDERR_OUTOFCAPS
+00554360	18	string	DDERR_OUTOFMEMORY
+00554374	23	string	DDERR_OUTOFVIDEOMEMORY
+0055438c	22	string	DDERR_OVERLAYCANTCLIP
+005543a4	35	string	DDERR_OVERLAYCOLORKEYONLYONEACTIVE
+005543c8	18	string	DDERR_PALETTEBUSY
+005543dc	21	string	DDERR_COLORKEYNOTSET
+005543f4	29	string	DDERR_SURFACEALREADYATTACHED
+00554414	30	string	DDERR_SURFACEALREADYDEPENDENT
+00554434	18	string	DDERR_SURFACEBUSY
+00554448	22	string	DDERR_CANTLOCKSURFACE
+00554460	24	string	DDERR_SURFACEISOBSCURED
+00554478	18	string	DDERR_SURFACELOST
+0055448c	25	string	DDERR_SURFACENOTATTACHED
+005544a8	19	string	DDERR_TOOBIGHEIGHT
+005544bc	17	string	DDERR_TOOBIGSIZE
+005544d0	18	string	DDERR_TOOBIGWIDTH
+005544e4	18	string	DDERR_UNSUPPORTED
+005544f8	24	string	DDERR_UNSUPPORTEDFORMAT
+00554510	22	string	DDERR_UNSUPPORTEDMASK
+00554528	30	string	DDERR_VERTICALBLANKINPROGRESS
+00554548	22	string	DDERR_WASSTILLDRAWING
+00554560	13	string	DDERR_XALIGN
+00554570	28	string	DDERR_INVALIDDIRECTDRAWGUID
+0055458c	31	string	DDERR_DIRECTDRAWALREADYCREATED
+005545ac	21	string	DDERR_NODIRECTDRAWHW
+005545c4	34	string	DDERR_PRIMARYSURFACEALREADYEXISTS
+005545e8	18	string	DDERR_NOEMULATION
+005545fc	21	string	DDERR_REGIONTOOSMALL
+00554614	25	string	DDERR_CLIPPERISUSINGHWND
+00554630	24	string	DDERR_NOCLIPPERATTACHED
+00554648	13	string	DDERR_NOHWND
+00554658	21	string	DDERR_HWNDSUBCLASSED
+00554670	21	string	DDERR_HWNDALREADYSET
+00554688	24	string	DDERR_NOPALETTEATTACHED
+005546a0	18	string	DDERR_NOPALETTEHW
+005546b4	22	string	DDERR_BLTFASTCANTCLIP
+005546cc	14	string	DDERR_NOBLTHW
+005546dc	17	string	DDERR_NODDROPSHW
+005546f0	24	string	DDERR_OVERLAYNOTVISIBLE
+00554708	20	string	DDERR_NOOVERLAYDEST
+0055471c	22	string	DDERR_INVALIDPOSITION
+00554734	25	string	DDERR_NOTAOVERLAYSURFACE
+00554750	30	string	DDERR_EXCLUSIVEMODEALREADYSET
+00554770	19	string	DDERR_NOTFLIPPABLE
+00554784	20	string	DDERR_CANTDUPLICATE
+00554798	16	string	DDERR_NOTLOCKED
+005547a8	19	string	DDERR_CANTCREATEDC
+005547bc	11	string	DDERR_NODC
+005547c8	16	string	DDERR_WRONGMODE
+005547d8	24	string	DDERR_IMPLICITLYCREATED
+005547f0	20	string	DDERR_NOTPALETTIZED
+00554804	22	string	DDERR_UNSUPPORTEDMODE
+0055481c	17	string	DDERR_NOMIPMAPHW
+00554830	25	string	DDERR_INVALIDSURFACETYPE
+0055484c	19	string	DDERR_NOOPTIMIZEHW
+00554860	16	string	DDERR_NOTLOADED
+00554870	23	string	DDERR_DCALREADYCREATED
+00554888	23	string	DDERR_NONONLOCALVIDMEM
+005548a0	19	string	DDERR_CANTPAGELOCK
+005548b4	21	string	DDERR_CANTPAGEUNLOCK
+005548cc	20	string	DDERR_NOTPAGELOCKED
+005548e0	15	string	DDERR_MOREDATA
+005548f0	21	string	DDERR_VIDEONOTACTIVE
+00554908	29	string	DDERR_DEVICEDOESNTOWNSURFACE
+00554928	21	string	DDERR_NOTINITIALIZED
+00554940	28	string	Not Known DD Error code: %d
+0055495c	28	string	DIERR_OLDDIRECTINPUTVERSION
+00554978	29	string	DIERR_BETADIRECTINPUTVERSION
+00554998	19	string	DIERR_BADDRIVERVER
+005549ac	15	string	DIERR_NOTFOUND
+005549bc	18	string	DIERR_NOINTERFACE
+005549d0	14	string	DIERR_GENERIC
+005549e0	18	string	DIERR_OUTOFMEMORY
+005549f4	18	string	DIERR_UNSUPPORTED
+00554a08	21	string	DIERR_NOTINITIALIZED
+00554a20	25	string	DIERR_ALREADYINITIALIZED
+00554a3c	20	string	DIERR_NOAGGREGATION
+00554a50	16	string	DIERR_INPUTLOST
+00554a60	15	string	DIERR_ACQUIRED
+00554a70	18	string	DIERR_NOTACQUIRED
+00554a84	22	string	DIERR_OTHERAPPHASPRIO
+00554a9c	21	string	DIERR_OBJECTNOTFOUND
+00554ab4	15	string	DIERR_READONLY
+00554ac4	19	string	DIERR_HANDLEEXISTS
+00554ad8	23	string	One Of: %s, %s, %s, %s
+00554af0	10	string	E_PENDING
+00554afc	24	string	DIERR_INSUFFICIENTPRIVS
+00554b14	17	string	DIERR_DEVICEFULL
+00554b28	15	string	DIERR_MOREDATA
+00554b38	20	string	DIERR_NOTDOWNLOADED
+00554b4c	17	string	DIERR_HASEFFECTS
+00554b60	27	string	DIERR_NOTEXCLUSIVEACQUIRED
+00554b7c	23	string	DIERR_INCOMPLETEEFFECT
+00554b94	18	string	DIERR_NOTBUFFERED
+00554ba8	20	string	DIERR_EFFECTPLAYING
+00554bbc	28	string	Not Known DI Error code: %d
+00554bd8	50	string	D3D Alpha Release (for financial supporters only)
+00554c0c	28	string	D3D Alpha (supporters only)
+00554c4c	20	string	/tmp/win32_d3d.txt
+00554c64	20	string	/tmp/win32_d3d.txt
+00554c88	16	string	%s (line %d)\n
+00554c9c	13	string	c:\\debug.txt
+00554cb0	15	string	c:\\d3d_err.txt
+00554cc0	20	string	Error %x in %s: %s\n
+00554cd4	44	string	%s %d: check_refcount: Winsys_D3D == NULL\n
+00554d00	44	string	%s %d: check_refcount: framework == NULL\n
+00554d2c	44	string	%s %d: check_refcount: DirectDraw == NULL\n
+00554d58	20	string	%s %d: refcount %d\n
+00554d6c	20	string	SelectDefaultDevice
+00554d80	35	string	..\\client\\winsys\\d3d\\win32_d3d.cpp
+00554da4	35	string	..\\client\\winsys\\d3d\\win32_d3d.cpp
+00554dc8	35	string	..\\client\\winsys\\d3d\\win32_d3d.cpp
+00554dec	26	string	Winsys_D3D__init(%x, %d)\n
+00554e18	841	string	In order to grow the game, we need more money for advertisment.  Large game companies spend hundreds of thousands of dollars on marketing and advertisment, and a few more hundreds of thousands of dollars on the people that decide where to throw all the money.  Not so in this game.  But we do want more players, and to get more players we also need to spread the word.  Your financial contributions are important to help the indepndent game development effort.  This means, that if you really care about the game, you should consider donating some money.  As a tip of the hat to people that do donate, I allow them to use D3D.  This doesn't meant that in the future you won't benefit from other things I work on, but it does mean you won't benefit from ALL of them. We need your help.  Please consider donating a small monthly sum.  Thanks.
+00555164	35	string	Restricted to Financial Supporters
+00555188	8	string	Wulfram
+00555190	35	string	..\\client\\winsys\\d3d\\win32_d3d.cpp
+005551b4	11	string	BeginScene
+005551c0	35	string	..\\client\\winsys\\d3d\\win32_d3d.cpp
+005551e4	35	string	..\\client\\winsys\\d3d\\win32_d3d.cpp
+00555208	35	string	..\\client\\winsys\\d3d\\win32_d3d.cpp
+0055522c	9	string	EndScene
+00555238	35	string	..\\client\\winsys\\d3d\\win32_d3d.cpp
+0055525c	7	string	unlock
+0055526c	36	string	failed D3DTRANSFORMSTATE_PROJECTION
+00555290	11	string	voxel_tile
+0055529f	17	string	CMipmap allocate
+005552b0	10	string	surf->Blt
+005552bc	10	string	surf->Blt
+005552c8	10	string	No error.
+005552d4	36	string	This object is already initialized.
+00555300	89	string	Return if a clipper object is attached to the source surface passed into a BltFast call.
+0055535c	59	string	This surface can not be attached to the requested surface.
+00555398	61	string	This surface can not be detached from the requested surface.
+005553d8	37	string	Windows can not create any more DCs.
+00555400	80	string	Can't duplicate primary & 3D surfaces, or surfaces that are implicitly created.
+00555458	95	string	An attempt was made to set a cliplist for a clipper object that is already monitoring an hwnd.
+005554b8	47	string	No src color key specified for this operation.
+005554e8	36	string	Support is currently not available.
+00555510	88	string	A DirectDraw object representing this driver has already been created for this process.
+00555570	71	string	An exception was encountered while performing the requested operation.
+005555b8	87	string	An attempt was made to set the cooperative level when it was already set to exclusive.
+00555610	17	string	Generic failure.
+00555628	66	string	Height of rectangle provided is not a multiple of reqd alignment.
+00555670	120	string	The CooperativeLevel HWND has already been set. It can not be reset while the process has surfaces or palettes created.
+005556f0	109	string	HWND used by DirectDraw CooperativeLevel has been subclassed, this prevents DirectDraw from restoring state.
+00555760	78	string	This surface can not be restored because it is an implicitly created surface.
+005557b0	80	string	Unable to match primary surface creation request with existing primary surface.
+00555808	67	string	One or more of the caps bits passed to the callback are incorrect.
+0055584c	51	string	DirectDraw does not support the provided cliplist.
+00555880	81	string	The GUID passed to DirectDrawCreate is not a valid DirectDraw driver identifier.
+005558d4	48	string	DirectDraw does not support the requested mode.
+00555908	69	string	DirectDraw received a pointer that was an invalid DIRECTDRAW object.
+00555950	68	string	One or more of the parameters passed to the function are incorrect.
+00555998	43	string	The pixel format was invalid as specified.
+005559c4	32	string	Rectangle provided was invalid.
+005559e8	102	string	Returned when the position of the overlay on the destination is no longer legal for that destination.
+00555a50	76	string	Operation could not be carried out because one or more surfaces are locked.
+00555aa0	24	string	There is no 3D present.
+00555ac0	104	string	Operation could not be carried out because there is no alpha accleration hardware present or available.
+00555b2c	29	string	No blitter hardware present.
+00555b4c	23	string	No cliplist available.
+00555b64	46	string	No clipper object attached to surface object.
+00555b98	103	string	Operation could not be carried out because there is no color conversion hardware present or available.
+00555c00	43	string	Surface doesn't currently have a color key
+00555c2c	41	string	No DC was ever created for this surface.
+00555c58	102	string	Operation could not be carried out because there is no hardware support of the destination color key.
+00555cc0	90	string	Create function called without DirectDraw object method SetCooperativeLevel being called.
+00555d1c	28	string	No DirectDraw ROP hardware.
+00555d40	102	string	A hardware-only DirectDraw object creation was attempted but the driver did not support any hardware.
+00555da8	34	string	Software emulation not available.
+00555dd0	108	string	Operation requires the application to have exclusive mode but the application does not have exclusive mode.
+00555e40	44	string	Flipping visible surfaces is not supported.
+00555e70	25	string	There is no GDI present.
+00555e90	103	string	Clipper notification requires an HWND or no HWND has previously been set as the CooperativeLevel HWND.
+00555ef8	86	string	Operation could not be carried out because there is no hardware present or available.
+00555f50	129	string	Returned when GetOverlayPosition is called on an overlay that UpdateOverlay has never been called on to establish a destination.
+00555fd8	94	string	Operation could not be carried out because there is no overlay hardware present or available.
+00556038	44	string	No palette object attached to this surface.
+00556068	50	string	No hardware support for 16 or 256 color palettes.
+005560a0	108	string	Operation could not be carried out because there is no appropriate raster op hardware present or available.
+00556110	95	string	Operation could not be carried out because there is no rotation hardware present or available.
+00556170	88	string	Operation could not be carried out because there is no hardware support for stretching.
+005561d0	106	string	DirectDrawSurface is not in 4 bit color palette and the requested operation requires 4 bit color palette.
+00556240	118	string	DirectDrawSurface is not in 4 bit color index palette and the requested operation requires 4 bit color index palette.
+005562b8	95	string	DirectDrawSurface is not in 8 bit color mode and the requested operation requires 8 bit color.
+00556318	69	string	Returned when an overlay member is called for a non-overlay surface.
+00556360	102	string	Operation could not be carried out because there is no texture mapping hardware present or available.
+005563c8	66	string	An attempt has been made to flip a surface that is not flippable.
+0055640c	30	string	Requested item was not found.
+00556430	124	string	Surface was not locked.  An attempt to unlock a surface that was not locked at all, or by this process, has been attempted.
+005564b0	55	string	The surface being used is not a palette-based surface.
+005564e8	116	string	Operation could not be carried out because there is no hardware support for vertical blank synchronized operations.
+00556560	94	string	Operation could not be carried out because there is no hardware support for zbuffer blitting.
+005565c0	126	string	Overlay surfaces could not be z layered based on their BltOrder because the hardware does not support z layering of overlays.
+00556640	76	string	The hardware needed for the requested operation has already been allocated.
+00556690	65	string	DirectDraw does not have enough memory to perform the operation.
+005566d8	65	string	DirectDraw does not have enough memory to perform the operation.
+0055671c	48	string	The hardware does not support clipped overlays.
+00556750	61	string	Can only have ony color key active at one time for overlays.
+00556790	64	string	Returned when GetOverlayPosition is called on a hidden overlay.
+005567d8	97	string	Access to this palette is being refused because the palette is already locked by another thread.
+0055683c	52	string	This process already has created a primary surface.
+00556874	52	string	Region passed to Clipper::GetClipList is too small.
+005568b0	73	string	This surface is already attached to the surface it is being attached to.
+00556900	86	string	This surface is already a dependency of the surface it is being made a dependency of.
+00556958	97	string	Access to this surface is being refused because the surface is already locked by another thread.
+005569bc	59	string	Access to surface refused because the surface is obscured.
+005569f8	165	string	Access to this surface is being refused because the surface memory is gone. The DirectDrawSurface object representing this surface should have Restore called on it.
+00556aa0	39	string	The requested surface is not attached.
+00556ac8	45	string	Height requested by DirectDraw is too large.
+00556af8	87	string	Size requested by DirectDraw is too large, but the individual height and width are OK.
+00556b50	44	string	Width requested by DirectDraw is too large.
+00556b80	22	string	Action not supported.
+00556b98	54	string	FOURCC format requested is unsupported by DirectDraw.
+00556bd0	68	string	Bitmask in the pixel format requested is unsupported by DirectDraw.
+00556c18	31	string	Vertical blank is in progress.
+00556c38	113	string	Informs DirectDraw that the previous Blt which is transfering information to or from this Surface is incomplete.
+00556cb0	77	string	This surface can not be restored because it was created in a different mode.
+00556d00	70	string	Rectangle provided was not horizontally aligned on required boundary.
+00556d48	23	string	D3DERR_BADMAJORVERSION
+00556d60	23	string	D3DERR_BADMINORVERSION
+00556d78	22	string	D3DERR_EXECUTE_LOCKED
+00556d90	26	string	D3DERR_EXECUTE_NOT_LOCKED
+00556dac	29	string	D3DERR_EXECUTE_CREATE_FAILED
+00556dcc	30	string	D3DERR_EXECUTE_DESTROY_FAILED
+00556dec	27	string	D3DERR_EXECUTE_LOCK_FAILED
+00556e08	29	string	D3DERR_EXECUTE_UNLOCK_FAILED
+00556e28	22	string	D3DERR_EXECUTE_FAILED
+00556e40	30	string	D3DERR_EXECUTE_CLIPPED_FAILED
+00556e60	26	string	D3DERR_TEXTURE_NO_SUPPORT
+00556e7c	26	string	D3DERR_TEXTURE_NOT_LOCKED
+00556e98	21	string	D3DERR_TEXTURELOCKED
+00556eb0	29	string	D3DERR_TEXTURE_CREATE_FAILED
+00556ed0	30	string	D3DERR_TEXTURE_DESTROY_FAILED
+00556ef0	27	string	D3DERR_TEXTURE_LOCK_FAILED
+00556f0c	29	string	D3DERR_TEXTURE_UNLOCK_FAILED
+00556f2c	27	string	D3DERR_TEXTURE_LOAD_FAILED
+00556f48	28	string	D3DERR_MATRIX_CREATE_FAILED
+00556f68	29	string	D3DERR_MATRIX_DESTROY_FAILED
+00556f88	29	string	D3DERR_MATRIX_SETDATA_FAILED
+00556fa8	30	string	D3DERR_SETVIEWPORTDATA_FAILED
+00556fc8	30	string	D3DERR_MATERIAL_CREATE_FAILED
+00556fe8	31	string	D3DERR_MATERIAL_DESTROY_FAILED
+00557008	31	string	D3DERR_MATERIAL_SETDATA_FAILED
+00557028	24	string	D3DERR_LIGHT_SET_FAILED
+00557044	25	string	CONFLICTINGTEXTUREFILTER
+00557060	26	string	CONFLICTINGTEXTUREPALETTE
+0055707c	18	string	TOOMANYOPERATIONS
+00557090	20	string	UNSUPPORTEDALPHAARG
+005570a4	26	string	UNSUPPORTEDALPHAOPERATION
+005570c0	26	string	UNSUPPORTEDCOLOROPERATION
+005570dc	20	string	UNSUPPORTEDCOLORARG
+005570f0	23	string	UNSUPPORTEDFACTORVALUE
+00557108	25	string	UNSUPPORTEDTEXTUREFILTER
+00557124	19	string	WRONGTEXTUREFORMAT
+00557138	26	string	Unrecognized error value.
+00557190	139	string	<?xml version="1.0" encoding="utf-8"?>\n<info name="%s" pid="%u" guid="%s" video_path="%s" video_name="%s" donation_ask="%s" header="%s" >\n
+0055721c	60	string	<?xml version="1.0" encoding="utf-8"?>\n<lock id="%u %s"> />
+0055725c	19	string	videos/message.xml
+00557270	8	string	message
+00557278	12	string	donate.flv
+00557288	16	string	Help Wulfram!
+0055729c	16	string	You are Banned!
+005572ac	8	string	ban.flv
+005572b4	12	string	Acknowledge
+005572c0	11	string	Get Reason
+005572d4	16	string	You are Warned!
+005572e4	9	string	warn.flv
+005572f0	12	string	Acknowledge
+005572fc	12	string	Get Warning
+00557308	12	string	Get Spanked
+00557318	16	string	Announcement...
+0055732c	8	string	msg.flv
+00557334	17	string	Support Wulfram!
+0055734c	11	string	donate.flv
+00557358	63	string	\t\t<button tag="%s" url="http://www.wulfram.com/cept?id=%s" />\n
+00557398	64	string	\t\t<button tag="%s" url="http://www.wulfram.com/cept?pid=%u" />\n
+005573d8	9	string	</info>\n
+005573e4	8	string	wvp.exe
+005574ae	18	string	8BTANK_INTERNAL
+00557587	13	string	@radartank1
+00557594	11	string	radartank2
+005575a0	11	string	radartank3
+005575ac	11	string	radartank4
+005575b8	11	string	radartank5
+005575c4	11	string	radartank6
+005575d0	11	string	radartank7
+005575dc	11	string	radartank8
+005575e8	14	string	radar_texture
+0055768f	25	string	?looking_at_player_list
+005576a8	25	string	looking_at_carrying_list
+005576c4	15	string	activate_voice
+005576d4	19	string	extra_client_sleep
+005576e8	7	string	aurora
+005576f0	23	string	http://www.wulfram.com
+00557708	35	string	http://www.wulfram.com/updates.php
+0055772c	11	string	www_launch
+00557738	10	string	www_patch
+00557744	17	string	d3d_refresh_rate
+00557758	20	string	allow_windowed_mode
+0055776c	11	string	allow_3dfx
+00557778	7	string	bias_r
+00557780	7	string	bias_g
+00557788	7	string	bias_b
+00557790	10	string	hitfade_r
+0055779c	10	string	hitfade_g
+005577a8	10	string	hitfade_b
+005577b4	13	string	hitfade_time
+005577c4	11	string	deadfade_r
+005577d0	11	string	deadfade_g
+005577dc	11	string	deadfade_b
+005577e8	14	string	deadfade_time
+005577f8	9	string	sky_name
+00557804	11	string	skip_intro
+00557810	24	string	showing_battlefield_map
+00557828	21	string	always_texture_fetch
+00557840	15	string	ping_frequency
+00557850	13	string	ping_history
+00557860	16	string	ms_max_ping_bar
+00557870	17	string	max_kb_from_disk
+00557884	19	string	max_bytes_from_ram
+00557898	27	string	debug_graphics_accelerator
+005578b4	20	string	zoom_ambient_volume
+005578c8	17	string	zoom_gear_volume
+005578dc	20	string	select_major_volume
+005578f0	20	string	select_minor_volume
+00557904	28	string	internal_tank_engine_volume
+00557920	31	string	max_allowed_linear_sleep_error
+00557940	32	string	max_allowed_angular_sleep_error
+00557960	15	string	heap_debug_min
+00557970	15	string	time_debug_min
+00557980	22	string	max_net_action_update
+00557998	19	string	event_filter_delay
+005579ac	20	string	allow_no_base_entry
+005579c0	14	string	colored_light
+005579d0	12	string	debug_sound
+005579dc	20	string	cursor_restrictions
+005579f0	18	string	use_new_backfacer
+00557a04	25	string	cannon_trace_visible_len
+00557a20	32	string	cannon_trace_occupation_density
+00557a40	12	string	mipmap_bias
+00557a4c	18	string	close_mipmap_bias
+00557a60	14	string	dynamic_sound
+00557a70	17	string	ignore_shut_down
+00557a84	24	string	repair_beam_visual_time
+00557a9c	19	string	allow_multitexture
+00557ab0	18	string	likes_action_mode
+00557ac4	11	string	lookspring
+00557ad0	11	string	help_level
+00557adc	15	string	route_ping_num
+00557aec	16	string	route_ping_wait
+00557afc	16	string	route_ping_lost
+00557b0c	9	string	sound_on
+00557b18	18	string	sound_recvoice_on
+00557b2c	12	string	sound_level
+00557b38	18	string	sound_voice_level
+00557b4c	16	string	sound_vad_level
+00557b5c	16	string	sound_ava_level
+00557b6c	15	string	sound_speakers
+00557b7c	13	string	sound_driver
+00557b8c	18	string	sound_buffer_size
+00557ba0	21	string	sound_force_software
+00557bb8	12	string	sound_debug
+00557bc4	12	string	display_adz
+00557bd0	11	string	gamma_perc
+00557bdc	16	string	visibility_perc
+00557bec	14	string	terrain_error
+00557bfc	24	string	user_specify_resolution
+00557c14	16	string	high_resolution
+00557c24	14	string	dynamic_light
+00557c34	10	string	cheap_sky
+00557c40	8	string	do_fsaa
+00557c48	16	string	tag_all_players
+00557c58	21	string	mouse_control_active
+00557c70	23	string	joystick_sensitivity_x
+00557c88	23	string	joystick_sensitivity_y
+00557ca0	17	string	joystick_enabled
+00557cb4	18	string	joy_invert_y_axis
+00557cc8	28	string	mouse_control_invert_y_axis
+00557ce4	28	string	mouse_control_sensitivity_x
+00557d00	28	string	mouse_control_sensitivity_y
+00557d1c	28	string	mouse_control_sensitivity_z
+00557d38	21	string	enable_editing_modes
+00557d50	22	string	force_web_launch_only
+00557d68	24	string	enable_profanity_filter
+00557d80	15	string	display_system
+00557d90	18	string	mipmap_decimation
+00557da4	18	string	bandwidth_setting
+00557db8	15	string	default_handle
+00557dc8	17	string	default_password
+00557ddc	18	string	unique_identifier
+00557df0	17	string	executive_escape
+00557e04	18	string	alt_loader_prefix
+00557e18	12	string	unspecified
+00557e3c	14	string	Not Known (?)
+00557e4c	28	string	No Uplink Structure Found
+00557e68	16	string	team     : %d
+00557e78	16	string	No Entity Found
+00557e88	24	string	carry_oid: %d --> %s
+00557ea0	16	string	state    : %s
+00558030	7	string	%s%03d
+00558040	17	string	ang_acc.z: %.3f\n
+00558054	15	string	Auto Intercept
+00558064	12	string	Auto Follow
+00558070	10	string	Auto Goto
+0055807c	11	string	Auto Track
+00558098	6	string	False
+005580a0	6	string	%s %s
+005580a8	8	string	%s %.6f
+005580c4	13	string	Max Error :\s
+005580d4	13	string	Max Prime :\s
+005580e4	13	string	Max Output:\s
+005580f4	13	string	Smoothing :\s
+00558104	6	string	error
+0055810c	6	string	prime
+00558114	10	string	use error
+00558120	10	string	use prime
+0055812c	13	string	default auto
+0055813c	14	string	fast jet auto
+0055814c	14	string	slow jet auto
+0055815c	17	string	use fast (speed)
+00558170	18	string	use fast (height)
+00558184	16	string	consider height
+00558194	10	string	jet abate
+005581a0	9	string	jet misc
+005581ac	11	string	speed roll
+005581b8	17	string	max_xy_speed   \s
+005581cc	17	string	jet_abate_max  \s
+005581e0	17	string	tilt_err_mag   \s
+005581f4	17	string	roll_err_mag   \s
+00558208	17	string	tilt_max       \s
+0055821c	17	string	roll_max       \s
+00558230	17	string	roll_turn_fac  \s
+00558244	17	string	roll_strafe_fac\s
+00558258	17	string	base_react     \s
+0055826c	17	string	slope_react    \s
+00558280	17	string	degen_on_slope \s
+00558294	17	string	zero_push      \s
+00558348	64	string	Must have exactly 2 vertices selected to compute parallel axis.
+00558388	77	string	Must have exactly 1 vertex or 1 face selected to compute perpendicular axis.
+005583d8	47	string	This vertex does not participate in any faces.
+00558408	28	string	axis now (%.3f, %.3f, %.3f)
+00558424	16	string	NO AXIS LOCK
+00558434	29	string	AXIS LOCK (%.3f, %.3f, %.3f)
+00558454	13	string	twenty-three
+00558464	11	string	twenty-two
+00558470	11	string	twenty-one
+0055847c	7	string	twenty
+00558484	9	string	nineteen
+00558490	9	string	eighteen
+0055849c	10	string	seventeen
+005584a8	8	string	sixteen
+005584b0	8	string	fifteen
+005584b8	9	string	fourteen
+005584c4	9	string	thirteen
+005584d0	7	string	twelve
+005584d8	7	string	eleven
+005584ec	6	string	eight
+005584f4	6	string	seven
+00558510	6	string	three
+00558524	11	string	Visual Map
+00558530	13	string	Altitude Map
+00558540	10	string	Slope Map
+0055854c	14	string	*** ERROR ***
+0055855c	7	string	Target
+00558564	8	string	Warning
+0055856c	9	string	Waypoint
+00558578	11	string	Crashpoint
+00558588	52	string	Move cursor to a starship for more information.\n<P>
+005585bc	39	string	Select a starship to issue orders.\n<P>
+005585e4	18	string	*** ERROR *** (?)
+005585f8	12	string	Commander:
+00558604	16	string	Last Commander:
+0055861c	10	string	Hovertank
+00558628	12	string	Supply Ship
+00558634	18	string	Carrier: Enemy %s
+00558648	12	string	Carrier: %s
+0055865c	14	string	Getting Built
+00558674	7	string	In Use
+0055867c	15	string	In Enemy Hands
+00558694	12	string	State  : %s
+005586a4	8	string	Systems
+005586ac	8	string	Nominal
+005586b4	7	string	\s    \s
+005586bc	18	string	Cannot Drop Cargo
+005586d4	9	string	Too Many
+005586e0	11	string	Unrecoverd
+005586ec	12	string	Cargo Boxes
+005586f8	8	string	Bombing
+00558700	12	string	In Progress
+0055870c	12	string	Game is not
+00558718	14	string	in tournament
+00558728	6	string	mode.
+00558730	16	string	%%.%ds (%%c%%c)
+00558740	15	string	\s Shield: %d%%
+00558758	6	string	Pumps
+00558760	16	string	\s Power : %d %s
+00558770	12	string	%%.%ds (%s)
+0055877c	12	string	No comment.
+0055878c	13	string	move %d %c%c
+0055879c	12	string	Bombardment
+005587a8	17	string	%d. %%-%d.%ds %s
+005587c8	6	string	%s:%s
+005587d0	21	string	set %d build_mode %d
+005587e8	18	string	delete %d "%s" %d
+005587fc	8	string	bomb %d
+00558804	17	string	build %d "%s" %d
+00558818	26	string	pannel_map_hanging_button
+00558834	21	string	pannel_map_arrow_lit
+0055884c	22	string	pannel_map_arrow_dark
+00558864	22	string	space_move_arrow_dark
+0055887c	17	string	space_move_arrow
+00558890	17	string	space_move_notok
+005588a4	14	string	Create Marker
+005588b4	9	string	Vehicles
+005588c0	10	string	Starships
+005588cc	11	string	Base Units
+005588e0	14	string	Utility Units
+005588f0	6	string	Cargo
+005588f8	8	string	Markers
+00558900	8	string	Zoom In
+00558908	9	string	Zoom Out
+00558914	12	string	Zoom to Top
+00558920	9	string	View All
+0055892c	9	string	Hide All
+00558938	8	string	Request
+00558940	7	string	Delete
+00558948	15	string	Orbital Strike
+00558958	10	string	Move Ship
+00558978	7	string	Cancel
+00558980	23	string	cursor_marker_waypoint
+00558998	21	string	cursor_marker_target
+005589b0	21	string	cursor_marker_hazard
+005589c8	21	string	cursor_normal_zoomin
+005589e0	22	string	cursor_normal_zoomout
+005589f8	16	string	pannel_map_mode
+00558a08	20	string	pannel_uplink_mode1
+00558a1c	20	string	pannel_uplink_mode2
+00558a30	20	string	pannel_uplink_mode3
+00558a5c	13	string	Hit Points:\s
+00558a70	11	string	Autonomous
+00558a7c	14	string	Repeat Manual
+00558a8c	7	string	Manual
+00558a94	26	string	Error or something... (?)
+00558ab8	13	string	Containing:\s
+00558ac8	6	string	\n<BR>
+00558ad0	7	string	Team:\s
+00558ad8	6	string	Your\s
+00558af4	7	string	)\n<BR>
+00558afc	13	string	Piloted by:\s
+00558b0c	13	string	Kill ratio:\s
+00558b1c	20	string	<BR>Current Kills:\s
+00558b30	6	string	\n<br>
+00558b38	29	string	<BR>Currently carrying:<BR>\n
+00558b5c	17	string	<BR>Hit Points:\s
+00558b70	7	string	Enemy\s
+00558b78	14	string	Supply Ship "
+00558b88	6	string	"<BR>
+00558b90	9	string	Shields\s
+00558b9c	6	string	%<BR>
+00558ba8	10	string	Empty<BR>
+00558bb4	15	string	%-23.20s%s<BR>
+00558bcc	8	string	\n<P>by\s
+00558bd4	6	string	\n<P>\n
+00558bdc	13	string	Warp Clouds\s
+00558bec	12	string	Warp Cloud\s
+00558bf8	12	string	for Square\s
+00558c0c	39	string	Both Red and Blue teams are preparing\s
+00558c34	39	string	to warp supply ships into this sector.
+00558c5c	10	string	The Blue\s
+00558c68	9	string	The Red\s
+00558c74	27	string	team is preparing to warp\s
+00558c90	32	string	a supply ship into this sector.
+00558cb0	21	string	Stability of Square\s
+00558cc8	34	string	:<P>This square is stabilized by\s
+00558cec	13	string	\sred skypump
+00558d00	6	string	\sand\s
+00558d08	14	string	\sblue skypump
+00558d1c	13	string	Marker name:
+00558d2c	13	string	Description:
+00558d3c	6	string	Okay!
+00558f7c	40	string	Bitmap has invalid bitcount (it's %d).\n
+00558fa4	49	string	Bitmap larger than 640 x 480.... what the hell?\n
+00558fe0	21	string	Acitvated Graph: %s\n
+00558ff8	18	string	Killed Graph: %s\n
+0055900c	28	string	..\\client\\debug\\bug_net.cpp
+00559028	28	string	%s: %d [local TCP port: %d\n
+00559044	9	string	PRIORITY
+00559054	8	string	WEAPONS
+0055905c	8	string	ACKWPNS
+00559064	9	string	%f %f %f
+00559070	8	string	RESENDS
+00559078	15	string	GRAPH_RESPONSE
+00559088	11	string	GRAPH_DATA
+00559098	14	string	IGNORE_PACKET
+005590a8	6	string	HELLO
+005590b0	6	string	START
+005590c0	27	string	SEND GRAPH_REQUEST for %s\n
+005590dc	14	string	GRAPH_REQUEST
+005590ec	28	string	DEBUG CONNECTING TO: %s %d\n
+00559108	29	string	TCP con != UDP con (%s: %d)\n
+00559128	23	string	debug net mode on: %d\n
+00559140	24	string	debug net mode off: %d\n
+00559158	89	string	\soid  REF            type        priority       contents    bytes    freq    age   speed
+005591b8	88	string	\s                                          cba9876543210                            m/s
+00559210	14	string	** DELETED **
+00559220	53	string	%4d  %3s %20s %10.0f  %s  %7.0f  [NEW]  %5.1f  %4.0f
+00559258	53	string	%4d  %3s %20s %10.0f  %s  %7.0f  %6.3f  %5.1f  %4.0f
+00559290	74	string	Network Layer Resends per Sec [Yel 1.0][Green 5.0][Blue 10.0][WHT Actual]
+005592dc	22	string	Network Layer Timeout
+005592f8	13	string	Linear Error
+00559308	14	string	Angular Error
+00559318	14	string	packet counts
+00559328	40	string	%-22s  pkt[%d] <server: %d  client: %d>
+00559350	15	string	%-22s  pkt[%d]
+00559360	10	string	weapon id
+0055936c	6	string	%-22s
+00559374	12	string	[srv] state
+00559380	16	string	[srv] pri state
+00559390	19	string	[cli] client state
+005593a4	19	string	[srv] estimate err
+005593b8	18	string	[srv] latch error
+005593cc	19	string	[srv] last cli ack
+005593e0	19	string	[cli] last cli ack
+005593f4	9	string	\s %2d  \s
+00559400	9	string	\s%3d %d\s
+0055940c	7	string	%2.0e\s
+00559414	8	string	\s%5.0f\s
+0055941c	9	string	\s st: %d
+00559428	17	string	nav_button_entry
+0055943c	21	string	nav_button_ranksquad
+00559454	22	string	nav_button_switchteam
+0055946c	21	string	nav_button_teamstats
+00559484	21	string	nav_button_unitsinfo
+0055949c	21	string	nav_button_yourstats
+005594b4	19	string	nav_button_credits
+005594c8	11	string	Game Entry
+005594d4	19	string	Players and Squads
+005594e8	13	string	Switch Teams
+005594f8	16	string	Team Statistics
+00559508	15	string	Units Briefing
+00559518	16	string	Your Statistics
+00559528	14	string	About Wulfram
+0055954c	6	string	VOICE
+00559554	16	string	videos/lock.xml
+00559568	8	string	Neutral
+0055957c	32	string	Use '-side red' or '-side blue'
+0055959c	29	string	Wrong argument usage (-side)
+005595bc	8	string	-texmap
+005595c4	8	string	-debdef
+005595cc	11	string	-no_update
+005595d8	21	string	-auto_update_enabled
+005595f0	133	string	Your wulfram II client is now auto-updater enabled. You can now go to the website (www.wulfram.com) to launch the game at your will.
+00559678	13	string	Auto Updater
+00559690	10	string	-windowed
+0055969c	16	string	-allow_windowed
+005596ac	7	string	-nogun
+005596b4	9	string	-matherr
+005596c0	8	string	-handle
+005596c8	7	string	-login
+005596d0	6	string	-side
+005596d8	6	string	-test
+005596e0	8	string	sound
+005596e8	12	string	-allow_null
+005596f4	8	string	-no3dfx
+005596fc	16	string	-no3dfx is set\n
+0055970c	6	string	-root
+00559714	7	string	-crash
+00559724	24	string	Can't open the file: %s
+0055973c	9	string	betawulf
+00559748	11	string	betaserver
+00559754	8	string	-server
+0055975c	12	string	-betaserver
+00559768	15	string	72.236.159.100
+00559778	6	string	-port
+00559788	21	string	..\\client\\client.cpp
+005597a0	39	string	Lame code bug (%s %d) -- fix arg count
+005597c8	9	string	BetaWulf
+005597d8	98	string	This is a BetaWulf Wuilfram distribution.  \nIt is intended for testing new Wulfram developments.\n
+0055983c	15	string	_override_args
+0055984c	9	string	-webfile
+00559858	16	string	client_blackbox
+00559868	9	string	Software
+00559874	48	string	unkown entity type (for setting the shape): %d\n
+005598a4	47	string	decoration_shape_adjust: e->object_type is %d\n
+005598d4	20	string	Got decoration: %s\n
+005598e8	7	string	easter
+005598f0	30	string	ignore collisions for uplink\n
+00559910	10	string	palette%d
+0055991c	6	string	black
+00559924	6	string	white
+0055992c	7	string	yellow
+00559934	14	string	yellow-orange
+00559944	7	string	orange
+0055994c	11	string	orange-red
+00559958	6	string	steel
+00559960	9	string	magenta2
+0055996c	7	string	purple
+00559974	12	string	purple-blue
+00559980	9	string	odd-blue
+0055998c	13	string	lighter-blue
+005599a4	11	string	aqua-green
+005599b0	18	string	unripe-lime-green
+005599c4	6	string	green
+005599cc	11	string	dark-green
+005599d8	10	string	olive-tan
+005599e4	7	string	Hello.
+005599ec	24	string	server profiler toggled
+00559a04	26	string	client graph prof toggled
+00559a20	20	string	unsupported command
+00559a34	12	string	KILL-ALL
+00559a40	32	string	killing all graphs for everyone
+00559a60	21	string	Request killgraph %s
+00559a78	20	string	Request addgraph %s
+00559a8c	26	string	Debug Net Not Available!\n
+00559aa8	9	string	sky_name
+00559ab4	13	string	Sky set to '
+00559ac8	38	string	Palette biased to (%.2f, %.2f, %.2f).
+00559af0	18	string	Runtime Parameter
+00559b04	17	string	Option Parameter
+00559b18	16	string	State Parameter
+00559b28	17	string	Unkown Parameter
+00559b3c	10	string	Set. [%s]
+00559b48	8	string	%s [%s]
+00559b50	37	string	Error: variable '%s' does not exist.
+00559b78	12	string	%s: %s [%s]
+00559b84	14	string	client_params
+00559b94	17	string	Save successful.
+00559ba8	13	string	Save failed.
+00559bb8	6	string	Okay.
+00559bc0	31	string	You already put the graphs up!
+00559be0	11	string	Graphs up.
+00559bec	24	string	There are no graphs up!
+00559c04	13	string	Graphs Down.
+00559c14	17	string	Toggle Key Graph
+00559c28	18	string	Toggle Grid Debug
+00559c3c	38	string	Initiated 'hit' fade, intensity %.2f.
+00559c64	23	string	Initiated 'dead' fade.
+00559c7c	15	string	Palette reset.
+00559c8c	23	string	betawulf_player_config
+00559ca4	23	string	wulfram2_player_config
+00559cbc	7	string	mousex
+00559cc4	7	string	mousey
+00559cdc	20	string	Software Windowed
+00559cf0	17	string	Load successful.
+00559d04	13	string	Load failed.
+00559d14	19	string	Gamma set to %.3f\n
+00559d28	15	string	Mipmark begun.
+00559d38	31	string	max_terrain_error set to %.3f\n
+00559d58	12	string	[?NOTHING?]
+00559d64	24	string	... playing %s now ...\n
+00559d7c	23	string	... can't find %s ...\n
+00559d94	38	string	Error: All arguments must be strings.
+00559dbc	23	string	Marked uncharted zone.
+00559dd4	8	string	Marked.
+00559ddc	14	string	Unknown zone.
+00559dec	18	string	<not initialized>
+00559e00	32	string	spynet: playerlist is not ready
+00559e20	29	string	spynet: <%s> is not a player
+00559e40	26	string	spynet: <%s> is ambiguous
+00559e5c	54	string	spynet: can't find any reasonable player to spynet on
+00559e94	35	string	spynet: attached to player %s [%d]
+00559eb8	40	string	spynet: failed attach to player %s [%d]
+00559ee0	63	string	peek: histo, net, netpri, viewpoint, weapons, toggle, keygraph
+00559f20	8	string	histo
+00559f28	29	string	peek: net histogram toggled\s
+00559f4c	25	string	peek: net graph toggled\s
+00559f68	8	string	weapons
+00559f70	29	string	peek: weapons debug toggled\s
+00559f90	12	string	viewpoint
+00559f9c	31	string	peek: viewpoint debug toggled\s
+00559fbc	8	string	toggle
+00559fc4	28	string	peek: debug output toggled\s
+00559fe0	8	string	netpri
+00559fe8	34	string	peek: net priority output toggled
+0055a00c	8	string	resends
+0055a014	43	string	peek: network layer packet resends toggled
+0055a040	9	string	keygraph
+0055a04c	22	string	peek: toggle keygraph
+0055a068	77	string	Huh? peek: histo, resends, net, netpri, viewpoint, weapons, toggle, keygraph
+0055a0b8	7	string	Foosh.
+0055a0c0	19	string	SleepSome (%d ms)\n
+0055a0d4	18	string	SleepSome (%d ms)
+0055a0e8	23	string	Unable to read screen.
+0055a100	13	string	shot%03d.bmp
+0055a110	19	string	Saved screenshot '
+0055a124	21	string	Failed to save file.
+0055a144	6	string	hello
+0055a150	6	string	print
+0055a174	9	string	clearpal
+0055a180	6	string	gamma
+0055a188	8	string	mipmark
+0055a190	10	string	land_qual
+0055a1a4	8	string	divorce
+0055a1ac	7	string	graphs
+0055a1c4	11	string	weapon_key
+0055a1d0	11	string	action_key
+0055a1dc	9	string	axis_key
+0055a1e8	9	string	touchkey
+0055a1f4	9	string	set_axis
+0055a200	13	string	deploy_cargo
+0055a210	11	string	drop_cargo
+0055a21c	14	string	mouse_control
+0055a22c	15	string	cycle_map_type
+0055a23c	13	string	message_mode
+0055a24c	18	string	cycle_camera_type
+0055a260	9	string	distress
+0055a26c	16	string	battlefield_map
+0055a27c	10	string	main_menu
+0055a288	12	string	help_screen
+0055a294	14	string	toggle_ladder
+0055a2a4	20	string	toggle_radar_ranges
+0055a2c0	13	string	clear_device
+0055a2d0	13	string	store_target
+0055a2e0	16	string	retrieve_target
+0055a2f0	25	string	add_target_to_watch_list
+0055a30c	17	string	clear_watch_list
+0055a320	9	string	profiler
+0055a334	9	string	map_name
+0055a340	10	string	sky_names
+0055a34c	17	string	command_dialogue
+0055a360	15	string	list_stripmaps
+0055a370	15	string	save_stripmaps
+0055a380	14	string	kill_stripmap
+0055a390	10	string	mark_zone
+0055a39c	20	string	write_dither_tables
+0055a3b0	6	string	rtime
+0055a3c0	7	string	spynet
+0055a3c8	10	string	fog_color
+0055a3d4	14	string	fog_thickness
+0055a3e4	13	string	fog_distance
+0055a3f4	7	string	tflush
+0055a3fc	10	string	sleepsome
+0055a408	13	string	target_cycle
+0055a418	12	string	target_only
+0055a424	13	string	clear_target
+0055a434	10	string	cpu_clock
+0055a440	11	string	screenshot
+0055a44c	6	string	gprof
+0055a454	19	string	scroll_text_upward
+0055a468	21	string	scroll_text_downward
+0055a480	22	string	Command unrecognized.
+0055a498	15	string	Error at line\s
+0055a4ac	8	string	keymap_
+0055a4b8	18	string	contrail_1anim009
+0055a4cc	18	string	contrail_1anim008
+0055a4e0	18	string	contrail_1anim007
+0055a4f4	18	string	contrail_1anim006
+0055a508	18	string	contrail_1anim005
+0055a51c	18	string	contrail_1anim004
+0055a530	18	string	contrail_1anim003
+0055a544	18	string	contrail_1anim002
+0055a558	18	string	contrail_1anim001
+0055a56c	14	string	contrail_sec3
+0055a57c	14	string	contrail_sec2
+0055a58c	14	string	contrail_sec1
+0055a59c	15	string	Wulfram Player
+0055a5ac	21	string	EXIT GRACEFULLY END\n
+0055a5cc	9	string	donation
+0055a5d8	8	string	credits
+0055a5e0	23	string	SetTextureStageState 0
+0055a5f8	50	string	SetRenderState(D3DRENDERSTATE_FOGTABLESTART, ...)
+0055a62c	48	string	SetRenderState(D3DRENDERSTATE_FOGTABLEEND, ...)
+0055a65c	17	string	CreateStateBlock
+0055a670	18	string	CaptureStateBlock
+0055a684	16	string	ApplyStateBlock
+0055a694	37	string	..\\client\\winsys\\d3d\\d3d_shaders.cpp
+0055a6c0	74	string	%s %d: Can't do this operation (or) can't do it in one pass [passes: %d]\n
+0055a70c	41	string	%s %d: can do multitexutre in %d passes\n
+0055a738	30	string	%s %d: can't do multitexutre\n
+0055a758	16	string	Direct3D HAL
+0055a768	34	string	..\\client\\winsys\\d3d\\d3dframe.cpp
+0055a78c	18	string	%s %d (count %d)\n
+0055a7a0	58	string	*** direct draw object is still referenced %d times ****\n
+0055a7dc	50	string	*** D3D object is still referenced %d times ****\n
+0055a810	39	string	reference count is %d, not 3! [%s %d]\n
+0055a838	39	string	reference count is %d, not 2! [%s %d]\n
+0055a860	41	string	%s %d: CountRef(m_pddsBackBuffer) is %d\n
+0055a88c	8	string	getcaps
+0055a894	16	string	Mipmap allocate
+0055a8a4	13	string	cursor->Lock
+0055a8b4	15	string	cursor->Unlock
+0055a8c4	9	string	Release1
+0055a8d0	27	string	cursor->GetAttachedSurface
+0055a8ec	9	string	Release8
+0055a8f8	18	string	top_surface->Lock
+0055a90c	20	string	TempSurface->Unlock
+0055a920	13	string	device->Load
+0055a930	19	string	shockforce_cockpit
+0055a944	13	string	tournlighton
+0055a954	15	string	eindicator_red
+0055a964	16	string	eindicator_blue
+0055a974	8	string	tankred
+0055a97c	9	string	tankblue
+0055a988	28	string	talking_lights_screens_left
+0055a9a4	29	string	talking_lights_screens_right
+0055a9c4	28	string	talking_lights_cockpit_left
+0055a9e0	29	string	talking_lights_cockpit_right
+0055aa00	8	string	pingbar
+0055aa08	12	string	ping_curbar
+0055aa14	14	string	ping_crossbar
+0055aa2c	8	string	Glimpse
+0055aa3c	10	string	%02d:%02d
+0055aa48	6	string	Kills
+0055aa58	14	string	Distress call
+0055aa70	9	string	% hull,\s
+0055aa7c	8	string	% fuel.
+0055aa84	12	string	\s Carrying\s
+0055aa90	25	string	\s Carrying enemy uplink!
+0055aaac	19	string	\s Carrying uplink.
+0055aac0	45	string	pseudo_bilin_entry %s[BILIN_TABLE_SIZE] = {\n
+0055aaf4	13	string	\s{%d,%d}%s%s
+0055ab0c	22	string	Unable to open file '
+0055ab28	17	string	pseudo_bilin_low
+0055ab3c	18	string	pseudo_bilin_high
+0055ab50	9	string	Written.
+0055ab5c	12	string	load_select
+0055ab68	10	string	green_bar
+0055ab74	11	string	yellow_bar
+0055ab80	19	string	(CANNOT DOCK HERE)
+0055ab94	12	string	NEUTRAL\s
+0055aba0	9	string	HOSTILE\s
+0055abac	7	string	%4d Mu
+0055abb4	19	string	%3d On Pad, %2d Mu
+0055abc8	6	string	%-10s
+0055abd0	7	string	(none)
+0055abd8	12	string	REFUEL PAD
+0055abe4	12	string	Weapon Load
+0055abf0	16	string	%3d Mu / %3d Mu
+0055ac00	17	string	(FULLY REPAIRED)
+0055ac14	13	string	REPAIRING...
+0055ac24	11	string	REPAIR PAD
+0055ac30	7	string	CENTER
+0055ac50	8	string	TITLE
+0055ac64	39	string	SYSTEM ERROR: There was a fetch error.
+0055ac8c	8	string	#8ba4bb
+0055ac9c	8	string	#ffd000
+0055aca4	10	string	lightblue
+0055acb0	8	string	#ffffff
+0055acb8	8	string	#000000
+0055acf8	14	string	Place failed.
+0055ad08	11	string	No object.
+0055ad14	8	string	Placed.
+0055ad1c	11	string	data/maps/
+0055ad28	8	string	tagmap2
+0055ad34	17	string	0template %s %d\s
+0055ad50	7	string	%dx%d\n
+0055ad58	7	string	%fx%f\n
+0055ad60	7	string	%d %f\n
+0055ad68	12	string	%lf %lf %lf
+0055ad74	26	string	Failed (could not parse).
+0055ad90	13	string	Linear mode.
+0055ada0	7	string	%lf %d
+0055ada8	12	string	sandrock001
+0055adb4	44	string	Terrain size and nsquares?  (e.g. 5600 128)
+0055ade0	6	string	Done.
+0055ade8	14	string	New altitude?
+0055adf8	20	string	height orad [irad]?
+0055ae0c	7	string	x y z?
+0055ae14	14	string	Pyramid mode.
+0055ae24	17	string	height nsquares?
+0055ae38	13	string	Filter mode.
+0055ae48	20	string	factor orad [irad]?
+0055ae5c	8	string	Texture
+0055ae64	14	string	Texture mode.
+0055ae74	15	string	Texture: orad?
+0055ae84	14	string	Precise Paint
+0055ae94	20	string	Precise Paint mode.
+0055aea8	12	string	Flatten Low
+0055aeb4	18	string	Flatten Low mode.
+0055aec8	10	string	Map name:
+0055aed4	25	string	Save Startstate failed.\n
+0055aef0	18	string	Transitioning on.
+0055af04	19	string	Transitioning off.
+0055af18	15	string	Canonicalized.
+0055af28	7	string	SAVED.
+0055af30	13	string	SAVE FAILED.
+0055af40	8	string	LOADED.
+0055af48	13	string	LOAD FAILED.
+0055af58	10	string	manip off
+0055af64	9	string	manip on
+0055af70	17	string	LANDSCAPE EDITOR
+0055af84	9	string	%f %f %d
+0055af90	34	string	FAILED: Need 2 floats and an int.
+0055afb4	22	string	FAILED: Need a float.
+0055afcc	20	string	scale decay [seed]?
+0055afe0	19	string	offset z value by?
+0055aff4	16	string	set z value to?
+0055b004	8	string	working
+0055b00c	19	string	create new terrain
+0055b020	8	string	doosher
+0055b028	25	string	flatten entire landscape
+0055b044	7	string	pencil
+0055b04c	22	string	flatten landscape rim
+0055b064	24	string	xmountain-style fractal
+0055b07c	15	string	offset heights
+0055b08c	12	string	set heights
+0055b098	8	string	pyramid
+0055b0a0	8	string	fisheye
+0055b0a8	12	string	linear mode
+0055b0b4	12	string	filter mode
+0055b0c0	12	string	flatten low
+0055b0cc	8	string	texture
+0055b0d4	14	string	precise paint
+0055b0e4	19	string	toggle object list
+0055b0f8	20	string	toggle texture list
+0055b10c	18	string	clear all objects
+0055b120	13	string	place object
+0055b130	19	string	select prev object
+0055b144	7	string	flip_x
+0055b14c	19	string	select next object
+0055b160	16	string	set orientation
+0055b170	11	string	dropper_hi
+0055b17c	14	string	color replace
+0055b18c	27	string	SUPER SPIFFY color replace
+0055b1a8	10	string	pencil_hi
+0055b1b4	14	string	pixel replace
+0055b1d4	15	string	RELOAD FAILED.
+0055b1e4	33	string	Enter new name for this texture:
+0055b208	31	string	Enter name of texture to find:
+0055b228	18	string	Filter set to %d.
+0055b23c	19	string	Set filter to sum:
+0055b250	22	string	chain_load_helper %s\n
+0055b268	32	string	do_chain_load dir '%s' okay %d\n
+0055b288	31	string	Enter root dir for chain load:
+0055b2a8	15	string	paintbucket_hi
+0055b2b8	11	string	flood fill
+0055b2c4	6	string	Mode:
+0055b2cc	8	string	TEXTURE
+0055b2d4	7	string	BITMAP
+0055b2e4	14	string	SPARSE BITMAP
+0055b2f4	15	string	REAL BAD ERROR
+0055b304	14	string	%s:  %dx%d %s
+0055b314	16	string	(TRANSPARENT)
+0055b324	21	string	Cursor at (%2d, %2d)
+0055b33c	20	string	Hotspot set failed.
+0055b350	24	string	Hotspot now at (%d, %d)
+0055b368	14	string	Filtered %d.\n
+0055b378	8	string	clone%d
+0055b380	25	string	THE UNDO STACK IS EMPTY.
+0055b39c	28	string	Loading transparency: false
+0055b3b8	27	string	Loading transparency: true
+0055b3d4	15	string	TEXTURE EDITOR
+0055b3e4	19	string	Pixel-replace mode
+0055b3f8	16	string	Flood fill mode
+0055b408	12	string	paintbucket
+0055b414	23	string	Color-replacement mode
+0055b42c	8	string	dropper
+0055b434	34	string	EXTRA COOL Color-replacement mode
+0055b458	32	string	Nuke texture with current color
+0055b478	11	string	doosher_hi
+0055b484	28	string	Make texture be type SPARSE
+0055b4a0	27	string	Make texture be type TEX32
+0055b4bc	10	string	Flip in X
+0055b4c8	10	string	flip_x_hi
+0055b4d4	10	string	Flip in Y
+0055b4e0	14	string	Rotate upward
+0055b4f0	16	string	Rotate downward
+0055b500	12	string	Rotate left
+0055b50c	13	string	Rotate right
+0055b51c	23	string	Rename current texture
+0055b534	20	string	Import new BMP file
+0055b548	41	string	Reload current texture from its BMP file
+0055b574	21	string	Chain-Load BMP files
+0055b58c	16	string	Rebuild MIPmaps
+0055b59c	21	string	Find texture by name
+0055b5b4	9	string	Load BMP
+0055b5c0	43	string	** ** LIST OF ALL DELETED TEXTURES: ** **\n
+0055b5ec	6	string	%.2fm
+0055b5f4	7	string	%.2fkm
+0055b5fc	21	string	Face has %d vertices
+0055b614	13	string	Editing '%s'
+0055b624	20	string	%d (%d) faces total
+0055b638	23	string	%d (%d) vertices total
+0055b650	18	string	%d faces selected
+0055b664	21	string	%d vertices selected
+0055b67c	23	string	Pos (%.4f, %.4f, %.4f)
+0055b694	24	string	view (%.3f, %.3f, %.3f)
+0055b6ac	24	string	vec  (%.3f, %.3f, %.3f)
+0055b6c4	7	string	shapes
+0055b6cc	6	string	maps/
+0055b6d4	15	string	/supplementals
+0055b6e4	12	string	data/shapes
+0055b6f0	14	string	supplementals
+0055b700	52	string	Directory-name to load?  (or none, for main shapes)
+0055b734	21	string	Texture preserve: %d
+0055b74c	16	string	New object name
+0055b75c	8	string	Failed.
+0055b764	11	string	Succeeded.
+0055b770	21	string	Must select a vertex
+0055b788	10	string	Filename?
+0055b794	23	string	MUST SELECT ONE VERTEX
+0055b7ac	14	string	Locus to add?
+0055b7bc	17	string	Locus to delete?
+0055b7d0	38	string	Failed (must have 1 vertex selected).
+0055b7f8	20	string	New vertex (X Y Z):
+0055b80c	17	string	Move by (X Y Z):
+0055b820	20	string	Reposition (X Y Z):
+0055b834	31	string	%d exceptions isolated (of %d)
+0055b854	14	string	Object Editor
+0055b864	13	string	Geometry   \s
+0055b874	9	string	Textures
+0055b880	6	string	Views
+0055b898	7	string	Import
+0055b8a0	9	string	Save All
+0055b8ac	9	string	Load All
+0055b8b8	11	string	Categories
+0055b8c4	19	string	Change object name
+0055b8d8	20	string	Select all vertices
+0055b8ec	17	string	Select all faces
+0055b900	36	string	Increase object size by one magstep
+0055b924	36	string	Decrease object size by one magstep
+0055b948	13	string	Center Shape
+0055b958	18	string	Simplify Polygons
+0055b96c	20	string	Flip selected faces
+0055b980	21	string	Add new vertex ('v')
+0055b998	25	string	Delete selected vertices
+0055b9b4	19	string	Add new face ('b')
+0055b9c8	26	string	Kill selected faces ('k')
+0055b9e4	9	string	Geometry
+0055b9f0	22	string	View/Hide Extra Stuff
+0055ba08	11	string	FRONT view
+0055ba14	10	string	REAR view
+0055ba20	13	string	TOPSIDE view
+0055ba30	15	string	UNDERSIDE view
+0055ba40	15	string	LEFT SIDE view
+0055ba50	16	string	RIGHT SIDE view
+0055ba60	30	string	Set axis lock to X axis ('x')
+0055ba80	30	string	Set axis lock to Y axis ('y')
+0055baa0	30	string	Set axis lock to Z axis ('z')
+0055bac0	22	string	Clear axis lock ('0')
+0055bad8	24	string	Set parallel axis ('1')
+0055baf0	29	string	Set perpendicular axis ('2')
+0055bb10	10	string	Add locus
+0055bb1c	13	string	Delete locus
+0055bb2c	31	string	Change texture of current face
+0055bb4c	25	string	Increase texture magstep
+0055bb68	25	string	Decrease texture magstep
+0055bb84	20	string	Invert all v coords
+0055bb98	9	string	%d %d %d
+0055bba4	17	string	\s     (%lf, %lf)
+0055bbb8	12	string	material '
+0055bbc4	11	string	(count %d)
+0055bbd0	12	string	vertices %d
+0055bbdc	9	string	faces %d
+0055bbe8	27	string	Couldn't find texture "%s"
+0055bc04	19	string	Got material '%s'\n
+0055bc18	16	string	\s   [onface %d]
+0055bc28	17	string	\s   [onface %d]\n
+0055bc3c	26	string	... facetex line: ((%s))\n
+0055bc58	11	string	facetex %d
+0055bc64	13	string	facetex %d:\n
+0055bc74	14	string	\s .. face %d\n
+0055bdc4	11	string	Empty Mode
+0055bdd0	20	string	3MACS EMPTY MODE
+0055be2c	23	string	looking_at_player_list
+0055be44	25	string	looking_at_carrying_list
+0055be60	49	string	I don't know what to say (undefined message tag)
+0055be9c	13	string	missile rack
+0055beac	13	string	pulse cannon
+0055bebc	11	string	autocannon
+0055bec8	18	string	weapon load 325mu
+0055bedc	20	string	top speed 201kph
+0055bef0	16	string	lt missile rack
+0055bf00	12	string	repair beam
+0055bf0c	10	string	chain gun
+0055bf18	18	string	weapon load 136mu
+0055bf2c	17	string	top speed 288kph
+0055bf40	6	string	Ratio
+0055bf48	6	string	Kudos
+0055bf64	39	string	%-4s %-*.*s %3s   %-5.5s %-5.5s %-7.7s
+0055bf8c	38	string	%-4s %-*.*s %3s   %-5.0lf %-5d %-7.0f
+0055bfb8	38	string	%-4s %-*.*s %3s   %-5.0lf %-5d %-7.7s
+0055bfe0	24	string	Construction Timeout:
+0055c000	15	string	entry_skeleton
+0055c010	21	string	blankscreen_skeleton
+0055c028	20	string	switchteam_skeleton
+0055c03c	24	string	units_briefing_skeleton
+0055c054	16	string	squads_skeleton
+0055c064	11	string	entry_grid
+0055c070	10	string	red_crest
+0055c07c	11	string	blue_crest
+0055c08c	14	string	flag_blue_dim
+0055c09c	14	string	flag_blue_001
+0055c0ac	13	string	flag_red_dim
+0055c0bc	13	string	flag_red_001
+0055c0cc	10	string	flag_grey
+0055c0d8	19	string	flag_blue_glow_001
+0055c0ec	18	string	flag_red_glow_001
+0055c100	12	string	button_left
+0055c10c	15	string	button_left_in
+0055c11c	13	string	button_right
+0055c12c	16	string	button_right_in
+0055c13c	56	string	Choose your entry point by selecting a flag on the map.
+0055c178	96	string	That's not your base!  Choose an entry point by selecting a flag of your team color on the map.
+0055c1d8	112	string	There are no more repair pads on the map. You must wait for the game to end, or a teammate to deploy a new pad.
+0055c248	111	string	Your team has no powered repair pads. You must wait for the game to end, or for your team to deploy a new pad.
+0055c2b8	76	string	Please wait while your government processes your request for a new vehicle.
+0055c308	89	string	Your government is still processing your request for a new vehicle, please be patient...
+0055c364	24	string	entry_select_button_lit
+0055c3b4	9	string	brown/20
+0055c3c0	12	string	Fatal Error
+0055c3cc	12	string	3macs Frame
+0055c420	6	string	shift
+0055c428	6	string	enter
+0055c430	14	string	start_message
+0055c440	13	string	cargo_deploy
+0055c450	11	string	cargo_drop
+0055c460	13	string	map_overview
+0055c470	12	string	number keys
+0055c47c	12	string	weapon_keys
+0055c48c	21	string	target_closest_cargo
+0055c4a4	22	string	target_closest_repair
+0055c4c0	20	string	target_closest_fuel
+0055c4d8	13	string	cycle_target
+0055c4ec	12	string	target_tank
+0055c4fc	21	string	target_under_reticle
+0055c518	19	string	raise_jet_strength
+0055c530	19	string	lower_jet_strength
+0055c544	25	string	space bar, or left mouse
+0055c560	16	string	autocannon_fire
+0055c570	40	string	arrow keys, or w, a, s, d with mouse
+0055c598	24	string	general_tank_movement
+0055c5b8	6	string	\s= ?>
+0055c5c0	124	string	You are using the wrong gizmo to launch application!\nTry running the application directly or go to the webpage somewhere.
+0055c63c	12	string	localhost
+0055c650	8	string	unknown
+0055c658	6	string	%s@%s
+0055c660	12	string	Zoom: %.1fx
+0055c66c	15	string	db_ctr   : %d\n
+0055c67c	17	string	slow_sine: %.3f\n
+0055c690	23	string	FPS %4.2f (div %4.2f)\n
+0055c6a8	45	string	incomming Kbits per second (5 sec ave %4.2f)
+0055c6d8	20	string	airspeed: %.3f m/s\n
+0055c6ec	17	string	speed: %.3f m/s\n
+0055c700	19	string	poly %5d; abor %5d
+0055c714	33	string	%9d %23s (n %6d %8d) (m %6d %8d)
+0055c738	22	string	core_total: %9d Total
+0055c750	37	string	MIP (%d samples): old %.2f, new %.2f
+0055c778	26	string	MIP bytes: old %d, new %d
+0055c794	63	string	calls: %.0f   self: %6.2f%% %6.1fs   hier: %6.2f%% %6.1fs %23s
+0055c7d4	14	string	-------------
+0055c7e4	12	string	%3.2f Total
+0055c7f0	14	string	MIPMAPPING ON
+0055c800	15	string	MIPMAPPING OFF
+0055c818	53	string	IN (Total Purple) (UDP Blue) (TCP Red) Bytes per sec
+0055c850	65	string	(red 0.5 / orange 1.0 / vio 2.0 / yel 3.0 / blu 5.0) sec bps ave
+0055c894	8	string	bad net
+0055c89c	14	string	not real data
+0055c8ac	10	string	ign cnt 2
+0055c8b8	13	string	ignore count
+0055c8c8	66	string	(wht blkout) / (grn/yel/orange icnt) / (blu ndat) / (red bad net)
+0055c90c	31	string	non-viewpoint raw transit time
+0055c92c	20	string	non-viewpoint psize
+0055c940	29	string	non-viewpoint objs in update
+0055c960	72	string	(GRN raw ping) (CYN frq ave ping) (YEL cooked ping) (BLU raw time ping)
+0055c9a8	22	string	linear error (meters)
+0055c9c0	18	string	client is fast by
+0055c9d8	25	string	recieve delta +/- 1 adiv
+0055c9fc	52	string	(WHT total) (YEL non-cor) (GRN cor) view collisions
+0055ca30	7	string	window
+0055ca38	8	string	ignore
+0055ca44	55	string	View Ang (PRP updts / YEL err / RED ign / GRN ign wnd)
+0055ca7c	54	string	OUT (Total Purple) (UDP Blue) (TCP Red) Bytes per sec
+0055cab4	10	string	5 sec ave
+0055cac0	45	string	OUT bps (red 0.5 sec ave / blue 5.0 sec ave)
+0055caf0	60	string	OUT UDP packet numbers (WHT cur, RED 0.5, BLU 5, GRN 5 key)
+0055cb2c	43	string	Update Action Frequency (RED 0.5, BLU 5.0)
+0055cb58	73	string	Update Frequency 0.5 sec ave (NEW RED)(PLAYER BLU)(OBJ GREEN)(WHT array)
+0055cba4	20	string	Entry into ave ping
+0055cbb8	37	string	(rcv_ping YEL)(rcv_update_array GRN)
+0055cbe0	13	string	dark-grey/03
+0055cbf0	15	string	Enter command:
+0055cc00	7	string	%s.jpg
+0055cc08	21	string	can't make this file
+0055cc20	24	string	memory allocation issue
+0055cc38	13	string	./data/maps/
+0055cc48	14	string	/start_script
+0055cc58	11	string	Map File "
+0055cc64	12	string	" Not Found
+0055cc70	38	string	Could not find the required map file.
+0055cc98	30	string	can't allocate enough memory\n
+0055ccb8	19	string	Allocation Failure
+0055cccc	22	string	/artwork/24bit/%s.bmp
+0055cce4	22	string	can't find source art
+0055ccfc	27	string	bad geometry of source art
+0055cd18	51	string	can't allocate memory to generate a source texture
+0055cd4c	16	string	memory problems
+0055cdb0	31	string	\s(Self Blue) (Hier Green) [ms]
+0055cdd0	7	string	Y Axis
+0055cdd8	7	string	X Axis
+0055cdf8	13	string	(%.3f, %.3f)
+0055ce0c	10	string	See Title
+0055ce88	43	string	ERROR HANDLER:\n\t at: %s\n\terr: %s\n\tcon: %x\n
+0055ceb4	29	string	\n\n\n LOOSING connection...\n\n\n
+0055ced4	11	string	Navigation
+0055cee0	8	string	Weapons
+0055cee8	10	string	Targeting
+0055cefc	20	string	help_navigation.txt
+0055cf10	17	string	help_weapons.txt
+0055cf24	19	string	help_targeting.txt
+0055cf38	14	string	help_misc.txt
+0055cf48	31	string	..\\client\\histogram_widget.cpp
+0055cf68	37	string	%s:%d Widget is allready finalized!\n
+0055cf90	36	string	%s:%d Widget is not yet finalized!\n
+0055cfb4	8	string	[x%.*f]
+0055cfbc	9	string	%s: %.0f
+0055d000	12	string	2starysky
+0055d00c	8	string	sunset
+0055d014	12	string	yellowsky
+0055d028	12	string	2litesky
+0055d034	12	string	bluestar
+0055d040	8	string	bluesky
+0055d048	8	string	aurora
+0055d050	12	string	2starset
+0055d05c	12	string	stormsky
+0055d068	8	string	rainsky
+0055d070	20	string	default_fog_theme
+0055d084	8	string	horizon
+0055d094	9	string	tickmoon
+0055d0a0	18	string	cdtex/dark_marble
+0055d0b4	63	string	Item will not deploy; its power source is already at capacity.
+0055d0f4	50	string	Item will not deploy; it requires a power source.
+0055d128	27	string	Item will deploy properly.
+0055d144	40	string	Item will deploy and activate properly.
+0055d16c	44	string	Cell will deploy as a primary power source.
+0055d198	38	string	It will remain inactive until needed.
+0055d1c0	48	string	because cells must not power overlapping areas.
+0055d1f0	48	string	Cell will deploy as a backup power source only,
+0055d220	41	string	that is already deployed in this region.
+0055d24c	43	string	overlap with another primary power source\s
+0055d278	44	string	Cell will not deploy here because it would\s
+0055d2a4	40	string	There is a very strange error going on.
+0055d2cc	56	string	You must first unlock it by landing on a repair pad.
+0055d304	32	string	Enemy cargo cannot be deployed.
+0055d324	21	string	ENEMY CARGO (LOCKED)
+0055d33c	13	string	reticle_tank
+0055d34c	15	string	reticle_scout1
+0055d35c	20	string	bad_connection_icon
+0055d370	18	string	incomming_missile
+0055d384	18	string	incomming_piercer
+0055d398	18	string	incomming_thumper
+0055d3ac	23	string	icon_cargo_deploy_good
+0055d3c4	23	string	icon_cargo_deploy_iffy
+0055d3dc	22	string	icon_cargo_deploy_bad
+0055d3f4	13	string	Enemy Uplink
+0055d404	7	string	Uplink
+0055d40c	12	string	Carrying:
+0055d420	14	string	Illegal State
+0055d430	19	string	Under Construction
+0055d444	7	string	Active
+0055d44c	7	string	Stolen
+0055d454	13	string	Enemy %s: %s
+0055d464	7	string	%s: %s
+0055d470	21	string	Power Cell (STANDBY)
+0055d488	6	string	\s%dhp
+0055d494	12	string	contains %s
+0055d4a4	7	string	shield
+0055d4ac	10	string	lightning
+0055d4c0	26	string	pulse_cannon_icon_charged
+0055d4dc	18	string	pulse_cannon_icon
+0055d4f0	16	string	repair_icon_red
+0055d500	17	string	repair_icon_blue
+0055d518	6	string	%.1lf
+0055d524	6	string	\s(%s)
+0055d52c	16	string	# of sounds: %d
+0055d544	21	string	near_unpowered_units
+0055d55c	38	string	non_base_cargo_close_and_not_carrying
+0055d584	30	string	uplink_pickup_fail_tournament
+0055d5a4	18	string	cargo_pickup_fail
+0055d5b8	12	string	low_health
+0055d5c4	12	string	low_fuel
+0055d5d8	9	string	%s %f %f
+0055d5e4	11	string	help/basic
+0055d5f0	13	string	help/context
+0055d600	8	string	red_bar
+0055d608	13	string	red_bar_back
+0055d618	12	string	bar_alt_red
+0055d624	15	string	bar_thrust_red
+0055d634	9	string	blue_bar
+0055d640	14	string	blue_bar_back
+0055d650	13	string	bar_alt_blue
+0055d660	16	string	bar_thrust_blue
+0055d670	22	string	piercer_blue_pad_dark
+0055d688	24	string	piercer_blue_pad_normal
+0055d6a0	26	string	piercer_blue_pad_selected
+0055d6bc	25	string	piercer_blue_tank_normal
+0055d6d8	27	string	piercer_blue_tank_selected
+0055d6f4	21	string	piercer_red_pad_dark
+0055d70c	23	string	piercer_red_pad_normal
+0055d724	25	string	piercer_red_pad_selected
+0055d740	24	string	piercer_red_tank_normal
+0055d758	26	string	piercer_red_tank_selected
+0055d774	22	string	thumper_blue_pad_dark
+0055d78c	24	string	thumper_blue_pad_normal
+0055d7a4	26	string	thumper_blue_pad_selected
+0055d7c0	25	string	thumper_blue_tank_normal
+0055d7dc	27	string	thumper_blue_tank_selected
+0055d7f8	21	string	thumper_red_pad_dark
+0055d810	23	string	thumper_red_pad_normal
+0055d828	25	string	thumper_red_pad_selected
+0055d844	24	string	thumper_red_tank_normal
+0055d85c	26	string	thumper_red_tank_selected
+0055d878	22	string	missile_blue_pad_dark
+0055d890	24	string	missile_blue_pad_normal
+0055d8a8	26	string	missile_blue_pad_selected
+0055d8c4	25	string	missile_blue_tank_normal
+0055d8e0	27	string	missile_blue_tank_selected
+0055d8fc	21	string	missile_red_pad_dark
+0055d914	23	string	missile_red_pad_normal
+0055d92c	25	string	missile_red_pad_selected
+0055d948	24	string	missile_red_tank_normal
+0055d960	26	string	missile_red_tank_selected
+0055d97c	22	string	caltrop_blue_pad_dark
+0055d994	24	string	caltrop_blue_pad_normal
+0055d9ac	26	string	caltrop_blue_pad_selected
+0055d9c8	25	string	caltrop_blue_tank_normal
+0055d9e4	27	string	caltrop_blue_tank_selected
+0055da00	21	string	caltrop_red_pad_dark
+0055da18	23	string	caltrop_red_pad_normal
+0055da30	25	string	caltrop_red_pad_selected
+0055da4c	24	string	caltrop_red_tank_normal
+0055da64	26	string	caltrop_red_tank_selected
+0055da80	19	string	mine_blue_pad_dark
+0055da94	21	string	mine_blue_pad_normal
+0055daac	23	string	mine_blue_pad_selected
+0055dac4	22	string	mine_blue_tank_normal
+0055dadc	24	string	mine_blue_tank_selected
+0055daf4	18	string	mine_red_pad_dark
+0055db08	20	string	mine_red_pad_normal
+0055db1c	22	string	mine_red_pad_selected
+0055db34	21	string	mine_red_tank_normal
+0055db4c	23	string	mine_red_tank_selected
+0055db64	20	string	flare_blue_pad_dark
+0055db78	22	string	flare_blue_pad_normal
+0055db90	24	string	flare_blue_pad_selected
+0055dba8	23	string	flare_blue_tank_normal
+0055dbc0	25	string	flare_blue_tank_selected
+0055dbdc	19	string	flare_red_pad_dark
+0055dbf0	21	string	flare_red_pad_normal
+0055dc08	23	string	flare_red_pad_selected
+0055dc20	22	string	flare_red_tank_normal
+0055dc38	24	string	flare_red_tank_selected
+0055dc50	20	string	maser_blue_pad_dark
+0055dc64	22	string	maser_blue_pad_normal
+0055dc7c	24	string	maser_blue_pad_selected
+0055dc94	23	string	maser_blue_tank_normal
+0055dcac	25	string	maser_blue_tank_selected
+0055dcc8	19	string	maser_red_pad_dark
+0055dcdc	21	string	maser_red_pad_normal
+0055dcf4	23	string	maser_red_pad_selected
+0055dd0c	22	string	maser_red_tank_normal
+0055dd24	24	string	maser_red_tank_selected
+0055dd40	161	string	You don't look like you belong to a squadron just yet. <B>Either start your own squad, or ask for an invitation from another squad you would like to be part of.
+0055dde4	34	string	now would be a good time to panic
+0055de08	32	string	unknown unimplemented component
+0055de28	23	string	Not Yet Implemented %s
+0055de40	26	string	%-20.20s %-20.20s %18.18s
+0055de5c	22	string	CREATE A NEW SQUADRON
+0055de74	11	string	Squad Name
+0055de80	14	string	Squad Charter
+0055de90	11	string	Your Title
+0055de9c	12	string	Description
+0055dea8	6	string	Clear
+0055deb0	204	string	You are already on your own team.  So instead of inviting yourself, you could try to find some others that may want to join your squad.  Or perhaps you should disband your squad and join someone elses...
+0055df7c	19	string	INVITATION FAILURE
+0055df90	30	string	Sending Invitation Request...
+0055dfb0	27	string	Cleared invitation request
+0055dfcc	16	string	INVITE A PLAYER
+0055dfdc	8	string	Invite\s
+0055dfe4	8	string	Title \s
+0055dfec	22	string	Permenant Description
+0055e004	17	string	Invitation Notes
+0055e018	119	string	You may not oust yourself.  Either resign from the squadron, or disband the squadron if you are the squadron creator.\s
+0055e090	16	string	OUSTING FAILURE
+0055e0a0	47	string	Sending the ousting request for player "%s"...
+0055e0d0	21	string	Cleared oust request
+0055e0e8	31	string	OUST A CURRENT SQUADRON MEMEBR
+0055e108	6	string	Oust\s
+0055e110	270	string	Warning:  Once you resign from your squadron, you cannot come join the squadron again, unless you are re-invited by that squad.  By pressing below on the 'OK' button, you sign, seal, and send the letter of resignation!  There is no turning back after this confirmation.
+0055e220	25	string	Confirm Your Resignation
+0055e23c	21	string	RESIGN FROM SQUADRON
+0055e258	26	string	Name Of Squadron        \s
+0055e274	26	string	Squadron Formation Date \s
+0055e290	8	string	Charter
+0055e298	19	string	RESIGN FROM SQUAD!
+0055e2b0	456	string	Warning:  Once you disband your squad, the entire squadron will no longer exist.  You will loose all records of having been the creator of this squadron, moreover all your squadron members that you currently have, will no longer be a part of your squadron.  By pressing below on the 'OK' button, you authorize the deletion of your entire squadron information, as well as that of all your current members! THERE IS NO TURNING BACK AFTER THIS CONFIRMATION.\s
+0055e478	28	string	Confirm Squadron Disbanding
+0055e494	17	string	DISBAND SQUADRON
+0055e4a8	15	string	DISBAND SQUAD!
+0055e4b8	161	string	Hold on... it looks like you've allready requested to be added to a squad.  Let's wait and see if that went through or not, before we accept another invitation.
+0055e55c	31	string	SQUAD JOIN REQUEST IN PROGRESS
+0055e580	236	string	You already are a part of another squadron at this time, and cannot simply join a new squadron without first resigning from your current squadron.  If you are the creator of the current squadron, you must disband your squadron instead.
+0055e66c	26	string	CANNOT JOIN ANOTHER SQUAD
+0055e688	26	string	Suqad Invite Issued To  \s
+0055e6a4	26	string	Squad Invite Issued By  \s
+0055e6c0	26	string	Proposed Squad Title    \s
+0055e6dc	26	string	Date Time Of Invitation \s
+0055e6f8	15	string	Personal Notes
+0055e708	18	string	Accept Invitation
+0055e71c	18	string	Reject Invitation
+0055e730	14	string	Cancel Dialog
+0055e740	29	string	OFFICIAL SQUADRON INVITATION
+0055e768	8	string	Invitor
+0055e770	6	string	Squad
+0055e778	27	string	%-20.20s %-20.20s %-18.18s
+0055e794	24	string	OUTSTANDING INVITATIONS
+0055e7b0	344	string	Below is a list of invitations that you have.  You can right click on any entry that you would like to respond to.  You can also clear all of your invitations by pressing on the "Reject All" button below.  <P>Once you reject an invitation you cannot get it back, and you will have to wait for a renewed invitation from the squad you want join.
+0055e908	24	string	Reject All Invitations!
+0055e920	30	string	FAILURE TO ESTABLISH SQUADRON
+0055e940	52	string	You can now invite other players to join your squad
+0055e974	29	string	YOUR SQUADRON IS ESTABLISHED
+0055e994	28	string	INVITATION ISSUANCE FAILURE
+0055e9b0	18	string	ISSUED INVITATION
+0055e9c4	22	string	PLAYER OUSTING FAILED
+0055e9dc	22	string	ISSUED PLAYER OUSTING
+0055e9f4	22	string	SQUADRON JOIN FAILURE
+0055ea0c	27	string	SQUADRON JOIN CONFIRMATION
+0055ea28	34	string	SQUADRON RESIGNATION CONFIRMATION
+0055ea4c	29	string	SQUADRON RESIGNATION FAILURE
+0055ea6c	30	string	SQUADRON DISBAND CONFIRMATION
+0055ea8c	25	string	SQUADRON DISBAND FAILURE
+0055eaa8	267	string	You are a guest, and guests are not allowed to perform any squadron activities. Moreover, we do not keep any permanent records on guest activities.\n<P><P>Please sign up with IMagic and get a real account.  \n<P>It will be worth it, and you'll support a kick-ass game!
+0055ebb4	30	string	CANNOT VIEW SQUAD INVITATIONS
+0055ebd4	51	string	You have no outstanding invitations at the moment.
+0055ec08	20	string	CANNOT FORM A SQUAD
+0055ec1c	24	string	Transaction In Progress
+0055ec38	199	string	You allready belong to a squadron! If you are the owner you must first disband your squad, or if you are a member of another squad you must first resign from the squad you are currently a member of.
+0055ed00	28	string	CANNOT INVITE OTHER PLAYERS
+0055ed20	123	string	You do not have permission to invite other players into this squadron.  Only the squad originator can invite new members.\s
+0055ed9c	24	string	Transaction in Progress
+0055edb4	25	string	CANNOT OUST ANY MEMEBERS
+0055edd0	118	string	You do not have permission to revoke squad membership from anyone because you are not the originator of the squadron.
+0055ee48	25	string	CANNOT RESIGN FROM SQUAD
+0055ee64	63	string	You can't resign!  You're not even a member of a squadron yet.
+0055eea8	79	string	There seems to be some data missing.  Please wait while I re-request the data.
+0055eef8	133	string	You are the owner of this squadron!  If you really wish to disassociate yourself with your squad, you must disband the entire squad!
+0055ef80	21	string	CANNOT DISBAND SQUAD
+0055ef98	60	string	You can't dispand!  You're not even a member of a squadron.
+0055efd8	164	string	You are not the owner of this squadron!  You have no say in wether or not this squadron will be disbanded. You may, however, resign from this squadron if you wish.
+0055f07c	18	string	Squad Invitations
+0055f090	13	string	Form A Squad
+0055f0a0	15	string	Invite Players
+0055f0b0	19	string	Oust Squad Members
+0055f0c4	18	string	Resign From Squad
+0055f0d8	14	string	Disband Squad
+0055f190	8	string	Dismiss
+0055f1d0	12	string	%d.%d.%d %s
+0055f1dc	15	string	loading_screen
+0055f200	72	string	Calibration has FAILED due to a joystick error.<P>Press ESCAPE to exit.
+0055f248	67	string	This calibration maneuver is now complete.<P>Press ESCAPE to exit.
+0055f290	109	string	Move the joystick in circles a few times, as far as you can push it in each direction.  Then press a button.
+0055f300	53	string	Center the joystick once again, then press a button.
+0055f338	51	string	Center the joystick, then press a joystick button.
+0055f36c	33	string	<H1>Joystick Calibration<P></H1>
+0055f398	9	string	<CENTER>
+0055f3a4	26	string	green-brown/04-greenbrown
+0055f3c0	32	string	No working joystick detected.
+0055f3e0	8	string	blue/05
+0055f420	43	string	Action [%d] (WHT raw)(YEL filter)(GRN sig)
+0055f44c	8	string	jumpjet
+0055f454	6	string	Shift
+0055f468	25	string	Invalid key designation.
+0055f484	8	string	Bound '
+0055f490	16	string	Invalid action.
+0055f4a0	19	string	Bound action for '
+0055f4b4	16	string	Invalid weapon.
+0055f4c4	19	string	Bound weapon for '
+0055f4d8	14	string	Unknown axis.
+0055f4f0	49	string	Unknown mode (must be 'relative' or 'absolute').
+0055f524	16	string	Unknown device.
+0055f534	14	string	Device bound.
+0055f544	28	string	Unknown touchkey variable '
+0055f574	6	string	right
+0055f57c	7	string	mouse1
+0055f584	7	string	mouse2
+0055f58c	7	string	mouse3
+0055f5b4	6	string	Enter
+0055f5bc	7	string	Escape
+0055f5c4	10	string	Backspace
+0055f5d4	8	string	Control
+0055f5dc	9	string	num_plus
+0055f5e8	10	string	num_minus
+0055f5f4	8	string	num_mul
+0055f5fc	8	string	num_div
+0055f604	12	string	num_decimal
+0055f610	6	string	num_0
+0055f618	6	string	num_1
+0055f620	6	string	num_2
+0055f628	6	string	num_3
+0055f630	6	string	num_4
+0055f638	6	string	num_5
+0055f640	6	string	num_6
+0055f648	6	string	num_7
+0055f650	6	string	num_8
+0055f658	6	string	num_9
+0055f698	8	string	Page_Up
+0055f6a0	10	string	Page_Down
+0055f6ac	7	string	Insert
+0055f6b4	6	string	Pause
+0055f6bc	13	string	Print_Screen
+0055f6cc	12	string	Scroll_Lock
+0055f6d8	11	string	zoom_level
+0055f6e4	15	string	forward_thrust
+0055f6f4	14	string	upward_thrust
+0055f704	15	string	moving_forward
+0055f714	16	string	moving_sideways
+0055f724	8	string	turning
+0055f72c	8	string	tilting
+0055f734	16	string	camera_distance
+0055f744	7	string	keymap
+0055f74c	38	string	hardening EC %x (%d polies in class)\n
+0055f774	14	string	\s   added %d\n
+0055f784	18	string	** popping stack\n
+0055f798	44	string	dot %f, tolerance %f, (1.0 - tolerance) %f\n
+0055f7c4	38	string	FOUND SHARED SEGMENT2 btwn %x and %x\n
+0055f7ec	33	string	Choose a handle you want to use.
+0055f810	20	string	Welcome to Wulfram!
+0055f824	25	string	Welcome back to Wulfram!
+0055f840	18	string	Enter Your Handle
+0055f854	9	string	brown/12
+0055f860	13	string	dark-grey/02
+0055f870	51	string	Enter your password for this handle, or hit <esc>.
+0055f8a4	15	string	Enter Password
+0055f8b4	37	string	Supply a password, or you hit <esc>.
+0055f8dc	23	string	This is a new handle.\s
+0055f8f4	28	string	New Account: Enter Password
+0055f910	40	string	using a game service and login failed!\n
+0055f938	40	string	Invalid password specified.  Try again.
+0055f960	43	string	Please wait while processing player map...
+0055f990	65	string	New Account Created.  Please wait while processing player map...
+0055f9d4	54	string	Server couldn't create a new account for some reason.
+0055fa0c	51	string	XXX not handling some login_status return code XXX
+0055fa40	37	string	Now would be a good time to panic...
+0055fa68	42	string	Not handling Protocol::login_status [%d]\n
+0055fa94	8	string	WULFRAM
+0055fa9c	8	string	Server:
+0055faa4	12	string	Account:
+0055fab0	7	string	Handle
+0055fac0	11	string	Exit Game!
+0055facc	23	string	ACCOUNT HANDLE REQUEST
+0055fae4	23	string	..\\client\\lose_oid.cpp
+0055fafc	22	string	%s:%d size == %d < 0\n
+0055fb24	16	string	Bypassing Sound
+0055fb34	12	string	Game Volume
+0055fb40	7	string	NO AVA
+0055fb48	10	string	AVA Level
+0055fb54	7	string	NO VAD
+0055fb5c	10	string	VAD Level
+0055fb68	13	string	No Chat Data
+0055fb78	13	string	Voice Volume
+0055fb88	13	string	Use Hardware
+0055fb98	13	string	Use Software
+0055fba8	25	string	Use Software (good HRTF)
+0055fbc4	25	string	Use Software (full HRTF)
+0055fbe8	7	string	Stereo
+0055fbf0	11	string	Headphones
+0055fc04	14	string	Dolby Digital
+0055fc14	9	string	Surround
+0055fc28	22	string	Off - for donors only
+0055fc48	6	string	So-So
+0055fc50	8	string	Lacking
+0055fc58	19	string	Minimal (everyone)
+0055fc6c	18	string	Normal (everyone)
+0055fc80	25	string	Extended (donors and up)
+0055fc9c	25	string	High (supporters and up)
+0055fcb8	24	string	Max (sustainers and up)
+0055fcd0	10	string	marble/28
+0055fcdc	8	string	blue/03
+0055fce4	9	string	arrow_hi
+0055fcf0	9	string	arrow_lo
+0055fd04	8	string	Options
+0055fd0c	19	string	Message of the Day
+0055fd20	10	string	Quit Game
+0055fd34	8	string	Enabled
+0055fd3c	9	string	Disabled
+0055fd48	11	string	Help level
+0055fd54	9	string	Show Adz
+0055fd60	16	string	Tag all players
+0055fd70	13	string	Autoleveling
+0055fd80	10	string	Bandwidth
+0055fd8c	19	string	Configure graphics
+0055fda0	19	string	Configure controls
+0055fdb4	16	string	Configure sound
+0055fdc4	19	string	Try to switch team
+0055fdd8	8	string	640x480
+0055fde0	8	string	320x240
+0055fde8	6	string	Cheap
+0055fdf8	15	string	Display System
+0055fe08	11	string	Brightness
+0055fe14	17	string	Visibility Level
+0055fe28	18	string	Landscape Quality
+0055fe3c	24	string	Full Scene Antialiasing
+0055fe54	19	string	Allow Multitexture
+0055fe68	16	string	Texture Quality
+0055fe78	14	string	Dynamic Light
+0055fe88	9	string	Sky Type
+0055fe94	13	string	Record Voice
+0055fea4	14	string	Speaker Setup
+0055feb4	13	string	Sound Driver
+0055fec4	9	string	Override
+0055fed0	6	string	Debug
+0055fed8	14	string	Mouse Control
+0055fee8	21	string	Mouse: X Sensitivity
+0055ff00	21	string	Mouse: Y Sensitivity
+0055ff18	21	string	Mouse: Invert Y axis
+0055ff30	18	string	Joystick Enabled:
+0055ff44	24	string	Joystick: X Sensitivity
+0055ff5c	24	string	Joystick: Y Sensitivity
+0055ff74	24	string	Joystick: Invert Y axis
+0055ffc4	19	string	Generic Major Mode
+0055ffd8	28	string	GENERIC 3MACS MAJOR MODE
+0056003c	9	string	/tagmap2
+00560048	10	string	1template
+00560054	10	string	2template
+00560060	10	string	3template
+0056006c	10	string	4template
+00560094	8	string	uplink
+0056009c	8	string	target
+005600a8	8	string	server
+005600c0	26	string	Kudos request successfull
+005600dc	25	string	Kudos request failed: %s
+005600f8	31	string	is an ambiguous name fragment.
+00560118	36	string	is not a valid message destination.
+0056013c	9	string	Error: '
+0056014c	21	string	Invalid destination.
+00560164	10	string	ignoring\s
+00560170	8	string	voice:\s
+00560178	7	string	text:\s
+00560184	51	string	ignore list is empty.  You are not ignoring anyone
+005601b8	34	string	Error: '%s' is an ambiguous name.
+005601dc	50	string	Error: '%s' is not in the game. (check spelling?)
+00560210	39	string	Error: '%s' failed to lookup properly.
+00560238	37	string	Exec: You already have '%s' ignored.
+00560260	40	string	Exec: You are now ignoring player '%s'.
+00560288	57	string	Error: '%s' is an ambiguous entry from your ignore list.
+005602c4	58	string	Error: '%s' is not in your ignore list. (check spelling?)
+00560300	46	string	Exec: You are no longer ignoring player '%s'.
+00560330	33	string	profanity filter is currently on
+00560354	34	string	profanity filter is currently off
+00560380	68	string	turning profanity filter is now on.  (reloading filter file now...)
+005603c8	32	string	turning profanity filter off
+005603e8	27	string	usage: %cfilter {on|off| }
+00560404	50	string	usage: %c%s player-name points [optional message]
+00560438	26	string	the name %s is ambiguous\s
+00560454	63	string	can't give or take points in such quantities (smallest is 0.5)
+005604a4	32	string	can't ding with negative points
+005604c4	8	string	endorse
+005604cc	40	string	can't endorse another player by dinging
+005604f4	23	string	unknown command type:\s
+00560510	84	string	Invalid character in message.  You can't use:  <>^&\\/" inside the optional message\n
+00560564	57	string	invalid destination account specification (kudos system)
+005605a0	22	string	..\\client\\message.cpp
+005605b8	7	string	%s %d\n
+005605c0	12	string	ignorevoice
+005605cc	12	string	noignore
+005605d8	16	string	noignorevoice
+005605e8	7	string	filter
+00560604	30	string	Error: '%s' is not a command.
+00560630	7	string	SERVER
+00560638	7	string	TARGET
+00560644	17	string	Message (to %s):
+00560658	7	string	mousez
+00560668	19	string	spacial_info::load
+0056067c	15	string	%Y:%j:%H:%M:%S
+0056068c	11	string	[%s-%u-%s]
+00560698	46	string	the_con == NULL (connect failed to [%s %d]) \n
+005606c8	37	string	try_server_connect to <%s> is done.\n
+005606f0	23	string	start_udp [port = %d]\n
+00560708	23	string	\t[%2d] interface [%s]\n
+00560720	20	string	TCP con != UDP con\n
+00560734	12	string	Hello There
+00560740	11	string	User Quit\n
+00560750	172	string	No UDP packets are getting through, probably due to some router or firewall configurations.  Currently, any available port number is beeing used for the local UDP port ...
+005607fc	24	string	Fatal Network Condition
+00560814	40	string	\n***\n***KILLING THE CONNECTION!!!!\n***\n
+0056083c	16	string	want_voice_data
+0056084c	14	string	Beacon Stream
+0056085c	13	string	Squad Things
+00560874	12	string	ACTION_DUMP
+00560880	14	string	ACTION_UPDATE
+00560890	13	string	PING_REQUEST
+005608a8	16	string	TRANSIENT_ARRAY
+005608b8	12	string	VIEW_UPDATE
+005608c4	13	string	UPDATE_ARRAY
+005608d4	12	string	HUD_MESSAGE
+005608e0	8	string	LAG_FIX
+005608e8	20	string	TANK_RESEND_REQUEST
+005608fc	15	string	INPUT_FEEDBACK
+0056090c	13	string	SQUAD_CREATE
+0056091c	13	string	SQUAD_INVITE
+0056092c	11	string	SQUAD_OUST
+00560938	20	string	SQUAD_ANSWER_INVITE
+0056094c	14	string	SQUAD_COMMAND
+0056095c	13	string	ROUTING_PING
+0056096c	12	string	BPS_REQUEST
+00560978	6	string	KUDOS
+00560980	8	string	GENERIC
+00560988	12	string	REINCARNATE
+00560994	13	string	DROP_REQUEST
+005609a4	14	string	WEAPON_DEMAND
+005609b4	6	string	LOGIN
+005609bc	9	string	RETARGET
+005609c8	12	string	WORLD_STATS
+005609d4	21	string	getting version: %d\n
+005609ec	7	string	PLAYER
+005609fc	12	string	HIDE_OBJECT
+00560a08	14	string	DELETE_OBJECT
+00560a18	14	string	ADD_TO_ROSTER
+00560a28	19	string	REMOVE_FROM_ROSTER
+00560a3c	13	string	UPDATE_STATS
+00560a4c	13	string	DEATH_NOTICE
+00560a5c	13	string	BIRTH_NOTICE
+00560a6c	13	string	WANT_UPDATES
+00560a7c	21	string	COMM_MESSAGE_REQUEST
+00560a9c	15	string	VIEWPOINT_INFO
+00560aac	13	string	STRING_VALUE
+00560abc	15	string	BEACON_REQUEST
+00560acc	14	string	BEACON_MODIFY
+00560adc	13	string	COMM_MESSAGE
+00560aec	13	string	LOGIN_STATUS
+00560b04	9	string	BEHAVIOR
+00560b10	14	string	BEACON_DELETE
+00560b20	14	string	BEACON_STATUS
+00560b30	12	string	SHIP_STATUS
+00560b3c	10	string	TEAM_INFO
+00560b48	14	string	CARRYING_INFO
+00560b58	12	string	UPLINK_INFO
+00560b64	16	string	Request Granted
+00560b74	22	string	Selected Team is Full
+00560b8c	33	string	Can't Enter Yet (Game not Ready)
+00560bb0	29	string	Still In Your Death Time-Out
+00560bd0	33	string	Should be Alive (Protocol Error)
+00560bf4	28	string	Can't Get Bearing on Object
+00560c10	28	string	You're Not Yet on This Team
+00560c2c	31	string	You don't Belong to This Team!
+00560c4c	24	string	Can't Launch from There
+00560c64	33	string	This Unit Isn't Powered Anymore!
+00560c88	35	string	Teams Not Balanced. Join Red Team.
+00560cac	36	string	Teams Not Balanced. Join Blue Team.
+00560cd0	35	string	Teams Not Balanced. Stay with Red.
+00560cf4	36	string	Teams Not Balanced. Stay with Blue.
+00560d18	27	string	No Team Switching Allowed.
+00560d34	21	string	Invalid Entry Point.
+00560d4c	14	string	Team Switched
+00560d5c	22	string	Server Access DENIED!
+00560d74	36	string	Undefined Reason to Reject Request.
+00560d98	17	string	SPACE_MAP_UPDATE
+00560dac	17	string	SUPPLY_SHIP_INFO
+00560dc0	11	string	GAME_CLOCK
+00560dcc	12	string	WARP_STATUS
+00560dd8	17	string	CONTINUOUS_SOUND
+00560dec	12	string	TRANSLATION
+00560df8	6	string	MODEM
+00560e00	14	string	VERSION_ERROR
+00560e10	8	string	DOCKING
+00560e18	12	string	LOAD_STATUS
+00560e24	17	string	Load Status: %s\n
+00560e38	11	string	RESET_GAME
+00560e44	9	string	SHUTDOWN
+00560e50	13	string	SQUAD_RESULT
+00560e60	23	string	REQUEST_ACCOUNT_HANDLE
+00560e78	15	string	IDENTIFIED_UDP
+00560e88	13	string	BPS_RREQUEST
+00560e98	304	string	In order to select a higher than normal bandwidth setting, you need to increase your financial contribution to Wulfram.  The main reason for this is the extra cost associated with the bandwidth increase as well as associated increased CPU time required to select and encode more objects for your client.
+00560fc8	35	string	Restricted Bandwidth (due to cost)
+00560fec	17	string	SQUAD_DEFINITION
+00561000	21	string	SQUAD_INVITE_REMOVAL
+00561018	7	string	MILTAB
+00561020	11	string	VOICE_RESP
+0056102c	11	string	LOGIN_INFO
+00561038	9	string	VIDEOMSG
+00561044	22	string	weenie-mswindows-host
+0056105c	16	string	mswindows-hoser
+0056106c	14	string	do_not_update
+0056107c	48	string	we're skipping the traditional autoupdate check
+005610b0	69	string	BetaWulf Auto Updater              (CSNUI)    v1.11   (C) SlurpySoft
+005610f8	9	string	~updater
+00561104	16	string	www.wulfram.com
+00561114	58	string	Wulfram Auto Updater    (CSNUI)    v1.11   (C) SlurpySoft
+00561150	16	string	wulfram2_client
+00561160	12	string	main thread
+0056116c	24	string	%d/%d/%d %02d:%02d:%02d
+00561184	17	string	\s- file date is\s
+00561198	43	string	%s, loaded at 0x%08x - %d bytes - %08x%s\r\n
+005611c8	71	string	\r\n\tModule list: names, addresses, sizes, time stamps and file times:\r\n
+00561210	24	string	Error occurred at %s.\r\n
+00561228	8	string	Unknown
+00561230	17	string	%s, run by %s.\r\n
+00561244	28	string	%d processor(s), type %d.\r\n
+00561260	29	string	%d MBytes physical memory.\r\n
+00561280	12	string	a Control-C
+0056128c	16	string	a Control-Break
+0056129c	24	string	a Datatype Misalignment
+005612b4	16	string	a Breakpoint
+005612c4	20	string	an Access Violation
+005612d8	20	string	an In Page Error
+005612ec	12	string	a No Memory
+005612f8	24	string	an Illegal Instruction
+00561310	28	string	a Noncontinuable Exception
+0056132c	24	string	an Invalid Disposition
+00561344	24	string	a Array Bounds Exceeded
+0056135c	28	string	a Float Denormal Operand
+00561378	24	string	a Float Divide by Zero
+00561390	24	string	a Float Inexact Result
+005613a8	28	string	a Float Invalid Operation
+005613c4	20	string	a Float Overflow
+005613d8	20	string	a Float Stack Check
+005613ec	20	string	a Float Underflow
+00561400	28	string	an Integer Divide by Zero
+0056141c	20	string	an Integer Overflow
+00561430	28	string	a Privileged Instruction
+0056144c	20	string	a Stack Overflow
+00561460	28	string	a DLL Initialization Failed
+0056147c	28	string	a Microsoft C++ Exception
+00561498	24	string	Unknown exception type
+005614b0	16	string	wulfram2.dmp
+005614c0	20	string	wulfram-%u-%s.dmp
+005614d4	16	string	errorlog.txt
+005614e4	32	string	Error creating exception report
+00561510	44	string	%s caused %s in module %s at %04x:%08x.\r\n
+0056153c	36	string	Exception handler called in %s.\r\n
+00561560	12	string	Read from
+0056156c	12	string	Write to
+00561578	48	string	%s location %08x caused an access violation.\r\n
+005615ac	16	string	Registers:\r\n
+005615bc	40	string	EAX=%08x CS=%04x EIP=%08x EFLGS=%08x\r\n
+005615e4	40	string	EBX=%08x SS=%04x ESP=%08x EBP=%08x\r\n
+0056160c	36	string	ECX=%08x DS=%04x ESI=%08x FS=%04x\r\n
+00561630	36	string	EDX=%08x ES=%04x EDI=%08x GS=%04x\r\n
+00561654	20	string	Bytes at CS:EIP:\r\n
+00561674	16	string	\r\nStack dump:\r\n
+00561694	44	string	Exception encountered during stack dump.\r\n
+00561708	20	string	current game stat
+0056171c	13	string	overall stat
+0056173c	17	string	Refresh Recieved
+00561750	16	string	Refresh Failed!
+00561760	17	string	get player stats
+00561774	19	string	Requesting Refresh
+00561788	24	string	Things are simply WRONG
+005617a0	7	string	Reload
+005617a8	8	string	Current
+005617b0	8	string	Overall
+005617b8	24	string	Current Game Statistics
+005617d0	29	string	Overall Character Statistics
+005617f0	13	string	%s: <nobody>
+00561810	12	string	$CATEGORY
+0056181d	6	string	LABEL
+00561824	12	string	$NEXT_COL
+00561830	7	string	(dead)
+00561838	13	string	Uplink: IDLE
+00561848	15	string	Uplink: ACTIVE
+00561858	10	string	%2d %4.2f
+00561868	12	string	Hosehead
+00561874	15	string	Your team is "
+00561888	7	string	fire/1
+00561890	15	string	gunblast_side1
+005618a0	15	string	gunblast_side2
+005618b0	15	string	gunblast_side3
+005618c0	16	string	gunblast_front1
+005618d0	16	string	gunblast_front2
+005618e0	16	string	gunblast_front3
+005618f0	8	string	shotred
+005618f8	9	string	shotblue
+00561904	12	string	lightred006
+00561910	12	string	lightred005
+0056191c	12	string	lightred004
+00561928	12	string	lightred003
+00561934	12	string	lightred002
+00561940	13	string	lightblue006
+00561950	13	string	lightblue005
+00561960	13	string	lightblue004
+00561970	13	string	lightblue003
+00561980	13	string	lightblue002
+00561990	14	string	profanity.txt
+005619a8	31	string	..\\client\\rcv_update_array.cpp
+005619c8	37	string	%s:%d should have gotten a position\n
+005619f0	41	string	%s:%d should have gotten an orientation\n
+00561a1c	6	string	Error
+00561a24	29	string	Could not deal with error %d
+00561a48	78	string	problem setting registry value:\n\treg  : %s\n\tname : %s\n\tvalue: %s\n\terror: %s\n\n
+00561a98	78	string	problem setting registry value:\n\treg  : %s\n\tname : %s\n\tvalue: %x\n\terror: %s\n\n
+00561af0	132	string	Can't open nor create registry element:\n %s \n\n%s\n You need to run this app first time on an account that can modify the registry!\n\n
+00561b74	12	string	<NOT SET>
+00561b80	21	string	..\\client\\render.cpp
+00561b9c	10	string	h->source
+00561ba8	12	string	shockred001
+00561bb4	13	string	shockblue001
+00561bc4	9	string	kudos to
+00561bd0	11	string	kudos from
+00561bdc	10	string	endorses\s
+00561be8	27	string	\sis the highest financial\s
+00561c04	9	string	Distress
+00561c10	7	string	16309\s
+00561c1c	14	string	Unkown Player
+00561c2c	9	string	brown/05
+00561c38	9	string	green/16
+00561c7c	24	string	team_resources_skeleton
+00561c9c	12	string	Resources
+00561ca8	68	string	No information is available because you haven't selected a team.
+00561cec	12	string	Resource
+00561cf8	8	string	Count
+00561d00	8	string	Value
+00561d0c	6	string	Total
+00561d18	8	string	Percent
+00561d20	6	string	%5.0f
+00561d28	6	string	%8.0f
+00561d30	6	string	%6.2f
+00561d38	20	string	Resource Summary
+00561d4c	11	string	Route %d:\s
+00561d58	8	string	LOST  \s
+00561d60	8	string	----  \s
+00561d68	8	string	\s     \s
+00561d70	9	string	%4.0f  \s
+00561d7c	6	string	%6.1f
+00561d84	23	string	Best Route so far: %d\n
+00561d9c	14	string	Got Port: %d\n
+00561dac	62	string	try_server_connect(new_server_name = %s, temp_net_port = %d)\n
+00561dec	28	string	..\\client\\server_select.cpp
+00561e08	26	string	that you wish to play on.
+00561e24	44	string	Enter the Internet address of a game server
+00561e50	31	string	Enter Server Internet Address:
+00561e70	25	string	Display system active: "
+00561e8c	23	string	* unknown resolution *
+00561ea4	10	string	tiny_font
+00561eb0	17	string	font_small_hires
+00561ec4	17	string	font_small_lores
+00561ed8	23	string	font_options_hires_big
+00561ef0	19	string	font_options_hires
+00561f04	19	string	font_options_lores
+00561f18	10	string	redshock5
+00561f24	10	string	redshock4
+00561f30	10	string	redshock3
+00561f3c	10	string	redshock2
+00561f48	10	string	redshock1
+00561f54	11	string	e2insides2
+00561f60	10	string	e2insides
+00561f6c	9	string	insides2
+00561f78	8	string	insides
+00561f80	13	string	shockblue005
+00561f90	13	string	shockblue004
+00561fa0	13	string	shockblue003
+00561fb0	13	string	shockblue002
+00561fc0	12	string	shockred005
+00561fcc	12	string	shockred004
+00561fd8	12	string	shockred003
+00561fe4	12	string	shockred002
+00561ff0	8	string	red/rtl
+00561ff8	8	string	red/rtr
+00562000	9	string	blue/btl
+0056200c	9	string	blue/btr
+00562018	11	string	red/bottom
+00562024	12	string	blue/bottom
+0056204c	6	string	rtail
+0056206c	11	string	warprepeat
+00562078	9	string	warppush
+00562084	11	string	flag_blue_
+00562090	10	string	flag_red_
+0056209c	16	string	flag_blue_glow_
+005620ac	15	string	flag_red_glow_
+005620bc	13	string	mousepointer
+005620cc	31	string	resolution_switch(%s) from %s\n
+005620ec	7	string	./data
+005620f4	12	string	./data/docs
+00562100	12	string	./data/help
+0056210c	12	string	./data/maps
+00562118	14	string	./data/tables
+00562128	13	string	./sound/data
+00562138	9	string	./client
+00562144	17	string	./client/bitmaps
+00562158	14	string	system_loader
+00562180	13	string	DEBUG_COORDS
+00562190	32	string	5 Second Packet Count Histogram
+005621b0	45	string	5 Second Total Packet Size Histogram (bytes)
+005621e0	20	string	Server Shutdown!
+005621f4	10	string	index.wgn
+00562200	14	string	UNTYPED_SOUND
+00562210	46	string	%s %s %lf %d %lf %lf %lf %lf %d %1023s %1023s
+00562240	6	string	empty
+005622b0	11	string	base_sound
+005622bc	12	string	%2d:%2d:%lf
+005622c8	8	string	%2d:%lf
+005622f8	31	string	..\\client\\sound\\sound_fmod.cpp
+00562318	41	string	%s %d: can't load sound effect for '%s'\n
+00562344	35	string	%s %d: unknown sound data type %d\n
+00562368	21	string	Default Sound Driver
+00562380	8	string	Default
+0056239c	48	string	- This driver will support software mode only.\n
+005623cc	38	string	- Driver supports hardware 3D sound!\n
+005623f4	33	string	- Driver supports EAX 2 reverb!\n
+00562418	33	string	- Driver supports EAX 3 reverb!\n
+0056243c	36	string	setting sound buffer size to %d ms\n
+00562460	81	string	- The card supports %d 2D hardware channels, %d 3D hardware channels, total: %d\n
+005624b4	18	string	using all harware
+005624c8	19	string	using all software
+005624dc	43	string	- We'll be using maximum %d channels (%s)\n
+00562570	10	string	No errors
+00562580	70	string	Cannot call this command after FSOUND_Init.  Call FSOUND_Close first.
+005625c8	55	string	This command failed because FSOUND_Init was not called
+00562600	26	string	Playing the sound failed.
+0056261c	34	string	Error initializing output device.
+00562640	58	string	The output device is already in use and cannot be reused.
+00562680	90	string	Soundcard does not support the features needed for this soundsystem (16bit stereo output)
+005626dc	46	string	Error setting cooperative level for hardware.
+0056270c	38	string	Error creating hardware sound buffer.
+00562734	15	string	File not found
+00562744	20	string	Unknown file format
+00562758	19	string	Error loading file
+0056276c	19	string	Not enough memory\s
+00562780	56	string	The version number of this file format is not supported
+005627b8	49	string	An invalid parameter was passed to this function
+005627f0	68	string	Tried to use an EAX command on a non EAX enabled channel or output.
+00562834	33	string	Failed to allocate a new channel
+00562858	39	string	Recording not supported on this device
+00562880	44	string	Required Mediaplayer codec is not installed
+005628ac	14	string	Unknown error
+005628bc	56	string	*** warning throwing away voice %d bytes of voice data\n
+005628f4	50	string	VoiceAccumulator buffer overflow (lost %d bytes)\n
+00562928	8	string	Error!\n
+00562930	31	string	Error (FSOUND_Stream_Create()\n
+00562950	31	string	Error (FSOUND_Stream_PlayEx()\n
+00562970	27	string	Error (FSOUND_SetVolume()\n
+0056298c	27	string	Error (FSOUND_SetPaused()\n
+005629a8	32	string	..\\client\\sound\\sound_voice.cpp
+005629c8	11	string	%s %d: %s\n
+005629d4	29	string	Error (FSOUND_Stream_Stop()\n
+005629f4	49	string	can't allocate RecordVoice object (errline: %d)\n
+00562a28	37	string	can't start recording (errline: %d)\n
+00562a50	31	string	%s has invited you to join %s!
+00562a70	39	string	%s is no longer asking you to join %s!
+00562a98	11	string	stripmaps2
+00562aa4	14	string	c:\\ntank\\data
+00562ab4	12	string	/stripmaps2
+00562ac4	8	string	screen/
+00562acc	30	string	Stripmaps are not yet loaded!
+00562aec	21	string	Stripmaps are saved.
+00562b10	23	string	Argument out of range!
+00562b28	18	string	Killed stripmap '
+00562b3c	24	string	Couldn't find stripmap.
+00562b54	17	string	stripmap_texture
+00562bbc	16	string	NON-DECORATION
+00562bcc	12	string	DECORATION
+00562bd8	12	string	NO_OBJECT
+00562be4	12	string	ANY_OBJECT
+00562bf0	16	string	MINOR_OBJECT
+00562c00	16	string	MAJOR_OBJECT
+00562c10	20	string	NON-HUNTER_MISSILE
+00562c24	16	string	HUNTER_MISSILE
+00562c34	16	string	NON-ANY_MISSILE
+00562c44	12	string	ANY_MISSILE
+00562c50	12	string	NON-FLAK
+00562c64	12	string	NON-UPLINK
+00562c70	8	string	UPLINK
+00562c78	12	string	NON-CARGO
+00562c84	8	string	CARGO
+00562c8c	12	string	NON-PLAYER
+00562c98	12	string	NON-SENTRY
+00562ca4	8	string	SENTRY
+00562cac	12	string	NON-MISSILE
+00562cb8	8	string	MISSILE
+00562cc0	12	string	NON-ENERGY
+00562ccc	8	string	ENERGY
+00562cd4	12	string	NON-PUMP
+00562ce8	12	string	NON-FUEL
+00562cfc	12	string	NON-REPAIR
+00562d08	8	string	REPAIR
+00562d10	12	string	NON-NEUTRAL
+00562d1c	8	string	NEUTRAL
+00562d24	16	string	NON-FRIENDLY
+00562d34	12	string	FRIENDLY
+00562d40	12	string	NON-HOSTILE
+00562d4c	8	string	HOSTILE
+00562d54	14	string	LEAST_DAMAGED
+00562d64	13	string	MOST_DAMAGED
+00562d74	18	string	NOT_UNDER_RETICLE
+00562d88	14	string	UNDER_RETICLE
+00562d98	9	string	REARWARD
+00562da4	10	string	FRONTWARD
+00562db0	8	string	BEHIND
+00562db8	9	string	FURTHEST
+00562dc4	8	string	NEAREST
+00562dcc	25	string	Unknown targeting spec "
+00562de8	23	string	Index is out of range.
+00562e00	28	string	No players on this team.
+00562e1c	35	string	Rank %%-%ds Tag  Kudos Kills Ratio
+00562e40	42	string	%%4.4s %%-%ds %%3s  %%-5.0f %%-5d %%-6.2f
+00562e6c	38	string	%%4.4s %%-%ds %%3s  %%-5.0f %%-5d N/A
+00562e94	9	string	1 player
+00562ea0	11	string	%d players
+00562eb0	65	string	Select the team you wish to join by clicking on either team box.
+00562ef4	52	string	The team you chose is full!  Select the other team.
+00562f28	51	string	Blue has more players than red, join the red team.
+00562f5c	52	string	Red has more players than blue, join the blue team.
+00562f90	62	string	Game would be too imbalanced.  Stay with the team you are on.
+00562fd0	41	string	No team switching allowed for this game.
+00562ffc	39	string	You have changed teams successfully...
+00563024	38	string	This server is not accessible to you.
+0056304c	21	string	Server Access Denied
+0056309c	40	string	TEAM_TILEMAP: Unable to get tile '%s'!\n
+005630c4	13	string	ventpannel2G
+005630d4	12	string	ventpannel2
+005630e0	13	string	ventpannel2R
+005630f0	12	string	ventpannelG
+005630fc	11	string	ventpannel
+00563108	12	string	ventpannelR
+00563114	12	string	back holesG
+00563120	11	string	back holes
+0056312c	12	string	back holesR
+00563138	7	string	s2topG
+00563140	6	string	s2top
+00563148	7	string	s2topR
+00563150	8	string	s1legsG
+00563158	7	string	s1legs
+00563160	8	string	s1legsR
+00563168	8	string	s1sideG
+00563170	7	string	s1side
+00563178	8	string	s1sideR
+00563180	9	string	s1wingsG
+0056318c	8	string	s1wings
+00563194	9	string	s1wingsR
+005631a0	11	string	s1bottomsG
+005631ac	10	string	s1bottoms
+005631b8	11	string	s1bottomsR
+005631c4	7	string	ramp2G
+005631cc	6	string	ramp2
+005631d4	7	string	ramp2R
+005631dc	7	string	ramp1G
+005631e4	6	string	ramp1
+005631ec	7	string	ramp1R
+005631f4	9	string	padtankG
+00563200	9	string	padtankB
+0056320c	9	string	padtankR
+00563218	10	string	p2stacksG
+00563224	9	string	p2stacks
+00563230	10	string	p2stacksR
+0056323c	12	string	p2sqrfrontG
+00563248	11	string	p2sqrfront
+00563254	12	string	p2sqrfrontR
+00563260	15	string	p2sidetwangerG
+00563270	14	string	p2sidetwanger
+00563280	15	string	p2sidetwangerR
+00563290	12	string	p2rooffrntG
+0056329c	11	string	p2rooffrnt
+005632a8	12	string	p2rooffrntR
+005632b4	11	string	p2frontrtG
+005632c0	10	string	p2frontrt
+005632cc	11	string	p2frontrtR
+005632d8	12	string	p2frontlftG
+005632e4	11	string	p2frontlft
+005632f0	12	string	p2frontlftR
+005632fc	9	string	p2ramp1G
+00563308	8	string	p2ramp1
+00563310	9	string	p2ramp1R
+0056331c	9	string	p2ramp2G
+00563328	8	string	p2ramp2
+00563330	9	string	p2ramp2R
+0056333c	9	string	cargosdG
+00563348	8	string	cargosd
+00563350	9	string	cargosdR
+0056335c	11	string	cargotopsG
+00563368	10	string	cargotops
+00563374	11	string	cargotopsR
+00563380	6	string	mine1
+00563388	7	string	mine1R
+00563390	8	string	caltrop
+00563398	9	string	caltropR
+005633a4	10	string	Msentry1G
+005633b0	9	string	Msentry1
+005633bc	10	string	Msentry1R
+005633c8	10	string	Msentry3G
+005633d4	9	string	Msentry3
+005633e0	10	string	Msentry3R
+00563414	10	string	pulseblue
+00563420	9	string	pulsered
+0056350c	11	string	radar_blip
+00563518	12	string	load_screen
+00563524	12	string	res_640x480
+00563530	6	string	skies
+00563538	12	string	landscape
+0056354c	26	string	Unable to load tile '%s'!
+00563568	61	string	Something is terribly wrong... try reinstalling or something
+005635a8	8	string	_skinny
+005635b0	38	string	can't find normal or skinny for <%s>\n
+005635d8	8	string	unlock
+005635e8	28	string	..\\client\\texture_cache.cpp
+00563604	36	string	%s %d: unsupported operation: '%s'\n
+00563628	10	string	Tile Zero
+00563634	8	string	bitmaps
+0056363c	9	string	__cutout
+00563664	8	string	_mandel
+00563688	13	string	pre_lightmap
+00563698	9	string	lightmap
+005636a4	8	string	dynamic
+005636ac	13	string	scape_region
+00563718	8	string	menubar
+00563720	11	string	bluebar_lo
+0056372c	11	string	bluebar_hi
+00563738	12	string	barnotch_lo
+00563744	12	string	barnotch_hi
+00563830	46	string	X Generated new frame %x... (%d, %d : %d %d)\n
+00563898	13	string	title_screen
+005638e8	36	string	Cannot build alias table for '%s'!\n
+00563910	6	string	1silt
+00563918	6	string	1snow
+00563920	6	string	2snow
+00563928	10	string	2grandcan
+00563934	12	string	bluegranite
+00563940	11	string	redgranite
+0056394c	9	string	1granite
+00563958	7	string	2rough
+00563960	8	string	4rough.
+00563968	7	string	3grass
+00563970	11	string	3litegrass
+00563984	8	string	bdtdark
+0056398c	7	string	gbdirt
+00563994	14	string	gbdirt_grassy
+005639a4	13	string	gbdirt_rocky
+005639b4	8	string	2gbdirt
+005639cc	6	string	11ice
+005639d4	6	string	1bush
+005639dc	6	string	4sand
+005639e4	9	string	grandcan
+005639f0	6	string	roman
+005639f8	9	string	5granite
+00563a04	14	string	5graniteBrown
+00563a14	12	string	groundmetal
+00563a20	13	string	groundrunway
+00563a30	13	string	groundstruct
+00563a40	13	string	20bush_4sand
+00563a50	12	string	9bush_1silt
+00563a5c	9	string	1martian
+00563a68	9	string	2martian
+00563a74	9	string	3martian
+00563a80	9	string	4martian
+00563a8c	9	string	6martian
+00563a98	9	string	7martian
+00563aa4	9	string	8martian
+00563ab0	9	string	9martian
+00563abc	10	string	10martian
+00563ac8	10	string	11martian
+00563ad4	10	string	12martian
+00563ae0	10	string	13martian
+00563aec	10	string	14martian
+00563af8	13	string	greenmartian
+00563b08	14	string	yellowmartian
+00563b18	9	string	marsbark
+00563b24	9	string	marsdino
+00563b30	9	string	marsdirt
+00563b3c	9	string	marsfunk
+00563b48	9	string	marsland
+00563b54	9	string	marslava
+00563b60	8	string	marsold
+00563b68	9	string	marsrock
+00563b74	10	string	marsrough
+00563b80	9	string	marssoil
+00563b8c	11	string	marsstucco
+00563b98	9	string	marsvolc
+00563ba4	9	string	marswirl
+00563bb0	10	string	2marsbark
+00563bbc	10	string	2marsdino
+00563bc8	10	string	2marsdirt
+00563bd4	10	string	2marsfunk
+00563be0	10	string	2marsland
+00563bec	10	string	2marslava
+00563bf8	9	string	2marsold
+00563c04	10	string	2marsrock
+00563c10	11	string	2marsrough
+00563c1c	10	string	2marssoil
+00563c28	12	string	2marsstucco
+00563c34	10	string	2marsvolc
+00563c40	10	string	2marswirl
+00563c4c	11	string	marscanyon
+00563c58	12	string	2marscanyon
+00563c64	8	string	marsand
+00563c6c	9	string	2marsand
+00563c78	9	string	darkrock
+00563c84	7	string	canyon
+00563c8c	13	string	junglecanyon
+00563c9c	9	string	JJcanyon
+00563ca8	9	string	rockwall
+00563cb4	10	string	greenrock
+00563cc0	13	string	6redrockwall
+00563cd0	9	string	sandrock
+00563cdc	9	string	4granite
+00563ce8	6	string	wheat
+00563cf0	6	string	9bush
+00563cf8	7	string	20bush
+00563d00	6	string	3bush
+00563d08	10	string	olivesage
+00563d14	11	string	6redcanyon
+00563d28	7	string	19bush
+00563d30	9	string	megadirt
+00563d3c	8	string	reddirt
+00563d44	12	string	UDgreekwall
+00563d50	12	string	ULgreekwall
+00563d5c	11	string	romanfloor
+00563d68	12	string	machuwall_B
+00563d74	12	string	machuwall_F
+00563d80	12	string	machuwall_L
+00563d8c	12	string	machuwall_R
+00563d9c	9	string	brownmud
+00563da8	6	string	4snow
+00563db0	10	string	stonepath
+00563dbc	13	string	UC1greekwall
+00563dcc	13	string	UC2greekwall
+00563ddc	13	string	UC3greekwall
+00563dec	13	string	UC4greekwall
+00563dfc	10	string	pyr-bdrt1
+00563e08	10	string	pyr-bdrt2
+00563e14	10	string	pyr-bdrt3
+00563e20	10	string	pyr-bdrt4
+00563e2c	14	string	pyramid_diag1
+00563e3c	14	string	pyramid_diag2
+00563e4c	14	string	pyramid_diag3
+00563e5c	14	string	pyramid_diag4
+00563e6c	14	string	landpyr_sandA
+00563e7c	14	string	landpyr_sandB
+00563e8c	14	string	landpyr_sandC
+00563e9c	14	string	landpyr_sandD
+00563eac	11	string	wallmetal1
+00563eb8	11	string	wallmetal2
+00563ec4	11	string	wallmetal3
+00563ed0	8	string	bridge1
+00563ed8	8	string	bridge2
+00563ee0	8	string	bridge3
+00563ee8	10	string	building1
+00563ef4	10	string	building2
+00563f00	14	string	groundstruct1
+00563f10	14	string	groundstruct2
+00563f20	14	string	groundstruct3
+00563f30	14	string	groundstruct4
+00563f40	14	string	groundstruct5
+00563f50	14	string	groundstruct6
+00563f60	14	string	groundstruct7
+00563f70	14	string	groundstruct8
+00563f80	14	string	groundstruct9
+00563f90	15	string	groundstruct10
+00563fa0	15	string	groundstruct11
+00563fb0	15	string	groundstruct12
+00563fc0	15	string	groundstruct13
+00563fd0	15	string	groundstruct14
+00563fe0	15	string	groundstruct15
+00563ff0	15	string	groundstruct16
+00564000	15	string	groundstruct17
+00564010	15	string	groundstruct18
+00564020	15	string	groundstruct19
+00564030	15	string	groundstruct20
+00564040	15	string	groundstruct21
+00564050	15	string	groundstruct22
+00564060	15	string	groundstruct23
+00564070	15	string	groundstruct24
+00564080	15	string	groundstruct25
+00564090	15	string	groundstruct26
+005640a0	15	string	groundstruct27
+005640b0	15	string	groundstruct28
+005640c0	15	string	groundstruct29
+005640d0	15	string	groundstruct30
+005640e0	15	string	groundstruct31
+005640f0	15	string	groundstruct32
+00564100	15	string	groundstruct33
+00564110	15	string	groundstruct34
+00564120	15	string	groundstruct35
+00564130	15	string	groundstruct36
+00564140	15	string	groundstruct37
+00564150	15	string	groundstruct38
+00564160	15	string	groundstruct39
+00564170	15	string	groundstruct40
+00564180	16	string	groundstruct14a
+00564190	16	string	groundstruct16a
+005641a0	16	string	groundstruct18a
+005641b0	16	string	groundstruct20a
+005641c0	16	string	groundstruct22a
+005641d0	16	string	groundstruct24a
+005641e0	14	string	groundrunway1
+005641f0	14	string	groundrunway2
+00564200	14	string	groundrunway3
+00564210	14	string	groundrunway4
+00564220	14	string	groundrunway5
+00564230	14	string	groundrunway6
+00564240	14	string	groundrunway7
+00564250	14	string	groundrunway8
+00564260	15	string	smallbuilding1
+00564270	15	string	smallbuilding2
+00564280	15	string	smallbuilding3
+00564290	11	string	machuwall1
+0056429c	11	string	machuwall2
+005642a8	11	string	machuwall3
+005642b4	11	string	machuwall4
+005642c0	11	string	machuwall5
+005642cc	11	string	machuwall6
+005642d8	17	string	romancobblestone
+005642fc	20	string	HEADER STRING UNSET
+00564310	9	string	Type: %s
+0056431c	12	string	Value: %.0f
+00564328	19	string	BASE UNIT BRIEFING
+0056433c	18	string	bases/energy.html
+00564350	22	string	UTILITY UNIT BRIEFING
+00564368	21	string	utility/skypump.html
+00564380	17	string	VEHICLE BRIEFING
+00564394	19	string	vehicles/tank.html
+005643a8	16	string	WEAPON BRIEFING
+005643b8	21	string	weapons/piercer.html
+005643d0	12	string	unit/energy
+005643dc	12	string	unit/refuel
+005643e8	12	string	unit/repair
+005643f4	17	string	unit/flak_turret
+00564408	16	string	unit/gun_turret
+00564418	22	string	unit/missile_launcher
+00564430	15	string	unit/darklight
+00564440	13	string	unit/skypump
+00564450	12	string	unit/uplink
+0056445c	15	string	vehicles/scout
+0056446c	14	string	vehicles/tank
+0056447c	16	string	weapons/thumper
+0056448c	16	string	weapons/piercer
+0056449c	15	string	weapons/hunter
+005644ac	16	string	weapons/caltrop
+005644bc	13	string	weapons/mine
+005644cc	25	string	units_briefing_grid_left
+005644e8	20	string	units_briefing_grid
+005644fc	27	string	units_briefing_button_next
+00564518	27	string	units_briefing_button_prev
+00564534	32	string	units_briefing_button_baseunits
+00564554	35	string	units_briefing_button_utilityunits
+00564578	31	string	units_briefing_button_vehicles
+00564598	30	string	units_briefing_button_weapons
+0056460c	31	string	Client-Server Version Mismatch
+0056462c	29	string	Server Version:  %2d.%2d.%2d
+0056464c	29	string	Client Version:  %2d.%2d.%2d
+0056466c	31	string	The client needs to be updated
+0056468c	38	string	The server is too old for this client
+005646b4	25	string	Hit any key to get patch
+005646d0	20	string	Hit any key to quit
+005646e4	20	string	P %.3f, %.3f, %.3f\n
+005646f8	31	string	centroid now %.3f, %.3f, %.3f\n
+00564718	44	string	Require at least 3 vertices to make a face.
+00564754	9	string	%s %s %s
+00564764	8	string	Wulfram
+0056476c	12	string	wulfram.w2l
+00564778	39	string	{45af0dd8-09ae-45db-9b52-897a0a92cebc}
+005647a0	22	string	application/x-wulfram
+005647b8	18	string	%s -webfile "%%1"
+005647cc	18	string	HKEY_CURRENT_USER
+005647e0	9	string	Location
+005647ec	18	string	HKEY_CLASSES_ROOT
+00564808	13	string	Content Type
+00564818	13	string	OpenWithList
+00564828	13	string	wulfram2.exe
+00564838	16	string	OpenWithProgIds
+00564850	9	string	Database
+0056485c	10	string	Extension
+00564868	6	string	CLSID
+00564870	19	string	HKEY_LOCAL_MACHINE
+00564884	8	string	CLASSES
+0056488c	7	string	CurVer
+00564894	10	string	Editflags
+005648a0	6	string	Shell
+005648b0	8	string	command
+005648c0	13	string	Applications
+005648d0	6	string	shell
+005648d8	9	string	SOFTWARE
+005648e4	10	string	Microsoft
+005648f0	8	string	Windows
+005648f8	15	string	CurrentVersion
+00564908	10	string	App Paths
+0056491c	9	string	Netscape
+00564928	19	string	Netscape Navigator
+0056493c	9	string	Suffixes
+00564948	8	string	Viewers
+00564950	7	string	TYPE41
+00564958	7	string	TYPE42
+00564960	7	string	TYPE43
+00564968	7	string	TYPE44
+00564970	7	string	TYPE45
+00564978	11	string	HKEY_USERS
+00564984	9	string	.DEFAULT
+00564990	37	string	..\\client\\win32\\web_launch_win32.cpp
+005649b8	31	string	[%s %d] Can't set path to: %s\n
+005649d8	71	string	problems setting working directory to where wulfram installation is in
+00564a20	25	string	[%s %d] Set path to: %s\n
+00564a40	8	string	cursor*
+00564dd4	35	string	set_current_world(%s, %d, %d, %f)\n
+00570d0a	16	TerminatedCString	GetAdaptersInfo
+00570d1a	13	TerminatedCString	iphlpapi.dll
+00570d2a	19	TerminatedCString	DirectInputCreateA
+00570d3e	11	TerminatedCString	DINPUT.dll
+00570d4c	13	TerminatedCString	timeSetEvent
+00570d5c	14	TerminatedCString	timeKillEvent
+00570d6a	10	TerminatedCString	WINMM.dll
+00570d76	23	TerminatedCString	DirectDrawEnumerateExA
+00570d90	19	TerminatedCString	DirectDrawCreateEx
+00570da6	17	TerminatedCString	DirectDrawCreate
+00570db8	10	TerminatedCString	DDRAW.dll
+00570dc4	17	TerminatedCString	RegQueryValueExA
+00570dd8	14	TerminatedCString	RegOpenKeyExA
+00570de8	12	TerminatedCString	RegCloseKey
+00570df6	13	TerminatedCString	GetUserNameA
+00570e06	15	TerminatedCString	RegSetValueExA
+00570e18	16	TerminatedCString	RegCreateKeyExA
+00570e2a	12	TerminatedCString	RegFlushKey
+00570e38	14	TerminatedCString	RegEnumValueA
+00570e46	13	TerminatedCString	ADVAPI32.dll
+00570e56	37	TerminatedCString	_FSOUND_3D_Listener_SetAttributes@32
+00570e7e	24	TerminatedCString	_FSOUND_GetNumDrivers@0
+00570e98	20	TerminatedCString	_FSOUND_GetDriver@0
+00570eae	23	TerminatedCString	_FSOUND_Sample_Lock@28
+00570ec8	28	TerminatedCString	_FSOUND_GetNumHWChannels@12
+00570ee6	30	TerminatedCString	_FSOUND_Sample_GetDefaults@20
+00570f06	29	TerminatedCString	_FSOUND_SetSFXMasterVolume@4
+00570f26	17	TerminatedCString	_FSOUND_Update@0
+00570f3a	24	TerminatedCString	_FSOUND_GetDriverName@4
+00570f54	27	TerminatedCString	_FSOUND_Stream_GetSample@4
+00570f72	28	TerminatedCString	_FSOUND_3D_SetAttributes@12
+00570f90	33	TerminatedCString	_FSOUND_SetMinHardwareChannels@4
+00570fb4	25	TerminatedCString	_FSOUND_SetSpeakerMode@4
+00570fd0	28	TerminatedCString	_FSOUND_3D_GetAttributes@12
+00570fee	36	TerminatedCString	_FSOUND_Sample_SetMinMaxDistance@12
+00571014	20	TerminatedCString	_FSOUND_SetVolume@8
+0057102a	22	TerminatedCString	_FSOUND_Sample_Free@4
+00571042	16	TerminatedCString	_FSOUND_Init@12
+00571054	18	TerminatedCString	_FSOUND_SetHWND@4
+00571068	20	TerminatedCString	_FSOUND_SetOutput@4
+0057107e	23	TerminatedCString	_FSOUND_Stream_Close@4
+00571098	20	TerminatedCString	_FSOUND_SetPaused@8
+005710ae	23	TerminatedCString	_FSOUND_SetFrequency@8
+005710c8	23	TerminatedCString	_FSOUND_Sample_Load@20
+005710e2	25	TerminatedCString	_FSOUND_Stream_PlayEx@16
+005710fe	23	TerminatedCString	_FSOUND_PlaySoundEx@16
+00571118	25	TerminatedCString	_FSOUND_Sample_GetMode@4
+00571134	24	TerminatedCString	_FSOUND_GetDriverCaps@8
+0057114e	16	TerminatedCString	_FSOUND_Close@0
+00571160	25	TerminatedCString	_FSOUND_Stream_Create@20
+0057117c	27	TerminatedCString	_FSOUND_Sample_GetLength@4
+0057119a	25	TerminatedCString	_FSOUND_Sample_Unlock@20
+005711b6	30	TerminatedCString	_FSOUND_3D_SetDopplerFactor@4
+005711d6	24	TerminatedCString	_FSOUND_SetBufferSize@4
+005711f0	30	TerminatedCString	_FSOUND_3D_SetRolloffFactor@4
+00571210	30	TerminatedCString	_FSOUND_Sample_SetDefaults@20
+00571230	20	TerminatedCString	_FSOUND_IsPlaying@4
+00571246	20	TerminatedCString	_FSOUND_StopSound@4
+0057125c	23	TerminatedCString	_FSOUND_GetFrequency@4
+00571276	19	TerminatedCString	_FSOUND_GetError@0
+0057128c	29	TerminatedCString	_FSOUND_Record_GetPosition@0
+005712ac	22	TerminatedCString	_FSOUND_Stream_Stop@4
+005712c4	29	TerminatedCString	_FSOUND_Record_StartSample@8
+005712e4	25	TerminatedCString	_FSOUND_Sample_SetMode@8
+00571300	27	TerminatedCString	_FSOUND_Record_SetDriver@4
+0057131e	24	TerminatedCString	_FSOUND_Sample_Alloc@28
+00571338	22	TerminatedCString	_FSOUND_Record_Stop@0
+0057134e	9	TerminatedCString	fmod.dll
+0057135a	20	TerminatedCString	GetForegroundWindow
+00571370	10	TerminatedCString	wsprintfA
+0057137c	8	TerminatedCString	SetRect
+00571386	14	TerminatedCString	GetClientRect
+00571396	15	TerminatedCString	ClientToScreen
+005713a8	11	TerminatedCString	wvsprintfA
+005713b6	12	TerminatedCString	MessageBoxA
+005713c4	11	TerminatedCString	MoveWindow
+005713d2	19	TerminatedCString	AdjustWindowRectEx
+005713e8	11	TerminatedCString	ShowWindow
+005713f6	13	TerminatedCString	SetWindowPos
+00571406	16	TerminatedCString	CreateWindowExA
+00571418	13	TerminatedCString	SetCursorPos
+00571428	15	TerminatedCString	SetWindowLongA
+0057143a	14	TerminatedCString	DestroyWindow
+0057144a	13	TerminatedCString	UpdateWindow
+0057145a	12	TerminatedCString	GetSysColor
+00571468	10	TerminatedCString	ReleaseDC
+00571474	6	TerminatedCString	GetDC
+0057147c	15	TerminatedCString	RegisterClassA
+0057148e	11	TerminatedCString	VkKeyScanA
+0057149c	12	TerminatedCString	LoadCursorA
+005714aa	17	TerminatedCString	DispatchMessageA
+005714be	11	TerminatedCString	ClipCursor
+005714cc	13	TerminatedCString	PostMessageA
+005714dc	17	TerminatedCString	EnumChildWindows
+005714f0	15	TerminatedCString	DefWindowProcA
+00571502	13	TerminatedCString	PeekMessageA
+00571512	15	TerminatedCString	GetWindowTextA
+00571524	17	TerminatedCString	GetKeyboardState
+00571538	11	TerminatedCString	ShowCursor
+00571546	17	TerminatedCString	TranslateMessage
+0057155a	12	TerminatedCString	EnumWindows
+00571568	10	TerminatedCString	LoadIconA
+00571574	16	TerminatedCString	PostQuitMessage
+00571586	12	TerminatedCString	GetMessageA
+00571594	15	TerminatedCString	InvalidateRect
+005715a6	10	TerminatedCString	KillTimer
+005715b2	22	TerminatedCString	SystemParametersInfoA
+005715ca	10	TerminatedCString	DrawTextA
+005715d6	9	TerminatedCString	EndPaint
+005715e2	9	TerminatedCString	FillRect
+005715ee	11	TerminatedCString	BeginPaint
+005715fc	17	TerminatedCString	RegisterClassExA
+00571610	9	TerminatedCString	SetTimer
+0057161c	17	TerminatedCString	UnregisterClassA
+0057162e	11	TerminatedCString	USER32.dll
+0057163c	20	TerminatedCString	SetSystemPaletteUse
+00571652	18	TerminatedCString	SetPaletteEntries
+00571666	14	TerminatedCString	SelectPalette
+00571676	15	TerminatedCString	RealizePalette
+00571688	19	TerminatedCString	CreateCompatibleDC
+0057169e	13	TerminatedCString	SelectObject
+005716ae	13	TerminatedCString	DeleteObject
+005716be	14	TerminatedCString	CreatePalette
+005716ce	14	TerminatedCString	GetDeviceCaps
+005716de	17	TerminatedCString	CreateDIBSection
+005716f2	9	TerminatedCString	DeleteDC
+005716fe	7	TerminatedCString	BitBlt
+00571708	15	TerminatedCString	GetStockObject
+0057171a	20	TerminatedCString	CreateFontIndirectA
+00571730	13	TerminatedCString	SetTextColor
+00571740	7	TerminatedCString	LineTo
+0057174a	9	TerminatedCString	MoveToEx
+00571756	11	TerminatedCString	SetBkColor
+00571764	9	TerminatedCString	TextOutA
+00571770	17	TerminatedCString	CreateSolidBrush
+00571784	10	TerminatedCString	CreatePen
+0057178e	10	TerminatedCString	GDI32.dll
+0057179a	18	TerminatedCString	MiniDumpWriteDump
+005717ac	12	TerminatedCString	dbghelp.dll
+005717ba	10	TerminatedCString	lstrcpynA
+005717c6	17	TerminatedCString	GetModuleHandleA
+005717da	19	TerminatedCString	OutputDebugStringA
+005717f0	17	TerminatedCString	GetComputerNameA
+00571804	22	TerminatedCString	FileTimeToDosDateTime
+0057181c	12	TerminatedCString	CreateFileA
+0057182a	12	TerminatedCString	GetFileSize
+00571838	19	TerminatedCString	GlobalMemoryStatus
+0057184e	17	TerminatedCString	SetPriorityClass
+00571862	15	TerminatedCString	SetFilePointer
+00571874	9	TerminatedCString	lstrlenA
+00571880	13	TerminatedCString	VirtualQuery
+00571890	18	TerminatedCString	GetCurrentProcess
+005718a4	17	TerminatedCString	GetCurrentThread
+005718b8	24	TerminatedCString	GetSystemTimeAsFileTime
+005718d2	10	TerminatedCString	WriteFile
+005718de	16	TerminatedCString	GetCommandLineA
+005718f0	14	TerminatedCString	GetSystemInfo
+00571900	19	TerminatedCString	GetModuleFileNameA
+00571916	12	TerminatedCString	GetFileTime
+00571924	19	TerminatedCString	GetCurrentThreadId
+0057193a	12	TerminatedCString	CloseHandle
+00571948	24	TerminatedCString	FileTimeToLocalFileTime
+00571962	20	TerminatedCString	GetCurrentProcessId
+00571978	9	TerminatedCString	lstrcpyA
+00571984	15	TerminatedCString	FormatMessageA
+00571996	13	TerminatedCString	GetLastError
+005719a6	12	TerminatedCString	FreeLibrary
+005719b4	15	TerminatedCString	GetProcAddress
+005719c6	13	TerminatedCString	LoadLibraryA
+005719d6	14	TerminatedCString	GetVersionExA
+005719e6	5	TerminatedCString	Beep
+005719ee	8	TerminatedCString	WinExec
+005719f8	7	TerminatedCString	MulDiv
+00571a02	6	TerminatedCString	Sleep
+00571a08	13	TerminatedCString	KERNEL32.dll
+00571a16	12	TerminatedCString	WSOCK32.dll
+00571a24	13	TerminatedCString	CreateThread
+00571a34	18	TerminatedCString	GetExitCodeThread
+00571a48	13	TerminatedCString	CreateMutexA
+00571a58	20	TerminatedCString	WaitForSingleObject
+00571a6e	13	TerminatedCString	ReleaseMutex
+00571a7e	13	TerminatedCString	CreateEventA
+00571a8e	11	TerminatedCString	PulseEvent
+00571a9c	26	TerminatedCString	QueryPerformanceFrequency
+00571ab8	24	TerminatedCString	QueryPerformanceCounter
+00571ad2	9	TerminatedCString	HeapSize
+00571ade	10	TerminatedCString	HeapAlloc
+00571aea	15	TerminatedCString	GetProcessHeap
+00571afc	9	TerminatedCString	HeapFree
+00571b08	19	TerminatedCString	GetFileAttributesA
+00571b1e	14	TerminatedCString	FindNextFileA
+00571b2e	15	TerminatedCString	FindFirstFileA
+00571b40	21	TerminatedCString	EnterCriticalSection
+00571b58	21	TerminatedCString	LeaveCriticalSection
+00571b70	12	TerminatedCString	ExitProcess
+00571b7e	12	TerminatedCString	HeapReAlloc
+00571b8c	12	TerminatedCString	DeleteFileA
+00571b9a	10	TerminatedCString	RtlUnwind
+00571ba6	15	TerminatedCString	GetTimeFormatA
+00571bb8	15	TerminatedCString	GetDateFormatA
+00571bca	24	TerminatedCString	SetEnvironmentVariableA
+00571be4	21	TerminatedCString	GetCurrentDirectoryA
+00571bfc	21	TerminatedCString	SetCurrentDirectoryA
+00571c14	14	TerminatedCString	GetDriveTypeA
+00571c24	17	TerminatedCString	GetFullPathNameA
+00571c38	20	TerminatedCString	MultiByteToWideChar
+00571c4e	16	TerminatedCString	GetStartupInfoA
+00571c60	21	TerminatedCString	FileTimeToSystemTime
+00571c78	27	TerminatedCString	GetFileInformationByHandle
+00571c96	14	TerminatedCString	PeekNamedPipe
+00571ca6	12	TerminatedCString	GetFileType
+00571cb4	10	TerminatedCString	FindClose
+00571cc0	17	TerminatedCString	CreateDirectoryA
+00571cd4	17	TerminatedCString	TerminateProcess
+00571ce8	25	TerminatedCString	UnhandledExceptionFilter
+00571d04	28	TerminatedCString	SetUnhandledExceptionFilter
+00571d22	18	TerminatedCString	IsDebuggerPresent
+00571d36	15	TerminatedCString	RaiseException
+00571d48	12	TerminatedCString	TlsGetValue
+00571d56	9	TerminatedCString	TlsAlloc
+00571d62	12	TerminatedCString	TlsSetValue
+00571d70	8	TerminatedCString	TlsFree
+00571d7a	21	TerminatedCString	InterlockedIncrement
+00571d92	13	TerminatedCString	SetLastError
+00571da2	21	TerminatedCString	InterlockedDecrement
+00571dba	13	TerminatedCString	GetStdHandle
+00571dca	12	TerminatedCString	HeapDestroy
+00571dd8	11	TerminatedCString	HeapCreate
+00571de6	12	TerminatedCString	VirtualFree
+00571df4	22	TerminatedCString	DeleteCriticalSection
+00571e0c	13	TerminatedCString	VirtualAlloc
+00571e1c	10	TerminatedCString	GetCPInfo
+00571e28	7	TerminatedCString	GetACP
+00571e32	9	TerminatedCString	GetOEMCP
+00571e3e	13	TerminatedCString	LCMapStringA
+00571e4e	20	TerminatedCString	WideCharToMultiByte
+00571e64	13	TerminatedCString	LCMapStringW
+00571e74	15	TerminatedCString	SetHandleCount
+00571e86	13	TerminatedCString	GetConsoleCP
+00571e96	15	TerminatedCString	GetConsoleMode
+00571ea8	26	TerminatedCString	InitializeCriticalSection
+00571ec4	23	TerminatedCString	GetTimeZoneInformation
+00571ede	9	TerminatedCString	ReadFile
+00571eea	17	TerminatedCString	FlushFileBuffers
+00571efe	24	TerminatedCString	SetEnvironmentVariableW
+00571f18	24	TerminatedCString	FreeEnvironmentStringsA
+00571f32	22	TerminatedCString	GetEnvironmentStrings
+00571f4a	24	TerminatedCString	FreeEnvironmentStringsW
+00571f64	23	TerminatedCString	GetEnvironmentStringsW
+00571f7e	13	TerminatedCString	GetTickCount
+00571f8e	13	TerminatedCString	SetStdHandle
+00571f9e	15	TerminatedCString	GetLocaleInfoA
+00571fb0	15	TerminatedCString	GetStringTypeA
+00571fc2	15	TerminatedCString	GetStringTypeW
+00571fd4	14	TerminatedCString	WriteConsoleA
+00571fe4	19	TerminatedCString	GetConsoleOutputCP
+00571ffa	14	TerminatedCString	WriteConsoleW
+0057200a	15	TerminatedCString	CompareStringA
+0057201c	15	TerminatedCString	CompareStringW
+0057202e	13	TerminatedCString	SetEndOfFile
+0057203e	19	TerminatedCString	GetExitCodeProcess
+00572054	15	TerminatedCString	CreateProcessA
+00572066	18	TerminatedCString	SetThreadPriority
+0057207a	14	TerminatedCString	GetSystemTime
+0057208a	10	TerminatedCString	MoveFileA
+00573080	16	char[16]	.?AVEntity@@
+005730b0	20	char[20]	.?AVVehicle_Model@@
+005738cc	24	char[24]	.?AVVehicle_Instance@@
+005738ec	20	char[20]	.?AVMedic_Model@@
+00573908	20	char[20]	.?AVMedic_Vehicle@@
+00573924	20	char[20]	.?AVTank_Model@@
+00573940	20	char[20]	.?AVTank_Vehicle@@
+005739c0	20	char[20]	.?AVBomber_Model@@
+00573de0	16	char[16]	.?AVCore_Time@@
+00573df8	16	char[16]	.?AVWULF_Time@@
+00573e10	20	char[20]	.?AUOut_History@@
+00573e2c	28	char[28]	.?AUService_Layer_Event@@
+00573e68	16	char[16]	.?AVtype_info@@
+00573e84	20	char[20]	.?AVbad_alloc@std@@
+00573ea0	20	char[20]	.?AVexception@std@@
+00574420	6	string	log10
+00574796	30	string	abcdefghijklmnopqrstuvwxyz
+005747b6	30	string	ABCDEFGHIJKLMNOPQRSTUVWXYZ
+005749a1	27	string	abcdefghijklmnopqrstuvwxyz
+005749c1	27	string	ABCDEFGHIJKLMNOPQRSTUVWXYZ
+00574f74	24	char[24]	.?AVbad_exception@std@@
+00575c20	16	char[16]	.?AVCSN_HTTP@@
+00575c38	12	char[12]	.?AVCSN@@
+005768c8	28	char[28]	.?AVScrolling_List_Item@@
+005768ec	16	char[16]	.?AVTex_Entry@@
+005b89b0	20	char[20]	.?AUpiecewiser@@
+005b89cc	24	char[24]	.?AUauto_table_viewer@@
+005b89ec	20	char[20]	.?AUparam_widget@@
+005b8a08	20	char[20]	.?AVInput_Widget@@
+005b8a24	24	char[24]	.?AUchooser_widget@@
+005b8a44	20	char[20]	.?AUview_widget@@
+005b8a60	28	char[28]	.?AVBitmap_When_Lit_Item@@
+005b8a84	20	char[20]	.?AVInviso_Item@@
+005b8aa0	16	char[16]	.?AVUnit_Item@@
+005b8ab8	16	char[16]	.?AVText_Item@@
+005b8ad0	20	char[20]	.?AVPad_Widget@@
+005b8aec	20	char[20]	.?AVGray_Button@@
+005b8b08	20	char[20]	.?AVEntry_Item@@
+005b8b24	20	char[20]	.?AVLabel_Item@@
+005b8b40	20	char[20]	.?AVDocview_Frame@@
+005b8b5c	20	char[20]	.?AVConvex_Button@@
+005b8b98	20	char[20]	.?AVTexture_Cache@@
+005b8bb8	20	char[20]	.?AVDevice_Axis@@
+005b8bd4	12	char[12]	.?AUDGW@@
+005b8be8	20	char[20]	.?AVShape_Entry@@
+005b8c04	20	char[20]	.?AVMajor_Mode@@
+005b8c20	20	char[20]	.?AVObjedit_Mode@@
+005b8c3c	16	char[16]	.?AVOverlay@@
+005b8c54	20	char[20]	.?AVDebug_Output@@
+005b8c70	16	char[16]	.?AVScrollbar@@
+005b8c88	28	char[28]	.?AVPackage_Unstructured@@
+005b8cac	20	char[20]	.?AVPackage_TB@@
+005b8cc8	20	char[20]	.?AVPackage_LR@@
+005b8ce4	20	char[20]	.?AVEmpty_Mode@@
+005b8d00	20	char[20]	.?AUTimed_Event@@
+005b8d1c	20	char[20]	.?AUSwitch_Screen@@
+005b8d38	20	char[20]	.?AVMap_Widget@@
+005b8d54	12	char[12]	.?AVFrame@@
+005b8d68	12	char[12]	.?AVChunk@@
+005b8d7c	20	char[20]	.?AVGlowy_Chunk@@
+005b8d98	24	char[24]	.?AVChunk_Generator@@
+005b8db8	28	char[28]	.?AVGlowy_Chunk_Generator@@
+005b8ddc	20	char[20]	.?AVMultigraph@@
+005b8df8	24	char[24]	.?AVTimegraph_Widget@@
+005b8e18	24	char[24]	.?AVHistogram_Widget@@
+005b8e38	12	char[12]	.?AVMeter@@
+005b8e4c	24	char[24]	.?AVDocument_Viewer@@
+005b8e6c	36	char[36]	.?AVNot_Allowed_Document_Viewer@@
+005b8e98	36	char[36]	.?AVNot_Yet_Implemented_Widget@@
+005b8ec4	20	char[20]	.?AVSel_Widget@@
+005b8ee0	20	char[20]	.?AVBase_Widget@@
+005b8efc	20	char[20]	.?AVInfo_Widget@@
+005b8f18	28	char[28]	.?AVJoystick_Device_Axis@@
+005b8f3c	20	char[20]	.?AVJoymap_Widget@@
+005b8f58	20	char[20]	.?AUdelete_node@@
+005b8f74	16	char[16]	.?AUhide_node@@
+005b8f8c	12	char[12]	.?AVMenu@@
+005b8fa0	24	char[24]	.?AVVehicle_Client@@
+005b8fc0	20	char[20]	.?AVMedic_Client@@
+005b8fdc	24	char[24]	.?AVMouse_Device_Axis@@
+005b9008	24	char[24]	.?AVPiecewise_Viewer@@
+005b9028	20	char[20]	.?AVComm_Entry@@
+005b9044	20	char[20]	.?AVSound_Player@@
+005b9064	20	char[20]	.?AVSound_fmod@@
+005b9080	20	char[20]	.?AVTable_Widget@@
+005b909c	20	char[20]	.?AVTank_Client@@
+005b90b8	28	char[28]	.?AVTeam_Selection_Box@@
+005b90dc	16	char[16]	.?AVPad_Chunk@@
+005b90f4	16	char[16]	.?AVTgen_Disk@@
+005b910c	24	char[24]	.?AVTexture_Generator@@
+005b912c	24	char[24]	.?AVTgen_Mandelbrot@@
+005b914c	20	char[20]	.?AVTgen_Lightmap@@
+005b9168	24	char[24]	.?AVTgen_Scape_Region@@
+005b9188	24	char[24]	.?AVTgen_Unit_Tile@@
+005b91a8	20	char[20]	.?AVAxis_Thermo@@
+005b91c4	24	char[24]	.?AVInteger_Thermo@@
+005b91e4	20	char[20]	.?AVWord_Thermo@@
+005b9200	16	char[16]	.?AVThermo@@
+005b9218	20	char[20]	.?AVBase_Thermo@@
+005b9234	20	char[20]	.?AVInput_Catcher@@
+005b9250	20	char[20]	.?AVUndo_Stack@@
+005b926c	24	char[24]	.?AVUI_Capture_Keys@@
+005b928c	16	char[16]	.?AVViewer@@
+005b92a4	20	char[20]	.?AVText_Entry@@
+005b92c0	20	char[20]	.?AVDialogue_Box@@
+005b92dc	24	char[24]	.?AVConvex_Button_Box@@
+005b92fc	20	char[20]	.?AVButton_Box@@
+005b9318	20	char[20]	.?AVSingle_Button@@
+005b9334	24	char[24]	.?AVButton_Bar_Item@@
+005b9354	20	char[20]	.?AVButton_Bar@@
+005b9370	12	char[12]	.?AVBBar@@
+005b9384	16	char[16]	.?AVBar_Item@@
+005b939c	16	char[16]	.?AVFade_Text@@
+005b93b4	16	char[16]	.?AVGlow_Text@@
+005b93cc	24	char[24]	.?AVWinsys_Detector@@
+005b93ec	28	char[28]	.?AVWinsys_D3D_Detector@@
+005b9410	16	char[16]	.?AVWinsys@@
+005b9428	20	char[20]	.?AVWinsys_D3D@@
+005b9448	28	char[28]	.?AVWinsys_DX_Detector@@
+005b946c	16	char[16]	.?AVWinsys_DX@@
+005b9484	28	char[28]	.?AVWinsys_GDI_Detector@@
+005b94a8	20	char[20]	.?AVWinsys_GDI@@
+005b94c4	28	char[28]	.?AVWinsys_DLL_Detector@@
+ffdff1ac	36	uchar[36]	\N
+ffdffc00	522	wchar16[261]	\N
