@@ -8,6 +8,7 @@ import math
 import os
 import random
 import secrets
+import ipaddress
 from typing import Dict, Tuple, Optional
 
 from network.transport.tcp_transport import TcpTransport
@@ -1502,17 +1503,61 @@ def verify_map_land_exists(map_name):
 # BOOTSTRAP LOGIC
 # -------------------------------------------------------------------------
 
+def resolve_advertised_udp_host(client_sock: socket.socket, ctx: TcpContext) -> str:
+    configured_host = (ctx.server.cfg.network.server_ip or "").strip()
+    if configured_host.lower() not in ("", "auto", "0.0.0.0", "::"):
+        _warn_if_loopback_advertised_to_remote(configured_host, ctx)
+        return configured_host
+
+    try:
+        local_host = client_sock.getsockname()[0]
+    except OSError:
+        local_host = ""
+
+    if not local_host or local_host in ("0.0.0.0", "::"):
+        local_host = ctx.server.cfg.network.host
+
+    if not local_host or local_host in ("0.0.0.0", "::"):
+        local_host = "127.0.0.1"
+
+    print(
+        "[INFO] Auto UDP advertise host "
+        f"client={ctx.session.address[0]} local_socket={local_host} configured={configured_host or 'auto'}"
+    )
+    return local_host
+
+
+def _warn_if_loopback_advertised_to_remote(configured_host: str, ctx: TcpContext) -> None:
+    try:
+        advertised = ipaddress.ip_address(configured_host)
+        client_ip = ipaddress.ip_address(ctx.session.address[0])
+    except ValueError:
+        return
+
+    if advertised.is_loopback and not client_ip.is_loopback:
+        print(
+            "[WARN] network.server_ip is loopback but client is remote; "
+            f"client={client_ip} advertised_udp_host={advertised}. "
+            "Use server_ip=\"auto\" or your LAN/Tailscale address."
+        )
+
+
 def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatcher: PacketDispatcher):
     """
     Handles the initial sequence: Hello -> UDP Link -> Login -> World Entry.
     """
     # 1. Send UDP Config (Hello Sub 1)
     print(f"[INFO] Setting session {ctx.session.address} to WAIT for UDP...")
+    advertised_udp_host = resolve_advertised_udp_host(client_sock, ctx)
+    print(
+        "[INFO] Advertising UDP endpoint "
+        f"{advertised_udp_host}:{ctx.server.cfg.network.udp_port} to {ctx.session.address}"
+    )
     
     # This let's the client know which ip and port to connect to with UDP
     ctx.send(HelloPacket.create_udp_config(
         port=ctx.server.cfg.network.udp_port, 
-        host=ctx.server.cfg.network.server_ip
+        host=advertised_udp_host
     ))
 
     # 2. Send session key to the client

@@ -16,7 +16,9 @@ def get_ticks() -> int:
 @dataclass(frozen=True, slots=True)
 class NetworkConfig:
     host: str = "127.0.0.1"
-    server_ip: str = "127.0.0.1"
+    # Address advertised to clients for the UDP key exchange. Use "auto" when
+    # accepting both local and LAN/VPN clients from a wildcard bind.
+    server_ip: str = "auto"
     tcp_port: int = 2627
     udp_port: int = 2627
 
