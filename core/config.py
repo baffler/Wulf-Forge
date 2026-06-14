@@ -16,7 +16,9 @@ def get_ticks() -> int:
 @dataclass(frozen=True, slots=True)
 class NetworkConfig:
     host: str = "127.0.0.1"
-    server_ip: str = "127.0.0.1"
+    # Address advertised to clients for the UDP key exchange. Use "auto" when
+    # accepting both local and LAN/VPN clients from a wildcard bind.
+    server_ip: str = "auto"
     tcp_port: int = 2627
     udp_port: int = 2627
 
@@ -36,6 +38,32 @@ class PlayerConfig:
 class DebugConfig:
     debug_packets: bool = True
     show_ascii: bool = True
+    debug_actions: bool = False
+    debug_action_packets: bool = False
+
+@dataclass(frozen=True, slots=True)
+class SyncConfig:
+    # server_simulation: action packets drive server-side movement.
+    # client_state_relay: a modified client supplies authoritative transform state.
+    mode: str = "server_simulation"
+
+@dataclass(frozen=True, slots=True)
+class ModRelayConfig:
+    port: int = 28010
+    owner_auth: bool = True
+    debug_mapping: bool = True
+    auto_bind: bool = True
+    identity_trace: bool = True
+    coalesce_updates: bool = True
+    echo_owner_state: bool = False
+    hard_sync: bool = False
+    adaptive_hard_sync: bool = True
+    hard_sync_teleport_distance: float = 250.0
+    hard_sync_stale_ms: int = 500
+    hard_sync_initial_packets: int = 3
+    apply_velocity: bool = True
+    apply_rotation: bool = True
+    apply_spin: bool = False
 
 # ----------------------------------------------------------------------
 # ---- Not part of the static config, these will change at runtime
@@ -55,6 +83,8 @@ class Config:
     game: GameConfig = GameConfig()
     player: PlayerConfig = PlayerConfig()
     debug: DebugConfig = DebugConfig()
+    sync: SyncConfig = SyncConfig()
+    mod_relay: ModRelayConfig = ModRelayConfig()
 
     @classmethod
     def load(cls, filename: str = "config.toml") -> Config:
@@ -84,4 +114,6 @@ class Config:
             game=unpack(GameConfig, data.get("game", {})) if "game" in data else GameConfig(),
             player=unpack(PlayerConfig, data.get("player", {})) if "player" in data else PlayerConfig(),
             debug=unpack(DebugConfig, data.get("debug", {})) if "debug" in data else DebugConfig(),
+            sync=unpack(SyncConfig, data.get("sync", {})) if "sync" in data else SyncConfig(),
+            mod_relay=unpack(ModRelayConfig, data.get("mod_relay", {})) if "mod_relay" in data else ModRelayConfig(),
         )

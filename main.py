@@ -8,6 +8,8 @@ import math
 import os
 import random
 import secrets
+import ipaddress
+import queue
 from typing import Dict, Tuple, Optional
 
 from network.transport.tcp_transport import TcpTransport
@@ -36,6 +38,9 @@ from core.map_loader import MapLoader, ensure_team_repair_pads, resolve_spawn_en
 from core.commands import commands
 from network.packets.update_array import UpdateArrayPacket
 from network.translation_config import get_config_by_index, GLOBAL_CONFIGS
+from mod_relay.listener import ModStateRelayListener
+from mod_relay.packets import ClientStateV1
+from mod_relay.state_apply import apply_mod_client_state
 
 # -------------------------------------------------------------------------
 # CONTEXTS
@@ -76,6 +81,16 @@ class ClientSession:
         # UDP Linkage
         self.udp_addr: Optional[Tuple[str, int]] = None
         self.udp_context: Optional[UdpContext] = None
+
+        # W2Mod relay debug identity. These best-effort bindings are for
+        # local/LAN owner-authoritative testing, not authentication.
+        self.mod_relay_addr: Optional[Tuple[str, int]] = None
+        self.mod_relay_local_entity: int = 0
+        self.mod_relay_packet_player_id: int = 0
+        self.mod_relay_bound_at: float = 0.0
+        self.mod_relay_last_seen_at: float = 0.0
+        self.mod_relay_last_spawned_at: float = 0.0
+        self.mod_relay_binding_reason: str = ""
         
         # Synchronization Events (Specific to this client now)
         self.stop_ping_event = threading.Event()
@@ -112,6 +127,12 @@ class WulframServerContext:
 
         # Session Management
         self.sessions: list[ClientSession] = []
+        self.mod_state_queue: queue.SimpleQueue[tuple[ClientSession, ClientStateV1]] = queue.SimpleQueue()
+        self.mod_relay_listener: Optional[ModStateRelayListener] = None
+        self.mod_relay_dirty_entity_ids: set[int] = set()
+        self.mod_relay_entity_updates: dict[int, dict] = {}
+        self._last_mod_broadcast_log = 0.0
+        self._last_mod_coalesce_log = 0.0
 
         # ID Counters
         self._next_player_id = 1
@@ -140,6 +161,9 @@ class WulframServerContext:
         self._next_player_id += 1
         return pid
 
+    def enqueue_mod_client_state(self, session: ClientSession, state: ClientStateV1) -> None:
+        self.mod_state_queue.put((session, state))
+
     def run(self):
         """Starts the UDP listener thread and the TCP accept loop."""
         # 1. Setup UDP
@@ -150,6 +174,16 @@ class WulframServerContext:
         # Start UDP Thread
         udp_thread = threading.Thread(target=self._udp_loop, daemon=True)
         udp_thread.start()
+
+        if should_accept_client_state_relay(self):
+            self.mod_relay_listener = ModStateRelayListener(
+                host=self.cfg.network.host,
+                port=self.cfg.mod_relay.port,
+                server=self,
+            )
+            self.mod_relay_listener.start()
+        else:
+            print("[mod-relay] disabled by sync mode")
 
         # 2. Setup TCP
         self.tcp_sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -221,8 +255,18 @@ class WulframServerContext:
             print("\n[!] Stopping server...")
             self.stop_event.set()
         finally:
-            self.tcp_sock.close()
-            self.udp_sock.close()
+            self.stop_event.set()
+            self.stop_update_event.set()
+            if self.mod_relay_listener:
+                self.mod_relay_listener.stop()
+            try:
+                self.tcp_sock.close()
+            except OSError:
+                pass
+            try:
+                self.udp_sock.close()
+            except OSError:
+                pass
 
     def _handle_tcp_client(self, session: ClientSession):
         """
@@ -336,6 +380,195 @@ class UdpContext:
 # DISPATCHER & HANDLERS
 # -------------------------------------------------------------------------
 
+SYNC_MODE_SERVER_SIMULATION = "server_simulation"
+SYNC_MODE_CLIENT_STATE_RELAY = "client_state_relay"
+VALID_SYNC_MODES = {SYNC_MODE_SERVER_SIMULATION, SYNC_MODE_CLIENT_STATE_RELAY}
+
+
+def get_sync_mode(server: WulframServerContext) -> str:
+    sync_cfg = getattr(getattr(server, "cfg", None), "sync", None)
+    mode = str(getattr(sync_cfg, "mode", SYNC_MODE_SERVER_SIMULATION) or "").strip().lower()
+    if mode not in VALID_SYNC_MODES:
+        return SYNC_MODE_SERVER_SIMULATION
+    return mode
+
+
+def should_run_server_simulation(server: WulframServerContext) -> bool:
+    return get_sync_mode(server) == SYNC_MODE_SERVER_SIMULATION
+
+
+def should_accept_client_state_relay(server: WulframServerContext) -> bool:
+    return get_sync_mode(server) == SYNC_MODE_CLIENT_STATE_RELAY
+
+
+def _drain_mod_state_queue(server: WulframServerContext, max_updates: int = 256) -> None:
+    relay_cfg = getattr(server.cfg, "mod_relay", None)
+    coalesce_updates = True if relay_cfg is None else getattr(relay_cfg, "coalesce_updates", True)
+
+    if coalesce_updates:
+        latest_by_session: dict[ClientSession, ClientStateV1] = {}
+        drained = 0
+        for _ in range(max_updates):
+            try:
+                session, state = server.mod_state_queue.get_nowait()
+            except queue.Empty:
+                break
+
+            drained += 1
+            latest_by_session[session] = state
+
+        if drained > len(latest_by_session) and latest_by_session:
+            now = time.monotonic()
+            if now - server._last_mod_coalesce_log >= 5.0:
+                server._last_mod_coalesce_log = now
+                print(
+                    "[mod-relay] coalesced queued states "
+                    f"drained={drained} applied_latest={len(latest_by_session)}"
+                )
+
+        for session, state in latest_by_session.items():
+            _apply_queued_mod_state(server, session, state)
+        return
+
+    for _ in range(max_updates):
+        try:
+            session, state = server.mod_state_queue.get_nowait()
+        except queue.Empty:
+            return
+
+        _apply_queued_mod_state(server, session, state)
+
+
+def _apply_queued_mod_state(server: WulframServerContext, session: ClientSession, state: ClientStateV1) -> None:
+    if session not in server.sessions or not session.is_logged_in:
+        return
+
+    if apply_mod_client_state(server, session, state):
+        if session.entity is not None:
+            previous_update = server.mod_relay_entity_updates.get(session.entity.net_id, {})
+            apply_count = int(previous_update.get("apply_count", 0) or 0) + 1
+            server.mod_relay_dirty_entity_ids.add(session.entity.net_id)
+            server.mod_relay_entity_updates[session.entity.net_id] = {
+                "monotonic": time.monotonic(),
+                "sequence": state.sequence,
+                "client_tick_ms": state.client_tick_ms,
+                "local_entity": state.local_entity,
+                "player_id": state.player_id,
+                "mapping_reason": getattr(session, "mod_relay_binding_reason", ""),
+                "apply_count": apply_count,
+                "hard_sync": bool(session.entity.pending_mask & UpdateMask.HARD_SYNC),
+                "hard_sync_reason": getattr(session, "mod_relay_last_hard_sync_reason", ""),
+            }
+        if server.mod_relay_listener:
+            server.mod_relay_listener.note_applied(session, state)
+    elif server.mod_relay_listener:
+        server.mod_relay_listener.note_rejected_apply(session, state)
+
+
+def reset_mod_relay_binding(session: ClientSession, reason: str) -> None:
+    previous_addr = getattr(session, "mod_relay_addr", None)
+    previous_local_entity = getattr(session, "mod_relay_local_entity", 0)
+    previous_packet_player_id = getattr(session, "mod_relay_packet_player_id", 0)
+
+    session.mod_relay_addr = None
+    session.mod_relay_local_entity = 0
+    session.mod_relay_packet_player_id = 0
+    session.mod_relay_bound_at = 0.0
+    session.mod_relay_last_seen_at = 0.0
+    session.mod_relay_binding_reason = ""
+
+    relay_cfg = getattr(getattr(session, "server", None), "cfg", None)
+    relay_cfg = getattr(relay_cfg, "mod_relay", None)
+    identity_trace = True if relay_cfg is None else getattr(relay_cfg, "identity_trace", True)
+    if identity_trace and (previous_addr is not None or previous_local_entity or previous_packet_player_id):
+        print(
+            "[mod-relay] identity reset "
+            f"reason={reason} session_player_id={session.player_id} "
+            f"old_addr={previous_addr} old_packet_player_id={previous_packet_player_id} "
+            f"old_local_entity=0x{previous_local_entity:08X}"
+        )
+
+
+def note_mod_relay_entity_spawn(session: ClientSession, entity: GameEntity, source: str) -> None:
+    session.mod_relay_last_spawned_at = time.monotonic()
+    reset_mod_relay_binding(session, f"{source}_spawn")
+
+    relay_cfg = getattr(getattr(session, "server", None), "cfg", None)
+    relay_cfg = getattr(relay_cfg, "mod_relay", None)
+    identity_trace = True if relay_cfg is None else getattr(relay_cfg, "identity_trace", True)
+    if identity_trace:
+        tcp_addr = getattr(session, "address", None)
+        udp_addr = getattr(session, "udp_addr", None)
+        print(
+            "[mod-relay] identity spawn "
+            f"source={source} session_player_id={session.player_id} "
+            f"session_entity_net_id={entity.net_id} tcp_addr={tcp_addr} "
+            f"udp_addr={udp_addr}"
+        )
+
+
+def send_existing_player_entity_definitions(ctx: TcpContext | UdpContext, reason: str) -> bool:
+    """Replay existing player entity definitions to a newly spawned client.
+
+    This is a join-in-progress catch-up path. It does not depend on dirty flags,
+    because already-spawned player entities may have cleared their DEFINITION bit
+    before this client entered the world.
+    """
+    session = getattr(ctx, "session", None)
+    if session is None or session.entity is None:
+        return False
+
+    players_by_entity_id: dict[int, tuple[int, GameEntity]] = {}
+    for other_session in ctx.server.sessions:
+        if other_session is session or not other_session.is_logged_in:
+            continue
+
+        entity = getattr(other_session, "entity", None)
+        if entity is None or not getattr(entity, "is_manned", False):
+            continue
+
+        players_by_entity_id[entity.net_id] = (other_session.player_id, entity)
+
+    if not players_by_entity_id:
+        return False
+
+    target_ctx = session.udp_context or ctx
+    players = sorted(players_by_entity_id.values(), key=lambda item: item[1].net_id)
+    entities = [entity for _player_id, entity in players]
+
+    # Replay birth notices because late joiners missed the original spawn-time
+    # broadcast. The current spawn path uses player_id here.
+    for player_id, _entity in players:
+        target_ctx.send(BirthNoticePacket(player_id))
+
+    forced_mask = (
+        UpdateMask.DEFINITION
+        | UpdateMask.POS
+        | UpdateMask.VEL
+        | UpdateMask.ROT
+        | UpdateMask.HEALTH
+    )
+    local_stats = (session.entity.health, session.entity.energy)
+    payload = ctx.server.entities.build_forced_update_packet(
+        entities,
+        sequence_num=get_ticks(),
+        is_view_update=False,
+        forced_mask=forced_mask,
+        local_stats=local_stats,
+        force_spawn=True,
+    )
+    if not payload:
+        return False
+
+    target_ctx.send(b"\x0E" + payload)
+    ids = ",".join(str(entity.net_id) for entity in entities)
+    print(
+        "[sync] sent late-join entity definitions "
+        f"reason={reason} to_player={session.player_id} entities={ids}"
+    )
+    return True
+
+
 def global_game_loop(server: WulframServerContext):
     """
     Main Server Tick (Targeting ~10Hz).
@@ -349,24 +582,28 @@ def global_game_loop(server: WulframServerContext):
 
     while not server.stop_update_event.is_set():
         start_time = time.time()
+
+        if should_accept_client_state_relay(server):
+            _drain_mod_state_queue(server)
         
-        # --- 1. Process Inputs (Physics/Actions) ---
-        # Apply actions (jump/hover) for every active player
-        for session in server.sessions:
-            if session.entity and session.is_logged_in:
-                my_ent = session.entity
-                
-                # Example: Jump Logic (from your previous code)
-                jump_val = my_ent.actions.get(4, 0.0)
-                if jump_val >= 1.0:
-                    vx, vy, _ = my_ent.vel
-                    # Apply Jump Velocity (Z axis)
-                    final_x = vx if abs(vx) > 0.01 else 0.001
-                    final_y = vy if abs(vy) > 0.01 else 0.001
+        if should_run_server_simulation(server):
+            # --- 1. Process Inputs (Physics/Actions) ---
+            # Apply actions (jump/hover) for every active player
+            for session in server.sessions:
+                if session.entity and session.is_logged_in:
+                    my_ent = session.entity
                     
-                    my_ent.vel = (final_x, final_y, 100.0)
-                    my_ent.mark_dirty(UpdateMask.VEL)
-                    my_ent.actions[4] = 0.0 # Reset trigger
+                    # Example: Jump Logic (from your previous code)
+                    jump_val = my_ent.actions.get(4, 0.0)
+                    if jump_val >= 1.0:
+                        vx, vy, _ = my_ent.vel
+                        # Apply Jump Velocity (Z axis)
+                        final_x = vx if abs(vx) > 0.01 else 0.001
+                        final_y = vy if abs(vy) > 0.01 else 0.001
+
+                        my_ent.vel = (final_x, final_y, 100.0)
+                        my_ent.mark_dirty(UpdateMask.VEL)
+                        my_ent.actions[4] = 0.0 # Reset trigger
 
         # --- 2. Gather Dirty State ---
         # We get the list ONCE. The state remains valid for all clients.
@@ -415,6 +652,12 @@ def global_game_loop(server: WulframServerContext):
                 # --- B. PACKET FOR "SELF" (0x0F - View Update) ---
                 # Check if "I" am dirty. If so, send View Update.
                 if my_entity in dirty_entities:
+                    if (
+                        my_entity.net_id in server.mod_relay_dirty_entity_ids
+                        and not server.cfg.mod_relay.echo_owner_state
+                    ):
+                        continue
+
                     # Build payload (Includes Timestamp, Includes Local Stats)
                     stats = (my_entity.health, my_entity.energy)
                     
@@ -434,6 +677,7 @@ def global_game_loop(server: WulframServerContext):
         # --- 4. Cleanup ---
         # Now that everyone has been told about the updates, we can clear the flags.
         server.entities.clear_all_dirty_flags()
+        server.mod_relay_dirty_entity_ids.clear()
 
         # --- 5. Sleep to maintain tick rate ---
         elapsed = time.time() - start_time
@@ -454,30 +698,31 @@ def start_update_loop(ctx: UdpContext):
                 # Use SESSION entity
                 if ctx.session and ctx.session.entity:
                     my_ent = ctx.session.entity
-                    # FIX: Use .get() to avoid KeyError: 4
-                    jump_val = my_ent.actions.get(4, 0.0)
-                    hover_val = my_ent.actions.get(5, 0.0) # Default to 0!
-                    
-                    if jump_val >= 1.0:
-                        # Apply Jump Velocity (Z axis)
-                        # We keep X and Y momentum
-                        vx, vy, vz = my_ent.vel
-                    
-                        # Wake up physics if stopped (Epsilon check)
-                        final_x = vx if abs(vx) > 0.01 else 0.001
-                        final_y = vy if abs(vy) > 0.01 else 0.001
-                        # Apply Jump
-                        my_ent.vel = (final_x, final_y, 100.0)
-                        my_ent.mark_dirty(UpdateMask.VEL)
-                        my_ent.actions[4] = 0.0
-                        print(f"Apply Jump Jets! {ent.vel}")
-                    """elif abs(hover_val) > 0.01:
-                        vx, vy, vz = my_ent.vel
-                        final_x = vx if abs(vx) > 0.01 else 0.001
-                        final_y = vy if abs(vy) > 0.01 else 0.001
+                    if should_run_server_simulation(ctx.server):
+                        # FIX: Use .get() to avoid KeyError: 4
+                        jump_val = my_ent.actions.get(4, 0.0)
+                        hover_val = my_ent.actions.get(5, 0.0) # Default to 0!
+
+                        if jump_val >= 1.0:
+                            # Apply Jump Velocity (Z axis)
+                            # We keep X and Y momentum
+                            vx, vy, vz = my_ent.vel
                         
-                        my_ent.vel = (final_x, final_y, hover_val * 10.0)
-                        my_ent.mark_dirty(UpdateMask.VEL)"""
+                            # Wake up physics if stopped (Epsilon check)
+                            final_x = vx if abs(vx) > 0.01 else 0.001
+                            final_y = vy if abs(vy) > 0.01 else 0.001
+                            # Apply Jump
+                            my_ent.vel = (final_x, final_y, 100.0)
+                            my_ent.mark_dirty(UpdateMask.VEL)
+                            my_ent.actions[4] = 0.0
+                            print(f"Apply Jump Jets! {my_ent.vel}")
+                        """elif abs(hover_val) > 0.01:
+                            vx, vy, vz = my_ent.vel
+                            final_x = vx if abs(vx) > 0.01 else 0.001
+                            final_y = vy if abs(vy) > 0.01 else 0.001
+
+                            my_ent.vel = (final_x, final_y, hover_val * 10.0)
+                            my_ent.mark_dirty(UpdateMask.VEL)"""
                     
                     # Todo: just update the local player's tank, no need to get dirty for all entities here
                     update_view_payload = ctx.server.entities.get_dirty_packet_view(sequence_num=get_ticks(), health=0.9, energy=1.0)
@@ -925,6 +1170,7 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
 
         ctx.session.entity = new_entity
         ctx.session.entity.is_manned = True
+        note_mod_relay_entity_spawn(ctx.session, new_entity, "reincarnate")
 
         # 3. Notify the Client
         send_system_message(ctx, f"Spawning Player #{new_entity.net_id}...")
@@ -942,6 +1188,7 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
         )
         ctx.send(pkt)
         ctx.send(ReincarnatePacket(code=0))
+        send_existing_player_entity_definitions(ctx, "reincarnate")
 
         broadcast(ctx.server, BirthNoticePacket(ctx.session.player_id))
 
@@ -1033,82 +1280,128 @@ def on_beacon_request(ctx: UdpContext, payload: bytes):
 
 # --- ACTION PARSING ---
 
+ACTION_DUMP_IDS = range(1, 22)
+
+ACTION_NAMES = {
+    1: "Turn",
+    2: "Forward",
+    3: "Strafe",
+    4: "JumpJet",
+    5: "Hover (Up/Down)",
+    6: "Tilting",
+}
+
+def _read_action_value(reader: PacketReader, action_id: int) -> float:
+    """
+    Reads one action value. Evidence:
+    ida_exports/curated_functions/004DDC60_Packet_Write_Quantized_Action.c
+    at 0x4DDC60.
+    """
+    if action_id >= 8 or action_id == 4:
+        return 1.0 if reader.read_bits(1) else 0.0
+    if action_id == 5:
+        return reader.read_quantized_float(get_config_by_index(10))
+    return reader.read_quantized_float(get_config_by_index(11))
+
+def _client_id_for_action_log(ctx: UdpContext) -> int | str:
+    if ctx.session:
+        return ctx.session.player_id or "pending"
+    return "unlinked"
+
+def _debug_config_bool(ctx: UdpContext, name: str, default: bool = False) -> bool:
+    server = getattr(ctx, "server", None)
+    cfg = getattr(server, "cfg", None)
+    debug = getattr(cfg, "debug", None)
+    return bool(getattr(debug, name, default))
+
+def _store_action_value(
+    ctx: UdpContext,
+    packet_type: str,
+    action_id: int,
+    value: float,
+) -> tuple[float | None, float]:
+    old_value = None
+    if ctx.session and ctx.session.entity:
+        old_value = ctx.session.entity.actions.get(action_id)
+        # Zero is a real released/neutral state, not "ignore this action."
+        ctx.session.entity.actions[action_id] = value
+
+    if _debug_config_bool(ctx, "debug_actions"):
+        print(
+            "[ACTION] "
+            f"client_id={_client_id_for_action_log(ctx)} "
+            f"packet={packet_type} "
+            f"action_id={action_id} "
+            f"action_name=\"{ACTION_NAMES.get(action_id, f'Unknown_{action_id}')}\" "
+            f"old_value={old_value} "
+            f"new_value={value}"
+        )
+    return old_value, value
+
 def parse_action_packet(ctx: UdpContext, payload: bytes, is_dump: bool):
     """
-    Parses ACTION_UPDATE (0x0A) or ACTION_DUMP (0x09).
-    Both share the same structure: Count + List of Actions.
+    Parses ACTION_DUMP (0x09) or ACTION_UPDATE (0x0A).
+
+    ACTION_DUMP carries an implicit full table for action ids 1..21.
+    ACTION_UPDATE carries a counted list of explicit action id/value pairs.
+
+    Evidence:
+    - ida_exports/curated_functions/0046C790_send_action_dump_UDP.c at 0x46C790
+    - ida_exports/curated_functions/0046C860_send_action_update_UDP.c at 0x46C860
     """
     reader = PacketReader(payload)
-    reader.read_byte() # Opcode
-    
-    # 1. Read Header
-    count = reader.read_byte() # Number of actions
-    
-    # These ints are likely timestamps/sequences
-    time1 = reader.read_int32()
-    time2 = reader.read_int32() 
-    
-    #print(f"    > ACTION {'DUMP' if is_dump else 'UPDATE'} | Count: {count} | T1: {time1}")
+    opcode = reader.read_byte()
+    packet_type = "ACTION_DUMP" if is_dump else "ACTION_UPDATE"
+    decoded_actions = []
 
-    # 2. Get Configs needed for decoding
-    # Config 15: Bits used for the Action ID itself
-    cfg_id_bits = get_config_by_index(15) 
-    
-    # Config 10: Analog Actions (ID 5)
-    cfg_analog_5 = get_config_by_index(10)
-    
-    # Config 11: Analog Actions (Other IDs)
-    cfg_analog_std = get_config_by_index(11)
+    if is_dump:
+        dump_time_or_sequence = reader.read_int32()
+        packet_time_or_flags = reader.read_int32()
+        if _debug_config_bool(ctx, "debug_action_packets"):
+            print(
+                "[ACTION_PACKET] "
+                f"client_id={_client_id_for_action_log(ctx)} "
+                f"packet={packet_type} "
+                f"opcode=0x{opcode:02X} "
+                f"dump_time_or_sequence={dump_time_or_sequence} "
+                f"packet_time_or_flags={packet_time_or_flags}"
+            )
+        action_ids = ACTION_DUMP_IDS
+    else:
+        count = reader.read_byte()
+        first_action_time_or_sequence = reader.read_int32()
+        packet_time_or_flags = reader.read_int32()
+        if _debug_config_bool(ctx, "debug_action_packets"):
+            print(
+                "[ACTION_PACKET] "
+                f"client_id={_client_id_for_action_log(ctx)} "
+                f"packet={packet_type} "
+                f"opcode=0x{opcode:02X} "
+                f"count={count} "
+                f"first_action_time_or_sequence={first_action_time_or_sequence} "
+                f"packet_time_or_flags={packet_time_or_flags}"
+            )
+        cfg_id_bits = get_config_by_index(15)
+        action_ids = (
+            reader.read_bits(cfg_id_bits.precision_header_bits)
+            for _ in range(count)
+        )
 
-    # Find the entity associated with this connection
-    # For now, we assume the session player_id is the entity we control
-    #my_entity = ctx.server.entities.get_entity(ctx.server.cfg.player.player_id)
+    for action_id in action_ids:
+        value = _read_action_value(reader, action_id)
+        old_value, new_value = _store_action_value(
+            ctx,
+            packet_type,
+            action_id,
+            value,
+        )
+        decoded_actions.append((action_id, old_value, new_value))
 
-    for _ in range(count):
-        # A. Read Action ID
-        action_id = reader.read_bits(cfg_id_bits.precision_header_bits)
-        
-        value = 0.0
+    return decoded_actions
 
-        # B. Parse Value based on Action ID logic
-        # Digital Action (1 Bit)
-        if action_id >= 8 or action_id == 4:
-            bit_val = reader.read_bits(1)
-            value = 1.0 if bit_val else 0.0
-            
-        # Upward Thrust (Hover) - SPECIAL CASE
-        # Analog Action ID 5 (always uses Config index 10)
-        elif action_id == 5:
-            value = reader.read_quantized_float(cfg_analog_5)
-            
-        # Analog Action 0-3, 6-7 (Config 11)
-        else:
-            value = reader.read_quantized_float(cfg_analog_std)
-
-        # --- UPDATE THE ENTITY ---
-        if ctx.session and ctx.session.entity:
-            my_ent = ctx.session.entity
-
-            if value != 0.0:
-                my_ent.actions[action_id] = value
-                #print(f"       Updated Action {action_id} -> {value:.2f}")
-
-            action_names = {
-                1: "Turn",
-                2: "Forward",
-                3: "Stafe",
-                4: "JumpJet",
-                5: "Hover (Up/Down)", 
-            }
-            name = action_names.get(action_id, f"Unknown_{action_id}")
-
-        # Log it to verify inputs
-        #if value != 0.0:
-            #print(f"       Action: {name} [{action_id}]: {value}")
-
-#@dispatcher.route(0x09)
-#def on_action_dump(ctx: UdpContext, payload: bytes):
-#    parse_action_packet(ctx, payload, is_dump=True)
+@dispatcher.route(0x09)
+def on_action_dump(ctx: UdpContext, payload: bytes):
+    parse_action_packet(ctx, payload, is_dump=True)
 
 @dispatcher.route(0x0A)
 def on_action_update(ctx: UdpContext, payload: bytes):
@@ -1172,6 +1465,7 @@ def cmd_spawn(ctx, unit_type_str=None):
         )
         ctx.session.entity.pending_mask = 0
         ctx.session.entity.is_manned = True
+        note_mod_relay_entity_spawn(ctx.session, ctx.session.entity, "command_spawn")
 
         pkt = TankPacket(
             net_id=ctx.session.entity.net_id,
@@ -1182,6 +1476,7 @@ def cmd_spawn(ctx, unit_type_str=None):
             rot=(0.0, 0.0, 0.0)
         )
         ctx.send(pkt)
+        send_existing_player_entity_definitions(ctx, "command_spawn")
         send_system_message(ctx, "Spawning Local Player...")
 
         ctx.send(ReincarnatePacket(code=0))
@@ -1479,17 +1774,61 @@ def verify_map_land_exists(map_name):
 # BOOTSTRAP LOGIC
 # -------------------------------------------------------------------------
 
+def resolve_advertised_udp_host(client_sock: socket.socket, ctx: TcpContext) -> str:
+    configured_host = (ctx.server.cfg.network.server_ip or "").strip()
+    if configured_host.lower() not in ("", "auto", "0.0.0.0", "::"):
+        _warn_if_loopback_advertised_to_remote(configured_host, ctx)
+        return configured_host
+
+    try:
+        local_host = client_sock.getsockname()[0]
+    except OSError:
+        local_host = ""
+
+    if not local_host or local_host in ("0.0.0.0", "::"):
+        local_host = ctx.server.cfg.network.host
+
+    if not local_host or local_host in ("0.0.0.0", "::"):
+        local_host = "127.0.0.1"
+
+    print(
+        "[INFO] Auto UDP advertise host "
+        f"client={ctx.session.address[0]} local_socket={local_host} configured={configured_host or 'auto'}"
+    )
+    return local_host
+
+
+def _warn_if_loopback_advertised_to_remote(configured_host: str, ctx: TcpContext) -> None:
+    try:
+        advertised = ipaddress.ip_address(configured_host)
+        client_ip = ipaddress.ip_address(ctx.session.address[0])
+    except ValueError:
+        return
+
+    if advertised.is_loopback and not client_ip.is_loopback:
+        print(
+            "[WARN] network.server_ip is loopback but client is remote; "
+            f"client={client_ip} advertised_udp_host={advertised}. "
+            "Use server_ip=\"auto\" or your LAN/Tailscale address."
+        )
+
+
 def do_login_and_bootstrap(client_sock: socket.socket, ctx: TcpContext, dispatcher: PacketDispatcher):
     """
     Handles the initial sequence: Hello -> UDP Link -> Login -> World Entry.
     """
     # 1. Send UDP Config (Hello Sub 1)
     print(f"[INFO] Setting session {ctx.session.address} to WAIT for UDP...")
+    advertised_udp_host = resolve_advertised_udp_host(client_sock, ctx)
+    print(
+        "[INFO] Advertising UDP endpoint "
+        f"{advertised_udp_host}:{ctx.server.cfg.network.udp_port} to {ctx.session.address}"
+    )
     
     # This let's the client know which ip and port to connect to with UDP
     ctx.send(HelloPacket.create_udp_config(
         port=ctx.server.cfg.network.udp_port, 
-        host=ctx.server.cfg.network.server_ip
+        host=advertised_udp_host
     ))
 
     # 2. Send session key to the client

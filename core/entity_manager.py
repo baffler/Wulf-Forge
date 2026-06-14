@@ -109,6 +109,32 @@ class EntityManager:
 
         return b'\x0E' + packet.get_bytes()
 
+    def build_forced_update_packet(
+        self,
+        entities: List[GameEntity],
+        sequence_num: int,
+        is_view_update: bool,
+        forced_mask: int,
+        local_stats: tuple[float, float] | None = None,
+        force_spawn: bool = True,
+    ) -> Optional[bytes]:
+        """
+        Constructs an UpdateArray payload with an explicit mask instead of each
+        entity's pending dirty state. This is useful for join-in-progress catch-up
+        snapshots where the target client missed an earlier DEFINITION update.
+        """
+        if not entities and not local_stats:
+            return None
+
+        packet = UpdateArrayPacket(sequence_id=sequence_num, is_view_update=is_view_update)
+        if local_stats:
+            packet.set_local_stats(health=local_stats[0], energy=local_stats[1])
+
+        for entity in entities:
+            packet.add_entity(entity, force_spawn=force_spawn, forced_mask=forced_mask)
+
+        return packet.get_bytes()
+
     def get_snapshot_packet(self, sequence_num: int, health: float = 1.0, energy: float = 1.0) -> bytes:
         """
         Returns a packet containing the FULL state of the world + Local Stats.
