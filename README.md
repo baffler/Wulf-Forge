@@ -33,6 +33,17 @@
 * This will load the initial base setup, with repair pads and other base units
 * Not all maps have state files, some have multiple
 
+## Better Fullscreen Support (DDrawCompat)
+* This will require you to remove `-windowed` from the command arguments.
+* Download [DDrawCompat-v0.7.1.zip](https://github.com/narzoul/DDrawCompat/releases/download/v0.7.1/DDrawCompat-v0.7.1.zip)
+* Extract ddraw.dll next to the wulfram2.exe
+* You can run wulfram2 now, and login, and press Esc, go to Options->Configure Graphics
+* Switch to D3D Alpha, set Visibility and Landscape Quality all the way up.
+* Now close out of wulfram2
+* Download [DDrawCompat-wulfram2.ini](https://github.com/baffler/Wulf-Forge/blob/b84d60d93d2bf5c6b758c146edf96117501ecf94/DDrawCompat-wulfram2.ini) and put next to the wulfram2.exe
+* You can launch wulfram2.exe and fullscreen should be pretty flawless
+* You can also press Shift + F11 to bring up the configuration editor in game as well for DDrawCompat.
+
 ## History
 (From the Facebook group)
 
