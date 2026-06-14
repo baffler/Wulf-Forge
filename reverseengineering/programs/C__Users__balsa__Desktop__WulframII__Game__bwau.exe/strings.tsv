@@ -1,0 +1,735 @@
+address	length	data_type	value
+00424386	12	unicode	null)
+00424395	6	string	null)
+004243b8	23	string	__GLOBAL_HEAP_SELECTED
+004243d0	21	string	__MSVCRT_HEAP_SELECT
+004243e8	16	string	runtime error\s
+004243fc	16	string	TLOSS error\r\n
+0042440c	16	string	SING error\r\n
+0042441c	16	string	DOMAIN error\r\n
+0042442c	40	string	R6028\r\n- unable to initialize heap\r\n
+00424454	56	string	R6027\r\n- not enough space for lowio initialization\r\n
+0042448c	56	string	R6026\r\n- not enough space for stdio initialization\r\n
+004244c4	40	string	R6025\r\n- pure virtual function call\r\n
+004244ec	56	string	R6024\r\n- not enough space for _onexit/atexit table\r\n
+00424524	44	string	R6019\r\n- unable to open console device\r\n
+00424550	36	string	R6018\r\n- unexpected heap error\r\n
+00424574	48	string	R6017\r\n- unexpected multithread lock error\r\n
+004245a4	44	string	R6016\r\n- not enough space for thread data\r\n
+004245d0	36	string	\r\nabnormal program termination\r\n
+004245f4	44	string	R6009\r\n- not enough space for environment\r\n
+00424620	44	string	R6008\r\n- not enough space for arguments\r\n
+0042464c	40	string	R6002\r\n- floating point not loaded\r\n
+00424674	37	string	Microsoft Visual C++ Runtime Library
+004246a0	26	string	Runtime Error!\n\nProgram:\s
+004246c0	23	string	<program name unknown>
+004246e6	30	string	GAIsProcessorFeaturePresent
+00424704	9	string	KERNEL32
+00424710	6	string	e+000
+004247a8	19	string	GetLastActivePopup
+004247bc	16	string	GetActiveWindow
+004247cc	12	string	MessageBoxA
+004247d8	11	string	user32.dll
+004247fc	8	string	LC_TIME
+00424804	11	string	LC_NUMERIC
+00424810	12	string	LC_MONETARY
+0042481c	9	string	LC_CTYPE
+00424828	11	string	LC_COLLATE
+00424834	8	string	LC_ALL
+00424870	7	string	1#QNAN
+00424878	6	string	1#INF
+00424880	6	string	1#IND
+00424888	7	string	1#SNAN
+00424890	12	string	Paraguay
+004248a4	8	string	Chile
+004248ac	8	string	Ecuador
+004248b4	12	string	Argentina
+004248c8	12	string	Colombia
+004248d4	12	string	Venezuela
+004248e0	20	string	Dominican Republic
+004248f4	16	string	South Africa
+00424904	8	string	Panama
+0042490c	12	string	Luxembourg
+00424918	12	string	Costa Rica
+00424924	12	string	Switzerland
+00424930	12	string	Guatemala
+0042493c	8	string	Canada
+00424944	24	string	Spanish - Modern Sort
+0042495c	12	string	Australia
+00424968	8	string	English
+00424970	8	string	Austria
+00424978	8	string	German
+00424980	8	string	Belgium
+00424988	7	string	Mexico
+00424990	8	string	Spanish
+00424998	8	string	Basque
+004249a0	8	string	Sweden
+004249a8	8	string	Swedish
+004249b0	8	string	Iceland
+004249b8	12	string	Icelandic
+004249c4	8	string	France
+004249cc	8	string	French
+004249d4	8	string	Finland
+004249dc	8	string	Finnish
+004249e4	8	string	Spain
+004249ec	28	string	Spanish - Traditional Sort
+00424a08	16	string	united-states
+00424a18	16	string	united-kingdom
+00424a28	20	string	trinidad & tobago
+00424a3c	12	string	south-korea
+00424a48	16	string	south-africa
+00424a58	12	string	south korea
+00424a64	16	string	south africa
+00424a7c	12	string	puerto-rico
+00424a88	12	string	pr-china
+00424a94	12	string	pr china
+00424aa4	12	string	new-zealand
+00424ab0	12	string	hong-kong
+00424abc	8	string	holland
+00424ac4	16	string	great britain
+00424ad4	8	string	england
+00424ae4	8	string	china
+00424aec	8	string	britain
+00424af4	8	string	america
+00424b08	8	string	swiss
+00424b10	16	string	swedish-finland
+00424b20	20	string	spanish-venezuela
+00424b34	16	string	spanish-uruguay
+00424b44	20	string	spanish-puerto rico
+00424b58	16	string	spanish-peru
+00424b68	20	string	spanish-paraguay
+00424b7c	16	string	spanish-panama
+00424b8c	20	string	spanish-nicaragua
+00424ba0	16	string	spanish-modern
+00424bb0	16	string	spanish-mexican
+00424bc0	20	string	spanish-honduras
+00424bd4	20	string	spanish-guatemala
+00424be8	20	string	spanish-el salvador
+00424bfc	16	string	spanish-ecuador
+00424c0c	28	string	spanish-dominican republic
+00424c28	20	string	spanish-costa rica
+00424c3c	20	string	spanish-colombia
+00424c50	16	string	spanish-chile
+00424c60	16	string	spanish-bolivia
+00424c70	20	string	spanish-argentina
+00424c84	24	string	portuguese-brazilian
+00424c9c	20	string	norwegian-nynorsk
+00424cb0	20	string	norwegian-bokmal
+00424cc4	12	string	norwegian
+00424cd0	16	string	italian-swiss
+00424ce0	16	string	irish-english
+00424cf0	16	string	german-swiss
+00424d00	20	string	german-luxembourg
+00424d14	20	string	german-lichtenstein
+00424d28	16	string	german-austrian
+00424d38	16	string	french-swiss
+00424d48	20	string	french-luxembourg
+00424d5c	16	string	french-canadian
+00424d6c	16	string	french-belgian
+00424d7c	12	string	english-usa
+00424d88	12	string	english-us
+00424d94	12	string	english-uk
+00424da0	28	string	english-trinidad y tobago
+00424dbc	24	string	english-south africa
+00424dd4	12	string	english-nz
+00424de0	16	string	english-jamaica
+00424df0	12	string	english-ire
+00424dfc	20	string	english-caribbean
+00424e10	12	string	english-can
+00424e1c	16	string	english-belize
+00424e2c	12	string	english-aus
+00424e38	17	string	english-american
+00424e4c	14	string	dutch-belgian
+00424e5c	20	string	chinese-traditional
+00424e70	20	string	chinese-singapore
+00424e84	20	string	chinese-simplified
+00424e98	20	string	chinese-hongkong
+00424eac	8	string	chinese
+00424ebc	9	string	canadian
+00424ec8	8	string	belgian
+00424ed0	12	string	australian
+00424edc	20	string	american-english
+00424ef0	20	string	american english
+00424f04	9	string	american
+00424f18	8	string	H:mm:ss
+00424f20	20	string	dddd, MMMM dd, yyyy
+00424f34	7	string	M/d/yy
+00424f44	9	string	December
+00424f50	9	string	November
+00424f5c	8	string	October
+00424f64	10	string	September
+00424f70	7	string	August
+00424f88	6	string	April
+00424f90	6	string	March
+00424f98	9	string	February
+00424fa4	8	string	January
+00424fdc	9	string	Saturday
+00424fe8	7	string	Friday
+00424ff0	9	string	Thursday
+00424ffc	10	string	Wednesday
+00425008	8	string	Tuesday
+00425010	7	string	Monday
+00425018	7	string	Sunday
+00425040	6	string	am/pm
+00425060	24	string	SunMonTueWedThuFriSat
+00425078	40	string	JanFebMarAprMayJunJulAugSepOctNovDec
+00425178	22	string	Illegal byte sequence
+00425190	20	string	Directory not empty
+004251a4	25	string	Function not implemented
+004251c0	19	string	No locks available
+004251d4	18	string	Filename too long
+004251e8	26	string	Resource deadlock avoided
+00425204	17	string	Result too large
+00425218	13	string	Domain error
+00425228	12	string	Broken pipe
+00425234	15	string	Too many links
+00425244	22	string	Read-only file system
+0042525c	13	string	Invalid seek
+0042526c	24	string	No space left on device
+00425284	15	string	File too large
+00425294	36	string	Inappropriate I/O control operation
+004252b8	20	string	Too many open files
+004252cc	30	string	Too many open files in system
+004252ec	17	string	Invalid argument
+00425300	15	string	Is a directory
+00425310	16	string	Not a directory
+00425320	15	string	No such device
+00425330	14	string	Improper link
+00425340	12	string	File exists
+0042534c	16	string	Resource device
+0042535c	14	string	Unknown error
+0042536c	12	string	Bad address
+00425378	18	string	Permission denied
+0042538c	17	string	Not enough space
+004253a0	33	string	Resource temporarily unavailable
+004253c4	19	string	No child processes
+004253d8	20	string	Bad file descriptor
+004253ec	18	string	Exec format error
+00425400	18	string	Arg list too long
+00425414	26	string	No such device or address
+00425430	19	string	Input/output error
+00425444	26	string	Interrupted function call
+00425460	16	string	No such process
+00425470	26	string	No such file or directory
+0042548c	24	string	Operation not permitted
+004254a4	9	string	No error
+004254e0	40	string	MD5 part of OpenSSL 0.9.6g 9 Aug 2002
+00425517	65	string	?(Press Retry to debug the application - JIT must be enabled)
+00425558	112	string	For information on how your program can cause an assertion\nfailure, see the Visual C++ documentation on asserts
+004255c8	13	string	Expression:\s
+004255d8	7	string	Line:\s
+004255e0	7	string	File:\s
+004255e8	10	string	Program:\s
+004255f4	18	string	Assertion failed!
+0042564c	8	string	floor
+0042570f	29	string	@_osfile(filedes) & FOPEN
+0042572c	39	string	(unsigned)filedes < (unsigned)_nhandle
+00425754	9	string	fdopen.c
+00425760	13	string	mode != NULL
+00425770	17	string	Assertion Failed
+00425784	6	string	Error
+0042578c	8	string	Warning
+00425794	12	string	%s(%d) : %s
+004257a4	19	string	Assertion failed:\s
+004257b8	43	string	_CrtDbgReport: String too long or IO Error
+004257e4	50	string	Second Chance Assertion Failed: File %s, Line %d\n
+00425818	10	string	wsprintfA
+00425824	35	string	Microsoft Visual C++ Debug Library
+00425848	83	string	Debug %s!\n\nProgram: %s%s%s%s%s%s%s%s%s%s%s\n\n(Press Retry to debug the application)
+0042589c	10	string	\nModule:\s
+004258a8	8	string	\nFile:\s
+004258b0	8	string	\nLine:\s
+004258b8	115	string	\n\nFor information on how your program can cause an assertion\nfailure, see the Visual C++ documentation on asserts.
+0042592c	9	string	dbgrpt.c
+00425938	22	string	szUserMessage != NULL
+00425dee	16	TerminatedCString	GetCommandLineA
+00425e00	7	TerminatedCString	MulDiv
+00425e0a	6	TerminatedCString	Sleep
+00425e10	13	TerminatedCString	KERNEL32.dll
+00425e20	12	TerminatedCString	MessageBoxA
+00425e2e	17	TerminatedCString	DispatchMessageA
+00425e42	17	TerminatedCString	TranslateMessage
+00425e56	22	TerminatedCString	TranslateAcceleratorA
+00425e6e	12	TerminatedCString	GetMessageA
+00425e7c	18	TerminatedCString	LoadAcceleratorsA
+00425e90	12	TerminatedCString	LoadStringA
+00425e9e	17	TerminatedCString	RegisterClassExA
+00425eb2	12	TerminatedCString	LoadCursorA
+00425ec0	10	TerminatedCString	LoadIconA
+00425ecc	13	TerminatedCString	UpdateWindow
+00425edc	11	TerminatedCString	ShowWindow
+00425eea	16	TerminatedCString	CreateWindowExA
+00425efc	16	TerminatedCString	PostQuitMessage
+00425f0e	9	TerminatedCString	EndPaint
+00425f1a	10	TerminatedCString	DrawTextA
+00425f26	14	TerminatedCString	GetClientRect
+00425f36	11	TerminatedCString	BeginPaint
+00425f44	16	TerminatedCString	DialogBoxParamA
+00425f56	14	TerminatedCString	DestroyWindow
+00425f66	15	TerminatedCString	DefWindowProcA
+00425f78	10	TerminatedCString	EndDialog
+00425f84	15	TerminatedCString	InvalidateRect
+00425f96	9	TerminatedCString	SetTimer
+00425fa2	10	TerminatedCString	KillTimer
+00425fae	17	TerminatedCString	UnregisterClassA
+00425fc2	10	TerminatedCString	ReleaseDC
+00425fce	6	TerminatedCString	GetDC
+00425fd6	22	TerminatedCString	SystemParametersInfoA
+00425fee	9	TerminatedCString	FillRect
+00425ff8	11	TerminatedCString	USER32.dll
+00426006	20	TerminatedCString	CreateFontIndirectA
+0042601c	14	TerminatedCString	GetDeviceCaps
+0042602c	17	TerminatedCString	CreateSolidBrush
+00426040	10	TerminatedCString	CreatePen
+0042604c	13	TerminatedCString	DeleteObject
+0042605c	9	TerminatedCString	TextOutA
+00426068	13	TerminatedCString	SetTextColor
+00426078	7	TerminatedCString	LineTo
+00426082	9	TerminatedCString	MoveToEx
+0042608e	13	TerminatedCString	SelectObject
+0042609e	11	TerminatedCString	SetBkColor
+004260ac	15	TerminatedCString	GetStockObject
+004260bc	10	TerminatedCString	GDI32.dll
+004260c8	12	TerminatedCString	ExitProcess
+004260d6	17	TerminatedCString	TerminateProcess
+004260ea	18	TerminatedCString	GetCurrentProcess
+004260fe	21	TerminatedCString	GetCurrentDirectoryA
+00426116	17	TerminatedCString	GetFullPathNameA
+0042612a	14	TerminatedCString	GetDriveTypeA
+0042613a	13	TerminatedCString	GetLastError
+0042614a	19	TerminatedCString	GetFileAttributesA
+00426160	17	TerminatedCString	GetModuleHandleA
+00426174	16	TerminatedCString	GetStartupInfoA
+00426186	11	TerminatedCString	GetVersion
+00426194	9	TerminatedCString	HeapFree
+004261a0	21	TerminatedCString	EnterCriticalSection
+004261b8	21	TerminatedCString	LeaveCriticalSection
+004261d0	10	TerminatedCString	RtlUnwind
+004261dc	26	TerminatedCString	InitializeCriticalSection
+004261f8	22	TerminatedCString	DeleteCriticalSection
+00426210	14	TerminatedCString	FatalAppExitA
+00426220	10	TerminatedCString	HeapAlloc
+0042622c	25	TerminatedCString	UnhandledExceptionFilter
+00426248	19	TerminatedCString	GetModuleFileNameA
+0042625e	24	TerminatedCString	FreeEnvironmentStringsA
+00426278	24	TerminatedCString	FreeEnvironmentStringsW
+00426292	20	TerminatedCString	WideCharToMultiByte
+004262a8	22	TerminatedCString	GetEnvironmentStrings
+004262c0	23	TerminatedCString	GetEnvironmentStringsW
+004262da	15	TerminatedCString	SetHandleCount
+004262ec	13	TerminatedCString	GetStdHandle
+004262fc	12	TerminatedCString	GetFileType
+0042630a	19	TerminatedCString	GetCurrentThreadId
+00426320	12	TerminatedCString	TlsSetValue
+0042632e	9	TerminatedCString	TlsAlloc
+0042633a	8	TerminatedCString	TlsFree
+00426344	13	TerminatedCString	SetLastError
+00426354	12	TerminatedCString	TlsGetValue
+00426362	17	TerminatedCString	GetCurrentThread
+00426376	24	TerminatedCString	GetEnvironmentVariableA
+00426390	14	TerminatedCString	GetVersionExA
+004263a0	12	TerminatedCString	HeapDestroy
+004263ae	11	TerminatedCString	HeapCreate
+004263bc	12	TerminatedCString	VirtualFree
+004263ca	10	TerminatedCString	WriteFile
+004263d6	15	TerminatedCString	GetProcAddress
+004263e8	13	TerminatedCString	VirtualAlloc
+004263f8	12	TerminatedCString	HeapReAlloc
+00426406	14	TerminatedCString	IsBadWritePtr
+00426416	15	TerminatedCString	SetFilePointer
+00426428	21	TerminatedCString	InterlockedDecrement
+00426440	21	TerminatedCString	InterlockedIncrement
+00426458	10	TerminatedCString	GetCPInfo
+00426464	7	TerminatedCString	GetACP
+0042646e	9	TerminatedCString	GetOEMCP
+0042647a	13	TerminatedCString	LoadLibraryA
+0042648a	20	TerminatedCString	MultiByteToWideChar
+004264a0	15	TerminatedCString	GetStringTypeA
+004264b2	15	TerminatedCString	GetStringTypeW
+004264c4	17	TerminatedCString	FlushFileBuffers
+004264d8	28	TerminatedCString	SetUnhandledExceptionFilter
+004264f6	13	TerminatedCString	IsBadReadPtr
+00426506	13	TerminatedCString	IsBadCodePtr
+00426516	13	TerminatedCString	SetStdHandle
+00426526	13	TerminatedCString	LCMapStringA
+00426536	13	TerminatedCString	LCMapStringW
+00426546	22	TerminatedCString	SetConsoleCtrlHandler
+0042655e	12	TerminatedCString	CloseHandle
+0042656c	14	TerminatedCString	IsValidLocale
+0042657c	16	TerminatedCString	IsValidCodePage
+0042658e	15	TerminatedCString	GetLocaleInfoA
+004265a0	19	TerminatedCString	EnumSystemLocalesA
+004265b6	19	TerminatedCString	GetUserDefaultLCID
+004265cc	23	TerminatedCString	GetTimeZoneInformation
+004265e6	15	TerminatedCString	GetLocaleInfoW
+004265f8	15	TerminatedCString	CompareStringA
+0042660a	15	TerminatedCString	CompareStringW
+0042661c	24	TerminatedCString	SetEnvironmentVariableA
+00426636	18	TerminatedCString	SetThreadPriority
+0042664a	17	TerminatedCString	SetPriorityClass
+0042665e	14	TerminatedCString	GetSystemTime
+0042666c	11	TerminatedCString	WS2_32.dll
+0042667a	12	TerminatedCString	DeleteFileA
+00426688	10	TerminatedCString	MoveFileA
+00426694	13	TerminatedCString	GetLocalTime
+004266a4	9	TerminatedCString	HeapSize
+004266b0	12	TerminatedCString	CreateFileA
+004266be	9	TerminatedCString	ReadFile
+004266ca	13	TerminatedCString	SetEndOfFile
+004266da	19	TerminatedCString	GetExitCodeProcess
+004266f0	20	TerminatedCString	WaitForSingleObject
+00426706	15	TerminatedCString	CreateProcessA
+00426718	24	TerminatedCString	QueryPerformanceCounter
+00426732	26	TerminatedCString	QueryPerformanceFrequency
+0042674e	15	TerminatedCString	GetProcessHeap
+00426760	5	TerminatedCString	Beep
+00426768	14	TerminatedCString	FindNextFileA
+00426778	15	TerminatedCString	FindFirstFileA
+0042678a	12	TerminatedCString	timeGetTime
+00426796	10	TerminatedCString	WINMM.dll
+004267a2	21	TerminatedCString	FileTimeToSystemTime
+004267ba	24	TerminatedCString	FileTimeToLocalFileTime
+004267d4	27	TerminatedCString	GetFileInformationByHandle
+004267f2	14	TerminatedCString	PeekNamedPipe
+00426802	17	TerminatedCString	CreateDirectoryA
+00426816	15	TerminatedCString	RaiseException
+00426828	11	TerminatedCString	DebugBreak
+00426836	19	TerminatedCString	OutputDebugStringA
+00427040	50	string	BetaWulf Bootstrap: Run in folder of your choice!
+00427074	1188	string	IMPORTANT -- PLEASE READ\n\nCURRENT INSTALLTION LOCATION: %s\n\nIf you hit OKAY, this program will install files required to run BetaWulf into the location indicated above.  Files will be placed directly into this location, so it would make sense for you to make an empty folder dedicated to the BetaWulf distribution, and run this program from there.\n\n SUGGESTED STEPS (unless you're running this from the desired install location):\n1. Click Cancel below\n2. Make yourself a dedicated BetaWulf folder (not inside a Wulfram distribution)\n3. Move this program into that folder, and re-run it and hit Okay if you're okay with the TERMS OF USE below.\n\nTERMS OF USE\nAS-IS, without any warranty what so ever.  USE AT YOUR OWN RISK.  I make no guarantees either direct or implied as to the proper functioning of the software. If you install and use this software you agree to hold me harmless, regardless of any real or implied damages that may result.  if you do not agree to these terms click on the CANCEL button below.\n\nCOPYRIGHT AND RIGHT OF USE\nCopyrighted 1995-2005, Bernt Habermeier and Slurpysoft\nYou don't have the right to resell this stuff... just email me if you have grand plans.\n\n
+00427518	38	string	<unknown location -- CANCEL out now!>
+00427540	31	string	Wulfram II AutoInstaller Error
+00427560	181	string	Failure to unlink '%s'.  If you can find this in your wulfram II distribution, try to delete the file manually (or move it out of your distribution) and try rerunning this program.
+00427618	16	string	www.wulfram.com
+00427628	9	string	~updater
+00427634	9	string	betawulf
+00427640	21	string	-auto_update_enabled
+00427658	68	string	BetaWulf Auto Updater (bootstrap) (CSNUI)    v1.11   (C) SlurpySoft
+0042769c	16	string	%s\\betawulf.exe
+004276ac	19	string	csn/tmp/update.csn
+004276c0	19	string	csn/tmp/master.csn
+004276d4	15	string	csn/update.csn
+004276e4	15	string	csn/master.csn
+004276f4	18	string	csn/done_flag.csn
+00427708	13	string	betawulf.exe
+00427718	13	string	wulfram2.exe
+00427728	39	string	Wulfram II was never installed before?
+00427754	14	string	CSN UI WINDOW
+00427764	7	string	MBytes
+0042776c	20	string	Total download size
+00427780	7	string	KBytes
+00427788	20	string	Total download size
+0042779c	7	string	MBytes
+004277a4	7	string	KBytes
+004277ac	29	string	[csnuilib] command line: %s\n
+004277cc	16	string	Times New Roman
+004277dc	7	string	MBytes
+004277e4	20	string	Total download size
+004277f8	6	string	Files
+00427800	22	string	Total files to update
+00427818	16	string	Package Updater
+00427828	49	string	fatal error: can't get current working directory
+0042785c	37	string	[csnuilib] current package path: %s\n
+00427884	23	string	can't unregister class
+004278a4	8	string	KBytes
+004278ac	8	string	MBytes
+004278b4	22	string	%03.0f%%     %4.2f %s
+004278cc	23	string	%03.0f%%     %04.0f %s
+004278ec	12	string	MyWindow
+004278f8	28	string	My Windows Template Program
+0042b09c	12	string	DebugBox
+0042b0ac	15	string	C:\\tmp\\csn.log
+0042b0bc	26	string	C:\\code\\csnlib\\csnlib.cpp
+0042b0d8	65	string	%s %d: CSN_Request::add(src='%s', dst='%s', size=%d, myself=%d)\n
+0042b11c	34	string	CSN, (constructor) unknown method
+0042b140	18	string	CSN, (destructor)
+0042b154	29	string	dupstr(), NULL not expected\n
+0042b174	37	string	dupstr(), empty string not expected\n
+0042b19c	43	string	dupstr(), can't allocate space for string\n
+0042b1c8	24	string	CSN::set_server_address
+0042b1e0	20	string	CSN::set_login_info
+0042b1f4	21	string	CSN::set_server_path
+0042b20c	22	string	CSN::set_package_path
+0042b224	22	string	CSN::set_package_name
+0042b23c	19	string	CSN::set_arguments
+0042b250	18	string	CSN::set_callback
+0042b264	33	string	CSN::check_for_completed_install
+0042b288	26	string	/tmp/csn_skip_fingerprint
+0042b2a4	26	string	C:\\code\\csnlib\\csnlib.cpp
+0042b2c0	63	string	%s %d: not fingerprinting (/tmp/csn_skip_fingerprint present)\n
+0042b304	18	string	csn/done_flag.csn
+0042b318	28	string	CSN::note_completed_install
+0042b334	40	string	CSN::note_completed_install:  Self: %d\n
+0042b360	18	string	csn/done_flag.csn
+0042b374	46	string	could not note that the install was completed
+0042b3a4	18	string	%Y %B %d %H:%M:%S
+0042b3b8	25	string	Completed Download [%s]\n
+0042b3d4	15	string	csn/master.csn
+0042b3e4	15	string	csn/master.csn
+0042b3f4	19	string	csn/tmp/master.csn
+0042b408	18	string	csn/tmp/exist.csn
+0042b41c	19	string	csn/tmp/master.csn
+0042b430	19	string	csn/tmp/update.csn
+0042b444	18	string	csn/done_flag.csn
+0042b458	26	string	C:\\code\\csnlib\\csnlib.cpp
+0042b474	42	string	%s %d: Fails to get_dir_and_file(%s,...)\n
+0042b4a0	26	string	C:\\code\\csnlib\\csnlib.cpp
+0042b4bc	57	string	%s %d: Got get_dir_and_file(%s,...): dir: %s, fname: %s\n
+0042b504	10	string	%sexec_%s
+0042b51c	9	string	%sold_%s
+0042b52c	10	string	%sexec_%s
+0042b548	7	string	./%s%s
+0042b554	23	string	/tmp/csn_skip_relaunch
+0042b56c	26	string	C:\\code\\csnlib\\csnlib.cpp
+0042b588	21	string	%s %d: relaunch set\n
+0042b5a0	26	string	C:\\code\\csnlib\\csnlib.cpp
+0042b5bc	25	string	%s %d: exit_fnc() start\n
+0042b5d8	20	string	/tmp/csn_no_restart
+0042b5ec	26	string	C:\\code\\csnlib\\csnlib.cpp
+0042b608	54	string	%s %d: not running '%s'(/tmp/csn_no_restart present)\n
+0042b640	41	string	Couldn't get REALTIME_PRIORITY_CLASS...\n
+0042b66c	47	string	Couldn't get THREAD_PRIORITY_TIME_CRITICAL...\n
+0042b6a0	12	string	csn/csn_rmd
+0042b6b0	11	string	helper.exe
+0042b6bc	26	string	C:\\code\\csnlib\\csnlib.cpp
+0042b6d8	32	string	%s %d: spawnl() fails (%d, %s)\n
+0042b6f8	23	string	CSN::check_for_updates
+0042b714	12	string	csn/csn_rmd
+0042b728	28	string	can't connect to the server
+0042b744	7	string	master
+0042b74c	19	string	csn/tmp/master.csn
+0042b760	19	string	master_fingerprint
+0042b774	43	string	can't read csn/tmp/master.csn control file
+0042b7a0	15	string	csn/master.csn
+0042b7b0	19	string	master_fingerprint
+0042b7c4	16	string	%48s %ld %2000s
+0042b7d4	24	string	comparing %30s\t%30s\t%d\n
+0042b7ec	11	string	Require...
+0042b7f8	24	string	file %s needs updating\n
+0042b810	10	string	Unlink...
+0042b81c	29	string	file %s needs to be deleted\n
+0042b83c	10	string	Update...
+0042b848	39	string	file %s is new, and needs downloading\n
+0042b87c	48	string	Can't open local (user) update.csn file '%s'\n
+0042b8ac	52	string	Can't open remote (master) update.csn file '%s'\n
+0042b8e0	28	string	Local  (user)   file: %s\n
+0042b8fc	28	string	Remote (master) file: %s\n
+0042b918	20	string	END OF DECISIONS\n
+0042b92c	20	string	CSN::update_package
+0042b940	7	string	update
+0042b948	6	string	exist
+0042b950	15	string	csn/update.csn
+0042b960	15	string	csn/master.csn
+0042b970	26	string	/tmp/csn_exit_after_clear
+0042b990	15	string	csn/update.csn
+0042b9a4	15	string	csn/update.csn
+0042b9b4	67	string	could not read csn/update.csn after generating local fingerprints!
+0042b9fc	19	string	csn/tmp/update.csn
+0042ba10	55	string	could not read csn/tmp/update.csn after downloading it
+0042ba48	18	string	on what to update
+0042ba5c	12	string	Deciding...
+0042ba6c	18	string	csn/tmp/exist.csn
+0042ba80	54	string	could not read csn/tmp/exist.csn after downloading it
+0042bab8	7	string	%2000s
+0042bac4	11	string	Require...
+0042bad0	44	string	file %s is should exist, but doesn't exist\n
+0042bafc	14	string	the udpate...
+0042bb0c	10	string	Preparing
+0042bb18	16	string	CSN::get_errors
+0042bb28	18	string	CSN::clear_errors
+0042bb44	9	string	%s\r\n%s%s
+0042bb50	6	string	%s %s
+0042bb58	24	string	package path is not set
+0042bb70	6	string	%s/%s
+0042bb78	15	string	memory problem
+0042bb88	20	string	file not found '%s'
+0042bb9c	27	string	CSN::generate_fingerprints
+0042bbbc	19	string	csn/tmp/update.csn
+0042bbd0	90	string	could not open/read csn/tmp/update.csn, and it's needed for generating local fingerprints
+0042bc30	15	string	csn/update.csn
+0042bc40	36	string	could not open/write csn/update.csn
+0042bc64	15	string	Fingerprinting
+0042bc74	12	string	%s %14d %s\n
+0042bc80	17	string	CSN::update_file
+0042bc94	10	string	%sexec_%s
+0042bca0	23	string	CSN::get_csn_component
+0042bcb8	11	string	csn/%s.csn
+0042bcc4	28	string	memory problem with mprintf
+0042bce0	15	string	csn/tmp/%s.csn
+0042bcf0	28	string	memory problem with mprintf
+0042bd0c	8	string	master
+0042bd14	15	string	%s_fingerprint
+0042bd24	23	string	mprintf memory problem
+0042bd3c	19	string	csn/tmp/master.csn
+0042bd50	73	string	can't get the fingerprint of csn componenet '%s' from remote_master file
+0042bd9c	38	string	can't get file fingerpoinrt for '%s'\n
+0042bdc4	56	string	finger print for '%s' does not match remote_master info
+0042bdfc	26	string	CSN::get_file_fingerprint
+0042be24	6	string	BZ_OK
+0042be2c	10	string	BZ_RUN_OK
+0042be38	12	string	BZ_FLUSH_OK
+0042be44	13	string	BZ_FINISH_OK
+0042be54	14	string	BZ_STREAM_END
+0042be64	18	string	BZ_SEQUENCE_ERROR
+0042be78	15	string	BZ_PARAM_ERROR
+0042be88	13	string	BZ_MEM_ERROR
+0042be98	14	string	BZ_DATA_ERROR
+0042bea8	20	string	BZ_DATA_ERROR_MAGIC
+0042bebc	12	string	BZ_IO_ERROR
+0042bec8	18	string	BZ_UNEXPECTED_EOF
+0042bedc	16	string	BZ_OUTBUFF_FULL
+0042beec	16	string	BZ_CONFIG_ERROR
+0042befc	28	string	Unknown uncompression error
+0042bf18	28	string	CSN_HTTP::connect_to_server
+0042bf34	24	string	failed to make a socket
+0042bf4c	47	string	failed to bind the local address to the socket
+0042bf7c	39	string	failed to make the socket non blocking
+0042bfa4	33	string	can't connect to the server '%s'
+0042bfc8	9	string	%scsn_%s
+0042bfd4	13	string	%scsn_%s.bz2
+0042bfe8	41	string	open_path failed for file '%s' [(%d) %s]
+0042c014	44	string	GET /%s/%s/%s.bz2?%s HTTP/1.0\r\nHost: %s\r\n\r\n
+0042c040	62	string	GET /%s/%s/%s.bz2?%s HTTP/1.0\r\nHost: %s\r\nRange: bytes=%d-\r\n\r\n
+0042c080	16	string	uncouth error
+0042c094	35	string	unable to open compressed file: %s
+0042c0bc	26	string	unable to create file: %s
+0042c0d8	47	string	unable to start decompression of open file: %s
+0042c108	29	string	unable to allocate: %d bytes
+0042c128	16	string	written != used
+0042c138	51	string	uncompress of the file '%s' failed [tmp: '%s']\n%s\n
+0042c16c	27	string	C:\\code\\csnlib\\csnhttp.cpp
+0042c188	102	string	[%s %d] HTTP_Con::finish_download: unlink fails for file '%s' adding to rename_list (errno %d, '%s')\n
+0042c1f0	27	string	C:\\code\\csnlib\\csnhttp.cpp
+0042c20c	81	string	[%s %d] HTTP_Con::finish_download: rename fails for '%s -> %s' (errno %d, '%s')\n
+0042c260	34	string	rename failed for '%s -> %s' [%s]
+0042c290	11	string	%100[^:]s:
+0042c29c	15	string	Content-Length
+0042c2c0	12	string	not_known
+0042c2cc	34	string	server address is invalid or NULL
+0042c2f0	24	string	CSN_HTTP::download_file
+0042c308	34	string	prepare_update(): %d total_files\n
+0042c32c	34	string	prepare_update(): %d total_bytes\n
+0042c350	39	string	Failed to download file '%s' (4 times)
+0042c378	65	string	con[%d] has fatal error (failed to download file '%s' 4 times).\n
+0042c3bc	51	string	con[%d] has error (failed to download file '%s').\n
+0042c3f8	29	string	%d%02d%02d:%02d:%02d:%02d:%d
+0042c4cc	6	string	\s\t-\r]
+0042c538	13	string	CONFIG_ERROR
+0042c548	13	string	OUTBUFF_FULL
+0042c558	15	string	UNEXPECTED_EOF
+0042c568	9	string	IO_ERROR
+0042c574	17	string	DATA_ERROR_MAGIC
+0042c588	11	string	DATA_ERROR
+0042c594	10	string	MEM_ERROR
+0042c5a0	12	string	PARAM_ERROR
+0042c5ac	15	string	SEQUENCE_ERROR
+0042c5c0	1060	string	\n*** A special note about internal error number 1007 ***\n\nExperience suggests that a common cause of i.e. 1007\nis unreliable memory or other hardware.  The 1007 assertion\njust happens to cross-check the results of huge numbers of\nmemory reads/writes, and so acts (unintendedly) as a stress\ntest of your memory system.\n\nI suggest the following: try compressing the file again,\npossibly monitoring progress in detail with the -vv flag.\n\n* If the error cannot be reproduced, and/or happens at different\n  points in compression, you may have a flaky memory system.\n  Try a memory-test program.  I have used Memtest86\n  (www.memtest86.com).  At the time of writing it is free (GPLd).\n  Memtest86 tests memory much more thorougly than your BIOSs\n  power-on test, and may find failures that the BIOS doesn't.\n\n* If the error can be repeatably reproduced, this is a bug in\n  bzip2, and I would very much like to hear about it.  Please\n  let me know, and, ideally, save a copy of the file causing the\n  problem -- without which I will be unable to investigate it.\n\n
+0042c9e4	442	string	\n\nbzip2/libbzip2: internal error number %d.\nThis is a bug in bzip2/libbzip2, %s.\nPlease report it to me at: jseward@acm.org.  If this happened\nwhen you were using some program which uses libbzip2 as a\ncomponent, you should also report this bug to the author(s)\nof that program.  Please make an effort to report this bug;\ntimely and accurate bug reports eventually lead to higher\nquality software.  Thanks.  Julian Seward, 30 December 2001.\n\n
+0042cba0	51	string	\n    combined CRCs: stored = 0x%x, computed = 0x%x
+0042cbd8	14	string	\s{0x%x, 0x%x}
+0042cbe8	19	string	1.0.2, 30-Dec-2001
+0042cc08	34	string	\s   final combined CRC = 0x%x\n  \s
+0042cc2c	60	string	\s   block %d: crc = 0x%8x, combined CRC = 0x%8x, size = %d\n
+0042cc68	10	string	codes %d\n
+0042cc74	18	string	code lengths %d,\s
+0042cc88	15	string	selectors %d,\s
+0042cc98	26	string	\s     bytes: mapping %d,\s
+0042ccbc	41	string	\s     pass %d: size is %d, grp uses are\s
+0042cce8	59	string	\s     initial group %d, [%d .. %d], has %d syms (%4.1f%%)\n
+0042cd24	64	string	\s     %d in block, %d after MTF & 1-2 coding, %d+2 syms in use\n
+0042d164	7	string	rt+rld
+0042d16c	20	string	\n    [%d: huff+mtf\s
+0042d9b8	54	string	\s   too repetitive; using fallback sorting algorithm\n
+0042d9f0	38	string	\s     %d work, %d block, ratio %5.2f\n
+0042da18	34	string	\s       reconstructing block ...\n
+0042da3c	24	string	%6d unresolved strings\n
+0042da54	23	string	\s       depth %6d has\s
+0042da6c	28	string	\s       bucket sorting ...\n
+0042da88	44	string	\s       %d pointers, %d sorted, %d scanned\n
+0042dab4	48	string	\s       qsort [0x%x, 0x%x]   done %d   this %d\n
+0042dae4	34	string	\s       main sort initialise ...\n
+0042db18	41	string	C:\\code\\ntank\\os\\win32\\msvc\\specific.cpp
+0042db44	11	string	ok == TRUE
+0042db50	41	string	C:\\code\\ntank\\os\\win32\\msvc\\specific.cpp
+0042db7c	11	string	ok == TRUE
+0042db88	41	string	C:\\code\\ntank\\os\\win32\\msvc\\specific.cpp
+0042dbb4	15	string	tzoneptr==NULL
+0042dbc4	35	string	WSAEINTR: Interrupted System Call.
+0042dbe8	10	string	WSAEBADF:
+0042dbf4	11	string	WSAEACCES:
+0042dc00	11	string	WSAEFAULT:
+0042dc0c	11	string	WSAEINVAL:
+0042dc18	11	string	WSAEMFILE:
+0042dc24	16	string	WSAEWOULDBLOCK:
+0042dc34	16	string	WSAEINPROGRESS:
+0042dc44	13	string	WSAEALREADY:
+0042dc54	13	string	WSAENOTSOCK:
+0042dc64	17	string	WSAEDESTADDRREQ:
+0042dc78	13	string	WSAEMSGSIZE:
+0042dc88	15	string	WSAEPROTOTYPE:
+0042dc98	16	string	WSAENOPROTOOPT:
+0042dca8	20	string	WSAEPROTONOSUPPORT:
+0042dcbc	20	string	WSAESOCKTNOSUPPORT:
+0042dcd0	15	string	WSAEOPNOTSUPP:
+0042dce0	17	string	WSAEPFNOSUPPORT:
+0042dcf4	17	string	WSAEAFNOSUPPORT:
+0042dd08	69	string	WSAEADDRINUSE: Address is already in use.  Kill conflicting Program.
+0042dd50	70	string	WSAEADDRNOTAVAIL: Address isn't available.  Kill conflicting Program.
+0042dd98	55	string	WSAENETDOWN: The network is down.  Check your Network.
+0042ddd0	65	string	WSAENETUNREACH: The network is unreachable.  Check your Network.
+0042de14	71	string	WSAENETRESET: Network dropped connection because of reset.  Try again.
+0042de5c	61	string	WSAECONNABORTED: Connection request was aborted.  Try again.
+0042de9c	54	string	WSAECONNRESET: Connection was reset by other machine.
+0042ded4	12	string	WSAENOBUFS:
+0042dee0	64	string	WSAEISCONN: Already connected to server.  Restart this porgram.
+0042df20	54	string	WSAENOTCONN: Not yet connected to server.  Try again.
+0042df58	14	string	WSAESHUTDOWN:
+0042df68	17	string	WSAETOOMANYREFS:
+0042df7c	52	string	WSAETIMEDOUT: The connection timed out.  Try again.
+0042dfb0	67	string	WSAECONNREFUSED: The connection was refused.  Try another address.
+0042dff4	10	string	WSAELOOP:
+0042e000	17	string	WSAENAMETOOLONG:
+0042e014	77	string	WSAEHOSTDOWN: The specified host is down.  Retry, or select another address.
+0042e064	92	string	WSAEHOSTUNREACH: No route to the host was found.  Check the address, network, and then ISP.
+0042e0c0	14	string	WSAENOTEMPTY:
+0042e0d0	13	string	WSAEPROCLIM:
+0042e0e0	11	string	WSAEUSERS:
+0042e0ec	11	string	WSAEDQUOT:
+0042e0f8	11	string	WSAESTALE:
+0042e104	12	string	WSAEREMOTE:
+0042e110	12	string	WSAEDISCON:
+0042e11c	16	string	WSASYSNOTREADY:
+0042e12c	20	string	WSAVERNOTSUPPORTED:
+0042e140	19	string	WSANOTINITIALISED:
+0042e154	13	string	Unkown Error
+0042e164	31	string	WSAStartup foo didn't work...\n
+0042e184	41	string	C:\\code\\ntank\\os\\win32\\msvc\\specific.cpp
+0042e1b4	14	string	WSASTartup: \n
+0042e1c4	24	string	\tUsing Version : %d.%d\n
+0042e1dc	24	string	\tHigh version  : %d.%d\n
+0042e1f4	21	string	\tDescription   : %s\n
+0042e20c	21	string	\tSystem Status : %s\n
+0042e224	21	string	\tMax Sockets   : %d\n
+0042e23c	21	string	\tMax UDP Data  : %d\n
+0042e254	29	string	WSAClean foo didn't work...\n
+0042e274	21	string	DEBUGFD: %d are set\n
+0042e28c	29	string	\s DEBUGFD: socket %d is set\n
+0042e2ac	29	string	\s DEBUGF2: socket %d ** set\n
+0042e2cc	41	string	C:\\code\\ntank\\os\\win32\\msvc\\specific.cpp
+0042e2f8	25	string	hi->stamp == VALID_STAMP
+0042e314	41	string	C:\\code\\ntank\\os\\win32\\msvc\\specific.cpp
+0042e340	31	string	hi->zone < MAX_PROFILING_ZONES
+0042e360	41	string	C:\\code\\ntank\\os\\win32\\msvc\\specific.cpp
+0042e38c	31	string	hi->zone < MAX_PROFILING_ZONES
+0042e3ac	41	string	C:\\code\\ntank\\os\\win32\\msvc\\specific.cpp
+0042e3d8	25	string	hi->stamp == VALID_STAMP
+0042e3f4	41	string	C:\\code\\ntank\\os\\win32\\msvc\\specific.cpp
+0042e420	31	string	hi->zone < MAX_PROFILING_ZONES
+0042e440	41	string	C:\\code\\ntank\\os\\win32\\msvc\\specific.cpp
+0042e46c	25	string	hi->stamp == VALID_STAMP
+0042e488	12	string	Wulfram: %s
+0042e494	8	string	%s: %s\n
+0042e4a4	40	string	Assertion failed: %s, file %s, line %d\n
+0042e4e0	6	string	log10
+ffdff1ac	36	uchar[36]	\N
+ffdffc00	522	wchar16[261]	\N

@@ -1,0 +1,26 @@
+{
+  "project_file": "/C/Users/balsa/Desktop/WulframII/Game/dbghelp.dll",
+  "program_name": "dbghelp.dll",
+  "executable_path": "/C/Users/balsa/Desktop/WulframII/Game/dbghelp.dll",
+  "executable_format": "Portable Executable (PE)",
+  "executable_md5": "6479a184873f7ca797ff0375d711e9a6",
+  "executable_sha256": "8f20f178991501542d542c8d613b036a15cd55370697aa82c0f7800ff4fbcc4e",
+  "language_id": "x86:LE:32:default",
+  "compiler": "visualstudio:unknown",
+  "compiler_spec": "windows",
+  "image_base": "59a60000",
+  "min_address": "59a60000",
+  "max_address": "ffdfffff",
+  "default_pointer_size": "4",
+  "counts": {
+    "memory_blocks": 6,
+    "functions": 3777,
+    "defined_symbols": 4877,
+    "comments": 737,
+    "bookmarks": 795,
+    "strings": 1191,
+    "external_libraries": 5,
+    "external_locations": 199,
+    "external_entry_points": 97
+  }
+}

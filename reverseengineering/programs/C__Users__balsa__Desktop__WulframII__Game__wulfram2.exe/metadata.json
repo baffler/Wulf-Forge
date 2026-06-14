@@ -1,0 +1,26 @@
+{
+  "project_file": "/C/Users/balsa/Desktop/WulframII/Game/wulfram2.exe",
+  "program_name": "wulfram2.exe",
+  "executable_path": "/C/Users/balsa/Desktop/WulframII/Game/wulfram2.exe",
+  "executable_format": "Portable Executable (PE)",
+  "executable_md5": "3957e0baa8c0267b6d57f0ac2686643f",
+  "executable_sha256": "94990864ab1db2ddbe2652cfdbca726356b19dd3fb7597945e297a43973d99d4",
+  "language_id": "x86:LE:32:default",
+  "compiler": "visualstudio:unknown",
+  "compiler_spec": "windows",
+  "image_base": "00400000",
+  "min_address": "00400000",
+  "max_address": "ffdfffff",
+  "default_pointer_size": "4",
+  "counts": {
+    "memory_blocks": 6,
+    "functions": 6228,
+    "defined_symbols": 15177,
+    "comments": 9140,
+    "bookmarks": 1911,
+    "strings": 4294,
+    "external_libraries": 11,
+    "external_locations": 278,
+    "external_entry_points": 1
+  }
+}

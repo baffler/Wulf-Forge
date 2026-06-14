@@ -1,0 +1,26 @@
+{
+  "project_file": "/C/Users/balsa/Desktop/WulframII/Game/3dfx/glide2x.dll",
+  "program_name": "glide2x.dll",
+  "executable_path": "/C/Users/balsa/Desktop/WulframII/Game/3dfx/glide2x.dll",
+  "executable_format": "Portable Executable (PE)",
+  "executable_md5": "ec461360bd4fc7c1db237e27d4d711b8",
+  "executable_sha256": "83ba8b18255a0ed5cb67627ada7f09ccbd46d9df25f09f1866fddeac32e7a9e8",
+  "language_id": "x86:LE:32:default",
+  "compiler": "unknown",
+  "compiler_spec": "windows",
+  "image_base": "10000000",
+  "min_address": "10000000",
+  "max_address": "1013bfff",
+  "default_pointer_size": "4",
+  "counts": {
+    "memory_blocks": 7,
+    "functions": 559,
+    "defined_symbols": 2312,
+    "comments": 675,
+    "bookmarks": 322,
+    "strings": 991,
+    "external_libraries": 3,
+    "external_locations": 56,
+    "external_entry_points": 144
+  }
+}

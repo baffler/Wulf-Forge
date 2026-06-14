@@ -1,0 +1,738 @@
+address	type	comment
+59a601f0	EOL	.text
+59a60218	EOL	.data
+59a60240	EOL	.rsrc
+59a60268	EOL	.reloc
+59a61000	PRE	133  CryptAcquireContextA  [Bound to: 0x77de7f96]
+59a61004	PRE	150  CryptGenRandom  [Bound to: 0x77de5244]
+59a61008	PRE	160  CryptReleaseContext  [Bound to: 0x77de8546]
+59a6100c	PRE	483  RegOpenKeyExA  [Bound to: 0x77dd761b]
+59a61010	PRE	493  RegQueryValueExA  [Bound to: 0x77dd7883]
+59a61014	PRE	494  RegQueryValueExW  [Bound to: 0x77dd6fc8]
+59a61018	PRE	472  RegEnumKeyExW  [Bound to: 0x77dd79a1]
+59a6101c	PRE	489  RegQueryInfoKeyW  [Bound to: 0x77dfccef]
+59a61020	PRE	484  RegOpenKeyExW  [Bound to: 0x77dd6a78]
+59a61024	PRE	458  RegCloseKey  [Bound to: 0x77dd6bf0]
+59a61028	PRE	560  SetSecurityDescriptorDacl  [Bound to: 0x77dd77b3]
+59a6102c	PRE	306  InitializeSecurityDescriptor  [Bound to: 0x77dd778e]
+59a61034	PRE	350  GetFileType  [Bound to: 0x7c811069]
+59a61038	PRE	830  Sleep  [Bound to: 0x7c802442]
+59a6103c	PRE	136  DeviceIoControl  [Bound to: 0x7c801625]
+59a61040	PRE	186  ExpandEnvironmentStringsW  [Bound to: 0x7c81dfb1]
+59a61044	PRE	534  InitializeCriticalSectionAndSpinCount  [Bound to: 0x7c80b6b1]
+59a61048	PRE	63  CopyFileA  [Bound to: 0x7c830053]
+59a6104c	PRE	772  SetFileAttributesA  [Bound to: 0x7c81fb44]
+59a61050	PRE	66  CopyFileW  [Bound to: 0x7c825779]
+59a61054	PRE	345  GetFileAttributesW  [Bound to: 0x7c80b5d4]
+59a61058	PRE	773  SetFileAttributesW  [Bound to: 0x7c81fc05]
+59a6105c	PRE	576  LeaveCriticalSection  [Bound to: 0x7c9010ed]
+59a61060	PRE	150  EnterCriticalSection  [Bound to: 0x7c901005]
+59a61064	PRE	127  DeleteCriticalSection  [Bound to: 0x7c91188a]
+59a61068	PRE	533  InitializeCriticalSection  [Bound to: 0x7c809fa1]
+59a6106c	PRE	541  InterlockedIncrement  [Bound to: 0x7c80977b]
+59a61070	PRE	537  InterlockedDecrement  [Bound to: 0x7c809794]
+59a61074	PRE	81  CreateFileMappingW  [Bound to: 0x7c80939e]
+59a61078	PRE	564  LCMapStringW  [Bound to: 0x7c80cec4]
+59a6107c	PRE	332  GetDriveTypeW  [Bound to: 0x7c80b158]
+59a61080	PRE	315  GetCurrentProcess  [Bound to: 0x7c80e00d]
+59a61084	PRE	858  UnmapViewOfFile  [Bound to: 0x7c80b7fc]
+59a61088	PRE	336  GetEnvironmentVariableA  [Bound to: 0x7c81486a]
+59a6108c	PRE	787  SetLastError  [Bound to: 0x7c910340]
+59a61090	PRE	49  CloseHandle  [Bound to: 0x7c809b77]
+59a61094	PRE	79  CreateFileA  [Bound to: 0x7c801a24]
+59a61098	PRE	360  GetLastError  [Bound to: 0x7c910331]
+59a6109c	PRE	774  SetFilePointer  [Bound to: 0x7c810da6]
+59a610a0	PRE	204  FindClose  [Bound to: 0x7c80efd7]
+59a610a4	PRE	217  FindNextFileA  [Bound to: 0x7c839019]
+59a610a8	PRE	208  FindFirstFileA  [Bound to: 0x7c813559]
+59a610ac	PRE	71  CreateDirectoryA  [Bound to: 0x7c826219]
+59a610b0	PRE	353  GetFullPathNameA  [Bound to: 0x7c81367c]
+59a610b4	PRE	583  LocalAlloc  [Bound to: 0x7c8099bd]
+59a610b8	PRE	587  LocalFree  [Bound to: 0x7c80995d]
+59a610bc	PRE	941  lstrcpyA  [Bound to: 0x7c80c729]
+59a610c0	PRE	331  GetDriveTypeA  [Bound to: 0x7c822cfb]
+59a610c4	PRE	845  TlsGetValue  [Bound to: 0x7c809750]
+59a610c8	PRE	843  TlsAlloc  [Bound to: 0x7c812b0f]
+59a610cc	PRE	844  TlsFree  [Bound to: 0x7c813453]
+59a610d0	PRE	524  HeapReAlloc  [Bound to: 0x7c9179fd]
+59a610d4	PRE	514  HeapAlloc  [Bound to: 0x7c9105d4]
+59a610d8	PRE	520  HeapFree  [Bound to: 0x7c91043d]
+59a610dc	PRE	552  IsDBCSLeadByte  [Bound to: 0x7c80b664]
+59a610e0	PRE	407  GetProcAddress  [Bound to: 0x7c80ac28]
+59a610e4	PRE	373  GetModuleHandleA  [Bound to: 0x7c80b529]
+59a610e8	PRE	947  lstrlenA  [Bound to: 0x7c80c6e0]
+59a610ec	PRE	518  HeapDestroy  [Bound to: 0x7c811110]
+59a610f0	PRE	516  HeapCreate  [Bound to: 0x7c812929]
+59a610f4	PRE	137  DisableThreadLibraryCalls  [Bound to: 0x7c811476]
+59a610f8	PRE	475  GetVersionExA  [Bound to: 0x7c812851]
+59a610fc	PRE	599  MapViewOfFile  [Bound to: 0x7c80b78d]
+59a61100	PRE	80  CreateFileMappingA  [Bound to: 0x7c80946c]
+59a61104	PRE	240  FreeLibrary  [Bound to: 0x7c80aa66]
+59a61108	PRE	347  GetFileSize  [Bound to: 0x7c810c8f]
+59a6110c	PRE	577  LoadLibraryA  [Bound to: 0x7c801d77]
+59a61110	PRE	145  DuplicateHandle  [Bound to: 0x7c80e016]
+59a61114	PRE	185  ExpandEnvironmentStringsA  [Bound to: 0x7c8227c7]
+59a61118	PRE	612  MultiByteToWideChar  [Bound to: 0x7c809cad]
+59a6111c	PRE	894  WideCharToMultiByte  [Bound to: 0x7c80a0c7]
+59a61120	PRE	316  GetCurrentProcessId  [Bound to: 0x7c80994e]
+59a61124	PRE	877  VirtualFree  [Bound to: 0x7c809b14]
+59a61128	PRE	768  SetErrorMode  [Bound to: 0x7c80aa97]
+59a6112c	PRE	342  GetFileAttributesA  [Bound to: 0x7c81174c]
+59a61130	PRE	678  ReadProcessMemory  [Bound to: 0x7c8021cc]
+59a61134	PRE	880  VirtualProtect  [Bound to: 0x7c801ad0]
+59a61138	PRE	874  VirtualAlloc  [Bound to: 0x7c809a81]
+59a6113c	PRE	130  DeleteFileW  [Bound to: 0x7c81f73d]
+59a61140	PRE	907  WriteFile  [Bound to: 0x7c810f9f]
+59a61144	PRE	82  CreateFileW  [Bound to: 0x7c810976]
+59a61148	PRE	635  OutputDebugStringA  [Bound to: 0x7c859b5c]
+59a6114c	PRE	657  QueryPerformanceCounter  [Bound to: 0x7c80a417]
+59a61150	PRE	465  GetTickCount  [Bound to: 0x7c8092ac]
+59a61154	PRE	318  GetCurrentThreadId  [Bound to: 0x7c809737]
+59a61158	PRE	445  GetSystemTimeAsFileTime  [Bound to: 0x7c8017e5]
+59a6115c	PRE	838  TerminateProcess  [Bound to: 0x7c801e16]
+59a61160	PRE	855  UnhandledExceptionFilter  [Bound to: 0x7c862b8a]
+59a61164	PRE	818  SetUnhandledExceptionFilter  [Bound to: 0x7c810386]
+59a61168	PRE	440  GetSystemInfo  [Bound to: 0x7c812ac6]
+59a6116c	PRE	476  GetVersionExW  [Bound to: 0x7c80aced]
+59a61170	PRE	410  GetProcessHeap  [Bound to: 0x7c80aa49]
+59a61174	PRE	832  SuspendThread  [Bound to: 0x7c838f10]
+59a61178	PRE	703  ResumeThread  [Bound to: 0x7c81e92a]
+59a6117c	PRE	458  GetThreadContext  [Bound to: 0x7c838eeb]
+59a61180	PRE	883  VirtualQueryEx  [Bound to: 0x7c80b828]
+59a61184	PRE	580  LoadLibraryW  [Bound to: 0x7c80acd3]
+59a61188	PRE	839  TerminateThread  [Bound to: 0x7c81cacb]
+59a6118c	PRE	765  SetEndOfFile  [Bound to: 0x7c81f850]
+59a61190	PRE	463  GetThreadSelectorEntry  [Bound to: 0x7c859fd0]
+59a61194	PRE	600  MapViewOfFileEx  [Bound to: 0x7c80b71e]
+59a61198	PRE	232  FlushViewOfFile  [Bound to: 0x7c81ff03]
+59a6119c	PRE	846  TlsSetValue  [Bound to: 0x7c809bf5]
+59a611a0	PRE	108  CreateThread  [Bound to: 0x7c81082f]
+59a611a8	PRE	481  UuidCreate  [Bound to: 0x77e76249]
+59a611b0	PRE	3  GetFileVersionInfoW  [Bound to: 0x77c0167f]
+59a611b4	PRE	10  VerQueryValueA  [Bound to: 0x77c018ba]
+59a611b8	PRE	0  GetFileVersionInfoA  [Bound to: 0x77c01a50]
+59a611bc	PRE	2  GetFileVersionInfoSizeW  [Bound to: 0x77c01391]
+59a611c0	PRE	1  GetFileVersionInfoSizeA  [Bound to: 0x77c019ff]
+59a611c8	PRE	106  __dllonexit  [Bound to: 0x4dc24e51]
+59a611cc	PRE	553  _wcsicmp  [Bound to: 0x4dc367bd]
+59a611d0	PRE	816  wcsncpy  [Bound to: 0x4dc3806b]
+59a611d4	PRE	808  wcscmp  [Bound to: 0x4dc37ee3]
+59a611d8	PRE	815  wcsncmp  [Bound to: 0x4dc3802f]
+59a611dc	PRE	82  __CxxFrameHandler  [Bound to: 0x4dc127fa]
+59a611e0	PRE	616  _wsplitpath  [Bound to: 0x4dc26a51]
+59a611e4	PRE	557  _wcsnicmp  [Bound to: 0x4dc36abb]
+59a611e8	PRE	796  towlower  [Bound to: 0x4dc0d7b7]
+59a611ec	PRE	158  __unDName  [Bound to: 0x4dc17897]
+59a611f0	PRE	659  fclose  [Bound to: 0x4dc30ab1]
+59a611f4	PRE	823  wcstol  [Bound to: 0x4dc0dc2b]
+59a611f8	PRE	71  _CxxThrowException  [Bound to: 0x4dc126f6]
+59a611fc	PRE	646  bsearch  [Bound to: 0x4dc26be5]
+59a61200	PRE	484  _snwprintf  [Bound to: 0x4dc2fb0c]
+59a61204	PRE	676  fread  [Bound to: 0x4dc311fb]
+59a61208	PRE	681  fseek  [Bound to: 0x4dc3139c]
+59a6120c	PRE	583  _wfopen  [Bound to: 0x4dc301e7]
+59a61210	PRE	670  fopen  [Bound to: 0x4dc2f010]
+59a61214	PRE	440  _osver  [Bound to: 0x4dc51a18]
+59a61218	PRE	405  _mbsnbcpy  [Bound to: 0x4dc21fbd]
+59a6121c	PRE	662  fflush  [Bound to: 0x4dc2eef6]
+59a61220	PRE	319  _iob  [Bound to: 0x4dc4fc80]
+59a61224	PRE	593  _wmakepath  [Bound to: 0x4dc265a0]
+59a61228	PRE	818  wcsrchr  [Bound to: 0x4dc380f9]
+59a6122c	PRE	810  wcscpy  [Bound to: 0x4dc37e94]
+59a61230	PRE	551  _wcsdup  [Bound to: 0x4dc36784]
+59a61234	PRE	683  ftell  [Bound to: 0x4dc31574]
+59a61238	PRE	589  _wgetenv  [Bound to: 0x4dc2655c]
+59a6123c	PRE	396  _mbsicmp  [Bound to: 0x4dc21aa3]
+59a61240	PRE	167  _access  [Bound to: 0x4dc0f355]
+59a61244	PRE	281  _fullpath  [Bound to: 0x4dc0f589]
+59a61248	PRE	274  _fsopen  [Bound to: 0x4dc2efaf]
+59a6124c	PRE	585  _wfsopen  [Bound to: 0x4dc30186]
+59a61250	PRE	486  _sopen  [Bound to: 0x4dc1f5c0]
+59a61254	PRE	607  _wsopen  [Bound to: 0x4dc200af]
+59a61258	PRE	586  _wfullpath  [Bound to: 0x4dc1058e]
+59a6125c	PRE	456  _read  [Bound to: 0x4dc1faa3]
+59a61260	PRE	603  _write  [Bound to: 0x4dc20303]
+59a61264	PRE	436  _onexit  [Bound to: 0x4dc24df8]
+59a61268	PRE	208  _chsize  [Bound to: 0x4dc1cfae]
+59a6126c	PRE	210  _close  [Bound to: 0x4dc1d0d7]
+59a61270	PRE	286  _get_osfhandle  [Bound to: 0x4dc1e468]
+59a61274	PRE	438  _open_osfhandle  [Bound to: 0x4dc1e6b2]
+59a61278	PRE	591  _winminor  [Bound to: 0x4dc51a24]
+59a6127c	PRE	590  _winmajor  [Bound to: 0x4dc51a20]
+59a61280	PRE	390  _mbscmp  [Bound to: 0x4dc21881]
+59a61284	PRE	430  _memicmp  [Bound to: 0x4dc361c8]
+59a61288	PRE	814  wcsncat  [Bound to: 0x4dc37feb]
+59a6128c	PRE	52  ?terminate@@YAXXZ  [Bound to: 0x4dc1266d]
+59a61290	PRE	16  ??1type_info@@UAE@XZ  [Bound to: 0x4dc11868]
+59a61294	PRE	182  _adjust_fdiv  [Bound to: 0x4dc523d8]
+59a61298	PRE	315  _initterm  [Bound to: 0x4dc29d67]
+59a6129c	PRE	791  time  [Bound to: 0x4dc3aea3]
+59a612a0	PRE	735  memmove  [Bound to: 0x4dc372b0]
+59a612a4	PRE	280  _ftol  [Bound to: 0x4dc3fa10]
+59a612a8	PRE	786  swprintf  [Bound to: 0x4dc2f9c8]
+59a612ac	PRE	647  calloc  [Bound to: 0x4dc1c0c3]
+59a612b0	PRE	806  wcscat  [Bound to: 0x4dc37e61]
+59a612b4	PRE	371  _ltoa  [Bound to: 0x4dc0c222]
+59a612b8	PRE	352  _itoa  [Bound to: 0x4dc0c1f3]
+59a612bc	PRE	741  printf  [Bound to: 0x4dc3186a]
+59a612c0	PRE	543  _vsnprintf  [Bound to: 0x4dc2ff8a]
+59a612c4	PRE	774  strncat  [Bound to: 0x4dc37920]
+59a612c8	PRE	794  tolower  [Bound to: 0x4dc0c9c9]
+59a612cc	PRE	500  _strcmpi  [Bound to: 0x4dc3624e]
+59a612d0	PRE	373  _makepath  [Bound to: 0x4dc25e76]
+59a612d4	PRE	449  _purecall  [Bound to: 0x4dc25f0d]
+59a612d8	PRE	728  malloc  [Bound to: 0x4dc1c407]
+59a612dc	PRE	677  free  [Bound to: 0x4dc1c21b]
+59a612e0	PRE	506  _strlwr  [Bound to: 0x4dc36320]
+59a612e4	PRE	704  isspace  [Bound to: 0x4dc0bc63]
+59a612e8	PRE	653  ctime  [Bound to: 0x4dc3a9f1]
+59a612ec	PRE	780  strstr  [Bound to: 0x4dc37c60]
+59a612f0	PRE	17  ??2@YAPAXI@Z  [Bound to: 0x4dc19cc5]
+59a612f4	PRE	18  ??3@YAXPAX@Z  [Bound to: 0x4dc19cdd]
+59a612f8	PRE	747  qsort  [Bound to: 0x4dc26f50]
+59a612fc	PRE	775  strncmp  [Bound to: 0x4dc37a50]
+59a61300	PRE	508  _strnicmp  [Bound to: 0x4dc364bf]
+59a61304	PRE	719  isxdigit  [Bound to: 0x4dc0bc1a]
+59a61308	PRE	813  wcslen  [Bound to: 0x4dc37fcc]
+59a6130c	PRE	761  sprintf  [Bound to: 0x4dc2f931]
+59a61310	PRE	778  strrchr  [Bound to: 0x4dc37be0]
+59a61314	PRE	776  strncpy  [Bound to: 0x4dc37a90]
+59a61318	PRE	237  _except_handler3  [Bound to: 0x4dc25c94]
+59a6131c	PRE	495  _splitpath  [Bound to: 0x4dc2621c]
+59a61320	PRE	504  _stricmp  [Bound to: 0x4dc3624e]
+59a61324	PRE	766  strchr  [Bound to: 0x4dc37660]
+59a61328	PRE	370  _lseeki64  [Bound to: 0x4dc1f0ea]
+59a6132c	PRE	828  wprintf  [Bound to: 0x4dc3225b]
+59a6fd50	PLATE	.NET PDB Info
+59a6fd80	PLATE	SEHandlerTable (0xa7 entries)
+59a7032c	PRE	0x1032c  21  MapDebugInformation
+59a7052c	PRE	0x1052c  89  UnmapDebugInformation
+59a706f7	PRE	0x106f7  38  SymFindFileInPath
+59a70985	PRE	0x10985  10  FindFileInPath
+59a709b4	PRE	0x109b4  11  FindFileInSearchPath
+59a712e7	PRE	0x112e7  24  SearchTreeForFile
+59a71307	PRE	0x11307  20  MakeSureDirectoryPathExists
+59a71453	PRE	0x11453  18  ImagehlpApiVersion
+59a7145e	PRE	0x1145e  19  ImagehlpApiVersionEx
+59a7181e	PRE	0x1181e  9  FindExecutableImageEx
+59a71865	PRE	0x11865  7  FindDebugInfoFileEx
+59a718b0	PRE	0x118b0  8  FindExecutableImage
+59a718d0	PRE	0x118d0  6  FindDebugInfoFile
+59a718f0	PLATE	Library Function - Single Match\n struct IUnknown * __stdcall QzAtlComPtrAssign(struct IUnknown * *,struct IUnknown *)\n\nLibrary: Visual Studio 2019 Release
+59a721dc	PLATE	Library Function - Multiple Matches With Same Base Name\n public: __thiscall ATL::CComQIPtr<struct IChapteredRowset,&struct __s_GUID const _GUID_0c733a93_2a1c_11ce_ade5_00aa0044773d>::CComQIPtr<struct IChapteredRowset,&struct __s_GUID const _GUID_0c733a93_2a1c_11ce_ade5_00aa0044773d>(struct IUnknown *)\n public: __thiscall ATL::CComQIPtr<struct IHTMLDocument2,&struct __s_GUID const _GUID_332c4425_26cb_11d0_b483_00c04fd90119>::CComQIPtr<struct IHTMLDocument2,&struct __s_GUID const _GUID_332c4425_26cb_11d0_b483_00c04fd90119>(struct IUnknown *)\n public: __thiscall ATL::CComQIPtr<struct IOleCommandTarget,&struct __s_GUID const _GUID_b722bccb_4e68_101b_a2bc_00aa00404770>::CComQIPtr<struct IOleCommandTarget,&struct __s_GUID const _GUID_b722bccb_4e68_101b_a2bc_00aa00404770>(struct IUnknown *)\n public: __thiscall ATL::CComQIPtr<struct IOleInPlaceActiveObject,&struct __s_GUID const _GUID_00000117_0000_0000_c000_000000000046>::CComQIPtr<struct IOleInPlaceActiveObject,&struct __s_GUID const _GUID_00000117_0000_0000_c000_000000000046>(struct IUnknown *)\n  10 names - too many to list\n\nLibraries: Visual Studio 2008 Release, Visual Studio 2010 Release
+59a75881	PRE	0x15881  5  ExtensionApiVersion
+59a7588c	PRE	0x1588c  90  WinDbgExtensionDllInit
+59a758bf	PRE	0x158bf  98  vc7fpo
+59a758ed	PRE	0x158ed  97  sym
+59a75a15	PRE	0x15a15  93  lm
+59a76fe6	PRE	0x16fe6  94  lmi
+59a77147	PRE	0x17147  95  omap
+59a772a5	PRE	0x172a5  96  srcfiles
+59a77c16	PRE	0x17c16  92  dh
+59a77cfc	PLATE	Library Function - Single Match\n public: virtual __thiscall CMediaSample::~CMediaSample(void)\n\nLibrary: Visual Studio 2019 Release
+59a7883d	PRE	0x1883d  15  ImageNtHeader
+59a78a33	PRE	0x18a33  14  ImageDirectoryEntryToDataEx
+59a78acb	PRE	0x18acb  13  ImageDirectoryEntryToData
+59a78aec	PRE	0x18aec  16  ImageRvaToSection
+59a78b2f	PRE	0x18b2f  17  ImageRvaToVa
+59a78ce2	PRE	0x18ce2  88  UnDecorateSymbolName
+59a78de8	PRE	0x18de8  12  GetTimestampForLoadedLibrary
+59a798f7	PRE	0x198f7  43  SymGetFileLineOffsets64
+59a7b6ba	PRE	0x1b6ba  27  SymCleanup
+59a7b77b	PRE	0x1b77b  81  SymSetOptions
+59a7b7ad	PRE	0x1b7ad  58  SymGetOptions
+59a7b7b8	PRE	0x1b7b8  80  SymSetContext
+59a7b962	PRE	0x1b962  91  dbghelp
+59a7b9dd	PRE	0x1b9dd  33  SymEnumerateModules
+59a7b9fb	PRE	0x1b9fb  32  SymEnumerateModules64
+59a7bac7	PRE	0x1bac7  60  SymGetSymFromAddr64
+59a7bb04	PRE	0x1bb04  61  SymGetSymFromAddr
+59a7bb4d	PRE	0x1bb4d  83  SymSetSymWithAddr64
+59a7be87	PRE	0x1be87  62  SymGetSymFromName64
+59a7bebe	PRE	0x1bebe  63  SymGetSymFromName
+59a7c001	PRE	0x1c001  44  SymGetLineFromAddr64
+59a7c0af	PRE	0x1c0af  45  SymGetLineFromAddr
+59a7c0f2	PRE	0x1c0f2  46  SymGetLineFromName64
+59a7c2f5	PRE	0x1c2f5  47  SymGetLineFromName
+59a7c345	PRE	0x1c345  48  SymGetLineNext64
+59a7c469	PRE	0x1c469  49  SymGetLineNext
+59a7c4ad	PRE	0x1c4ad  50  SymGetLinePrev64
+59a7c5c3	PRE	0x1c5c3  51  SymGetLinePrev
+59a7c607	PRE	0x1c607  74  SymMatchFileName
+59a7c6a0	PRE	0x1c6a0  79  SymRegisterFunctionEntryCallback
+59a7c718	PRE	0x1c718  78  SymRegisterFunctionEntryCallback64
+59a7c790	PRE	0x1c790  41  SymFunctionTableAccess64
+59a7c94e	PRE	0x1c94e  54  SymGetModuleInfo64
+59a7ca70	PRE	0x1ca70  55  SymGetModuleInfo
+59a7cba8	PRE	0x1cba8  52  SymGetModuleBase64
+59a7cc18	PRE	0x1cc18  53  SymGetModuleBase
+59a7cc33	PRE	0x1cc33  86  SymUnloadModule64
+59a7cce4	PRE	0x1cce4  87  SymUnloadModule
+59a7ccff	PRE	0x1ccff  73  SymLoadModuleEx
+59a7cd63	PRE	0x1cd63  71  SymLoadModule64
+59a7cd8f	PRE	0x1cd8f  72  SymLoadModule
+59a7cdb6	PRE	0x1cdb6  85  SymUnDName
+59a7ce2a	PRE	0x1ce2a  84  SymUnDName64
+59a7ce9e	PRE	0x1ce9e  59  SymGetSearchPath
+59a7cf08	PRE	0x1cf08  82  SymSetSearchPath
+59a7d0ab	PRE	0x1d0ab  4  EnumerateLoadedModules
+59a7d11a	PRE	0x1d11a  3  EnumerateLoadedModules64
+59a7d189	PRE	0x1d189  77  SymRegisterCallback
+59a7d201	PRE	0x1d201  76  SymRegisterCallback64
+59a7d315	PRE	0x1d315  39  SymFromAddr
+59a7d362	PRE	0x1d362  40  SymFromName
+59a7d399	PRE	0x1d399  31  SymEnumTypes
+59a7d3ff	PRE	0x1d3ff  68  SymGetTypeFromName
+59a7d61e	PRE	0x1d61e  69  SymGetTypeInfo
+59a7d6fb	PRE	0x1d6fb  70  SymInitialize
+59a7d857	PRE	0x1d857  65  SymGetSymNext
+59a7d8a8	PRE	0x1d8a8  64  SymGetSymNext64
+59a7d8c3	PRE	0x1d8c3  67  SymGetSymPrev
+59a7d914	PRE	0x1d914  66  SymGetSymPrev64
+59a7d92f	PRE	0x1d92f  42  SymFunctionTableAccess
+59a7dc14	PRE	0x1dc14  75  SymMatchString
+59a7dfc8	PRE	0x1dfc8  35  SymEnumerateSymbols\n0x1dfc8  37  SymEnumerateSymbolsW
+59a7e007	PRE	0x1e007  34  SymEnumerateSymbols64\n0x1e007  36  SymEnumerateSymbolsW64
+59a7e04c	PRE	0x1e04c  57  SymGetModuleInfoW
+59a7e0d6	PRE	0x1e0d6  56  SymGetModuleInfoW64
+59a7e143	PRE	0x1e143  30  SymEnumSymbols
+59a7e16c	PRE	0x1e16c  29  SymEnumSym
+59a7e190	PRE	0x1e190  28  SymEnumSourceFiles
+59a828f0	PRE	0x228f0  2  DbgHelpCreateUserDumpW
+59a82fa5	PRE	0x22fa5  1  DbgHelpCreateUserDump
+59a8334c	PRE	0x2334c  26  StackWalk
+59a83492	PRE	0x23492  25  StackWalk64
+59a894c5	PLATE	Library Function - Single Match\n ___security_init_cookie\n\nLibrary: Visual Studio 2005 Release
+59a8b019	PRE	0x2b019  22  MiniDumpReadDumpStream
+59a8b9b0	PRE	0x2b9b0  23  MiniDumpWriteDump
+59a8d8cc	PLATE	Library Function - Single Match\n _GetCpuInformation@4\n\nLibraries: Visual Studio 2005 Release, Visual Studio 2008 Release, Visual Studio 2010 Release, Visual Studio 2015 Release
+59a8ee4e	PLATE	Library Function - Single Match\n _xxxAddressInSectionTable@12\n\nLibraries: Visual Studio 2005 Release, Visual Studio 2008 Release, Visual Studio 2010 Release, Visual Studio 2015 Release
+59a8ee80	PLATE	Library Function - Single Match\n _xxxpImageDirectoryEntryToData32@20\n\nLibraries: Visual Studio 2005 Release, Visual Studio 2008 Release, Visual Studio 2010 Release, Visual Studio 2015 Release
+59a8eecd	PLATE	Library Function - Single Match\n _xxxpImageDirectoryEntryToData64@20\n\nLibraries: Visual Studio 2005 Release, Visual Studio 2008 Release, Visual Studio 2010 Release, Visual Studio 2015 Release
+59a8ef86	PLATE	Library Function - Single Match\n _WinpGetAllocHandleFromStream@20\n\nLibraries: Visual Studio 2005 Release, Visual Studio 2008 Release, Visual Studio 2010 Release, Visual Studio 2015 Release
+59a905fc	PLATE	Library Function - Single Match\n __SEH_prolog\n\nLibrary: Visual Studio
+59a90637	PLATE	Library Function - Single Match\n __SEH_epilog\n\nLibrary: Visual Studio
+59a90650	PLATE	Library Function - Single Match\n __allmul\n\nLibrary: Visual Studio
+59a90690	PLATE	Library Function - Single Match\n __aullshr\n\nLibrary: Visual Studio
+59a906c0	PLATE	Library Function - Single Match\n __aulldiv\n\nLibrary: Visual Studio
+59a908a0	PLATE	Library Function - Single Match\n __chkstk\n\nLibraries: Visual Studio 2003 Debug, Visual Studio 2003 Release
+59a99c0e	PLATE	Library Function - Single Match\n void __stdcall `vector constructor iterator'(void *,unsigned int,int,void * (__thiscall*)(void *))\n\nLibrary: Visual Studio 2003 Release
+59ac56a6	PLATE	Library Function - Single Match\n public: static int __cdecl PDB::OpenInStream(struct IStream *,char const *,long *,unsigned short *,unsigned int,struct PDB * *)\n\nLibraries: Visual Studio 2017 Release, Visual Studio 2019 Release
+59adf884	PLATE	Library Function - Single Match\n void __stdcall __ArrayUnwind(void *,unsigned int,int,void (__thiscall*)(void *))\n\nLibrary: Visual Studio 2003 Release
+59adf8e7	PLATE	Library Function - Single Match\n void __stdcall `eh vector destructor iterator'(void *,unsigned int,int,void (__thiscall*)(void *))\n\nLibrary: Visual Studio 2003 Release
+59ae0170	PLATE	Library Function - Single Match\n public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > & __thiscall std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::assign(char const *)\n\nLibraries: Visual Studio 2005 Debug, Visual Studio 2005 Release, Visual Studio 2008 Release
+59aed798	PLATE	IMAGE_IMPORT_DESCRIPTOR
+59aed7ac	PLATE	IMAGE_IMPORT_DESCRIPTOR
+59aed7c0	PLATE	IMAGE_IMPORT_DESCRIPTOR
+59aed7d4	PLATE	IMAGE_IMPORT_DESCRIPTOR
+59aed7e8	PLATE	IMAGE_IMPORT_DESCRIPTOR
+59aed810	EOL	IMAGE_THUNK_DATA32
+59aed814	EOL	IMAGE_THUNK_DATA32
+59aed818	EOL	IMAGE_THUNK_DATA32
+59aed81c	EOL	IMAGE_THUNK_DATA32
+59aed820	EOL	IMAGE_THUNK_DATA32
+59aed824	EOL	IMAGE_THUNK_DATA32
+59aed828	EOL	IMAGE_THUNK_DATA32
+59aed82c	EOL	IMAGE_THUNK_DATA32
+59aed830	EOL	IMAGE_THUNK_DATA32
+59aed834	EOL	IMAGE_THUNK_DATA32
+59aed838	EOL	IMAGE_THUNK_DATA32
+59aed83c	EOL	IMAGE_THUNK_DATA32
+59aed844	EOL	IMAGE_THUNK_DATA32
+59aed848	EOL	IMAGE_THUNK_DATA32
+59aed84c	EOL	IMAGE_THUNK_DATA32
+59aed850	EOL	IMAGE_THUNK_DATA32
+59aed854	EOL	IMAGE_THUNK_DATA32
+59aed858	EOL	IMAGE_THUNK_DATA32
+59aed85c	EOL	IMAGE_THUNK_DATA32
+59aed860	EOL	IMAGE_THUNK_DATA32
+59aed864	EOL	IMAGE_THUNK_DATA32
+59aed868	EOL	IMAGE_THUNK_DATA32
+59aed86c	EOL	IMAGE_THUNK_DATA32
+59aed870	EOL	IMAGE_THUNK_DATA32
+59aed874	EOL	IMAGE_THUNK_DATA32
+59aed878	EOL	IMAGE_THUNK_DATA32
+59aed87c	EOL	IMAGE_THUNK_DATA32
+59aed880	EOL	IMAGE_THUNK_DATA32
+59aed884	EOL	IMAGE_THUNK_DATA32
+59aed888	EOL	IMAGE_THUNK_DATA32
+59aed88c	EOL	IMAGE_THUNK_DATA32
+59aed890	EOL	IMAGE_THUNK_DATA32
+59aed894	EOL	IMAGE_THUNK_DATA32
+59aed898	EOL	IMAGE_THUNK_DATA32
+59aed89c	EOL	IMAGE_THUNK_DATA32
+59aed8a0	EOL	IMAGE_THUNK_DATA32
+59aed8a4	EOL	IMAGE_THUNK_DATA32
+59aed8a8	EOL	IMAGE_THUNK_DATA32
+59aed8ac	EOL	IMAGE_THUNK_DATA32
+59aed8b0	EOL	IMAGE_THUNK_DATA32
+59aed8b4	EOL	IMAGE_THUNK_DATA32
+59aed8b8	EOL	IMAGE_THUNK_DATA32
+59aed8bc	EOL	IMAGE_THUNK_DATA32
+59aed8c0	EOL	IMAGE_THUNK_DATA32
+59aed8c4	EOL	IMAGE_THUNK_DATA32
+59aed8c8	EOL	IMAGE_THUNK_DATA32
+59aed8cc	EOL	IMAGE_THUNK_DATA32
+59aed8d0	EOL	IMAGE_THUNK_DATA32
+59aed8d4	EOL	IMAGE_THUNK_DATA32
+59aed8d8	EOL	IMAGE_THUNK_DATA32
+59aed8dc	EOL	IMAGE_THUNK_DATA32
+59aed8e0	EOL	IMAGE_THUNK_DATA32
+59aed8e4	EOL	IMAGE_THUNK_DATA32
+59aed8e8	EOL	IMAGE_THUNK_DATA32
+59aed8ec	EOL	IMAGE_THUNK_DATA32
+59aed8f0	EOL	IMAGE_THUNK_DATA32
+59aed8f4	EOL	IMAGE_THUNK_DATA32
+59aed8f8	EOL	IMAGE_THUNK_DATA32
+59aed8fc	EOL	IMAGE_THUNK_DATA32
+59aed900	EOL	IMAGE_THUNK_DATA32
+59aed904	EOL	IMAGE_THUNK_DATA32
+59aed908	EOL	IMAGE_THUNK_DATA32
+59aed90c	EOL	IMAGE_THUNK_DATA32
+59aed910	EOL	IMAGE_THUNK_DATA32
+59aed914	EOL	IMAGE_THUNK_DATA32
+59aed918	EOL	IMAGE_THUNK_DATA32
+59aed91c	EOL	IMAGE_THUNK_DATA32
+59aed920	EOL	IMAGE_THUNK_DATA32
+59aed924	EOL	IMAGE_THUNK_DATA32
+59aed928	EOL	IMAGE_THUNK_DATA32
+59aed92c	EOL	IMAGE_THUNK_DATA32
+59aed930	EOL	IMAGE_THUNK_DATA32
+59aed934	EOL	IMAGE_THUNK_DATA32
+59aed938	EOL	IMAGE_THUNK_DATA32
+59aed93c	EOL	IMAGE_THUNK_DATA32
+59aed940	EOL	IMAGE_THUNK_DATA32
+59aed944	EOL	IMAGE_THUNK_DATA32
+59aed948	EOL	IMAGE_THUNK_DATA32
+59aed94c	EOL	IMAGE_THUNK_DATA32
+59aed950	EOL	IMAGE_THUNK_DATA32
+59aed954	EOL	IMAGE_THUNK_DATA32
+59aed958	EOL	IMAGE_THUNK_DATA32
+59aed95c	EOL	IMAGE_THUNK_DATA32
+59aed960	EOL	IMAGE_THUNK_DATA32
+59aed964	EOL	IMAGE_THUNK_DATA32
+59aed968	EOL	IMAGE_THUNK_DATA32
+59aed96c	EOL	IMAGE_THUNK_DATA32
+59aed970	EOL	IMAGE_THUNK_DATA32
+59aed974	EOL	IMAGE_THUNK_DATA32
+59aed978	EOL	IMAGE_THUNK_DATA32
+59aed97c	EOL	IMAGE_THUNK_DATA32
+59aed980	EOL	IMAGE_THUNK_DATA32
+59aed984	EOL	IMAGE_THUNK_DATA32
+59aed988	EOL	IMAGE_THUNK_DATA32
+59aed98c	EOL	IMAGE_THUNK_DATA32
+59aed990	EOL	IMAGE_THUNK_DATA32
+59aed994	EOL	IMAGE_THUNK_DATA32
+59aed998	EOL	IMAGE_THUNK_DATA32
+59aed99c	EOL	IMAGE_THUNK_DATA32
+59aed9a0	EOL	IMAGE_THUNK_DATA32
+59aed9a4	EOL	IMAGE_THUNK_DATA32
+59aed9a8	EOL	IMAGE_THUNK_DATA32
+59aed9ac	EOL	IMAGE_THUNK_DATA32
+59aed9b0	EOL	IMAGE_THUNK_DATA32
+59aed9b8	EOL	IMAGE_THUNK_DATA32
+59aed9c0	EOL	IMAGE_THUNK_DATA32
+59aed9c4	EOL	IMAGE_THUNK_DATA32
+59aed9c8	EOL	IMAGE_THUNK_DATA32
+59aed9cc	EOL	IMAGE_THUNK_DATA32
+59aed9d0	EOL	IMAGE_THUNK_DATA32
+59aed9d8	EOL	IMAGE_THUNK_DATA32
+59aed9dc	EOL	IMAGE_THUNK_DATA32
+59aed9e0	EOL	IMAGE_THUNK_DATA32
+59aed9e4	EOL	IMAGE_THUNK_DATA32
+59aed9e8	EOL	IMAGE_THUNK_DATA32
+59aed9ec	EOL	IMAGE_THUNK_DATA32
+59aed9f0	EOL	IMAGE_THUNK_DATA32
+59aed9f4	EOL	IMAGE_THUNK_DATA32
+59aed9f8	EOL	IMAGE_THUNK_DATA32
+59aed9fc	EOL	IMAGE_THUNK_DATA32
+59aeda00	EOL	IMAGE_THUNK_DATA32
+59aeda04	EOL	IMAGE_THUNK_DATA32
+59aeda08	EOL	IMAGE_THUNK_DATA32
+59aeda0c	EOL	IMAGE_THUNK_DATA32
+59aeda10	EOL	IMAGE_THUNK_DATA32
+59aeda14	EOL	IMAGE_THUNK_DATA32
+59aeda18	EOL	IMAGE_THUNK_DATA32
+59aeda1c	EOL	IMAGE_THUNK_DATA32
+59aeda20	EOL	IMAGE_THUNK_DATA32
+59aeda24	EOL	IMAGE_THUNK_DATA32
+59aeda28	EOL	IMAGE_THUNK_DATA32
+59aeda2c	EOL	IMAGE_THUNK_DATA32
+59aeda30	EOL	IMAGE_THUNK_DATA32
+59aeda34	EOL	IMAGE_THUNK_DATA32
+59aeda38	EOL	IMAGE_THUNK_DATA32
+59aeda3c	EOL	IMAGE_THUNK_DATA32
+59aeda40	EOL	IMAGE_THUNK_DATA32
+59aeda44	EOL	IMAGE_THUNK_DATA32
+59aeda48	EOL	IMAGE_THUNK_DATA32
+59aeda4c	EOL	IMAGE_THUNK_DATA32
+59aeda50	EOL	IMAGE_THUNK_DATA32
+59aeda54	EOL	IMAGE_THUNK_DATA32
+59aeda58	EOL	IMAGE_THUNK_DATA32
+59aeda5c	EOL	IMAGE_THUNK_DATA32
+59aeda60	EOL	IMAGE_THUNK_DATA32
+59aeda64	EOL	IMAGE_THUNK_DATA32
+59aeda68	EOL	IMAGE_THUNK_DATA32
+59aeda6c	EOL	IMAGE_THUNK_DATA32
+59aeda70	EOL	IMAGE_THUNK_DATA32
+59aeda74	EOL	IMAGE_THUNK_DATA32
+59aeda78	EOL	IMAGE_THUNK_DATA32
+59aeda7c	EOL	IMAGE_THUNK_DATA32
+59aeda80	EOL	IMAGE_THUNK_DATA32
+59aeda84	EOL	IMAGE_THUNK_DATA32
+59aeda88	EOL	IMAGE_THUNK_DATA32
+59aeda8c	EOL	IMAGE_THUNK_DATA32
+59aeda90	EOL	IMAGE_THUNK_DATA32
+59aeda94	EOL	IMAGE_THUNK_DATA32
+59aeda98	EOL	IMAGE_THUNK_DATA32
+59aeda9c	EOL	IMAGE_THUNK_DATA32
+59aedaa0	EOL	IMAGE_THUNK_DATA32
+59aedaa4	EOL	IMAGE_THUNK_DATA32
+59aedaa8	EOL	IMAGE_THUNK_DATA32
+59aedaac	EOL	IMAGE_THUNK_DATA32
+59aedab0	EOL	IMAGE_THUNK_DATA32
+59aedab4	EOL	IMAGE_THUNK_DATA32
+59aedab8	EOL	IMAGE_THUNK_DATA32
+59aedabc	EOL	IMAGE_THUNK_DATA32
+59aedac0	EOL	IMAGE_THUNK_DATA32
+59aedac4	EOL	IMAGE_THUNK_DATA32
+59aedac8	EOL	IMAGE_THUNK_DATA32
+59aedacc	EOL	IMAGE_THUNK_DATA32
+59aedad0	EOL	IMAGE_THUNK_DATA32
+59aedad4	EOL	IMAGE_THUNK_DATA32
+59aedad8	EOL	IMAGE_THUNK_DATA32
+59aedadc	EOL	IMAGE_THUNK_DATA32
+59aedae0	EOL	IMAGE_THUNK_DATA32
+59aedae4	EOL	IMAGE_THUNK_DATA32
+59aedae8	EOL	IMAGE_THUNK_DATA32
+59aedaec	EOL	IMAGE_THUNK_DATA32
+59aedaf0	EOL	IMAGE_THUNK_DATA32
+59aedaf4	EOL	IMAGE_THUNK_DATA32
+59aedaf8	EOL	IMAGE_THUNK_DATA32
+59aedafc	EOL	IMAGE_THUNK_DATA32
+59aedb00	EOL	IMAGE_THUNK_DATA32
+59aedb04	EOL	IMAGE_THUNK_DATA32
+59aedb08	EOL	IMAGE_THUNK_DATA32
+59aedb0c	EOL	IMAGE_THUNK_DATA32
+59aedb10	EOL	IMAGE_THUNK_DATA32
+59aedb14	EOL	IMAGE_THUNK_DATA32
+59aedb18	EOL	IMAGE_THUNK_DATA32
+59aedb1c	EOL	IMAGE_THUNK_DATA32
+59aedb20	EOL	IMAGE_THUNK_DATA32
+59aedb24	EOL	IMAGE_THUNK_DATA32
+59aedb28	EOL	IMAGE_THUNK_DATA32
+59aedb2c	EOL	IMAGE_THUNK_DATA32
+59aedb30	EOL	IMAGE_THUNK_DATA32
+59aedb34	EOL	IMAGE_THUNK_DATA32
+59aedb38	EOL	IMAGE_THUNK_DATA32
+59aedb3c	EOL	IMAGE_THUNK_DATA32
+59aedb44	PLATE	IMAGE_IMPORT_BY_NAME
+59aedb50	PLATE	IMAGE_IMPORT_BY_NAME
+59aedb5a	PLATE	IMAGE_IMPORT_BY_NAME
+59aedb66	PLATE	IMAGE_IMPORT_BY_NAME
+59aedb74	PLATE	IMAGE_IMPORT_BY_NAME
+59aedb88	PLATE	IMAGE_IMPORT_BY_NAME
+59aedb92	PLATE	IMAGE_IMPORT_BY_NAME
+59aedb9c	PLATE	IMAGE_IMPORT_BY_NAME
+59aedba6	PLATE	IMAGE_IMPORT_BY_NAME
+59aedbb0	PLATE	IMAGE_IMPORT_BY_NAME
+59aedbbc	PLATE	IMAGE_IMPORT_BY_NAME
+59aedbc6	PLATE	IMAGE_IMPORT_BY_NAME
+59aedbce	PLATE	IMAGE_IMPORT_BY_NAME
+59aedbde	PLATE	IMAGE_IMPORT_BY_NAME
+59aedbee	PLATE	IMAGE_IMPORT_BY_NAME
+59aedbf8	PLATE	IMAGE_IMPORT_BY_NAME
+59aedc00	PLATE	IMAGE_IMPORT_BY_NAME
+59aedc0a	PLATE	IMAGE_IMPORT_BY_NAME
+59aedc14	PLATE	IMAGE_IMPORT_BY_NAME
+59aedc1c	PLATE	IMAGE_IMPORT_BY_NAME
+59aedc26	PLATE	IMAGE_IMPORT_BY_NAME
+59aedc32	PLATE	IMAGE_IMPORT_BY_NAME
+59aedc3e	PLATE	IMAGE_IMPORT_BY_NAME
+59aedc4a	PLATE	IMAGE_IMPORT_BY_NAME
+59aedc54	PLATE	IMAGE_IMPORT_BY_NAME
+59aedc5e	PLATE	IMAGE_IMPORT_BY_NAME
+59aedc6c	PLATE	IMAGE_IMPORT_BY_NAME
+59aedc76	PLATE	IMAGE_IMPORT_BY_NAME
+59aedc7e	PLATE	IMAGE_IMPORT_BY_NAME
+59aedc86	PLATE	IMAGE_IMPORT_BY_NAME
+59aedc90	PLATE	IMAGE_IMPORT_BY_NAME
+59aedc9a	PLATE	IMAGE_IMPORT_BY_NAME
+59aedca6	PLATE	IMAGE_IMPORT_BY_NAME
+59aedcae	PLATE	IMAGE_IMPORT_BY_NAME
+59aedcb8	PLATE	IMAGE_IMPORT_BY_NAME
+59aedcc0	PLATE	IMAGE_IMPORT_BY_NAME
+59aedccc	PLATE	IMAGE_IMPORT_BY_NAME
+59aedcdc	PLATE	IMAGE_IMPORT_DESCRIPTOR - DLL NAME
+59aedce8	PLATE	IMAGE_IMPORT_BY_NAME
+59aedcf6	PLATE	IMAGE_IMPORT_BY_NAME
+59aedd00	PLATE	IMAGE_IMPORT_BY_NAME
+59aedd14	PLATE	IMAGE_IMPORT_BY_NAME
+59aedd26	PLATE	IMAGE_IMPORT_BY_NAME
+59aedd40	PLATE	IMAGE_IMPORT_BY_NAME
+59aedd50	PLATE	IMAGE_IMPORT_BY_NAME
+59aedd5e	PLATE	IMAGE_IMPORT_BY_NAME
+59aedd6c	PLATE	IMAGE_IMPORT_BY_NAME
+59aedd7c	PLATE	IMAGE_IMPORT_BY_NAME
+59aedd8e	PLATE	IMAGE_IMPORT_BY_NAME
+59aedd9a	PLATE	IMAGE_IMPORT_BY_NAME
+59aeddaa	PLATE	IMAGE_IMPORT_BY_NAME
+59aeddbc	PLATE	IMAGE_IMPORT_BY_NAME
+59aeddd0	PLATE	IMAGE_IMPORT_BY_NAME
+59aedde4	PLATE	IMAGE_IMPORT_BY_NAME
+59aeddf2	PLATE	IMAGE_IMPORT_BY_NAME
+59aeddfe	PLATE	IMAGE_IMPORT_BY_NAME
+59aede0a	PLATE	IMAGE_IMPORT_BY_NAME
+59aede18	PLATE	IMAGE_IMPORT_BY_NAME
+59aede26	PLATE	IMAGE_IMPORT_BY_NAME
+59aede32	PLATE	IMAGE_IMPORT_BY_NAME
+59aede3c	PLATE	IMAGE_IMPORT_BY_NAME
+59aede4a	PLATE	IMAGE_IMPORT_BY_NAME
+59aede56	PLATE	IMAGE_IMPORT_BY_NAME
+59aede62	PLATE	IMAGE_IMPORT_BY_NAME
+59aede74	PLATE	IMAGE_IMPORT_BY_NAME
+59aede86	PLATE	IMAGE_IMPORT_BY_NAME
+59aede9a	PLATE	IMAGE_IMPORT_BY_NAME
+59aedea6	PLATE	IMAGE_IMPORT_BY_NAME
+59aedeb4	PLATE	IMAGE_IMPORT_BY_NAME
+59aedec2	PLATE	IMAGE_IMPORT_BY_NAME
+59aedede	PLATE	IMAGE_IMPORT_BY_NAME
+59aedeee	PLATE	IMAGE_IMPORT_BY_NAME
+59aedefe	PLATE	IMAGE_IMPORT_BY_NAME
+59aedf14	PLATE	IMAGE_IMPORT_BY_NAME
+59aedf22	PLATE	IMAGE_IMPORT_BY_NAME
+59aedf30	PLATE	IMAGE_IMPORT_BY_NAME
+59aedf40	PLATE	IMAGE_IMPORT_BY_NAME
+59aedf52	PLATE	IMAGE_IMPORT_BY_NAME
+59aedf6e	PLATE	IMAGE_IMPORT_BY_NAME
+59aedf84	PLATE	IMAGE_IMPORT_BY_NAME
+59aedf9a	PLATE	IMAGE_IMPORT_BY_NAME
+59aedfb0	PLATE	IMAGE_IMPORT_BY_NAME
+59aedfbe	PLATE	IMAGE_IMPORT_BY_NAME
+59aedfce	PLATE	IMAGE_IMPORT_BY_NAME
+59aedfe4	PLATE	IMAGE_IMPORT_BY_NAME
+59aedff8	PLATE	IMAGE_IMPORT_BY_NAME
+59aee00a	PLATE	IMAGE_IMPORT_BY_NAME
+59aee01a	PLATE	IMAGE_IMPORT_BY_NAME
+59aee028	PLATE	IMAGE_IMPORT_BY_NAME
+59aee034	PLATE	IMAGE_IMPORT_BY_NAME
+59aee042	PLATE	IMAGE_IMPORT_BY_NAME
+59aee058	PLATE	IMAGE_IMPORT_BY_NAME
+59aee072	PLATE	IMAGE_IMPORT_BY_NAME
+59aee082	PLATE	IMAGE_IMPORT_BY_NAME
+59aee098	PLATE	IMAGE_IMPORT_BY_NAME
+59aee0b2	PLATE	IMAGE_IMPORT_BY_NAME
+59aee0c6	PLATE	IMAGE_IMPORT_BY_NAME
+59aee0e2	PLATE	IMAGE_IMPORT_BY_NAME
+59aee100	PLATE	IMAGE_IMPORT_BY_NAME
+59aee110	PLATE	IMAGE_IMPORT_BY_NAME
+59aee120	PLATE	IMAGE_IMPORT_BY_NAME
+59aee132	PLATE	IMAGE_IMPORT_BY_NAME
+59aee142	PLATE	IMAGE_IMPORT_BY_NAME
+59aee152	PLATE	IMAGE_IMPORT_BY_NAME
+59aee166	PLATE	IMAGE_IMPORT_BY_NAME
+59aee178	PLATE	IMAGE_IMPORT_BY_NAME
+59aee188	PLATE	IMAGE_IMPORT_BY_NAME
+59aee19a	PLATE	IMAGE_IMPORT_BY_NAME
+59aee1aa	PLATE	IMAGE_IMPORT_BY_NAME
+59aee1c4	PLATE	IMAGE_IMPORT_DESCRIPTOR - DLL NAME
+59aee1d2	PLATE	IMAGE_IMPORT_BY_NAME
+59aee1e4	PLATE	IMAGE_IMPORT_BY_NAME
+59aee1fa	PLATE	IMAGE_IMPORT_BY_NAME
+59aee210	PLATE	IMAGE_IMPORT_BY_NAME
+59aee22a	PLATE	IMAGE_IMPORT_BY_NAME
+59aee244	PLATE	IMAGE_IMPORT_DESCRIPTOR - DLL NAME
+59aee250	PLATE	IMAGE_IMPORT_BY_NAME
+59aee25e	PLATE	IMAGE_IMPORT_BY_NAME
+59aee26e	PLATE	IMAGE_IMPORT_BY_NAME
+59aee282	PLATE	IMAGE_IMPORT_BY_NAME
+59aee292	PLATE	IMAGE_IMPORT_BY_NAME
+59aee2ae	PLATE	IMAGE_IMPORT_BY_NAME
+59aee2ce	PLATE	IMAGE_IMPORT_DESCRIPTOR - DLL NAME
+59aee2dc	PLATE	IMAGE_IMPORT_BY_NAME
+59aee2e8	PLATE	IMAGE_IMPORT_BY_NAME
+59aee2f2	PLATE	IMAGE_IMPORT_BY_NAME
+59aee2fc	PLATE	IMAGE_IMPORT_BY_NAME
+59aee306	PLATE	IMAGE_IMPORT_BY_NAME
+59aee31a	PLATE	IMAGE_IMPORT_BY_NAME
+59aee328	PLATE	IMAGE_IMPORT_BY_NAME
+59aee334	PLATE	IMAGE_IMPORT_BY_NAME
+59aee340	PLATE	IMAGE_IMPORT_BY_NAME
+59aee34c	PLATE	IMAGE_IMPORT_BY_NAME
+59aee356	PLATE	IMAGE_IMPORT_BY_NAME
+59aee360	PLATE	IMAGE_IMPORT_BY_NAME
+59aee376	PLATE	IMAGE_IMPORT_BY_NAME
+59aee380	PLATE	IMAGE_IMPORT_BY_NAME
+59aee38e	PLATE	IMAGE_IMPORT_BY_NAME
+59aee396	PLATE	IMAGE_IMPORT_BY_NAME
+59aee39e	PLATE	IMAGE_IMPORT_BY_NAME
+59aee3a8	PLATE	IMAGE_IMPORT_BY_NAME
+59aee3b0	PLATE	IMAGE_IMPORT_BY_NAME
+59aee3ba	PLATE	IMAGE_IMPORT_BY_NAME
+59aee3c6	PLATE	IMAGE_IMPORT_BY_NAME
+59aee3d0	PLATE	IMAGE_IMPORT_BY_NAME
+59aee3d8	PLATE	IMAGE_IMPORT_BY_NAME
+59aee3e6	PLATE	IMAGE_IMPORT_BY_NAME
+59aee3f0	PLATE	IMAGE_IMPORT_BY_NAME
+59aee3fa	PLATE	IMAGE_IMPORT_BY_NAME
+59aee404	PLATE	IMAGE_IMPORT_BY_NAME
+59aee40c	PLATE	IMAGE_IMPORT_BY_NAME
+59aee418	PLATE	IMAGE_IMPORT_BY_NAME
+59aee424	PLATE	IMAGE_IMPORT_BY_NAME
+59aee42e	PLATE	IMAGE_IMPORT_BY_NAME
+59aee43a	PLATE	IMAGE_IMPORT_BY_NAME
+59aee444	PLATE	IMAGE_IMPORT_BY_NAME
+59aee450	PLATE	IMAGE_IMPORT_BY_NAME
+59aee45a	PLATE	IMAGE_IMPORT_BY_NAME
+59aee464	PLATE	IMAGE_IMPORT_BY_NAME
+59aee472	PLATE	IMAGE_IMPORT_BY_NAME
+59aee47a	PLATE	IMAGE_IMPORT_BY_NAME
+59aee484	PLATE	IMAGE_IMPORT_BY_NAME
+59aee490	PLATE	IMAGE_IMPORT_BY_NAME
+59aee49a	PLATE	IMAGE_IMPORT_BY_NAME
+59aee4a4	PLATE	IMAGE_IMPORT_BY_NAME
+59aee4b6	PLATE	IMAGE_IMPORT_BY_NAME
+59aee4c8	PLATE	IMAGE_IMPORT_BY_NAME
+59aee4d4	PLATE	IMAGE_IMPORT_BY_NAME
+59aee4e0	PLATE	IMAGE_IMPORT_BY_NAME
+59aee4ea	PLATE	IMAGE_IMPORT_BY_NAME
+59aee4f6	PLATE	IMAGE_IMPORT_BY_NAME
+59aee500	PLATE	IMAGE_IMPORT_BY_NAME
+59aee514	PLATE	IMAGE_IMPORT_BY_NAME
+59aee52c	PLATE	IMAGE_IMPORT_BY_NAME
+59aee544	PLATE	IMAGE_IMPORT_BY_NAME
+59aee55c	PLATE	IMAGE_IMPORT_BY_NAME
+59aee578	PLATE	IMAGE_IMPORT_BY_NAME
+59aee590	PLATE	IMAGE_IMPORT_BY_NAME
+59aee5a8	PLATE	IMAGE_IMPORT_BY_NAME
+59aee5c0	PLATE	IMAGE_IMPORT_BY_NAME
+59aee5d6	PLATE	IMAGE_IMPORT_BY_NAME
+59aee5ec	PLATE	IMAGE_IMPORT_BY_NAME
+59aee5f8	PLATE	IMAGE_IMPORT_BY_NAME
+59aee60e	PLATE	IMAGE_IMPORT_BY_NAME
+59aee61a	PLATE	IMAGE_IMPORT_BY_NAME
+59aee642	PLATE	IMAGE_IMPORT_BY_NAME
+59aee65e	PLATE	IMAGE_IMPORT_BY_NAME
+59aee670	PLATE	IMAGE_IMPORT_BY_NAME
+59aee678	PLATE	IMAGE_IMPORT_BY_NAME
+59aee686	PLATE	IMAGE_IMPORT_BY_NAME
+59aee69c	PLATE	IMAGE_IMPORT_BY_NAME
+59aee6ac	PLATE	IMAGE_IMPORT_BY_NAME
+59aee6bc	PLATE	IMAGE_IMPORT_BY_NAME
+59aee6cc	PLATE	IMAGE_IMPORT_BY_NAME
+59aee6dc	PLATE	IMAGE_IMPORT_BY_NAME
+59aee6ee	PLATE	IMAGE_IMPORT_BY_NAME
+59aee700	PLATE	IMAGE_IMPORT_BY_NAME
+59aee70e	PLATE	IMAGE_IMPORT_DESCRIPTOR - DLL NAME
+59aee71a	PLATE	IMAGE_IMPORT_BY_NAME
+59aee72e	PLATE	IMAGE_IMPORT_BY_NAME
+59aee742	PLATE	IMAGE_IMPORT_BY_NAME
+59aee752	PLATE	IMAGE_IMPORT_BY_NAME
+59aee768	PLATE	IMAGE_IMPORT_BY_NAME
+59aee77a	PLATE	IMAGE_IMPORT_BY_NAME
+59aee792	PLATE	IMAGE_IMPORT_BY_NAME
+59aee7c8	PLATE	Export Function Pointers
+59aee950	PLATE	Export Name Pointers
+59aeead8	PLATE	Export Ordinal Values
+59aeeb9c	PLATE	Export Library Name
+59af5060	PLATE	Rsrc_Version_1_409 Size of resource: 0x394 bytes

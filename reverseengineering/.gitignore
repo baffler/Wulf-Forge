@@ -1,0 +1,7 @@
+# Raw Ghidra project state is not reviewable in Git. Use the text exports.
+*.gpr
+*.rep/
+*.lock
+*.lock~
+*.gzf
+*.bytes

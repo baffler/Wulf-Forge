@@ -1,0 +1,2 @@
+entry	name	full_name	namespace	name_source	signature_source	calling_convention	return_type	parameter_count	is_thunk	thunk_target	is_external	body_ranges	comment	repeatable_comment	prototype
+10092d10	entry	entry	Global	IMPORTED	ANALYSIS	__fastcall	longlong	4	false	\N	false	10092d10-10092d2c;10092d30-10092de6;10092de8-10092eb9	\N	\N	longlong __fastcall entry(undefined4 param_1, uint param_2, undefined4 param_3, char param_4)

@@ -1,0 +1,26 @@
+{
+  "project_file": "/win32_glide.dll",
+  "program_name": "win32_glide.dll",
+  "executable_path": "/C:/Users/balsa/Desktop/WulframII/Game/3dfx/win32_glide.dll",
+  "executable_format": "Portable Executable (PE)",
+  "executable_md5": "01f9ad1def3080d551e98b6c4b379673",
+  "executable_sha256": "88680637c339b8746bb152587bfd8421955af0e6d764695446a822b010fdc086",
+  "language_id": "x86:LE:32:default",
+  "compiler": "visualstudio:unknown",
+  "compiler_spec": "windows",
+  "image_base": "10000000",
+  "min_address": "10000000",
+  "max_address": "ffdfffff",
+  "default_pointer_size": "4",
+  "counts": {
+    "memory_blocks": 7,
+    "functions": 1008,
+    "defined_symbols": 2126,
+    "comments": 604,
+    "bookmarks": 217,
+    "strings": 660,
+    "external_libraries": 3,
+    "external_locations": 133,
+    "external_entry_points": 5
+  }
+}

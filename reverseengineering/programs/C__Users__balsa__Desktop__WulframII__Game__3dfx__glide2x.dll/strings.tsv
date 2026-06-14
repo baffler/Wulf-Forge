@@ -1,0 +1,992 @@
+address	length	data_type	value
+10029528	6	string	IsTNT
+10029530	13	string	kernel32.dll
+10029557	29	string	?IsProcessorFeaturePresent
+10029574	9	string	KERNEL32
+100295c2	12	unicode	null)
+100295d1	6	string	null)
+10029634	16	string	runtime error\s
+10029648	16	string	TLOSS error\r\n
+10029658	16	string	SING error\r\n
+10029668	16	string	DOMAIN error\r\n
+10029678	40	string	R6028\r\n- unable to initialize heap\r\n
+100296a0	56	string	R6027\r\n- not enough space for lowio initialization\r\n
+100296d8	56	string	R6026\r\n- not enough space for stdio initialization\r\n
+10029710	40	string	R6025\r\n- pure virtual function call\r\n
+10029738	56	string	R6024\r\n- not enough space for _onexit/atexit table\r\n
+10029770	44	string	R6019\r\n- unable to open console device\r\n
+1002979c	36	string	R6018\r\n- unexpected heap error\r\n
+100297c0	48	string	R6017\r\n- unexpected multithread lock error\r\n
+100297f0	44	string	R6016\r\n- not enough space for thread data\r\n
+1002981c	36	string	\r\nabnormal program termination\r\n
+10029840	44	string	R6009\r\n- not enough space for environment\r\n
+1002986c	44	string	R6008\r\n- not enough space for arguments\r\n
+10029898	40	string	R6002\r\n- floating point not loaded\r\n
+100298c0	37	string	Microsoft Visual C++ Runtime Library
+100298ec	28	string	Runtime Error!\n\nProgram:\s
+1002990c	24	string	<program name unknown>
+10029947	21	string	?GetLastActivePopup
+1002995c	16	string	GetActiveWindow
+1002996c	12	string	MessageBoxA
+10029978	11	string	user32.dll
+10029a04	8	string	floor
+1002a04e	12	TerminatedCString	glide2x.dll
+1002a05a	26	TerminatedCString	_ConvertAndDownloadRle@64
+1002a074	16	TerminatedCString	_grAADrawLine@8
+1002a084	17	TerminatedCString	_grAADrawPoint@4
+1002a095	20	TerminatedCString	_grAADrawPolygon@12
+1002a0a9	29	TerminatedCString	_grAADrawPolygonVertexList@8
+1002a0c6	21	TerminatedCString	_grAADrawTriangle@24
+1002a0db	25	TerminatedCString	_grAlphaBlendFunction@16
+1002a0f4	19	TerminatedCString	_grAlphaCombine@20
+1002a107	32	TerminatedCString	_grAlphaControlsITRGBLighting@4
+1002a127	23	TerminatedCString	_grAlphaTestFunction@4
+1002a13e	29	TerminatedCString	_grAlphaTestReferenceValue@4
+1002a15b	18	TerminatedCString	_grBufferClear@12
+1002a16d	22	TerminatedCString	_grBufferNumPending@0
+1002a183	16	TerminatedCString	_grBufferSwap@4
+1002a193	18	TerminatedCString	_grCheckForRoom@4
+1002a1a5	19	TerminatedCString	_grChromakeyMode@4
+1002a1b8	20	TerminatedCString	_grChromakeyValue@4
+1002a1cc	17	TerminatedCString	_grClipWindow@16
+1002a1dd	19	TerminatedCString	_grColorCombine@20
+1002a1f0	15	TerminatedCString	_grColorMask@8
+1002a1ff	26	TerminatedCString	_grConstantColorValue4@16
+1002a219	24	TerminatedCString	_grConstantColorValue@4
+1002a231	14	TerminatedCString	_grCullMode@4
+1002a23f	20	TerminatedCString	_grDepthBiasLevel@4
+1002a253	25	TerminatedCString	_grDepthBufferFunction@4
+1002a26c	21	TerminatedCString	_grDepthBufferMode@4
+1002a281	15	TerminatedCString	_grDepthMask@4
+1002a290	23	TerminatedCString	_grDisableAllEffects@0
+1002a2a7	16	TerminatedCString	_grDitherMode@4
+1002a2b7	14	TerminatedCString	_grDrawLine@8
+1002a2c5	24	TerminatedCString	_grDrawPlanarPolygon@12
+1002a2dd	33	TerminatedCString	_grDrawPlanarPolygonVertexList@8
+1002a2fe	15	TerminatedCString	_grDrawPoint@4
+1002a30d	18	TerminatedCString	_grDrawPolygon@12
+1002a31f	27	TerminatedCString	_grDrawPolygonVertexList@8
+1002a33a	19	TerminatedCString	_grDrawTriangle@12
+1002a34d	22	TerminatedCString	_grErrorSetCallback@4
+1002a363	19	TerminatedCString	_grFogColorValue@4
+1002a376	13	TerminatedCString	_grFogMode@4
+1002a383	14	TerminatedCString	_grFogTable@4
+1002a391	26	TerminatedCString	_grGammaCorrectionValue@4
+1002a3ab	19	TerminatedCString	_grGlideGetState@4
+1002a3be	21	TerminatedCString	_grGlideGetVersion@4
+1002a3d3	15	TerminatedCString	_grGlideInit@0
+1002a3e2	19	TerminatedCString	_grGlideSetState@4
+1002a3f5	24	TerminatedCString	_grGlideShamelessPlug@4
+1002a40d	19	TerminatedCString	_grGlideShutdown@0
+1002a420	11	TerminatedCString	_grHints@8
+1002a42b	22	TerminatedCString	_grLfbConstantAlpha@4
+1002a441	22	TerminatedCString	_grLfbConstantDepth@4
+1002a457	14	TerminatedCString	_grLfbLock@24
+1002a465	20	TerminatedCString	_grLfbReadRegion@28
+1002a479	15	TerminatedCString	_grLfbUnlock@8
+1002a488	25	TerminatedCString	_grLfbWriteColorFormat@4
+1002a4a1	26	TerminatedCString	_grLfbWriteColorSwizzle@8
+1002a4bb	21	TerminatedCString	_grLfbWriteRegion@32
+1002a4d0	18	TerminatedCString	_grRenderBuffer@4
+1002a4e2	19	TerminatedCString	_grResetTriStats@0
+1002a4f5	13	TerminatedCString	_grSplash@20
+1002a502	24	TerminatedCString	_grSstConfigPipeline@12
+1002a51a	16	TerminatedCString	_grSstControl@4
+1002a52a	13	TerminatedCString	_grSstIdle@0
+1002a537	15	TerminatedCString	_grSstIsBusy@0
+1002a546	15	TerminatedCString	_grSstOrigin@4
+1002a555	18	TerminatedCString	_grSstPerfStats@4
+1002a567	20	TerminatedCString	_grSstQueryBoards@4
+1002a57b	22	TerminatedCString	_grSstQueryHardware@4
+1002a591	23	TerminatedCString	_grSstResetPerfStats@0
+1002a5a8	21	TerminatedCString	_grSstScreenHeight@0
+1002a5bd	20	TerminatedCString	_grSstScreenWidth@0
+1002a5d1	15	TerminatedCString	_grSstSelect@4
+1002a5e0	15	TerminatedCString	_grSstStatus@0
+1002a5ef	19	TerminatedCString	_grSstVRetraceOn@0
+1002a602	16	TerminatedCString	_grSstVidMode@8
+1002a612	18	TerminatedCString	_grSstVideoLine@0
+1002a624	17	TerminatedCString	_grSstWinClose@0
+1002a635	17	TerminatedCString	_grSstWinOpen@28
+1002a646	25	TerminatedCString	_grTexCalcMemRequired@16
+1002a65f	19	TerminatedCString	_grTexClampMode@12
+1002a672	17	TerminatedCString	_grTexCombine@28
+1002a683	24	TerminatedCString	_grTexCombineFunction@8
+1002a69b	23	TerminatedCString	_grTexDetailControl@16
+1002a6b2	24	TerminatedCString	_grTexDownloadMipMap@16
+1002a6ca	29	TerminatedCString	_grTexDownloadMipMapLevel@32
+1002a6e7	36	TerminatedCString	_grTexDownloadMipMapLevelPartial@40
+1002a70b	23	TerminatedCString	_grTexDownloadTable@12
+1002a722	30	TerminatedCString	_grTexDownloadTablePartial@20
+1002a740	20	TerminatedCString	_grTexFilterMode@12
+1002a754	21	TerminatedCString	_grTexLodBiasValue@8
+1002a769	19	TerminatedCString	_grTexMaxAddress@4
+1002a77c	19	TerminatedCString	_grTexMinAddress@4
+1002a78f	20	TerminatedCString	_grTexMipMapMode@12
+1002a7a3	18	TerminatedCString	_grTexMultibase@8
+1002a7b5	26	TerminatedCString	_grTexMultibaseAddress@20
+1002a7cf	17	TerminatedCString	_grTexNCCTable@8
+1002a7e0	16	TerminatedCString	_grTexSource@16
+1002a7f0	27	TerminatedCString	_grTexTextureMemRequired@8
+1002a80b	14	TerminatedCString	_grTriStats@8
+1002a819	16	TerminatedCString	_gu3dfGetInfo@8
+1002a829	13	TerminatedCString	_gu3dfLoad@8
+1002a836	29	TerminatedCString	_guAADrawTriangleWithClip@12
+1002a853	17	TerminatedCString	_guAlphaSource@4
+1002a864	26	TerminatedCString	_guColorCombineFunction@4
+1002a87e	35	TerminatedCString	_guDrawPolygonVertexListWithClip@8
+1002a8a1	27	TerminatedCString	_guDrawTriangleWithClip@12
+1002a8bc	18	TerminatedCString	_guEncodeRLE16@16
+1002a8ce	21	TerminatedCString	_guEndianSwapBytes@4
+1002a8e3	21	TerminatedCString	_guEndianSwapWords@4
+1002a8f8	19	TerminatedCString	_guFbReadRegion@24
+1002a90b	20	TerminatedCString	_guFbWriteRegion@24
+1002a91f	21	TerminatedCString	_guFogGenerateExp2@8
+1002a934	20	TerminatedCString	_guFogGenerateExp@8
+1002a948	24	TerminatedCString	_guFogGenerateLinear@12
+1002a960	22	TerminatedCString	_guFogTableIndexToW@4
+1002a976	21	TerminatedCString	_guMPDrawTriangle@12
+1002a98b	12	TerminatedCString	_guMPInit@0
+1002a997	26	TerminatedCString	_guMPTexCombineFunction@4
+1002a9b1	17	TerminatedCString	_guMPTexSource@8
+1002a9c2	18	TerminatedCString	_guMovieSetName@4
+1002a9d4	16	TerminatedCString	_guMovieStart@0
+1002a9e4	15	TerminatedCString	_guMovieStop@0
+1002a9f3	24	TerminatedCString	_guTexAllocateMemory@60
+1002aa0b	26	TerminatedCString	_guTexChangeAttributes@48
+1002aa25	24	TerminatedCString	_guTexCombineFunction@8
+1002aa3d	26	TerminatedCString	_guTexCreateColorMipMap@0
+1002aa57	24	TerminatedCString	_guTexDownloadMipMap@12
+1002aa6f	29	TerminatedCString	_guTexDownloadMipMapLevel@12
+1002aa8c	25	TerminatedCString	_guTexGetCurrentMipMap@4
+1002aaa5	22	TerminatedCString	_guTexGetMipMapInfo@4
+1002aabb	22	TerminatedCString	_guTexMemQueryAvail@4
+1002aad1	17	TerminatedCString	_guTexMemReset@0
+1002aae2	15	TerminatedCString	_guTexSource@4
+1002aaf1	12	TerminatedCString	_pciClose@0
+1002aafd	19	TerminatedCString	_pciDeviceExists@4
+1002ab10	16	TerminatedCString	_pciFindCard@12
+1002ab20	21	TerminatedCString	_pciFindCardMulti@16
+1002ab35	21	TerminatedCString	_pciGetConfigData@20
+1002ab4a	15	TerminatedCString	_pciMapCard@20
+1002ab59	20	TerminatedCString	_pciMapCardMulti@24
+1002ab6d	27	TerminatedCString	_pciMapPhysicalToLinear@12
+1002ab88	11	TerminatedCString	_pciOpen@0
+1002ab93	21	TerminatedCString	_pciSetConfigData@20
+1002aba8	20	TerminatedCString	_pciUnmapPhysical@8
+100483dc	7	string	RGB332
+100483ec	7	string	RGB565
+10048400	9	string	ARGB8332
+10048418	9	string	ARGB1555
+10048430	9	string	AYIQ8422
+10048448	9	string	ARGB4444
+1004847c	49	string	3df v%s %s lod range: %i %i aspect ratio: %i %i\n
+100484b4	10	string	glide.dll
+100484c0	7	string	FX_CPU
+100484c8	7	string	FX_CPU
+100484d0	22	string	FX_GLIDE_BOUNDS_CHECK
+100484e8	19	string	FX_GLIDE_NO_SPLASH
+100484fc	24	string	FX_GLIDE_SHAMELESS_PLUG
+10048514	13	string	FX_GLIDE_LWM
+10048524	13	string	FX_GLIDE_LWM
+10048534	22	string	FX_GLIDE_SWAPINTERVAL
+1004854c	22	string	FX_GLIDE_SWAPINTERVAL
+10048564	23	string	FX_GLIDE_NO_DITHER_SUB
+1004857c	12	string	FX_SNAPSHOT
+10048588	12	string	FX_SNAPSHOT
+10048594	8	string	FX_SST2
+1004859c	8	string	FX_SST2
+100485b0	57	string	GLIDE STATISTICS:                       fifo spins: %7d\n
+100485ec	53	string	\s    triangles processed: %7d       tris drawn: %7d\n
+10048624	58	string	\s           buffer swaps: %7d       tris/frame: %7d , %d\n
+10048660	53	string	\s                 points: %7d       pnts/frame: %7d\n
+10048698	53	string	\s                  lines: %7d      lines/frame: %7d\n
+100486d0	53	string	\s      texture downloads: %7d    texture bytes: %7d\n
+10048708	53	string	\s      palette downloads: %7d    palette bytes: %7d\n
+10048740	31	string	grSstSelect:  non-existent SST
+100489b0	58	string	grTexDownloadMipMap: mipmap  cannot span 2 Mbyte boundary
+10050888	12	string	%s:  %s.\n
+10050894	6	string	glide
+1005089c	43	string	guMovieStart:  unsupported on SST hardware
+100508c8	42	string	guMovieStop:  unsupported on SST hardware
+100508f4	45	string	guMovieSetName:  unsupported on SST hardware
+10050924	44	string	guTexCombineFunction:  Unsupported function
+10050950	57	string	_gumpTexCombineFunction:  TEXTURE_SUBTRACT not supported
+1005098c	47	string	_gumpTexCombineFunction:  Unsupported function
+100509bc	33	string	guMPDrawTriangle:  Illegal state
+100509e0	60	string	gumpDrawTriangle:  GR_MPTEXCOMBINE_SUBTRACT not implemented
+10050a48	38	string	grTexMipMapMode:  invalid mode passed
+10050a70	75	string	grTexDownloadMipMapLevelPartial: mipmap level cannot span 2 Mbyte boundary
+10050abc	75	string	grTexDownloadMipMapLevelPartial: mipmap level cannot span 2 Mbyte boundary
+10050f08	7	string	status
+10050f10	12	string	reserved001
+10050fd4	12	string	triangleCMD
+10050fe0	12	string	reserved021
+10051020	6	string	Fdrdx
+10051028	6	string	Fdrdy
+10051034	6	string	Fdgdx
+1005103c	6	string	Fdgdy
+10051048	6	string	Fdbdx
+10051050	6	string	Fdbdy
+1005105c	6	string	Fdzdx
+10051064	6	string	Fdzdy
+10051070	6	string	Fdadx
+10051078	6	string	Fdady
+10051084	6	string	Fdsdx
+1005108c	6	string	Fdsdy
+10051098	6	string	Fdtdx
+100510a0	6	string	Fdtdy
+100510ac	6	string	Fdwdx
+100510b4	6	string	Fdwdy
+100510bc	13	string	FtriangleCMD
+100510cc	12	string	reserved041
+100510d8	7	string	nopCMD
+100510e0	12	string	reserved043
+100510ec	12	string	fastfillCMD
+100510f8	12	string	reserved045
+10051104	14	string	swapbufferCMD
+10051114	12	string	reserved047
+10051120	12	string	swappendCMD
+1005112c	12	string	reserved049
+10051138	12	string	reserved04A
+10051144	12	string	reserved04B
+10051150	12	string	reserved04C
+1005115c	12	string	reserved04D
+10051168	12	string	reserved04E
+10051174	12	string	reserved04F
+10051180	13	string	fbzColorPath
+10051190	8	string	fogMode
+10051198	10	string	alphaMode
+100511a4	12	string	reserved053
+100511b0	8	string	fbzMode
+100511b8	8	string	stipple
+100511c0	7	string	color0
+100511c8	7	string	color1
+100511d0	9	string	fogColor
+100511dc	8	string	zaColor
+100511e4	10	string	chromaKey
+100511f0	12	string	chromaRange
+100511fc	12	string	reserved05C
+10051208	12	string	reserved05D
+10051214	12	string	reserved05E
+10051220	12	string	reserved05F
+1005122c	15	string	colBufferSetup
+1005123c	15	string	auxBufferSetup
+1005124c	15	string	clipLeftRight0
+1005125c	15	string	clipTopBottom0
+1005126c	15	string	clipLeftRight1
+1005127c	15	string	clipTopBottom1
+1005128c	12	string	reserved066
+10051298	12	string	reserved067
+100512a4	12	string	reserved068
+100512b0	12	string	reserved069
+100512bc	12	string	reserved06A
+100512c8	12	string	reserved06B
+100512d4	12	string	reserved06C
+100512e0	12	string	reserved06D
+100512ec	12	string	reserved06E
+100512f8	12	string	reserved06F
+10051304	13	string	fogTable0001
+10051314	13	string	fogTable0203
+10051324	13	string	fogTable0405
+10051334	13	string	fogTable0607
+10051344	13	string	fogTable0809
+10051354	13	string	fogTable0A0B
+10051364	13	string	fogTable0C0D
+10051374	13	string	fogTable0E0F
+10051384	13	string	fogTable1011
+10051394	13	string	fogTable1213
+100513a4	13	string	fogTable1415
+100513b4	13	string	fogTable1617
+100513c4	13	string	fogTable1819
+100513d4	13	string	fogTable1A1B
+100513e4	13	string	fogTable1C1D
+100513f4	13	string	fogTable1E1F
+10051404	13	string	fogTable2021
+10051414	13	string	fogTable2223
+10051424	13	string	fogTable2425
+10051434	13	string	fogTable2627
+10051444	13	string	fogTable2829
+10051454	13	string	fogTable2A2B
+10051464	13	string	fogTable2C2D
+10051474	13	string	fogTable2E2F
+10051484	13	string	fogTable3031
+10051494	13	string	fogTable3233
+100514a4	13	string	fogTable3435
+100514b4	13	string	fogTable3637
+100514c4	13	string	fogTable3839
+100514d4	13	string	fogTable3A3B
+100514e4	13	string	fogTable3C3D
+100514f4	13	string	fogTable3E3F
+10051504	11	string	fbijrInit0
+10051510	11	string	fbijrInit1
+1005151c	11	string	fbijrInit2
+10051528	11	string	fbijrInit3
+10051534	11	string	fbijrInit4
+10051540	11	string	fbijrInit5
+1005154c	12	string	reserved096
+10051558	12	string	reserved097
+10051564	12	string	reserved098
+10051570	12	string	reserved099
+1005157c	12	string	reserved09A
+10051588	12	string	reserved09B
+10051594	12	string	reserved09C
+100515a0	12	string	reserved09D
+100515ac	12	string	reserved09E
+100515b8	12	string	reserved09F
+100515c4	13	string	fbijrVersion
+100515d4	12	string	fbiPixelsIn
+100515e0	14	string	fbiChromaFail
+100515f0	13	string	fbiZfuncFail
+10051600	13	string	fbiAfuncFail
+10051610	13	string	fbiPixelsOut
+10051620	12	string	reserved0A6
+1005162c	12	string	reserved0A7
+10051638	12	string	reserved0A8
+10051644	12	string	reserved0A9
+10051650	12	string	reserved0AA
+1005165c	12	string	reserved0AB
+10051668	12	string	reserved0AC
+10051674	12	string	reserved0AD
+10051680	12	string	reserved0AE
+1005168c	12	string	reserved0AF
+10051698	12	string	reserved0B0
+100516a4	12	string	reserved0B1
+100516b0	12	string	reserved0B2
+100516bc	12	string	reserved0B3
+100516c8	12	string	reserved0B4
+100516d4	12	string	reserved0B5
+100516e0	12	string	reserved0B6
+100516ec	12	string	reserved0B7
+100516f8	12	string	reserved0B8
+10051704	12	string	reserved0B9
+10051710	12	string	reserved0BA
+1005171c	12	string	reserved0BB
+10051728	12	string	reserved0BC
+10051734	12	string	reserved0BD
+10051740	12	string	reserved0BE
+1005174c	11	string	texChipSel
+10051758	12	string	textureMode
+1005176c	8	string	tDetail
+10051774	12	string	texBaseAddr
+10051780	13	string	texBaseAddr1
+10051790	13	string	texBaseAddr2
+100517a0	14	string	texBaseAddr38
+100517b0	10	string	trexInit0
+100517bc	10	string	trexInit1
+100517c8	12	string	nccTable0_0
+100517d4	12	string	nccTable0_1
+100517e0	12	string	nccTable0_2
+100517ec	12	string	nccTable0_3
+100517f8	12	string	nccTable0_4
+10051804	12	string	nccTable0_5
+10051810	12	string	nccTable0_6
+1005181c	12	string	nccTable0_7
+10051828	12	string	nccTable0_8
+10051834	12	string	nccTable0_9
+10051840	12	string	nccTable0_A
+1005184c	12	string	nccTable0_B
+10051858	12	string	nccTable1_0
+10051864	12	string	nccTable1_1
+10051870	12	string	nccTable1_2
+1005187c	12	string	nccTable1_3
+10051888	12	string	nccTable1_4
+10051894	12	string	nccTable1_5
+100518a0	12	string	nccTable1_6
+100518ac	12	string	nccTable1_7
+100518b8	12	string	nccTable1_8
+100518c4	12	string	nccTable1_9
+100518d0	12	string	nccTable1_A
+100518dc	12	string	nccTable1_B
+100518e8	12	string	reserved0E1
+100518f4	12	string	reserved0E2
+10051900	12	string	reserved0E3
+1005190c	12	string	reserved0E4
+10051918	12	string	reserved0E5
+10051924	12	string	reserved0E6
+10051930	12	string	reserved0E7
+1005193c	12	string	reserved0E8
+10051948	12	string	reserved0E9
+10051954	12	string	reserved0EA
+10051960	12	string	reserved0EB
+1005196c	12	string	reserved0EC
+10051978	12	string	reserved0ED
+10051984	12	string	reserved0EE
+10051990	12	string	reserved0EF
+1005199c	12	string	reserved0F0
+100519a8	12	string	reserved0F1
+100519b4	12	string	reserved0F2
+100519c0	12	string	reserved0F3
+100519cc	12	string	reserved0F4
+100519d8	12	string	reserved0F5
+100519e4	12	string	reserved0F6
+100519f0	12	string	reserved0F7
+100519fc	12	string	reserved0F8
+10051a08	12	string	reserved0F9
+10051a14	12	string	reserved0FA
+10051a20	12	string	reserved0FB
+10051a2c	12	string	reserved0FC
+10051a38	12	string	reserved0FD
+10051a44	12	string	reserved0FE
+10051a50	12	string	reserved0FF
+10051a80	10	string	GDBG_FILE
+10051a8c	11	string	GDBG_LEVEL
+10051a9c	31	string	gdbg_init(): debug level = %s\n
+10051ad4	20	string	gdbg_shutdown()\n
+10051ae8	8	string	%s.%d:\t
+10051af0	16	string	%s error (%s):\s
+10051b10	32	string	@#%InitHeaders $Revision: 10 $
+10051b50	28	string	@#%InitCode $Revision: 5 $
+10051b70	20	string	sst1Init Routines
+10051b84	24	string	InitCode $Revision: 5 $
+10051ba8	44	string	sst1InitMapBoard(): BoardsInSystem = %d\n
+10051bd4	76	string	sst1InitMapBoard(): Scanline Interleave detected at startup for board=%d\n
+10051c20	48	string	\s                   System reboot required...\n
+10051c50	64	string	sst1InitMapBoard(): vAddr:0x%x pAddr:0x%x Dev:0x%x Board:%d\n
+10051c90	16	string	SST_VGA_PASS
+10051ca0	16	string	SST_VGA_PASS
+10051cb0	44	string	sst1InitMapBoard(): Using SST_VGA_PASS=%d\n
+10051cdc	16	string	SST_VGA_PASS
+10051cec	26	string	SST_IGNORE_INIT_REGISTERS
+10051d08	42	string	WARNING: Ignoring sst1InitRegisters()...\n
+10051d34	19	string	SST_TF_FIFO_THRESH
+10051d4c	19	string	SST_TF_FIFO_THRESH
+10051d60	68	string	sst1InitRegisters(): Setting TREX-to-FBI FIFO THRESHOLD to 0x%x...\n
+10051da4	16	string	SST_PFT_CLK_DEL
+10051db8	16	string	SST_PFT_CLK_DEL
+10051dc8	61	string	sst1InitRegisters(): Setting PRELIM FT-CLK delay to 0x%x...\n
+10051e08	46	string	sst1InitRegisters(): Could not detect DAC...\n
+10051e38	15	string	SST_TREX0INIT0
+10051e48	64	string	sst1InitRegisters(): Using SST_TREX0INIT0 environment variable\n
+10051e8c	15	string	SST_TREX0INIT0
+10051e9c	46	string	sst1InitRegisters(): Storing TREX0INIT0=0x%x\n
+10051ecc	15	string	SST_TREX0INIT1
+10051edc	64	string	sst1InitRegisters(): Using SST_TREX0INIT1 environment variable\n
+10051f20	15	string	SST_TREX0INIT1
+10051f30	17	string	SST_PTF0_CLK_DEL
+10051f48	17	string	SST_PTF0_CLK_DEL
+10051f5c	46	string	sst1InitRegisters(): Storing TREX0INIT1=0x%x\n
+10051f8c	15	string	SST_TREX1INIT0
+10051f9c	64	string	sst1InitRegisters(): Using SST_TREX1INIT0 environment variable\n
+10051fe0	15	string	SST_TREX1INIT0
+10051ff0	46	string	sst1InitRegisters(): Storing TREX1INIT0=0x%x\n
+10052020	15	string	SST_TREX1INIT1
+10052030	64	string	sst1InitRegisters(): Using SST_TREX1INIT1 environment variable\n
+10052074	15	string	SST_TREX1INIT1
+10052084	17	string	SST_PTF1_CLK_DEL
+1005209c	17	string	SST_PTF1_CLK_DEL
+100520b0	46	string	sst1InitRegisters(): Storing TREX1INIT1=0x%x\n
+100520e0	15	string	SST_TREX2INIT0
+100520f0	64	string	sst1InitRegisters(): Using SST_TREX2INIT0 environment variable\n
+10052134	15	string	SST_TREX2INIT0
+10052144	46	string	sst1InitRegisters(): Storing TREX2INIT0=0x%x\n
+10052174	15	string	SST_TREX2INIT1
+10052184	64	string	sst1InitRegisters(): Using SST_TREX2INIT1 environment variable\n
+100521c8	15	string	SST_TREX2INIT1
+100521d8	17	string	SST_PTF2_CLK_DEL
+100521f0	17	string	SST_PTF2_CLK_DEL
+10052204	46	string	sst1InitRegisters(): Storing TREX2INIT1=0x%x\n
+10052234	14	string	SST_SLOWPCIWR
+10052244	52	string	sst1InitRegisters(): Setting up SLOW PCI Writes...\n
+10052278	14	string	SST_FASTPCIRD
+10052288	51	string	sst1InitRegisters(): Setting up FAST PCI Reads...\n
+100522bc	12	string	SST_FASTMEM
+100522c8	12	string	SST_FASTMEM
+100522d4	57	string	sst1InitRegisters(): Setting up FAST DRAM Configuration\n
+10052310	50	string	sst1InitRegisters(): ERROR filling DeviceInfo...\n
+10052344	16	string	SST_MEMFIFO_LFB
+10052354	16	string	SST_MEMFIFO_LFB
+10052364	59	string	sst1InitRegisters(): LFB Writes go through memory FIFO...\n
+100523a0	16	string	SST_MEMFIFO_TEX
+100523b0	16	string	SST_MEMFIFO_TEX
+100523c0	63	string	sst1InitRegisters(): TEXTURE Writes go through memory FIFO...\n
+10052400	19	string	SST_TEXMAP_DISABLE
+10052414	56	string	sst1InitRegisters() WARNING: Disabling texture mapping\n
+1005244c	48	string	sst1InitRegisters(): exiting with status %d...\n
+1005247c	15	string	SST_NOSHUTDOWN
+1005248c	60	string	sst1InitShutdown(): Bypassing shutdown with SST_NOSHUTDOWN\n
+100524c8	15	string	SST_NOSHUTDOWN
+100524d8	48	string	sst1InitShutdown(): Shutting down SST-1 #%d...\n
+10052508	49	string	sst1InitShutdown(): Returning with status %d...\n
+1005253c	11	string	SST_BOARDS
+10052548	11	string	SST_BOARDS
+100525b8	44	string	@#%$Workfile: INIT96.C $ $Revision: 46 $
+1005263c	15	string	SST_DUALHEAD=1
+1005264c	15	string	SST_TREX0INIT0
+10052660	15	string	SST_TREX0INIT0
+10052670	15	string	SST_TREX0INIT1
+10052684	15	string	SST_TREX0INIT1
+10052698	26	string	@#% fxPCI for Windows '95
+100526c4	12	string	No errors.\n
+100526d0	28	string	old style non-VGA device
+100526ec	32	string	old style VGA-compatible device
+1005270c	20	string	SCSI bus controller
+10052720	16	string	IDE Controller
+10052730	20	string	floppy Controller
+10052744	20	string	IPI bus controller
+10052758	16	string	RAID controller
+10052768	24	string	mass storage controller
+10052780	20	string	ethernet controller
+10052794	24	string	token ring controller
+100527ac	16	string	FDDI controller
+100527bc	16	string	ATM controller
+100527cc	20	string	network controller
+100527e0	36	string	VGA-compatible display controller
+10052804	36	string	8514-compatible display controller
+10052828	36	string	XGA-compatible display controller
+1005284c	20	string	display controller
+10052860	28	string	video multimedia adapter
+1005287c	28	string	audio multimedia adapter
+10052898	20	string	multimedia adapter
+100528ac	16	string	RAM controller
+100528bc	20	string	Flash controller
+100528d0	20	string	memory controller
+100528e4	20	string	450KX/GX (Orion)
+100528f8	16	string	440FX (Natoma)
+10052908	20	string	430HX (Triton II)
+1005291c	20	string	430VX (Triton II)
+10052930	24	string	430MX (Triton Mobile)
+10052948	16	string	430FX (Triton)
+10052958	28	string	430NX/LX (Neptune/Mercury)
+10052974	12	string	Host bridge
+10052980	12	string	ISA bridge
+1005298c	12	string	EISA bridge
+10052998	12	string	MCA bridge
+100529a4	20	string	PCI-toPCI bridge
+100529b8	16	string	PCMCIA bridge
+100529c8	16	string	NuBus bridge
+100529d8	16	string	CardBus bridge
+100529e8	8	string	bridge
+100529f0	32	string	XT-compatible serial controller
+10052a10	36	string	16450-compatible serial controller
+10052a34	36	string	16550-compatible serial controller
+10052a58	16	string	parallel port
+10052a68	28	string	bidirectional parallel port
+10052a84	32	string	ECP 1.X compliant parallel port
+10052aa4	24	string	communications device
+10052ac8	8	string	ISA PIC
+10052ad0	12	string	EISA PIC
+10052adc	20	string	8237 DMA controller
+10052af0	20	string	ISA DMA controller
+10052b04	20	string	EISA DMA controller
+10052b18	20	string	8254 system timer
+10052b2c	20	string	ISA system timer
+10052b40	20	string	EISA system timer
+10052b54	24	string	generic RTC controller
+10052b6c	20	string	ISA RTC controller
+10052b80	20	string	system peripheral
+10052b94	20	string	keyboard controller
+10052ba8	16	string	pen digitizer
+10052bb8	20	string	mouse controller
+10052bcc	16	string	input device
+10052bdc	24	string	generic docking station
+10052bf4	16	string	docking station
+10052c0c	8	string	Pentium
+10052c14	8	string	Alpha
+10052c1c	8	string	PowerPC
+10052c24	16	string	co-processor
+10052c34	24	string	FireWire( IEEE 1394 )
+10052c4c	12	string	ACCESS.bus
+10052c60	16	string	FibreChannel
+10052c88	7	string	Avance
+10052c90	8	string	Phoenix
+10052c98	9	string	National
+10052ca4	6	string	Tseng
+10052cb0	7	string	Weitek
+10052cb8	7	string	Cirrus
+10052cd0	8	string	Trident
+10052ce0	7	string	Matrox
+10052ce8	6	string	C & T
+10052d04	9	string	BusLogic
+10052d20	12	string	Number 9
+10052d2c	8	string	Apple
+10052d44	12	string	Intergraph
+10052d50	8	string	Diamond
+10052d70	6	string	Tseng
+10052d78	12	string	MediaVision
+10052d84	8	string	Radius
+10052da4	12	string	Creative
+10052db0	12	string	Alliance
+10052dc8	8	string	Adaptec
+10052dd0	8	string	Intel
+10052ddc	22	string	No PCI Bus detected.\n
+10052df4	56	string	You must open the PCI library before it may be closed.\n
+10052e2c	71	string	You must open the PCI library before you may call pciGetConfigData().\n
+10052e74	32	string	Device_number is out of range.\n
+10052e94	41	string	Cannot read from a non-existant device.\n
+10052ec0	36	string	Cannot read a WRITE_ONLY register.\n
+10052ee4	71	string	You must open the PCI library before you may call pciSetConfigData().\n
+10052f2c	32	string	Device_number is out of range.\n
+10052f4c	58	string	Cannot update config registers in a non-existant device.\n
+10052f88	39	string	Cannot write to a READ_ONLY register.\n
+10052fb0	72	string	You must call pciOpen() before you use any other library entry points.\n
+10052ff8	13	string	SST_DUALHEAD
+10053008	67	string	Memmap returned an error trying to map physical to linear memory.\n
+1005304c	59	string	Is Memory Address & Count setup properly in the Registry?\n
+10053088	17	string	\\\\.\\FXMEMMAP.VXD
+1005309c	80	string	Memmap initialization failure.\nMake sure the Memmap VxD is properly installed.\n
+1005310c	22	string	ENV VAR:%s  VALUE:%s\n
+10053124	24	string	DAC MANU:%s  DEVICE:%s\n
+1005313c	10	string	\tDetect:\n
+1005314c	27	string	\tsetVideo (%dx%d @ %d Hz)\n
+1005316c	21	string	\tsetMemClk (%d MHz)\n
+10053194	16	string	MANUFACTURER
+100531a8	8	string	DEVICE
+100531b4	8	string	DETECT
+100531c0	12	string	SETVIDEO
+100531d0	12	string	SETMEMCLK
+100531e0	16	string	SETVIDEOMODE
+10053219	8	string	acwrpop
+1005323d	7	string	acrdwr
+10053278	12	string	dacrdpush
+1005328c	8	string	%sDacWR
+10053294	13	string	(0x%x,0x%x)\n
+100532a4	15	string	%sDacRD-MOD-WR
+100532b4	18	string	(0x%x,0x%x,0x%x)\n
+100532c8	16	string	%sDacRD-NOCHECK
+100532d8	8	string	(0x%x)\n
+100532e0	14	string	%sDacRD-CHECK
+100532f0	13	string	(0x%x,0x%x)\n
+10053300	9	string	%sDAC???
+10053368	14	string	SST_INITDEBUG
+10053378	19	string	SST_INITDEBUG_FILE
+10053390	19	string	SST_INITDEBUG_FILE
+100533a4	19	string	SST_INITDEBUG_FILE
+100533b8	59	string	sst1InitPrintf(): Could not open file '%s' for logging...\n
+100533f4	72	string	sst1InitClearSwapPending() WARNING: Clearing pending swapbufferCMDs...\n
+1005343c	46	string	sst1InitResetTmus(): Could not reset TMUs...\n
+10053478	21	string	SST_IGNORE_SLI_CHECK
+10053490	57	string	sst1InitSli(): SLI Slave board installed as SLI Master.\n
+100534cc	64	string	\s              Please power-down, swap SLI boards and re-boot.\n
+1005350c	72	string	sst1InitSli(): WARNING: Bypassing check for proper SLI installation...\n
+10053554	50	string	sst1InitSli(): Enabling Scanline Interleaving...\n
+10053588	41	string	sst1InitSli(): Disabling memory fifo...\n
+100535b4	21	string	SST_SLIS_VOUT_CLKDEL
+100535d0	21	string	SST_SLIS_VOUT_CLKDEL
+100535e8	22	string	SST_SLIS_PVOUT_CLKDEL
+10053604	22	string	SST_SLIS_PVOUT_CLKDEL
+1005361c	20	string	SST_SLIS_VIN_CLKDEL
+10053634	20	string	SST_SLIS_VIN_CLKDEL
+10053648	81	string	sst1InitSli(): slaveVinClkdel=0x%x, slaveVOutClkDel=0x%x, slavePVOutClkDel=0x%x\n
+1005369c	16	string	SST_PCIFIFO_LWM
+100536ac	16	string	SST_MEMFIFO_LWM
+100536bc	51	string	sst1InitSli(): Slave pciFifoLwm:%d, memFifoLwm:%d\n
+100536f0	49	string	sst1InitSli(): Could not unReset Slave Video...\n
+10053724	45	string	sst1InitSli(): Could not setup SLI Slave...\n
+10053754	21	string	SST_SLIM_VOUT_CLKDEL
+10053770	21	string	SST_SLIM_VOUT_CLKDEL
+10053788	22	string	SST_SLIM_PVOUT_CLKDEL
+100537a4	22	string	SST_SLIM_PVOUT_CLKDEL
+100537bc	20	string	SST_SLIM_VIN_CLKDEL
+100537d4	20	string	SST_SLIM_VIN_CLKDEL
+100537e8	84	string	sst1InitSli(): masterVinClkdel=0x%x, masterVOutClkDel=0x%x, masterPVOutClkDel=0x%x\n
+1005383c	16	string	SST_PCIFIFO_LWM
+1005384c	16	string	SST_MEMFIFO_LWM
+1005385c	52	string	sst1InitSli(): Master pciFifoLwm:%d, memFifoLwm:%d\n
+10053890	18	string	SST_VIDEO_NOCLEAR
+100538a4	21	string	SST_VIDEO_CLEARCOLOR
+100538c0	21	string	SST_VIDEO_CLEARCOLOR
+100538d8	59	string	sst1InitShutdownSli(): Disabling Scanline Interleaving...\n
+10053914	52	string	sst1InitShutdown(): Could not disable Slave SLI...\n
+10053948	14	string	SST_SLIDETECT
+10053958	14	string	SST_SLIDETECT
+10053968	16	string	SST_TMUMEM_SIZE
+10053978	16	string	SST_TMUMEM_SIZE
+10053988	61	string	sst1InitGetTmuMemory() ERROR: Could not detect memory size.\n
+100539c8	76	string	sst1InitGetDeviceInfo: ERROR, multiple different TMU revision IDs detected\n
+10053a14	76	string	sst1InitGetDeviceInfo: ERROR, multiple different TMU revision IDs detected\n
+10053a60	36	string	ERROR:  b_sum=0x%03x  r_sum=0x%03x\n
+10053a84	35	string	ERROR:  non-unique r/b_sum=0x%03x\n
+10053aa8	33	string	ERROR:  non-unique g_sum=0x%03x\n
+10053acc	47	string	ERROR: readAndSum4x4 must have an even X (%d)\n
+10053afc	11	string	SST_TMUCFG
+10053b0c	11	string	SST_TMUCFG
+10053b18	36	string	ERROR: unDither: invalid color sum\n
+10053b3c	11	string	SST_FBICFG
+10053b4c	11	string	SST_FBICFG
+10053b58	16	string	SST_FBIMEM_SIZE
+10053b68	16	string	SST_FBIMEM_SIZE
+10053b78	17	string	SST_NODEVICEINFO
+10053b8c	60	string	sst1DeviceInfo: Filling info Struct with default values...\n
+10053bc8	11	string	SST_FBICFG
+10053bd8	11	string	SST_FBICFG
+10053be4	11	string	SST_TMUCFG
+10053bf4	11	string	SST_TMUCFG
+10053c00	16	string	SST_FBIMEM_SIZE
+10053c10	16	string	SST_FBIMEM_SIZE
+10053c20	16	string	SST_TMUMEM_SIZE
+10053c30	16	string	SST_TMUMEM_SIZE
+10053c40	59	string	sst1InitFillDeviceInfo(): Retry #%d for chip GetInfo()...\n
+10053c84	39	string	sst1DeviceInfo: Board ID: Obsidian %s\n
+10053cac	48	string	sst1DeviceInfo: FbiConfig:0x%x, TmuConfig:0x%x\n
+10053cdc	62	string	sst1DeviceInfo: FBI Revision:%d, TMU Revison:%d, Num TMUs:%d\n
+10053d1c	48	string	sst1DeviceInfo: FBI Memory:%d, TMU[0] Memory:%d
+10053d4c	19	string	, TMU[1] Memory:%d
+10053d60	19	string	, TMU[2] Memory:%d
+10053d78	34	string	sst1DeviceInfo: Dac Type: Unknown
+10053d9c	33	string	sst1DeviceInfo: Dac Type: %s %s\n
+10053dc0	27	string	sst1DeviceInfo: Dac Type:\s
+10053ddc	16	string	AT&T ATT20C409\n
+10053dec	13	string	ICS ICS5342\n
+10053dfc	12	string	TI TVP3409\n
+10053e08	9	string	Unknown\n
+10053e14	30	string	sst1DeviceInfo: SliDetect:%d\n
+1005438f	25	string	BSST_IGNORE_INIT_VIDEO
+100543a8	38	string	WARNING: Ignoring sst1InitVideo()...\n
+100543d0	44	string	sst1InitVideo(): Unsupported Resolution...\n
+100543fc	46	string	sst1InitVideo(): Unsupported Refresh Rate...\n
+1005442c	14	string	SST_SCREENREZ
+1005443c	14	string	SST_SCREENREZ
+1005444c	14	string	SST_SCREENREZ
+1005445c	14	string	SST_SCREENREZ
+1005446c	14	string	SST_SCREENREZ
+1005447c	14	string	SST_SCREENREZ
+1005448c	14	string	SST_SCREENREZ
+1005449c	14	string	SST_SCREENREZ
+100544ac	18	string	SST_SCREENREFRESH
+100544c0	18	string	SST_SCREENREFRESH
+100544d4	18	string	SST_SCREENREFRESH
+100544e8	18	string	SST_SCREENREFRESH
+100544fc	18	string	SST_SCREENREFRESH
+10054510	18	string	SST_SCREENREFRESH
+10054524	14	string	SST_SCREENREZ
+10054534	18	string	SST_SCREENREFRESH
+10054548	11	string	SST_ARCADE
+10054554	47	string	sst1InitVideo(): Unsupported Resolution %d...\n
+10054584	16	string	SST_VIDEO_24BPP
+10054594	16	string	SST_VIDEO_24BPP
+100545a4	42	string	sst1InitVideo(): Enabling Video Clock...\n
+100545d0	10	string	SST_HSYNC
+100545e0	10	string	SST_HSYNC
+100545ec	39	string	sst1InitVideo(): Using SST_HSYNC=0x%x\n
+10054614	10	string	SST_VSYNC
+10054624	10	string	SST_VSYNC
+10054630	39	string	sst1InitVideo(): Using SST_VSYNC=0x%x\n
+10054658	14	string	SST_BACKPORCH
+1005466c	14	string	SST_BACKPORCH
+1005467c	43	string	sst1InitVideo(): Using SST_BACKPORCH=0x%x\n
+100546a8	15	string	SST_DIMENSIONS
+100546bc	15	string	SST_DIMENSIONS
+100546cc	44	string	sst1InitVideo(): Using SST_DIMENSIONS=0x%x\n
+100546f8	14	string	SST_MEMOFFSET
+1005470c	14	string	SST_MEMOFFSET
+1005471c	45	string	sst1InitVideo(): Using video memOffset=0x%x\n
+1005474c	13	string	SST_TILESINX
+10054760	13	string	SST_TILESINX
+10054770	44	string	sst1InitVideo(): Using video tilesInX=0x%x\n
+1005479c	18	string	SST_TRIPLE_BUFFER
+100547b0	44	string	sst1InitVideo(): Enabling Triple Buffering\n
+100547dc	17	string	SST_VFIFO_THRESH
+100547f0	17	string	SST_VFIFO_THRESH
+10054804	76	string	sst1InitVideo(): Overriding Default Video Fifo Threshold %d and Storing %d\n
+10054850	17	string	SST_VFIFO_THRESH
+10054864	76	string	sst1InitVideo() Setting up video for resolution (%d, %d), Refresh:%d Hz...\n
+100548b0	44	string	sst1InitVideo(): Video Fifo Threshold = %d\n
+100548dc	16	string	SST_MEMFIFO_LWM
+100548f0	16	string	SST_MEMFIFO_LWM
+10054900	16	string	SST_MEMFIFO_HWM
+10054914	16	string	SST_MEMFIFO_HWM
+10054924	16	string	SST_PCIFIFO_LWM
+10054938	16	string	SST_PCIFIFO_LWM
+10054948	62	string	sst1InitVideo(): pciFifoLwm:%d  memFifoLwm:%d  memFifoHwm:%d\n
+10054988	12	string	SST_MEMFIFO
+10054994	12	string	SST_MEMFIFO
+100549a0	20	string	SST_MEMFIFO_ENTRIES
+100549b8	20	string	SST_MEMFIFO_ENTRIES
+100549cc	55	string	sst1InitVideo(): Enabling Memory FIFO (Entries=%d)...\n
+10054a04	55	string	sst1InitVideo(): Setting memory FIFO LWM to 0x%x (%d)\n
+10054a3c	15	string	SST_VIN_CLKDEL
+10054a50	15	string	SST_VIN_CLKDEL
+10054a60	16	string	SST_VOUT_CLKDEL
+10054a74	16	string	SST_VOUT_CLKDEL
+10054a84	50	string	sst1InitVideo(): vInClkDel=0x%x  vOutClkDel=0x%x\n
+10054ab8	46	string	sst1InitVideo(): Setting 16BPP video mode...\n
+10054ae8	46	string	sst1InitVideo(): Setting 24BPP video mode...\n
+10054b18	25	string	SST_VIDEO_FILTER_DISABLE
+10054b34	27	string	SST_VIDEO_FILTER_THRESHOLD
+10054b54	27	string	SST_VIDEO_FILTER_THRESHOLD
+10054b70	62	string	sst1InitVideo(): Setting Video Filtering Treshold to 0x%x...\n
+10054bb0	47	string	sst1InitVideo(): Disabling Video Filtering...\n
+10054be0	15	string	SST_FT_CLK_DEL
+10054bf4	15	string	SST_FT_CLK_DEL
+10054c04	16	string	SST_TF0_CLK_DEL
+10054c18	16	string	SST_TF0_CLK_DEL
+10054c28	16	string	SST_TF1_CLK_DEL
+10054c3c	16	string	SST_TF1_CLK_DEL
+10054c4c	16	string	SST_TF2_CLK_DEL
+10054c60	16	string	SST_TF2_CLK_DEL
+10054c70	61	string	sst1InitVideo(): Setting FBI-to-TREX clock delay to 0x%x...\n
+10054cb0	65	string	sst1InitVideo(): Setting TREX#0 TREX-to-FBI clock delay to 0x%x\n
+10054cf4	65	string	sst1InitVideo(): Setting TREX#1 TREX-to-FBI clock delay to 0x%x\n
+10054d38	65	string	sst1InitVideo(): Setting TREX#2 TREX-to-FBI clock delay to 0x%x\n
+10054d7c	13	string	SST_VIDCLK2X
+10054d90	13	string	SST_VIDCLK2X
+10054da0	18	string	SST_VIDEO_NOCLEAR
+10054db4	21	string	SST_VIDEO_CLEARCOLOR
+10054dd0	21	string	SST_VIDEO_CLEARCOLOR
+10054de8	50	string	sst1InitVideo(): Not Clearing Frame Buffer(s)...\n
+10054e1c	18	string	SST_VIDEO_DISABLE
+10054e30	44	string	sst1InitVideo(): Disabling video timing...\n
+10054e5c	43	string	sst1InitVideo() exiting with status %d...\n
+10054e88	13	string	SST_DEBUGDAC
+10054e98	34	string	sst1InitSetVidMode(): Entered...\n
+10054ebc	13	string	SST_DEBUGDAC
+10054ecc	33	string	sst1InitSetVidClk(): Entered...\n
+10054ef0	57	string	sst1InitSetVidClk(): Setting up %.2f MHz Video Clock...\n
+10054f2c	13	string	SST_DEBUGDAC
+10054f3c	33	string	sst1InitSetGrxClk(): Entered...\n
+10054f60	59	string	sst1InitSetGrxClk(): Resetting TMUs after clock change...\n
+10054fac	13	string	SST_DEBUGDAC
+10054fbc	18	string	dacRd(0x%x,0x%x)\n
+10054fd0	13	string	SST_DEBUGDAC
+10054fe0	18	string	dacWr(0x%x,0x%x)\n
+10054ff4	13	string	SST_DEBUGDAC
+10055004	20	string	dacRdWr(Read=0x%x)\n
+10055018	35	string	dacWrModPop(Stack=0x%x,Mask=0x%x)\n
+1005503c	13	string	SST_DEBUGDAC
+1005504c	33	string	sst1InitDacDetect(): Entered...\n
+10055070	13	string	SST_DEBUGDAC
+10055080	36	string	sst1InitDacDetectATT(): Entered...\n
+100550a4	36	string	sst1InitDacDetectATT(): Exiting...\n
+100550c8	36	string	sst1InitDacDetectATT(): Exiting...\n
+100550ec	13	string	SST_DEBUGDAC
+100550fc	35	string	sst1InitDacDetectTI(): Entered...\n
+10055120	35	string	sst1InitDacDetectTI(): Exiting...\n
+10055144	35	string	sst1InitDacDetectTI(): Exiting...\n
+10055168	13	string	SST_DEBUGDAC
+10055178	36	string	sst1InitDacDetectICS(): Entered...\n
+1005519c	36	string	sst1InitDacDetectICS(): Exiting...\n
+100551c0	36	string	sst1InitDacDetectICS(): Exiting...\n
+100551e4	11	string	SST_GRXCLK
+100551f0	72	string	sst1InitCalcGrxClk(): Overriding default clk frequency with SST_GRXCLK\n
+10055238	11	string	SST_GRXCLK
+10055244	55	string	sst1InitGrxClk(): Setting up %d MHz Graphics Clock...\n
+1005527c	13	string	SST_DEBUGDAC
+1005528c	36	string	sst1InitSetVidClkINI(): Entered...\n
+100552b0	60	string	sst1InitDacIndexedEnable() ERROR: Could not Initialize DAC\n
+10055300	11	string	SST_RGAMMA
+1005530c	11	string	SST_RGAMMA
+10055318	11	string	SST_GGAMMA
+10055324	11	string	SST_GGAMMA
+10055330	11	string	SST_BGAMMA
+1005533c	11	string	SST_BGAMMA
+10055348	10	string	SST_GAMMA
+10055354	10	string	SST_GAMMA
+10055360	45	string	sst1InitGammaRGB(): Enabling Video Clock...\n
+10055390	57	string	sst1InitGammaRGB(): Setting GammaRGB = (%.2f,%.2f,%.2f)\n
+100553cc	46	string	sst1InitGammaRGB() exiting with status %d...\n
+10055400	44	string	@#%$Workfile: initmrti.c $ $Revision: 4 $
+10055430	44	string	@#%$Workfile: init9685.c $ $Revision: 14 $
+10055460	44	string	@#%$Workfile: initat3d.c $ $Revision: 14 $
+10055588	6	string	ERROR
+10055590	47	string	_dxSurfaceToBufDesc: DdrawSurface Lock failed\n
+100555c0	25	string	Couldn't get Screen Info
+100555dc	29	string	Couldn't get Backbuffer Info
+100555fc	28	string	Couldn't get AuxBuffer Info
+10055618	25	string	DirectDrawCreate Failed!
+10055634	32	string	DDraw2 interface object failed!
+10055654	27	string	Couldn't get display mode!
+10055670	32	string	Display is not in 16bpp format!
+10055690	32	string	Couldn't set cooperative level!
+100556b0	35	string	Couldn't allocate primary surface!
+100556d4	24	string	Create Clipper failed!\n
+100556ec	25	string	Clipper SethWnd failed!\n
+10055708	21	string	Set Clipper failed!\n
+10055720	37	string	Couldn't allocate secondary surface!
+10055748	30	string	Couldn't allocate aux surface
+10055768	32	string	Couldn't set cooperative level!
+10055788	27	string	Couldn't set display mode!
+100557a4	35	string	Couldn't allocate primary surface!
+100557c8	32	string	Couldn't get back buffer info!\n
+100557e8	30	string	Couldn't allocate aux surface
+10055808	36	string	VRush needs a valid window handle!\n
+1005582c	26	string	Bad Fullscreen resolution
+10055848	14	string	failed dxOpen
+10055858	26	string	dxControl: Resize failed\n
+10055874	24	string	dxControl: Move failed\n
+1005588c	30	string	Front Buffer restore failure\n
+100558ac	30	string	Back  Buffer restore failure\n
+100558cc	30	string	Aux   Buffer restore failure\n
+100558ec	16	string	Couldn't blit!\n
+10055e4c	6	string	\s\t-\r]
+1013722a	17	TerminatedCString	DirectDrawCreate
+1013723c	10	TerminatedCString	DDRAW.dll
+10137248	19	TerminatedCString	GetModuleFileNameA
+1013725e	17	TerminatedCString	GetModuleHandleA
+10137272	16	TerminatedCString	DeviceIoControl
+10137284	12	TerminatedCString	CreateFileA
+10137290	13	TerminatedCString	KERNEL32.dll
+101372a0	12	TerminatedCString	MessageBoxA
+101372ae	15	TerminatedCString	ClientToScreen
+101372c0	14	TerminatedCString	GetClientRect
+101372d0	16	TerminatedCString	GetActiveWindow
+101372e0	11	TerminatedCString	USER32.dll
+101372ee	10	TerminatedCString	HeapAlloc
+101372fa	12	TerminatedCString	ExitProcess
+10137308	17	TerminatedCString	TerminateProcess
+1013731c	18	TerminatedCString	GetCurrentProcess
+10137330	16	TerminatedCString	GetCommandLineA
+10137342	15	TerminatedCString	GetProcAddress
+10137354	11	TerminatedCString	GetVersion
+10137362	9	TerminatedCString	HeapFree
+1013736e	13	TerminatedCString	GetLastError
+1013737e	12	TerminatedCString	CloseHandle
+1013738c	15	TerminatedCString	SetHandleCount
+1013739e	12	TerminatedCString	GetFileType
+101373ac	13	TerminatedCString	GetStdHandle
+101373bc	16	TerminatedCString	GetStartupInfoA
+101373ce	9	TerminatedCString	ReadFile
+101373da	12	TerminatedCString	HeapDestroy
+101373e8	11	TerminatedCString	HeapCreate
+101373f6	12	TerminatedCString	VirtualFree
+10137404	13	TerminatedCString	VirtualAlloc
+10137414	20	TerminatedCString	WideCharToMultiByte
+1013742a	10	TerminatedCString	GetCPInfo
+10137436	7	TerminatedCString	GetACP
+10137440	9	TerminatedCString	GetOEMCP
+1013744c	24	TerminatedCString	FreeEnvironmentStringsA
+10137466	20	TerminatedCString	MultiByteToWideChar
+1013747c	22	TerminatedCString	GetEnvironmentStrings
+10137494	24	TerminatedCString	FreeEnvironmentStringsW
+101374ae	23	TerminatedCString	GetEnvironmentStringsW
+101374c8	26	TerminatedCString	DisableThreadLibraryCalls
+101374e4	10	TerminatedCString	WriteFile
+101374f0	17	TerminatedCString	FlushFileBuffers
+10137504	13	TerminatedCString	LCMapStringA
+10137514	13	TerminatedCString	LCMapStringW
+10137524	15	TerminatedCString	GetStringTypeA
+10137536	15	TerminatedCString	GetStringTypeW
+10137548	13	TerminatedCString	SetStdHandle
+10137558	15	TerminatedCString	SetFilePointer
+1013756a	15	TerminatedCString	CompareStringA
+1013757c	15	TerminatedCString	CompareStringW
+1013758e	24	TerminatedCString	SetEnvironmentVariableA
+101375a8	13	TerminatedCString	LoadLibraryA
+101375b8	13	TerminatedCString	SetEndOfFile
+101375c8	15	TerminatedCString	RaiseException
+101375da	12	TerminatedCString	HeapReAlloc
+101375e8	24	TerminatedCString	SetEnvironmentVariableW
+10137602	15	TerminatedCString	GetLocaleInfoA
+10137614	15	TerminatedCString	GetLocaleInfoW
+101380c2	30	TerminatedUnicode	StringFileInfo
+101380e6	18	TerminatedUnicode	040904E4
+101380fe	24	TerminatedUnicode	CompanyName
+10138118	46	TerminatedUnicode	3Dfx Interactive, Inc.
+1013814e	32	TerminatedUnicode	FileDescription
+10138170	66	TerminatedUnicode	3Dfx Interactive, Inc. Glide DLL
+101381ba	24	TerminatedUnicode	FileVersion
+101381d4	8	TerminatedUnicode	2.3
+101381e2	26	TerminatedUnicode	InternalName
+101381fc	24	TerminatedUnicode	glide2x.dll
+1013821a	30	TerminatedUnicode	LegalCopyright
+10138238	80	TerminatedUnicode	Copyright © 3Dfx Interactive, Inc. 1996
+1013828e	34	TerminatedUnicode	OriginalFilename
+101382b0	24	TerminatedUnicode	glide2x.dll
+101382ce	24	TerminatedUnicode	ProductName
+101382e8	96	TerminatedUnicode	Glide(tm) for Voodoo Graphics© and Windows®  95
+1013834e	30	TerminatedUnicode	ProductVersion
+1013836c	8	TerminatedUnicode	2.3
+1013837a	38	TerminatedUnicode	Graphics Subsystem
+101383a0	34	TerminatedUnicode	\sVoodoo Rush(tm)
+101383ca	24	TerminatedUnicode	VarFileInfo
+101383ea	24	TerminatedUnicode	Translation

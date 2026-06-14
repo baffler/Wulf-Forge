@@ -1,0 +1,199 @@
+address	length	data_type	value
+1001139e	30	string	GAIsProcessorFeaturePresent
+100113bc	9	string	KERNEL32
+100113c8	6	string	e+000
+100114a0	14	unicode	(null)
+100114b0	7	string	(null)
+100114b8	23	string	__GLOBAL_HEAP_SELECTED
+100114d0	21	string	__MSVCRT_HEAP_SELECT
+100114e8	16	string	runtime error\s
+100114fc	16	string	TLOSS error\r\n
+1001150c	16	string	SING error\r\n
+1001151c	16	string	DOMAIN error\r\n
+1001152c	40	string	R6028\r\n- unable to initialize heap\r\n
+10011554	56	string	R6027\r\n- not enough space for lowio initialization\r\n
+1001158c	56	string	R6026\r\n- not enough space for stdio initialization\r\n
+100115c4	40	string	R6025\r\n- pure virtual function call\r\n
+100115ec	56	string	R6024\r\n- not enough space for _onexit/atexit table\r\n
+10011624	44	string	R6019\r\n- unable to open console device\r\n
+10011650	36	string	R6018\r\n- unexpected heap error\r\n
+10011674	48	string	R6017\r\n- unexpected multithread lock error\r\n
+100116a4	44	string	R6016\r\n- not enough space for thread data\r\n
+100116d0	36	string	\r\nabnormal program termination\r\n
+100116f4	44	string	R6009\r\n- not enough space for environment\r\n
+10011720	44	string	R6008\r\n- not enough space for arguments\r\n
+1001174c	40	string	R6002\r\n- floating point not loaded\r\n
+10011774	37	string	Microsoft Visual C++ Runtime Library
+100117a0	26	string	Runtime Error!\n\nProgram:\s
+100117c0	23	string	<program name unknown>
+10011840	19	string	GetLastActivePopup
+10011854	16	string	GetActiveWindow
+10011864	12	string	MessageBoxA
+10011870	11	string	user32.dll
+100118b0	7	string	1#QNAN
+100118b8	6	string	1#INF
+100118c0	6	string	1#IND
+100118c8	7	string	1#SNAN
+10011914	8	string	floor
+10011984	8	string	H:mm:ss
+1001198c	20	string	dddd, MMMM dd, yyyy
+100119a0	7	string	M/d/yy
+100119b0	9	string	December
+100119bc	9	string	November
+100119c8	8	string	October
+100119d0	10	string	September
+100119dc	7	string	August
+100119f4	6	string	April
+100119fc	6	string	March
+10011a04	9	string	February
+10011a10	8	string	January
+10011a48	9	string	Saturday
+10011a54	7	string	Friday
+10011a5c	9	string	Thursday
+10011a68	10	string	Wednesday
+10011a74	8	string	Tuesday
+10011a7c	7	string	Monday
+10011a84	7	string	Sunday
+10011aa8	24	string	SunMonTueWedThuFriSat
+10011ac0	40	string	JanFebMarAprMayJunJulAugSepOctNovDec
+10011d6e	12	TerminatedCString	GlobalAlloc
+10011d7c	11	TerminatedCString	GlobalFree
+10011d88	13	TerminatedCString	KERNEL32.dll
+10011d98	13	TerminatedCString	UpdateWindow
+10011da8	11	TerminatedCString	ShowWindow
+10011db6	16	TerminatedCString	CreateWindowExA
+10011dc8	11	TerminatedCString	ShowCursor
+10011dd6	20	TerminatedCString	SetForegroundWindow
+10011dec	14	TerminatedCString	DestroyWindow
+10011dfa	11	TerminatedCString	USER32.dll
+10011e08	17	TerminatedCString	_grClipWindow@16
+10011e1c	25	TerminatedCString	_grTexCalcMemRequired@16
+10011e38	19	TerminatedCString	_grGlideSetState@4
+10011e4e	23	TerminatedCString	_grTexDownloadTable@12
+10011e68	20	TerminatedCString	_grChromakeyValue@4
+10011e7e	19	TerminatedCString	_grChromakeyMode@4
+10011e94	19	TerminatedCString	_grTexClampMode@12
+10011eaa	20	TerminatedCString	_grTexMipMapMode@12
+10011ec0	20	TerminatedCString	_grTexFilterMode@12
+10011ed6	29	TerminatedCString	_grAlphaTestReferenceValue@4
+10011ef6	23	TerminatedCString	_grAlphaTestFunction@4
+10011f10	17	TerminatedCString	_grTexCombine@28
+10011f24	19	TerminatedCString	_grFogColorValue@4
+10011f3a	19	TerminatedCString	_grAlphaCombine@20
+10011f50	24	TerminatedCString	_grConstantColorValue@4
+10011f6a	19	TerminatedCString	_grColorCombine@20
+10011f80	25	TerminatedCString	_grAlphaBlendFunction@16
+10011f9c	19	TerminatedCString	_grGlideGetState@4
+10011fb2	13	TerminatedCString	_grFogMode@4
+10011fc2	15	TerminatedCString	_grDepthMask@4
+10011fd4	25	TerminatedCString	_grDepthBufferFunction@4
+10011ff0	21	TerminatedCString	_grDepthBufferMode@4
+10012008	14	TerminatedCString	_grCullMode@4
+10012018	18	TerminatedCString	_grRenderBuffer@4
+1001202c	11	TerminatedCString	_grHints@8
+1001203a	23	TerminatedCString	_grDisableAllEffects@0
+10012054	22	TerminatedCString	_grErrorSetCallback@4
+1001206c	17	TerminatedCString	_grSstWinOpen@28
+10012080	15	TerminatedCString	_grSstSelect@4
+10012092	18	TerminatedCString	_grBufferClear@12
+100120a6	13	TerminatedCString	_grSstIdle@0
+100120b6	16	TerminatedCString	_grBufferSwap@4
+100120c8	17	TerminatedCString	_grSstWinClose@0
+100120dc	19	TerminatedCString	_grDrawTriangle@12
+100120f2	16	TerminatedCString	_grAADrawLine@8
+10012104	15	TerminatedCString	_grDrawPoint@4
+10012116	17	TerminatedCString	_grAADrawPoint@4
+1001212a	27	TerminatedCString	_grDrawPolygonVertexList@8
+10012148	16	TerminatedCString	_grTexSource@16
+1001215a	20	TerminatedCString	_grLfbReadRegion@28
+10012170	22	TerminatedCString	_grSstQueryHardware@4
+10012188	15	TerminatedCString	_grGlideInit@0
+1001219a	20	TerminatedCString	_grSstQueryBoards@4
+100121b0	19	TerminatedCString	_grGlideShutdown@0
+100121c6	19	TerminatedCString	_grTexMaxAddress@4
+100121dc	19	TerminatedCString	_grTexMinAddress@4
+100121f2	24	TerminatedCString	_grTexDownloadMipMap@16
+1001220a	12	TerminatedCString	glide2x.dll
+10012218	10	TerminatedCString	RtlUnwind
+10012224	12	TerminatedCString	ExitProcess
+10012232	17	TerminatedCString	TerminateProcess
+10012246	18	TerminatedCString	GetCurrentProcess
+1001225a	16	TerminatedCString	GetCommandLineA
+1001226c	11	TerminatedCString	GetVersion
+1001227a	21	TerminatedCString	EnterCriticalSection
+10012292	21	TerminatedCString	LeaveCriticalSection
+100122aa	10	TerminatedCString	HeapAlloc
+100122b6	9	TerminatedCString	HeapFree
+100122c2	15	TerminatedCString	GetProcAddress
+100122d4	17	TerminatedCString	GetModuleHandleA
+100122e8	19	TerminatedCString	GetCurrentThreadId
+100122fe	12	TerminatedCString	TlsSetValue
+1001230c	9	TerminatedCString	TlsAlloc
+10012318	8	TerminatedCString	TlsFree
+10012322	13	TerminatedCString	SetLastError
+10012332	12	TerminatedCString	TlsGetValue
+10012340	13	TerminatedCString	GetLastError
+10012350	26	TerminatedCString	InitializeCriticalSection
+1001236c	22	TerminatedCString	DeleteCriticalSection
+10012384	15	TerminatedCString	SetHandleCount
+10012396	13	TerminatedCString	GetStdHandle
+100123a6	12	TerminatedCString	GetFileType
+100123b4	16	TerminatedCString	GetStartupInfoA
+100123c6	19	TerminatedCString	GetModuleFileNameA
+100123dc	24	TerminatedCString	FreeEnvironmentStringsA
+100123f6	24	TerminatedCString	FreeEnvironmentStringsW
+10012410	20	TerminatedCString	WideCharToMultiByte
+10012426	22	TerminatedCString	GetEnvironmentStrings
+1001243e	23	TerminatedCString	GetEnvironmentStringsW
+10012458	24	TerminatedCString	GetEnvironmentVariableA
+10012472	14	TerminatedCString	GetVersionExA
+10012482	12	TerminatedCString	HeapDestroy
+10012490	11	TerminatedCString	HeapCreate
+1001249e	12	TerminatedCString	VirtualFree
+100124ac	10	TerminatedCString	WriteFile
+100124b8	13	TerminatedCString	VirtualAlloc
+100124c8	12	TerminatedCString	HeapReAlloc
+100124d6	14	TerminatedCString	IsBadWritePtr
+100124e6	21	TerminatedCString	InterlockedDecrement
+100124fe	21	TerminatedCString	InterlockedIncrement
+10012516	28	TerminatedCString	SetUnhandledExceptionFilter
+10012534	13	TerminatedCString	IsBadReadPtr
+10012544	13	TerminatedCString	IsBadCodePtr
+10012554	15	TerminatedCString	SetFilePointer
+10012566	10	TerminatedCString	GetCPInfo
+10012572	7	TerminatedCString	GetACP
+1001257c	9	TerminatedCString	GetOEMCP
+10012588	13	TerminatedCString	LoadLibraryA
+10012598	17	TerminatedCString	FlushFileBuffers
+100125ac	20	TerminatedCString	MultiByteToWideChar
+100125c2	15	TerminatedCString	GetStringTypeA
+100125d4	15	TerminatedCString	GetStringTypeW
+100125e6	13	TerminatedCString	LCMapStringA
+100125f6	13	TerminatedCString	LCMapStringW
+10012606	13	TerminatedCString	SetStdHandle
+10012616	15	TerminatedCString	RaiseException
+10012628	12	TerminatedCString	CloseHandle
+10012690	16	TerminatedCString	win32_glide.dll
+100126a0	37	TerminatedCString	?deallocate_winsys@@YAXPAVWinsys@@@Z
+100126c5	14	TerminatedCString	detect_winsys
+100126d3	19	TerminatedCString	instantiate_winsys
+100126e6	13	TerminatedCString	process_exit
+100130a8	38	string	Glide v2.43 (3dfx-specific rendering)
+100130d0	59	string	Glide v2.43, Voodoo2 Enhanced (Two-Fisted TMUs of Terror!)
+1001310c	12	string	Shock Force
+10013118	12	string	WRITE_ONLY
+10013124	12	string	READ_ONLY
+10013130	8	string	UNKNOWN
+10013138	11	string	3Dfx Glide
+10013144	7	string	VOODOO
+1001314c	6	string	SST96
+1001315c	8	string	Unknown
+10013164	22	string	glide process_exit()\n
+1001317c	20	string	Board type is "%s"\n
+10013190	8	string	%d: %d
+100131b0	8	string	plane:\s
+100131b8	8	string	ERROR\s
+100131e0	20	string	magnitude: % 7.2f\n
+10013244	28	string	FATAL RUNTIME ERROR: %s\n
+ffdff1ac	36	uchar[36]	\N
+ffdffc00	522	wchar16[261]	\N

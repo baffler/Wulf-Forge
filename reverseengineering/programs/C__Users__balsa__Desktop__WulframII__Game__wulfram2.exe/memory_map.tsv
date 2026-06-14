@@ -1,0 +1,7 @@
+name	start	end	size	read	write	execute	initialized	loaded	overlay	type	source	comment
+Headers	00400000	004003ff	1024	true	false	false	true	true	false	Default	\N	\N
+.text	00401000	0053b3ff	1287168	true	false	true	true	true	false	Default	\N	\N
+.rdata	0053c000	005721ff	221696	true	false	false	true	true	false	Default	\N	\N
+.data	00573000	00685383	1123204	true	true	false	true	true	false	Default	\N	\N
+.rsrc	00686000	006875ff	5632	true	false	false	true	true	false	Default	\N	\N
+tdb	ffdff000	ffdfffff	4096	true	true	false	true	true	false	Default	\N	\N
