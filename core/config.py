@@ -47,6 +47,24 @@ class SyncConfig:
     # client_state_relay: a modified client supplies authoritative transform state.
     mode: str = "server_simulation"
 
+@dataclass(frozen=True, slots=True)
+class ModRelayConfig:
+    port: int = 28010
+    owner_auth: bool = True
+    debug_mapping: bool = True
+    auto_bind: bool = True
+    identity_trace: bool = True
+    coalesce_updates: bool = True
+    echo_owner_state: bool = False
+    hard_sync: bool = False
+    adaptive_hard_sync: bool = True
+    hard_sync_teleport_distance: float = 250.0
+    hard_sync_stale_ms: int = 500
+    hard_sync_initial_packets: int = 3
+    apply_velocity: bool = True
+    apply_rotation: bool = True
+    apply_spin: bool = False
+
 # ----------------------------------------------------------------------
 # ---- Not part of the static config, these will change at runtime
 # ----------------------------------------------------------------------
@@ -66,6 +84,7 @@ class Config:
     player: PlayerConfig = PlayerConfig()
     debug: DebugConfig = DebugConfig()
     sync: SyncConfig = SyncConfig()
+    mod_relay: ModRelayConfig = ModRelayConfig()
 
     @classmethod
     def load(cls, filename: str = "config.toml") -> Config:
@@ -96,4 +115,5 @@ class Config:
             player=unpack(PlayerConfig, data.get("player", {})) if "player" in data else PlayerConfig(),
             debug=unpack(DebugConfig, data.get("debug", {})) if "debug" in data else DebugConfig(),
             sync=unpack(SyncConfig, data.get("sync", {})) if "sync" in data else SyncConfig(),
+            mod_relay=unpack(ModRelayConfig, data.get("mod_relay", {})) if "mod_relay" in data else ModRelayConfig(),
         )

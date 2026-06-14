@@ -24,13 +24,24 @@ class SyncModeTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp_dir:
             config_path = Path(tmp_dir) / "config.toml"
             config_path.write_text(
-                "[sync]\nmode = \"client_state_relay\"\n",
+                "\n".join(
+                    [
+                        "[sync]",
+                        "mode = \"client_state_relay\"",
+                        "",
+                        "[mod_relay]",
+                        "port = 28111",
+                        "echo_owner_state = true",
+                    ]
+                ),
                 encoding="utf-8",
             )
 
             cfg = Config.load(str(config_path))
 
         self.assertEqual(cfg.sync.mode, main.SYNC_MODE_CLIENT_STATE_RELAY)
+        self.assertEqual(cfg.mod_relay.port, 28111)
+        self.assertTrue(cfg.mod_relay.echo_owner_state)
 
     def test_server_simulation_policy(self):
         server = _server_with_mode("server_simulation")

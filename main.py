@@ -9,6 +9,7 @@ import os
 import random
 import secrets
 import ipaddress
+import queue
 from typing import Dict, Tuple, Optional
 
 from network.transport.tcp_transport import TcpTransport
@@ -36,6 +37,9 @@ from core.map_loader import MapLoader
 from core.commands import commands
 from network.packets.update_array import UpdateArrayPacket
 from network.translation_config import get_config_by_index, GLOBAL_CONFIGS
+from mod_relay.listener import ModStateRelayListener
+from mod_relay.packets import ClientStateV1
+from mod_relay.state_apply import apply_mod_client_state
 
 # -------------------------------------------------------------------------
 # CONTEXTS
@@ -76,6 +80,16 @@ class ClientSession:
         # UDP Linkage
         self.udp_addr: Optional[Tuple[str, int]] = None
         self.udp_context: Optional[UdpContext] = None
+
+        # W2Mod relay debug identity. These best-effort bindings are for
+        # local/LAN owner-authoritative testing, not authentication.
+        self.mod_relay_addr: Optional[Tuple[str, int]] = None
+        self.mod_relay_local_entity: int = 0
+        self.mod_relay_packet_player_id: int = 0
+        self.mod_relay_bound_at: float = 0.0
+        self.mod_relay_last_seen_at: float = 0.0
+        self.mod_relay_last_spawned_at: float = 0.0
+        self.mod_relay_binding_reason: str = ""
         
         # Synchronization Events (Specific to this client now)
         self.stop_ping_event = threading.Event()
@@ -112,6 +126,12 @@ class WulframServerContext:
 
         # Session Management
         self.sessions: list[ClientSession] = []
+        self.mod_state_queue: queue.SimpleQueue[tuple[ClientSession, ClientStateV1]] = queue.SimpleQueue()
+        self.mod_relay_listener: Optional[ModStateRelayListener] = None
+        self.mod_relay_dirty_entity_ids: set[int] = set()
+        self.mod_relay_entity_updates: dict[int, dict] = {}
+        self._last_mod_broadcast_log = 0.0
+        self._last_mod_coalesce_log = 0.0
 
         # ID Counters
         self._next_player_id = 1
@@ -140,6 +160,9 @@ class WulframServerContext:
         self._next_player_id += 1
         return pid
 
+    def enqueue_mod_client_state(self, session: ClientSession, state: ClientStateV1) -> None:
+        self.mod_state_queue.put((session, state))
+
     def run(self):
         """Starts the UDP listener thread and the TCP accept loop."""
         # 1. Setup UDP
@@ -150,6 +173,16 @@ class WulframServerContext:
         # Start UDP Thread
         udp_thread = threading.Thread(target=self._udp_loop, daemon=True)
         udp_thread.start()
+
+        if should_accept_client_state_relay(self):
+            self.mod_relay_listener = ModStateRelayListener(
+                host=self.cfg.network.host,
+                port=self.cfg.mod_relay.port,
+                server=self,
+            )
+            self.mod_relay_listener.start()
+        else:
+            print("[mod-relay] disabled by sync mode")
 
         # 2. Setup TCP
         self.tcp_sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -221,8 +254,18 @@ class WulframServerContext:
             print("\n[!] Stopping server...")
             self.stop_event.set()
         finally:
-            self.tcp_sock.close()
-            self.udp_sock.close()
+            self.stop_event.set()
+            self.stop_update_event.set()
+            if self.mod_relay_listener:
+                self.mod_relay_listener.stop()
+            try:
+                self.tcp_sock.close()
+            except OSError:
+                pass
+            try:
+                self.udp_sock.close()
+            except OSError:
+                pass
 
     def _handle_tcp_client(self, session: ClientSession):
         """
@@ -357,6 +400,110 @@ def should_accept_client_state_relay(server: WulframServerContext) -> bool:
     return get_sync_mode(server) == SYNC_MODE_CLIENT_STATE_RELAY
 
 
+def _drain_mod_state_queue(server: WulframServerContext, max_updates: int = 256) -> None:
+    relay_cfg = getattr(server.cfg, "mod_relay", None)
+    coalesce_updates = True if relay_cfg is None else getattr(relay_cfg, "coalesce_updates", True)
+
+    if coalesce_updates:
+        latest_by_session: dict[ClientSession, ClientStateV1] = {}
+        drained = 0
+        for _ in range(max_updates):
+            try:
+                session, state = server.mod_state_queue.get_nowait()
+            except queue.Empty:
+                break
+
+            drained += 1
+            latest_by_session[session] = state
+
+        if drained > len(latest_by_session) and latest_by_session:
+            now = time.monotonic()
+            if now - server._last_mod_coalesce_log >= 5.0:
+                server._last_mod_coalesce_log = now
+                print(
+                    "[mod-relay] coalesced queued states "
+                    f"drained={drained} applied_latest={len(latest_by_session)}"
+                )
+
+        for session, state in latest_by_session.items():
+            _apply_queued_mod_state(server, session, state)
+        return
+
+    for _ in range(max_updates):
+        try:
+            session, state = server.mod_state_queue.get_nowait()
+        except queue.Empty:
+            return
+
+        _apply_queued_mod_state(server, session, state)
+
+
+def _apply_queued_mod_state(server: WulframServerContext, session: ClientSession, state: ClientStateV1) -> None:
+    if session not in server.sessions or not session.is_logged_in:
+        return
+
+    if apply_mod_client_state(server, session, state):
+        if session.entity is not None:
+            previous_update = server.mod_relay_entity_updates.get(session.entity.net_id, {})
+            apply_count = int(previous_update.get("apply_count", 0) or 0) + 1
+            server.mod_relay_dirty_entity_ids.add(session.entity.net_id)
+            server.mod_relay_entity_updates[session.entity.net_id] = {
+                "monotonic": time.monotonic(),
+                "sequence": state.sequence,
+                "client_tick_ms": state.client_tick_ms,
+                "local_entity": state.local_entity,
+                "player_id": state.player_id,
+                "mapping_reason": getattr(session, "mod_relay_binding_reason", ""),
+                "apply_count": apply_count,
+                "hard_sync": bool(session.entity.pending_mask & UpdateMask.HARD_SYNC),
+                "hard_sync_reason": getattr(session, "mod_relay_last_hard_sync_reason", ""),
+            }
+        if server.mod_relay_listener:
+            server.mod_relay_listener.note_applied(session, state)
+    elif server.mod_relay_listener:
+        server.mod_relay_listener.note_rejected_apply(session, state)
+
+
+def reset_mod_relay_binding(session: ClientSession, reason: str) -> None:
+    previous_addr = getattr(session, "mod_relay_addr", None)
+    previous_local_entity = getattr(session, "mod_relay_local_entity", 0)
+    previous_packet_player_id = getattr(session, "mod_relay_packet_player_id", 0)
+
+    session.mod_relay_addr = None
+    session.mod_relay_local_entity = 0
+    session.mod_relay_packet_player_id = 0
+    session.mod_relay_bound_at = 0.0
+    session.mod_relay_last_seen_at = 0.0
+    session.mod_relay_binding_reason = ""
+
+    relay_cfg = getattr(getattr(session, "server", None), "cfg", None)
+    relay_cfg = getattr(relay_cfg, "mod_relay", None)
+    identity_trace = True if relay_cfg is None else getattr(relay_cfg, "identity_trace", True)
+    if identity_trace and (previous_addr is not None or previous_local_entity or previous_packet_player_id):
+        print(
+            "[mod-relay] identity reset "
+            f"reason={reason} session_player_id={session.player_id} "
+            f"old_addr={previous_addr} old_packet_player_id={previous_packet_player_id} "
+            f"old_local_entity=0x{previous_local_entity:08X}"
+        )
+
+
+def note_mod_relay_entity_spawn(session: ClientSession, entity: GameEntity, source: str) -> None:
+    session.mod_relay_last_spawned_at = time.monotonic()
+    reset_mod_relay_binding(session, f"{source}_spawn")
+
+    relay_cfg = getattr(getattr(session, "server", None), "cfg", None)
+    relay_cfg = getattr(relay_cfg, "mod_relay", None)
+    identity_trace = True if relay_cfg is None else getattr(relay_cfg, "identity_trace", True)
+    if identity_trace:
+        print(
+            "[mod-relay] identity spawn "
+            f"source={source} session_player_id={session.player_id} "
+            f"session_entity_net_id={entity.net_id} tcp_addr={session.address} "
+            f"udp_addr={session.udp_addr}"
+        )
+
+
 def send_existing_player_entity_definitions(ctx: TcpContext | UdpContext, reason: str) -> bool:
     """Replay existing player entity definitions to a newly spawned client.
 
@@ -429,6 +576,9 @@ def global_game_loop(server: WulframServerContext):
 
     while not server.stop_update_event.is_set():
         start_time = time.time()
+
+        if should_accept_client_state_relay(server):
+            _drain_mod_state_queue(server)
         
         if should_run_server_simulation(server):
             # --- 1. Process Inputs (Physics/Actions) ---
@@ -491,6 +641,12 @@ def global_game_loop(server: WulframServerContext):
                 # --- B. PACKET FOR "SELF" (0x0F - View Update) ---
                 # Check if "I" am dirty. If so, send View Update.
                 if my_entity in dirty_entities:
+                    if (
+                        my_entity.net_id in server.mod_relay_dirty_entity_ids
+                        and not server.cfg.mod_relay.echo_owner_state
+                    ):
+                        continue
+
                     # Build payload (Includes Timestamp, Includes Local Stats)
                     stats = (my_entity.health, my_entity.energy)
                     
@@ -507,6 +663,7 @@ def global_game_loop(server: WulframServerContext):
         # --- 4. Cleanup ---
         # Now that everyone has been told about the updates, we can clear the flags.
         server.entities.clear_all_dirty_flags()
+        server.mod_relay_dirty_entity_ids.clear()
 
         # --- 5. Sleep to maintain tick rate ---
         elapsed = time.time() - start_time
@@ -999,6 +1156,7 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
 
         ctx.session.entity = new_entity
         ctx.session.entity.is_manned = True
+        note_mod_relay_entity_spawn(ctx.session, new_entity, "reincarnate")
 
         # 3. Notify the Client
         send_system_message(ctx, f"Spawning Player #{new_entity.net_id}...")
@@ -1294,6 +1452,7 @@ def cmd_spawn(ctx, unit_type_str=None):
         )
         ctx.session.entity.pending_mask = 0
         ctx.session.entity.is_manned = True
+        note_mod_relay_entity_spawn(ctx.session, ctx.session.entity, "command_spawn")
 
         pkt = TankPacket(
             net_id=ctx.session.entity.net_id,
