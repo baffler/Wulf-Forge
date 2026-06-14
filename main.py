@@ -336,6 +336,67 @@ class UdpContext:
 # DISPATCHER & HANDLERS
 # -------------------------------------------------------------------------
 
+def send_existing_player_entity_definitions(ctx: TcpContext | UdpContext, reason: str) -> bool:
+    """Replay existing player entity definitions to a newly spawned client.
+
+    This is a join-in-progress catch-up path. It does not depend on dirty flags,
+    because already-spawned player entities may have cleared their DEFINITION bit
+    before this client entered the world.
+    """
+    session = getattr(ctx, "session", None)
+    if session is None or session.entity is None:
+        return False
+
+    entities_by_id: dict[int, GameEntity] = {}
+    for other_session in ctx.server.sessions:
+        if other_session is session or not other_session.is_logged_in:
+            continue
+
+        entity = getattr(other_session, "entity", None)
+        if entity is None or not getattr(entity, "is_manned", False):
+            continue
+
+        entities_by_id[entity.net_id] = entity
+
+    if not entities_by_id:
+        return False
+
+    target_ctx = session.udp_context or ctx
+    entities = sorted(entities_by_id.values(), key=lambda entity: entity.net_id)
+
+    # Replay birth notices because late joiners missed the original spawn-time
+    # broadcast. The original spawn path uses entity net_id here.
+    for entity in entities:
+        target_ctx.send(BirthNoticePacket(entity.net_id))
+
+    forced_mask = (
+        UpdateMask.DEFINITION
+        | UpdateMask.POS
+        | UpdateMask.VEL
+        | UpdateMask.ROT
+        | UpdateMask.HEALTH
+    )
+    local_stats = (session.entity.health, session.entity.energy)
+    payload = ctx.server.entities.build_forced_update_packet(
+        entities,
+        sequence_num=get_ticks(),
+        is_view_update=False,
+        forced_mask=forced_mask,
+        local_stats=local_stats,
+        force_spawn=True,
+    )
+    if not payload:
+        return False
+
+    target_ctx.send(b"\x0E" + payload)
+    ids = ",".join(str(entity.net_id) for entity in entities)
+    print(
+        "[sync] sent late-join entity definitions "
+        f"reason={reason} to_player={session.player_id} entities={ids}"
+    )
+    return True
+
+
 def global_game_loop(server: WulframServerContext):
     """
     Main Server Tick (Targeting ~10Hz).
@@ -931,6 +992,7 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
             rot=repair_pad.rot
         )
         ctx.send(pkt)
+        send_existing_player_entity_definitions(ctx, "reincarnate")
         
         # TODO: what's this do exactly? And does it need to use
         # net_id or player_id?
@@ -1219,6 +1281,7 @@ def cmd_spawn(ctx, unit_type_str=None):
             rot=(0.0, 0.0, 0.0)
         )
         ctx.send(pkt)
+        send_existing_player_entity_definitions(ctx, "command_spawn")
         send_system_message(ctx, "Spawning Local Player...")
 
         # TODO: what's this do exactly? And does it need to use
