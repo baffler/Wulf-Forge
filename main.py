@@ -336,6 +336,27 @@ class UdpContext:
 # DISPATCHER & HANDLERS
 # -------------------------------------------------------------------------
 
+SYNC_MODE_SERVER_SIMULATION = "server_simulation"
+SYNC_MODE_CLIENT_STATE_RELAY = "client_state_relay"
+VALID_SYNC_MODES = {SYNC_MODE_SERVER_SIMULATION, SYNC_MODE_CLIENT_STATE_RELAY}
+
+
+def get_sync_mode(server: WulframServerContext) -> str:
+    sync_cfg = getattr(getattr(server, "cfg", None), "sync", None)
+    mode = str(getattr(sync_cfg, "mode", SYNC_MODE_SERVER_SIMULATION) or "").strip().lower()
+    if mode not in VALID_SYNC_MODES:
+        return SYNC_MODE_SERVER_SIMULATION
+    return mode
+
+
+def should_run_server_simulation(server: WulframServerContext) -> bool:
+    return get_sync_mode(server) == SYNC_MODE_SERVER_SIMULATION
+
+
+def should_accept_client_state_relay(server: WulframServerContext) -> bool:
+    return get_sync_mode(server) == SYNC_MODE_CLIENT_STATE_RELAY
+
+
 def send_existing_player_entity_definitions(ctx: TcpContext | UdpContext, reason: str) -> bool:
     """Replay existing player entity definitions to a newly spawned client.
 
@@ -409,23 +430,24 @@ def global_game_loop(server: WulframServerContext):
     while not server.stop_update_event.is_set():
         start_time = time.time()
         
-        # --- 1. Process Inputs (Physics/Actions) ---
-        # Apply actions (jump/hover) for every active player
-        for session in server.sessions:
-            if session.entity and session.is_logged_in:
-                my_ent = session.entity
-                
-                # Example: Jump Logic (from your previous code)
-                jump_val = my_ent.actions.get(4, 0.0)
-                if jump_val >= 1.0:
-                    vx, vy, _ = my_ent.vel
-                    # Apply Jump Velocity (Z axis)
-                    final_x = vx if abs(vx) > 0.01 else 0.001
-                    final_y = vy if abs(vy) > 0.01 else 0.001
+        if should_run_server_simulation(server):
+            # --- 1. Process Inputs (Physics/Actions) ---
+            # Apply actions (jump/hover) for every active player
+            for session in server.sessions:
+                if session.entity and session.is_logged_in:
+                    my_ent = session.entity
                     
-                    my_ent.vel = (final_x, final_y, 100.0)
-                    my_ent.mark_dirty(UpdateMask.VEL)
-                    my_ent.actions[4] = 0.0 # Reset trigger
+                    # Example: Jump Logic (from your previous code)
+                    jump_val = my_ent.actions.get(4, 0.0)
+                    if jump_val >= 1.0:
+                        vx, vy, _ = my_ent.vel
+                        # Apply Jump Velocity (Z axis)
+                        final_x = vx if abs(vx) > 0.01 else 0.001
+                        final_y = vy if abs(vy) > 0.01 else 0.001
+                        
+                        my_ent.vel = (final_x, final_y, 100.0)
+                        my_ent.mark_dirty(UpdateMask.VEL)
+                        my_ent.actions[4] = 0.0 # Reset trigger
 
         # --- 2. Gather Dirty State ---
         # We get the list ONCE. The state remains valid for all clients.
@@ -505,30 +527,31 @@ def start_update_loop(ctx: UdpContext):
                 # Use SESSION entity
                 if ctx.session and ctx.session.entity:
                     my_ent = ctx.session.entity
-                    # FIX: Use .get() to avoid KeyError: 4
-                    jump_val = my_ent.actions.get(4, 0.0)
-                    hover_val = my_ent.actions.get(5, 0.0) # Default to 0!
-                    
-                    if jump_val >= 1.0:
-                        # Apply Jump Velocity (Z axis)
-                        # We keep X and Y momentum
-                        vx, vy, vz = my_ent.vel
-                    
-                        # Wake up physics if stopped (Epsilon check)
-                        final_x = vx if abs(vx) > 0.01 else 0.001
-                        final_y = vy if abs(vy) > 0.01 else 0.001
-                        # Apply Jump
-                        my_ent.vel = (final_x, final_y, 100.0)
-                        my_ent.mark_dirty(UpdateMask.VEL)
-                        my_ent.actions[4] = 0.0
-                        print(f"Apply Jump Jets! {ent.vel}")
-                    """elif abs(hover_val) > 0.01:
-                        vx, vy, vz = my_ent.vel
-                        final_x = vx if abs(vx) > 0.01 else 0.001
-                        final_y = vy if abs(vy) > 0.01 else 0.001
+                    if should_run_server_simulation(ctx.server):
+                        # FIX: Use .get() to avoid KeyError: 4
+                        jump_val = my_ent.actions.get(4, 0.0)
+                        hover_val = my_ent.actions.get(5, 0.0) # Default to 0!
                         
-                        my_ent.vel = (final_x, final_y, hover_val * 10.0)
-                        my_ent.mark_dirty(UpdateMask.VEL)"""
+                        if jump_val >= 1.0:
+                            # Apply Jump Velocity (Z axis)
+                            # We keep X and Y momentum
+                            vx, vy, vz = my_ent.vel
+                        
+                            # Wake up physics if stopped (Epsilon check)
+                            final_x = vx if abs(vx) > 0.01 else 0.001
+                            final_y = vy if abs(vy) > 0.01 else 0.001
+                            # Apply Jump
+                            my_ent.vel = (final_x, final_y, 100.0)
+                            my_ent.mark_dirty(UpdateMask.VEL)
+                            my_ent.actions[4] = 0.0
+                            print(f"Apply Jump Jets! {my_ent.vel}")
+                        """elif abs(hover_val) > 0.01:
+                            vx, vy, vz = my_ent.vel
+                            final_x = vx if abs(vx) > 0.01 else 0.001
+                            final_y = vy if abs(vy) > 0.01 else 0.001
+                            
+                            my_ent.vel = (final_x, final_y, hover_val * 10.0)
+                            my_ent.mark_dirty(UpdateMask.VEL)"""
                     
                     # Todo: just update the local player's tank, no need to get dirty for all entities here
                     update_view_payload = ctx.server.entities.get_dirty_packet_view(sequence_num=get_ticks(), health=0.9, energy=1.0)

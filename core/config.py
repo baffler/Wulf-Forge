@@ -41,6 +41,12 @@ class DebugConfig:
     debug_actions: bool = False
     debug_action_packets: bool = False
 
+@dataclass(frozen=True, slots=True)
+class SyncConfig:
+    # server_simulation: action packets drive server-side movement.
+    # client_state_relay: a modified client supplies authoritative transform state.
+    mode: str = "server_simulation"
+
 # ----------------------------------------------------------------------
 # ---- Not part of the static config, these will change at runtime
 # ----------------------------------------------------------------------
@@ -59,6 +65,7 @@ class Config:
     game: GameConfig = GameConfig()
     player: PlayerConfig = PlayerConfig()
     debug: DebugConfig = DebugConfig()
+    sync: SyncConfig = SyncConfig()
 
     @classmethod
     def load(cls, filename: str = "config.toml") -> Config:
@@ -88,4 +95,5 @@ class Config:
             game=unpack(GameConfig, data.get("game", {})) if "game" in data else GameConfig(),
             player=unpack(PlayerConfig, data.get("player", {})) if "player" in data else PlayerConfig(),
             debug=unpack(DebugConfig, data.get("debug", {})) if "debug" in data else DebugConfig(),
+            sync=unpack(SyncConfig, data.get("sync", {})) if "sync" in data else SyncConfig(),
         )
