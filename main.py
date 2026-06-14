@@ -1023,82 +1023,128 @@ def on_beacon_request(ctx: UdpContext, payload: bytes):
 
 # --- ACTION PARSING ---
 
+ACTION_DUMP_IDS = range(1, 22)
+
+ACTION_NAMES = {
+    1: "Turn",
+    2: "Forward",
+    3: "Strafe",
+    4: "JumpJet",
+    5: "Hover (Up/Down)",
+    6: "Tilting",
+}
+
+def _read_action_value(reader: PacketReader, action_id: int) -> float:
+    """
+    Reads one action value. Evidence:
+    ida_exports/curated_functions/004DDC60_Packet_Write_Quantized_Action.c
+    at 0x4DDC60.
+    """
+    if action_id >= 8 or action_id == 4:
+        return 1.0 if reader.read_bits(1) else 0.0
+    if action_id == 5:
+        return reader.read_quantized_float(get_config_by_index(10))
+    return reader.read_quantized_float(get_config_by_index(11))
+
+def _client_id_for_action_log(ctx: UdpContext) -> int | str:
+    if ctx.session:
+        return ctx.session.player_id or "pending"
+    return "unlinked"
+
+def _debug_config_bool(ctx: UdpContext, name: str, default: bool = False) -> bool:
+    server = getattr(ctx, "server", None)
+    cfg = getattr(server, "cfg", None)
+    debug = getattr(cfg, "debug", None)
+    return bool(getattr(debug, name, default))
+
+def _store_action_value(
+    ctx: UdpContext,
+    packet_type: str,
+    action_id: int,
+    value: float,
+) -> tuple[float | None, float]:
+    old_value = None
+    if ctx.session and ctx.session.entity:
+        old_value = ctx.session.entity.actions.get(action_id)
+        # Zero is a real released/neutral state, not "ignore this action."
+        ctx.session.entity.actions[action_id] = value
+
+    if _debug_config_bool(ctx, "debug_actions"):
+        print(
+            "[ACTION] "
+            f"client_id={_client_id_for_action_log(ctx)} "
+            f"packet={packet_type} "
+            f"action_id={action_id} "
+            f"action_name=\"{ACTION_NAMES.get(action_id, f'Unknown_{action_id}')}\" "
+            f"old_value={old_value} "
+            f"new_value={value}"
+        )
+    return old_value, value
+
 def parse_action_packet(ctx: UdpContext, payload: bytes, is_dump: bool):
     """
-    Parses ACTION_UPDATE (0x0A) or ACTION_DUMP (0x09).
-    Both share the same structure: Count + List of Actions.
+    Parses ACTION_DUMP (0x09) or ACTION_UPDATE (0x0A).
+
+    ACTION_DUMP carries an implicit full table for action ids 1..21.
+    ACTION_UPDATE carries a counted list of explicit action id/value pairs.
+
+    Evidence:
+    - ida_exports/curated_functions/0046C790_send_action_dump_UDP.c at 0x46C790
+    - ida_exports/curated_functions/0046C860_send_action_update_UDP.c at 0x46C860
     """
     reader = PacketReader(payload)
-    reader.read_byte() # Opcode
-    
-    # 1. Read Header
-    count = reader.read_byte() # Number of actions
-    
-    # These ints are likely timestamps/sequences
-    time1 = reader.read_int32()
-    time2 = reader.read_int32() 
-    
-    #print(f"    > ACTION {'DUMP' if is_dump else 'UPDATE'} | Count: {count} | T1: {time1}")
+    opcode = reader.read_byte()
+    packet_type = "ACTION_DUMP" if is_dump else "ACTION_UPDATE"
+    decoded_actions = []
 
-    # 2. Get Configs needed for decoding
-    # Config 15: Bits used for the Action ID itself
-    cfg_id_bits = get_config_by_index(15) 
-    
-    # Config 10: Analog Actions (ID 5)
-    cfg_analog_5 = get_config_by_index(10)
-    
-    # Config 11: Analog Actions (Other IDs)
-    cfg_analog_std = get_config_by_index(11)
+    if is_dump:
+        dump_time_or_sequence = reader.read_int32()
+        packet_time_or_flags = reader.read_int32()
+        if _debug_config_bool(ctx, "debug_action_packets"):
+            print(
+                "[ACTION_PACKET] "
+                f"client_id={_client_id_for_action_log(ctx)} "
+                f"packet={packet_type} "
+                f"opcode=0x{opcode:02X} "
+                f"dump_time_or_sequence={dump_time_or_sequence} "
+                f"packet_time_or_flags={packet_time_or_flags}"
+            )
+        action_ids = ACTION_DUMP_IDS
+    else:
+        count = reader.read_byte()
+        first_action_time_or_sequence = reader.read_int32()
+        packet_time_or_flags = reader.read_int32()
+        if _debug_config_bool(ctx, "debug_action_packets"):
+            print(
+                "[ACTION_PACKET] "
+                f"client_id={_client_id_for_action_log(ctx)} "
+                f"packet={packet_type} "
+                f"opcode=0x{opcode:02X} "
+                f"count={count} "
+                f"first_action_time_or_sequence={first_action_time_or_sequence} "
+                f"packet_time_or_flags={packet_time_or_flags}"
+            )
+        cfg_id_bits = get_config_by_index(15)
+        action_ids = (
+            reader.read_bits(cfg_id_bits.precision_header_bits)
+            for _ in range(count)
+        )
 
-    # Find the entity associated with this connection
-    # For now, we assume the session player_id is the entity we control
-    #my_entity = ctx.server.entities.get_entity(ctx.server.cfg.player.player_id)
+    for action_id in action_ids:
+        value = _read_action_value(reader, action_id)
+        old_value, new_value = _store_action_value(
+            ctx,
+            packet_type,
+            action_id,
+            value,
+        )
+        decoded_actions.append((action_id, old_value, new_value))
 
-    for _ in range(count):
-        # A. Read Action ID
-        action_id = reader.read_bits(cfg_id_bits.precision_header_bits)
-        
-        value = 0.0
+    return decoded_actions
 
-        # B. Parse Value based on Action ID logic
-        # Digital Action (1 Bit)
-        if action_id >= 8 or action_id == 4:
-            bit_val = reader.read_bits(1)
-            value = 1.0 if bit_val else 0.0
-            
-        # Upward Thrust (Hover) - SPECIAL CASE
-        # Analog Action ID 5 (always uses Config index 10)
-        elif action_id == 5:
-            value = reader.read_quantized_float(cfg_analog_5)
-            
-        # Analog Action 0-3, 6-7 (Config 11)
-        else:
-            value = reader.read_quantized_float(cfg_analog_std)
-
-        # --- UPDATE THE ENTITY ---
-        if ctx.session and ctx.session.entity:
-            my_ent = ctx.session.entity
-
-            if value != 0.0:
-                my_ent.actions[action_id] = value
-                #print(f"       Updated Action {action_id} -> {value:.2f}")
-
-            action_names = {
-                1: "Turn",
-                2: "Forward",
-                3: "Stafe",
-                4: "JumpJet",
-                5: "Hover (Up/Down)", 
-            }
-            name = action_names.get(action_id, f"Unknown_{action_id}")
-
-        # Log it to verify inputs
-        #if value != 0.0:
-            #print(f"       Action: {name} [{action_id}]: {value}")
-
-#@dispatcher.route(0x09)
-#def on_action_dump(ctx: UdpContext, payload: bytes):
-#    parse_action_packet(ctx, payload, is_dump=True)
+@dispatcher.route(0x09)
+def on_action_dump(ctx: UdpContext, payload: bytes):
+    parse_action_packet(ctx, payload, is_dump=True)
 
 @dispatcher.route(0x0A)
 def on_action_update(ctx: UdpContext, payload: bytes):

@@ -36,6 +36,8 @@ class PlayerConfig:
 class DebugConfig:
     debug_packets: bool = True
     show_ascii: bool = True
+    debug_actions: bool = False
+    debug_action_packets: bool = False
 
 # ----------------------------------------------------------------------
 # ---- Not part of the static config, these will change at runtime

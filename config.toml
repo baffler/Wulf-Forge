@@ -19,3 +19,5 @@ unit_type = 0
 [debug]
 debug_packets = true
 show_ascii = false
+debug_actions = false
+debug_action_packets = false
