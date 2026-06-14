@@ -101,7 +101,7 @@ class LateJoinSnapshotTests(unittest.TestCase):
         self.assertEqual(tcp_sent, [])
         self.assertEqual(len(udp_sent), 2)
         self.assertIsInstance(udp_sent[0], BirthNoticePacket)
-        self.assertEqual(udp_sent[0].player_id, 20)
+        self.assertEqual(udp_sent[0].player_id, 2)
         self.assertEqual(udp_sent[1], b"\x0Eforced")
 
         call = server.entities.calls[0]

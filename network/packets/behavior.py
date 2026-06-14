@@ -103,22 +103,22 @@ class BehaviorPacket(Packet):
             pkt.write_int32(vp.mass)
 
         # --------------------------
-        # SECTION 5: HARDPOINTS (unchanged for now)
+        av = cfg.active_vehicle_physics
+
+        # SECTION 5: HARDPOINTS / JET REACTION SURFACES
         # --------------------------
-        # May or may not have got the teams correctly labeled for these
-        # Also, thinking is_thruster might be something else entirely
-        _write_hardpoint_block(pkt, count=2, is_thruster=True)  # Red Tank
-        _write_hardpoint_block(pkt, count=2, is_thruster=True)  # Blue Tank
-        _write_hardpoint_block(pkt, count=2, is_thruster=True)  # Red Scout
-        _write_hardpoint_block(pkt, count=2, is_thruster=True)  # Blue Scout
+        # The client pairs samples as front/back and left/right slopes for
+        # auto-leveling, so a two-point surface leaves pitch/roll underdefined.
+        _write_hardpoint_block(pkt, count=4, is_thruster=True, av=av)  # Red Tank
+        _write_hardpoint_block(pkt, count=4, is_thruster=True, av=av)  # Blue Tank
+        _write_hardpoint_block(pkt, count=4, is_thruster=True, av=av)  # Red Scout
+        _write_hardpoint_block(pkt, count=4, is_thruster=True, av=av)  # Blue Scout
 
         # --------------------------
         # SECTION 6: ACTIVE VEHICLE PHYSICS (Configurable)
         # --------------------------
         # The client iterates: Tank -> Scout -> Bomber
         # We must write the exact amount of data each class expects.
-        
-        av = cfg.active_vehicle_physics
 
         for i in range(cfg.active_vehicles_count):
 
@@ -131,7 +131,7 @@ class BehaviorPacket(Packet):
                 pkt.write_fixed1616(av.strafe_adjust)
                 pkt.write_fixed1616(av.max_velocity)
                 pkt.write_fixed1616(av.low_fuel_level)
-                pkt.write_fixed1616(av.max_altitude)
+                pkt.write_fixed1616(av.tank_hover_height)
                 pkt.write_fixed1616(av.gravity_pct)
                 pass
                 
@@ -171,55 +171,24 @@ class BehaviorPacket(Packet):
         return payload
 
 
-def _write_hardpoint_block(pkt: PacketWriter, count: int, is_thruster: bool) -> None:
+def _write_hardpoint_block(pkt: PacketWriter, count: int, is_thruster: bool, av=None) -> None:
     pkt.write_int32(count)
 
     if count > 0:
         for i in range(count):
-            # ---------------------------------------------------------
-            # COORDINATE SYSTEM: Z-UP
-            # ---------------------------------------------------------
-            
             if is_thruster:
-                # --- TUNING VALUES ---
-                
-                # 1. WIDTH (How far out are the wings?)
-                wing_width = 2.0
-                
-                # 2. LATERAL BIAS (Fixes Side Tipping)
-                # Tilts Right -> Try 0.2, 0.5, 1.0
-                # Tilts Left  -> Try -0.2, -0.5, -1.0
-                lateral_bias = 0.0 
-
-                # 3. LONGITUDINAL BIAS (Fixes Nose Dive)
-                # Tips Forward -> Increase (0.5, 1.0)
-                # Tips Backward -> Decrease (-0.5, -1.0)
-                forward_bias = 0.0
-
-                # --- CALCULATE POSITIONS ---
-
-                # X: Left (-width) vs Right (+width), plus the bias shift
-                if i % 2 == 1:
-                    x_pos = wing_width + lateral_bias  # Right Thruster
-                else:
-                    x_pos = -wing_width + lateral_bias # Left Thruster
-
-                # --- Y: BALANCE (Forward/Back) ---
-                # Start at 0.0. 
-                # If NOSE DIVES -> Change to +1.0 or +2.0
-                # If LOOKING AT SKY -> Change to -1.0 or -2.0
-                y_pos = forward_bias 
-
-                # --- Z: HEIGHT (Up/Down) ---
-                # Since Z is up, 0.0 is the center of the tank vertically.
-                # -1.0 puts the thruster slightly below the hull.
-                z_pos = -0.5 
-
-                # --- NORMAL (Thrust Direction) ---
-                # Pointing DOWN (-Z)
-                # Setting this too high (-1.0) can cause a weird bug
-                # where you will start flipping upside down
-                nx, ny, nz = 0.0, 0.0, -0.75
+                width = float(av.jet_reaction_width) if av is not None else 2.0
+                length = float(av.jet_reaction_length) if av is not None else 2.0
+                z_pos = float(av.jet_reaction_z) if av is not None else -0.5
+                normal_z = float(av.jet_reaction_normal_z) if av is not None else -0.75
+                corners = (
+                    (-width, -length),
+                    (width, -length),
+                    (-width, length),
+                    (width, length),
+                )
+                x_pos, y_pos = corners[i % len(corners)]
+                nx, ny, nz = 0.0, 0.0, normal_z
                 
             else:
                 # Weapons (Keep valid defaults just in case)
@@ -242,9 +211,8 @@ def _write_hardpoint_block(pkt: PacketWriter, count: int, is_thruster: bool) -> 
 
     # FIX: Send a non-zero value for thrusters
     if is_thruster:
-        # -5.0 is a safe guess for "Thrusters are 5 units below the tank center"
-        # This value will populate VehicleContext offset 0x18
-        pkt.write_fixed1616(-5.0) 
+        reaction_range = float(av.jet_reaction_range) if av is not None else 5.0
+        pkt.write_fixed1616(reaction_range)
     else:
         # For weapons, this might be range or cooldown, 0.0 might be fine for now
         pkt.write_fixed1616(0.0)

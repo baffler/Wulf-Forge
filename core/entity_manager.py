@@ -4,6 +4,14 @@ from core.entity import GameEntity, UpdateMask
 from network.packets.update_array import UpdateArrayPacket
 from network.packets.gameplay import DeleteObjectPacket
 
+STATIC_ANCHOR_MASK = (
+    UpdateMask.POS
+    | UpdateMask.VEL
+    | UpdateMask.ROT
+    | UpdateMask.SPIN
+    | UpdateMask.HARD_SYNC
+)
+
 class EntityManager:
     def __init__(self):
         self._entities: Dict[int, GameEntity] = {}
@@ -82,6 +90,24 @@ class EntityManager:
              packet.add_entity(entity, force_spawn=force_spawn)
 
         return packet.get_bytes()
+
+    def build_static_anchor_packet(self, sequence_num: int) -> Optional[bytes]:
+        """
+        Reasserts unmanned map objects so client-side collision impulses do not
+        make static base props drift away locally.
+        """
+        static_entities = [e for e in self._entities.values() if not e.is_manned]
+        if not static_entities:
+            return None
+
+        packet = UpdateArrayPacket(sequence_id=sequence_num, is_view_update=False)
+
+        for entity in static_entities:
+            entity.vel = (0.0, 0.0, 0.0)
+            entity.spin = (0.0, 0.0, 0.0)
+            packet.add_entity(entity, force_spawn=False, forced_mask=STATIC_ANCHOR_MASK)
+
+        return b'\x0E' + packet.get_bytes()
 
     def build_forced_update_packet(
         self,
