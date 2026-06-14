@@ -26,6 +26,76 @@
 * Save it as `_override_args` (No file extension)
 * Then you can just launch the wulfram exe and it will let you connect to the local server
 
+## Server Configuration
+
+Wulf-Forge reads `config.toml` from the server directory.
+
+### Network Address
+
+The default network config is:
+
+```toml
+[network]
+host = "0.0.0.0"
+server_ip = "auto"
+tcp_port = 2627
+udp_port = 2627
+```
+
+`host` is the address the server binds to. `server_ip` is the address advertised
+back to Wulfram 2 clients for UDP traffic.
+
+For same-machine and LAN/VPN testing, `server_ip = "auto"` is recommended. It
+uses the local address of the accepted TCP connection, so a localhost client gets
+localhost and a LAN/VPN client gets a reachable server address. You can set an
+explicit IP if you need to force one.
+
+### Sync Modes
+
+Wulf-Forge has two sync modes:
+
+```toml
+[sync]
+mode = "server_simulation"
+```
+
+`server_simulation` is the default. Client action packets are decoded and stored,
+and server-side movement simulation can use those inputs.
+
+`client_state_relay` is experimental. It is intended for a modified client such
+as W2Mod, where the client sends local position, velocity, rotation, and angular
+velocity to Wulf-Forge. The server applies that state to the player's entity and
+rebroadcasts it with the normal entity update packets.
+
+To enable the W2Mod relay path:
+
+```toml
+[sync]
+mode = "client_state_relay"
+
+[mod_relay]
+port = 28010
+owner_auth = true
+debug_mapping = true
+auto_bind = true
+identity_trace = true
+coalesce_updates = true
+echo_owner_state = false
+hard_sync = false
+adaptive_hard_sync = true
+hard_sync_teleport_distance = 250.0
+hard_sync_stale_ms = 500
+hard_sync_initial_packets = 3
+apply_velocity = true
+apply_rotation = true
+apply_spin = false
+```
+
+The relay listens for fixed-size `W2MS` UDP client-state packets on
+`mod_relay.port`. This is an owner-authoritative testing path, not the original
+server-authoritative simulation model. Leave `mode = "server_simulation"` unless
+you are running a compatible modified client.
+
 ## Loading Maps
 * Before spawning in you can use `/s map <map name>`
 * You can copy all the maps from `<Wulfram Install>\data\maps` into `<Wulf-Forge Folder>\shared\data\maps`
