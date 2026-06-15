@@ -23,7 +23,20 @@ active_vehicles_count = 3
 spawn_related = 0
 timeout = 5.0
 gravity_force = 100.0
-unk11 = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+
+# Former "unk11" block — 11 fixed16.16 floats parsed in this order by
+# Net_HandleBehavior (0x0046dc00). Names reflect each value's verified consumer.
+building_wedge_radius = 1.0  # 0x679180: building map-icon cone-wedge length (+ deploy primary radius)
+deploy_backup_radius = 1.0   # 0x679184: deploy backup-cell probe radius
+target_bar_extent = 1.0      # 0x679188: HUD target status/range-bar param
+reserved_3 = 1.0             # 0x67918c: parsed but unused (dead slot)
+factory_arc_inner = 1.0      # 0x679190: factory icon arc-wedge near radius
+factory_arc_outer = 1.0      # 0x679194: factory icon arc-wedge far radius
+reserved_6 = 1.0             # 0x679198: parsed but unused (dead slot)
+radar_arc_inner = 1.0        # 0x67919c: radar icon arc-wedge near radius
+radar_arc_outer = 1.0        # 0x6791a0: radar icon arc-wedge far radius
+silo_wedge_radius = 1.0      # 0x6791a4: silo icon cone-wedge length
+target_lock_delay = 1.0      # 0x6791ac: target lock-on eligibility delay (seconds)
 
 [behavior.unit_defaults]
 scale = 1.0

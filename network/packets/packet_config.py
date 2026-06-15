@@ -135,7 +135,21 @@ class BehaviorHeader:
     dword_6791B8: int = 1
     dword_6791BC: int = 1
     max_pulse_charge: float = 1.0
-    unk11: Tuple[float, ...] = (1.0,) * 11
+    # --- The former "unk11" block: 11 fixed16.16 floats read consecutively by
+    #     Net_HandleBehavior (0x0046dc00) into globals 0x679180..0x6791a4, then
+    #     0x6791ac (the parser skips 0x6791a8). Names reflect each global's
+    #     verified consumer; see comments for address + reader. ---
+    building_wedge_radius: float = 1.0  # 0x679180: Map_DrawBuildingIcon cone-wedge length; also deploy primary radius
+    deploy_backup_radius: float = 1.0   # 0x679184: Deploy_EvaluateCellPlacement backup-cell probe radius
+    target_bar_extent: float = 1.0      # 0x679188: ObjectScreen_DrawObjectMarker HUD status/range-bar param
+    reserved_3: float = 1.0             # 0x67918c: written, no readers (dead)
+    factory_arc_inner: float = 1.0      # 0x679190: Map_DrawFactoryIcon arc-wedge near radius
+    factory_arc_outer: float = 1.0      # 0x679194: Map_DrawFactoryIcon arc-wedge far radius
+    reserved_6: float = 1.0             # 0x679198: written, no readers (dead)
+    radar_arc_inner: float = 1.0        # 0x67919c: Map_DrawRadarIcon arc-wedge near radius
+    radar_arc_outer: float = 1.0        # 0x6791a0: Map_DrawRadarIcon arc-wedge far radius
+    silo_wedge_radius: float = 1.0      # 0x6791a4: Map_DrawSiloIcon cone-wedge length
+    target_lock_delay: float = 1.0      # 0x6791ac: Target_IsCandidateEligible lock-on eligibility delay (seconds)
     flag1: int = 1
     flag2: int = 1
 
