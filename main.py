@@ -581,6 +581,22 @@ def send_existing_player_entity_definitions(ctx: TcpContext | UdpContext, reason
     return True
 
 
+def cargo_pickup_tick(server: WulframServerContext) -> list:
+    """Collect automatic cargo pickups for all in-world players this tick.
+
+    Server-authoritative and independent of the sync mode: it runs in both
+    server_simulation and client_state_relay (the relay updates entity.pos,
+    so proximity is evaluated against the player's live position). Returns the
+    packets to broadcast (CARRYING_INFO + DeleteObject per pickup).
+    """
+    packets = []
+    for session in server.sessions:
+        if session.entity and session.is_logged_in:
+            packets.extend(
+                server.cargo.try_pickup(session.entity, session.player_id)
+            )
+    return packets
+
 def global_game_loop(server: WulframServerContext):
     """
     Main Server Tick (Targeting ~10Hz).
@@ -617,16 +633,12 @@ def global_game_loop(server: WulframServerContext):
                         my_ent.mark_dirty(UpdateMask.VEL)
                         my_ent.actions[4] = 0.0 # Reset trigger
 
-            # --- 1b. Cargo pickup scan ---
-            # Server-authoritative, automatic: a slow/low uncarried vehicle near
-            # a cargo box grabs it. Emits CARRYING_INFO (0x29) + DeleteObject.
-            for session in server.sessions:
-                if session.entity and session.is_logged_in:
-                    pickup_packets = server.cargo.try_pickup(
-                        session.entity, session.player_id
-                    )
-                    for pkt in pickup_packets:
-                        broadcast(server, pkt)
+        # --- 1b. Cargo pickup scan ---
+        # Server-authoritative and mode-independent: runs in BOTH server
+        # simulation and client_state_relay. A slow/low uncarried vehicle near
+        # a cargo box grabs it -> CARRYING_INFO (0x29) + DeleteObject.
+        for pkt in cargo_pickup_tick(server):
+            broadcast(server, pkt)
 
         # --- 2. Gather Dirty State ---
         # We get the list ONCE. The state remains valid for all clients.
@@ -1704,6 +1716,26 @@ def cmd_spawncargo(ctx, contained_type="25"):
     box.is_manned = False
     box.cargo_contained_type = contained
     send_system_message(ctx, f"Spawned cargo box (contains unit {contained}) at {pos}.")
+
+@commands.command("cargostatus")
+def cmd_cargostatus(ctx):
+    """Report this player's cargo pickup state — why a pickup does/doesn't fire."""
+    ent = ctx.session.entity
+    if not ent:
+        send_system_message(ctx, "No entity yet (spawn first).")
+        return
+
+    d = ctx.server.cargo.describe_pickup(ent)
+    nd = d["nearest_dist"]
+    nearest = f"{nd:.1f}" if nd is not None else "none"
+    send_system_message(
+        ctx,
+        f"carrying={d['carrying']} eligible={d['eligible']} | "
+        f"speed={d['speed']:.1f}/{d['max_speed']:.1f} "
+        f"alt={d['altitude']:.1f}/{d['max_altitude']:.1f} "
+        f"nearestBox={nearest}/{d['pickup_radius']:.1f}",
+    )
+    print(f"[CARGO-STATUS] pid={ctx.session.player_id} pos={ent.pos} {d}")
 
 # -------------------------------------------------------------------------
 # HELPERS

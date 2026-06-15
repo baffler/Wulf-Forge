@@ -244,5 +244,53 @@ class DeployDropTests(unittest.TestCase):
         self.assertEqual(len(self.mgr.get_all()), before)
 
 
+class PickupTickTests(unittest.TestCase):
+    def test_tick_collects_pickups_independent_of_sync_mode(self):
+        # Regression: the pickup scan used to be gated behind
+        # should_run_server_simulation, so it never ran in client_state_relay
+        # mode. cargo_pickup_tick must work for any server regardless of mode.
+        import main
+        from types import SimpleNamespace
+
+        mgr = EntityManager()
+        cargo = CargoSystem(mgr)
+        carrier = _carrier(mgr, pos=(0, 0, 1.0), vel=(0.0, 0.0, 0.0))
+        _box(mgr, pos=(2, 0, 1.0), contained=25)
+        session = SimpleNamespace(entity=carrier, player_id=5, is_logged_in=True)
+        server = SimpleNamespace(sessions=[session], cargo=cargo)
+
+        packets = main.cargo_pickup_tick(server)
+
+        infos = [p for p in packets if isinstance(p, CarryingInfoPacket)]
+        self.assertEqual(len(infos), 1)
+        self.assertTrue(infos[0].has_cargo)
+        self.assertEqual(carrier.carried_cargo_type, 25)
+
+
+class DescribePickupTests(unittest.TestCase):
+    def test_reports_eligibility_and_nearest_distance(self):
+        mgr = EntityManager()
+        cargo = CargoSystem(
+            mgr, max_pickup_speed=3.5, max_pickup_altitude=10.0, pickup_radius=15.0
+        )
+        carrier = _carrier(mgr, pos=(0, 0, 2.0), vel=(1.0, 0.0, 0.0))
+        _box(mgr, pos=(3, 0, 2.0))
+
+        d = cargo.describe_pickup(carrier)
+        self.assertTrue(d["eligible"])
+        self.assertFalse(d["carrying"])
+        self.assertAlmostEqual(d["speed"], 1.0)
+        self.assertAlmostEqual(d["altitude"], 2.0)
+        self.assertAlmostEqual(d["nearest_dist"], 3.0)
+
+    def test_reports_ineligible_when_too_high(self):
+        mgr = EntityManager()
+        cargo = CargoSystem(mgr, max_pickup_altitude=10.0)
+        carrier = _carrier(mgr, pos=(0, 0, 50.0))
+        d = cargo.describe_pickup(carrier)
+        self.assertFalse(d["eligible"])
+        self.assertGreater(d["altitude"], 10.0)
+
+
 if __name__ == "__main__":
     unittest.main()

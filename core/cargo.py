@@ -65,6 +65,28 @@ class CargoSystem:
             return False
         return True
 
+    def describe_pickup(self, carrier: GameEntity) -> dict:
+        """Diagnostic snapshot of a carrier's pickup state (for /s cargostatus)."""
+        vx, vy, _vz = carrier.vel
+        speed = math.hypot(vx, vy)
+        altitude = carrier.pos[2] - self.ground_z
+        box = self.find_nearest_box(carrier)
+        nearest = None
+        if box is not None:
+            bx, by, bz = box.pos
+            cx, cy, cz = carrier.pos
+            nearest = math.sqrt((bx - cx) ** 2 + (by - cy) ** 2 + (bz - cz) ** 2)
+        return {
+            "carrying": carrier.carried_cargo_type is not None,
+            "eligible": self.is_eligible(carrier),
+            "speed": speed,
+            "max_speed": self.max_pickup_speed,
+            "altitude": altitude,
+            "max_altitude": self.max_pickup_altitude,
+            "nearest_dist": nearest,
+            "pickup_radius": self.pickup_radius,
+        }
+
     def find_nearest_box(self, carrier: GameEntity) -> Optional[GameEntity]:
         """Nearest non-base cargo box within the pickup radius, else None."""
         best: Optional[GameEntity] = None
