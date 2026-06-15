@@ -22,21 +22,21 @@ class BehaviorPacket(Packet):
         # --------------------------
         h = cfg.header
 
-        pkt.write_byte(int(h.spawn_related) & 0xFF)
-        pkt.write_fixed1616(h.timeout)
-        pkt.write_fixed1616(h.dbl_6792F8)
-        pkt.write_fixed1616(h.velocity_q)
-        pkt.write_fixed1616(h.dbl_679308)
-        pkt.write_fixed1616(h.dbl_679310)
+        pkt.write_byte(int(h.allow_immediate_respawn) & 0xFF)
+        pkt.write_fixed1616(h.session_timeout_secs)
+        pkt.write_fixed1616(h.reserved_6792f8)
+        pkt.write_fixed1616(h.shadow_caster_ray_length)
+        pkt.write_fixed1616(h.reserved_679308)
+        pkt.write_fixed1616(h.reserved_679310)
 
-        pkt.write_int32(h.total_team_size)
-        pkt.write_int32(h.glimpse_ms)
-        pkt.write_int32(h.push_ms)
+        pkt.write_int32(h.chat_category_msg_cap)
+        pkt.write_int32(h.keepalive_interval_a_ms)
+        pkt.write_int32(h.keepalive_interval_b_ms)
 
-        pkt.write_fixed1616(h.gravity_force)
-        pkt.write_int32(h.dword_6791B8)
-        pkt.write_int32(h.dword_6791BC)
-        pkt.write_fixed1616(h.max_pulse_charge)
+        pkt.write_fixed1616(h.gravity_accel)
+        pkt.write_int32(h.map_marker_base_height)
+        pkt.write_int32(h.reserved_6791bc)
+        pkt.write_fixed1616(h.pulse_charge_warn_threshold)
 
         # Former "unk11" block: 11 fixed16.16 floats in the exact order
         # Net_HandleBehavior (0x0046dc00) deserializes them. Order is load-bearing.
@@ -52,8 +52,8 @@ class BehaviorPacket(Packet):
         pkt.write_fixed1616(h.silo_wedge_radius)      # 0x6791a4
         pkt.write_fixed1616(h.target_lock_delay)      # 0x6791ac
 
-        pkt.write_byte(int(h.flag1) & 0xFF)
-        pkt.write_byte(int(h.flag2) & 0xFF)
+        pkt.write_byte(int(h.friendly_fire_enabled) & 0xFF)
+        pkt.write_byte(int(h.reserved_6792c4) & 0xFF)
 
         # --------------------------
         # SECTION 2: WEAPONS (unchanged, hard-coded)

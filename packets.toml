@@ -20,9 +20,9 @@ vehicle_physics_count = 2
 active_vehicles_count = 3
 
 [behavior.header]
-spawn_related = 0
-timeout = 5.0
-gravity_force = 100.0
+allow_immediate_respawn = 0  # bool: instant (re)spawn on entry-select confirm
+session_timeout_secs = 5.0   # world-leave / session-reset deadline (seconds)
+gravity_accel = 100.0        # vertical gravity acceleration
 
 # Former "unk11" block — 11 fixed16.16 floats parsed in this order by
 # Net_HandleBehavior (0x0046dc00). Names reflect each value's verified consumer.
