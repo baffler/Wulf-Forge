@@ -609,14 +609,14 @@ def global_game_loop(server: WulframServerContext):
         # We get the list ONCE. The state remains valid for all clients.
         dirty_entities = server.entities.get_dirty_entities()
         current_tick = get_ticks()
-        static_anchor_payload = None
+        static_anchor_due = False
 
         if start_time - last_static_anchor_time >= STATIC_ANCHOR_INTERVAL:
-            static_anchor_payload = server.entities.build_static_anchor_packet(sequence_num=current_tick)
+            static_anchor_due = True
             last_static_anchor_time = start_time
 
         # --- 3. Broadcast Loop ---
-        if dirty_entities or static_anchor_payload:
+        if dirty_entities or static_anchor_due:
             for session in server.sessions:
                 # CHECK: Must be logged in AND ready for updates
                 if not session.is_logged_in or not session.is_ready_for_updates:
@@ -637,7 +637,6 @@ def global_game_loop(server: WulframServerContext):
                 others = [e for e in dirty_entities if e.net_id != my_entity.net_id]
                 
                 if others:
-                    # Build payload (No Timestamp, No Local Stats)
                     # We MUST pass local_stats here, even though it's an update for "others"
                     payload = server.entities.build_update_packet(
                         others, 
@@ -652,28 +651,32 @@ def global_game_loop(server: WulframServerContext):
                 # --- B. PACKET FOR "SELF" (0x0F - View Update) ---
                 # Check if "I" am dirty. If so, send View Update.
                 if my_entity in dirty_entities:
-                    if (
+                    skip_owner_echo = (
                         my_entity.net_id in server.mod_relay_dirty_entity_ids
                         and not server.cfg.mod_relay.echo_owner_state
-                    ):
-                        continue
-
-                    # Build payload (Includes Timestamp, Includes Local Stats)
-                    stats = (my_entity.health, my_entity.energy)
-                    
-                    payload = server.entities.build_update_packet(
-                        [my_entity], 
-                        sequence_num=current_tick, 
-                        is_view_update=True, 
-                        local_stats=stats
                     )
-                    if payload:
-                        # Prepend OpCode 0x0F
-                        session.udp_context.send(b'\x0F' + payload)
 
-                # TODO: Make static anchor payloads include local stats
-                #if static_anchor_payload:
-                    #session.udp_context.send(static_anchor_payload)
+                    if not skip_owner_echo:
+                        # Build payload (Includes Timestamp, Includes Local Stats)
+                        stats = (my_entity.health, my_entity.energy)
+                        
+                        payload = server.entities.build_update_packet(
+                            [my_entity], 
+                            sequence_num=current_tick, 
+                            is_view_update=True, 
+                            local_stats=stats
+                        )
+                        if payload:
+                            # Prepend OpCode 0x0F
+                            session.udp_context.send(b'\x0F' + payload)
+
+                if static_anchor_due:
+                    static_anchor_payload = server.entities.build_static_anchor_packet(
+                        sequence_num=current_tick,
+                        local_stats=my_stats,
+                    )
+                    if static_anchor_payload:
+                        session.udp_context.send(static_anchor_payload)
 
         # --- 4. Cleanup ---
         # Now that everyone has been told about the updates, we can clear the flags.

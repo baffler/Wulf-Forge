@@ -91,7 +91,11 @@ class EntityManager:
 
         return packet.get_bytes()
 
-    def build_static_anchor_packet(self, sequence_num: int) -> Optional[bytes]:
+    def build_static_anchor_packet(
+        self,
+        sequence_num: int,
+        local_stats: tuple[float, float] | None = None,
+    ) -> Optional[bytes]:
         """
         Reasserts unmanned map objects so client-side collision impulses do not
         make static base props drift away locally.
@@ -101,6 +105,8 @@ class EntityManager:
             return None
 
         packet = UpdateArrayPacket(sequence_id=sequence_num, is_view_update=False)
+        if local_stats is not None:
+            packet.set_local_stats(health=local_stats[0], energy=local_stats[1])
 
         for entity in static_entities:
             entity.vel = (0.0, 0.0, 0.0)

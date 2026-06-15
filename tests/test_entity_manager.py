@@ -2,6 +2,7 @@ import unittest
 
 from core.entity import UpdateMask
 from core.entity_manager import EntityManager, STATIC_ANCHOR_MASK
+from network.streams import PacketReader
 
 
 class EntityManagerTests(unittest.TestCase):
@@ -17,10 +18,16 @@ class EntityManagerTests(unittest.TestCase):
         static_obj.spin = (4.0, 5.0, 6.0)
         static_obj.clear_dirty()
 
-        payload = entities.build_static_anchor_packet(sequence_num=1234)
+        payload = entities.build_static_anchor_packet(
+            sequence_num=1234,
+            local_stats=(0.75, 0.5),
+        )
 
         self.assertIsNotNone(payload)
         self.assertEqual(payload[0], 0x0E)
+        reader = PacketReader(payload[1:])
+        self.assertEqual(reader.read_int32(), 1234)
+        self.assertEqual(reader.read_bits(1), 1)
         self.assertEqual(static_obj.vel, (0.0, 0.0, 0.0))
         self.assertEqual(static_obj.spin, (0.0, 0.0, 0.0))
         self.assertEqual(static_obj.pending_mask, 0)
