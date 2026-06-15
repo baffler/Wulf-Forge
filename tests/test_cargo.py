@@ -22,6 +22,21 @@ from network.translation_config import (  # noqa: E402
 )
 
 
+from network.packets.packet_config import PacketConfig  # noqa: E402
+
+
+class ConfigWiringTests(unittest.TestCase):
+    def test_max_speed_height_pickup_path(self):
+        # main.py wires CargoSystem's pickup gate from this exact path; it lives
+        # on active_vehicle_physics, not on `tank`. Lock it so the wiring can't
+        # silently break again.
+        cfg = PacketConfig()
+        self.assertAlmostEqual(
+            cfg.behavior.active_vehicle_physics.max_speed_height_pickup, 3.5
+        )
+        self.assertFalse(hasattr(cfg.tank, "max_speed_height_pickup"))
+
+
 class CarryingInfoLayoutTests(unittest.TestCase):
     def test_byte_layout_matches_client(self):
         # Net_HandleCarryingInfo @ 0x0046e190 reads, in order:

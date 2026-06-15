@@ -125,7 +125,7 @@ class WulframServerContext:
         self.entities = EntityManager()
         self.cargo = CargoSystem(
             self.entities,
-            max_pickup_speed=self.packet_cfg.tank.max_speed_height_pickup,
+            max_pickup_speed=self.packet_cfg.behavior.active_vehicle_physics.max_speed_height_pickup,
         )
         self.first_map_load = False
         self.current_map_name = self.cfg.game.map_name
