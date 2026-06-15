@@ -121,11 +121,11 @@ class AddToRosterPacket(Packet):
     def serialize(self) -> bytes:
         pkt = PacketWriter()
         pkt.write_int32(self.account_id)
-        pkt.write_int32(self.team)
-        pkt.write_int16(0)            # color/stat slot
+        pkt.write_int32(0)            # unknown/account metadata
+        pkt.write_int16(self.team)
         pkt.write_int16(2)            # color/stat slot
-        pkt.write_string(self.nametag)
         pkt.write_string(self.name)
+        pkt.write_string(self.nametag)
         pkt.write_int16(2)           # kills?
         pkt.write_int16(2)            # deaths?
         pkt.write_fixed1616(6.9)      # Score
@@ -160,9 +160,9 @@ class UpdateStatsPacket(Packet):
     Packet 0x1C: UPDATE_STATS
         [Type 0x1C]
         [Int32] Account ID
-        [Int32] Team ID
+        [Int32] Unknown
         [Int16] Stat 1
-        [Int16] Stat 2
+        [Int16] Team ID
         [Int16] Stat 3
         [Int16] Stat 4
         [Int16] Stat 5
@@ -177,8 +177,8 @@ class UpdateStatsPacket(Packet):
         pkt = PacketWriter()
         
         pkt.write_int32(self.player_id)
-        pkt.write_int32(self.team_id)
-        pkt.write_int16(self.team_id)
+        pkt.write_int32(6)              # Unknown Int 1
+        pkt.write_int16(self.team_id)   # Team ID
         pkt.write_int16(33)             # Unknown Short 1
         
         # 3 Stats (Shorts)

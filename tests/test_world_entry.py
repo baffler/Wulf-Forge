@@ -36,7 +36,7 @@ def read_string(data: bytes, offset: int) -> tuple[str, int]:
 
 
 class WorldEntryProtocolTests(unittest.TestCase):
-    def test_add_to_roster_writes_team_as_second_int32_and_name_second(self):
+    def test_add_to_roster_matches_client_read_order(self):
         payload = AddToRosterPacket(
             account_id=7,
             team=2,
@@ -47,25 +47,28 @@ class WorldEntryProtocolTests(unittest.TestCase):
         self.assertEqual(payload[0], 0x1A)
         offset = 1
         player_id, offset = read_u32(payload, offset)
-        team_id, offset = read_u32(payload, offset)
-        _stat_a, offset = read_u16(payload, offset)
+        unknown, offset = read_u32(payload, offset)
+        team_id, offset = read_u16(payload, offset)
         _stat_b, offset = read_u16(payload, offset)
-        callsign, offset = read_string(payload, offset)
         name, offset = read_string(payload, offset)
+        callsign, offset = read_string(payload, offset)
 
         self.assertEqual(player_id, 7)
+        self.assertEqual(unknown, 0)
         self.assertEqual(team_id, 2)
-        self.assertEqual(callsign, "TAG")
         self.assertEqual(name, "Pilot")
+        self.assertEqual(callsign, "TAG")
 
-    def test_update_stats_writes_team_as_second_int32(self):
+    def test_update_stats_writes_team_as_first_short(self):
         payload = UpdateStatsPacket(player_id=7, team_id=1).serialize()
 
         self.assertEqual(payload[0], 0x1C)
         player_id, offset = read_u32(payload, 1)
-        team_id, _offset = read_u32(payload, offset)
+        unknown, offset = read_u32(payload, offset)
+        team_id, _offset = read_u16(payload, offset)
 
         self.assertEqual(player_id, 7)
+        self.assertEqual(unknown, 6)
         self.assertEqual(team_id, 1)
 
     def test_reincarnate_spawn_request_matches_client_order(self):
