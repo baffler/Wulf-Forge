@@ -27,9 +27,9 @@ debug_action_packets = false
 log_all_opcodes = false
 
 [sync]
-# server_simulation: action packets drive server-side movement.
+# server_simulation: action packets drive server-side tank simulation (TankSim).
 # client_state_relay: modified clients provide transform state for rebroadcast.
-mode = "client_state_relay"
+mode = "server_simulation"
 
 [mod_relay]
 # Used when sync.mode = "client_state_relay".
