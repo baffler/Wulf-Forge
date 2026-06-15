@@ -36,15 +36,11 @@ class CargoSystem:
         self,
         entities: EntityManager,
         *,
-        max_pickup_speed: float = 3.5,
-        max_pickup_altitude: float = 10.0,
         pickup_radius: float = 15.0,
         ground_z: float = 0.0,
     ):
         self.entities = entities
-        # max_speed_height_pickup tuning gate (default 3.5 from the BEHAVIOR packet).
-        self.max_pickup_speed = max_pickup_speed
-        self.max_pickup_altitude = max_pickup_altitude
+        # Collision distance: pick up a box when within this 3D range of it.
         self.pickup_radius = pickup_radius
         # Flat ground reference until terrain sampling is wired in; the deployed
         # unit settles here and is then held by the static-anchor mechanism.
@@ -53,23 +49,14 @@ class CargoSystem:
     # -- pickup -----------------------------------------------------------
 
     def is_eligible(self, carrier: GameEntity) -> bool:
-        """An uncarried vehicle moving slow & low enough to grab cargo."""
-        if carrier.carried_cargo_type is not None:
-            return False
-        vx, vy, _vz = carrier.vel
-        horizontal_speed = math.hypot(vx, vy)
-        if horizontal_speed > self.max_pickup_speed:
-            return False
-        altitude = carrier.pos[2] - self.ground_z
-        if altitude > self.max_pickup_altitude:
-            return False
-        return True
+        """Collision-based pickup: the only gate is not already carrying.
+
+        Speed/altitude no longer gate pickup — touching a box grabs it.
+        """
+        return carrier.carried_cargo_type is None
 
     def describe_pickup(self, carrier: GameEntity) -> dict:
         """Diagnostic snapshot of a carrier's pickup state (for /s cargostatus)."""
-        vx, vy, _vz = carrier.vel
-        speed = math.hypot(vx, vy)
-        altitude = carrier.pos[2] - self.ground_z
         box = self.find_nearest_box(carrier)
         nearest = None
         if box is not None:
@@ -79,16 +66,12 @@ class CargoSystem:
         return {
             "carrying": carrier.carried_cargo_type is not None,
             "eligible": self.is_eligible(carrier),
-            "speed": speed,
-            "max_speed": self.max_pickup_speed,
-            "altitude": altitude,
-            "max_altitude": self.max_pickup_altitude,
             "nearest_dist": nearest,
             "pickup_radius": self.pickup_radius,
         }
 
     def find_nearest_box(self, carrier: GameEntity) -> Optional[GameEntity]:
-        """Nearest non-base cargo box within the pickup radius, else None."""
+        """Nearest cargo box within the collision radius, else None."""
         best: Optional[GameEntity] = None
         best_dist = self.pickup_radius
         cx, cy, cz = carrier.pos

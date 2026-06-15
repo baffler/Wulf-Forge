@@ -158,9 +158,8 @@ class CargoConfig:
     The pickup speed gate itself comes from
     behavior.active_vehicle_physics.max_speed_height_pickup.
     """
-    pickup_radius: float = 15.0       # max distance to grab a cargo box
-    max_pickup_altitude: float = 10.0 # max height above ground_z to be eligible
-    ground_z: float = 0.0             # ground reference for altitude + deploy settle
+    pickup_radius: float = 15.0  # collision distance: grab a box within this 3D range
+    ground_z: float = 0.0        # ground reference for the deploy settle position
 
 @dataclass(frozen=True, slots=True)
 class PacketConfig:

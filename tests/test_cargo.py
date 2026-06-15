@@ -39,7 +39,6 @@ class ConfigWiringTests(unittest.TestCase):
     def test_cargo_tunable_defaults(self):
         cfg = PacketConfig()
         self.assertAlmostEqual(cfg.cargo.pickup_radius, 15.0)
-        self.assertAlmostEqual(cfg.cargo.max_pickup_altitude, 10.0)
         self.assertAlmostEqual(cfg.cargo.ground_z, 0.0)
 
     def test_cargo_tunables_load_from_toml(self):
@@ -48,7 +47,6 @@ class ConfigWiringTests(unittest.TestCase):
         toml = (
             "[cargo]\n"
             "pickup_radius = 22.5\n"
-            "max_pickup_altitude = 4.0\n"
             "ground_z = -1.0\n"
         )
         with tempfile.NamedTemporaryFile("w", suffix=".toml", delete=False) as fh:
@@ -56,7 +54,6 @@ class ConfigWiringTests(unittest.TestCase):
             path = fh.name
         cfg = PacketConfig.load(path)
         self.assertAlmostEqual(cfg.cargo.pickup_radius, 22.5)
-        self.assertAlmostEqual(cfg.cargo.max_pickup_altitude, 4.0)
         self.assertAlmostEqual(cfg.cargo.ground_z, -1.0)
 
 
@@ -134,9 +131,9 @@ def _box(mgr, pos, contained=30, team=1):
 class PickupEligibilityTests(unittest.TestCase):
     def setUp(self):
         self.mgr = EntityManager()
-        self.cargo = CargoSystem(self.mgr, max_pickup_speed=3.5, max_pickup_altitude=10.0)
+        self.cargo = CargoSystem(self.mgr)
 
-    def test_slow_low_uncarried_is_eligible(self):
+    def test_uncarried_is_eligible(self):
         carrier = _carrier(self.mgr, pos=(0, 0, 2.0), vel=(1.0, 1.0, 0.0))
         self.assertTrue(self.cargo.is_eligible(carrier))
 
@@ -145,13 +142,15 @@ class PickupEligibilityTests(unittest.TestCase):
         carrier.carried_cargo_type = 25
         self.assertFalse(self.cargo.is_eligible(carrier))
 
-    def test_too_fast_is_ineligible(self):
-        carrier = _carrier(self.mgr, vel=(5.0, 0.0, 0.0))
-        self.assertFalse(self.cargo.is_eligible(carrier))
+    def test_fast_uncarried_still_eligible(self):
+        # Collision-based pickup: speed no longer gates.
+        carrier = _carrier(self.mgr, vel=(50.0, 0.0, 0.0))
+        self.assertTrue(self.cargo.is_eligible(carrier))
 
-    def test_too_high_is_ineligible(self):
-        carrier = _carrier(self.mgr, pos=(0, 0, 50.0), vel=(0.0, 0.0, 0.0))
-        self.assertFalse(self.cargo.is_eligible(carrier))
+    def test_high_uncarried_still_eligible(self):
+        # Collision-based pickup: altitude no longer gates.
+        carrier = _carrier(self.mgr, pos=(0, 0, 500.0))
+        self.assertTrue(self.cargo.is_eligible(carrier))
 
 
 class PickupTargetingTests(unittest.TestCase):
@@ -196,11 +195,20 @@ class PickupAttachTests(unittest.TestCase):
         self.assertEqual(len(dels), 1)
         self.assertEqual(dels[0].net_id, box.net_id)
 
-    def test_ineligible_carrier_picks_up_nothing(self):
-        carrier = _carrier(self.mgr, vel=(20.0, 0.0, 0.0))
+    def test_carrying_carrier_picks_up_nothing(self):
+        carrier = _carrier(self.mgr, pos=(0, 0, 1.0))
+        carrier.carried_cargo_type = 99  # already holding something
         _box(self.mgr, pos=(1, 0, 1.0))
         self.assertEqual(self.cargo.try_pickup(carrier, carrier_id=1), [])
-        self.assertIsNone(carrier.carried_cargo_type)
+        self.assertEqual(carrier.carried_cargo_type, 99)
+
+    def test_collision_pickup_ignores_speed_and_altitude(self):
+        # Fast and high, but overlapping a box -> still grabbed.
+        carrier = _carrier(self.mgr, pos=(0, 0, 300.0), vel=(40.0, 0.0, 0.0))
+        _box(self.mgr, pos=(1, 0, 300.0), contained=25)
+        packets = self.cargo.try_pickup(carrier, carrier_id=3)
+        self.assertEqual(carrier.carried_cargo_type, 25)
+        self.assertTrue(any(isinstance(p, CarryingInfoPacket) for p in packets))
 
 
 class DeployDropTests(unittest.TestCase):
@@ -268,28 +276,25 @@ class PickupTickTests(unittest.TestCase):
 
 
 class DescribePickupTests(unittest.TestCase):
-    def test_reports_eligibility_and_nearest_distance(self):
+    def test_reports_collision_state(self):
         mgr = EntityManager()
-        cargo = CargoSystem(
-            mgr, max_pickup_speed=3.5, max_pickup_altitude=10.0, pickup_radius=15.0
-        )
-        carrier = _carrier(mgr, pos=(0, 0, 2.0), vel=(1.0, 0.0, 0.0))
+        cargo = CargoSystem(mgr, pickup_radius=15.0)
+        carrier = _carrier(mgr, pos=(0, 0, 2.0))
         _box(mgr, pos=(3, 0, 2.0))
 
         d = cargo.describe_pickup(carrier)
         self.assertTrue(d["eligible"])
         self.assertFalse(d["carrying"])
-        self.assertAlmostEqual(d["speed"], 1.0)
-        self.assertAlmostEqual(d["altitude"], 2.0)
         self.assertAlmostEqual(d["nearest_dist"], 3.0)
+        self.assertAlmostEqual(d["pickup_radius"], 15.0)
 
-    def test_reports_ineligible_when_too_high(self):
+    def test_ineligible_when_carrying(self):
         mgr = EntityManager()
-        cargo = CargoSystem(mgr, max_pickup_altitude=10.0)
-        carrier = _carrier(mgr, pos=(0, 0, 50.0))
+        cargo = CargoSystem(mgr)
+        carrier = _carrier(mgr)
+        carrier.carried_cargo_type = 25
         d = cargo.describe_pickup(carrier)
         self.assertFalse(d["eligible"])
-        self.assertGreater(d["altitude"], 10.0)
 
 
 if __name__ == "__main__":

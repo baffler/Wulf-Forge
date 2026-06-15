@@ -129,8 +129,6 @@ class WulframServerContext:
         self.entities = EntityManager()
         self.cargo = CargoSystem(
             self.entities,
-            max_pickup_speed=self.packet_cfg.behavior.active_vehicle_physics.max_speed_height_pickup,
-            max_pickup_altitude=self.packet_cfg.cargo.max_pickup_altitude,
             pickup_radius=self.packet_cfg.cargo.pickup_radius,
             ground_z=self.packet_cfg.cargo.ground_z,
         )
@@ -1731,8 +1729,7 @@ def cmd_cargostatus(ctx):
     send_system_message(
         ctx,
         f"carrying={d['carrying']} eligible={d['eligible']} | "
-        f"speed={d['speed']:.1f}/{d['max_speed']:.1f} "
-        f"alt={d['altitude']:.1f}/{d['max_altitude']:.1f} "
+        f"pos=({ent.pos[0]:.0f},{ent.pos[1]:.0f},{ent.pos[2]:.0f}) "
         f"nearestBox={nearest}/{d['pickup_radius']:.1f}",
     )
     print(f"[CARGO-STATUS] pid={ctx.session.player_id} pos={ent.pos} {d}")
