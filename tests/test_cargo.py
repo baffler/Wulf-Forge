@@ -36,6 +36,29 @@ class ConfigWiringTests(unittest.TestCase):
         )
         self.assertFalse(hasattr(cfg.tank, "max_speed_height_pickup"))
 
+    def test_cargo_tunable_defaults(self):
+        cfg = PacketConfig()
+        self.assertAlmostEqual(cfg.cargo.pickup_radius, 15.0)
+        self.assertAlmostEqual(cfg.cargo.max_pickup_altitude, 10.0)
+        self.assertAlmostEqual(cfg.cargo.ground_z, 0.0)
+
+    def test_cargo_tunables_load_from_toml(self):
+        import tempfile
+
+        toml = (
+            "[cargo]\n"
+            "pickup_radius = 22.5\n"
+            "max_pickup_altitude = 4.0\n"
+            "ground_z = -1.0\n"
+        )
+        with tempfile.NamedTemporaryFile("w", suffix=".toml", delete=False) as fh:
+            fh.write(toml)
+            path = fh.name
+        cfg = PacketConfig.load(path)
+        self.assertAlmostEqual(cfg.cargo.pickup_radius, 22.5)
+        self.assertAlmostEqual(cfg.cargo.max_pickup_altitude, 4.0)
+        self.assertAlmostEqual(cfg.cargo.ground_z, -1.0)
+
 
 class CarryingInfoLayoutTests(unittest.TestCase):
     def test_byte_layout_matches_client(self):

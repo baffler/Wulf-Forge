@@ -151,10 +151,22 @@ class BehaviorConfig:
     active_vehicles_count: int = 3
     active_vehicle_physics: ActiveVehiclePhysics = field(default_factory=ActiveVehiclePhysics)
 
+@dataclass(slots=True)
+class CargoConfig:
+    """Server-side tunables for cargo pickup/deploy (see core/cargo.py).
+
+    The pickup speed gate itself comes from
+    behavior.active_vehicle_physics.max_speed_height_pickup.
+    """
+    pickup_radius: float = 15.0       # max distance to grab a cargo box
+    max_pickup_altitude: float = 10.0 # max height above ground_z to be eligible
+    ground_z: float = 0.0             # ground reference for altitude + deploy settle
+
 @dataclass(frozen=True, slots=True)
 class PacketConfig:
     tank: TankPacketConfig = field(default_factory=TankPacketConfig)
     behavior: BehaviorConfig = field(default_factory=BehaviorConfig)
+    cargo: CargoConfig = field(default_factory=CargoConfig)
 
     @classmethod
     def load(cls, filename: str = "packets.toml") -> PacketConfig:

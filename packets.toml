@@ -40,6 +40,13 @@ turn_rate = 0.05        # Default: Tank: 0.05 Scout: 0.15
 suspension_dampening = 1.3 # Default: Tank: 1.3 Scout: 1.1
 mass = 33000            # Default: Tank: 33000 Scout: 13000
 
+[cargo]
+# Server-side cargo pickup/deploy tunables (core/cargo.py). The pickup speed
+# gate itself is behavior.active_vehicle_physics.max_speed_height_pickup.
+pickup_radius = 15.0        # max distance (world units) to auto-grab a cargo box
+max_pickup_altitude = 10.0  # max height above ground_z to be pickup-eligible
+ground_z = 0.0              # ground reference for altitude check + deploy settle
+
 [behavior.active_vehicle_physics]
 turn_adjust = 4.5   # Default: 4.5
 move_adjust = 85.0  # Default: 85.0

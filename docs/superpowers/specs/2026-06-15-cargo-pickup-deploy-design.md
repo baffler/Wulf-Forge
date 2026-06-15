@@ -113,11 +113,13 @@ tests/test_cargo.py      # NEW: protocol + logic tests
   `ID_BITS_UNIT_CARGO` write (replaces the `update_array.py` literal `25`).
 - `available_power: float = 0.0` — modeled now, used by the deferred validation phase.
 
-### Constants
-- `max_speed_height_pickup` — reuse `TankPacketConfig` (already `3.5`).
-- `CARGO_PICKUP_RADIUS` — new tunable (server constant); refined against a live capture.
-- Pickup altitude gate — derived from terrain sample where available; otherwise a flat threshold,
-  documented as an approximation.
+### Constants / tunables
+All live in `packets.toml` so they can be tuned without code changes:
+- `max_speed_height_pickup` — `behavior.active_vehicle_physics` (already `3.5`); the pickup speed gate.
+- `[cargo] pickup_radius` (`15.0`) — max distance to auto-grab a box.
+- `[cargo] max_pickup_altitude` (`10.0`) — max height above `ground_z` to be eligible.
+- `[cargo] ground_z` (`0.0`) — ground reference for the altitude check and deploy settle; a flat
+  approximation until terrain sampling is wired in.
 
 ## Build order
 1. Tests-first protocol layer: `CarryingInfoPacket` byte layout, `DROP_REQUEST` decode,

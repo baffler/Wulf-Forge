@@ -126,6 +126,9 @@ class WulframServerContext:
         self.cargo = CargoSystem(
             self.entities,
             max_pickup_speed=self.packet_cfg.behavior.active_vehicle_physics.max_speed_height_pickup,
+            max_pickup_altitude=self.packet_cfg.cargo.max_pickup_altitude,
+            pickup_radius=self.packet_cfg.cargo.pickup_radius,
+            ground_z=self.packet_cfg.cargo.ground_z,
         )
         self.first_map_load = False
         self.current_map_name = self.cfg.game.map_name
