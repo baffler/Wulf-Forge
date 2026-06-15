@@ -34,6 +34,7 @@ from network.packets.packet_logger import PacketLogger, log_packet
 
 from core.entity import GameEntity, UpdateMask
 from core.entity_manager import EntityManager
+from core.cargo import CargoSystem, CARGO_BOX_UNIT_TYPE
 from core.map_loader import MapLoader, ensure_team_repair_pads, resolve_spawn_entry
 from core.commands import commands
 from network.packets.update_array import UpdateArrayPacket
@@ -122,6 +123,10 @@ class WulframServerContext:
         self.packet_cfg = PacketConfig.load("packets.toml")
         self.logger = PacketLogger()
         self.entities = EntityManager()
+        self.cargo = CargoSystem(
+            self.entities,
+            max_pickup_speed=self.packet_cfg.tank.max_speed_height_pickup,
+        )
         self.first_map_load = False
         self.current_map_name = self.cfg.game.map_name
 
@@ -604,6 +609,17 @@ def global_game_loop(server: WulframServerContext):
                         my_ent.vel = (final_x, final_y, 100.0)
                         my_ent.mark_dirty(UpdateMask.VEL)
                         my_ent.actions[4] = 0.0 # Reset trigger
+
+            # --- 1b. Cargo pickup scan ---
+            # Server-authoritative, automatic: a slow/low uncarried vehicle near
+            # a cargo box grabs it. Emits CARRYING_INFO (0x29) + DeleteObject.
+            for session in server.sessions:
+                if session.entity and session.is_logged_in:
+                    pickup_packets = server.cargo.try_pickup(
+                        session.entity, session.player_id
+                    )
+                    for pkt in pickup_packets:
+                        broadcast(server, pkt)
 
         # --- 2. Gather Dirty State ---
         # We get the list ONCE. The state remains valid for all clients.
@@ -1417,6 +1433,25 @@ def on_action_dump(ctx: UdpContext, payload: bytes):
 def on_action_update(ctx: UdpContext, payload: bytes):
     parse_action_packet(ctx, payload, is_dump=False)
 
+@dispatcher.route(0x2B)
+def on_drop_request(ctx: UdpContext, payload: bytes):
+    """DROP_REQUEST: deploy (flag=1) or drop (flag=0) the carried cargo.
+
+    Body after the opcode is a single int32 written by deploy_cargo /
+    drop_cargo in the client (wulfram2.exe @ 0x0045de40 / 0x0045de00).
+    """
+    if not ctx.session or not ctx.session.entity:
+        return
+    reader = PacketReader(payload)
+    reader.read_byte()  # opcode 0x2B
+    deploy = reader.read_int32() != 0
+
+    packets = ctx.server.cargo.handle_drop_request(
+        ctx.session.entity, ctx.session.player_id, deploy=deploy
+    )
+    for pkt in packets:
+        broadcast(ctx.server, pkt)
+
 # --------------------
 # COMMANDS
 # --------------------
@@ -1627,8 +1662,8 @@ def cmd_carry(ctx, item_id="13"):
     ctx.send(CarryingInfoPacket(
         player_id=ctx.session.player_id,
         has_cargo=True,
-        unk_v2=1,
-        item_id=int(item_id)
+        cargo_type=int(item_id),
+        variant=ctx.session.team,
     ))
 
 @commands.command("drop")
@@ -1636,9 +1671,32 @@ def cmd_drop(ctx):
     ctx.send(CarryingInfoPacket(
         player_id=ctx.session.player_id,
         has_cargo=False,
-        unk_v2=1,
-        item_id=0
+        cargo_type=0,
+        variant=ctx.session.team,
     ))
+
+@commands.command("spawncargo")
+def cmd_spawncargo(ctx, contained_type="25"):
+    """Spawn a cargo box (unit_type 19) near the player for pickup testing.
+
+    Usage: /s spawncargo [contained_unit_type]   (default 25 = power cell)
+    """
+    try:
+        contained = int(contained_type)
+    except ValueError:
+        contained = 25
+
+    pos = (100.0, 100.0, 0.0)
+    if ctx.session.entity:
+        px, py, _ = ctx.session.entity.pos
+        pos = (px + 5.0, py, 0.0)
+
+    box = ctx.server.entities.create_entity(
+        unit_type=CARGO_BOX_UNIT_TYPE, team_id=ctx.session.team, pos=pos
+    )
+    box.is_manned = False
+    box.cargo_contained_type = contained
+    send_system_message(ctx, f"Spawned cargo box (contains unit {contained}) at {pos}.")
 
 # -------------------------------------------------------------------------
 # HELPERS

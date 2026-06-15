@@ -144,3 +144,13 @@ tests/test_cargo.py      # NEW: protocol + logic tests
 - Factory/base cargo production (boxes are seeded via `/s spawncargo` for now).
 - The client-local hold-request packet (`Net_AddEntityHold`) — pickup is driven server-side,
   which is the authoritative path.
+
+## Natural next extension — pad landing detection (repair / fuel pads)
+
+Landing on a repair pad or fuel pad is the **same kind of server-side collision/proximity
+work** as cargo pickup: detect when a vehicle is slow & low enough and within range of a pad,
+then drive the docking/repair/refuel state (the client already has `DockingPacket` (0x38),
+`/dock`, and `Pad_DrawDockStatusBanner`). The intent is to generalize `CargoSystem`'s
+eligibility + nearest-entity probe into a shared proximity helper so pad landing can reuse it
+rather than duplicating the scan. Deferred to its own iteration; recorded here so the
+detection layer is designed with that reuse in mind.

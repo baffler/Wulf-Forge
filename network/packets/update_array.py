@@ -46,8 +46,8 @@ class EntitySerializer:
                 self.writer.write_int32(0)
                 self.writer.write_int32(0)
             elif entity.unit_type == 19:
-                # Need to store/get actual unit id value, hardcoding 25 for now (Power Cell)
-                self.writer.write_bits(25, ID_BITS_UNIT_CARGO) 
+                # Cargo box: write the contained unit type (default 25 = Power Cell).
+                self.writer.write_bits(entity.cargo_contained_type & 0xFF, ID_BITS_UNIT_CARGO)
             
             # is_teleport_or_snap (Force Snap)
             self.writer.write_bool(True) 
