@@ -99,7 +99,7 @@ class BehaviorPacket(Packet):
             pkt.write_fixed1616(vp.turn_rate)
             pkt.write_fixed1616(vp.suspension_dampening)
 
-            pkt.write_int32(vp.unknown_int_30)
+            pkt.write_int32(vp.mu_budget)
             pkt.write_int32(vp.mass)
 
         # --------------------------
@@ -211,8 +211,8 @@ def _write_hardpoint_block(pkt: PacketWriter, count: int, is_thruster: bool, av=
 
     # FIX: Send a non-zero value for thrusters
     if is_thruster:
-        reaction_range = float(av.jet_reaction_range) if av is not None else 5.0
-        pkt.write_fixed1616(reaction_range)
+        reaction_height_scale = float(av.jet_reaction_height_scale) if av is not None else 5.0
+        pkt.write_fixed1616(reaction_height_scale)
     else:
         # For weapons, this might be range or cooldown, 0.0 might be fine for now
         pkt.write_fixed1616(0.0)
