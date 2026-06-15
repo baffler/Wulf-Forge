@@ -30,19 +30,19 @@ class TankPacket(Packet):
         pkt.write_int32(self.sequence_id if self.sequence_id is not None else get_ticks())
 
         stats = self.tank_cfg.stats
-        pkt.write_bits(1 if stats.include_vitals else 0, 1)
-
-        if stats.include_vitals:
-            pkt.write_bits(stats.weapon_id, 5)
-            pkt.write_bits(stats.health_mult_bits, 10)
-            pkt.write_bits(stats.energy_mult_bits, 10)
-
-            if stats.include_firing_mask:
-                pkt.write_bits(stats.firing_mask_13bits, 13)
-
-            if stats.include_extras:
-                pkt.write_bits(stats.extra_a_bits, 8)
-                pkt.write_bits(stats.extra_b_bits, 8)
+        # Local-vehicle-state presence bit. The client (Net_HandleTankSpawn
+        # @0x0046d260 -> Net_DecodeVehicleState @0x0047d4b0) treats the body of
+        # this block as chassis_type / throttle_level / turn_level / terrain
+        # fields whose bit widths are runtime-quantized, so we cannot emit a
+        # correct payload from static config. Keep the bit 0 and let the server's
+        # world snapshots carry real vehicle state. See TankStatsConfig.
+        if stats.send_vehicle_state:
+            raise NotImplementedError(
+                "Tank-spawn vehicle-state block uses runtime-quantized bit widths "
+                "(Net_DecodeVehicleState); it cannot be serialized from static "
+                "config. Leave send_vehicle_state=False."
+            )
+        pkt.write_bits(0, 1)
 
         pkt.write_int32(_unit_type)
         pkt.write_int32(self.net_id)

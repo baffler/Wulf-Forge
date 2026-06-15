@@ -7,10 +7,11 @@ default_pos = [100.0, 100.0, 100.0]
 default_rot = [0.0, 0.0, 0.0]
 
 [tank.stats]
-include_vitals = true
-weapon_id = 0
-health_mult_bits = 1
-energy_mult_bits = 1
+# GHIDRA-VERIFIED: the tank-spawn (0x18) stats bit-block is the local-vehicle-state
+# codec (chassis / throttle / turn) with RUNTIME-quantized bit widths, not
+# weapon/health/energy. It cannot be serialized from static config, so we omit it
+# (presence bit = 0). The server's world snapshots carry real vehicle state.
+send_vehicle_state = false
 
 [behavior]
 weapons_units_count = 4
@@ -54,4 +55,6 @@ jet_reaction_width = 2.0
 jet_reaction_length = 2.0
 jet_reaction_z = -0.5
 jet_reaction_normal_z = -0.75
-jet_reaction_range = 5.0
+# Reference/scale HEIGHT used to normalize ground clearance into a 0..1 hover
+# factor (GHIDRA: JetReactionSurface_UpdateForObject 0x004de840), not a range.
+jet_reaction_height_scale = 5.0

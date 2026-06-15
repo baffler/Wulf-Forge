@@ -60,15 +60,19 @@ def unpack(dataclass_type: Type[T], data: dict[str, Any]) -> T:
 
 @dataclass(frozen=True, slots=True)
 class TankStatsConfig:
-    include_vitals: bool = True
-    weapon_id: int = 0          
-    health_mult_bits: int = 1   
-    energy_mult_bits: int = 1   
-    include_firing_mask: bool = False
-    firing_mask_13bits: int = 0
-    include_extras: bool = False
-    extra_a_bits: int = 1       
-    extra_b_bits: int = 1       
+    # GHIDRA-VERIFIED (2026-06): the TANK-spawn (0x18) "stats" bit-block is NOT
+    # weapon/health/energy "vitals". The client decodes it via
+    # Net_HandleTankSpawn (0x0046d260) -> Net_DecodeVehicleState (0x0047d4b0) as
+    # the shared local-vehicle-state codec: a 1-bit presence flag, then
+    # chassis_type / throttle_level / turn_level / a terrain-indexed field
+    # (+ optional altitude & secondary). The sub-field BIT WIDTHS are runtime
+    # values pulled from a quantizer-range descriptor
+    # (DAT_00678134 +0x40/+0x140/+0x200), so they cannot be reproduced from
+    # static config. The old weapon_id(5)/health_mult_bits(10)/energy_mult_bits(10)
+    # layout was a mis-identification and desynced the rest of the packet whenever
+    # enabled. The only statically-correct option is to omit the block (presence
+    # bit = 0); the server's world snapshots populate real vehicle state anyway.
+    send_vehicle_state: bool = False
 
 @dataclass(frozen=True, slots=True)
 class TankPacketConfig:
@@ -93,7 +97,16 @@ class VehiclePhysics:
     ground_friction: float = 0.5
     turn_rate: float = 0.2
     suspension_dampening: float = 2.0
-    unknown_int_30: int = 0
+    # GHIDRA: per-type int32 at struct offset 0x30 (read in VehicleInfo_LoadGlobalState
+    # 0x004e5ce0, right before the 0x34 field). NOT a physics value -- it is a Mu
+    # (in-game currency) budget/capacity: read by Loadout_ComputeAffordableCount
+    # (0x004265b4) as the funds that weapon/loadout costs are subtracted from, and
+    # rendered as the right-hand term of the refuel-pad "%3d Mu / %3d Mu" overlay
+    # (Pad_DrawRefuelOverlay 0x00426bc1). (Renamed from the placeholder unknown_int_30.)
+    mu_budget: int = 0
+    # NOTE: the 0x34 field below is read by VehicleInfo_GetRespawnCost (0x004e5d9c)
+    # and returned as a cost/timer, so "mass" may actually be a respawn cost; kept
+    # as `mass` pending dedicated verification.
     mass: int = 33000
 
 @dataclass(slots=True)
@@ -112,7 +125,12 @@ class ActiveVehiclePhysics:
     jet_reaction_length: float = 2.0
     jet_reaction_z: float = -0.5
     jet_reaction_normal_z: float = -0.75
-    jet_reaction_range: float = 5.0
+    # GHIDRA: trailing per-surface float (stored at surface+0x90, read by
+    # JetReactionSurface_ReadPacked 0x004df500). JetReactionSurface_UpdateForObject
+    # (0x004de840) uses it as the denominator that normalizes averaged ground
+    # clearance into a 0..1 hover factor -- i.e. a reference/scale HEIGHT, not a
+    # horizontal range. (Renamed from the misleading `jet_reaction_range`.)
+    jet_reaction_height_scale: float = 5.0
 
     @property
     def tank_hover_height(self) -> float:
