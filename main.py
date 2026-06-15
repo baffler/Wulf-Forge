@@ -35,6 +35,7 @@ from network.packets.packet_logger import PacketLogger, log_packet
 from core.entity import GameEntity, UpdateMask
 from core.entity_manager import EntityManager
 from core.cargo import CargoSystem, CARGO_BOX_UNIT_TYPE
+from core.sim.tank import TankSim
 from core.map_loader import MapLoader, ensure_team_repair_pads, resolve_spawn_entry
 from core.commands import commands
 from network.packets.update_array import UpdateArrayPacket
@@ -132,6 +133,7 @@ class WulframServerContext:
             pickup_radius=self.packet_cfg.cargo.pickup_radius,
             ground_z=self.packet_cfg.cargo.ground_z,
         )
+        self.tank_sim = TankSim(self.packet_cfg)
         self.first_map_load = False
         self.current_map_name = self.cfg.game.map_name
 
@@ -595,6 +597,15 @@ def cargo_pickup_tick(server: WulframServerContext) -> list:
             )
     return packets
 
+def player_sim_tick(server: WulframServerContext, dt: float) -> None:
+    """Integrate every in-world player's tank from its inputs (server-authoritative).
+
+    Single writer of simulated state; runs only in server_simulation mode.
+    """
+    for session in server.sessions:
+        if session.entity and session.is_logged_in:
+            server.tank_sim.step(session.entity, dt)
+
 def global_game_loop(server: WulframServerContext):
     """
     Main Server Tick (Targeting ~10Hz).
@@ -613,6 +624,8 @@ def global_game_loop(server: WulframServerContext):
             _drain_mod_state_queue(server)
         
         if should_run_server_simulation(server):
+            # --- 1. Server-authoritative tank simulation ---
+            player_sim_tick(server, dt=FRAME_TIME)
             # --- 1. Process Inputs (Physics/Actions) ---
             # Apply actions (jump/hover) for every active player
             for session in server.sessions:
