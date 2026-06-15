@@ -122,22 +122,38 @@ class ActiveVehiclePhysics:
 
 @dataclass(slots=True)
 class BehaviorHeader:
-    spawn_related: int = 0
-    timeout: float = 5.0
-    dbl_6792F8: float = 10.0
-    velocity_q: float = 10.0
-    dbl_679308: float = 10.0
-    dbl_679310: float = 10.0
-    total_team_size: int = 20
-    glimpse_ms: int = 25000
-    push_ms: int = 35000
-    gravity_force: float = 100.0 # Gravity Force
-    dword_6791B8: int = 1
-    dword_6791BC: int = 1
-    max_pulse_charge: float = 1.0
-    unk11: Tuple[float, ...] = (1.0,) * 11
-    flag1: int = 1
-    flag2: int = 1
+    # Scalars parsed (in this order) by Net_HandleBehavior (0x0046dc00). Names below
+    # reflect each destination global's verified consumer; addresses noted inline.
+    allow_immediate_respawn: int = 0   # 0x67916d (bool): EntrySelect_ConfirmEntrySelection gates instant (re)spawn
+    session_timeout_secs: float = 5.0  # 0x679170: Game_LeaveWorld/ResetSession deadline = now + value*ticks_per_sec
+    reserved_6792f8: float = 10.0      # 0x6792f8: parsed but unused (dead slot)
+    shadow_caster_ray_length: float = 10.0  # 0x679300: Shadow_ClipCasterRayToTerrain ray extension distance (was "velocity_q")
+    reserved_679308: float = 10.0      # 0x679308: parsed but unused (dead slot)
+    reserved_679310: float = 10.0      # 0x679310: parsed but unused (dead slot)
+    chat_category_msg_cap: int = 20    # 0x67917c: Chat_CategoryAtLimit per-category message cap (was "total_team_size")
+    keepalive_interval_a_ms: int = 25000  # 0x6791b0: Net_TickReliableTimeout keepalive interval A (ms) (was "glimpse_ms")
+    keepalive_interval_b_ms: int = 35000  # 0x6791b4: Net_TickReliableTimeout keepalive interval B (ms) (was "push_ms")
+    gravity_accel: float = 100.0       # 0x5738b8: vertical gravity acceleration (Fx_UpdateAllParticles, EntityPhysics_PitchDown, ...)
+    map_marker_base_height: int = 1     # 0x6791b8: world Z for map-cell markers (MapPanel_SpawnCellMarkerParticle); int32 on wire (was "dword_6791B8")
+    reserved_6791bc: int = 1           # 0x6791bc: parsed but unused (dead slot)
+    pulse_charge_warn_threshold: float = 1.0  # 0x6792a0: Hud_DrawPulseCannonGauge low-charge color threshold (was "max_pulse_charge")
+    # --- The former "unk11" block: 11 fixed16.16 floats read consecutively by
+    #     Net_HandleBehavior (0x0046dc00) into globals 0x679180..0x6791a4, then
+    #     0x6791ac (the parser skips 0x6791a8). Names reflect each global's
+    #     verified consumer; see comments for address + reader. ---
+    building_wedge_radius: float = 1.0  # 0x679180: Map_DrawBuildingIcon cone-wedge length; also deploy primary radius
+    deploy_backup_radius: float = 1.0   # 0x679184: Deploy_EvaluateCellPlacement backup-cell probe radius
+    target_bar_extent: float = 1.0      # 0x679188: ObjectScreen_DrawObjectMarker HUD status/range-bar param
+    reserved_3: float = 1.0             # 0x67918c: written, no readers (dead)
+    factory_arc_inner: float = 1.0      # 0x679190: Map_DrawFactoryIcon arc-wedge near radius
+    factory_arc_outer: float = 1.0      # 0x679194: Map_DrawFactoryIcon arc-wedge far radius
+    reserved_6: float = 1.0             # 0x679198: written, no readers (dead)
+    radar_arc_inner: float = 1.0        # 0x67919c: Map_DrawRadarIcon arc-wedge near radius
+    radar_arc_outer: float = 1.0        # 0x6791a0: Map_DrawRadarIcon arc-wedge far radius
+    silo_wedge_radius: float = 1.0      # 0x6791a4: Map_DrawSiloIcon cone-wedge length
+    target_lock_delay: float = 1.0      # 0x6791ac: Target_IsCandidateEligible lock-on eligibility delay (seconds)
+    friendly_fire_enabled: int = 1      # 0x6791c0 (bool): Interp_HandlePrimaryWeaponCooldownExpiry; 0 = same-team hits suppressed (was "flag1")
+    reserved_6792c4: int = 1            # 0x6792c4 (bool): parsed but unused (dead slot) (was "flag2")
 
 @dataclass(slots=True)
 class BehaviorConfig:

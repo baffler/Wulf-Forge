@@ -22,30 +22,38 @@ class BehaviorPacket(Packet):
         # --------------------------
         h = cfg.header
 
-        pkt.write_byte(int(h.spawn_related) & 0xFF)
-        pkt.write_fixed1616(h.timeout)
-        pkt.write_fixed1616(h.dbl_6792F8)
-        pkt.write_fixed1616(h.velocity_q)
-        pkt.write_fixed1616(h.dbl_679308)
-        pkt.write_fixed1616(h.dbl_679310)
+        pkt.write_byte(int(h.allow_immediate_respawn) & 0xFF)
+        pkt.write_fixed1616(h.session_timeout_secs)
+        pkt.write_fixed1616(h.reserved_6792f8)
+        pkt.write_fixed1616(h.shadow_caster_ray_length)
+        pkt.write_fixed1616(h.reserved_679308)
+        pkt.write_fixed1616(h.reserved_679310)
 
-        pkt.write_int32(h.total_team_size)
-        pkt.write_int32(h.glimpse_ms)
-        pkt.write_int32(h.push_ms)
+        pkt.write_int32(h.chat_category_msg_cap)
+        pkt.write_int32(h.keepalive_interval_a_ms)
+        pkt.write_int32(h.keepalive_interval_b_ms)
 
-        pkt.write_fixed1616(h.gravity_force)
-        pkt.write_int32(h.dword_6791B8)
-        pkt.write_int32(h.dword_6791BC)
-        pkt.write_fixed1616(h.max_pulse_charge)
+        pkt.write_fixed1616(h.gravity_accel)
+        pkt.write_int32(h.map_marker_base_height)
+        pkt.write_int32(h.reserved_6791bc)
+        pkt.write_fixed1616(h.pulse_charge_warn_threshold)
 
-        if len(h.unk11) != 11:
-            raise ValueError(f"BehaviorHeader.unk11 must be exactly 11 floats, got {len(h.unk11)}")
+        # Former "unk11" block: 11 fixed16.16 floats in the exact order
+        # Net_HandleBehavior (0x0046dc00) deserializes them. Order is load-bearing.
+        pkt.write_fixed1616(h.building_wedge_radius)  # 0x679180
+        pkt.write_fixed1616(h.deploy_backup_radius)   # 0x679184
+        pkt.write_fixed1616(h.target_bar_extent)      # 0x679188
+        pkt.write_fixed1616(h.reserved_3)             # 0x67918c (dead)
+        pkt.write_fixed1616(h.factory_arc_inner)      # 0x679190
+        pkt.write_fixed1616(h.factory_arc_outer)      # 0x679194
+        pkt.write_fixed1616(h.reserved_6)             # 0x679198 (dead)
+        pkt.write_fixed1616(h.radar_arc_inner)        # 0x67919c
+        pkt.write_fixed1616(h.radar_arc_outer)        # 0x6791a0
+        pkt.write_fixed1616(h.silo_wedge_radius)      # 0x6791a4
+        pkt.write_fixed1616(h.target_lock_delay)      # 0x6791ac
 
-        for v in h.unk11:
-            pkt.write_fixed1616(v)
-
-        pkt.write_byte(int(h.flag1) & 0xFF)
-        pkt.write_byte(int(h.flag2) & 0xFF)
+        pkt.write_byte(int(h.friendly_fire_enabled) & 0xFF)
+        pkt.write_byte(int(h.reserved_6792c4) & 0xFF)
 
         # --------------------------
         # SECTION 2: WEAPONS (unchanged, hard-coded)
