@@ -34,6 +34,36 @@ class TankSimTests(unittest.TestCase):
         self.sim.step(ent, dt=0.1)
         self.assertEqual(len(ent.vel), 3)
 
+    def test_external_velocity_write_is_honored(self):
+        # Simulates a jump impulse written to the entity between ticks: the sim
+        # must integrate from it, not clobber it back to the cached body's value.
+        # First settle the tank (its cached body builds up state and parks at the
+        # max_altitude ceiling, which equals hover_height here). Then, in a single
+        # external write, reposition it below the ceiling AND apply an upward
+        # impulse. If the sim honors the entity transform it integrates from z=2
+        # with vel.z=100 (tank ends up near ~5, clearly below the ceiling); if it
+        # clobbers the write it stays parked up near the ceiling (~9).
+        ent = GameEntity(net_id=1, unit_type=0, team_id=1, pos=(0.0, 0.0, 10.0))
+        for _ in range(20):
+            self.sim.step(ent, dt=0.1)  # let it settle near the ceiling
+        ent.pos = (ent.pos[0], ent.pos[1], 2.0)   # reposition below the ceiling
+        ent.vel = (0.001, 0.001, 100.0)            # jump impulse
+        self.sim.step(ent, dt=0.1)
+        self.assertGreater(ent.pos[2], 2.0 + 1.0,
+                           "jump impulse on ent.vel must raise the tank")
+        self.assertLess(ent.pos[2], 8.0,
+                        "external pos+vel write must be honored, not clobbered "
+                        "back up to the cached body's settled ceiling height")
+
+    def test_external_position_write_is_honored(self):
+        # Simulates a teleport: writing ent.pos between ticks must move the sim there.
+        ent = GameEntity(net_id=1, unit_type=0, team_id=1, pos=(0.0, 0.0, 10.0))
+        self.sim.step(ent, dt=0.1)
+        ent.pos = (500.0, 500.0, 50.0)  # teleport
+        self.sim.step(ent, dt=0.1)
+        self.assertAlmostEqual(ent.pos[0], 500.0, delta=5.0)
+        self.assertAlmostEqual(ent.pos[1], 500.0, delta=5.0)
+
 
 if __name__ == "__main__":
     unittest.main()

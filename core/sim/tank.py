@@ -41,9 +41,15 @@ class TankSim:
 
     def step(self, ent: GameEntity, dt: float) -> None:
         v = self._vehicle_for(ent)
+        b = v.body
+        # The entity is the single source of truth for the transform. Re-seed the
+        # body's pos/vel from it each tick so external writes (jump impulse,
+        # teleport, spawn reposition) are honored rather than clobbered. The cached
+        # body still persists yaw/angular state and sim_time across ticks.
+        b.pos.set(ent.pos[0], ent.pos[1], ent.pos[2])
+        b.vel.set(ent.vel[0], ent.vel[1], ent.vel[2])
         inp = controls_from_actions(ent.actions)
         v.step(dt, inp, self.tunables, self.terrain)
-        b = v.body
         ent.pos = (b.pos.x, b.pos.y, b.pos.z)
         ent.vel = (b.vel.x, b.vel.y, b.vel.z)
         ent.rot = (ent.rot[0], ent.rot[1], b.euler.z)
