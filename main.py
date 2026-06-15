@@ -122,6 +122,10 @@ class WulframServerContext:
         self.cfg = Config.load()
         self.packet_cfg = PacketConfig.load("packets.toml")
         self.logger = PacketLogger()
+        if self.cfg.debug.log_all_opcodes:
+            # Log every opcode (including per-tick traffic). Lines are teed to
+            # the logs/ file by setup_logging, so this captures all to disk.
+            self.logger.spam_opcodes = set()
         self.entities = EntityManager()
         self.cargo = CargoSystem(
             self.entities,

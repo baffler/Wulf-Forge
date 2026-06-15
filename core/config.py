@@ -40,6 +40,10 @@ class DebugConfig:
     show_ascii: bool = True
     debug_actions: bool = False
     debug_action_packets: bool = False
+    # Log every packet opcode (including high-frequency per-tick ones like
+    # UPDATE_ARRAY/VIEW_UPDATE/PING). All packet log lines are teed to the
+    # timestamped file in logs/, so enabling this captures everything to disk.
+    log_all_opcodes: bool = False
 
 @dataclass(frozen=True, slots=True)
 class SyncConfig:

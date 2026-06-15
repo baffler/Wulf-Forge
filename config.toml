@@ -21,6 +21,10 @@ debug_packets = true
 show_ascii = false
 debug_actions = false
 debug_action_packets = false
+# Log every packet opcode, including high-frequency per-tick traffic
+# (UPDATE_ARRAY/VIEW_UPDATE/PING/etc). All packet lines are written to the
+# timestamped file in logs/. Off by default to keep the log readable.
+log_all_opcodes = false
 
 [sync]
 # server_simulation: action packets drive server-side movement.
