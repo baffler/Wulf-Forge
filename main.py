@@ -671,8 +671,9 @@ def global_game_loop(server: WulframServerContext):
                         # Prepend OpCode 0x0F
                         session.udp_context.send(b'\x0F' + payload)
 
-                if static_anchor_payload:
-                    session.udp_context.send(static_anchor_payload)
+                # TODO: Make static anchor payloads include local stats
+                #if static_anchor_payload:
+                    #session.udp_context.send(static_anchor_payload)
 
         # --- 4. Cleanup ---
         # Now that everyone has been told about the updates, we can clear the flags.
@@ -1173,7 +1174,11 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
         note_mod_relay_entity_spawn(ctx.session, new_entity, "reincarnate")
 
         # 3. Notify the Client
-        send_system_message(ctx, f"Spawning Player #{new_entity.net_id}...")
+        spawn_x, spawn_y, spawn_z = repair_pad.pos
+        send_system_message(
+            ctx,
+            f"Spawning Player #{new_entity.net_id} at x={spawn_x:.2f}, y={spawn_y:.2f}, z={spawn_z:.2f}...",
+        )
 
         # 4. Send TankPacket with the NEW Dynamic ID
         # The client will receive this and now know "I am NetID X"
@@ -1188,9 +1193,11 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
         )
         ctx.send(pkt)
         ctx.send(ReincarnatePacket(code=0))
+        
         send_existing_player_entity_definitions(ctx, "reincarnate")
 
         broadcast(ctx.server, BirthNoticePacket(ctx.session.player_id))
+        #broadcast(ctx.server, BirthNoticePacket(ctx.session.entity.net_id))
 
         return
 

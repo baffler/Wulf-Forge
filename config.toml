@@ -25,7 +25,7 @@ debug_action_packets = false
 [sync]
 # server_simulation: action packets drive server-side movement.
 # client_state_relay: modified clients provide transform state for rebroadcast.
-mode = "server_simulation"
+mode = "client_state_relay"
 
 [mod_relay]
 # Used when sync.mode = "client_state_relay".
