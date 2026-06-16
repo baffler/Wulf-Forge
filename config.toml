@@ -28,6 +28,9 @@ log_all_opcodes = false
 # Verbose per-tick server tank-sim logging: active players' inputs + resulting
 # pos/vel/yaw, and owner-correction suppressed/sent decisions.
 debug_physics_sim = true
+# Send owner its simulated transform every tick (DISABLE suppression) so the
+# divergence between server sim and client is visible as rubber-banding.
+correct_owner_in_sim = true
 
 [sync]
 # server_simulation: action packets drive server-side tank simulation (TankSim).

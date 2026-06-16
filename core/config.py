@@ -48,6 +48,11 @@ class DebugConfig:
     # player's inputs + resulting pos/vel/yaw, and whether the owner correction
     # was suppressed (server_simulation) or sent. Off by default (noisy).
     debug_physics_sim: bool = False
+    # When True, send the owner its own simulated transform every tick even in
+    # server_simulation (i.e. DISABLE the owner-correction suppression). Lets you
+    # SEE how far the server sim has drifted from the client (rubber-banding).
+    # Off by default = suppress = smooth client-side prediction.
+    correct_owner_in_sim: bool = False
 
 @dataclass(frozen=True, slots=True)
 class SyncConfig:

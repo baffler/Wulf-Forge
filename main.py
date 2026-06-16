@@ -682,6 +682,7 @@ def global_game_loop(server: WulframServerContext):
         # --- 3. Broadcast Loop ---
         sim_mode = should_run_server_simulation(server)
         phys_debug = getattr(server.cfg.debug, "debug_physics_sim", False)
+        correct_owner = getattr(server.cfg.debug, "correct_owner_in_sim", False)
         if dirty_entities or static_anchor_due:
             for session in server.sessions:
                 # CHECK: Must be logged in AND ready for updates
@@ -716,7 +717,7 @@ def global_game_loop(server: WulframServerContext):
 
                 # --- B. PACKET FOR "SELF" (0x0F - View Update) ---
                 if my_entity in dirty_entities:
-                    if sim_mode:
+                    if sim_mode and not correct_owner:
                         # Server-authoritative tank sim is APPROXIMATE; echoing the
                         # owner's own simulated pos/vel/rot back every tick fights the
                         # client's local prediction (wobble / can't-turn). The client

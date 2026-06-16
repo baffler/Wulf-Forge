@@ -43,23 +43,46 @@ def main():
     period = 1.0 / hz
 
     pids = find_wulfram_pids()
-    target = None
-    for pid in pids:
-        h, _info = open_proc(pid)
-        if not h:
-            continue
-        raw = read(h, PTR_LOCAL_ENTITY, 4)
-        ent = struct.unpack("<I", raw)[0] if raw else 0
-        if ent >= 0x10000:  # in-world entity pointer
-            target = (pid, h)
-            break
-        k32.CloseHandle(h)
-    if not target:
-        print("No in-world wulfram2.exe found (spawn first; run elevated). "
-              f"err on open if not admin. pids={pids}")
+    print(f"[capture] wulfram2.exe pids: {pids}")
+    if not pids:
+        print("[capture] no wulfram2.exe running.")
         return
-    pid, h = target
-    print(f"[capture] pid={pid} -> {OUT_CSV}  ({duration:.0f}s @ {hz:.0f}Hz). Drive now...")
+
+    # Open every process; report access so elevation problems are obvious.
+    handles = {}
+    for pid in pids:
+        h, info = open_proc(pid)
+        if h:
+            handles[pid] = h
+        else:
+            print(f"[capture] pid={pid} OpenProcess failed (err={info}; 5=run as admin)")
+    if not handles:
+        print("[capture] could not open any process -- run this in an ELEVATED terminal.")
+        return
+
+    # Wait (up to 20s) for an in-world entity pointer to appear (spawn first).
+    pid = h = None
+    deadline = time.time() + 20.0
+    while time.time() < deadline:
+        for p, hh in handles.items():
+            raw = read(hh, PTR_LOCAL_ENTITY, 4)
+            ent = struct.unpack("<I", raw)[0] if raw else 0
+            if ent >= 0x10000:
+                pid, h = p, hh
+                break
+        if h:
+            break
+        print("[capture] waiting for an in-world tank (spawn in the game)...")
+        time.sleep(1.0)
+    if not h:
+        print("[capture] no in-world entity after 20s -- are you spawned in?")
+        for hh in handles.values():
+            k32.CloseHandle(hh)
+        return
+    for p, hh in handles.items():
+        if p != pid:
+            k32.CloseHandle(hh)
+    print(f"[capture] pid={pid} in-world -> {OUT_CSV}  ({duration:.0f}s @ {hz:.0f}Hz). Drive now...")
 
     rows = []
     t0 = time.time()
