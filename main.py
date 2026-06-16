@@ -609,11 +609,15 @@ def player_sim_tick(server: WulframServerContext, dt: float) -> None:
             ent = session.entity
             server.tank_sim.step(ent, dt)
             if phys_debug:
-                inp = controls_from_actions(ent.actions)
-                if inp.throttle or inp.turn or inp.strafe or inp.vertical:
+                # Dump EVERY non-zero action id (not just the mapped 4) so we can
+                # see which channel actually carries turn/aim when driving.
+                active = {k: round(v, 2) for k, v in ent.actions.items() if abs(v) > 0.001}
+                if active:
+                    inp = controls_from_actions(ent.actions)
                     print(
                         f"[PHYS-SIM] pid={session.player_id} net_id={ent.net_id} "
-                        f"in(thr={inp.throttle:+.2f} turn={inp.turn:+.2f} "
+                        f"actions={active} "
+                        f"-> in(thr={inp.throttle:+.2f} turn={inp.turn:+.2f} "
                         f"str={inp.strafe:+.2f} vert={inp.vertical:+.2f}) "
                         f"pos=({ent.pos[0]:.1f},{ent.pos[1]:.1f},{ent.pos[2]:.1f}) "
                         f"vel=({ent.vel[0]:.1f},{ent.vel[1]:.1f},{ent.vel[2]:.1f}) "
