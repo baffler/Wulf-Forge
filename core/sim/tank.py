@@ -32,10 +32,17 @@ class _FlatTerrain:
 
 
 class TankSim:
-    def __init__(self, cfg: PacketConfig, ground_z: float = 0.0):
+    def __init__(self, cfg: PacketConfig, ground_z: float = 0.0, terrain=None):
         self.tunables = ServerTunables(cfg)
-        self.terrain = _FlatTerrain(ground_z)
+        # Terrain provides height_at(x, y); defaults to a flat plane until a real
+        # map heightmap is loaded via set_terrain().
+        self.terrain = terrain if terrain is not None else _FlatTerrain(ground_z)
         self._vehicles: dict[int, Vehicle] = {}
+
+    def set_terrain(self, terrain) -> None:
+        """Swap the terrain the sim samples (e.g. the current map's heightmap)."""
+        if terrain is not None:
+            self.terrain = terrain
 
     def _vehicle_for(self, ent: GameEntity) -> Vehicle:
         v = self._vehicles.get(ent.net_id)

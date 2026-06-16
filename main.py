@@ -37,6 +37,7 @@ from core.entity_manager import EntityManager
 from core.cargo import CargoSystem, CARGO_BOX_UNIT_TYPE
 from core.sim.tank import TankSim
 from core.sim.inputs import controls_from_actions
+from core.sim.terrain import load_map_heightmap
 from core.map_loader import MapLoader, ensure_team_repair_pads, resolve_spawn_entry
 from core.commands import commands
 from network.packets.update_array import UpdateArrayPacket
@@ -137,6 +138,7 @@ class WulframServerContext:
         self.tank_sim = TankSim(self.packet_cfg)
         self.first_map_load = False
         self.current_map_name = self.cfg.game.map_name
+        self.refresh_sim_terrain()
 
         # Session Management
         self.sessions: list[ClientSession] = []
@@ -173,6 +175,17 @@ class WulframServerContext:
         pid = self._next_player_id
         self._next_player_id += 1
         return pid
+
+    def refresh_sim_terrain(self, map_name: str | None = None) -> None:
+        """Load the current map's heightmap into the tank sim (flat if absent)."""
+        name = map_name or self.current_map_name
+        hm = load_map_heightmap(name)
+        if hm is not None:
+            self.tank_sim.set_terrain(hm)
+            print(f"[Sim] terrain heightmap loaded for '{name}' "
+                  f"({hm.gw}x{hm.gh} over {hm.world_w:.0f}x{hm.world_h:.0f}).")
+        else:
+            print(f"[Sim] no land heightmap for '{name}'; tank sim uses flat terrain.")
 
     def enqueue_mod_client_state(self, session: ClientSession, state: ClientStateV1) -> None:
         self.mod_state_queue.put((session, state))
@@ -1704,7 +1717,11 @@ def cmd_loadmap(ctx, map_name="bpass"):
             send_system_message(ctx, f"Created {created_pads} fallback repair pads.")
             print(f"[MapLoader] Created {created_pads} fallback repair pads for {map_name}.")
         print(f"[MapLoader] Map {map_name}: loaded {loaded_count} state entities.")
-        
+
+        # Load this map's terrain heightmap into the tank sim so it tracks the
+        # real ground/slopes instead of a flat plane.
+        ctx.server.refresh_sim_terrain(map_name)
+
         # Just send the full snapshot
         #ctx.outgoing_seq += 1
         snapshot = ctx.server.entities.get_snapshot_packet(sequence_num=get_ticks(), health=1.0, energy=1.0)
