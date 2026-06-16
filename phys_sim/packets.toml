@@ -1,0 +1,38 @@
+# phys_sim tunable overrides (isolated copy — never writes back to the repo).
+#
+# Values mirror the real client BEHAVIOR(0x24) defaults from the repo's packets.toml /
+# packet_config.py. Anything here overrides the built-in defaults in tunables.py at startup;
+# the REST API and sliders can still change them live afterward.
+#
+# kind tags (see tunables.py): EXACT = drives bit-exact ported math; MODEL = structural model
+# whose exact constant scaling is still being reverse-engineered.
+
+[tunables]
+# --- Global (EXACT) ---
+gravity_accel = 100.0
+gravity_pct   = 1.0
+
+# --- Chassis / Section 4 ---
+ground_friction      = 0.8
+mass                 = 33000.0
+suspension_stiffness = 550.0
+suspension_dampening = 1.3
+
+# --- Pilot authority / Section 6 ---
+turn_adjust     = 4.5
+move_adjust     = 85.0
+strafe_adjust   = 69.7
+control_divisor = 100.0
+max_velocity    = 80.0
+hover_height    = 9.75
+max_altitude    = 60.0
+
+# --- Suspension model (sim knobs) ---
+hover_spring = 200.0
+hover_damp   = 28.0
+
+# --- Thrust model (sim knobs) ---
+thrust_scale = 120.0
+torque_scale = 100.0
+max_thrust   = 400.0
+angular_damp = 4.0

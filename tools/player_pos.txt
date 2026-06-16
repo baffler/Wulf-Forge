@@ -1,0 +1,5 @@
+[pid 20872] entity_id=4294967295 controlled_entity_ptr=0x00000000
+[pid 20872]   pointer looks null/invalid (not in-world?)
+[pid 34736] entity_id=1 controlled_entity_ptr=0x10E6E0A0
+[pid 34736]   pos = (5050.408, 5078.920, 5.667)
+[pid 34736]   vel = (0.036, 0.022, 0.056)
