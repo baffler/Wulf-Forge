@@ -139,6 +139,16 @@ GLOBAL_CONFIGS[5] = {"head": 10, "total": 0, "max": "1.0", "range": "1.0"}
 # Index 8: Energy (0.0 to 1.0)
 GLOBAL_CONFIGS[8] = {"head": 10, "total": 0, "max": "1.0", "range": "1.0"}
 
+# Index 10 & 11: analog control axes (action channels). The client adopts these
+# via the TRANSLATION packet and uses them for both decode and its own outgoing
+# encode (Net_DecodeQuantizedFloat / SyncAction_WriteChannelValue @ 0x004ddc60).
+# 11 = channels 1/2/3/6/7 (turn/move/strafe/tilt); 10 = channel 5 (aim). The axes
+# are normalized to [-1, 1], so max=1.0 / range=2.0 gives full-precision round-trip
+# (step 2/(2^16-2) ~= 3e-5) instead of the SCALAR_DEFAULT max=1000 placeholder
+# (step ~0.03, which coarsened every control input).
+GLOBAL_CONFIGS[10] = {"head": 16, "total": 0, "max": "1.0", "range": "2.0"}
+GLOBAL_CONFIGS[11] = {"head": 16, "total": 0, "max": "1.0", "range": "2.0"}
+
 # Index 13 & 14: Extra Vitals (e.g. Shield/Stamina)
 GLOBAL_CONFIGS[13] = {"head": 8, "total": 0, "max": "1.0", "range": "1.0"}
 GLOBAL_CONFIGS[14] = {"head": 8, "total": 0, "max": "1.0", "range": "1.0"}
