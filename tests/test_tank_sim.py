@@ -55,6 +55,21 @@ class TankSimTests(unittest.TestCase):
                         "external pos+vel write must be honored, not clobbered "
                         "back up to the cached body's settled ceiling height")
 
+    def test_hover_settles_without_oscillation(self):
+        # Regression: at the 10Hz server tick (dt=0.1) the stiff suspension PD
+        # (spring=200) is numerically unstable under explicit Euler and locks into
+        # a perpetual limit cycle (z bouncing, vz swinging +-20) -> the tank looked
+        # "very wobbly" in-game. The fix sub-steps the integration so the PD settles.
+        ent = GameEntity(net_id=1, unit_type=0, team_id=1, pos=(0.0, 0.0, 7.7))
+        for _ in range(40):
+            self.sim.step(ent, dt=0.1)
+        self.assertLess(abs(ent.vel[2]), 0.5,
+                        f"hover still oscillating: vz={ent.vel[2]}")
+        z_before = ent.pos[2]
+        self.sim.step(ent, dt=0.1)
+        self.assertLess(abs(ent.pos[2] - z_before), 0.2,
+                        f"z still jumping between ticks: {z_before} -> {ent.pos[2]}")
+
     def test_external_position_write_is_honored(self):
         # Simulates a teleport: writing ent.pos between ticks must move the sim there.
         ent = GameEntity(net_id=1, unit_type=0, team_id=1, pos=(0.0, 0.0, 10.0))

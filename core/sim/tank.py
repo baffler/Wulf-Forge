@@ -6,11 +6,20 @@ kept per entity net_id; each step reads the entity's actions and writes pos/vel/
 """
 from __future__ import annotations
 
+import math
+
 from network.packets.packet_config import PacketConfig
 from core.entity import GameEntity, UpdateMask
 from core.sim.tunables import ServerTunables
 from core.sim.inputs import controls_from_actions
 from wulfsim.vehicle import Vehicle
+
+# Maximum physics sub-step. The stiff hover suspension PD (spring ~200) is
+# numerically unstable under explicit Euler at the coarse 10Hz server tick
+# (dt=0.1) -- it locks into a perpetual bounce. Integrating the tick as small
+# sub-steps (~0.01s, matching the client's render-rate integration) keeps it
+# stable. Physics constants are unchanged; only the timestep is subdivided.
+_SUB_DT = 0.01
 
 
 class _FlatTerrain:
@@ -49,7 +58,12 @@ class TankSim:
         b.pos.set(ent.pos[0], ent.pos[1], ent.pos[2])
         b.vel.set(ent.vel[0], ent.vel[1], ent.vel[2])
         inp = controls_from_actions(ent.actions)
-        v.step(dt, inp, self.tunables, self.terrain)
+        # Sub-step the tick so the stiff suspension PD stays numerically stable.
+        if dt > 0.0:
+            n = max(1, math.ceil(dt / _SUB_DT))
+            sub = dt / n
+            for _ in range(n):
+                v.step(sub, inp, self.tunables, self.terrain)
         ent.pos = (b.pos.x, b.pos.y, b.pos.z)
         ent.vel = (b.vel.x, b.vel.y, b.vel.z)
         ent.rot = (ent.rot[0], ent.rot[1], b.euler.z)
