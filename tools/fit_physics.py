@@ -41,6 +41,7 @@ from core.sim.tank import _FlatTerrain
 from wulfsim.vehicle import Vehicle, Inputs
 
 _SUB_DT = 0.01
+_STRIDE = 1  # subsample stride for the one-step loss (set from sample count)
 
 # Fit targets: (name, lo, hi). friction/gravity/control coeffs are RE-fixed.
 FIT_PARAMS = [
@@ -135,7 +136,8 @@ def onestep_loss(params, base, terrain, cap_t, pos, vel, yaw, thr, turn, strafe)
     tun = FitTunables(base, dict(zip([p[0] for p in FIT_PARAMS], params)))
     err = 0.0
     n = len(cap_t)
-    for i in range(1, n - 1):
+    cnt = 0
+    for i in range(1, n - 1, _STRIDE):
         dt = cap_t[i + 1] - cap_t[i]
         if dt <= 0 or dt > 0.5:
             continue
@@ -147,7 +149,8 @@ def onestep_loss(params, base, terrain, cap_t, pos, vel, yaw, thr, turn, strafe)
         dyaw = math.atan2(math.sin(v.body.euler.z - yaw[i + 1]),
                           math.cos(v.body.euler.z - yaw[i + 1]))
         err += dx * dx + dy * dy + (12.0 * dyaw) ** 2  # weight yaw (rad) into world units
-    return err / max(n, 1)
+        cnt += 1
+    return err / max(cnt, 1)
 
 
 def open_loop_loss(params, base, terrain, cap_t, pos, vel, yaw, thr, turn, strafe):
@@ -178,7 +181,13 @@ def main():
     ap.add_argument("--fit", action="store_true")
     args = ap.parse_args()
 
+    global _STRIDE
     cap_t, pos, vel, yaw = load_capture(args.capture)
+    # Keep the one-step loss ~1000-1500 evals regardless of capture length.
+    _STRIDE = max(1, len(cap_t) // 1200)
+    big = len(cap_t) > 1500
+    de_maxiter = 25 if big else 40
+    polish_maxiter = 400 if big else 1500
     log = pick_log(cap_t, args.log)
     if not log:
         print("No matching server log with [PHYS-SIM] lines found.")
@@ -213,13 +222,13 @@ def main():
     # One-step DE gives a fast, well-conditioned global start; then polish on the
     # ACTUAL open-loop trajectory drift (what matters for a no-resync server).
     de = differential_evolution(
-        onestep_loss, bounds, args=data, maxiter=40, tol=1e-3, seed=1, polish=False,
+        onestep_loss, bounds, args=data, maxiter=de_maxiter, tol=1e-3, seed=1, polish=False,
     )
     candidates = [de.x]
     # Polish from the DE result AND from the current defaults, keep the best.
     for x0 in (de.x, np.array(defaults)):
         nm = minimize(open_loop_loss, x0, args=data, method="Nelder-Mead",
-                      options={"xatol": 1e-2, "fatol": 1e-3, "maxiter": 1500})
+                      options={"xatol": 1e-2, "fatol": 1e-3, "maxiter": polish_maxiter})
         candidates.append(nm.x)
     best = min(candidates, key=lambda x: open_loop_loss(x, *data))
     best = np.clip(best, [b[0] for b in bounds], [b[1] for b in bounds])
