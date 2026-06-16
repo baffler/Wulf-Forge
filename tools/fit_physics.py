@@ -150,6 +150,11 @@ def onestep_loss(params, base, terrain, cap_t, pos, vel, yaw, thr, turn, strafe)
     return err / max(n, 1)
 
 
+def open_loop_loss(params, base, terrain, cap_t, pos, vel, yaw, thr, turn, strafe):
+    """Mean open-loop trajectory drift (the production metric: no resync)."""
+    return open_loop_drift(params, base, terrain, cap_t, pos, vel, yaw, thr, turn, strafe)[0]
+
+
 def open_loop_drift(params, base, terrain, cap_t, pos, vel, yaw, thr, turn, strafe):
     """Replay inputs open-loop from the first state; mean horizontal drift (units)."""
     tun = FitTunables(base, dict(zip([p[0] for p in FIT_PARAMS], params)))
@@ -204,13 +209,20 @@ def main():
         print("\n(replay only; pass --fit to calibrate)")
         return
 
-    print("\nfitting (differential evolution -> Nelder-Mead polish)...")
+    print("\nfitting: one-step DE (global) -> open-loop Nelder-Mead polish...")
+    # One-step DE gives a fast, well-conditioned global start; then polish on the
+    # ACTUAL open-loop trajectory drift (what matters for a no-resync server).
     de = differential_evolution(
         onestep_loss, bounds, args=data, maxiter=40, tol=1e-3, seed=1, polish=False,
     )
-    nm = minimize(onestep_loss, de.x, args=data, method="Nelder-Mead",
-                  options={"xatol": 1e-2, "fatol": 1e-4, "maxiter": 2000})
-    best = nm.x if nm.fun < de.fun else de.x
+    candidates = [de.x]
+    # Polish from the DE result AND from the current defaults, keep the best.
+    for x0 in (de.x, np.array(defaults)):
+        nm = minimize(open_loop_loss, x0, args=data, method="Nelder-Mead",
+                      options={"xatol": 1e-2, "fatol": 1e-3, "maxiter": 1500})
+        candidates.append(nm.x)
+    best = min(candidates, key=lambda x: open_loop_loss(x, *data))
+    best = np.clip(best, [b[0] for b in bounds], [b[1] for b in bounds])
     fitted = dict(zip([p[0] for p in FIT_PARAMS], best))
     mdf, xdf = open_loop_drift(best, *data)
     print("\n=== FITTED params ===")

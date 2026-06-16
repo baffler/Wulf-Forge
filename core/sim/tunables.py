@@ -12,16 +12,17 @@ from network.packets.packet_config import PacketConfig
 # Sandbox model knobs. friction_thrust / friction_idle are RE-confirmed constants
 # (0.1 thrusting / 2.0 coasting). The *_scale knobs, control_divisor and
 # angular_damp are CALIBRATED via tools/fit_physics.py against a recorded drive
-# (crossroads capture, 2026-06-15): cut open-loop trajectory drift ~5x
-# (mean 695u -> 141u). Re-run the fit on a fresh capture to refine.
+# (crossroads capture, 2026-06-15) by minimizing open-loop trajectory drift:
+# mean drift 695u (uncalibrated) -> 141u (one-step fit) -> 79u (open-loop fit).
+# Re-run the fit on a fresh/longer capture to refine.
 _MODEL_DEFAULTS = {
-    "control_divisor": 361.095,
-    "thrust_scale": 32.366,
-    "torque_scale": 471.256,
-    "max_thrust": 1184.124,
+    "control_divisor": 372.336,
+    "thrust_scale": 46.016,
+    "torque_scale": 280.355,
+    "max_thrust": 1317.781,
     "hover_spring": 200.0,
     "hover_damp": 28.0,
-    "angular_damp": 2.996,
+    "angular_damp": 2.824,
     "friction_thrust": 0.1,
     "friction_idle": 2.0,
 }
