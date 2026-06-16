@@ -44,6 +44,10 @@ class DebugConfig:
     # UPDATE_ARRAY/VIEW_UPDATE/PING). All packet log lines are teed to the
     # timestamped file in logs/, so enabling this captures everything to disk.
     log_all_opcodes: bool = False
+    # Verbose per-tick logging of the server-side tank simulation: each active
+    # player's inputs + resulting pos/vel/yaw, and whether the owner correction
+    # was suppressed (server_simulation) or sent. Off by default (noisy).
+    debug_physics_sim: bool = False
 
 @dataclass(frozen=True, slots=True)
 class SyncConfig:

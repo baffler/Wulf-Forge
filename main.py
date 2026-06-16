@@ -36,6 +36,7 @@ from core.entity import GameEntity, UpdateMask
 from core.entity_manager import EntityManager
 from core.cargo import CargoSystem, CARGO_BOX_UNIT_TYPE
 from core.sim.tank import TankSim
+from core.sim.inputs import controls_from_actions
 from core.map_loader import MapLoader, ensure_team_repair_pads, resolve_spawn_entry
 from core.commands import commands
 from network.packets.update_array import UpdateArrayPacket
@@ -602,9 +603,22 @@ def player_sim_tick(server: WulframServerContext, dt: float) -> None:
 
     Single writer of simulated state; runs only in server_simulation mode.
     """
+    phys_debug = getattr(server.cfg.debug, "debug_physics_sim", False)
     for session in server.sessions:
         if session.entity and session.is_logged_in:
-            server.tank_sim.step(session.entity, dt)
+            ent = session.entity
+            server.tank_sim.step(ent, dt)
+            if phys_debug:
+                inp = controls_from_actions(ent.actions)
+                if inp.throttle or inp.turn or inp.strafe or inp.vertical:
+                    print(
+                        f"[PHYS-SIM] pid={session.player_id} net_id={ent.net_id} "
+                        f"in(thr={inp.throttle:+.2f} turn={inp.turn:+.2f} "
+                        f"str={inp.strafe:+.2f} vert={inp.vertical:+.2f}) "
+                        f"pos=({ent.pos[0]:.1f},{ent.pos[1]:.1f},{ent.pos[2]:.1f}) "
+                        f"vel=({ent.vel[0]:.1f},{ent.vel[1]:.1f},{ent.vel[2]:.1f}) "
+                        f"yaw={ent.rot[2]:+.3f}"
+                    )
 
 def global_game_loop(server: WulframServerContext):
     """
@@ -662,6 +676,8 @@ def global_game_loop(server: WulframServerContext):
             last_static_anchor_time = start_time
 
         # --- 3. Broadcast Loop ---
+        sim_mode = should_run_server_simulation(server)
+        phys_debug = getattr(server.cfg.debug, "debug_physics_sim", False)
         if dirty_entities or static_anchor_due:
             for session in server.sessions:
                 # CHECK: Must be logged in AND ready for updates
@@ -695,26 +711,53 @@ def global_game_loop(server: WulframServerContext):
                         session.udp_context.send(b'\x0E' + payload)
 
                 # --- B. PACKET FOR "SELF" (0x0F - View Update) ---
-                # Check if "I" am dirty. If so, send View Update.
                 if my_entity in dirty_entities:
-                    skip_owner_echo = (
-                        my_entity.net_id in server.mod_relay_dirty_entity_ids
-                        and not server.cfg.mod_relay.echo_owner_state
-                    )
-
-                    if not skip_owner_echo:
-                        # Build payload (Includes Timestamp, Includes Local Stats)
-                        stats = (my_entity.health, my_entity.energy)
-                        
-                        payload = server.entities.build_update_packet(
-                            [my_entity], 
-                            sequence_num=current_tick, 
-                            is_view_update=True, 
-                            local_stats=stats
+                    if sim_mode:
+                        # Server-authoritative tank sim is APPROXIMATE; echoing the
+                        # owner's own simulated pos/vel/rot back every tick fights the
+                        # client's local prediction (wobble / can't-turn). The client
+                        # owns its own tank view; send only a stats-only view update so
+                        # the HUD stays synced. Other players still receive this tank
+                        # via the 0x0E "others" packet above.
+                        stats_payload = server.entities.build_update_packet(
+                            [],
+                            sequence_num=current_tick,
+                            is_view_update=True,
+                            local_stats=(my_entity.health, my_entity.energy),
                         )
-                        if payload:
-                            # Prepend OpCode 0x0F
-                            session.udp_context.send(b'\x0F' + payload)
+                        if stats_payload:
+                            session.udp_context.send(b'\x0F' + stats_payload)
+                        if phys_debug:
+                            print(
+                                f"[PHYS-SIM] owner-correction SUPPRESSED pid={session.player_id} "
+                                f"net_id={my_entity.net_id} "
+                                f"sim_pos=({my_entity.pos[0]:.1f},{my_entity.pos[1]:.1f},{my_entity.pos[2]:.1f}) "
+                                f"yaw={my_entity.rot[2]:+.3f} (client predicts locally; stats-only sent)"
+                            )
+                    else:
+                        skip_owner_echo = (
+                            my_entity.net_id in server.mod_relay_dirty_entity_ids
+                            and not server.cfg.mod_relay.echo_owner_state
+                        )
+                        if not skip_owner_echo:
+                            # Build payload (Includes Timestamp, Includes Local Stats)
+                            stats = (my_entity.health, my_entity.energy)
+
+                            payload = server.entities.build_update_packet(
+                                [my_entity],
+                                sequence_num=current_tick,
+                                is_view_update=True,
+                                local_stats=stats
+                            )
+                            if payload:
+                                # Prepend OpCode 0x0F
+                                session.udp_context.send(b'\x0F' + payload)
+                            if phys_debug:
+                                print(
+                                    f"[PHYS-SIM] owner-correction SENT pid={session.player_id} "
+                                    f"net_id={my_entity.net_id} "
+                                    f"pos=({my_entity.pos[0]:.1f},{my_entity.pos[1]:.1f},{my_entity.pos[2]:.1f})"
+                                )
 
                 if static_anchor_due:
                     static_anchor_payload = server.entities.build_static_anchor_packet(

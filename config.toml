@@ -25,6 +25,9 @@ debug_action_packets = false
 # (UPDATE_ARRAY/VIEW_UPDATE/PING/etc). All packet lines are written to the
 # timestamped file in logs/. Off by default to keep the log readable.
 log_all_opcodes = false
+# Verbose per-tick server tank-sim logging: active players' inputs + resulting
+# pos/vel/yaw, and owner-correction suppressed/sent decisions.
+debug_physics_sim = true
 
 [sync]
 # server_simulation: action packets drive server-side tank simulation (TankSim).
