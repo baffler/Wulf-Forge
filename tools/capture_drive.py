@@ -60,9 +60,9 @@ def main():
         print("[capture] could not open any process -- run this in an ELEVATED terminal.")
         return
 
-    # Wait (up to 20s) for an in-world entity pointer to appear (spawn first).
+    # Wait (up to 90s) for an in-world entity pointer to appear (spawn first).
     pid = h = None
-    deadline = time.time() + 20.0
+    deadline = time.time() + 90.0
     while time.time() < deadline:
         for p, hh in handles.items():
             raw = read(hh, PTR_LOCAL_ENTITY, 4)
