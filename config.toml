@@ -30,7 +30,8 @@ log_all_opcodes = false
 debug_physics_sim = true
 # Send owner its simulated transform every tick (DISABLE suppression) so the
 # divergence between server sim and client is visible as rubber-banding.
-correct_owner_in_sim = true
+# Off = suppress = client owns its own rotation/position (smooth turn + tilt).
+correct_owner_in_sim = false
 
 [sync]
 # server_simulation: action packets drive server-side tank simulation (TankSim).
