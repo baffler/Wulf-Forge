@@ -28,6 +28,20 @@ class ServerTunablesTests(unittest.TestCase):
                   "hover_damp", "angular_damp", "control_divisor"):
             self.assertGreater(self.t.get(k), 0.0)
 
+    def test_calibrated_scales_pinned(self):
+        # Calibrated via tools/fit_physics.py against the 2026-06-15 crossroads
+        # capture (drift mean 695u -> 141u). Pin so they can't silently regress;
+        # update both here and _MODEL_DEFAULTS after a re-fit.
+        self.assertAlmostEqual(self.t.get("thrust_scale"), 32.366, places=3)
+        self.assertAlmostEqual(self.t.get("torque_scale"), 471.256, places=3)
+        self.assertAlmostEqual(self.t.get("max_thrust"), 1184.124, places=3)
+        self.assertAlmostEqual(self.t.get("control_divisor"), 361.095, places=3)
+        self.assertAlmostEqual(self.t.get("angular_damp"), 2.996, places=3)
+
+    def test_friction_constants_re_fixed(self):
+        self.assertAlmostEqual(self.t.get("friction_thrust"), 0.1)
+        self.assertAlmostEqual(self.t.get("friction_idle"), 2.0)
+
 
 if __name__ == "__main__":
     unittest.main()
