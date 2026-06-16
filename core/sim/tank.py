@@ -55,6 +55,23 @@ class TankSim:
     def forget(self, net_id: int) -> None:
         self._vehicles.pop(net_id, None)
 
+    def _terrain_tilt(self, x: float, y: float, yaw: float) -> tuple[float, float]:
+        """Hull pitch/roll that self-levels to the terrain slope under (x, y).
+
+        Samples the terrain gradient and rotates it into the body frame by yaw:
+        pitch = tilt along the forward axis, roll = tilt along the right axis.
+        (Sign/axis convention is a best-guess vs the client's euler order; flip
+        if it tilts the wrong way in-game.)
+        """
+        d = 2.0
+        th = self.terrain.height_at
+        gx = (th(x + d, y) - th(x - d, y)) / (2.0 * d)  # slope along world +x
+        gy = (th(x, y + d) - th(x, y - d)) / (2.0 * d)  # slope along world +y
+        cos_y, sin_y = math.cos(yaw), math.sin(yaw)
+        slope_fwd = gx * cos_y + gy * sin_y     # forward axis (cos, sin)
+        slope_right = gx * sin_y - gy * cos_y   # right axis (sin, -cos)
+        return math.atan(slope_fwd), math.atan(slope_right)
+
     def step(self, ent: GameEntity, dt: float) -> None:
         v = self._vehicle_for(ent)
         b = v.body
@@ -73,5 +90,7 @@ class TankSim:
                 v.step(sub, inp, self.tunables, self.terrain)
         ent.pos = (b.pos.x, b.pos.y, b.pos.z)
         ent.vel = (b.vel.x, b.vel.y, b.vel.z)
-        ent.rot = (ent.rot[0], ent.rot[1], b.euler.z)
+        # Self-level the hull to the terrain slope (pitch/roll); yaw from the sim.
+        pitch, roll = self._terrain_tilt(b.pos.x, b.pos.y, b.euler.z)
+        ent.rot = (pitch, roll, b.euler.z)
         ent.mark_dirty(UpdateMask.POS | UpdateMask.VEL | UpdateMask.ROT)

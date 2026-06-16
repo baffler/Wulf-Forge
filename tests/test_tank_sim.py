@@ -55,6 +55,26 @@ class TankSimTests(unittest.TestCase):
                         "external pos+vel write must be honored, not clobbered "
                         "back up to the cached body's settled ceiling height")
 
+    def test_self_levels_to_terrain_slope(self):
+        import math
+
+        class Slope:  # ground rises 0.5 per +x unit, flat in y
+            def height_at(self, x, y):
+                return 0.5 * x
+
+        sim = TankSim(PacketConfig())
+        sim.set_terrain(Slope())
+        ent = GameEntity(net_id=1, unit_type=0, team_id=1, pos=(0.0, 0.0, 5.0))
+        sim.step(ent, dt=0.1)
+        self.assertAlmostEqual(ent.rot[0], math.atan(0.5), places=2)  # pitch from +x slope
+        self.assertAlmostEqual(ent.rot[1], 0.0, places=2)             # no roll (flat in y)
+
+    def test_flat_terrain_no_tilt(self):
+        ent = GameEntity(net_id=1, unit_type=0, team_id=1, pos=(10.0, 10.0, 5.0))
+        self.sim.step(ent, dt=0.1)
+        self.assertAlmostEqual(ent.rot[0], 0.0, places=3)
+        self.assertAlmostEqual(ent.rot[1], 0.0, places=3)
+
     def test_coasting_tank_brakes_hard_on_release(self):
         # RE: friction is thrust-gated -- k=0.1 thrusting, k=2.0 coasting. A tank
         # with horizontal velocity and NO input must brake hard (idle k=2.0),
