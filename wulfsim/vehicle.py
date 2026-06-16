@@ -63,7 +63,11 @@ class Vehicle:
         )
 
         # 2. Thrust + yaw torque (Vehicle_ApplyThrustForces).
-        b.friction = t.get("ground_friction")
+        # Friction is a binary, thrust-gated linear damping (RE: Vehicle_UpdateThrustFx
+        # @ 0x004f9700 writes k=0.1 while thrusting, k=2.0 while coasting -- a_eff =
+        # a - v*k). Tanks accelerate freely under power but brake hard on release.
+        thrust_active = abs(inp.throttle) > 1e-4 or abs(inp.strafe) > 1e-4
+        b.friction = t.get("friction_thrust") if thrust_active else t.get("friction_idle")
         b.damping = True
         apply_thrust(b, inp.throttle, inp.strafe, inp.turn, cs,
                      thrust_scale=t.get("thrust_scale"),

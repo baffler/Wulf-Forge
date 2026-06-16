@@ -55,6 +55,17 @@ class TankSimTests(unittest.TestCase):
                         "external pos+vel write must be honored, not clobbered "
                         "back up to the cached body's settled ceiling height")
 
+    def test_coasting_tank_brakes_hard_on_release(self):
+        # RE: friction is thrust-gated -- k=0.1 thrusting, k=2.0 coasting. A tank
+        # with horizontal velocity and NO input must brake hard (idle k=2.0),
+        # not glide (the old continuous ground_friction=0.8 let it coast).
+        ent = GameEntity(net_id=1, unit_type=0, team_id=1, pos=(0.0, 0.0, 2.0))
+        ent.vel = (40.0, 0.0, 0.0)  # moving, no input
+        for _ in range(10):
+            self.sim.step(ent, dt=0.1)
+        self.assertLess(abs(ent.vel[0]), 8.0,
+                        f"coasting tank should brake hard, vx={ent.vel[0]}")
+
     def test_hover_settles_without_oscillation(self):
         # Regression: at the 10Hz server tick (dt=0.1) the stiff suspension PD
         # (spring=200) is numerically unstable under explicit Euler and locks into

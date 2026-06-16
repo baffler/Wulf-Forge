@@ -10,6 +10,8 @@ from __future__ import annotations
 from network.packets.packet_config import PacketConfig
 
 # Sandbox model knobs (mirror phys_sim/tunables.py defaults).
+# friction_thrust / friction_idle are RE-confirmed constants (0.1 while thrusting,
+# 2.0 while coasting); the *_scale knobs and control_divisor are the fit targets.
 _MODEL_DEFAULTS = {
     "control_divisor": 100.0,
     "thrust_scale": 120.0,
@@ -18,6 +20,8 @@ _MODEL_DEFAULTS = {
     "hover_spring": 200.0,
     "hover_damp": 28.0,
     "angular_damp": 4.0,
+    "friction_thrust": 0.1,
+    "friction_idle": 2.0,
 }
 
 
