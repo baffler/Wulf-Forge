@@ -2,14 +2,84 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from typing import Sequence
 from network.packets.base import Packet
 from network.streams import PacketWriter
 from .packet_config import BehaviorConfig
 
+# ==============================================================================
+# CANONICAL HOVER JET SHAPE GEOMETRY (Extracted from collision meshes)
+# Coordinate system: +X Forward, +Y Right (Starboard), +Z Up
+# Format: (X, Y, Z, NormalX, NormalY, NormalZ, Flag)
+# ==============================================================================
+
+# Tank Red (tank_1_s) - Ground Contact Plane Z = -1.3065
+TANK_RED_JET_POINTS: list[tuple[float, float, float, float, float, float, int]] = [
+    (+3.3345, -2.5985, -1.3065,  0.0, 0.0, -1.0, 0),  # 0: Front-Left
+    (+3.3345, +2.5985, -1.3065,  0.0, 0.0, -1.0, 0),  # 1: Front-Right
+    (-4.6045, -2.5985, -1.3065,  0.0, 0.0, -1.0, 0),  # 2: Rear-Left
+    (-4.6045, +2.5985, -1.3065,  0.0, 0.0, -1.0, 0),  # 3: Rear-Right
+]
+
+# Tank Blue (tank_2_s) - Ground Contact Plane Z = -1.1500
+TANK_BLUE_JET_POINTS: list[tuple[float, float, float, float, float, float, int]] = [
+    (+2.8860, -2.4765, -1.1500,  0.0, 0.0, -1.0, 0),  # 0: Front-Left
+    (+2.8860, +2.4765, -1.1500,  0.0, 0.0, -1.0, 0),  # 1: Front-Right
+    (-4.5620, -2.4765, -1.1500,  0.0, 0.0, -1.0, 0),  # 2: Rear-Left
+    (-4.5620, +2.4765, -1.1500,  0.0, 0.0, -1.0, 0),  # 3: Rear-Right
+]
+
+# Medic / Scout Red (scout_1_s) - Ground Contact Plane Z = -1.4337
+SCOUT_RED_JET_POINTS: list[tuple[float, float, float, float, float, float, int]] = [
+    (+1.8584, -4.1416, -1.4337,  0.0, 0.0, -1.0, 0),  # 0: Front-Left
+    (+1.8584, +4.1416, -1.4337,  0.0, 0.0, -1.0, 0),  # 1: Front-Right
+    (-2.0708, -4.1416, -1.4337,  0.0, 0.0, -1.0, 0),  # 2: Rear-Left
+    (-2.0708, +4.1416, -1.4337,  0.0, 0.0, -1.0, 0),  # 3: Rear-Right
+]
+
+# Medic / Scout Blue (scout_2_s) - Ground Contact Plane Z = -1.2271
+SCOUT_BLUE_JET_POINTS: list[tuple[float, float, float, float, float, float, int]] = [
+    (+1.1738, -3.8948, -1.2271,  0.0, 0.0, -1.0, 0),  # 0: Front-Left
+    (+1.1738, +3.8948, -1.2271,  0.0, 0.0, -1.0, 0),  # 1: Front-Right
+    (-5.5488, -3.8948, -1.2271,  0.0, 0.0, -1.0, 0),  # 2: Rear-Left
+    (-5.5488, +3.8948, -1.2271,  0.0, 0.0, -1.0, 0),  # 3: Rear-Right
+]
+
+
+def _write_jet_shape_block(
+    pkt: PacketWriter,
+    points: Sequence[tuple[float, ...]],
+    trailing_scalar: float = 0.0,
+) -> None:
+    """
+    Serializes one variable-length vehicle jet shape block.
+    Wire size: 8 + 28 * point_count bytes.
+    """
+    pkt.write_int32(len(points))
+
+    for pt in points:
+        # Local Point Coordinates (Fixed 16.16)
+        pkt.write_fixed1616(pt[0])
+        pkt.write_fixed1616(pt[1])
+        pkt.write_fixed1616(pt[2])
+
+        # Local Thrust Direction Normal (Fixed 16.16, default: downward -Z)
+        pkt.write_fixed1616(pt[3] if len(pt) > 3 else 0.0)
+        pkt.write_fixed1616(pt[4] if len(pt) > 4 else 0.0)
+        pkt.write_fixed1616(pt[5] if len(pt) > 5 else -1.0)
+
+        # Legacy Flag (Int32)
+        pkt.write_int32(int(pt[6]) if len(pt) > 6 else 0)
+
+    # Trailing Scalar (Fixed 16.16)
+    pkt.write_fixed1616(trailing_scalar)
+
+
 @dataclass
 class BehaviorPacket(Packet):
     """
-    0x24 payload
+    0x24 BEHAVIOR Packet: Overwrites process-wide gameplay, weapon, entity,
+    vehicle physics, hover jet shapes, and concrete model tails on the client.
     """
     cfg: BehaviorConfig = field(repr=False)
 
@@ -17,9 +87,9 @@ class BehaviorPacket(Packet):
         pkt = PacketWriter()
         cfg = self.cfg
 
-        # --------------------------
-        # SECTION 1: HEADER
-        # --------------------------
+        # ----------------------------------------------------------------------
+        # SECTION 1: HEADER (95 bytes)
+        # ----------------------------------------------------------------------
         h = cfg.header
 
         pkt.write_byte(int(h.spawn_related) & 0xFF)
@@ -47,172 +117,117 @@ class BehaviorPacket(Packet):
         pkt.write_byte(int(h.flag1) & 0xFF)
         pkt.write_byte(int(h.flag2) & 0xFF)
 
-        # --------------------------
-        # SECTION 2: WEAPONS (unchanged, hard-coded)
-        # --------------------------
+        # ----------------------------------------------------------------------
+        # SECTION 2: WEAPONS (4 tables * 13 slots * 45 bytes = 2340 bytes)
+        # ----------------------------------------------------------------------
         for _u in range(cfg.weapons_units_count):
             for _i in range(cfg.weapon_slots_count):
-                # 5 bool bytes
+                # 5 applicability channel bool bytes
                 pkt.write_byte(0)
                 pkt.write_byte(0)
                 pkt.write_byte(0)
                 pkt.write_byte(0)
                 pkt.write_byte(0)
 
-                # targeting cone
+                # Auto-aim forward-dot threshold
                 pkt.write_fixed1616(1.0)
 
-                # 5 ints
+                # 5 integer fields (cooldown, load, etc.)
                 pkt.write_int32(0)
                 pkt.write_int32(0)
                 pkt.write_int32(0)
                 pkt.write_int32(0)
                 pkt.write_int32(0)
 
-                # 4 fixeds
+                # 4 fixed-point fields (base range, random range add, scatter factor, etc.)
                 pkt.write_fixed1616(100.0)
                 pkt.write_fixed1616(1000.0)
                 pkt.write_fixed1616(500.0)
                 pkt.write_fixed1616(1.0)
 
-        # --------------------------
-        # SECTION 3: UNITS (configurable defaults)
-        # --------------------------
+        # ----------------------------------------------------------------------
+        # SECTION 3: ENTITY DEFINITIONS (39 records * 12 bytes = 468 bytes)
+        # ----------------------------------------------------------------------
         ud = cfg.unit_defaults
         for _ in range(cfg.unit_count):
             pkt.write_fixed1616(ud.scale)
             pkt.write_fixed1616(ud.regen_or_health_related)
             pkt.write_int32(ud.max_health)
 
-        # --------------------------
-        # SECTION 4: VEHICLE PHYSICS (configurable)
-        # --------------------------
+        # ----------------------------------------------------------------------
+        # SECTION 4: GENERIC VEHICLE BEHAVIOR (2 records * 36 bytes = 72 bytes)
+        # ----------------------------------------------------------------------
+        # Wire order: Tank (type 0), Medic / Scout (type 1)
         vp = cfg.vehicle_physics
         for _ in range(cfg.vehicle_physics_count):
-            pkt.write_fixed1616(vp.speed)
-            pkt.write_fixed1616(vp.accel)
+            pkt.write_fixed1616(vp.speed)                 # dBangMinVelocity
+            pkt.write_fixed1616(vp.accel)                 # dScrapeMinVelocity
 
-            pkt.write_int32(vp.engine_torque)
-            pkt.write_int32(vp.suspension_stiffness)
+            pkt.write_int32(vp.engine_torque)             # nBangInterval (ms)
+            pkt.write_int32(vp.suspension_stiffness)      # nScrapeInterval (ms)
 
-            pkt.write_fixed1616(vp.ground_friction)
-            pkt.write_fixed1616(vp.turn_rate)
-            pkt.write_fixed1616(vp.suspension_dampening)
+            pkt.write_fixed1616(vp.ground_friction)       # dStartingJetStrength
+            pkt.write_fixed1616(vp.turn_rate)             # dMinimumJetStrength
+            pkt.write_fixed1616(vp.suspension_dampening)  # dJetResponseCoefficient
 
-            pkt.write_int32(vp.unknown_int_30)
-            pkt.write_int32(vp.mass)
+            pkt.write_int32(vp.unknown_int_30)            # nMaxWeaponWeight
+            pkt.write_int32(vp.mass)                      # nMaxFuel
 
-        # --------------------------
+        # ----------------------------------------------------------------------
+        # SECTION 5: TEAM-SPECIFIC VEHICLE JET SHAPES (4 blocks = 480 bytes)
+        # ----------------------------------------------------------------------
+        # Fixed wire order: Tank Red, Tank Blue, Medic/Scout Red, Medic/Scout Blue.
+        # Neutral aliases Red client-side after reading.
+        _write_jet_shape_block(pkt, TANK_RED_JET_POINTS)
+        _write_jet_shape_block(pkt, TANK_BLUE_JET_POINTS)
+        _write_jet_shape_block(pkt, SCOUT_RED_JET_POINTS)
+        _write_jet_shape_block(pkt, SCOUT_BLUE_JET_POINTS)
+
+        # ----------------------------------------------------------------------
+        # SECTION 6: CONCRETE VEHICLE MODEL TAIL (108 bytes total)
+        # ----------------------------------------------------------------------
+        # Registry order: Tank (7 fields), Medic/Scout (9 fields), Bomber (11 fields)
         av = cfg.active_vehicle_physics
 
-        # SECTION 5: HARDPOINTS / JET REACTION SURFACES
-        # --------------------------
-        # The client pairs samples as front/back and left/right slopes for
-        # auto-leveling, so a two-point surface leaves pitch/roll underdefined.
-        _write_hardpoint_block(pkt, count=4, is_thruster=True, av=av)  # Red Tank
-        _write_hardpoint_block(pkt, count=4, is_thruster=True, av=av)  # Blue Tank
-        _write_hardpoint_block(pkt, count=4, is_thruster=True, av=av)  # Red Scout
-        _write_hardpoint_block(pkt, count=4, is_thruster=True, av=av)  # Blue Scout
-
-        # --------------------------
-        # SECTION 6: ACTIVE VEHICLE PHYSICS (Configurable)
-        # --------------------------
-        # The client iterates: Tank -> Scout -> Bomber
-        # We must write the exact amount of data each class expects.
-
         for i in range(cfg.active_vehicles_count):
-
-            # --- VEHICLE SPECIFIC ---
-            
-            if i == 0: 
-                # TANK (Reads 7 values)
+            if i == 0:
+                # TANK (7 fixed-point values = 28 bytes)
                 pkt.write_fixed1616(av.turn_adjust)
                 pkt.write_fixed1616(av.move_adjust)
                 pkt.write_fixed1616(av.strafe_adjust)
                 pkt.write_fixed1616(av.max_velocity)
                 pkt.write_fixed1616(av.low_fuel_level)
-                pkt.write_fixed1616(av.tank_hover_height)
+                pkt.write_fixed1616(av.max_altitude)
                 pkt.write_fixed1616(av.gravity_pct)
-                pass
-                
+
             elif i == 1:
-                # SCOUT (Reads 9 values)
+                # SCOUT / MEDIC (9 fixed-point values = 36 bytes)
                 pkt.write_fixed1616(av.turn_adjust)
-                pkt.write_fixed1616(av.move_adjust) # Move Forward Adjust
-                pkt.write_fixed1616(38.0) # Move Backward Adjust
-                pkt.write_fixed1616(72.0) # Strafe Adjust
-                pkt.write_fixed1616(85.0) # Max Velocity
+                pkt.write_fixed1616(av.move_adjust)      # forward_move_adjust
+                pkt.write_fixed1616(38.0)                # backward_move_adjust
+                pkt.write_fixed1616(72.0)                # strafe_adjust
+                pkt.write_fixed1616(85.0)                # max_velocity
                 pkt.write_fixed1616(av.low_fuel_level)
-                pkt.write_fixed1616(4.9) # Max Altitude
-                pkt.write_fixed1616(3.5) # Max Speed Height Pickup
+                pkt.write_fixed1616(4.9)                 # max_altitude
+                pkt.write_fixed1616(3.5)                 # max_speed_height_pickup
                 pkt.write_fixed1616(av.gravity_pct)
-                
+
             elif i == 2:
-                # BOMBER (Reads 11 values)
-                pkt.write_fixed1616(-2.5132741233144) # ax_mag
-                pkt.write_fixed1616(2.35619449060725) # ay_mag
-                pkt.write_fixed1616(80.0) # forward_mag
-                pkt.write_fixed1616(45.0)  # low_airspeed
-                pkt.write_fixed1616(0.5) # angfac
-                pkt.write_fixed1616(70.0)  # turn_low
-                pkt.write_fixed1616(110.0)  # turn_high
-                # We need 4 extra values to satisfy sub_5012D0
-                pkt.write_fixed1616(340.0) # turn_zero
-                pkt.write_fixed1616(1000.0) # very_high
-                pkt.write_fixed1616(1800.0) # ceiling
-                pkt.write_fixed1616(av.low_fuel_level) # low_fuel_level
+                # BOMBER (11 fixed-point values = 44 bytes)
+                pkt.write_fixed1616(-2.5132741233144)    # ax_mag
+                pkt.write_fixed1616(2.35619449060725)    # ay_mag
+                pkt.write_fixed1616(80.0)                # forward_mag
+                pkt.write_fixed1616(45.0)                # low_airspeed
+                pkt.write_fixed1616(0.5)                 # angfac
+                pkt.write_fixed1616(70.0)                # turn_low
+                pkt.write_fixed1616(110.0)               # turn_high
+                pkt.write_fixed1616(340.0)               # turn_zero
+                pkt.write_fixed1616(1000.0)              # very_high
+                pkt.write_fixed1616(1800.0)              # ceiling
+                pkt.write_fixed1616(av.low_fuel_level)
 
-        # --------------------------
-        # FINAL: PAYLOAD
-        # --------------------------
+        # ----------------------------------------------------------------------
+        # FINAL PAYLOAD ASSEMBLY: 0x24 + Body (3,564 bytes total)
+        # ----------------------------------------------------------------------
         body = pkt.get_bytes()
-        payload = b"\x24" + body
-
-        return payload
-
-
-def _write_hardpoint_block(pkt: PacketWriter, count: int, is_thruster: bool, av=None) -> None:
-    pkt.write_int32(count)
-
-    if count > 0:
-        for i in range(count):
-            if is_thruster:
-                width = float(av.jet_reaction_width) if av is not None else 2.0
-                length = float(av.jet_reaction_length) if av is not None else 2.0
-                z_pos = float(av.jet_reaction_z) if av is not None else -0.5
-                normal_z = float(av.jet_reaction_normal_z) if av is not None else -0.75
-                corners = (
-                    (-width, -length),
-                    (width, -length),
-                    (-width, length),
-                    (width, length),
-                )
-                x_pos, y_pos = corners[i % len(corners)]
-                nx, ny, nz = 0.0, 0.0, normal_z
-                
-            else:
-                # Weapons (Keep valid defaults just in case)
-                x_pos = 1.5 if (i % 2 == 1) else -1.5
-                y_pos = 2.0 # Forward mounted guns?
-                z_pos = 0.5 # Slightly raised
-                nx, ny, nz = 0.0, 1.0, 0.0 # Point Forward (+Y)
-
-            # Write Position (Fixed 16.16)
-            pkt.write_fixed1616(float(x_pos))
-            pkt.write_fixed1616(float(y_pos))
-            pkt.write_fixed1616(float(z_pos))
-
-            # Write Normal
-            pkt.write_fixed1616(float(nx))
-            pkt.write_fixed1616(float(ny))
-            pkt.write_fixed1616(float(nz))
-
-            pkt.write_int32(0) # Flag
-
-    # FIX: Send a non-zero value for thrusters
-    if is_thruster:
-        reaction_range = float(av.jet_reaction_range) if av is not None else 5.0
-        pkt.write_fixed1616(reaction_range)
-    else:
-        # For weapons, this might be range or cooldown, 0.0 might be fine for now
-        pkt.write_fixed1616(0.0)
+        return b"\x24" + body
