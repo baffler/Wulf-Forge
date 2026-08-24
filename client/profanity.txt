@@ -1,0 +1,37 @@
+
+# Swearing is generally discouraged in the game.  Certainly it can add
+# a bit of spice to some things -- especially if not directed at other
+# players.  But not everybody wants to hear it.  This is what this 
+# file is here for. In this file, you can specify swear words, that 
+# will be filtered out in the game.
+#
+# To enable the filter, simply type "!filter on" at the chat prompt.
+# No, you do not need to include the quoutes themselves.
+#
+# Feel free to add anything else, or remove any item.  By default
+# this filter is turned off.
+#
+#
+# This program will ignore any blank lines, and it will ignore any
+# line that has a hash mark at the beginning.
+
+fuk
+fuker
+fuck
+fucker
+shit
+shithead
+shite
+cunt
+asshole
+tit
+dick
+dickhead
+asswipe
+whore
+piss
+faggot
+nazi
+
+
+

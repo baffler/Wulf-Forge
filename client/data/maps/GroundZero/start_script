@@ -1,0 +1,6 @@
+sky_names "stormsky" "2starset" "sunset" "2litesky" "bluesky"
+map_name "Ground Zero"
+fog_color 230 230 230
+fog_thickness 0.9
+fog_distance 10000
+

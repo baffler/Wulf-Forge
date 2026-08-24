@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<paypal main_url = "https://www.paypal.com/cgi-bin/webscr"
+	return_url = "http://www.wulfram.com/paypal_support.php"
+	cancel_url = "http://www.wulfram.com/paypal_cancel.php"
+	image_url = "https://www.holonet.net/images/wulfram2_logo.jpg"
+	/>
+

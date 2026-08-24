@@ -1,0 +1,98 @@
+bind "misc" "," "drop_cargo"
+bind "misc" "." "deploy_cargo"
+bind "misc" "m" "battlefield_map"
+bind "misc" "shift-pause" "distress"
+bind "misc" "pause" "distress \"Status report\""
+bind "misc" "enter" "message_mode"
+bind "misc" "n" "cycle_map_type"
+bind "misc" "b" "mouse_control"
+bind "misc" "escape" "main_menu"
+
+bind "misc" "F1" "help_screen"
+bind "misc" "F2" "cycle_camera_type"
+bind "misc" "F3" "toggle_radar_ranges"
+
+bind "targeting" "ctrl-F5" "store_target 0"
+bind "targeting" "ctrl-F6" "store_target 1"
+bind "targeting" "ctrl-F7" "store_target 2"
+bind "targeting" "ctrl-F8" "store_target 3"
+
+bind "targeting" "F5" "retrieve_target 0"
+bind "targeting" "F6" "retrieve_target 1"
+bind "targeting" "F7" "retrieve_target 2"
+bind "targeting" "F8" "retrieve_target 3"
+
+bind "targeting" "ctrl-F9" "add_target_to_watch_list"
+bind "targeting" "F9" "clear_watch_list"
+
+axis_key "movement" "w" "moving_forward" absolute  1.0
+axis_key "movement" "s" "moving_forward" absolute -1.0
+
+axis_key "movement" "d" "moving_sideways" absolute  1.0
+axis_key "movement" "a" "moving_sideways" absolute -1.0
+
+axis_key "movement" "q" "upward_thrust" relative  0.5
+axis_key "movement" "z" "upward_thrust" relative -0.5
+
+axis_key "movement" "num_plus" "forward_thrust"  relative  0.2
+axis_key "movement" "num_minus" "forward_thrust" relative -0.2
+
+bind "movement" "num_0" "set_axis \"forward_thrust\" 0.05"
+bind "movement" "num_1" "set_axis \"forward_thrust\" 0.1"
+bind "movement" "num_2" "set_axis \"forward_thrust\" 0.2"
+bind "movement" "num_3" "set_axis \"forward_thrust\" 0.3"
+bind "movement" "num_4" "set_axis \"forward_thrust\" 0.4"
+bind "movement" "num_5" "set_axis \"forward_thrust\" 0.5"
+bind "movement" "num_6" "set_axis \"forward_thrust\" 0.6"
+bind "movement" "num_7" "set_axis \"forward_thrust\" 0.7"
+bind "movement" "num_8" "set_axis \"forward_thrust\" 0.8"
+bind "movement" "num_9" "set_axis \"forward_thrust\" 0.9"
+
+bind "misc" "Page_Up" "scroll_text_upward"
+bind "misc" "Page_Down" "scroll_text_downward"
+
+axis_key "targeting" "Insert" "zoom_level"   relative  0.5
+axis_key "targeting" "Delete" "zoom_level" relative -0.5
+
+bind "targeting" "shift-Insert" "set_axis \"zoom_level\" 0.6"
+bind "targeting" "shift-Delete" "set_axis \"zoom_level\" 0.0"
+
+axis_key "misc" "]" "camera_distance" relative  0.5
+axis_key "misc" "[" "camera_distance" relative -0.5
+
+axis_key "movement" "alt-right" "moving_sideways" absolute  0.5
+axis_key "movement" "alt-left"  "moving_sideways" absolute -0.5
+
+touchkey "misc" "p" "looking_at_player_list"
+touchkey "misc" "alt-p" "looking_at_carrying_list"
+touchkey "misc" "o" "activate_voice"
+
+bind "" "ctrl-end" "command_dialogue"
+
+bind "targeting" "`" "clear_target"
+bind "targeting" "tab" "target_cycle nearest frontward major_object"
+bind "targeting" "u" "target_cycle nearest under_reticle any_object"
+bind "targeting" "y" "target_cycle"
+
+bind "targeting" "g" "target_cycle nearest friendly energy"
+bind "targeting" "alt-g" "target_cycle nearest hostile energy"
+
+bind "targeting" "r" "target_cycle nearest friendly repair"
+bind "targeting" "alt-r" "target_cycle nearest hostile repair"
+
+bind "targeting" "f" "target_cycle nearest friendly fuel"
+bind "targeting" "alt-f" "target_cycle nearest hostile fuel"
+
+bind "targeting" "c" "target_cycle nearest friendly cargo"
+bind "targeting" "alt-c" "target_cycle nearest friendly cargo"
+
+bind "targeting" "t" "target_only nearest hostile player"
+bind "targeting" "alt-t" "target_only nearest friendly player"
+
+bind "targeting" "i" "target_only nearest hostile hunter_missile"
+bind "targeting" "l" "target_cycle nearest friendly uplink"
+
+bind "targeting" "h" "target_cycle nearest most_damaged friendly major_object"
+bind "targeting" "shift-h" "target_cycle most_damaged friendly major_object"
+bind "targeting" "alt-h" "target_cycle nearest most_damaged hostile major_object"
+

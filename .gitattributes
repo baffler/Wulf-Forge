@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# The bundled legacy client is a release payload. Preserve every resource byte,
+# including the original mixed line endings used by map and table files.
+client/** -text whitespace=-blank-at-eol,-blank-at-eof

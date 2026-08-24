@@ -1,0 +1,884 @@
++0template 20bush001 10 0template jupi_melty002 5 
+20bush002
+20bush001
+20bush003
+20bush004
++0template 1french001 10 0template 20bush003 5 
++0template 20bush001 10 0template 1french001 5 
+1french002
+1french001
++0template plaid001 10 0template 1french001 5 
+plaid003
++0template 1french003 10 0template plaid001 5 
++0template 1french004 4 0template plaid002 11 
++0template 1french002 12 0template plaid001 3 
++0template plaid002 2 0template 1french002 13 
+plaid002
+plaid001
++0template plaid002 4 0template 20bush002 11 
++0template 20bush001 2 0template plaid002 13 
++0template jupi_melty002 14 0template 20bush002 1 
++0template jupi_melty001 12 0template 20bush003 3 
++0template 20bush002 2 0template jupi_melty001 13 
++0template 20bush002 4 0template plaid001 11 
++0template 20bush004 8 0template plaid001 7 
++0template 20bush002 4 0template 1french002 11 
++0template 1french001 2 0template 20bush001 13 
++0template 20bush003 12 0template 1french004 3 
+1french003
++0template 1french001 14 0template plaid002 1 
++0template plaid002 4 0template 1french003 11 
++0template plaid001 12 0template 1french004 3 
++0template plaid002 8 0template 1french001 7 
++0template 20bush003 10 0template plaid003 5 
++0template 20bush004 12 0template plaid002 3 
++0template 20bush003 8 0template 1french001 7 
++0template plaid002 2 0template 20bush004 13 
++0template 1french001 14 0template 20bush003 13 0template plaid001 3 
++0template 1french002 8 0template plaid002 7 
++0template 20bush004 14 0template 1french002 1 
++0template 20bush002 12 0template 1french002 7 0template plaid001 11 
++0template 1french003 14 0template 20bush003 9 0template plaid003 7 
++0template 1french003 12 0template 20bush002 3 
++0template 1french001 12 0template 20bush001 7 0template plaid001 11 
++0template plaid001 12 0template 20bush001 3 
++0template plaid001 8 0template 20bush004 7 
++0template 1french001 10 0template plaid003 13 0template 20bush001 7 
++0template plaid001 14 0template 1french004 1 
++0template 20bush003 14 0template plaid003 13 0template 1french003 3 
++0template 20bush004 14 0template plaid002 1 
+1french004
++0template plaid003 14 0template 20bush003 1 
++0template plaid001 10 0template 20bush001 5 
++0template 1french004 14 0template plaid002 13 0template 20bush004 3 
++0template plaid003 10 0template 1french001 13 0template 20bush003 7 
++0template 20bush004 14 0template 1french002 13 0template plaid002 3 
++0template 20bush003 12 0template plaid001 7 0template 1french001 11 
++0template 20bush004 6 0template plaid003 9 
++0template plaid001 6 0template 20bush003 9 
++0template 20bush003 4 0template jupi_melty002 11 
++0template plaid002 4 0template groundstruct18a 11 
++0template 20bush004 4 0template bluegranite002 11 
++0template 20bush001 12 0template bluegranite003 3 
++0template 20bush002 8 0template bluegranite002 7 
++0template bluegranite001 14 0template 20bush002 9 0template plaid001 7 
++0template bluegranite001 12 0template 20bush003 3 
++0template bluegranite003 8 0template 20bush001 7 
+bluegranite003
++0template 20bush001 10 0template bluegranite002 5 
++0template bluegranite001 14 0template 20bush004 1 
++0template 20bush001 6 0template bluegranite003 9 
++0template 20bush003 12 0template bluegranite002 7 0template plaid003 11 
++0template 20bush001 6 0template plaid002 13 0template bluegranite003 11 
++0template bluegranite003 10 0template 20bush002 5 
++0template plaid002 14 0template bluegranite001 1 
++0template 20bush003 14 0template plaid001 13 0template bluegranite002 3 
++0template 1french002 2 0template plaid002 13 
++0template 20bush003 14 0template 1french001 5 0template plaid003 11 
++0template 20bush003 14 0template bluegranite001 1 
++0template bluegranite003 2 0template 20bush003 13 
+bluegranite001
++0template plaid003 12 0template bluegranite001 3 
++0template 1french002 10 0template plaid003 13 0template bluegranite002 7 
++0template 20bush002 14 0template plaid002 5 0template 1french001 11 
+bluegranite002
++0template bluegranite003 4 0template 1french003 11 
++0template 1french002 2 0template bluegranite003 13 
++0template 1french002 10 0template bluegranite003 5 
++0template 1french003 14 0template bluegranite001 1 
++0template 1french001 12 0template bluegranite002 3 
++0template 1french003 8 0template bluegranite001 7 
++0template bluegranite003 10 0template 20bush004 13 0template plaid002 7 
++0template plaid003 10 0template 1french002 13 0template bluegranite003 7 
++0template plaid001 14 0template groundstruct5 1 
++0template plaid003 12 0template groundstruct7 3 
++0template groundstruct5 2 0template plaid001 13 
++0template plaid001 4 0template jupi_pebbly003 11 
++0template plaid002 12 0template jupi_pebbly003 3 
++0template plaid003 8 0template jupi_pebbly004 7 
++0template bluegranite003 10 0template plaid002 5 
++0template plaid003 10 0template bluegranite002 5 
+groundstruct6
+groundstruct7
++0template plaid002 4 0template 5graniteBrown001 11 
++0template jupi_pebbly003 14 0template plaid003 13 0template 5graniteBrown001 3 
++0template jupi_pebbly003 8 0template 5graniteBrown002 7 
++0template plaid001 14 0template jupi_pebbly004 1 
++0template 20bush004 14 0template plaid002 9 0template 1french003 7 
++0template plaid001 4 0template greenrock003 11 
++0template 20bush003 14 0template plaid001 13 0template greenrock004 3 
++0template 1french003 14 0template 20bush002 13 0template greenrock004 3 
++0template 1french001 12 0template greenrock003 3 
++0template 1french003 12 0template greenrock005 7 0template 20bush004 11 
++0template 20bush002 2 0template 1french004 13 
++0template 5graniteBrown001 10 0template plaid001 5 
+5graniteBrown002
++0template jupi_pebbly002 14 0template 5graniteBrown001 1 
++0template plaid002 14 0template jupi_pebbly001 5 0template 20bush001 11 
++0template 20bush001 4 0template greenrock004 11 
++0template plaid003 14 0template 20bush003 13 0template greenrock001 3 
++0template plaid002 12 0template greenrock005 3 
++0template greenrock003 2 0template plaid002 13 
+greenrock005
+greenrock001
++0template 20bush003 14 0template greenrock004 5 0template 1french001 11 
++0template plaid003 4 0template bluegranite003 11 
++0template bluegranite003 2 0template plaid003 13 
++0template bluegranite001 4 0template plaid002 11 
++0template bluegranite003 12 0template plaid002 3 
++0template plaid003 2 0template bluegranite001 13 
++0template 5graniteBrown002 14 0template plaid003 1 
++0template 5graniteBrown002 12 0template plaid002 3 
++0template 5graniteBrown002 8 0template plaid001 7 
++0template 20bush001 14 0template jupi_pebbly001 9 0template 5graniteBrown001 7 
++0template 20bush004 12 0template jupi_pebbly004 3 
++0template 20bush003 8 0template jupi_pebbly002 7 
++0template 20bush004 12 0template plaid003 7 0template greenrock005 11 
++0template 20bush003 12 0template greenrock003 3 
++0template greenrock005 2 0template 20bush001 13 
+greenrock002
+greenrock004
+greenrock003
++0template 1french003 14 0template greenrock002 1 
++0template 20bush001 10 0template 1french001 13 0template greenrock003 7 
++0template plaid003 6 0template 20bush002 13 0template bluegranite003 11 
+groundstruct18
+p2topside
++0template 5graniteBrown001 10 0template plaid002 13 0template jupi_pebbly002 7 
++0template 20bush001 14 0template jupi_pebbly004 1 
++0template 20bush001 10 0template greenrock005 5 
+groundstruct8
++0template jupi_pebbly001 10 0template plaid001 5 
++0template 5graniteBrown002 14 0template jupi_pebbly002 1 
++0template 5graniteBrown001 8 0template jupi_pebbly002 7 
++0template jupi_pebbly004 10 0template 5graniteBrown001 5 
+jupi_pebbly002
++0template 20bush003 10 0template jupi_pebbly002 5 
++0template plaid003 14 0template 20bush004 5 0template 1french004 11 
++0template greenrock003 10 0template plaid002 5 
++0template bluegranite001 4 0template groundstruct23 11 
++0template bluegranite001 12 0template groundstruct23 3 
++0template bluegranite003 8 0template groundstruct23 7 
+groundstruct12
+groundstruct20a
+smallbuilding3
+groundstruct18a
+groundstruct13
+jupi_pebbly001
++0template 5graniteBrown001 10 0template jupi_pebbly001 5 
++0template 20bush003 8 0template greenrock003 7 
++0template bluegranite001 4 0template smallbuilding2 11 
++0template smallbuilding2 2 0template bluegranite003 13 
+smallbuilding2
++0template bluegranite001 14 0template smallbuilding2 1 
++0template bluegranite003 12 0template smallbuilding2 3 
++0template bluegranite001 8 0template groundstruct14 7 
+groundstruct4
++0template jupi_pebbly002 14 0template plaid001 1 
++0template jupi_pebbly001 12 0template plaid001 3 
++0template 5graniteBrown001 10 0template jupi_pebbly004 13 0template plaid003 7 
+5graniteBrown001
++0template 20bush002 14 0template jupi_pebbly004 5 0template 1french003 11 
++0template 1french004 6 0template plaid001 9 
++0template 20bush003 14 0template greenrock003 1 
++0template 20bush004 12 0template greenrock005 7 0template darkrock001 11 
++0template greenrock002 10 0template 20bush003 13 0template darkrock003 7 
++0template smallbuilding3 10 0template bluegranite001 5 
++0template bluegranite001 10 0template groundstruct14 5 
++0template 1french001 10 0template jupi_pebbly001 13 0template 5graniteBrown002 7 
++0template plaid002 14 0template 1french002 5 0template 20bush003 11 
++0template darkrock002 10 0template greenrock001 5 
++0template greenrock001 10 0template darkrock003 5 
+groundstruct14
++0template bluegranite002 14 0template groundstruct14 1 
++0template plaid001 8 0template bluegranite001 7 
+groundstruct21
+groundstruct16a
++0template plaid001 4 0template darkrock003 11 
++0template 5graniteBrown002 14 0template plaid002 13 0template darkrock002 3 
++0template 5graniteBrown002 8 0template darkrock003 7 
++0template 5graniteBrown001 4 0template darkrock002 11 
++0template 1french003 14 0template 5graniteBrown002 13 0template darkrock002 3 
++0template 20bush003 14 0template 1french002 9 0template darkrock003 7 
++0template plaid002 14 0template 20bush001 13 0template 1french001 3 
++0template darkrock001 14 0template greenrock004 1 
++0template greenrock005 2 0template darkrock003 13 
++0template greenrock003 4 0template darkrock001 11 
++0template 20bush004 14 0template greenrock005 13 0template 1french002 11 0template darkrock002 7 
++0template plaid003 10 0template 20bush001 13 0template 1french002 7 
++0template smallbuilding3 2 0template bluegranite002 13 
+groundstruct26
+groundstruct30
++0template darkrock001 10 0template plaid002 5 
+darkrock001
++0template 5graniteBrown002 10 0template darkrock001 5 
++0template darkrock002 14 0template 5graniteBrown002 1 
++0template darkrock002 8 0template 5graniteBrown001 7 
++0template 1french001 10 0template darkrock001 5 
++0template 1french004 10 0template darkrock001 13 0template greenrock003 7 
++0template 1french001 4 0template 20bush004 11 
++0template plaid001 14 0template 1french001 13 0template 20bush003 3 
++0template groundstruct23 10 0template bluegranite003 5 
++0template groundstruct14 4 0template bluegranite001 11 
++0template bluegranite002 2 0template groundstruct23 13 
+blue_crest
++0template darkrock001 10 0template plaid001 13 0template 1french004 7 
+darkrock003
++0template darkrock002 10 0template 5graniteBrown001 5 
++0template 1french003 14 0template greenrock004 5 0template 20bush004 11 
++0template 1french004 8 0template 20bush002 7 
++0template smallbuilding2 4 0template bluegranite002 11 
++0template bluegranite001 2 0template groundstruct14 13 
++0template plaid001 12 0template darkrock003 3 
++0template 20bush004 14 0template plaid002 13 0template darkrock003 3 
++0template 20bush003 12 0template darkrock003 3 
++0template 20bush004 8 0template darkrock001 7 
+groundstruct15
+groundstruct5
++0template darkrock001 10 0template 1french002 5 
++0template greenrock001 4 0template groundstruct18 11 
++0template greenrock001 12 0template groundstruct18 3 
++0template greenrock004 8 0template groundstruct18 7 
++0template 1french002 14 0template 20bush003 1 
++0template groundstruct14 10 0template bluegranite001 5 
++0template bluegranite001 10 0template smallbuilding2 5 
++0template darkrock002 2 0template plaid001 13 
+darkrock002
++0template 20bush004 14 0template darkrock001 1 
++0template plaid003 14 0template 20bush004 13 0template darkrock002 3 
++0template plaid001 12 0template darkrock003 7 0template 5graniteBrown002 11 
++0template plaid003 12 0template 5graniteBrown001 3 
++0template plaid003 8 0template 5graniteBrown002 7 
++0template darkrock001 14 0template 1french001 1 
++0template darkrock003 8 0template 1french003 7 
++0template 1french003 14 0template darkrock002 5 0template plaid002 11 
++0template groundstruct18 10 0template greenrock002 5 
++0template greenrock003 10 0template groundstruct18 5 
++0template greenrock001 8 0template darkrock003 7 
++0template plaid001 6 0template bluegranite002 13 0template darkrock002 11 
++0template 5graniteBrown002 14 0template darkrock002 1 
++0template plaid002 14 0template 5graniteBrown001 1 
++0template plaid002 10 0template darkrock001 5 
++0template bluegranite003 14 0template plaid001 1 
++0template bluegranite003 8 0template plaid003 7 
++0template bluegranite001 14 0template smallbuilding2 5 0template groundstruct15 11 
++0template bluegranite002 12 0template groundstruct15 3 
++0template bluegranite001 12 0template groundstruct15 7 0template plaid001 11 
++0template darkrock003 2 0template 5graniteBrown001 13 
++0template greenrock004 14 0template plaid002 1 
++0template greenrock002 8 0template plaid001 7 
++0template greenrock001 4 0template plaid002 11 
++0template greenrock002 12 0template plaid002 7 0template groundstruct18 11 
++0template groundstruct18 2 0template greenrock002 13 
++0template bluegranite002 4 0template groundstruct15 11 
++0template groundstruct14 14 0template bluegranite002 13 0template groundstruct15 3 
++0template smallbuilding3 12 0template groundstruct15 3 
++0template smallbuilding3 8 0template groundstruct15 7 
++0template smallbuilding3 4 0template groundstruct15 11 
+groundstruct17
++0template plaid003 10 0template groundstruct15 5 
++0template 1french004 14 0template plaid003 5 0template darkrock002 11 
++0template darkrock001 2 0template 1french004 13 
++0template plaid001 10 0template greenrock005 5 
++0template groundstruct18 10 0template plaid001 5 
++0template greenrock004 14 0template groundstruct18 1 
++0template bluegranite003 12 0template plaid002 7 0template 20bush003 11 
++0template bluegranite001 12 0template 20bush004 7 0template plaid002 11 
++0template groundstruct15 10 0template bluegranite003 5 
+smallbuilding1
++0template groundstruct15 14 0template groundstruct17 1 
++0template groundstruct15 12 0template groundstruct17 3 
++0template groundstruct17 2 0template groundstruct15 13 
++0template darkrock003 10 0template plaid002 13 0template jupi_pebbly001 7 
++0template plaid001 10 0template 5graniteBrown001 5 
++0template greenrock001 12 0template plaid003 3 
++0template plaid002 2 0template greenrock005 13 
++0template groundstruct15 10 0template plaid003 5 
++0template groundstruct18 4 0template greenrock004 11 
++0template groundstruct18 12 0template greenrock002 3 
++0template greenrock004 2 0template groundstruct18 13 
++0template 1french002 14 0template 20bush002 5 0template plaid003 11 
++0template groundstruct15 14 0template bluegranite003 13 0template plaid003 3 
++0template groundstruct15 12 0template plaid003 3 
++0template plaid003 2 0template groundstruct15 13 
++0template jupi_pebbly004 14 0template plaid003 5 0template darkrock003 11 
++0template darkrock002 2 0template jupi_pebbly002 13 
++0template darkrock003 4 0template plaid001 11 
++0template darkrock001 8 0template plaid001 7 
++0template 5graniteBrown001 4 0template plaid002 11 
++0template plaid001 2 0template 5graniteBrown001 13 
++0template plaid001 4 0template groundstruct16 11 
++0template plaid001 12 0template groundstruct16 3 
++0template groundstruct16 2 0template plaid003 13 
+groundstruct16
++0template darkrock003 10 0template plaid003 13 0template 20bush001 7 
++0template darkrock003 12 0template plaid003 3 
++0template plaid002 2 0template darkrock002 13 
++0template darkrock002 14 0template plaid002 1 
++0template darkrock002 12 0template plaid002 7 0template 20bush004 11 
++0template darkrock002 12 0template 20bush001 7 0template plaid003 11 
++0template 5graniteBrown001 14 0template darkrock001 13 0template plaid002 3 
++0template plaid002 12 0template 20bush002 7 0template darkrock003 11 
++0template plaid003 12 0template darkrock002 7 0template 20bush002 11 
++0template plaid002 8 0template darkrock001 7 
++0template darkrock001 6 0template plaid001 9 
++0template 20bush003 14 0template plaid003 5 0template darkrock002 11 
++0template darkrock003 2 0template 20bush003 13 
++0template darkrock002 6 0template 20bush002 13 0template aliencrust003 11 
++0template darkrock003 8 0template aliencrust001 7 
++0template 20bush003 10 0template darkrock002 5 
++0template groundstruct15 4 0template groundstruct19 11 
++0template greenrock004 14 0template groundstruct15 13 0template groundstruct19 3 
++0template greenrock001 12 0template groundstruct19 7 0template groundstruct15 11 
++0template greenrock001 12 0template groundstruct15 3 
++0template greenrock004 12 0template groundstruct16 7 0template 20bush001 11 
++0template greenrock002 8 0template 20bush004 7 
++0template plaid003 14 0template darkrock002 1 
++0template plaid003 14 0template darkrock003 5 0template jupi_pebbly001 11 
++0template aliencrust004 14 0template darkrock001 9 0template plaid002 7 
++0template darkrock001 2 0template aliencrust004 13 
++0template 20bush001 12 0template darkrock002 7 0template plaid002 11 
++0template plaid002 6 0template 20bush004 13 0template aliencrust001 11 
++0template plaid003 12 0template aliencrust003 7 0template 1french001 11 
++0template plaid001 12 0template 1french002 7 0template darkrock003 11 
++0template groundstruct19 10 0template groundstruct17 5 
+groundstruct19
++0template groundstruct15 14 0template groundstruct19 5 0template 1french003 11 
++0template groundstruct15 12 0template 1french002 3 
++0template 20bush003 14 0template groundstruct15 13 0template greenrock004 11 0template 1french004 7 
++0template jupi_pebbly002 14 0template darkrock001 1 
++0template jupi_pebbly002 8 0template darkrock002 7 
++0template aliencrust001 14 0template plaid002 1 
++0template 1french002 14 0template aliencrust002 13 0template plaid001 3 
++0template 1french002 12 0template plaid002 7 0template 20bush004 11 
++0template 1french002 12 0template 20bush002 7 0template darkrock001 11 
++0template groundstruct19 14 0template groundstruct17 1 
++0template 1french001 2 0template groundstruct19 13 
++0template 1french004 4 0template greenrock001 11 
++0template greenrock002 2 0template 1french001 13 
++0template plaid002 4 0template groundstruct15 11 
++0template jupi_pebbly001 12 0template darkrock001 3 
++0template jupi_pebbly001 12 0template darkrock002 7 0template 5graniteBrown002 11 
++0template jupi_pebbly001 12 0template 5graniteBrown001 3 
++0template plaid001 14 0template jupi_pebbly004 13 0template 5graniteBrown002 3 
++0template 20bush001 10 0template plaid003 13 0template 5graniteBrown001 7 
++0template darkrock002 4 0template 5graniteBrown001 11 
++0template 5graniteBrown001 2 0template darkrock002 13 
++0template 20bush002 4 0template darkrock002 11 
++0template greenrock004 10 0template 1french004 5 
++0template plaid002 14 0template 20bush001 5 0template darkrock002 11 
++0template darkrock003 12 0template 5graniteBrown001 3 
++0template darkrock002 12 0template 5graniteBrown002 7 0template 20bush001 11 
++0template darkrock001 8 0template 20bush004 7 
++0template 20bush002 14 0template 5graniteBrown002 1 
++0template 20bush001 12 0template 5graniteBrown002 3 
++0template plaid001 14 0template 20bush003 13 0template 5graniteBrown001 3 
++0template 20bush002 10 0template plaid001 13 0template darkrock002 7 
++0template plaid002 12 0template groundstruct17 3 
++0template plaid002 12 0template groundstruct17 7 0template darkrock003 11 
++0template jupi_pebbly001 14 0template plaid001 13 0template darkrock001 3 
++0template plaid003 14 0template jupi_pebbly001 13 0template darkrock001 3 
++0template 5graniteBrown001 10 0template plaid002 13 0template darkrock002 7 
++0template 5graniteBrown002 2 0template plaid001 13 
++0template 20bush003 12 0template plaid003 7 0template darkrock003 11 
++0template darkrock003 4 0template bdtdark001 11 
++0template darkrock002 12 0template bdtdark001 3 
++0template darkrock001 8 0template bdtdark001 7 
++0template greenrock001 10 0template 1french003 13 0template plaid002 7 
++0template darkrock003 10 0template 20bush002 5 
++0template groundstruct15 2 0template plaid003 13 
++0template darkrock002 14 0template plaid002 13 0template 5graniteBrown002 3 
++0template 20bush002 10 0template 5graniteBrown001 5 
++0template darkrock002 14 0template 20bush004 1 
++0template 5graniteBrown001 12 0template darkrock003 3 
+groundstruct23
++0template darkrock002 14 0template groundstruct15 1 
++0template darkrock001 8 0template groundstruct14 7 
++0template 5graniteBrown001 14 0template darkrock003 5 0template jupi_pebbly001 11 
++0template 5graniteBrown001 12 0template jupi_pebbly001 7 0template darkrock003 11 
++0template plaid001 14 0template 5graniteBrown001 13 0template darkrock001 3 
++0template bdtdark001 10 0template darkrock001 5 
+bdtdark001
++0template darkrock002 10 0template bdtdark001 5 
++0template plaid003 6 0template 1french001 13 0template bdtdark001 11 
++0template greenrock005 14 0template plaid003 13 0template bdtdark001 3 
++0template greenrock002 12 0template bdtdark001 3 
++0template greenrock003 8 0template bdtdark001 7 
++0template 5graniteBrown002 6 0template darkrock002 9 
++0template 5graniteBrown002 12 0template darkrock002 7 0template 20bush002 11 
++0template 5graniteBrown002 8 0template 20bush001 7 
++0template darkrock002 14 0template 20bush003 5 0template jupi_pebbly001 11 
++0template darkrock002 8 0template jupi_pebbly002 7 
++0template plaid001 14 0template 5graniteBrown001 5 0template darkrock003 11 
++0template groundstruct14 14 0template darkrock003 5 0template groundstruct15 11 
++0template groundstruct23 8 0template groundstruct15 7 
++0template darkrock003 10 0template groundstruct14 5 
++0template bdtdark001 4 0template darkrock002 11 
++0template darkrock002 2 0template bdtdark001 13 
++0template bdtdark001 10 0template plaid003 5 
++0template greenrock001 10 0template bdtdark001 5 
++0template greenrock001 4 0template 20bush001 11 
++0template 20bush003 2 0template greenrock002 13 
++0template 5graniteBrown002 14 0template 20bush002 1 
++0template 5graniteBrown001 12 0template 20bush004 3 
++0template 20bush002 2 0template 5graniteBrown002 13 
++0template jupi_pebbly003 14 0template 20bush004 1 
++0template darkrock003 14 0template jupi_pebbly003 13 0template 20bush004 3 
++0template darkrock001 4 0template jupi_pebbly001 11 
++0template groundstruct15 10 0template darkrock003 5 
++0template groundstruct23 10 0template groundstruct15 5 
++0template 5graniteBrown001 14 0template darkrock003 13 0template 20bush004 3 
++0template darkrock001 14 0template 5graniteBrown001 13 0template 20bush003 3 
++0template darkrock003 12 0template 20bush002 7 0template 5graniteBrown002 11 
++0template bdtdark001 14 0template darkrock001 1 
++0template bdtdark001 12 0template darkrock003 3 
++0template darkrock002 6 0template bdtdark001 13 0template plaid003 11 
++0template darkrock003 14 0template 20bush002 9 0template plaid002 7 
++0template darkrock001 12 0template 20bush001 3 
++0template darkrock002 4 0template 20bush004 11 
++0template jupi_pebbly001 10 0template darkrock003 5 
++0template darkrock002 10 0template jupi_pebbly004 5 
++0template groundstruct23 2 0template groundstruct15 13 
++0template 20bush003 10 0template 5graniteBrown001 13 0template darkrock003 7 
++0template 20bush004 4 0template 5graniteBrown002 11 
++0template 5graniteBrown001 2 0template 20bush004 13 
++0template 5graniteBrown002 4 0template jupi_pebbly002 11 
++0template darkrock002 14 0template 5graniteBrown002 9 0template jupi_pebbly002 7 
++0template plaid001 10 0template darkrock001 13 0template 20bush003 7 
++0template bdtdark001 14 0template plaid002 5 0template darkrock002 11 
++0template bdtdark001 8 0template darkrock001 7 
++0template 20bush004 2 0template darkrock001 13 
++0template 5graniteBrown002 10 0template 20bush003 5 
++0template darkrock001 14 0template jupi_pebbly003 1 
++0template darkrock001 12 0template jupi_pebbly003 7 0template 5graniteBrown001 11 
++0template jupi_pebbly004 14 0template darkrock003 13 0template 5graniteBrown001 3 
++0template darkrock001 10 0template jupi_pebbly003 13 0template 5graniteBrown002 7 
++0template 5graniteBrown001 2 0template jupi_pebbly001 13 
++0template darkrock001 14 0template plaid002 5 0template 20bush003 11 
++0template darkrock002 4 0template francelight002 11 
++0template bdtdark001 14 0template darkrock001 13 0template francelight004 3 
++0template greenrock005 10 0template bdtdark001 13 0template francelight003 7 
++0template 5graniteBrown002 14 0template 20bush002 5 0template plaid002 11 
++0template 5graniteBrown001 12 0template plaid003 7 0template darkrock003 11 
++0template darkrock003 14 0template 5graniteBrown002 5 0template jupi_pebbly004 11 
++0template 5graniteBrown002 6 0template darkrock002 13 0template plaid001 11 
++0template plaid002 12 0template 5graniteBrown001 7 0template darkrock002 11 
++0template darkrock001 10 0template plaid001 13 0template 5graniteBrown001 7 
++0template francelight002 10 0template darkrock001 5 
+francelight003
++0template greenrock005 10 0template francelight002 5 
++0template 5graniteBrown001 14 0template plaid001 5 0template jupi_pebbly001 11 
++0template 5graniteBrown002 12 0template jupi_pebbly003 3 
++0template darkrock002 10 0template 5graniteBrown002 13 0template jupi_pebbly001 7 
++0template 5graniteBrown001 14 0template darkrock003 13 0template plaid001 11 0template 20bush004 7 
++0template jupi_pebbly004 14 0template 5graniteBrown001 5 0template darkrock003 11 
++0template darkrock002 14 0template groundstruct14 1 
++0template jupi_pebbly002 14 0template 5graniteBrown001 9 0template plaid002 7 
++0template darkrock001 14 0template jupi_pebbly002 13 0template 5graniteBrown002 3 
++0template darkrock001 12 0template 5graniteBrown002 7 0template jupi_pebbly001 11 
++0template 20bush002 14 0template plaid001 9 0template darkrock001 7 
++0template groundstruct19 4 0template darkrock001 11 
+francelight004
++0template greenrock001 14 0template francelight004 5 0template plaid001 11 
++0template greenrock005 12 0template plaid001 7 0template francelight004 11 
++0template greenrock001 8 0template francelight001 7 
++0template groundstruct15 14 0template darkrock003 5 0template groundstruct14 11 
++0template darkrock001 10 0template 20bush002 13 0template 5graniteBrown001 7 
++0template 5graniteBrown001 6 0template plaid003 9 
++0template plaid001 6 0template 5graniteBrown002 9 
++0template darkrock002 10 0template groundstruct19 5 
++0template plaid003 10 0template francelight004 5 
++0template francelight002 10 0template plaid003 5 
++0template 20bush004 14 0template greenrock002 5 0template plaid002 11 
++0template darkrock003 10 0template 20bush001 13 0template plaid003 7 
++0template plaid001 14 0template darkrock002 13 0template 5graniteBrown001 3 
++0template 5graniteBrown001 12 0template darkrock003 7 0template jupi_pebbly004 11 
++0template 5graniteBrown002 12 0template jupi_pebbly002 7 0template plaid003 11 
++0template jupi_pebbly003 14 0template 5graniteBrown001 13 0template aliencrust003 11 0template plaid001 7 
++0template 5graniteBrown002 14 0template jupi_pebbly004 13 0template plaid003 11 0template aliencrust004 7 
++0template jupi_pebbly004 14 0template 5graniteBrown002 13 0template darkrock001 3 
++0template groundstruct14 10 0template darkrock003 5 
++0template groundstruct14 4 0template darkrock003 11 
++0template darkrock003 2 0template groundstruct14 13 
++0template darkrock002 4 0template jupi_melty001 11 
++0template darkrock002 8 0template jupi_melty002 7 
++0template plaid001 14 0template darkrock001 5 0template 5graniteBrown002 11 
++0template francelight002 2 0template darkrock001 13 
++0template francelight001 14 0template plaid002 5 0template darkrock002 11 
++0template greenrock001 10 0template francelight003 13 0template darkrock001 7 
++0template 5graniteBrown002 10 0template darkrock001 13 0template plaid002 7 
++0template plaid001 10 0template darkrock003 13 0template jupi_pebbly003 7 
++0template jupi_pebbly004 14 0template darkrock002 5 0template plaid003 11 
++0template plaid001 2 0template jupi_pebbly001 13 
++0template plaid003 6 0template aliencrust001 13 0template 5graniteBrown002 11 
++0template jupi_melty001 10 0template darkrock003 5 
++0template darkrock002 10 0template jupi_melty003 5 
++0template 5graniteBrown002 14 0template 20bush003 5 0template darkrock002 11 
++0template plaid002 12 0template 20bush003 7 0template 5graniteBrown002 11 
++0template darkrock001 6 0template plaid001 13 0template greenrock002 11 
++0template 5graniteBrown002 14 0template plaid001 5 0template darkrock001 11 
++0template 20bush003 14 0template plaid003 9 0template jupi_pebbly003 7 
++0template darkrock003 14 0template jupi_melty003 5 0template jupi_pebbly002 11 
++0template 20bush004 14 0template darkrock002 9 0template jupi_pebbly004 7 
++0template darkrock002 6 0template 20bush001 9 
++0template plaid002 12 0template 5graniteBrown002 7 0template francelight001 11 
++0template plaid001 12 0template francelight004 3 
++0template plaid002 8 0template francelight004 7 
++0template darkrock002 14 0template 5graniteBrown002 13 0template plaid003 3 
++0template darkrock001 12 0template plaid002 7 0template 5graniteBrown002 11 
++0template darkrock003 14 0template groundstruct19 5 0template plaid001 11 
++0template francelight002 10 0template darkrock001 13 0template plaid003 7 
+francelight001
++0template plaid001 14 0template greenrock001 5 0template darkrock002 11 
++0template jupi_pebbly002 8 0template plaid003 7 
++0template plaid003 10 0template jupi_pebbly004 5 
++0template 5graniteBrown001 12 0template plaid002 7 0template jupi_pebbly003 11 
++0template jupi_melty002 14 0template darkrock001 1 
++0template jupi_pebbly003 10 0template jupi_melty003 13 0template darkrock003 7 
++0template 5graniteBrown001 14 0template 20bush004 13 0template plaid001 11 0template darkrock002 7 
++0template francelight004 10 0template 5graniteBrown001 5 
++0template plaid002 14 0template francelight003 1 
++0template darkrock001 14 0template 5graniteBrown001 5 0template francelight003 11 
++0template 5graniteBrown002 14 0template darkrock001 13 0template francelight001 3 
++0template 5graniteBrown002 12 0template francelight003 7 0template darkrock001 11 
++0template plaid003 10 0template 5graniteBrown001 13 0template darkrock001 7 
++0template 20bush003 14 0template 5graniteBrown002 5 0template plaid002 11 
++0template 5graniteBrown002 10 0template 20bush002 13 0template plaid002 7 
++0template plaid001 14 0template 5graniteBrown002 5 0template 20bush001 11 
++0template 5graniteBrown001 10 0template plaid001 13 0template 20bush002 7 
++0template plaid001 10 0template groundstruct19 5 
++0template francelight001 8 0template darkrock001 7 
++0template jupi_pebbly004 6 0template plaid002 9 
++0template darkrock003 14 0template 20bush003 5 0template plaid002 11 
++0template groundstruct15 4 0template groundstruct14 11 
++0template 5graniteBrown001 14 0template plaid002 9 0template darkrock001 7 
++0template francelight003 14 0template 5graniteBrown001 5 0template darkrock003 11 
++0template 5graniteBrown002 14 0template plaid001 5 0template francelight002 11 
++0template 5graniteBrown002 12 0template francelight001 3 
++0template francelight002 2 0template 5graniteBrown001 13 
++0template darkrock002 14 0template francelight004 1 
++0template plaid003 10 0template darkrock002 13 0template francelight003 7 
++0template plaid002 14 0template groundstruct19 1 
++0template darkrock003 14 0template plaid002 13 0template francelight004 3 
++0template greenrock004 10 0template darkrock003 13 0template francelight003 7 
++0template darkrock003 10 0template jupi_pebbly004 13 0template plaid002 7 
++0template groundstruct14 10 0template groundstruct15 5 
+jupi_pebbly004
++0template darkrock002 6 0template 5graniteBrown001 13 0template francelight001 11 
+francelight002
++0template francelight004 4 0template darkrock001 11 
++0template francelight004 12 0template darkrock003 3 
++0template plaid001 14 0template francelight001 13 0template darkrock003 3 
++0template 20bush003 10 0template 5graniteBrown001 13 0template plaid003 7 
++0template plaid002 10 0template darkrock003 13 0template 5graniteBrown002 7 
++0template darkrock001 14 0template greenrock003 5 0template plaid001 11 
++0template darkrock001 14 0template plaid003 5 0template 5graniteBrown001 11 
++0template francelight001 10 0template darkrock001 13 0template 5graniteBrown001 7 
++0template darkrock001 2 0template francelight002 13 
++0template plaid003 6 0template darkrock002 13 0template 5graniteBrown002 11 
++0template darkrock002 14 0template plaid003 13 0template 20bush003 3 
++0template plaid003 10 0template jupi_pebbly002 13 0template darkrock003 7 
++0template groundstruct14 14 0template groundstruct15 1 
++0template jupi_pebbly002 10 0template darkrock003 13 0template 5graniteBrown002 7 
++0template 20bush002 10 0template darkrock003 13 0template jupi_pebbly003 7 
++0template francelight001 4 0template 5graniteBrown002 11 
++0template francelight002 12 0template 5graniteBrown001 7 0template plaid001 11 
++0template plaid003 2 0template francelight001 13 
++0template darkrock003 14 0template 5graniteBrown002 9 0template plaid001 7 
++0template darkrock003 12 0template 5graniteBrown001 7 0template plaid001 11 
++0template francelight002 14 0template darkrock001 5 0template 5graniteBrown001 11 
++0template francelight004 12 0template 5graniteBrown002 3 
++0template francelight001 8 0template 5graniteBrown002 7 
++0template plaid002 14 0template greenrock004 5 0template 20bush003 11 
++0template groundstruct14 14 0template darkrock001 1 
++0template groundstruct15 8 0template darkrock001 7 
++0template francelight003 10 0template 5graniteBrown002 13 0template plaid002 7 
++0template 5graniteBrown001 14 0template francelight003 1 
++0template plaid003 10 0template 5graniteBrown002 13 0template francelight004 7 
++0template plaid001 4 0template francelight003 11 
++0template jupi_pebbly002 2 0template plaid002 13 
++0template 5graniteBrown002 4 0template 20bush003 11 
++0template darkrock003 10 0template 5graniteBrown002 13 0template 20bush004 7 
++0template 5graniteBrown002 12 0template darkrock002 7 0template plaid003 11 
++0template francelight002 14 0template 5graniteBrown002 13 0template plaid002 3 
++0template francelight002 12 0template plaid001 7 0template greenrock004 11 
++0template greenrock001 2 0template francelight003 13 
++0template darkrock001 14 0template 20bush004 5 0template 5graniteBrown002 11 
++0template plaid001 12 0template jupi_pebbly004 7 0template darkrock001 11 
++0template darkrock001 14 0template groundstruct14 5 0template 5graniteBrown001 11 
++0template 20bush004 14 0template jupi_pebbly003 5 0template plaid003 11 
++0template francelight003 2 0template plaid002 13 
++0template plaid002 14 0template francelight002 9 0template 5graniteBrown001 7 
++0template 5graniteBrown001 12 0template plaid001 7 0template greenrock003 11 
++0template plaid002 14 0template 5graniteBrown001 13 0template greenrock004 3 
++0template plaid003 8 0template greenrock002 7 
++0template 5graniteBrown001 14 0template 20bush004 9 0template plaid002 7 
++0template darkrock001 14 0template groundstruct19 5 0template 5graniteBrown002 11 
++0template jupi_pebbly003 6 0template plaid003 13 0template darkrock003 11 
++0template 5graniteBrown001 10 0template groundstruct14 13 0template darkrock003 7 
++0template jupi_pebbly004 14 0template darkrock003 5 0template 5graniteBrown002 11 
++0template plaid003 14 0template jupi_pebbly001 9 0template 5graniteBrown001 7 
++0template 20bush002 14 0template plaid003 13 0template darkrock002 11 0template jupi_pebbly003 7 
++0template 20bush002 12 0template darkrock002 7 0template jupi_pebbly004 11 
++0template darkrock002 14 0template 20bush001 13 0template plaid001 11 0template jupi_pebbly001 7 
++0template jupi_pebbly002 10 0template plaid001 13 0template 5graniteBrown002 7 
++0template plaid001 14 0template darkrock001 5 0template greenrock002 11 
++0template 5graniteBrown001 14 0template plaid003 13 0template greenrock003 3 
++0template plaid002 14 0template 5graniteBrown002 9 0template greenrock004 7 
++0template plaid001 6 0template 5graniteBrown002 13 0template darkrock002 11 
++0template plaid002 14 0template greenrock005 5 0template 5graniteBrown002 11 
++0template plaid003 12 0template 5graniteBrown002 7 0template 20bush001 11 
++0template 20bush004 12 0template greenrock004 7 0template plaid001 11 
++0template 5graniteBrown002 10 0template groundstruct19 5 
++0template 20bush003 10 0template greenrock002 13 0template darkrock001 7 
++0template darkrock002 4 0template groundstruct14 11 
++0template groundstruct15 2 0template darkrock001 13 
++0template plaid002 14 0template jupi_pebbly002 5 0template darkrock001 11 
++0template francelight003 14 0template plaid003 1 
++0template francelight001 12 0template plaid003 7 0template 5graniteBrown001 11 
++0template francelight001 4 0template plaid003 11 
++0template 5graniteBrown001 14 0template greenrock005 1 
++0template plaid002 10 0template 5graniteBrown002 13 0template greenrock005 7 
++0template darkrock002 14 0template plaid001 13 0template greenrock004 3 
++0template plaid003 14 0template darkrock001 13 0template greenrock005 3 
++0template greenrock001 4 0template 9martian001 11 
++0template 5graniteBrown001 10 0template greenrock005 13 0template 9martian001 7 
++0template plaid003 14 0template 20bush002 5 0template 5graniteBrown002 11 
++0template greenrock001 10 0template plaid003 13 0template 5graniteBrown001 7 
++0template 5graniteBrown002 14 0template darkrock003 5 0template plaid001 11 
++0template 20bush004 10 0template darkrock001 13 0template greenrock003 7 
++0template 20bush001 14 0template plaid001 13 0template jupi_pebbly001 3 
++0template plaid001 14 0template 20bush002 13 0template jupi_pebbly003 3 
++0template jupi_pebbly004 2 0template 5graniteBrown002 13 
++0template francelight004 12 0template plaid002 3 
++0template plaid002 14 0template greenrock001 1 
++0template 9martian001 14 0template greenrock002 5 0template plaid001 11 
++0template 5graniteBrown002 14 0template 9martian001 13 0template plaid003 3 
++0template 5graniteBrown002 14 0template 20bush003 13 0template greenrock005 3 
++0template greenrock001 2 0template 5graniteBrown001 13 
++0template greenrock003 4 0template 5graniteBrown002 11 
++0template 5graniteBrown001 2 0template greenrock002 13 
++0template plaid001 14 0template darkrock002 13 0template francelight004 11 0template 5graniteBrown002 7 
++0template greenrock001 10 0template plaid001 13 0template francelight002 7 
++0template jupi_pebbly003 10 0template plaid002 13 0template 20bush004 7 
+jupi_pebbly003
++0template jupi_pebbly001 4 0template plaid001 11 
++0template groundstruct14 2 0template darkrock003 13 
++0template darkrock001 6 0template 5graniteBrown002 9 
++0template 20bush004 14 0template plaid002 13 0template 5graniteBrown001 11 0template greenrock002 7 
++0template greenrock003 10 0template 20bush003 13 0template 5graniteBrown001 7 
++0template 5graniteBrown001 10 0template greenrock002 5 
++0template groundstruct15 8 0template plaid001 7 
++0template groundstruct15 4 0template groundstruct18 11 
++0template 5graniteBrown001 4 0template francelight004 11 
++0template darkrock001 4 0template groundstruct15 11 
++0template 20bush003 14 0template plaid002 5 0template jupi_pebbly003 11 
++0template jupi_pebbly002 2 0template 20bush001 13 
++0template groundstruct14 8 0template darkrock003 7 
++0template darkrock001 12 0template jupi_pebbly002 3 
++0template jupi_pebbly003 4 0template darkrock002 11 
++0template greenrock003 12 0template darkrock001 7 0template 5graniteBrown002 11 
++0template groundstruct18 10 0template groundstruct15 5 
++0template 5graniteBrown001 14 0template groundstruct19 1 
++0template 20bush004 12 0template jupi_pebbly004 7 0template plaid002 11 
++0template greenrock005 14 0template darkrock002 5 0template bdtdark001 11 
++0template darkrock003 14 0template greenrock005 5 0template bdtdark001 11 
++0template 5graniteBrown002 10 0template darkrock002 13 0template bdtdark001 7 
++0template groundstruct19 4 0template plaid002 11 
++0template francelight001 8 0template plaid001 7 
++0template greenrock001 10 0template francelight003 13 0template plaid003 7 
++0template greenrock003 14 0template bdtdark001 1 
++0template greenrock004 4 0template bdtdark001 11 
++0template bdtdark001 2 0template greenrock005 13 
++0template 5graniteBrown002 14 0template bdtdark001 1 
++0template 5graniteBrown001 8 0template bdtdark001 7 
++0template plaid001 14 0template francelight003 5 0template greenrock005 11 
++0template jupi_pebbly003 14 0template plaid002 9 0template darkrock002 7 
++0template jupi_pebbly004 12 0template darkrock001 7 0template plaid003 11 
++0template jupi_pebbly001 6 0template darkrock002 13 0template 5graniteBrown001 11 
++0template jupi_pebbly002 12 0template 5graniteBrown001 7 0template darkrock001 11 
++0template greenrock004 14 0template bdtdark001 9 0template darkrock001 7 
++0template greenrock002 12 0template bdtdark001 7 0template 9martian002 11 
++0template greenrock004 12 0template 9martian001 7 0template bdtdark001 11 
++0template bdtdark001 6 0template greenrock002 13 0template darkrock003 11 
++0template 5graniteBrown002 10 0template bdtdark001 5 
++0template francelight002 10 0template plaid003 13 0template darkrock002 7 
++0template plaid002 6 0template darkrock003 13 0template jupi_pebbly001 11 
++0template 20bush004 14 0template jupi_pebbly004 13 0template plaid003 3 
++0template jupi_pebbly002 2 0template darkrock002 13 
++0template 9martian002 14 0template bdtdark001 1 
++0template bdtdark001 2 0template 9martian002 13 
++0template bdtdark001 12 0template darkrock002 7 0template 5graniteBrown001 11 
++0template bdtdark001 12 0template 5graniteBrown002 3 
++0template 5graniteBrown002 2 0template bdtdark001 13 
++0template francelight004 14 0template darkrock003 5 0template greenrock005 11 
++0template groundstruct15 14 0template darkrock002 1 
++0template plaid002 12 0template darkrock002 7 0template jupi_pebbly002 11 
++0template darkrock003 6 0template plaid003 13 0template jupi_pebbly003 11 
++0template bdtdark001 12 0template darkrock003 7 0template plaid003 11 
++0template bdtdark001 12 0template plaid003 7 0template 5graniteBrown002 11 
++0template bdtdark001 12 0template 5graniteBrown001 7 0template darkrock001 11 
++0template darkrock003 6 0template bdtdark001 13 0template 9martian002 11 
++0template darkrock002 12 0template 9martian002 7 0template 5graniteBrown002 11 
++0template plaid003 14 0template 5graniteBrown001 9 0template darkrock001 7 
++0template darkrock001 14 0template plaid002 13 0template jupi_pebbly002 3 
++0template darkrock002 4 0template 9martian001 11 
++0template 9martian001 2 0template darkrock002 13 
++0template 5graniteBrown001 10 0template 9martian001 5 
++0template groundstruct18 14 0template groundstruct15 1 
++0template greenrock004 14 0template darkrock001 1 
++0template darkrock002 6 0template jupi_pebbly002 9 
++0template jupi_pebbly001 6 0template darkrock003 9 
++0template plaid003 14 0template jupi_pebbly001 9 0template darkrock001 7 
++0template darkrock002 12 0template 5graniteBrown001 7 0template 9martian001 11 
+9martian002
++0template 5graniteBrown001 6 0template darkrock003 13 0template 20bush001 11 
++0template darkrock002 14 0template 5graniteBrown001 5 0template plaid002 11 
++0template darkrock003 14 0template jupi_pebbly004 5 0template 20bush001 11 
++0template 9martian001 10 0template 5graniteBrown001 5 
++0template 20bush003 14 0template 5graniteBrown001 13 0template plaid003 3 
++0template 5graniteBrown002 14 0template 20bush003 13 0template plaid001 3 
++0template darkrock001 14 0template 20bush003 13 0template greenrock004 11 0template francelight002 7 
++0template darkrock002 12 0template greenrock003 3 
++0template greenrock003 6 0template darkrock002 9 
++0template greenrock005 12 0template darkrock003 3 
++0template greenrock002 12 0template darkrock003 7 0template plaid002 11 
++0template darkrock003 8 0template groundstruct17 7 
++0template 20bush002 10 0template jupi_pebbly002 13 0template darkrock002 7 
++0template 9martian001 4 0template 5graniteBrown002 11 
++0template 5graniteBrown001 2 0template 9martian001 13 
++0template plaid002 14 0template 5graniteBrown002 5 0template groundstruct15 11 
++0template darkrock001 10 0template groundstruct17 5 
++0template plaid003 14 0template darkrock003 13 0template jupi_pebbly004 3 
++0template darkrock003 14 0template plaid002 9 0template jupi_pebbly004 7 
++0template darkrock001 12 0template plaid001 7 0template jupi_pebbly001 11 
++0template 5graniteBrown002 14 0template darkrock002 13 0template jupi_pebbly004 3 
++0template plaid002 14 0template darkrock001 9 0template jupi_pebbly003 7 
++0template 20bush003 14 0template darkrock001 13 0template jupi_pebbly004 3 
++0template darkrock001 10 0template 20bush001 13 0template jupi_pebbly004 7 
++0template plaid002 14 0template darkrock003 5 0template 20bush003 11 
++0template 20bush002 6 0template 5graniteBrown001 13 0template plaid001 11 
++0template 5graniteBrown001 14 0template plaid003 9 0template 20bush001 7 
++0template groundstruct15 10 0template 5graniteBrown002 13 0template plaid001 7 
++0template greenrock003 14 0template francelight001 5 0template darkrock002 11 
++0template darkrock003 2 0template groundstruct17 13 
+9martian001
++0template 5graniteBrown001 4 0template 9martian002 11 
++0template 20bush004 14 0template 5graniteBrown001 13 0template 9martian001 3 
++0template plaid001 14 0template 20bush002 13 0template 5graniteBrown002 11 0template 9martian002 7 
++0template plaid002 14 0template 5graniteBrown001 13 0template darkrock001 11 0template 20bush002 7 
++0template groundstruct16 14 0template darkrock001 5 0template plaid002 11 
++0template groundstruct16 12 0template plaid002 3 
++0template groundstruct17 12 0template plaid003 3 
++0template darkrock002 14 0template groundstruct14 13 0template plaid001 3 
++0template 20bush002 14 0template darkrock001 5 0template plaid002 11 
++0template 5graniteBrown001 8 0template 9martian002 7 
++0template 9martian002 14 0template 5graniteBrown001 1 
++0template 9martian001 12 0template 5graniteBrown002 3 
++0template plaid003 10 0template 20bush003 13 0template 5graniteBrown002 7 
++0template darkrock001 14 0template jupi_pebbly004 13 0template plaid002 3 
++0template 20bush002 14 0template plaid002 13 0template 5graniteBrown002 3 
++0template 9martian001 2 0template 5graniteBrown001 13 
++0template 5graniteBrown001 14 0template 9martian002 1 
++0template 5graniteBrown001 12 0template plaid003 7 0template 20bush004 11 
++0template 5graniteBrown001 14 0template darkrock001 13 0template 9martian002 3 
++0template 5graniteBrown002 12 0template 9martian002 3 
++0template 5graniteBrown001 14 0template plaid002 5 0template 20bush002 11 
++0template 5graniteBrown001 12 0template 20bush002 7 0template plaid002 11 
++0template groundstruct19 8 0template plaid003 7 
++0template greenrock004 10 0template groundstruct19 5 
++0template plaid001 14 0template darkrock002 13 0template 20bush003 3 
++0template 9martian002 14 0template 5graniteBrown001 9 0template darkrock001 7 
++0template 9martian002 8 0template 5graniteBrown001 7 
++0template greenrock003 14 0template groundstruct15 1 
++0template greenrock002 8 0template groundstruct15 7 
++0template plaid003 10 0template groundstruct18 5 
++0template plaid003 14 0template groundstruct18 1 
++0template plaid001 8 0template groundstruct18 7 
++0template plaid001 14 0template groundstruct18 5 0template bluegranite002 11 
++0template bluegranite003 10 0template groundstruct18 5 
++0template plaid001 12 0template 20bush003 7 0template 1french003 11 
++0template plaid001 14 0template bluegranite002 5 0template groundstruct18 11 
++0template groundstruct18 2 0template plaid002 13 
++0template groundstruct18 4 0template bluegranite003 11 
++0template bluegranite003 2 0template groundstruct18 13 
++0template bluegranite002 12 0template plaid001 7 0template groundstruct18 11 
++0template groundstruct18 2 0template bluegranite001 13 
++0template groundstruct16 4 0template greenrock002 11 
++0template 20bush003 10 0template plaid001 13 0template greenrock003 7 
++0template plaid003 4 0template groundstruct18 11 
++0template bluegranite002 10 0template groundstruct4 5 
++0template plaid003 6 0template bluegranite003 9 
++0template greenrock005 10 0template groundstruct16 5 
+red_crest
++0template plaid003 12 0template bluegranite003 7 0template groundstruct18 11 
++0template bluegranite003 14 0template groundstruct4 1 
++0template plaid002 14 0template bluegranite001 9 0template groundstruct18 7 
+groundstruct25
++0template groundstruct18 10 0template bluegranite002 5 
++0template groundstruct16 8 0template greenrock003 7 
++0template 20bush001 14 0template darkrock001 13 0template plaid001 3 
++0template bluegranite002 6 0template plaid003 9 
++0template bluegranite001 4 0template groundstruct18 11 
++0template greenrock005 14 0template plaid002 13 0template 20bush002 3 
++0template groundstruct16 10 0template greenrock003 5 
+groundstruct14a
++0template bluegranite002 14 0template groundstruct18 1 
++0template bluegranite001 8 0template groundstruct18 7 
++0template greenrock002 10 0template 20bush004 5 
++0template plaid003 12 0template 1french003 7 0template 20bush001 11 
++0template groundstruct18 10 0template bluegranite002 13 0template plaid002 7 
++0template smallbuilding3 4 0template bluegranite003 11 
++0template groundstruct18 12 0template bluegranite003 3 
++0template groundstruct4 12 0template bluegranite003 3 
++0template groundstruct23 8 0template bluegranite001 7 
++0template groundstruct16 14 0template greenrock002 1 
++0template groundstruct16 12 0template greenrock003 3 
++0template greenrock002 2 0template groundstruct16 13 
++0template 20bush003 6 0template 1french004 9 
++0template groundstruct18 14 0template plaid003 5 0template bluegranite003 11 
++0template groundstruct4 14 0template bluegranite002 1 
++0template groundstruct6 2 0template groundstruct16 13 
++0template 5graniteBrown002 14 0template darkrock003 9 0template plaid003 7 
++0template 20bush002 10 0template 1french003 13 0template plaid002 7 
++0template 20bush002 6 0template 1french004 13 0template plaid001 11 
++0template greenrock005 4 0template 1french002 11 
++0template 20bush002 14 0template greenrock005 13 0template 1french004 3 
++0template 1french002 6 0template 20bush001 13 0template plaid001 11 
++0template plaid003 6 0template 1french002 13 0template 5graniteBrown002 11 
++0template bluegranite003 4 0template 20bush002 11 
++0template greenrock004 12 0template 1french002 3 
++0template 1french001 2 0template greenrock004 13 
++0template bluegranite003 14 0template plaid001 9 0template 20bush003 7 
++0template 20bush003 2 0template bluegranite001 13 
++0template greenrock002 14 0template plaid001 5 0template 20bush003 11 
++0template greenrock002 14 0template 20bush004 1 
++0template greenrock002 14 0template 20bush002 5 0template 1french002 11 
++0template greenrock005 8 0template 1french003 7 
++0template plaid003 10 0template 5graniteBrown002 13 0template 20bush004 7 
++0template 20bush001 10 0template bluegranite003 13 0template plaid003 7 
++0template 1french002 10 0template 20bush002 13 0template plaid002 7 
++0template greenrock001 14 0template 1french001 1 
++0template greenrock001 12 0template 1french004 7 0template plaid003 11 
++0template 1french003 14 0template greenrock003 13 0template plaid001 3 
++0template plaid003 6 0template 1french001 13 0template 20bush002 11 
++0template 20bush004 10 0template plaid003 13 0template 1french001 7 
++0template 20bush003 6 0template plaid002 13 0template 1french004 11 
++0template 1french004 4 0template francelight004 11 
++0template plaid003 14 0template 1french004 13 0template francelight004 3 
++0template 20bush001 4 0template francelight001 11 
++0template 20bush001 12 0template francelight002 3 
++0template 20bush003 8 0template francelight003 7 
++0template 1french002 14 0template plaid003 9 0template francelight002 7 
++0template francelight003 14 0template 1french001 13 0template 20bush001 3 
++0template francelight003 8 0template 20bush003 7 
++0template 20bush002 14 0template plaid003 13 0template francelight002 3 
++0template francelight004 2 0template 20bush001 13 
++0template 20bush004 14 0template francelight002 1 
++0template plaid001 14 0template 20bush001 13 0template francelight003 3 
++0template plaid001 6 0template 1french002 9 
++0template plaid003 12 0template 20bush002 7 0template francelight002 11 
++0template francelight001 14 0template 20bush001 13 0template plaid001 3 
++0template francelight003 14 0template 20bush003 5 0template 1french003 11 
++0template francelight004 12 0template 1french002 3 
++0template francelight004 12 0template 1french003 7 0template plaid001 11 

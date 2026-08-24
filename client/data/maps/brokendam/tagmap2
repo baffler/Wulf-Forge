@@ -1,0 +1,2654 @@
++0template JJcanyon001 12 0template 4granite002 7 0template stones003 11 
++0template grandcan001 10 0template JJcanyon001 13 0template stones003 7 
++0template JJcanyon001 14 0template grandcan001 5 0template stones004 11 
++0template JJcanyon001 12 0template stones001 7 0template 9martian001 11 
++0template grandcan001 14 0template JJcanyon001 13 0template 9martian001 3 
++0template grandcan001 12 0template 9martian002 7 0template stones003 11 
++0template grandcan001 12 0template stones004 3 
++0template grandcan001 8 0template stones003 7 
++0template dark-grey/49 14 0template grandcan001 5 0template jupi_rocky001 11 
++0template dark-grey/49 12 0template jupi_rocky002 3 
++0template jupi_rocky003 2 0template dark-grey/49 13 
+jupi_rocky002
+jupi_rocky004
+jupi_rocky005
++0template jupi_rocky004 4 0template dark-grey/49 11 
++0template jupi_rocky004 8 0template dark-grey/49 7 
++0template brown/20 14 0template jupi_rocky001 1 
++0template brown/02 14 0template brown/20 13 0template brown/05 11 0template jupi_rocky002 7 
++0template brown/08 10 0template brown/02 13 0template brown/05 7 
+brown/08
++0template brown/05 10 0template brown/08 5 
+brown/05
++0template brown/02 14 0template brown/05 5 0template brown/08 11 
++0template brown/02 12 0template brown/08 7 0template brown/09 11 
++0template brown/02 12 0template brown/09 3 
++0template brown/12 14 0template brown/02 13 0template brown/08 11 0template brown/09 7 
++0template brown/12 12 0template brown/08 3 
++0template brown/12 8 0template brown/08 7 
++0template brown/08 14 0template brown/12 1 
++0template brown/08 12 0template brown/12 7 0template brown/05 11 
++0template brown/08 12 0template brown/05 3 
++0template brown/08 8 0template brown/05 7 
++0template brown/09 10 0template brown/08 5 
++0template brown/08 10 0template brown/09 5 
++0template brown/08 10 0template brown/05 5 
++0template bdtdark001 10 0template brown/09 5 
+bdtdark001
++0template brown/05 10 0template bdtdark001 5 
++0template brown/02 14 0template brown/08 5 0template bdtdark001 11 
++0template brown/02 8 0template bdtdark001 7 
++0template brown/05 10 0template brown/02 5 
++0template brown/02 14 0template brown/05 5 0template bdtdark001 11 
++0template brown/12 10 0template brown/02 5 
+brown/12
++0template brown/20 14 0template brown/12 1 
++0template brown/20 12 0template brown/12 3 
++0template brown/12 2 0template brown/20 13 
++0template brown/05 10 0template brown/12 5 
++0template bdtdark001 10 0template brown/08 5 
++0template brown/05 4 0template bdtdark001 11 
++0template brown/12 10 0template brown/05 13 0template bdtdark001 7 
++0template brown/02 10 0template brown/08 5 
++0template brown/02 4 0template brown/12 11 
++0template brown/08 10 0template brown/02 13 0template brown/12 7 
++0template brown/12 14 0template brown/08 5 0template bdtdark001 11 
++0template brown/12 8 0template bdtdark001 7 
++0template brown/08 8 0template brown/12 7 
++0template brown/08 4 0template jupi_pebbly004 11 
++0template brown/08 12 0template jupi_pebbly003 7 0template jupi_bark002 11 
++0template 2grandcan001 14 0template brown/08 13 0template grandcan001 11 0template jupi_bark001 7 
++0template 2grandcan001 12 0template grandcan001 3 
++0template 2grandcan001 12 0template grandcan001 7 0template canyon003 11 
++0template redgranite001 14 0template 2grandcan001 13 0template canyon001 3 
++0template redgranite002 12 0template canyon002 3 
++0template 2grandcan001 14 0template redgranite001 13 0template canyon002 3 
++0template canyon002 6 0template 2grandcan001 9 
++0template canyon002 12 0template 2grandcan001 3 
++0template canyon002 12 0template 2grandcan001 7 0template redgranite003 11 
++0template canyon003 12 0template redgranite002 3 
++0template canyon003 12 0template redgranite001 7 0template 2rough001 11 
++0template canyon003 12 0template 2rough002 7 0template redgranite002 11 
++0template canyon002 12 0template 2rough002 3 
++0template canyon003 8 0template redgranite001 7 
++0template stones003 10 0template 4granite001 5 
++0template grandcan001 14 0template stones001 1 
++0template stones003 6 0template grandcan001 13 0template 9martian002 11 
++0template 9martian001 6 0template stones004 13 0template redgranite003 11 
++0template 9martian001 8 0template redgranite003 7 
++0template stones003 10 0template 9martian002 5 
+stones001
+stones002
++0template jupi_rocky003 10 0template grandcan001 13 0template stones001 7 
++0template jupi_rocky002 4 0template canyon003 11 
++0template jupi_rocky002 12 0template canyon003 3 
++0template dark-grey/49 14 0template jupi_rocky002 13 0template grandcan001 11 0template canyon002 7 
++0template jupi_rocky003 14 0template dark-grey/49 13 0template grandcan001 3 
++0template jupi_rocky004 8 0template grandcan001 7 
++0template brown/05 14 0template jupi_rocky004 5 0template brown/08 11 
++0template brown/08 2 0template brown/05 13 
++0template brown/09 14 0template brown/08 1 
++0template brown/09 12 0template brown/08 3 
++0template brown/08 2 0template brown/09 13 
++0template brown/08 4 0template brown/09 11 
++0template brown/12 10 0template brown/08 13 0template brown/09 7 
++0template brown/05 14 0template brown/12 5 0template bdtdark001 11 
++0template brown/05 12 0template bdtdark001 3 
++0template brown/08 10 0template brown/05 13 0template bdtdark001 7 
++0template brown/08 4 0template bdtdark001 11 
++0template brown/05 14 0template brown/08 13 0template bdtdark001 3 
++0template brown/05 12 0template bdtdark001 7 0template brown/08 11 
++0template brown/08 6 0template brown/05 13 0template brown/09 11 
++0template brown/09 2 0template brown/08 13 
++0template bdtdark001 14 0template brown/09 5 0template brown/05 11 
++0template bdtdark001 12 0template brown/05 3 
++0template bdtdark001 12 0template brown/05 7 0template brown/08 11 
++0template brown/05 14 0template bdtdark001 13 0template brown/09 11 0template brown/08 7 
++0template brown/08 14 0template brown/05 13 0template brown/09 3 
++0template bdtdark001 14 0template brown/08 13 0template brown/05 11 0template brown/09 7 
++0template brown/02 14 0template bdtdark001 13 0template brown/05 3 
++0template brown/05 6 0template brown/02 13 0template brown/08 11 
++0template bdtdark001 14 0template brown/05 13 0template brown/08 3 
++0template brown/02 14 0template bdtdark001 13 0template brown/08 3 
++0template brown/12 14 0template brown/02 13 0template brown/09 11 0template brown/08 7 
++0template brown/12 12 0template brown/09 3 
++0template brown/12 12 0template brown/09 7 0template bdtdark001 11 
++0template brown/12 12 0template bdtdark001 3 
++0template brown/05 14 0template brown/12 13 0template bdtdark001 3 
++0template brown/08 14 0template brown/05 13 0template bdtdark001 3 
++0template brown/08 12 0template bdtdark001 7 0template brown/12 11 
++0template bdtdark001 14 0template brown/08 13 0template brown/12 3 
++0template bdtdark001 8 0template brown/12 7 
++0template brown/05 14 0template bdtdark001 1 
++0template bdtdark001 2 0template brown/05 13 
++0template brown/12 14 0template bdtdark001 1 
++0template brown/08 14 0template brown/05 9 0template bdtdark001 7 
++0template brown/02 14 0template brown/08 13 0template bdtdark001 11 0template brown/05 7 
++0template brown/12 10 0template brown/02 13 0template bdtdark001 7 
++0template bdtdark001 10 0template brown/08 13 0template brown/12 7 
++0template brown/12 10 0template bdtdark001 5 
++0template brown/12 4 0template brown/08 11 
++0template brown/08 2 0template brown/12 13 
++0template jupi_pebbly001 10 0template brown/08 5 
++0template jupi_bark002 14 0template jupi_pebbly004 5 0template jupi_bumpy003 11 
++0template grandcan001 10 0template jupi_bark001 13 0template jupi_bumpy002 7 
++0template grandcan001 4 0template canyon002 11 
++0template canyon002 6 0template grandcan001 9 
++0template canyon001 12 0template grandcan001 7 0template 2grandcan001 11 
++0template canyon002 12 0template 2grandcan001 7 0template grandcan001 11 
++0template canyon003 8 0template 2rough001 7 
+canyon001
+canyon002
+canyon003
++0template 2grandcan001 10 0template canyon002 5 
+2grandcan001
++0template redgranite001 10 0template 2grandcan001 5 
++0template redgranite002 4 0template 2rough001 11 
++0template 2rough002 2 0template redgranite003 13 
++0template redgranite001 14 0template 2rough001 1 
++0template redgranite001 8 0template 2rough001 7 
+redgranite002
++0template 2rough002 4 0template redgranite001 11 
++0template 2rough002 12 0template redgranite003 3 
++0template 2rough002 8 0template redgranite001 7 
++0template redgranite002 12 0template 2rough002 3 
++0template 2rough001 6 0template redgranite002 9 
++0template redgranite001 6 0template 2rough002 9 
++0template canyon002 10 0template redgranite002 5 
++0template stones001 4 0template redgranite003 11 
++0template 9martian002 14 0template stones003 13 0template redgranite002 3 
++0template redgranite003 6 0template 9martian002 9 
++0template 9martian001 2 0template redgranite001 13 
+stones004
++0template jupi_rocky001 14 0template stones001 1 
++0template jupi_rocky005 12 0template stones002 3 
++0template jupi_rocky004 12 0template stones001 7 0template canyon001 11 
++0template canyon001 2 0template jupi_rocky001 13 
++0template grandcan001 14 0template canyon001 1 
++0template grandcan001 8 0template canyon003 7 
++0template jupi_rocky003 14 0template grandcan001 1 
++0template brown/08 14 0template jupi_rocky003 1 
++0template brown/08 8 0template jupi_rocky004 7 
++0template brown/05 14 0template brown/08 13 0template brown/09 3 
++0template brown/05 12 0template brown/09 7 0template bdtdark001 11 
++0template brown/08 14 0template brown/05 13 0template brown/09 11 0template bdtdark001 7 
++0template brown/08 8 0template brown/09 7 
++0template brown/12 10 0template brown/09 5 
++0template bdtdark001 10 0template brown/12 5 
++0template brown/08 14 0template bdtdark001 5 0template brown/05 11 
++0template brown/08 10 0template bdtdark001 5 
+brown/09
++0template brown/05 10 0template brown/09 5 
++0template brown/09 4 0template brown/08 11 
++0template brown/05 14 0template brown/09 13 0template brown/08 3 
++0template brown/05 12 0template brown/08 7 0template brown/09 11 
++0template brown/09 4 0template brown/05 11 
++0template bdtdark001 10 0template brown/09 13 0template brown/05 7 
++0template bdtdark001 4 0template brown/05 11 
++0template bdtdark001 12 0template brown/05 7 0template brown/12 11 
++0template brown/12 4 0template brown/05 11 
++0template bdtdark001 14 0template brown/12 13 0template brown/05 3 
++0template bdtdark001 8 0template brown/08 7 
++0template bdtdark001 8 0template brown/05 7 
++0template brown/05 12 0template bdtdark001 7 0template brown/12 11 
++0template bdtdark001 14 0template brown/05 13 0template brown/12 3 
++0template brown/12 6 0template bdtdark001 13 0template brown/09 11 
++0template brown/12 12 0template brown/09 7 0template brown/08 11 
++0template bdtdark001 14 0template brown/12 9 0template brown/08 7 
++0template brown/12 2 0template bdtdark001 13 
++0template brown/08 10 0template brown/12 5 
++0template jupi_bumpy003 10 0template jupi_pebbly002 5 
++0template grandcan001 14 0template jupi_bumpy001 5 0template jupi_bark002 11 
++0template canyon001 14 0template grandcan001 9 0template jupi_bark001 7 
++0template grandcan001 6 0template canyon003 9 
++0template 2grandcan001 14 0template grandcan001 13 0template canyon001 3 
++0template grandcan001 10 0template 2grandcan001 13 0template canyon003 7 
++0template 2grandcan001 10 0template grandcan001 5 
++0template 2grandcan001 4 0template 2rough001 11 
++0template 2grandcan001 12 0template 2rough001 7 0template redgranite001 11 
++0template redgranite001 2 0template 2grandcan001 13 
++0template 2rough001 14 0template redgranite001 5 0template canyon003 11 
++0template canyon001 6 0template 2rough002 9 
++0template 2rough001 10 0template redgranite002 5 
++0template redgranite001 10 0template 2rough001 5 
+redgranite001
+2rough001
+redgranite003
++0template 2rough002 14 0template redgranite003 1 
++0template canyon003 10 0template redgranite002 13 0template 2rough001 7 
++0template redgranite001 14 0template stones001 5 0template 9martian002 11 
++0template redgranite003 12 0template 9martian001 3 
+9martian002
+stones003
++0template canyon001 14 0template stones002 1 
++0template canyon001 8 0template stones002 7 
++0template grandcan001 10 0template canyon001 5 
++0template grandcan001 4 0template redgranite003 11 
++0template jupi_rocky004 10 0template grandcan001 13 0template redgranite001 7 
++0template jupi_rocky003 4 0template bdtdark001 11 
++0template brown/08 14 0template jupi_rocky005 13 0template bdtdark001 3 
++0template brown/09 14 0template brown/08 13 0template brown/12 11 0template bdtdark001 7 
++0template brown/09 12 0template brown/12 3 
++0template bdtdark001 14 0template brown/09 13 0template brown/08 11 0template brown/12 7 
++0template brown/09 10 0template bdtdark001 13 0template brown/08 7 
++0template brown/08 14 0template brown/09 1 
++0template brown/12 14 0template brown/09 13 0template brown/08 3 
++0template brown/12 12 0template brown/08 7 0template brown/09 11 
++0template bdtdark001 10 0template brown/12 13 0template brown/09 7 
++0template brown/08 14 0template brown/05 5 0template bdtdark001 11 
++0template bdtdark001 2 0template brown/08 13 
++0template bdtdark001 4 0template brown/12 11 
++0template brown/08 14 0template bdtdark001 13 0template brown/12 3 
++0template brown/09 14 0template brown/08 9 0template brown/12 7 
++0template brown/09 12 0template brown/08 7 0template bdtdark001 11 
++0template brown/05 14 0template brown/09 13 0template brown/12 11 0template bdtdark001 7 
++0template brown/05 12 0template brown/12 3 
++0template brown/08 14 0template brown/05 13 0template bdtdark001 11 0template brown/12 7 
++0template brown/09 14 0template brown/08 13 0template bdtdark001 3 
++0template brown/08 10 0template brown/09 13 0template bdtdark001 7 
++0template brown/08 14 0template brown/09 5 0template brown/05 11 
++0template brown/05 10 0template brown/09 13 0template brown/08 7 
++0template bdtdark001 14 0template brown/05 1 
++0template bdtdark001 12 0template brown/05 7 0template brown/09 11 
++0template bdtdark001 12 0template brown/09 7 0template brown/12 11 
++0template bdtdark001 12 0template brown/12 3 
++0template brown/05 14 0template bdtdark001 13 0template brown/08 11 0template brown/12 7 
++0template brown/12 10 0template brown/05 13 0template brown/08 7 
++0template bdtdark001 14 0template brown/12 1 
++0template brown/12 6 0template bdtdark001 13 0template brown/08 11 
++0template brown/05 10 0template brown/12 13 0template brown/08 7 
++0template bdtdark001 14 0template brown/08 5 0template brown/09 11 
++0template brown/05 10 0template bdtdark001 13 0template brown/09 7 
++0template bdtdark001 10 0template brown/05 5 
++0template brown/09 14 0template brown/12 5 0template bdtdark001 11 
++0template brown/12 14 0template brown/08 5 0template brown/09 11 
++0template brown/08 10 0template brown/12 13 0template brown/09 7 
++0template jupi_bark002 14 0template jupi_bumpy003 5 0template jupi_rocky004 11 
++0template grandcan001 14 0template jupi_bark002 13 0template jupi_bumpy001 11 0template jupi_rocky004 7 
++0template canyon002 14 0template grandcan001 13 0template jupi_bumpy002 3 
++0template canyon001 8 0template jupi_bumpy002 7 
++0template grandcan001 14 0template canyon002 5 0template 2grandcan001 11 
++0template 2grandcan001 6 0template grandcan001 13 0template 2rough002 11 
++0template 2grandcan001 12 0template 2rough001 3 
++0template 2grandcan001 12 0template 2rough001 7 0template grandcan001 11 
++0template 2rough002 14 0template 2grandcan001 9 0template grandcan001 7 
++0template redgranite003 14 0template 2rough002 9 0template 2grandcan001 7 
++0template 2rough001 14 0template canyon001 1 
++0template 2rough001 12 0template canyon002 7 0template redgranite001 11 
++0template canyon002 10 0template 2rough001 13 0template redgranite003 7 
++0template redgranite001 14 0template 2grandcan001 5 0template 2rough001 11 
++0template redgranite001 2 0template 2rough002 13 
++0template redgranite003 14 0template 2rough001 13 0template canyon001 3 
++0template redgranite001 8 0template canyon002 7 
++0template 2rough001 4 0template canyon001 11 
++0template 2rough001 12 0template canyon003 3 
++0template canyon002 10 0template 2rough001 5 
++0template 9martian001 10 0template stones002 5 
++0template 9martian001 4 0template redgranite001 11 
++0template stones002 14 0template 9martian001 1 
++0template stones002 8 0template 9martian002 7 
++0template stones004 12 0template redgranite001 3 
++0template stones003 8 0template redgranite003 7 
++0template canyon003 10 0template stones003 13 0template redgranite003 7 
++0template redgranite002 10 0template grandcan001 5 
++0template jupi_rocky003 10 0template redgranite002 5 
++0template bdtdark001 14 0template jupi_rocky004 1 
++0template bdtdark001 8 0template jupi_rocky001 7 
++0template brown/08 10 0template brown/12 13 0template bdtdark001 7 
++0template brown/08 6 0template brown/09 9 
++0template brown/08 12 0template brown/09 7 0template brown/05 11 
++0template bdtdark001 6 0template brown/09 13 0template brown/08 11 
++0template bdtdark001 12 0template brown/08 3 
++0template brown/05 14 0template bdtdark001 13 0template brown/08 3 
++0template brown/05 8 0template brown/08 7 
++0template brown/08 14 0template bdtdark001 5 0template brown/09 11 
++0template brown/08 12 0template brown/09 3 
++0template brown/09 6 0template brown/08 13 0template brown/12 11 
++0template brown/05 10 0template brown/09 13 0template brown/12 7 
++0template brown/08 14 0template brown/05 1 
++0template brown/09 10 0template brown/05 5 
++0template brown/12 14 0template brown/09 1 
++0template brown/08 14 0template brown/12 13 0template brown/09 3 
++0template brown/05 14 0template brown/08 1 
++0template brown/05 12 0template brown/08 3 
++0template brown/05 14 0template brown/09 5 0template brown/08 11 
++0template bdtdark001 10 0template brown/05 13 0template brown/08 7 
++0template brown/12 14 0template bdtdark001 13 0template brown/09 11 0template brown/05 7 
++0template brown/12 8 0template brown/09 7 
++0template brown/08 14 0template bdtdark001 13 0template brown/05 11 0template brown/12 7 
++0template brown/09 10 0template brown/08 13 0template brown/05 7 
++0template jupi_bumpy003 14 0template jupi_pebbly003 5 0template jupi_rocky002 11 
++0template jupi_rocky004 6 0template jupi_bumpy003 13 0template jupi_pebbly001 11 
++0template jupi_bumpy003 10 0template jupi_rocky002 13 0template jupi_pebbly004 7 
+jupi_bumpy001
++0template canyon002 10 0template jupi_bumpy003 5 
++0template 2grandcan001 14 0template canyon003 1 
++0template 2rough002 10 0template 2grandcan001 13 0template canyon003 7 
++0template grandcan001 14 0template 2rough002 13 0template 2grandcan001 11 0template canyon003 7 
++0template grandcan001 8 0template 2grandcan001 7 
+grandcan001
++0template 2rough001 10 0template 2grandcan001 5 
++0template canyon003 14 0template redgranite003 5 0template 2rough001 11 
++0template redgranite002 10 0template canyon003 5 
++0template 2rough002 14 0template 2grandcan001 5 0template redgranite001 11 
++0template redgranite001 6 0template 2rough002 13 0template canyon003 11 
++0template canyon003 2 0template redgranite002 13 
++0template canyon001 4 0template grandcan001 11 
++0template canyon002 12 0template grandcan001 3 
++0template canyon001 8 0template grandcan001 7 
++0template canyon003 12 0template grandcan001 7 0template 2rough001 11 
++0template canyon003 12 0template 2rough001 7 0template grandcan001 11 
++0template stones002 14 0template 4granite003 5 0template 9martian001 11 
++0template 9martian001 2 0template stones004 13 
++0template redgranite002 14 0template 9martian001 1 
++0template 9martian001 6 0template redgranite002 9 
+9martian001
++0template redgranite002 2 0template stones003 13 
++0template redgranite002 4 0template stones004 11 
++0template redgranite002 12 0template stones002 3 
++0template stones001 2 0template redgranite003 13 
++0template redgranite001 10 0template stones004 5 
++0template bdtdark001 14 0template jupi_rocky004 5 0template brown/12 11 
++0template brown/08 14 0template bdtdark001 13 0template brown/05 3 
++0template brown/08 12 0template brown/05 7 0template bdtdark001 11 
++0template brown/08 12 0template bdtdark001 3 
++0template brown/09 14 0template brown/08 13 0template brown/05 11 0template bdtdark001 7 
++0template brown/05 2 0template brown/09 13 
++0template bdtdark001 10 0template brown/08 13 0template brown/05 7 
++0template brown/05 14 0template brown/08 5 0template brown/09 11 
++0template bdtdark001 14 0template brown/05 13 0template brown/09 3 
++0template bdtdark001 12 0template brown/09 7 0template brown/08 11 
++0template brown/12 14 0template bdtdark001 9 0template brown/08 7 
++0template brown/08 14 0template brown/12 13 0template brown/05 11 0template bdtdark001 7 
++0template bdtdark001 14 0template brown/08 13 0template brown/05 3 
++0template brown/12 14 0template bdtdark001 13 0template brown/08 11 0template brown/05 7 
++0template brown/09 14 0template bdtdark001 13 0template brown/12 3 
++0template brown/09 8 0template brown/12 7 
++0template brown/09 14 0template brown/05 5 0template brown/08 11 
++0template brown/09 8 0template brown/08 7 
++0template brown/08 12 0template brown/05 7 0template brown/09 11 
++0template bdtdark001 14 0template brown/08 13 0template brown/12 11 0template brown/09 7 
++0template brown/05 10 0template bdtdark001 13 0template brown/12 7 
++0template brown/12 14 0template brown/09 9 0template brown/08 7 
++0template brown/05 10 0template brown/12 13 0template bdtdark001 7 
++0template jupi_pebbly001 10 0template brown/08 13 0template brown/09 7 
++0template jupi_rocky002 14 0template jupi_pebbly002 1 
++0template jupi_pebbly002 2 0template jupi_rocky002 13 
++0template jupi_bumpy003 14 0template jupi_pebbly004 5 0template jupi_soil003 11 
++0template jupi_bumpy001 12 0template jupi_soil003 3 
++0template canyon002 14 0template jupi_bumpy003 9 0template jupi_soil002 7 
++0template canyon002 12 0template jupi_bumpy002 3 
++0template 2rough001 14 0template canyon003 9 0template jupi_bumpy002 7 
++0template canyon002 2 0template 2rough002 13 
++0template canyon003 4 0template 2rough002 11 
++0template 2grandcan001 14 0template canyon002 13 0template 2rough002 3 
++0template grandcan001 14 0template 2grandcan001 9 0template 2rough001 7 
++0template grandcan001 12 0template 2grandcan001 3 
++0template 2grandcan001 2 0template grandcan001 13 
++0template redgranite003 14 0template 2rough001 5 0template grandcan001 11 
++0template 2rough002 14 0template redgranite003 13 0template grandcan001 3 
++0template canyon001 14 0template 2rough001 13 0template redgranite001 11 0template grandcan001 7 
++0template redgranite003 2 0template canyon001 13 
++0template canyon003 14 0template redgranite001 1 
++0template canyon001 12 0template redgranite003 7 0template 2grandcan001 11 
++0template canyon002 8 0template 2grandcan001 7 
++0template redgranite001 4 0template 2grandcan001 11 
++0template redgranite002 8 0template 2grandcan001 7 
++0template canyon001 2 0template grandcan001 13 
++0template redgranite001 14 0template canyon002 5 0template 2rough001 11 
++0template 2rough002 14 0template grandcan001 1 
++0template grandcan001 2 0template 2rough001 13 
++0template canyon001 10 0template grandcan001 5 
++0template 9martian002 10 0template 4granite002 5 
++0template redgranite001 14 0template stones003 1 
++0template canyon003 10 0template redgranite002 13 0template stones002 7 
++0template jupi_rocky002 14 0template redgranite001 1 
++0template jupi_rocky005 8 0template redgranite003 7 
++0template brown/12 14 0template jupi_rocky004 5 0template brown/02 11 
++0template bdtdark001 14 0template brown/12 13 0template brown/02 3 
++0template brown/05 10 0template bdtdark001 13 0template brown/02 7 
++0template bdtdark001 6 0template brown/05 13 0template brown/08 11 
++0template bdtdark001 12 0template brown/08 7 0template brown/12 11 
++0template brown/08 14 0template brown/09 5 0template brown/12 11 
++0template brown/12 10 0template brown/08 5 
++0template brown/12 14 0template brown/09 13 0template bdtdark001 3 
++0template brown/12 12 0template bdtdark001 7 0template brown/08 11 
++0template bdtdark001 10 0template brown/12 13 0template brown/08 7 
++0template brown/09 12 0template brown/12 7 0template brown/08 11 
++0template bdtdark001 14 0template brown/09 13 0template dark-grey/49 11 0template brown/08 7 
++0template brown/05 10 0template bdtdark001 13 0template dark-grey/49 7 
++0template brown/09 14 0template brown/05 1 
++0template brown/09 12 0template brown/05 7 0template bdtdark001 11 
++0template brown/08 14 0template brown/09 13 0template brown/05 11 0template bdtdark001 7 
++0template brown/09 14 0template brown/08 13 0template brown/12 11 0template brown/05 7 
++0template brown/05 14 0template brown/12 13 0template brown/02 11 0template brown/09 7 
++0template brown/08 10 0template brown/05 13 0template brown/02 7 
++0template jupi_pebbly004 10 0template brown/09 5 
++0template jupi_pebbly003 4 0template jupi_rocky002 11 
++0template jupi_pebbly001 12 0template jupi_rocky002 7 0template jupi_bark001 11 
++0template jupi_soil001 14 0template jupi_pebbly004 9 0template jupi_bark002 7 
++0template jupi_soil002 8 0template jupi_pebbly003 7 
++0template jupi_bumpy003 10 0template jupi_soil001 5 
+jupi_bumpy003
++0template 2rough002 8 0template canyon001 7 
++0template 2grandcan001 14 0template 2rough001 1 
++0template 2rough001 6 0template 2grandcan001 9 
++0template grandcan001 14 0template 2rough001 9 0template 2grandcan001 7 
++0template grandcan001 8 0template 2rough001 7 
++0template 2grandcan001 14 0template redgranite001 5 0template grandcan001 11 
++0template canyon002 10 0template 2grandcan001 13 0template grandcan001 7 
++0template 2grandcan001 14 0template canyon003 5 0template 2rough002 11 
++0template 2grandcan001 8 0template 2rough001 7 
++0template 2grandcan001 10 0template redgranite001 5 
++0template canyon002 4 0template redgranite001 11 
++0template canyon002 6 0template grandcan001 13 0template 2rough001 11 
++0template 9martian002 14 0template 4granite003 5 0template stones003 11 
++0template 9martian002 8 0template stones004 7 
++0template canyon003 10 0template stones004 5 
++0template redgranite002 10 0template grandcan001 13 0template canyon001 7 
++0template redgranite002 4 0template 4rough.001 11 
++0template jupi_rocky002 14 0template redgranite002 9 0template 4rough.001 7 
++0template brown/02 14 0template jupi_rocky003 9 0template redgranite002 7 
++0template brown/02 8 0template jupi_rocky001 7 
++0template brown/05 14 0template brown/02 5 0template brown/08 11 
++0template bdtdark001 14 0template brown/05 13 0template brown/02 11 0template brown/08 7 
++0template bdtdark001 12 0template brown/02 7 0template brown/12 11 
++0template brown/12 14 0template brown/08 13 0template brown/09 3 
++0template brown/12 10 0template brown/09 13 0template brown/08 7 
++0template bdtdark001 12 0template brown/12 7 0template brown/08 11 
++0template bdtdark001 14 0template brown/08 1 
++0template brown/08 14 0template bdtdark001 13 0template brown/09 11 0template brown/12 7 
++0template brown/12 4 0template bdtdark001 11 
++0template brown/08 14 0template brown/12 13 0template bdtdark001 3 
++0template dark-grey/49 14 0template brown/08 13 0template brown/12 11 0template bdtdark001 7 
++0template brown/05 14 0template dark-grey/49 13 0template brown/12 3 
++0template brown/05 8 0template brown/12 7 
++0template bdtdark001 14 0template brown/05 5 0template brown/08 11 
++0template brown/12 14 0template brown/05 13 0template brown/09 3 
++0template brown/09 2 0template brown/12 13 
++0template brown/09 4 0template brown/12 11 
++0template brown/02 14 0template brown/09 13 0template brown/12 3 
++0template brown/08 14 0template brown/02 13 0template brown/05 11 0template brown/12 7 
++0template brown/09 14 0template brown/08 9 0template brown/05 7 
++0template bdtdark001 14 0template brown/09 13 0template brown/08 3 
++0template brown/05 14 0template bdtdark001 9 0template brown/08 7 
++0template brown/09 14 0template brown/05 13 0template bdtdark001 3 
++0template brown/09 12 0template bdtdark001 3 
++0template brown/09 12 0template bdtdark001 7 0template brown/02 11 
++0template jupi_pebbly002 10 0template brown/09 13 0template brown/02 7 
++0template jupi_rocky005 10 0template jupi_pebbly001 5 
++0template jupi_bark001 10 0template jupi_rocky005 5 
++0template jupi_pebbly001 10 0template jupi_bark001 5 
++0template jupi_soil001 14 0template jupi_pebbly003 5 0template jupi_rocky001 11 
++0template jupi_bumpy002 10 0template jupi_soil001 13 0template jupi_rocky005 7 
++0template canyon002 14 0template jupi_bumpy002 5 0template grandcan001 11 
++0template 2rough001 10 0template canyon003 5 
++0template 2grandcan001 10 0template 2rough002 5 
++0template 2rough002 14 0template 2grandcan001 1 
++0template grandcan001 14 0template 2rough002 13 0template 2grandcan001 3 
++0template redgranite002 10 0template grandcan001 13 0template 2grandcan001 7 
++0template grandcan001 14 0template redgranite002 1 
++0template canyon001 14 0template grandcan001 13 0template redgranite003 3 
++0template 2rough001 14 0template canyon002 13 0template redgranite003 3 
++0template 2grandcan001 10 0template 2rough002 13 0template redgranite002 7 
++0template canyon001 14 0template 2rough001 1 
++0template grandcan001 12 0template canyon001 3 
++0template 2rough001 14 0template canyon002 13 0template grandcan001 3 
++0template canyon002 14 0template 2rough002 13 0template grandcan001 3 
++0template redgranite002 6 0template canyon001 13 0template 2rough001 11 
++0template 9martian002 14 0template stones003 5 0template redgranite002 11 
++0template 9martian002 12 0template redgranite002 3 
++0template 9martian002 12 0template redgranite001 7 0template stones001 11 
++0template stones001 6 0template 9martian001 13 0template redgranite002 11 
++0template redgranite002 6 0template stones002 9 
++0template canyon002 14 0template stones003 13 0template redgranite001 3 
++0template canyon003 12 0template redgranite002 7 0template 4rough.001 11 
++0template redgranite003 10 0template canyon002 13 0template 4rough.001 7 
++0template 4rough.001 14 0template redgranite003 1 
++0template redgranite001 2 0template 4rough.001 13 
++0template jupi_rocky005 14 0template redgranite003 5 0template 4rough.001 11 
++0template brown/02 14 0template jupi_rocky002 9 0template 4rough.001 7 
++0template brown/08 10 0template brown/02 13 0template jupi_rocky003 7 
++0template brown/02 14 0template brown/08 13 0template brown/09 3 
++0template brown/12 14 0template brown/02 13 0template brown/09 3 
++0template brown/08 14 0template brown/12 13 0template bdtdark001 11 0template brown/09 7 
++0template bdtdark001 6 0template brown/08 9 
++0template brown/09 14 0template bdtdark001 13 0template brown/08 3 
++0template brown/12 14 0template brown/09 5 0template brown/05 11 
++0template brown/08 14 0template brown/12 13 0template brown/05 3 
++0template brown/12 14 0template brown/08 13 0template brown/05 3 
++0template brown/12 12 0template brown/05 3 
++0template brown/08 10 0template brown/12 13 0template brown/05 7 
++0template bdtdark001 4 0template brown/08 11 
++0template brown/08 6 0template bdtdark001 13 0template brown/05 11 
++0template brown/09 14 0template brown/12 1 
++0template brown/12 14 0template bdtdark001 13 0template brown/05 11 0template brown/09 7 
++0template bdtdark001 10 0template brown/12 13 0template brown/05 7 
++0template bdtdark001 4 0template brown/09 11 
++0template brown/12 14 0template bdtdark001 13 0template brown/09 3 
++0template brown/05 14 0template brown/12 13 0template brown/09 3 
++0template brown/08 10 0template brown/05 13 0template brown/09 7 
++0template brown/05 14 0template brown/12 13 0template bdtdark001 11 0template brown/09 7 
++0template brown/08 12 0template bdtdark001 7 0template brown/05 11 
++0template bdtdark001 4 0template brown/02 11 
++0template brown/02 2 0template bdtdark001 13 
++0template jupi_pebbly003 10 0template brown/02 5 
++0template jupi_rocky002 14 0template jupi_pebbly001 5 0template jupi_soil002 11 
++0template jupi_bumpy001 14 0template jupi_rocky001 13 0template jupi_bark002 11 0template jupi_soil001 7 
++0template jupi_bumpy003 12 0template jupi_bark002 3 
++0template grandcan001 14 0template jupi_bumpy003 13 0template jupi_pebbly003 11 0template jupi_bark001 7 
++0template canyon003 14 0template grandcan001 13 0template jupi_pebbly003 3 
++0template canyon002 12 0template jupi_pebbly003 7 0template 2rough001 11 
++0template 2rough001 6 0template canyon002 9 
++0template redgranite003 14 0template 2rough001 13 0template 2grandcan001 11 0template canyon003 7 
++0template 2grandcan001 14 0template 2rough002 5 0template grandcan001 11 
++0template 2grandcan001 12 0template grandcan001 7 0template 2rough002 11 
++0template redgranite001 14 0template 2grandcan001 13 0template 2rough001 3 
++0template redgranite001 12 0template 2rough001 7 0template grandcan001 11 
++0template redgranite002 12 0template grandcan001 7 0template 2rough002 11 
++0template 2grandcan001 14 0template redgranite001 1 
++0template redgranite002 6 0template 2grandcan001 9 
++0template canyon002 14 0template 2rough002 9 0template redgranite001 7 
++0template 2rough001 14 0template canyon002 5 0template redgranite001 11 
++0template stones002 10 0template redgranite002 13 0template 9martian002 7 
++0template stones004 10 0template redgranite003 5 
++0template redgranite003 8 0template stones003 7 
++0template 4rough.001 14 0template redgranite002 5 0template grandcan001 11 
++0template redgranite003 14 0template 4rough.001 9 0template grandcan001 7 
++0template redgranite003 12 0template 4rough.001 3 
++0template redgranite003 8 0template 4rough.001 7 
++0template jupi_rocky004 14 0template 4rough.001 13 0template grandcan001 11 0template redgranite003 7 
++0template brown/08 14 0template jupi_rocky002 9 0template grandcan001 7 
++0template brown/09 10 0template brown/08 13 0template jupi_rocky004 7 
++0template brown/05 4 0template brown/20 11 
++0template brown/05 12 0template brown/20 3 
++0template brown/05 8 0template brown/20 7 
++0template brown/05 4 0template brown/09 11 
++0template brown/05 12 0template brown/09 3 
++0template brown/05 2 0template brown/08 13 
++0template brown/12 14 0template brown/09 5 0template brown/08 11 
++0template brown/09 14 0template bdtdark001 13 0template brown/12 11 0template brown/08 7 
++0template brown/09 12 0template brown/12 7 0template brown/05 11 
++0template brown/09 12 0template brown/05 3 
++0template brown/08 14 0template brown/09 13 0template bdtdark001 3 
++0template brown/08 4 0template brown/12 11 
++0template brown/09 14 0template brown/08 13 0template brown/05 11 0template brown/12 7 
++0template brown/09 12 0template brown/05 7 0template brown/08 11 
++0template bdtdark001 12 0template brown/08 7 0template brown/09 11 
++0template brown/05 14 0template bdtdark001 13 0template brown/09 3 
++0template brown/05 12 0template brown/09 7 0template brown/12 11 
++0template bdtdark001 10 0template brown/05 13 0template brown/12 7 
++0template brown/02 14 0template bdtdark001 5 0template brown/08 11 
++0template brown/02 12 0template brown/08 3 
++0template jupi_pebbly002 10 0template brown/02 13 0template brown/08 7 
++0template jupi_soil002 10 0template jupi_pebbly004 5 
++0template jupi_bark001 14 0template jupi_soil001 5 0template jupi_rocky001 11 
++0template jupi_bark002 12 0template jupi_rocky002 7 0template jupi_bumpy001 11 
++0template jupi_pebbly003 14 0template jupi_bark002 13 0template jupi_bumpy003 3 
++0template jupi_pebbly004 8 0template jupi_bumpy002 7 
++0template 2rough001 14 0template jupi_pebbly002 1 
++0template canyon003 10 0template 2rough002 13 0template jupi_pebbly004 7 
++0template grandcan001 14 0template 2rough001 5 0template 2grandcan001 11 
++0template 2rough002 14 0template grandcan001 9 0template 2grandcan001 7 
++0template 2rough002 12 0template grandcan001 3 
++0template redgranite003 14 0template 2rough002 13 0template grandcan001 3 
++0template redgranite003 8 0template grandcan001 7 
++0template redgranite003 14 0template 2grandcan001 1 
++0template redgranite002 4 0template canyon002 11 
++0template 2rough002 14 0template redgranite003 13 0template canyon003 3 
++0template canyon002 14 0template 2rough002 13 0template redgranite001 3 
++0template stones004 6 0template redgranite001 9 
++0template redgranite001 4 0template grandcan001 11 
++0template grandcan001 6 0template redgranite001 9 
++0template 4rough.001 14 0template grandcan001 13 0template redgranite002 3 
++0template 4rough.001 12 0template redgranite001 3 
++0template redgranite001 6 0template 4rough.001 13 0template canyon003 11 
++0template redgranite002 12 0template canyon002 7 0template grandcan001 11 
++0template grandcan001 2 0template redgranite002 13 
++0template jupi_rocky005 14 0template grandcan001 5 0template redgranite001 11 
++0template brown/09 14 0template jupi_rocky002 9 0template redgranite002 7 
++0template brown/09 8 0template jupi_rocky001 7 
++0template bdtdark001 14 0template brown/09 5 0template brown/02 11 
++0template brown/08 14 0template bdtdark001 13 0template brown/12 11 0template brown/02 7 
++0template brown/08 12 0template brown/12 3 
++0template brown/08 12 0template brown/12 7 0template brown/09 11 
++0template brown/05 10 0template brown/08 13 0template brown/09 7 
++0template brown/20 10 0template brown/05 5 
+brown/20
++0template brown/05 10 0template brown/20 5 
++0template brown/08 8 0template bdtdark001 7 
++0template brown/08 12 0template brown/09 7 0template brown/12 11 
++0template brown/09 14 0template brown/05 13 0template brown/08 11 0template bdtdark001 7 
++0template brown/12 10 0template brown/08 13 0template bdtdark001 7 
++0template bdtdark001 6 0template brown/05 13 0template brown/09 11 
++0template bdtdark001 12 0template brown/09 3 
++0template brown/05 14 0template bdtdark001 9 0template brown/09 7 
++0template brown/12 14 0template brown/08 13 0template brown/05 11 0template bdtdark001 7 
++0template brown/05 2 0template brown/12 13 
++0template jupi_pebbly002 10 0template brown/08 13 0template brown/05 7 
++0template jupi_soil002 14 0template jupi_pebbly002 1 
++0template jupi_rocky001 14 0template jupi_soil001 13 0template jupi_pebbly003 3 
++0template jupi_bumpy001 14 0template jupi_rocky003 9 0template jupi_pebbly001 7 
++0template jupi_bumpy001 12 0template jupi_rocky005 7 0template jupi_funky002 11 
++0template jupi_pebbly002 14 0template jupi_bumpy001 9 0template jupi_funky002 7 
++0template canyon003 14 0template jupi_pebbly003 5 0template 2rough002 11 
++0template grandcan001 10 0template 2grandcan001 5 
++0template grandcan001 4 0template 2rough002 11 
++0template grandcan001 12 0template 2rough002 3 
++0template grandcan001 12 0template 2rough001 7 0template redgranite001 11 
++0template grandcan001 12 0template redgranite001 7 0template 2rough001 11 
++0template redgranite003 10 0template grandcan001 13 0template 2rough002 7 
++0template 2grandcan001 4 0template redgranite001 11 
++0template stones003 14 0template 4granite003 13 0template 2grandcan001 11 0template green-brown/16-greenbrown 7 
++0template 9martian001 14 0template stones002 9 0template 2grandcan001 7 
++0template 9martian002 4 0template stones001 11 
++0template stones004 2 0template 9martian001 13 
++0template stones001 4 0template canyon001 11 
++0template redgranite001 14 0template stones002 13 0template canyon003 3 
++0template stones001 14 0template redgranite003 13 0template canyon003 3 
++0template stones001 8 0template canyon002 7 
++0template grandcan001 14 0template redgranite001 5 0template 2grandcan001 11 
++0template redgranite001 14 0template grandcan001 9 0template canyon002 7 
++0template jupi_rocky003 10 0template redgranite003 13 0template grandcan001 7 
++0template brown/09 14 0template jupi_rocky005 5 0template brown/02 11 
++0template brown/09 12 0template brown/02 3 
++0template brown/02 2 0template brown/09 13 
++0template brown/12 14 0template brown/02 1 
++0template brown/12 8 0template brown/02 7 
++0template brown/09 10 0template brown/12 5 
++0template brown/20 14 0template brown/05 1 
++0template brown/20 12 0template brown/05 3 
++0template brown/05 2 0template brown/20 13 
++0template brown/08 14 0template brown/09 9 0template brown/05 7 
++0template bdtdark001 14 0template brown/08 5 0template brown/05 11 
++0template brown/08 2 0template bdtdark001 13 
++0template brown/09 14 0template brown/08 5 0template bdtdark001 11 
++0template brown/12 10 0template brown/09 13 0template bdtdark001 7 
++0template brown/12 4 0template brown/02 11 
++0template brown/08 10 0template brown/12 13 0template brown/02 7 
++0template brown/08 4 0template brown/05 11 
++0template brown/05 14 0template brown/08 5 0template brown/12 11 
++0template bdtdark001 2 0template brown/12 13 
++0template brown/09 14 0template bdtdark001 5 0template brown/08 11 
++0template bdtdark001 14 0template brown/09 9 0template brown/08 7 
++0template brown/05 14 0template bdtdark001 13 0template brown/12 11 0template brown/09 7 
++0template bdtdark001 14 0template brown/05 9 0template brown/12 7 
++0template brown/08 10 0template bdtdark001 13 0template brown/05 7 
++0template brown/09 4 0template brown/20 11 
++0template brown/12 14 0template brown/09 13 0template brown/20 3 
++0template brown/12 12 0template brown/20 7 0template brown/09 11 
++0template brown/05 14 0template brown/08 5 0template brown/02 11 
++0template brown/05 12 0template brown/02 7 0template jupi_pebbly003 11 
++0template jupi_pebbly002 2 0template brown/05 13 
+jupi_pebbly004
+jupi_pebbly001
++0template jupi_funky003 14 0template jupi_rocky002 5 0template jupi_bark001 11 
++0template jupi_bumpy001 10 0template jupi_funky002 13 0template jupi_bark002 7 
++0template jupi_pebbly002 14 0template jupi_bumpy002 5 0template jupi_funky002 11 
++0template 2rough002 14 0template jupi_pebbly001 13 0template canyon003 11 0template jupi_funky003 7 
++0template 2rough002 12 0template canyon003 7 0template 2grandcan001 11 
++0template 2rough001 12 0template 2grandcan001 7 0template redgranite003 11 
++0template grandcan001 2 0template 2grandcan001 13 
++0template 2rough001 14 0template grandcan001 5 0template 2grandcan001 11 
++0template 2rough002 6 0template redgranite002 13 0template grandcan001 11 
++0template redgranite003 14 0template canyon003 1 
++0template 2rough002 14 0template redgranite002 9 0template canyon003 7 
++0template redgranite003 14 0template canyon001 13 0template 2rough001 3 
++0template 2rough001 6 0template redgranite001 13 0template canyon001 11 
++0template 2grandcan001 6 0template green-brown/16-greenbrown 13 0template stones004 11 
++0template stones004 2 0template 2grandcan001 13 
++0template 9martian002 14 0template stones004 1 
++0template 9martian002 12 0template stones004 7 0template redgranite003 11 
++0template stones004 14 0template 9martian001 13 0template redgranite002 3 
++0template stones001 12 0template redgranite003 7 0template canyon003 11 
++0template canyon001 2 0template stones004 13 
++0template stones003 14 0template canyon003 5 0template 2rough001 11 
++0template stones001 12 0template 2rough001 7 0template grandcan001 11 
++0template stones003 12 0template grandcan001 3 
++0template stones002 12 0template grandcan001 7 0template redgranite001 11 
++0template jupi_rocky004 14 0template grandcan001 5 0template JJcanyon001 11 
++0template brown/02 14 0template jupi_rocky002 9 0template JJcanyon001 7 
+brown/02
++0template brown/12 14 0template brown/02 5 0template brown/08 11 
++0template brown/09 14 0template brown/12 13 0template brown/08 3 
++0template brown/09 12 0template brown/08 7 0template brown/12 11 
++0template brown/05 4 0template jupi_pebbly001 11 
++0template brown/05 12 0template jupi_pebbly001 3 
++0template brown/05 8 0template jupi_pebbly001 7 
++0template brown/08 14 0template brown/05 13 0template brown/12 3 
++0template brown/12 14 0template bdtdark001 5 0template brown/09 11 
++0template brown/02 10 0template brown/12 13 0template brown/09 7 
++0template brown/08 14 0template brown/02 5 0template brown/05 11 
++0template brown/05 6 0template brown/08 13 0template brown/02 11 
++0template brown/09 14 0template brown/05 13 0template brown/08 11 0template brown/02 7 
++0template brown/09 12 0template brown/08 7 0template brown/02 11 
++0template brown/12 14 0template brown/09 13 0template brown/05 11 0template brown/02 7 
++0template brown/08 14 0template brown/12 13 0template brown/02 11 0template brown/05 7 
++0template brown/12 10 0template brown/08 13 0template brown/02 7 
++0template bdtdark001 14 0template brown/12 5 0template brown/09 11 
++0template bdtdark001 12 0template brown/12 7 0template brown/05 11 
++0template brown/09 14 0template brown/08 13 0template bdtdark001 11 0template brown/05 7 
++0template brown/08 14 0template brown/05 5 0template brown/09 11 
++0template brown/20 14 0template brown/09 5 0template brown/12 11 
++0template brown/09 14 0template brown/20 13 0template brown/12 3 
++0template brown/08 14 0template brown/09 9 0template brown/12 7 
++0template brown/02 14 0template brown/08 9 0template brown/09 7 
+jupi_pebbly003
++0template jupi_pebbly004 14 0template jupi_bark001 5 0template jupi_melty002 11 
++0template jupi_pebbly001 8 0template jupi_melty001 7 
++0template jupi_bark002 14 0template jupi_rocky004 9 0template jupi_pebbly004 7 
++0template jupi_bumpy002 10 0template jupi_bark002 13 0template jupi_rocky005 7 
++0template jupi_funky002 14 0template jupi_bumpy003 5 0template jupi_pebbly003 11 
++0template canyon001 10 0template jupi_funky003 13 0template jupi_pebbly002 7 
++0template grandcan001 10 0template 2rough001 5 
++0template 2grandcan001 10 0template grandcan001 13 0template 2rough001 7 
++0template grandcan001 6 0template 2rough002 9 
++0template redgranite001 14 0template canyon002 9 0template grandcan001 7 
++0template stones001 10 0template 2grandcan001 5 
++0template grandcan001 14 0template 2rough002 13 0template redgranite001 3 
++0template grandcan001 12 0template redgranite002 3 
++0template redgranite001 2 0template grandcan001 13 
++0template JJcanyon001 10 0template grandcan001 5 
++0template jupi_rocky002 14 0template JJcanyon001 5 0template brown/02 11 
++0template brown/02 2 0template jupi_rocky001 13 
++0template brown/08 14 0template brown/02 1 
++0template brown/08 8 0template brown/02 7 
++0template jupi_pebbly001 10 0template brown/05 5 
++0template brown/05 10 0template jupi_pebbly001 5 
++0template brown/12 4 0template brown/09 11 
++0template brown/09 10 0template bdtdark001 5 
++0template brown/02 14 0template brown/09 1 
++0template brown/05 10 0template brown/02 13 0template brown/09 7 
++0template brown/05 14 0template bdtdark001 5 0template brown/12 11 
++0template brown/02 14 0template brown/05 13 0template brown/09 11 0template brown/12 7 
++0template brown/08 10 0template brown/02 13 0template brown/09 7 
++0template brown/02 14 0template brown/08 1 
++0template brown/05 14 0template brown/02 13 0template brown/08 3 
++0template brown/02 14 0template brown/05 13 0template brown/08 3 
++0template brown/12 14 0template brown/02 13 0template brown/08 3 
++0template brown/05 6 0template bdtdark001 13 0template brown/08 11 
++0template brown/09 14 0template brown/05 13 0template brown/08 3 
++0template brown/12 4 0template brown/20 11 
++0template brown/12 8 0template brown/20 7 
++0template brown/09 14 0template brown/12 5 0template brown/02 11 
++0template brown/08 14 0template brown/09 13 0template brown/02 3 
++0template jupi_pebbly002 14 0template brown/08 13 0template brown/05 11 0template brown/02 7 
++0template jupi_pebbly003 8 0template brown/05 7 
++0template jupi_melty002 14 0template jupi_bark002 5 0template jupi_pebbly003 11 
++0template jupi_pebbly004 6 0template jupi_melty001 9 
+jupi_pebbly002
++0template jupi_bumpy001 10 0template jupi_rocky001 5 
++0template jupi_pebbly004 14 0template jupi_bumpy003 5 0template jupi_bark001 11 
++0template canyon001 10 0template jupi_pebbly004 13 0template jupi_bark001 7 
++0template 2rough002 10 0template redgranite002 13 0template 2grandcan001 7 
++0template 2grandcan001 2 0template 2rough002 13 
++0template redgranite001 14 0template 2grandcan001 5 0template grandcan001 11 
++0template 2rough002 10 0template grandcan001 5 
++0template grandcan001 14 0template canyon001 9 0template 2rough002 7 
++0template redgranite003 14 0template canyon001 9 0template 2rough002 7 
++0template grandcan001 2 0template canyon002 13 
++0template canyon002 12 0template stones004 7 0template redgranite001 11 
++0template JJcanyon001 14 0template grandcan001 5 0template jupi_rocky005 11 
++0template brown/02 14 0template JJcanyon001 13 0template jupi_rocky004 3 
++0template brown/02 12 0template jupi_rocky002 7 0template brown/08 11 
++0template brown/02 8 0template brown/08 7 
++0template brown/08 10 0template brown/02 5 
++0template brown/12 14 0template brown/08 1 
++0template brown/05 14 0template brown/12 9 0template brown/08 7 
++0template jupi_pebbly002 14 0template brown/05 13 0template brown/12 3 
++0template jupi_pebbly003 12 0template brown/12 3 
++0template brown/05 14 0template jupi_pebbly004 13 0template brown/12 3 
++0template brown/09 10 0template brown/05 13 0template brown/12 7 
++0template brown/09 10 0template brown/12 13 0template bdtdark001 7 
++0template bdtdark001 14 0template brown/12 13 0template brown/09 3 
++0template brown/09 6 0template bdtdark001 13 0template brown/05 11 
++0template bdtdark001 14 0template brown/05 13 0template brown/09 11 0template brown/08 7 
++0template brown/09 10 0template brown/12 13 0template brown/05 7 
++0template brown/12 14 0template brown/09 5 0template bdtdark001 11 
++0template brown/09 14 0template brown/08 13 0template brown/12 3 
++0template brown/12 6 0template brown/09 13 0template brown/20 11 
++0template brown/20 2 0template brown/12 13 
++0template brown/12 14 0template brown/20 5 0template brown/05 11 
++0template brown/02 14 0template brown/12 13 0template brown/05 3 
++0template brown/02 8 0template brown/05 7 
++0template brown/05 14 0template brown/02 5 0template jupi_pebbly002 11 
++0template jupi_melty001 6 0template jupi_pebbly001 9 
++0template jupi_bumpy003 14 0template jupi_rocky002 9 0template jupi_soil003 7 
++0template jupi_bark001 14 0template jupi_bumpy003 9 0template jupi_rocky002 7 
++0template canyon001 14 0template jupi_bark002 13 0template jupi_bumpy003 3 
++0template 2grandcan001 10 0template canyon001 13 0template jupi_bumpy002 7 
++0template grandcan001 10 0template 2rough002 13 0template 2grandcan001 7 
++0template 2grandcan001 14 0template grandcan001 5 0template redgranite002 11 
++0template 2grandcan001 12 0template redgranite001 3 
++0template grandcan001 14 0template 2grandcan001 13 0template 2rough002 11 0template redgranite001 7 
++0template 2rough001 6 0template grandcan001 9 
++0template 2rough002 8 0template grandcan001 7 
++0template grandcan001 14 0template 2rough001 5 0template redgranite003 11 
++0template canyon002 6 0template 2rough002 13 0template 2grandcan001 11 
++0template redgranite001 14 0template canyon001 9 0template 2grandcan001 7 
++0template canyon001 6 0template redgranite002 13 0template grandcan001 11 
++0template grandcan001 14 0template canyon002 5 0template 2rough002 11 
++0template canyon002 14 0template 2rough001 9 0template grandcan001 7 
++0template canyon003 10 0template grandcan001 13 0template 2rough002 7 
++0template stones003 14 0template 2grandcan001 1 
++0template stones003 8 0template 2grandcan001 7 
++0template jupi_rocky002 10 0template grandcan001 5 
++0template jupi_rocky003 4 0template green-brown/16-greenbrown 11 
++0template brown/08 14 0template jupi_rocky004 13 0template green-brown/04-greenbrown 11 0template green-brown/16-greenbrown 7 
++0template brown/02 10 0template brown/08 13 0template green-brown/04-greenbrown 7 
++0template brown/02 4 0template brown/20 11 
++0template brown/02 12 0template brown/20 7 0template brown/12 11 
++0template brown/08 14 0template brown/02 13 0template brown/12 3 
++0template brown/08 14 0template brown/09 5 0template bdtdark001 11 
++0template bdtdark001 6 0template brown/08 13 0template brown/12 11 
++0template brown/09 14 0template bdtdark001 13 0template brown/05 11 0template brown/12 7 
++0template brown/08 12 0template brown/05 7 0template brown/02 11 
++0template brown/09 10 0template brown/08 13 0template brown/02 7 
++0template brown/05 14 0template brown/09 1 
++0template brown/09 6 0template brown/05 13 0template brown/20 11 
++0template brown/05 14 0template brown/09 9 0template brown/20 7 
++0template brown/08 12 0template brown/09 7 0template brown/02 11 
++0template brown/05 14 0template brown/08 13 0template brown/02 3 
++0template brown/05 12 0template brown/02 7 0template brown/08 11 
++0template brown/08 6 0template brown/05 13 0template brown/12 11 
++0template bdtdark001 14 0template brown/09 13 0template brown/05 3 
++0template brown/05 6 0template bdtdark001 9 
++0template brown/05 8 0template bdtdark001 7 
++0template brown/12 14 0template brown/09 5 0template brown/02 11 
++0template brown/12 12 0template brown/02 3 
++0template brown/20 10 0template brown/12 13 0template brown/02 7 
++0template brown/20 4 0template brown/08 11 
++0template brown/05 14 0template brown/20 13 0template brown/08 3 
++0template brown/02 14 0template brown/05 13 0template brown/09 3 
++0template jupi_pebbly002 10 0template brown/02 13 0template brown/09 7 
++0template jupi_pebbly004 4 0template jupi_bark002 11 
++0template jupi_rocky001 14 0template jupi_pebbly001 13 0template jupi_bark001 3 
++0template jupi_bark002 2 0template jupi_rocky001 13 
++0template jupi_pebbly003 2 0template jupi_melty003 13 
++0template jupi_melty001 10 0template jupi_pebbly001 5 
++0template jupi_pebbly004 10 0template jupi_melty001 5 
++0template jupi_rocky005 10 0template jupi_soil002 13 0template jupi_pebbly001 7 
++0template jupi_bumpy001 14 0template jupi_rocky004 5 0template jupi_bark001 11 
++0template jupi_bumpy002 12 0template jupi_bark002 7 0template jupi_pebbly002 11 
++0template 2grandcan001 14 0template jupi_bumpy002 13 0template jupi_pebbly004 3 
++0template 2grandcan001 8 0template jupi_pebbly003 7 
++0template grandcan001 14 0template 2grandcan001 1 
++0template grandcan001 10 0template 2rough002 13 0template redgranite003 7 
++0template 2rough001 2 0template grandcan001 13 
++0template 2grandcan001 14 0template redgranite001 13 0template 2rough001 3 
++0template 2grandcan001 8 0template canyon003 7 
++0template canyon003 10 0template 2grandcan001 5 
++0template 2rough002 14 0template canyon003 5 0template grandcan001 11 
++0template canyon001 10 0template 2rough001 13 0template grandcan001 7 
++0template grandcan001 10 0template canyon003 13 0template 2rough001 7 
++0template 2rough001 14 0template grandcan001 5 0template canyon001 11 
++0template 2grandcan001 4 0template 4granite002 11 
++0template stones001 10 0template 2grandcan001 13 0template 4granite003 7 
++0template stones001 14 0template redgranite003 5 0template grandcan001 11 
++0template stones002 8 0template grandcan001 7 
++0template green-brown/16-greenbrown 10 0template jupi_rocky005 5 
++0template green-brown/04-greenbrown 14 0template green-brown/16-greenbrown 5 0template green-brown/13-greenbrown 11 
++0template brown/02 14 0template green-brown/04-greenbrown 13 0template brown/05 11 0template green-brown/13-greenbrown 7 
++0template brown/20 14 0template brown/02 13 0template brown/05 3 
++0template brown/12 10 0template brown/20 13 0template brown/05 7 
++0template brown/08 14 0template brown/12 5 0template brown/09 11 
++0template brown/05 10 0template brown/12 13 0template brown/09 7 
++0template brown/05 6 0template brown/08 13 0template bdtdark001 11 
++0template brown/02 14 0template brown/05 13 0template bdtdark001 3 
++0template brown/09 10 0template brown/02 13 0template bdtdark001 7 
++0template brown/20 10 0template brown/09 5 
++0template brown/09 14 0template brown/20 5 0template brown/12 11 
++0template brown/02 12 0template brown/12 3 
++0template brown/05 14 0template brown/12 5 0template brown/09 11 
++0template brown/05 12 0template brown/09 7 0template brown/08 11 
++0template brown/05 10 0template bdtdark001 13 0template brown/08 7 
++0template brown/02 14 0template brown/09 5 0template brown/12 11 
++0template brown/02 8 0template brown/12 7 
++0template brown/20 14 0template brown/02 5 0template brown/09 11 
++0template brown/08 10 0template brown/20 13 0template brown/09 7 
++0template jupi_pebbly004 10 0template brown/09 13 0template brown/12 7 
++0template jupi_bark002 14 0template jupi_pebbly004 1 
++0template jupi_bark001 8 0template jupi_pebbly004 7 
+jupi_bark001
++0template jupi_pebbly004 12 0template jupi_melty001 3 
++0template jupi_bark001 14 0template jupi_rocky005 5 0template jupi_bumpy003 11 
++0template 2grandcan001 14 0template jupi_pebbly001 1 
++0template grandcan001 10 0template redgranite001 5 
+2rough002
++0template 2rough001 12 0template redgranite003 7 0template 2grandcan001 11 
++0template 2rough002 8 0template 2grandcan001 7 
++0template 2rough002 4 0template grandcan001 11 
++0template 2rough001 12 0template grandcan001 7 0template redgranite001 11 
++0template grandcan001 6 0template 2rough001 13 0template canyon001 11 
++0template 4granite001 14 0template 2grandcan001 1 
++0template stones002 10 0template 4granite002 13 0template 2grandcan001 7 
++0template grandcan001 14 0template redgranite003 5 0template stones001 11 
++0template stones003 2 0template grandcan001 13 
++0template green-brown/16-greenbrown 14 0template jupi_rocky003 1 
++0template green-brown/13-greenbrown 14 0template green-brown/16-greenbrown 13 0template jupi_rocky002 3 
++0template brown/05 10 0template green-brown/13-greenbrown 13 0template jupi_rocky002 7 
++0template brown/12 14 0template brown/05 5 0template JJcanyon001 11 
++0template brown/12 12 0template JJcanyon001 7 0template brown/08 11 
++0template brown/12 2 0template brown/09 13 
++0template brown/09 10 0template bdtdark001 13 0template brown/05 7 
++0template brown/05 4 0template brown/08 11 
++0template bdtdark001 14 0template brown/05 13 0template brown/12 11 0template brown/08 7 
++0template brown/09 14 0template bdtdark001 9 0template brown/08 7 
++0template brown/09 14 0template brown/08 5 0template brown/12 11 
++0template brown/20 14 0template brown/09 13 0template bdtdark001 11 0template brown/12 7 
++0template brown/12 14 0template brown/20 13 0template bdtdark001 3 
++0template brown/09 6 0template brown/12 9 
++0template brown/09 12 0template brown/12 7 0template bdtdark001 11 
++0template bdtdark001 14 0template brown/08 9 0template brown/05 7 
++0template brown/08 6 0template brown/05 9 
++0template brown/05 6 0template brown/08 13 0template brown/09 11 
++0template brown/02 14 0template brown/12 5 0template brown/05 11 
++0template brown/09 14 0template brown/02 13 0template brown/08 11 0template brown/05 7 
++0template brown/08 6 0template brown/09 13 0template brown/20 11 
++0template brown/08 12 0template brown/20 3 
++0template brown/09 14 0template brown/08 9 0template brown/20 7 
++0template jupi_pebbly001 14 0template brown/12 1 
++0template jupi_pebbly003 8 0template brown/12 7 
++0template jupi_bark002 12 0template jupi_pebbly003 7 0template jupi_rocky002 11 
++0template jupi_melty001 14 0template jupi_bark002 13 0template jupi_rocky002 3 
++0template jupi_melty002 12 0template jupi_rocky004 7 0template jupi_pebbly003 11 
++0template jupi_pebbly001 4 0template jupi_melty002 11 
++0template jupi_bumpy003 8 0template jupi_rocky003 7 
++0template jupi_pebbly003 14 0template jupi_bumpy002 1 
++0template 2grandcan001 12 0template jupi_pebbly003 7 0template redgranite001 11 
++0template 2grandcan001 8 0template redgranite001 7 
++0template redgranite002 12 0template grandcan001 3 
++0template redgranite003 12 0template grandcan001 7 0template canyon002 11 
++0template 2grandcan001 10 0template redgranite002 13 0template canyon001 7 
++0template redgranite002 6 0template grandcan001 13 0template canyon001 11 
++0template 2grandcan001 14 0template canyon003 5 0template redgranite002 11 
++0template canyon002 14 0template grandcan001 1 
++0template 2grandcan001 4 0template stones002 11 
++0template redgranite001 12 0template stones004 7 0template 2rough001 11 
++0template redgranite003 14 0template stones003 5 0template 2rough001 11 
++0template jupi_rocky003 12 0template grandcan001 3 
++0template jupi_rocky003 12 0template grandcan001 7 0template JJcanyon001 11 
++0template brown/05 14 0template jupi_rocky004 9 0template JJcanyon001 7 
++0template brown/05 12 0template jupi_rocky005 3 
++0template JJcanyon001 14 0template brown/05 13 0template jupi_rocky002 3 
++0template brown/08 10 0template JJcanyon001 13 0template jupi_rocky005 7 
++0template brown/12 12 0template brown/05 7 0template jupi_pebbly003 11 
++0template brown/12 12 0template jupi_pebbly003 3 
++0template brown/12 8 0template jupi_pebbly003 7 
++0template brown/08 14 0template brown/09 13 0template brown/05 3 
++0template brown/08 14 0template brown/05 13 0template brown/09 11 0template brown/02 7 
++0template brown/12 14 0template brown/08 13 0template bdtdark001 11 0template brown/09 7 
++0template bdtdark001 10 0template brown/08 13 0template brown/09 7 
++0template brown/08 14 0template bdtdark001 1 
++0template brown/09 12 0template brown/08 7 0template brown/05 11 
++0template brown/12 14 0template brown/09 13 0template brown/05 3 
++0template brown/08 14 0template brown/05 13 0template brown/12 11 0template bdtdark001 7 
++0template brown/05 10 0template brown/08 13 0template brown/12 7 
++0template brown/05 4 0template brown/02 11 
++0template brown/09 14 0template brown/05 13 0template brown/02 3 
++0template brown/09 8 0template brown/02 7 
++0template brown/12 2 0template brown/08 13 
++0template brown/05 14 0template brown/12 5 0template brown/20 11 
++0template brown/08 14 0template brown/05 13 0template brown/12 11 0template brown/20 7 
++0template brown/20 14 0template brown/08 13 0template brown/12 3 
++0template brown/20 8 0template brown/12 7 
++0template brown/08 14 0template brown/20 5 0template brown/12 11 
++0template brown/12 6 0template brown/08 9 
++0template jupi_pebbly001 10 0template brown/12 13 0template brown/08 7 
++0template jupi_rocky005 12 0template jupi_pebbly001 7 0template jupi_bark002 11 
++0template jupi_pebbly001 14 0template jupi_rocky003 13 0template jupi_bark001 3 
++0template jupi_pebbly003 12 0template jupi_bark001 3 
++0template jupi_melty001 14 0template jupi_pebbly003 9 0template jupi_bark002 7 
++0template jupi_bumpy001 14 0template jupi_rocky003 1 
++0template redgranite001 14 0template jupi_pebbly001 5 0template grandcan001 11 
++0template 2grandcan001 14 0template redgranite002 9 0template grandcan001 7 
++0template grandcan001 14 0template 2grandcan001 13 0template redgranite002 3 
++0template 2rough001 4 0template 2grandcan001 11 
++0template grandcan001 14 0template 2grandcan001 5 0template 2rough001 11 
++0template redgranite001 14 0template canyon001 5 0template 2grandcan001 11 
++0template stones002 6 0template redgranite002 13 0template 2rough001 11 
++0template 2rough002 2 0template stones001 13 
++0template redgranite002 14 0template 2rough001 5 0template stones004 11 
++0template 2rough001 10 0template stones004 5 
++0template 2rough001 4 0template stones003 11 
++0template canyon003 14 0template 2rough001 13 0template stones004 3 
++0template JJcanyon001 14 0template grandcan001 1 
++0template jupi_rocky005 14 0template JJcanyon001 13 0template grandcan001 3 
++0template brown/08 14 0template jupi_rocky004 5 0template brown/20 11 
++0template brown/08 12 0template brown/20 7 0template brown/12 11 
++0template jupi_pebbly002 14 0template brown/05 5 0template brown/12 11 
++0template brown/12 2 0template jupi_pebbly003 13 
++0template brown/05 14 0template brown/09 13 0template brown/08 11 0template brown/12 7 
++0template bdtdark001 14 0template brown/09 5 0template brown/12 11 
++0template brown/12 14 0template bdtdark001 13 0template brown/05 3 
++0template brown/08 6 0template bdtdark001 13 0template brown/12 11 
++0template brown/12 14 0template bdtdark001 5 0template brown/08 11 
++0template brown/05 14 0template brown/12 13 0template brown/09 11 0template brown/08 7 
++0template brown/02 14 0template brown/05 9 0template brown/09 7 
++0template brown/02 12 0template brown/05 3 
++0template brown/12 12 0template brown/05 7 0template brown/08 11 
++0template brown/20 14 0template brown/12 13 0template brown/08 3 
++0template brown/12 14 0template brown/20 13 0template brown/05 11 0template brown/08 7 
++0template brown/20 10 0template brown/12 13 0template brown/05 7 
++0template brown/12 14 0template brown/20 5 0template brown/09 11 
++0template jupi_pebbly001 14 0template brown/08 5 0template brown/20 11 
++0template jupi_pebbly002 12 0template brown/20 3 
++0template jupi_pebbly004 12 0template brown/20 7 0template brown/09 11 
++0template jupi_bark002 14 0template jupi_pebbly004 13 0template brown/09 3 
++0template jupi_bark001 12 0template brown/09 7 0template jupi_pebbly003 11 
++0template jupi_bark001 12 0template jupi_pebbly002 3 
++0template jupi_pebbly004 2 0template jupi_bark002 13 
++0template jupi_pebbly001 8 0template jupi_bark001 7 
++0template jupi_rocky002 8 0template jupi_pebbly002 7 
+jupi_bumpy002
++0template jupi_pebbly002 10 0template jupi_bumpy002 5 
++0template grandcan001 14 0template jupi_pebbly001 5 0template 2grandcan001 11 
++0template redgranite001 14 0template grandcan001 13 0template 2grandcan001 3 
++0template 2rough002 14 0template grandcan001 5 0template redgranite001 11 
++0template 2grandcan001 14 0template 2rough002 13 0template redgranite003 3 
++0template 2rough002 14 0template 2grandcan001 9 0template redgranite002 7 
++0template 2rough001 14 0template grandcan001 13 0template 2grandcan001 3 
++0template canyon003 10 0template 2rough002 13 0template 2grandcan001 7 
++0template redgranite002 10 0template 2grandcan001 13 0template 2rough001 7 
++0template 2grandcan001 12 0template 4granite001 3 
++0template 2rough001 12 0template stones002 3 
++0template stones004 6 0template 2rough002 13 0template stonepath001 11 
++0template stones001 8 0template stonepath001 7 
++0template 2rough002 10 0template stones003 13 0template redgranite002 7 
++0template stones001 14 0template 2rough002 1 
++0template stones003 12 0template 2rough002 3 
++0template canyon003 10 0template stones002 13 0template 2rough001 7 
++0template brown/20 10 0template jupi_rocky002 5 
++0template brown/20 4 0template brown/02 11 
++0template brown/12 14 0template brown/20 13 0template brown/02 3 
++0template brown/05 14 0template brown/12 1 
++0template brown/12 6 0template brown/05 13 0template brown/09 11 
++0template brown/05 14 0template brown/08 5 0template bdtdark001 11 
++0template brown/08 14 0template brown/12 5 0template brown/05 11 
++0template brown/05 14 0template brown/12 13 0template brown/08 11 0template brown/09 7 
++0template brown/12 6 0template brown/08 13 0template brown/09 11 
++0template brown/09 14 0template brown/08 13 0template brown/05 3 
++0template brown/05 14 0template brown/09 9 0template bdtdark001 7 
++0template brown/20 14 0template brown/05 13 0template brown/12 11 0template brown/09 7 
++0template brown/09 10 0template brown/20 13 0template brown/12 7 
++0template brown/20 14 0template brown/08 5 0template brown/12 11 
++0template brown/09 14 0template brown/20 13 0template brown/08 11 0template brown/12 7 
++0template jupi_pebbly004 14 0template brown/09 1 
++0template jupi_pebbly002 12 0template brown/09 7 0template brown/08 11 
++0template jupi_pebbly003 12 0template brown/08 3 
++0template jupi_bark002 10 0template jupi_pebbly001 13 0template brown/08 7 
++0template jupi_bumpy003 10 0template jupi_rocky001 13 0template jupi_soil003 7 
++0template 2grandcan001 10 0template jupi_pebbly002 13 0template jupi_bumpy003 7 
++0template redgranite001 14 0template 2grandcan001 5 0template canyon002 11 
++0template redgranite002 12 0template canyon002 7 0template 2rough002 11 
++0template canyon003 14 0template redgranite002 13 0template grandcan001 11 0template 2rough001 7 
++0template canyon001 14 0template 2grandcan001 1 
++0template 2rough001 14 0template canyon003 13 0template redgranite002 11 0template 2grandcan001 7 
++0template 4granite001 4 0template canyon003 11 
++0template stones002 10 0template 4granite001 13 0template canyon001 7 
++0template 2rough001 14 0template stones004 1 
++0template stones002 2 0template 2rough002 13 
++0template stones001 4 0template stonepath001 11 
++0template stonepath002 2 0template stones001 13 
++0template stones004 14 0template stonepath003 1 
++0template stones002 12 0template stonepath003 3 
++0template stones001 12 0template stonepath001 7 0template redgranite001 11 
++0template 2rough001 14 0template redgranite003 5 0template stones003 11 
++0template canyon002 12 0template stones001 3 
++0template canyon001 4 0template JJcanyon001 11 
++0template canyon002 12 0template JJcanyon001 3 
++0template grandcan001 14 0template canyon001 9 0template JJcanyon001 7 
++0template brown/02 10 0template brown/20 13 0template jupi_rocky001 7 
++0template brown/02 4 0template brown/05 11 
++0template brown/12 14 0template brown/02 13 0template brown/05 3 
++0template brown/09 14 0template brown/12 13 0template jupi_pebbly003 11 0template brown/08 7 
++0template brown/09 12 0template jupi_pebbly003 3 
++0template brown/08 14 0template brown/09 13 0template jupi_pebbly002 3 
++0template brown/09 14 0template brown/08 13 0template jupi_pebbly004 3 
++0template brown/08 14 0template brown/09 13 0template brown/05 11 0template jupi_pebbly003 7 
++0template bdtdark001 14 0template brown/08 13 0template brown/02 11 0template brown/05 7 
++0template bdtdark001 8 0template brown/02 7 
++0template brown/12 14 0template brown/08 13 0template bdtdark001 3 
++0template brown/09 8 0template bdtdark001 7 
++0template bdtdark001 14 0template brown/12 13 0template brown/08 3 
++0template bdtdark001 12 0template brown/08 7 0template brown/05 11 
++0template brown/05 6 0template brown/08 9 
++0template brown/09 10 0template brown/05 13 0template brown/08 7 
++0template brown/08 14 0template brown/09 5 0template brown/02 11 
++0template brown/12 14 0template brown/08 13 0template brown/02 3 
++0template brown/12 12 0template brown/02 7 0template brown/09 11 
++0template brown/08 14 0template brown/09 13 0template bdtdark001 11 0template brown/05 7 
++0template brown/08 12 0template bdtdark001 7 0template jupi_bark001 11 
++0template jupi_bark002 6 0template brown/08 13 0template jupi_pebbly002 11 
++0template jupi_melty003 14 0template jupi_bark002 13 0template jupi_pebbly002 3 
++0template jupi_soil003 14 0template jupi_pebbly001 9 0template jupi_melty003 7 
++0template jupi_bumpy002 14 0template jupi_soil001 13 0template jupi_rocky002 11 0template jupi_pebbly002 7 
++0template 2grandcan001 10 0template jupi_bumpy003 5 
++0template 2grandcan001 6 0template canyon001 9 
++0template grandcan001 14 0template 2rough002 13 0template canyon002 3 
++0template canyon002 10 0template 4granite002 5 
++0template stones001 14 0template canyon002 1 
++0template stones002 12 0template canyon002 3 
++0template stonepath003 10 0template stones004 5 
+stonepath003
++0template stonepath001 4 0template redgranite002 11 
++0template redgranite002 2 0template stonepath003 13 
++0template stones001 14 0template redgranite003 1 
++0template stones002 4 0template 10martian004 11 
++0template canyon003 14 0template stones001 9 0template 10martian003 7 
++0template JJcanyon001 14 0template canyon001 9 0template stones003 7 
++0template JJcanyon001 12 0template canyon001 3 
++0template canyon003 2 0template JJcanyon001 13 
+jupi_rocky003
++0template brown/02 14 0template jupi_rocky005 5 0template brown/12 11 
++0template brown/05 14 0template brown/02 13 0template brown/12 3 
++0template brown/08 14 0template brown/05 13 0template brown/09 11 0template brown/12 7 
++0template jupi_pebbly001 4 0template brown/08 11 
++0template jupi_pebbly002 8 0template brown/08 7 
++0template brown/05 14 0template jupi_pebbly002 5 0template brown/12 11 
++0template brown/02 14 0template brown/05 13 0template bdtdark001 11 0template brown/12 7 
++0template bdtdark001 6 0template brown/02 13 0template brown/12 11 
++0template brown/09 14 0template bdtdark001 1 
++0template brown/05 14 0template brown/08 13 0template bdtdark001 11 0template brown/12 7 
++0template brown/12 10 0template bdtdark001 13 0template brown/09 7 
++0template bdtdark001 14 0template brown/12 5 0template brown/05 11 
++0template brown/12 14 0template bdtdark001 9 0template brown/05 7 
++0template brown/12 12 0template bdtdark001 7 0template brown/20 11 
++0template brown/09 10 0template brown/12 13 0template brown/20 7 
++0template brown/09 14 0template brown/08 5 0template brown/05 11 
++0template brown/02 12 0template brown/12 7 0template brown/05 11 
++0template jupi_bark002 14 0template bdtdark001 1 
++0template jupi_pebbly003 14 0template jupi_bark001 9 0template bdtdark001 7 
++0template 2grandcan001 6 0template redgranite002 13 0template 2rough001 11 
++0template redgranite001 14 0template grandcan001 1 
++0template canyon002 10 0template 2grandcan001 13 0template redgranite002 7 
++0template canyon002 4 0template 4granite001 11 
++0template stones003 14 0template canyon003 9 0template 4granite001 7 
++0template stonepath001 4 0template stones001 11 
++0template stonepath001 8 0template stones004 7 
++0template redgranite001 10 0template stonepath001 5 
++0template 10martian001 10 0template stones001 5 
++0template stones001 14 0template 10martian001 1 
++0template brown/12 10 0template jupi_rocky003 5 
++0template brown/09 6 0template brown/12 13 0template brown/08 11 
++0template jupi_pebbly001 14 0template brown/09 13 0template brown/12 3 
++0template brown/08 10 0template jupi_pebbly003 13 0template brown/12 7 
++0template jupi_pebbly002 14 0template brown/08 5 0template brown/12 11 
++0template brown/12 6 0template jupi_pebbly004 13 0template brown/09 11 
++0template bdtdark001 6 0template brown/05 9 
++0template brown/20 14 0template bdtdark001 1 
++0template brown/09 14 0template brown/20 13 0template bdtdark001 3 
++0template bdtdark001 10 0template brown/05 13 0template brown/09 7 
++0template jupi_bark002 14 0template bdtdark001 13 0template jupi_pebbly001 11 0template brown/12 7 
++0template jupi_rocky004 14 0template jupi_pebbly002 9 0template jupi_melty002 7 
++0template 2grandcan001 14 0template jupi_bumpy001 5 0template jupi_pebbly002 11 
++0template 2grandcan001 12 0template jupi_pebbly004 7 0template canyon003 11 
++0template 2rough001 14 0template 2grandcan001 13 0template canyon002 3 
++0template redgranite003 10 0template 2rough001 13 0template canyon002 7 
++0template grandcan001 14 0template redgranite003 5 0template 2rough002 11 
++0template 2rough001 14 0template redgranite001 5 0template 2grandcan001 11 
++0template canyon003 14 0template 2rough001 9 0template 2grandcan001 7 
++0template canyon002 14 0template 4granite002 9 0template 4rough.001 7 
++0template canyon001 12 0template 4granite002 3 
++0template 4granite001 2 0template canyon001 13 
++0template canyon002 14 0template 4granite002 1 
++0template canyon002 8 0template 4granite001 7 
++0template stonepath003 14 0template stones003 9 0template canyon001 7 
++0template stonepath002 12 0template stones002 3 
++0template stones001 2 0template stonepath001 13 
++0template stonepath003 14 0template stones001 1 
++0template redgranite001 14 0template stonepath001 9 0template stones002 7 
++0template redgranite001 8 0template stonepath002 7 
++0template stones003 14 0template redgranite003 13 0template 2grandcan001 11 0template 2rough001 7 
++0template stones002 12 0template 2grandcan001 3 
++0template 10martian003 14 0template stones004 13 0template 2grandcan001 3 
++0template 10martian005 12 0template 2grandcan001 3 
++0template stones002 14 0template 10martian003 13 0template 2grandcan001 3 
++0template brown/12 14 0template jupi_rocky005 1 
++0template brown/09 10 0template brown/12 13 0template jupi_rocky002 7 
++0template brown/09 14 0template brown/12 5 0template brown/08 11 
++0template bdtdark001 14 0template brown/09 13 0template brown/12 11 0template brown/08 7 
++0template brown/08 10 0template bdtdark001 13 0template brown/12 7 
++0template brown/05 14 0template brown/08 13 0template brown/12 3 
++0template brown/05 12 0template brown/12 7 0template brown/09 11 
++0template brown/05 12 0template brown/08 7 0template brown/02 11 
++0template brown/09 12 0template brown/02 7 0template brown/08 11 
++0template brown/09 10 0template brown/12 13 0template brown/08 7 
++0template jupi_pebbly002 10 0template brown/12 13 0template brown/09 7 
++0template jupi_bark002 10 0template jupi_pebbly003 5 
++0template jupi_melty003 10 0template jupi_bark002 5 
++0template jupi_melty001 4 0template jupi_pebbly003 11 
++0template canyon003 10 0template jupi_pebbly003 13 0template jupi_bumpy002 7 
++0template redgranite003 10 0template canyon001 13 0template 2rough002 7 
++0template 2rough001 10 0template 2grandcan001 13 0template redgranite001 7 
++0template 2rough001 14 0template redgranite003 13 0template grandcan001 11 0template canyon003 7 
++0template 4granite001 14 0template 4rough.001 5 0template stonepath003 11 
++0template 4granite003 12 0template stonepath002 3 
++0template 4granite003 8 0template stonepath003 7 
++0template stones003 14 0template canyon003 5 0template 4granite003 11 
++0template stones004 8 0template 4granite001 7 
++0template jupi_rocky004 10 0template grandcan001 13 0template canyon001 7 
++0template brown/09 10 0template jupi_rocky002 5 
++0template brown/08 14 0template brown/12 13 0template brown/05 11 0template brown/09 7 
++0template bdtdark001 14 0template brown/12 9 0template brown/09 7 
++0template bdtdark001 14 0template brown/05 13 0template brown/12 11 0template brown/09 7 
++0template bdtdark001 14 0template brown/08 13 0template brown/09 11 0template brown/12 7 
++0template brown/09 2 0template bdtdark001 13 
++0template brown/02 14 0template brown/08 13 0template brown/05 11 0template bdtdark001 7 
++0template bdtdark001 2 0template brown/09 13 
++0template jupi_melty003 14 0template jupi_bark002 9 0template jupi_pebbly003 7 
++0template jupi_pebbly002 14 0template jupi_melty001 9 0template jupi_bark001 7 
++0template canyon002 14 0template jupi_bumpy002 5 0template 2rough002 11 
++0template 2rough001 2 0template canyon001 13 
++0template grandcan001 14 0template redgranite002 13 0template 2rough001 3 
++0template redgranite001 14 0template grandcan001 13 0template 2rough001 3 
++0template canyon003 14 0template grandcan001 13 0template 2rough002 3 
++0template 2grandcan001 14 0template canyon003 9 0template 2rough001 7 
++0template 2grandcan001 12 0template canyon003 3 
++0template redgranite003 14 0template 2grandcan001 9 0template canyon003 7 
++0template redgranite001 12 0template 2grandcan001 3 
++0template stonepath003 10 0template 4rough.001 5 
+stonepath002
+stonepath001
++0template 4granite001 14 0template stonepath002 1 
++0template canyon001 14 0template 4granite003 9 0template stonepath001 7 
++0template 4granite002 14 0template canyon002 1 
++0template stones002 14 0template 4granite003 9 0template canyon003 7 
++0template stones004 14 0template 2grandcan001 13 0template JJcanyon001 11 0template grandcan001 7 
++0template canyon002 10 0template stones001 13 0template JJcanyon001 7 
++0template jupi_rocky001 10 0template canyon001 13 0template grandcan001 7 
++0template brown/09 14 0template jupi_rocky003 5 0template brown/20 11 
++0template brown/09 12 0template brown/20 7 0template brown/02 11 
++0template brown/08 14 0template brown/09 13 0template brown/05 11 0template brown/02 7 
++0template brown/05 14 0template brown/09 5 0template bdtdark001 11 
++0template brown/05 6 0template brown/12 13 0template bdtdark001 11 
++0template brown/08 10 0template brown/05 13 0template brown/12 7 
++0template brown/09 12 0template brown/05 7 0template brown/12 11 
++0template brown/09 14 0template brown/12 9 0template bdtdark001 7 
++0template bdtdark001 10 0template brown/09 13 0template brown/12 7 
++0template bdtdark001 14 0template brown/08 13 0template dark-grey/49 11 0template brown/09 7 
++0template brown/08 14 0template bdtdark001 13 0template brown/12 11 0template dark-grey/49 7 
++0template brown/09 14 0template bdtdark001 13 0template jupi_pebbly003 11 0template brown/08 7 
++0template jupi_pebbly001 6 0template brown/09 13 0template jupi_bark001 11 
++0template 2rough002 14 0template jupi_bumpy003 5 0template canyon003 11 
++0template 2rough002 12 0template 2grandcan001 7 0template canyon001 11 
++0template 2rough002 12 0template redgranite003 7 0template grandcan001 11 
++0template 2rough002 12 0template canyon002 7 0template grandcan001 11 
++0template stonepath002 14 0template 4rough.001 13 0template 1granite001 3 
++0template stonepath001 12 0template 1granite001 3 
++0template stonepath001 8 0template 1granite001 7 
++0template stonepath003 10 0template stones002 13 0template 4granite002 7 
++0template redgranite002 10 0template stonepath003 13 0template stones003 7 
++0template grandcan001 14 0template redgranite001 13 0template 2grandcan001 3 
++0template 2rough002 12 0template grandcan001 7 0template 2grandcan001 11 
++0template 2rough001 12 0template 2grandcan001 3 
++0template canyon003 10 0template JJcanyon001 5 
++0template brown/02 10 0template brown/20 5 
++0template bdtdark001 14 0template brown/09 13 0template brown/05 11 0template brown/08 7 
++0template brown/08 6 0template brown/09 13 0template bdtdark001 11 
++0template brown/12 10 0template brown/05 13 0template brown/09 7 
++0template brown/12 10 0template bdtdark001 13 0template brown/08 7 
++0template brown/09 10 0template brown/05 13 0template bdtdark001 7 
++0template brown/09 4 0template bdtdark001 11 
++0template dark-grey/49 14 0template brown/09 13 0template bdtdark001 3 
++0template brown/12 14 0template dark-grey/49 13 0template brown/05 11 0template bdtdark001 7 
++0template bdtdark001 14 0template brown/09 1 
++0template brown/08 10 0template bdtdark001 13 0template brown/09 7 
++0template jupi_melty002 10 0template jupi_bark001 13 0template jupi_pebbly003 7 
++0template canyon001 14 0template 2grandcan001 5 0template redgranite002 11 
++0template 2rough001 10 0template canyon003 13 0template redgranite001 7 
++0template 2rough002 14 0template grandcan001 13 0template canyon003 3 
++0template 2rough001 14 0template 2grandcan001 5 0template grandcan001 11 
++0template redgranite001 10 0template 2rough002 13 0template grandcan001 7 
+1granite001
++0template stonepath003 10 0template 1granite001 5 
++0template canyon001 14 0template 4granite003 13 0template stonepath003 3 
++0template canyon001 8 0template stonepath003 7 
++0template stonepath001 14 0template 4granite003 13 0template 2rough002 11 0template canyon001 7 
++0template stones004 14 0template stonepath003 13 0template 2rough002 3 
++0template redgranite002 14 0template stones002 13 0template 2rough001 3 
++0template 2grandcan001 2 0template redgranite001 13 
++0template grandcan001 10 0template 2grandcan001 13 0template 2rough002 7 
++0template brown/02 14 0template brown/20 13 0template jupi_rocky004 3 
++0template brown/05 14 0template brown/02 13 0template jupi_rocky004 3 
++0template brown/08 14 0template brown/05 13 0template jupi_rocky004 3 
++0template brown/08 12 0template jupi_rocky004 3 
++0template brown/05 14 0template brown/08 13 0template jupi_rocky001 3 
++0template brown/05 12 0template jupi_rocky004 7 0template brown/02 11 
++0template brown/08 14 0template brown/05 9 0template brown/02 7 
++0template bdtdark001 14 0template brown/08 13 0template brown/12 11 0template brown/05 7 
++0template bdtdark001 14 0template brown/05 5 0template brown/12 11 
++0template brown/09 10 0template bdtdark001 13 0template brown/12 7 
++0template brown/09 14 0template brown/12 9 0template brown/08 7 
++0template brown/12 6 0template brown/09 13 0template bdtdark001 11 
++0template brown/12 14 0template brown/09 13 0template brown/08 11 0template bdtdark001 7 
++0template brown/12 12 0template bdtdark001 7 0template brown/09 11 
++0template brown/09 14 0template bdtdark001 5 0template brown/12 11 
++0template brown/05 14 0template bdtdark001 5 0template dark-grey/49 11 
++0template brown/05 8 0template dark-grey/49 7 
++0template jupi_pebbly004 14 0template brown/08 5 0template bdtdark001 11 
++0template jupi_pebbly003 8 0template bdtdark001 7 
++0template canyon001 10 0template redgranite001 13 0template grandcan001 7 
++0template grandcan001 14 0template 2grandcan001 5 0template redgranite003 11 
++0template redgranite001 6 0template grandcan001 13 0template 2rough002 11 
++0template 1granite001 12 0template stonepath003 3 
++0template stonepath001 2 0template 1granite001 13 
++0template stonepath002 4 0template canyon001 11 
++0template canyon001 2 0template stonepath001 13 
++0template 2grandcan001 14 0template grandcan001 1 
++0template 2grandcan001 8 0template grandcan001 7 
+jupi_rocky001
++0template brown/02 14 0template jupi_rocky002 1 
++0template brown/05 14 0template brown/02 9 0template jupi_rocky001 7 
++0template brown/05 12 0template brown/02 3 
++0template brown/12 10 0template brown/05 13 0template brown/02 7 
++0template brown/12 12 0template brown/02 7 0template brown/20 11 
++0template brown/08 14 0template brown/12 13 0template brown/02 11 0template brown/20 7 
++0template brown/08 12 0template brown/02 3 
++0template brown/05 14 0template brown/08 13 0template brown/20 11 0template brown/02 7 
++0template brown/12 14 0template brown/05 13 0template brown/09 11 0template brown/20 7 
++0template brown/09 6 0template brown/05 9 
++0template bdtdark001 6 0template brown/09 13 0template brown/05 11 
++0template brown/12 10 0template bdtdark001 13 0template brown/05 7 
++0template dark-grey/49 14 0template bdtdark001 1 
++0template brown/05 14 0template dark-grey/49 13 0template brown/08 11 0template bdtdark001 7 
++0template brown/08 12 0template brown/09 7 0template bdtdark001 11 
++0template jupi_pebbly001 14 0template bdtdark001 5 0template brown/12 11 
++0template jupi_pebbly003 6 0template jupi_bark001 9 
++0template canyon003 4 0template 2grandcan001 11 
++0template 2grandcan001 6 0template canyon003 13 0template redgranite003 11 
++0template canyon001 10 0template stonepath001 5 
++0template grandcan001 14 0template 2grandcan001 13 0template canyon002 3 
++0template 2rough001 14 0template 2grandcan001 13 0template grandcan001 11 0template canyon001 7 
++0template jupi_rocky002 4 0template brown/20 11 
++0template brown/02 14 0template jupi_rocky005 13 0template brown/20 3 
++0template brown/02 12 0template brown/20 7 0template jupi_rocky004 11 
++0template brown/12 14 0template brown/02 13 0template JJcanyon001 11 0template jupi_rocky003 7 
++0template brown/02 10 0template brown/12 13 0template JJcanyon001 7 
++0template brown/20 10 0template brown/02 5 
++0template brown/09 10 0template brown/20 13 0template brown/02 7 
++0template brown/12 14 0template brown/08 13 0template bdtdark001 11 0template brown/05 7 
++0template brown/05 14 0template bdtdark001 13 0template brown/12 3 
++0template brown/05 12 0template brown/12 7 0template brown/08 11 
++0template brown/12 14 0template brown/05 5 0template brown/08 11 
++0template brown/12 12 0template brown/08 7 0template bdtdark001 11 
++0template jupi_pebbly003 10 0template brown/12 5 
++0template 2grandcan001 10 0template canyon001 13 0template 2rough001 7 
++0template grandcan001 14 0template redgranite001 5 0template canyon003 11 
++0template canyon002 14 0template grandcan001 13 0template 2grandcan001 11 0template 2rough002 7 
++0template 2grandcan001 2 0template canyon001 13 
++0template stonepath001 4 0template 4granite003 11 
++0template stonepath003 12 0template 4granite003 3 
++0template canyon003 10 0template stonepath003 13 0template 4granite002 7 
++0template canyon002 14 0template JJcanyon001 13 0template grandcan001 3 
++0template brown/20 14 0template jupi_rocky001 13 0template grandcan001 3 
++0template brown/20 12 0template grandcan001 3 
++0template jupi_rocky005 14 0template brown/20 13 0template romanfloor001 11 0template grandcan001 7 
++0template JJcanyon001 14 0template jupi_rocky003 13 0template romanfloor001 3 
++0template brown/02 14 0template JJcanyon001 13 0template romanfloor001 3 
++0template brown/20 14 0template brown/02 13 0template romanfloor001 3 
++0template brown/02 14 0template brown/20 13 0template romanfloor001 3 
++0template brown/02 12 0template romanfloor001 7 0template greekfloor 11 
++0template brown/20 14 0template brown/02 13 0template greekfloor 3 
++0template brown/02 14 0template brown/20 13 0template jupi_soil003 11 0template greekfloor 7 
++0template brown/09 14 0template brown/02 13 0template brown/08 11 0template jupi_soil001 7 
++0template brown/09 12 0template brown/08 7 0template brown/20 11 
++0template brown/08 10 0template brown/09 13 0template brown/20 7 
++0template bdtdark001 14 0template brown/05 13 0template brown/08 11 0template brown/12 7 
++0template brown/12 12 0template bdtdark001 7 0template brown/05 11 
++0template brown/12 8 0template brown/05 7 
++0template brown/12 12 0template brown/09 7 0template brown/05 11 
++0template 2rough001 14 0template jupi_bumpy001 13 0template canyon002 11 0template jupi_bark001 7 
++0template 2grandcan001 14 0template 2rough001 9 0template canyon002 7 
++0template canyon002 14 0template redgranite003 5 0template grandcan001 11 
++0template 2rough002 6 0template canyon002 13 0template 2grandcan001 11 
++0template stonepath002 14 0template 1granite001 13 0template 4granite001 11 0template stones004 7 
++0template 4granite001 6 0template stonepath002 13 0template canyon002 11 
++0template 4granite002 12 0template canyon002 3 
++0template 4granite001 8 0template canyon002 7 
++0template grandcan001 6 0template canyon001 13 0template stonepath002 11 
++0template grandcan001 12 0template stonepath001 3 
++0template grandcan001 8 0template stonepath002 7 
++0template romanfloor001 10 0template grandcan001 13 0template canyon002 7 
+romanfloor001
+romanfloor002
++0template greekfloor 10 0template romanfloor002 5 
+greekfloor
++0template jupi_soil001 14 0template greekfloor 1 
++0template brown/08 14 0template jupi_soil003 13 0template brown/20 11 0template greekfloor 7 
++0template brown/20 2 0template brown/08 13 
++0template brown/08 14 0template brown/20 5 0template brown/02 11 
++0template brown/05 14 0template brown/09 13 0template bdtdark001 3 
++0template brown/12 14 0template brown/08 5 0template brown/05 11 
++0template brown/12 12 0template brown/05 7 0template bdtdark001 11 
++0template jupi_pebbly003 4 0template jupi_soil002 11 
++0template jupi_rocky003 10 0template jupi_pebbly001 13 0template jupi_soil003 7 
++0template canyon001 10 0template jupi_bark002 13 0template jupi_bumpy002 7 
++0template 2rough001 2 0template 2grandcan001 13 
++0template grandcan001 14 0template 2grandcan001 13 0template 2rough002 3 
++0template grandcan001 14 0template canyon001 9 0template redgranite001 7 
++0template 4granite001 14 0template stones004 13 0template canyon002 11 0template redgranite003 7 
++0template 4granite002 12 0template canyon001 7 0template stones001 11 
++0template canyon003 14 0template 4granite003 13 0template stones001 3 
++0template canyon003 12 0template stones002 7 0template crusty004 11 
++0template canyon003 12 0template crusty004 3 
++0template canyon001 12 0template crusty004 7 0template 4granite003 11 
++0template canyon002 14 0template 4granite001 5 0template stones001 11 
++0template canyon001 14 0template 2rough002 5 0template redgranite002 11 
++0template grandcan001 10 0template canyon002 13 0template redgranite003 7 
++0template stonepath003 10 0template grandcan001 5 
++0template grandcan001 14 0template stonepath001 5 0template canyon001 11 
++0template romanfloor001 14 0template canyon001 5 0template romancobblestone 11 
++0template romanfloor001 12 0template romancobblestone 3 
++0template romanfloor001 8 0template romancobblestone 7 
++0template brown/20 14 0template greekfloor 1 
++0template brown/20 12 0template greekfloor 7 0template jupi_soil001 11 
++0template brown/02 10 0template brown/20 13 0template jupi_soil001 7 
++0template brown/08 14 0template bdtdark001 9 0template brown/09 7 
++0template brown/05 14 0template bdtdark001 5 0template brown/09 11 
++0template brown/08 14 0template brown/09 13 0template brown/12 3 
++0template jupi_pebbly002 10 0template brown/09 13 0template brown/08 7 
++0template jupi_rocky005 14 0template jupi_soil003 5 0template jupi_bumpy002 11 
++0template jupi_bumpy003 6 0template jupi_rocky004 13 0template jupi_bark001 11 
++0template canyon001 10 0template jupi_bumpy001 13 0template jupi_bark002 7 
++0template 2rough001 12 0template grandcan001 7 0template canyon003 11 
++0template 2rough002 12 0template 2grandcan001 7 0template grandcan001 11 
++0template 2grandcan001 10 0template 2rough002 13 0template grandcan001 7 
++0template 2rough001 10 0template redgranite003 13 0template canyon002 7 
++0template canyon003 14 0template redgranite002 5 0template stones002 11 
++0template stones002 6 0template canyon003 13 0template crusty003 11 
++0template stones003 8 0template crusty004 7 
++0template crusty002 14 0template stones004 5 0template 2rough002 11 
++0template crusty004 8 0template 2rough002 7 
++0template 4granite001 10 0template crusty004 5 
+4granite003
++0template stones003 14 0template 4granite003 1 
++0template canyon001 14 0template stones001 5 0template 4granite003 11 
++0template stonepath002 14 0template grandcan001 1 
++0template stonepath001 12 0template grandcan001 3 
++0template canyon002 10 0template stonepath003 13 0template grandcan001 7 
++0template 2rough001 14 0template canyon003 5 0template 2grandcan001 11 
++0template canyon003 14 0template 2rough002 13 0template 2grandcan001 3 
++0template 2rough002 10 0template canyon002 13 0template 2grandcan001 7 
++0template canyon001 4 0template jupi_soil002 11 
++0template canyon003 12 0template jupi_soil003 3 
++0template canyon002 12 0template jupi_soil002 7 0template romancobblestone 11 
++0template canyon002 12 0template romancobblestone 3 
++0template romancobblestone 2 0template canyon001 13 
+romancobblestone
++0template romanfloor002 10 0template romancobblestone 5 
++0template romanfloor001 4 0template greekfloor 11 
++0template greekfloor 2 0template romanfloor001 13 
++0template greekfloor 12 0template romanfloor002 3 
++0template greekfloor 8 0template romanfloor001 7 
++0template brown/02 14 0template jupi_soil002 9 0template greekfloor 7 
++0template brown/02 12 0template jupi_soil002 7 0template brown/05 11 
++0template brown/12 14 0template brown/02 13 0template brown/20 11 0template brown/05 7 
++0template brown/09 14 0template brown/12 13 0template brown/20 3 
++0template brown/12 10 0template brown/09 13 0template brown/20 7 
++0template bdtdark001 14 0template brown/09 13 0template brown/05 11 0template brown/12 7 
++0template brown/12 10 0template brown/09 13 0template brown/05 7 
++0template brown/09 6 0template brown/08 9 
++0template jupi_bark002 14 0template jupi_bumpy001 5 0template jupi_pebbly001 11 
++0template canyon002 14 0template jupi_bark002 13 0template redgranite001 11 0template jupi_pebbly002 7 
++0template 2grandcan001 10 0template redgranite002 13 0template grandcan001 7 
++0template grandcan001 14 0template 2grandcan001 5 0template canyon002 11 
++0template grandcan001 12 0template canyon002 7 0template 2grandcan001 11 
++0template canyon002 10 0template grandcan001 13 0template 2grandcan001 7 
++0template stones004 14 0template redgranite003 5 0template crusty004 11 
++0template stones003 12 0template crusty002 3 
++0template stones001 12 0template crusty002 7 0template 2rough001 11 
++0template crusty001 14 0template stones004 13 0template 2rough002 3 
++0template stones002 10 0template crusty003 13 0template 2rough002 7 
++0template crusty004 10 0template 2rough002 5 
+4granite001
++0template 4granite002 10 0template stones001 5 
++0template grandcan001 4 0template 2grandcan001 11 
++0template canyon003 14 0template grandcan001 13 0template 2grandcan001 3 
++0template jupi_soil001 14 0template canyon001 5 0template asphalt002 11 
++0template jupi_soil002 12 0template asphalt003 3 
++0template romancobblestone 10 0template jupi_soil003 13 0template asphalt003 7 
++0template greekfloor 14 0template romanfloor001 1 
++0template brown/05 14 0template jupi_soil001 9 0template greekfloor 7 
++0template brown/20 10 0template brown/05 13 0template jupi_soil003 7 
++0template brown/12 14 0template bdtdark001 13 0template brown/08 3 
++0template brown/05 14 0template brown/09 13 0template bdtdark001 11 0template brown/08 7 
++0template brown/12 14 0template brown/05 13 0template brown/08 11 0template bdtdark001 7 
++0template brown/12 12 0template brown/08 7 0template brown/05 11 
++0template brown/08 6 0template brown/09 13 0template brown/05 11 
++0template jupi_pebbly003 14 0template brown/08 13 0template brown/05 3 
++0template redgranite002 10 0template jupi_pebbly004 5 
++0template 2grandcan001 4 0template grandcan001 11 
++0template redgranite003 14 0template 2grandcan001 9 0template grandcan001 7 
++0template 2grandcan001 14 0template grandcan001 5 0template canyon003 11 
++0template 2rough002 6 0template canyon001 13 0template redgranite002 11 
++0template crusty003 10 0template redgranite003 5 
++0template crusty001 4 0template 2rough001 11 
++0template 2rough001 2 0template crusty003 13 
++0template stones001 6 0template 2rough001 9 
++0template 2rough002 6 0template stones001 13 0template 4granite001 11 
++0template crusty004 14 0template 2rough002 9 0template 4granite002 7 
++0template 4granite002 14 0template crusty002 13 0template 2rough001 3 
++0template 4granite002 12 0template 2rough002 7 0template crusty001 11 
++0template 4granite003 12 0template crusty003 7 0template 2rough001 11 
++0template stones004 14 0template 4granite003 13 0template 2rough002 3 
++0template 4granite002 10 0template stones001 13 0template 2rough002 7 
++0template 4granite003 4 0template stonepath001 11 
++0template canyon001 10 0template 4granite002 13 0template stonepath001 7 
++0template redgranite002 14 0template 2rough002 5 0template canyon002 11 
++0template canyon001 14 0template redgranite001 5 0template 2grandcan001 11 
++0template grandcan001 14 0template canyon002 13 0template 2grandcan001 3 
++0template canyon003 14 0template 2grandcan001 5 0template 2rough002 11 
++0template 2rough001 14 0template 2grandcan001 13 0template grandcan001 11 0template redgranite002 7 
++0template 2rough001 12 0template grandcan001 7 0template 2gbdirt002 11 
++0template 2rough002 12 0template 2gbdirt001 3 
++0template 2rough002 12 0template 2gbdirt001 7 0template grandcan001 11 
++0template canyon002 12 0template grandcan001 7 0template bluegranite001 11 
++0template asphalt002 10 0template canyon003 13 0template bluegranite003 7 
+asphalt004
++0template romancobblestone 10 0template asphalt002 5 
++0template brown/20 14 0template jupi_soil002 9 0template greekfloor 7 
++0template brown/08 14 0template brown/02 13 0template brown/20 3 
++0template brown/05 10 0template brown/08 13 0template brown/20 7 
++0template brown/08 14 0template brown/05 5 0template brown/12 11 
++0template bdtdark001 6 0template brown/08 13 0template brown/05 11 
++0template brown/08 14 0template bdtdark001 13 0template brown/09 11 0template brown/05 7 
++0template brown/12 14 0template brown/05 5 0template bdtdark001 11 
++0template jupi_pebbly004 10 0template brown/05 13 0template bdtdark001 7 
++0template 2rough001 14 0template redgranite001 13 0template 2grandcan001 11 0template grandcan001 7 
++0template canyon003 6 0template redgranite002 9 
++0template 2rough002 14 0template crusty004 5 0template stones001 11 
++0template 2rough002 14 0template stones001 5 0template 4granite003 11 
++0template 4granite001 6 0template 2rough001 9 
++0template 2rough001 6 0template 4granite001 9 
++0template 2rough002 12 0template 4granite003 3 
++0template crusty002 10 0template 2rough002 13 0template 4granite002 7 
++0template 4granite001 10 0template 2rough001 13 0template stones003 7 
++0template stonepath002 14 0template 4granite001 1 
++0template 2grandcan001 6 0template redgranite001 13 0template grandcan001 11 
++0template 2grandcan001 4 0template canyon001 11 
++0template redgranite003 14 0template 2grandcan001 9 0template 2rough001 7 
++0template redgranite002 12 0template 2grandcan001 7 0template 2rough001 11 
++0template grandcan001 14 0template redgranite001 13 0template canyon001 11 0template 2rough002 7 
++0template 2gbdirt001 10 0template grandcan001 13 0template canyon003 7 
+2gbdirt002
++0template grandcan001 10 0template 2gbdirt002 5 
++0template grandcan001 4 0template bluegranite001 11 
++0template bluegranite003 6 0template grandcan001 9 
++0template asphalt002 10 0template bluegranite003 13 0template grandcan001 7 
++0template asphalt003 4 0template machuwall_F003 11 
++0template romancobblestone 10 0template asphalt001 13 0template machuwall_F001 7 
++0template romanfloor001 12 0template greekfloor 3 
++0template romanfloor002 8 0template greekfloor 7 
++0template brown/20 10 0template brown/02 13 0template jupi_soil001 7 
++0template brown/05 14 0template brown/20 13 0template brown/02 3 
++0template jupi_pebbly004 10 0template bdtdark001 5 
++0template redgranite001 14 0template jupi_pebbly001 5 0template canyon002 11 
++0template 2grandcan001 12 0template redgranite003 7 0template 2rough002 11 
++0template canyon003 14 0template 2grandcan001 13 0template 2rough002 11 0template redgranite002 7 
++0template 2grandcan001 12 0template 2rough001 7 0template canyon001 11 
++0template canyon002 2 0template 2grandcan001 13 
++0template crusty003 14 0template redgranite003 5 0template stones004 11 
++0template stones002 6 0template crusty002 9 
++0template stones004 12 0template 2rough001 7 0template crusty001 11 
++0template 4granite002 14 0template stones003 13 0template crusty002 3 
++0template 2rough002 14 0template 4granite002 13 0template stones001 11 0template crusty003 7 
++0template 4granite002 14 0template 2rough001 13 0template stones001 3 
++0template 4granite001 12 0template stones002 3 
++0template crusty003 14 0template 4granite001 13 0template stones004 3 
++0template stones001 2 0template crusty002 13 
++0template 4granite001 10 0template stones001 13 0template canyon001 7 
++0template 2grandcan001 14 0template grandcan001 5 0template bluegranite001 11 
++0template canyon001 10 0template 2grandcan001 13 0template bluegranite001 7 
++0template 2grandcan001 14 0template canyon003 5 0template grandcan001 11 
++0template 2rough002 14 0template 2grandcan001 13 0template grandcan001 3 
++0template 2grandcan001 14 0template 2rough001 13 0template grandcan001 3 
++0template 2rough001 10 0template 2grandcan001 13 0template grandcan001 7 
++0template 2rough002 6 0template 2grandcan001 13 0template grandcan001 11 
++0template 2gbdirt002 10 0template canyon002 5 
++0template 2gbdirt002 4 0template romancobblestone 11 
++0template grandcan001 14 0template 2gbdirt001 13 0template romancobblestone 3 
++0template bluegranite002 14 0template grandcan001 9 0template romancobblestone 7 
++0template grandcan001 2 0template bluegranite001 13 
++0template asphalt004 14 0template grandcan001 5 0template machuwall_B001 11 
++0template machuwall_F001 14 0template asphalt001 9 0template machuwall_B001 7 
++0template romancobblestone 10 0template machuwall_F003 13 0template asphalt003 7 
++0template romanfloor002 14 0template greekfloor 1 
++0template brown/09 14 0template brown/08 13 0template brown/20 3 
++0template brown/12 14 0template brown/09 13 0template bdtdark001 11 0template brown/20 7 
++0template brown/09 14 0template brown/12 13 0template bdtdark001 3 
++0template brown/09 6 0template bdtdark001 13 0template brown/12 11 
++0template bdtdark001 4 0template jupi_rocky003 11 
++0template jupi_pebbly002 10 0template bdtdark001 13 0template jupi_rocky001 7 
++0template canyon003 10 0template jupi_pebbly001 5 
++0template 2rough001 14 0template redgranite003 5 0template grandcan001 11 
++0template redgranite001 10 0template canyon003 13 0template 2grandcan001 7 
++0template crusty004 10 0template stones003 5 
++0template 2rough001 10 0template crusty001 5 
++0template crusty004 14 0template 2rough001 1 
++0template stones003 10 0template crusty001 5 
++0template stones004 4 0template crusty003 11 
++0template canyon001 14 0template stones004 9 0template 2rough002 7 
++0template 4granite001 14 0template canyon003 9 0template stones003 7 
++0template canyon002 2 0template 4granite003 13 
++0template grandcan001 6 0template 2grandcan001 13 0template canyon002 11 
++0template bluegranite003 10 0template grandcan001 13 0template canyon002 7 
++0template canyon001 10 0template bluegranite003 5 
++0template 2rough001 6 0template grandcan001 13 0template 4granite003 11 
++0template grandcan001 14 0template 2rough002 13 0template 2gbdirt002 11 0template 4granite001 7 
++0template canyon002 14 0template grandcan001 13 0template 2gbdirt001 3 
++0template 2gbdirt002 6 0template canyon002 13 0template grey/03-grey 11 
++0template romancobblestone 10 0template 2gbdirt001 13 0template grey/03-grey 7 
++0template grandcan001 14 0template romancobblestone 1 
++0template grandcan001 12 0template romancobblestone 7 0template 2gbdirt001 11 
++0template machuwall_B002 14 0template grandcan001 13 0template asphalt002 11 0template 2gbdirt001 7 
++0template asphalt004 6 0template machuwall_B003 9 
++0template romancobblestone 14 0template asphalt004 9 0template machuwall_B002 7 
++0template romancobblestone 8 0template asphalt001 7 
++0template greekfloor 6 0template romanfloor002 9 
++0template brown/20 8 0template brown/02 7 
++0template bdtdark001 14 0template brown/20 1 
++0template bdtdark001 12 0template brown/20 7 0template brown/09 11 
++0template bdtdark001 8 0template brown/09 7 
++0template brown/09 14 0template bdtdark001 13 0template brown/08 11 0template brown/12 7 
++0template bdtdark001 12 0template brown/12 7 0template jupi_soil001 11 
++0template jupi_rocky005 14 0template bdtdark001 13 0template jupi_pebbly002 11 0template jupi_soil002 7 
++0template 2rough001 6 0template redgranite002 13 0template 2grandcan001 11 
++0template 2grandcan001 6 0template 2rough002 13 0template grandcan001 11 
++0template grandcan001 6 0template 2grandcan001 13 0template redgranite001 11 
++0template crusty003 10 0template 2rough002 13 0template stones004 7 
++0template stones004 14 0template crusty003 1 
++0template crusty002 14 0template stones004 9 0template 2rough002 7 
++0template 2rough002 14 0template crusty003 13 0template stones002 3 
++0template stones001 6 0template 2rough001 13 0template redgranite001 11 
++0template bluegranite001 14 0template canyon003 13 0template 2rough001 3 
++0template canyon002 10 0template bluegranite003 13 0template 2rough002 7 
++0template 4granite003 2 0template 2rough001 13 
++0template 4granite002 4 0template 2gbdirt002 11 
++0template 2gbdirt001 6 0template 4granite003 13 0template romancobblestone 11 
++0template 2gbdirt001 12 0template romancobblestone 3 
++0template grey/03-grey 14 0template 2gbdirt002 13 0template romancobblestone 3 
++0template romancobblestone 2 0template grey/03-grey 13 
++0template 2gbdirt002 14 0template romancobblestone 5 0template grandcan001 11 
++0template asphalt004 14 0template 2gbdirt002 13 0template 2grandcan001 11 0template grandcan001 7 
++0template machuwall_B002 14 0template asphalt001 9 0template 2grandcan001 7 
++0template romanfloor001 14 0template romancobblestone 1 
++0template greekfloor 14 0template romanfloor001 5 0template romancobblestone 11 
++0template greekfloor 12 0template romancobblestone 3 
++0template greekfloor 8 0template romancobblestone 7 
++0template romanfloor001 10 0template greekfloor 5 
++0template brown/09 10 0template brown/20 5 
++0template bdtdark001 14 0template brown/09 5 0template brown/08 11 
++0template bdtdark001 12 0template brown/08 7 0template brown/02 11 
++0template brown/12 10 0template bdtdark001 13 0template brown/02 7 
++0template brown/08 14 0template brown/12 13 0template brown/09 11 0template bdtdark001 7 
++0template brown/12 14 0template brown/05 9 0template brown/08 7 
++0template jupi_soil003 14 0template brown/12 13 0template jupi_pebbly001 11 0template brown/05 7 
++0template jupi_pebbly004 6 0template jupi_soil002 13 0template jupi_bark001 11 
++0template 2grandcan001 14 0template 2rough002 9 0template grandcan001 7 
++0template canyon002 14 0template 2grandcan001 13 0template grandcan001 3 
++0template 2grandcan001 10 0template canyon003 13 0template grandcan001 7 
++0template grandcan001 10 0template 2rough001 13 0template canyon003 7 
++0template stones003 14 0template redgranite003 5 0template 2grandcan001 11 
++0template crusty001 14 0template stones001 9 0template 2grandcan001 7 
++0template crusty003 14 0template stones004 1 
++0template crusty002 8 0template stones001 7 
++0template stones001 8 0template 2rough001 7 
++0template 4granite002 10 0template 2rough001 5 
++0template 2gbdirt002 10 0template 4granite001 5 
++0template romancobblestone 10 0template 2gbdirt001 5 
++0template grandcan001 14 0template romancobblestone 5 0template bluegranite001 11 
++0template 2grandcan001 14 0template grandcan001 13 0template bluegranite003 3 
++0template asphalt004 14 0template 2grandcan001 9 0template bluegranite002 7 
++0template romancobblestone 14 0template asphalt002 13 0template machuwall_B003 3 
++0template romancobblestone 12 0template machuwall_B002 7 0template asphalt004 11 
++0template romancobblestone 12 0template asphalt004 7 0template machuwall_B003 11 
++0template romanfloor001 10 0template romancobblestone 13 0template machuwall_B001 7 
++0template romancobblestone 10 0template romanfloor001 5 
++0template greekfloor 14 0template romancobblestone 1 
++0template brown/09 14 0template brown/20 13 0template brown/02 3 
++0template brown/08 10 0template brown/09 13 0template brown/02 7 
++0template brown/12 14 0template brown/02 5 0template brown/09 11 
++0template brown/09 10 0template brown/08 13 0template bdtdark001 7 
++0template jupi_pebbly004 14 0template brown/05 5 0template jupi_rocky003 11 
++0template jupi_bark001 10 0template jupi_pebbly004 13 0template jupi_rocky004 7 
++0template jupi_pebbly003 12 0template jupi_melty003 7 0template jupi_funky003 11 
++0template jupi_rocky002 14 0template jupi_pebbly004 13 0template jupi_funky001 3 
++0template jupi_bumpy002 10 0template jupi_rocky003 13 0template jupi_funky003 7 
++0template 2rough002 14 0template jupi_pebbly002 5 0template canyon003 11 
++0template grandcan001 14 0template redgranite001 13 0template 2rough001 11 0template canyon003 7 
++0template 2grandcan001 10 0template grandcan001 13 0template canyon001 7 
++0template crusty004 14 0template stones003 5 0template 2grandcan001 11 
++0template stones004 14 0template crusty002 13 0template 2grandcan001 3 
++0template 2rough001 14 0template stones002 13 0template 2grandcan001 3 
++0template stones003 14 0template 2rough002 9 0template 2grandcan001 7 
++0template canyon002 14 0template 2rough002 5 0template 2grandcan001 11 
++0template grandcan001 14 0template canyon001 13 0template 2rough001 11 0template 2grandcan001 7 
++0template 2rough002 14 0template canyon002 9 0template grandcan001 7 
++0template canyon002 6 0template 2rough001 13 0template grandcan001 11 
++0template 2rough001 14 0template canyon002 13 0template redgranite001 11 0template grandcan001 7 
++0template 4granite002 14 0template 2rough002 9 0template redgranite001 7 
++0template 4granite001 12 0template 2rough001 3 
++0template 2gbdirt002 10 0template 4granite002 13 0template 2rough001 7 
++0template bluegranite003 14 0template romancobblestone 5 0template 2grandcan001 11 
++0template bluegranite002 12 0template 2grandcan001 3 
++0template 2grandcan001 6 0template bluegranite002 13 0template redgranite003 11 
++0template asphalt003 10 0template 2grandcan001 13 0template redgranite002 7 
++0template machuwall_B002 14 0template asphalt003 1 
++0template machuwall_B002 12 0template asphalt001 3 
++0template machuwall_B002 6 0template asphalt003 9 
++0template romanfloor002 10 0template machuwall_B003 13 0template asphalt003 7 
++0template romancobblestone 14 0template romanfloor001 5 0template 1granite001 11 
++0template romancobblestone 12 0template 1granite001 3 
++0template romancobblestone 8 0template 1granite001 7 
++0template greekfloor 10 0template romancobblestone 5 
++0template jupi_soil001 14 0template greekfloor 13 0template romanfloor001 3 
++0template brown/20 14 0template jupi_soil003 13 0template greekfloor 11 0template romanfloor001 7 
++0template brown/02 10 0template brown/20 13 0template greekfloor 7 
++0template brown/02 14 0template brown/08 13 0template brown/05 11 0template brown/20 7 
++0template brown/12 6 0template brown/09 9 
++0template brown/08 6 0template brown/05 13 0template brown/02 11 
++0template jupi_rocky003 10 0template brown/05 13 0template brown/02 7 
++0template jupi_melty001 14 0template jupi_pebbly001 1 
++0template jupi_funky001 14 0template jupi_melty003 13 0template jupi_pebbly002 3 
++0template jupi_funky003 12 0template jupi_pebbly003 7 0template jupi_bumpy003 11 
++0template jupi_bumpy001 6 0template jupi_funky002 13 0template jupi_pebbly004 11 
++0template jupi_pebbly001 2 0template jupi_bumpy002 13 
++0template 2grandcan001 14 0template 2rough002 5 0template canyon003 11 
++0template canyon001 6 0template 2grandcan001 13 0template grandcan001 11 
++0template 2rough001 10 0template canyon003 13 0template grandcan001 7 
++0template grandcan001 6 0template canyon003 13 0template 2rough001 11 
++0template grandcan001 12 0template 2rough002 7 0template canyon001 11 
++0template stones001 14 0template 2grandcan001 9 0template 2rough001 7 
++0template stones002 12 0template 2grandcan001 7 0template 2rough001 11 
++0template 2grandcan001 10 0template stones003 13 0template 2rough001 7 
++0template 2rough002 14 0template 2grandcan001 5 0template canyon003 11 
++0template canyon001 14 0template grandcan001 5 0template redgranite002 11 
++0template grandcan001 14 0template canyon002 13 0template redgranite003 3 
++0template 2gbdirt002 14 0template 2rough001 5 0template grey/03-grey 11 
++0template romancobblestone 14 0template 2gbdirt001 13 0template grey/03-grey 3 
++0template romancobblestone 12 0template grey/03-grey 3 
++0template romancobblestone 12 0template grey/03-grey 7 0template 2grandcan001 11 
++0template 2grandcan001 2 0template romancobblestone 13 
++0template asphalt001 14 0template redgranite003 13 0template 2grandcan001 3 
++0template asphalt004 12 0template 2grandcan001 3 
++0template machuwall_B002 10 0template asphalt002 13 0template 2grandcan001 7 
++0template asphalt004 10 0template machuwall_B002 5 
++0template machuwall6 10 0template asphalt001 5 
++0template 1granite001 10 0template romanfloor002 5 
++0template romancobblestone 14 0template 1granite001 1 
++0template greekfloor 14 0template romancobblestone 9 0template 1granite001 7 
++0template brown/02 14 0template greekfloor 13 0template romancobblestone 11 0template romanfloor001 7 
++0template brown/20 14 0template brown/02 13 0template jupi_pebbly003 11 0template romancobblestone 7 
++0template brown/20 12 0template jupi_pebbly001 7 0template brown/02 11 
++0template brown/05 10 0template brown/20 13 0template brown/02 7 
++0template brown/08 6 0template brown/12 13 0template brown/09 11 
++0template brown/02 10 0template brown/08 13 0template brown/05 7 
++0template jupi_rocky005 14 0template brown/02 13 0template brown/05 3 
++0template jupi_bark001 10 0template jupi_rocky001 13 0template brown/05 7 
++0template jupi_pebbly002 14 0template jupi_bark002 1 
++0template jupi_bumpy001 10 0template jupi_pebbly001 13 0template jupi_rocky001 7 
++0template jupi_pebbly002 14 0template jupi_bumpy003 5 0template 2rough002 11 
++0template jupi_pebbly004 12 0template 2rough001 3 
++0template canyon003 14 0template jupi_pebbly001 13 0template 2rough001 3 
++0template grandcan001 10 0template canyon002 13 0template 2grandcan001 7 
++0template 2grandcan001 6 0template 2rough001 9 
++0template canyon001 10 0template 2grandcan001 13 0template 2rough001 7 
++0template 2grandcan001 12 0template 2rough002 7 0template bluegranite003 11 
++0template canyon003 14 0template 2grandcan001 13 0template 2rough002 11 0template bluegranite001 7 
++0template grandcan001 14 0template canyon001 13 0template redgranite001 11 0template 2rough002 7 
++0template grey/03-grey 14 0template 2rough002 5 0template grandcan001 11 
++0template grey/03-grey 12 0template grandcan001 3 
++0template 2grandcan001 10 0template grey/03-grey 13 0template grandcan001 7 
++0template machuwall_B002 14 0template 2grandcan001 5 0template asphalt002 11 
++0template asphalt001 2 0template machuwall_B003 13 
++0template machuwall1 10 0template asphalt002 5 
++0template romanfloor001 12 0template machuwall_B003 7 0template dark-grey/49 11 
++0template romanfloor001 12 0template dark-grey/49 3 
++0template 1granite001 14 0template romanfloor001 13 0template dark-grey/49 3 
++0template 1granite001 12 0template dark-grey/49 3 
++0template romancobblestone 10 0template 1granite001 13 0template dark-grey/49 7 
++0template romanfloor002 10 0template greekfloor 13 0template romancobblestone 7 
++0template jupi_pebbly001 14 0template romancobblestone 1 
++0template brown/02 10 0template jupi_pebbly004 13 0template romancobblestone 7 
++0template brown/05 14 0template brown/02 5 0template brown/20 11 
++0template brown/12 6 0template brown/08 13 0template bdtdark001 11 
++0template brown/09 14 0template brown/12 13 0template brown/08 11 0template bdtdark001 7 
++0template brown/09 2 0template brown/05 13 
++0template brown/02 14 0template brown/05 5 0template jupi_pebbly004 11 
++0template brown/05 14 0template brown/02 13 0template jupi_pebbly002 3 
++0template jupi_bark002 10 0template brown/05 13 0template jupi_pebbly003 7 
++0template jupi_bark002 4 0template jupi_pebbly003 11 
++0template jupi_rocky005 10 0template jupi_pebbly003 13 0template jupi_bark001 7 
++0template 2grandcan001 10 0template redgranite001 13 0template 2rough001 7 
++0template redgranite003 14 0template 2rough001 9 0template grandcan001 7 
++0template redgranite001 10 0template 2grandcan001 13 0template canyon002 7 
++0template canyon001 14 0template grandcan001 5 0template 2rough002 11 
++0template 2rough001 14 0template 2grandcan001 13 0template redgranite001 3 
++0template 2rough001 6 0template 2grandcan001 13 0template 4granite002 11 
++0template 2rough001 8 0template 4granite003 7 
++0template bluegranite001 14 0template 2rough002 9 0template 2grandcan001 7 
++0template 2rough002 6 0template bluegranite003 13 0template 2grandcan001 11 
++0template redgranite003 12 0template 2rough001 7 0template 2grandcan001 11 
++0template grandcan001 12 0template redgranite001 7 0template canyon001 11 
++0template 2grandcan001 12 0template canyon003 7 0template grandcan001 11 
++0template asphalt004 14 0template 2grandcan001 13 0template machuwall_B002 11 0template grandcan001 7 
++0template asphalt004 8 0template machuwall_B002 7 
++0template machuwall_B001 10 0template asphalt002 5 
++0template dark-grey/49 10 0template machuwall_B002 5 
++0template dark-grey/49 4 0template gbdirt002 11 
++0template dark-grey/49 12 0template gbdirt001 7 0template 1granite001 11 
++0template dark-grey/49 8 0template 1granite001 7 
++0template dark-grey/49 4 0template gbdirt_rocky001 11 
++0template dark-grey/49 8 0template gbdirt_rocky001 7 
++0template romancobblestone 14 0template dark-grey/49 5 0template 1granite001 11 
++0template romancobblestone 14 0template romanfloor001 1 
++0template romancobblestone 12 0template romanfloor001 3 
++0template brown/02 14 0template romancobblestone 13 0template jupi_soil002 11 0template romanfloor002 7 
++0template brown/05 14 0template brown/20 5 0template brown/02 11 
++0template brown/05 8 0template brown/02 7 
++0template brown/12 14 0template brown/05 1 
++0template brown/12 12 0template brown/05 7 0template brown/09 11 
++0template brown/09 14 0template brown/05 5 0template brown/20 11 
++0template brown/09 12 0template brown/20 7 0template brown/12 11 
++0template brown/05 14 0template brown/09 5 0template jupi_melty002 11 
++0template jupi_pebbly004 14 0template brown/05 13 0template jupi_melty002 3 
++0template jupi_bark001 14 0template jupi_pebbly001 5 0template jupi_rocky003 11 
++0template jupi_pebbly001 10 0template jupi_bark002 13 0template jupi_rocky004 7 
++0template jupi_rocky003 10 0template jupi_bark002 13 0template jupi_pebbly003 7 
++0template 2grandcan001 10 0template 2rough002 13 0template canyon001 7 
++0template canyon002 14 0template redgranite003 13 0template 2rough002 3 
++0template 4granite002 14 0template 2rough001 1 
++0template 2rough002 2 0template 4granite002 13 
++0template 2grandcan001 14 0template 2rough001 5 0template 4granite002 11 
++0template canyon001 14 0template 2grandcan001 13 0template 4granite001 3 
++0template canyon002 12 0template 4granite003 7 0template 2grandcan001 11 
++0template 2rough001 14 0template canyon003 13 0template 2grandcan001 3 
++0template canyon003 14 0template 2rough001 13 0template redgranite002 11 0template 2grandcan001 7 
++0template redgranite002 6 0template canyon002 13 0template 2grandcan001 11 
++0template 2grandcan001 14 0template 2rough002 9 0template redgranite001 7 
++0template redgranite002 12 0template 2rough001 7 0template canyon001 11 
++0template grandcan001 10 0template redgranite003 13 0template canyon003 7 
++0template 2grandcan001 14 0template grandcan001 13 0template Bdt001 11 0template canyon003 7 
++0template grandcan001 14 0template 2grandcan001 13 0template canyon002 11 0template Bdt001 7 
++0template machuwall_B003 10 0template grandcan001 13 0template canyon001 7 
++0template dark-grey/49 14 0template machuwall_B001 1 
++0template gbdirt001 14 0template dark-grey/49 13 0template 1granite001 11 0template machuwall_B002 7 
++0template 1granite001 6 0template gbdirt002 13 0template 2gbdirt002 11 
++0template dark-grey/49 14 0template 1granite001 9 0template 2gbdirt002 7 
++0template gbdirt_rocky001 14 0template dark-grey/49 9 0template 1granite001 7 
++0template dark-grey/49 2 0template gbdirt_rocky001 13 
++0template 1granite001 14 0template dark-grey/49 5 0template gbdirt_rocky001 11 
++0template romancobblestone 10 0template 1granite001 13 0template gbdirt_rocky001 7 
++0template romancobblestone 2 0template romanfloor002 13 
++0template jupi_soil002 14 0template romanfloor001 1 
++0template brown/20 14 0template jupi_soil003 9 0template romanfloor001 7 
++0template brown/05 14 0template brown/02 13 0template brown/20 3 
++0template brown/05 12 0template brown/20 7 0template brown/08 11 
++0template brown/20 14 0template brown/05 13 0template brown/12 11 0template brown/02 7 
++0template jupi_melty003 10 0template brown/09 5 
+jupi_melty002
++0template jupi_pebbly004 6 0template jupi_rocky005 13 0template jupi_soil003 11 
++0template jupi_pebbly001 8 0template jupi_soil001 7 
++0template grandcan001 14 0template 2rough002 9 0template redgranite003 7 
++0template 2grandcan001 14 0template canyon001 13 0template grandcan001 11 0template 2rough002 7 
++0template 2rough002 14 0template grandcan001 13 0template redgranite003 3 
++0template grandcan001 14 0template 2rough001 1 
++0template canyon002 6 0template 2grandcan001 13 0template redgranite003 11 
++0template 4granite002 14 0template 2rough001 13 0template grandcan001 11 0template 2grandcan001 7 
++0template 4granite002 12 0template grandcan001 3 
++0template 2grandcan001 10 0template 4granite001 13 0template grandcan001 7 
++0template 2rough001 12 0template redgranite003 7 0template canyon003 11 
++0template grandcan001 12 0template canyon003 7 0template 2rough001 11 
++0template Bdt001 10 0template canyon003 5 
++0template canyon002 10 0template Bdt001 5 
++0template grandcan001 14 0template canyon001 13 0template 2gbdirt001 11 0template 2rough001 7 
++0template canyon002 14 0template grandcan001 13 0template machuwall_B002 11 0template 2gbdirt002 7 
++0template machuwall_B003 2 0template canyon003 13 
++0template asphalt003 14 0template machuwall_B002 1 
++0template machuwall_B002 2 0template asphalt003 13 
++0template machuwall_B002 4 0template gbdirt_rocky001 11 
++0template 1granite001 14 0template machuwall_B003 13 0template gbdirt_rocky001 3 
++0template 2gbdirt002 14 0template 1granite001 13 0template gbdirt_rocky001 3 
++0template 1granite001 14 0template 2gbdirt001 9 0template gbdirt_rocky001 7 
++0template dark-grey/49 12 0template 1granite001 7 0template gbdirt_rocky001 11 
++0template gbdirt_rocky001 6 0template dark-grey/49 9 
++0template romancobblestone 14 0template gbdirt_rocky001 13 0template 1granite001 11 0template dark-grey/49 7 
++0template romancobblestone 4 0template romanfloor001 11 
++0template romanfloor001 2 0template romancobblestone 13 
++0template jupi_soil001 14 0template romanfloor001 13 0template greekfloor 3 
++0template brown/08 10 0template brown/20 13 0template brown/02 7 
++0template brown/02 10 0template brown/05 5 
++0template jupi_melty001 14 0template brown/09 13 0template brown/05 3 
++0template jupi_melty003 8 0template brown/05 7 
++0template jupi_soil002 6 0template jupi_pebbly002 9 
++0template jupi_pebbly004 2 0template jupi_soil002 13 
++0template jupi_bark001 14 0template jupi_rocky005 5 0template canyon001 11 
++0template canyon003 2 0template jupi_bark002 13 
++0template grandcan001 14 0template 2rough001 13 0template canyon003 11 0template redgranite001 7 
++0template grandcan001 12 0template canyon001 7 0template redgranite003 11 
++0template canyon001 14 0template grandcan001 13 0template redgranite002 11 0template 2rough002 7 
++0template grandcan001 14 0template 2grandcan001 5 0template 4granite001 11 
++0template grandcan001 12 0template 4granite003 7 0template 2grandcan001 11 
++0template redgranite002 14 0template canyon002 13 0template grandcan001 3 
++0template 2rough002 14 0template redgranite003 9 0template grandcan001 7 
++0template canyon001 14 0template grandcan001 5 0template 2grandcan001 11 
++0template canyon002 12 0template 2grandcan001 7 0template 2rough001 11 
++0template canyon001 12 0template 2rough001 7 0template Bdt001 11 
++0template canyon003 8 0template Bdt001 7 
++0template Bdt001 14 0template canyon002 5 0template 2rough001 11 
++0template canyon003 10 0template Bdt001 13 0template 2rough001 7 
++0template 2rough001 4 0template gbdirt002 11 
++0template 2rough001 12 0template gbdirt001 3 
++0template 2gbdirt001 10 0template 2rough001 13 0template gbdirt001 7 
++0template machuwall_B003 10 0template 2gbdirt001 5 
+machuwall_B003
+machuwall_B002
+machuwall_B001
++0template gbdirt_rocky001 10 0template machuwall_B003 5 
+gbdirt_rocky001
++0template 2gbdirt002 14 0template gbdirt_rocky001 1 
++0template 1granite001 14 0template 2gbdirt002 13 0template gbdirt001 11 0template gbdirt_rocky001 7 
++0template gbdirt_rocky001 14 0template 1granite001 9 0template gbdirt002 7 
++0template dark-grey/49 10 0template gbdirt_rocky001 13 0template 1granite001 7 
++0template 1granite001 14 0template dark-grey/49 1 
++0template brown/08 14 0template brown/02 5 0template brown/12 11 
++0template bdtdark001 14 0template brown/08 13 0template brown/05 11 0template brown/12 7 
++0template brown/02 12 0template brown/05 7 0template brown/12 11 
++0template brown/09 14 0template brown/02 13 0template brown/12 3 
++0template jupi_melty002 14 0template brown/05 13 0template brown/02 3 
++0template jupi_pebbly001 10 0template jupi_melty003 13 0template brown/02 7 
++0template jupi_rocky003 2 0template jupi_pebbly002 13 
++0template canyon002 10 0template jupi_rocky004 5 
++0template redgranite001 10 0template canyon003 13 0template grandcan001 7 
++0template 2rough001 6 0template grandcan001 13 0template canyon003 11 
++0template canyon002 10 0template redgranite003 13 0template 2grandcan001 7 
++0template 2grandcan001 14 0template redgranite001 5 0template 4granite002 11 
++0template 4granite003 2 0template 2grandcan001 13 
++0template 2grandcan001 10 0template 4granite002 5 
++0template redgranite001 14 0template 2rough002 13 0template 2grandcan001 11 0template grandcan001 7 
++0template Bdt001 14 0template 2rough001 1 
++0template canyon002 14 0template Bdt001 9 0template 2rough002 7 
++0template 2rough001 10 0template canyon001 13 0template Bdt001 7 
++0template canyon001 14 0template 2rough002 5 0template Bdt001 11 
++0template 2rough002 14 0template canyon001 13 0template Bdt001 3 
++0template 2rough001 12 0template Bdt001 3 
++0template gbdirt002 14 0template 2rough001 13 0template Bdt001 3 
++0template gbdirt002 8 0template Bdt001 7 
++0template 2gbdirt001 14 0template gbdirt001 5 0template gbdirt_grassy001 11 
++0template machuwall_B001 14 0template 2gbdirt002 9 0template gbdirt_grassy001 7 
++0template machuwall_B001 12 0template 2gbdirt001 3 
++0template machuwall_B003 12 0template 2gbdirt001 7 0template gbdirt_rocky001 11 
++0template gbdirt_rocky001 2 0template machuwall_B003 13 
++0template gbdirt_rocky001 4 0template 2gbdirt001 11 
++0template gbdirt_rocky001 8 0template 2gbdirt002 7 
++0template gbdirt_rocky001 4 0template gbdirt_grassy001 11 
++0template gbdirt001 14 0template gbdirt_rocky001 9 0template gbdirt_grassy001 7 
++0template 1granite001 14 0template gbdirt002 13 0template gbdirt_grassy001 11 0template gbdirt_rocky001 7 
++0template dark-grey/49 14 0template 1granite001 13 0template gbdirt_rocky001 11 0template gbdirt_grassy001 7 
++0template dark-grey/49 12 0template gbdirt_rocky001 3 
++0template romancobblestone 14 0template dark-grey/49 9 0template gbdirt_rocky001 7 
++0template romancobblestone 8 0template dark-grey/49 7 
++0template romanfloor001 12 0template romancobblestone 7 0template greekfloor 11 
++0template brown/12 14 0template brown/02 9 0template jupi_soil002 7 
++0template brown/05 10 0template brown/12 13 0template brown/02 7 
++0template brown/09 12 0template bdtdark001 7 0template brown/12 11 
++0template brown/05 14 0template brown/09 13 0template brown/12 3 
++0template brown/12 2 0template brown/05 13 
++0template brown/02 14 0template brown/08 5 0template brown/05 11 
++0template jupi_pebbly003 10 0template brown/02 13 0template brown/05 7 
++0template jupi_rocky004 14 0template jupi_pebbly004 9 0template jupi_soil002 7 
++0template canyon001 14 0template jupi_rocky005 5 0template jupi_bumpy002 11 
++0template 4granite003 14 0template redgranite003 5 0template 2grandcan001 11 
++0template 4granite003 12 0template 2grandcan001 3 
++0template 2grandcan001 2 0template 4granite002 13 
++0template 2grandcan001 14 0template grandcan001 9 0template canyon001 7 
++0template canyon001 14 0template redgranite003 13 0template 2grandcan001 3 
++0template 2rough001 6 0template grandcan001 13 0template redgranite002 11 
++0template Bdt001 10 0template 2rough001 5 
++0template 2rough001 14 0template Bdt001 1 
++0template Bdt001 6 0template 2rough002 9 
++0template Bdt001 12 0template 2rough002 3 
++0template Bdt001 8 0template 2rough001 7 
+Bdt001
++0template gbdirt001 14 0template Bdt001 5 0template 2french002 11 
++0template gbdirt_grassy001 10 0template gbdirt002 13 0template 2french004 7 
++0template 2gbdirt002 14 0template gbdirt_grassy001 1 
++0template 2gbdirt001 12 0template gbdirt_grassy001 3 
++0template gbdirt_rocky001 14 0template 2gbdirt001 13 0template 2french003 11 0template gbdirt_grassy001 7 
++0template gbdirt_rocky001 12 0template 2french004 3 
++0template 2gbdirt002 14 0template gbdirt_rocky001 13 0template 2french002 3 
++0template gbdirt_rocky001 14 0template 2gbdirt002 13 0template 2french004 3 
++0template gbdirt_grassy001 14 0template gbdirt_rocky001 13 0template 2french002 3 
++0template gbdirt_rocky001 14 0template gbdirt_grassy001 13 0template 2french003 3 
++0template gbdirt_grassy001 14 0template gbdirt_rocky001 9 0template 2french004 7 
++0template gbdirt_rocky001 2 0template gbdirt_grassy001 13 
++0template dark-grey/49 14 0template gbdirt_rocky001 13 0template 1granite001 11 0template gbdirt_grassy001 7 
++0template romancobblestone 14 0template dark-grey/49 9 0template 1granite001 7 
++0template brown/02 10 0template jupi_soil002 13 0template greekfloor 7 
++0template brown/08 14 0template brown/09 13 0template brown/12 11 0template bdtdark001 7 
++0template brown/05 14 0template brown/08 9 0template brown/09 7 
++0template jupi_pebbly004 10 0template brown/05 13 0template brown/08 7 
++0template jupi_pebbly002 6 0template jupi_soil001 13 0template jupi_rocky004 11 
++0template jupi_rocky004 6 0template jupi_pebbly004 13 0template jupi_bumpy003 11 
++0template jupi_bumpy001 2 0template jupi_rocky002 13 
++0template canyon003 14 0template 2rough002 13 0template 2grandcan001 11 0template redgranite003 7 
++0template redgranite001 12 0template canyon001 7 0template 2grandcan001 11 
++0template 2rough002 10 0template grandcan001 13 0template canyon001 7 
++0template canyon002 14 0template 2grandcan001 13 0template 2rough001 3 
++0template 2grandcan001 12 0template grandcan001 7 0template redgranite002 11 
++0template 2grandcan001 12 0template redgranite002 7 0template grandcan001 11 
++0template grandcan001 6 0template 2grandcan001 13 0template 2rough002 11 
++0template 2rough002 14 0template grandcan001 9 0template redgranite001 7 
++0template Bdt001 14 0template 2rough002 5 0template redgranite003 11 
++0template Bdt001 12 0template redgranite003 3 
++0template 2rough002 14 0template Bdt001 13 0template 1french003 11 0template redgranite003 7 
++0template 2rough001 12 0template 1french001 3 
++0template Bdt001 14 0template 2rough002 9 0template 1french003 7 
++0template 2french004 14 0template Bdt001 13 0template 2rough002 3 
++0template gbdirt_grassy001 14 0template 2french002 9 0template 2rough001 7 
++0template gbdirt_grassy001 12 0template 2french004 7 0template francelight003 11 
++0template gbdirt_grassy001 12 0template francelight002 3 
++0template 2french004 14 0template gbdirt_grassy001 13 0template francelight002 3 
++0template 2french004 12 0template francelight004 3 
++0template 2french002 12 0template francelight003 7 0template gbdirt_rocky001 11 
++0template 2french003 12 0template gbdirt_rocky001 3 
++0template gbdirt_rocky001 6 0template 2french001 13 0template francelight004 11 
++0template gbdirt_rocky001 12 0template francelight002 3 
++0template gbdirt_grassy001 10 0template gbdirt_rocky001 13 0template francelight003 7 
++0template 1granite001 14 0template gbdirt_grassy001 1 
++0template dark-grey/49 14 0template 1granite001 9 0template gbdirt_grassy001 7 
++0template romancobblestone 12 0template dark-grey/49 7 0template 1granite001 11 
++0template romanfloor002 14 0template romancobblestone 5 0template greekfloor 11 
++0template greekfloor 4 0template romanfloor001 11 
++0template brown/02 14 0template greekfloor 13 0template romanfloor001 3 
++0template brown/12 14 0template brown/02 9 0template romanfloor002 7 
++0template brown/08 12 0template brown/09 7 0template brown/20 11 
++0template brown/12 14 0template brown/08 13 0template brown/20 3 
++0template jupi_rocky003 6 0template jupi_pebbly001 9 
++0template jupi_bumpy001 4 0template 2rough002 11 
++0template canyon001 14 0template jupi_bumpy001 13 0template 2rough001 3 
++0template 2grandcan001 14 0template redgranite001 5 0template canyon003 11 
++0template grandcan001 10 0template redgranite001 13 0template 2rough002 7 
++0template canyon001 6 0template redgranite001 13 0template 2grandcan001 11 
++0template redgranite001 14 0template grandcan001 9 0template 2rough001 7 
++0template grandcan001 6 0template redgranite001 13 0template 2grandcan001 11 
++0template 2rough001 14 0template grandcan001 13 0template redgranite003 11 0template 2grandcan001 7 
++0template redgranite001 12 0template 2rough001 7 0template 1french004 11 
++0template 1french001 2 0template redgranite003 13 
+1french004
++0template 2rough001 14 0template 1french001 1 
++0template 2rough002 8 0template 1french002 7 
++0template 2french001 14 0template 2rough002 1 
++0template francelight002 14 0template 2french001 13 0template 2rough002 3 
++0template francelight004 12 0template 2rough001 3 
++0template francelight001 8 0template 2rough002 7 
+francelight001
+francelight002
++0template francelight002 4 0template gbdirt_rocky001 11 
++0template gbdirt_rocky001 6 0template francelight004 9 
++0template francelight001 2 0template gbdirt_rocky001 13 
++0template gbdirt_grassy001 14 0template francelight004 1 
++0template 1granite001 10 0template gbdirt_grassy001 13 0template francelight004 7 
++0template dark-grey/49 10 0template 1granite001 5 
++0template 1granite001 10 0template dark-grey/49 5 
++0template romancobblestone 14 0template 1granite001 5 0template dark-grey/49 11 
++0template romancobblestone 12 0template dark-grey/49 3 
++0template brown/02 14 0template romanfloor002 5 0template jupi_pebbly002 11 
++0template brown/02 12 0template jupi_pebbly002 7 0template brown/20 11 
++0template brown/09 14 0template brown/05 13 0template brown/12 11 0template brown/20 7 
++0template brown/20 10 0template brown/09 13 0template brown/12 7 
++0template brown/09 10 0template brown/20 13 0template brown/08 7 
++0template brown/08 14 0template brown/12 13 0template jupi_pebbly002 11 0template brown/09 7 
++0template brown/05 14 0template brown/08 13 0template jupi_pebbly004 3 
++0template jupi_pebbly004 6 0template jupi_rocky003 13 0template jupi_bumpy002 11 
++0template jupi_bumpy002 6 0template jupi_pebbly002 13 0template grandcan001 11 
++0template 2rough001 14 0template jupi_bumpy003 13 0template grandcan001 3 
++0template 2grandcan001 14 0template canyon002 13 0template redgranite002 3 
++0template redgranite003 10 0template 2grandcan001 13 0template grandcan001 7 
++0template 1french003 10 0template 2rough002 5 
+1french001
+1french002
++0template 2rough002 14 0template 1french004 5 0template 2french001 11 
++0template 2rough001 8 0template 2french004 7 
++0template 2rough001 4 0template francelight004 11 
++0template 2rough001 12 0template francelight001 3 
++0template francelight003 2 0template 2rough002 13 
+francelight003
++0template francelight001 4 0template 20bush002 11 
++0template francelight003 8 0template 20bush002 7 
+francelight004
++0template francelight002 4 0template gbdirt_grassy001 11 
++0template 1granite001 10 0template francelight004 13 0template gbdirt_grassy001 7 
++0template dark-grey/49 14 0template 1granite001 5 0template gbdirt_rocky001 11 
++0template 1granite001 14 0template dark-grey/49 9 0template gbdirt_rocky001 7 
++0template dark-grey/49 2 0template 1granite001 13 
+dark-grey/49
++0template romancobblestone 14 0template dark-grey/49 1 
++0template romanfloor002 2 0template greekfloor 13 
++0template jupi_pebbly003 14 0template romanfloor001 5 0template greekfloor 11 
++0template brown/20 14 0template jupi_pebbly004 13 0template brown/02 11 0template greekfloor 7 
++0template brown/20 12 0template brown/02 3 
++0template brown/20 14 0template brown/12 13 0template brown/05 11 0template brown/02 7 
++0template brown/08 10 0template brown/20 13 0template brown/05 7 
++0template jupi_pebbly003 12 0template jupi_rocky003 3 
++0template grandcan001 10 0template jupi_bumpy001 5 
++0template 2grandcan001 6 0template redgranite001 13 0template canyon003 11 
++0template redgranite003 14 0template grandcan001 5 0template 2rough002 11 
++0template 2grandcan001 14 0template canyon002 13 0template redgranite003 11 0template 2rough001 7 
++0template redgranite002 10 0template 2rough001 13 0template 2grandcan001 7 
++0template 2rough002 14 0template redgranite003 5 0template 1french003 11 
++0template 1french002 6 0template 2rough002 9 
++0template 1french001 12 0template 2rough002 3 
++0template 1french002 8 0template 2rough001 7 
+1french003
++0template 2french003 14 0template 1french001 1 
++0template 2rough002 10 0template 2french004 13 0template 1french004 7 
++0template francelight004 10 0template 2rough001 5 
++0template gbdirt_rocky001 10 0template francelight004 5 
++0template francelight004 10 0template gbdirt_rocky001 5 
++0template 20bush003 10 0template francelight002 5 
++0template francelight002 10 0template 20bush002 5 
++0template 1granite001 14 0template gbdirt_grassy001 13 0template 2french002 11 0template francelight002 7 
++0template gbdirt_rocky001 14 0template 1granite001 9 0template 2french001 7 
++0template romancobblestone 10 0template dark-grey/49 5 
++0template brown/02 10 0template greekfloor 5 
++0template brown/02 8 0template brown/20 7 
++0template brown/05 14 0template brown/02 1 
++0template brown/08 14 0template brown/05 13 0template brown/02 3 
++0template brown/08 12 0template brown/02 7 0template brown/05 11 
++0template jupi_pebbly001 14 0template brown/12 9 0template brown/05 7 
++0template jupi_rocky005 4 0template jupi_bumpy001 11 
++0template jupi_bumpy002 6 0template jupi_rocky004 13 0template canyon001 11 
++0template grandcan001 14 0template jupi_bumpy003 13 0template 2rough002 11 0template canyon003 7 
++0template 2grandcan001 14 0template grandcan001 13 0template 2rough001 3 
++0template 2rough001 14 0template canyon002 13 0template grandcan001 11 0template redgranite003 7 
++0template 2grandcan001 10 0template canyon002 13 0template redgranite002 7 
++0template redgranite003 14 0template 2rough001 5 0template 2grandcan001 11 
++0template 2grandcan001 14 0template redgranite003 9 0template 2rough002 7 
++0template 2rough002 14 0template grandcan001 9 0template canyon002 7 
++0template grandcan001 6 0template redgranite003 13 0template 2rough001 11 
++0template 2rough002 14 0template canyon001 13 0template 2grandcan001 11 0template grandcan001 7 
++0template redgranite001 6 0template 2rough001 13 0template 1french001 11 
++0template 2rough002 10 0template 1french002 5 
++0template 2rough001 4 0template 1french002 11 
++0template 1french003 2 0template 2rough001 13 
++0template francelight004 14 0template gbdirt_rocky001 5 0template 20bush003 11 
++0template francelight001 12 0template 20bush003 3 
++0template 20bush004 6 0template francelight003 9 
++0template francelight001 2 0template 20bush003 13 
++0template 2french001 10 0template francelight001 5 
++0template 1granite001 10 0template 2french003 5 
++0template gbdirt_rocky001 6 0template dark-grey/49 13 0template machuwall2 11 
++0template gbdirt_rocky001 8 0template machuwall2 7 
++0template dark-grey/49 14 0template gbdirt_rocky001 1 
++0template romancobblestone 14 0template dark-grey/49 13 0template gbdirt_rocky001 3 
++0template romancobblestone 8 0template gbdirt_rocky001 7 
++0template brown/02 14 0template greekfloor 5 0template jupi_pebbly004 11 
++0template brown/20 14 0template brown/02 9 0template jupi_pebbly001 7 
++0template brown/02 2 0template brown/20 13 
++0template brown/02 4 0template brown/08 11 
++0template brown/05 12 0template brown/02 7 0template brown/09 11 
++0template canyon002 2 0template jupi_bumpy002 13 
++0template 2grandcan001 14 0template 2rough001 5 0template redgranite001 11 
++0template grandcan001 6 0template 2rough002 13 0template bluegranite001 11 
++0template 2grandcan001 14 0template grandcan001 9 0template bluegranite002 7 
++0template 1french004 10 0template redgranite001 5 
++0template 1french004 4 0template 2rough002 11 
++0template 2rough002 2 0template 1french002 13 
++0template 2rough002 6 0template 1french003 13 0template 2french004 11 
++0template francelight001 14 0template 2rough001 9 0template 2french004 7 
++0template 20bush004 14 0template gbdirt_rocky001 13 0template francelight001 3 
++0template 20bush001 8 0template francelight001 7 
++0template francelight001 14 0template 20bush001 1 
++0template 2french002 10 0template francelight004 13 0template 20bush003 7 
++0template 1granite001 14 0template 2french003 1 
++0template machuwall2 14 0template gbdirt_rocky001 9 0template 1granite001 7 
++0template gbdirt_rocky001 2 0template machuwall2 13 
++0template gbdirt_rocky001 4 0template romancobblestone 11 
++0template gbdirt_rocky001 12 0template romancobblestone 3 
++0template romancobblestone 6 0template gbdirt_rocky001 9 
++0template romancobblestone 12 0template gbdirt_rocky001 3 
++0template romancobblestone 12 0template gbdirt_rocky001 7 0template romanfloor002 11 
++0template jupi_pebbly001 14 0template greekfloor 9 0template romanfloor002 7 
++0template brown/02 10 0template jupi_pebbly002 13 0template greekfloor 7 
++0template brown/08 14 0template brown/02 5 0template brown/09 11 
++0template brown/09 10 0template brown/02 13 0template brown/08 7 
++0template brown/12 12 0template brown/09 7 0template jupi_pebbly001 11 
++0template jupi_pebbly004 2 0template brown/12 13 
++0template jupi_rocky001 6 0template jupi_pebbly003 13 0template 2rough001 11 
++0template jupi_bumpy003 14 0template jupi_rocky001 13 0template canyon002 11 0template 2rough001 7 
++0template canyon002 6 0template jupi_bumpy002 13 0template grandcan001 11 
++0template canyon001 14 0template 2grandcan001 13 0template redgranite003 3 
++0template grandcan001 6 0template redgranite002 13 0template canyon003 11 
++0template bluegranite003 14 0template grandcan001 1 
++0template 2rough001 4 0template 2french002 11 
++0template 2french002 2 0template 2rough001 13 
++0template 2rough001 10 0template 2french002 5 
++0template 2french001 10 0template 20bush003 5 
+2french003
++0template 1granite001 14 0template 2french002 5 0template Gdt001 11 
++0template gbdirt_rocky001 14 0template 1granite001 13 0template Gdt001 3 
++0template gbdirt_rocky001 12 0template Gdt001 7 0template romancobblestone 11 
++0template romancobblestone 6 0template gbdirt_rocky001 13 0template bluegranite002 11 
++0template romancobblestone 8 0template bluegranite002 7 
++0template gbdirt_rocky001 10 0template romancobblestone 5 
++0template romanfloor001 14 0template gbdirt_rocky001 5 0template romancobblestone 11 
++0template brown/09 10 0template brown/02 5 
++0template brown/12 14 0template brown/09 5 0template brown/20 11 
++0template brown/08 14 0template brown/12 13 0template brown/09 11 0template brown/20 7 
++0template brown/02 14 0template brown/08 13 0template brown/05 11 0template brown/09 7 
++0template brown/09 12 0template brown/12 7 0template brown/20 11 
++0template jupi_pebbly003 10 0template brown/09 13 0template brown/20 7 
++0template jupi_rocky003 14 0template jupi_pebbly003 5 0template 2rough001 11 
++0template 2rough001 6 0template jupi_rocky002 13 0template grandcan001 11 
++0template canyon003 14 0template 2grandcan001 9 0template redgranite002 7 
++0template 2grandcan001 6 0template redgranite002 9 
++0template canyon002 14 0template 2grandcan001 13 0template grandcan001 11 0template redgranite002 7 
++0template redgranite002 4 0template 1french003 11 
++0template 2french004 10 0template 2rough001 5 
+2french004
++0template 20bush002 14 0template francelight002 1 
++0template 2french004 14 0template 20bush004 1 
++0template 2french002 8 0template 20bush002 7 
++0template Gdt001 14 0template 2french003 5 0template gbdirt_rocky001 11 
++0template Gdt001 12 0template gbdirt_rocky001 7 0template bluegranite003 11 
++0template romancobblestone 14 0template Gdt001 13 0template bluegranite003 3 
++0template bluegranite001 6 0template romancobblestone 9 
++0template romancobblestone 6 0template bluegranite002 13 0template gbdirt_rocky001 11 
++0template gbdirt_rocky001 2 0template romancobblestone 13 
++0template romancobblestone 14 0template gbdirt_rocky001 1 
++0template romanfloor002 14 0template romancobblestone 9 0template gbdirt_rocky001 7 
++0template brown/09 14 0template brown/02 9 0template brown/20 7 
++0template brown/20 10 0template brown/09 13 0template brown/02 7 
++0template brown/05 14 0template brown/09 13 0template brown/02 11 0template brown/12 7 
++0template brown/08 14 0template brown/05 13 0template brown/20 11 0template brown/02 7 
++0template brown/12 10 0template brown/08 13 0template brown/20 7 
++0template brown/20 10 0template brown/12 5 
++0template jupi_pebbly001 14 0template brown/20 5 0template 2rough001 11 
++0template jupi_pebbly001 8 0template 2rough001 7 
++0template grandcan001 14 0template 2rough001 9 0template canyon003 7 
++0template redgranite002 14 0template 2grandcan001 13 0template 2rough002 11 0template grandcan001 7 
++0template 2french004 4 0template 2rough002 11 
++0template 2rough002 6 0template 2french002 13 0template francelight004 11 
++0template 20bush002 2 0template francelight001 13 
++0template 20bush003 4 0template francelight003 11 
++0template 20bush002 12 0template francelight001 7 0template 2french001 11 
++0template 2french002 2 0template 20bush004 13 
++0template gbdirt_rocky001 14 0template 2french004 5 0template gbdirt_grassy001 11 
++0template bluegranite001 14 0template gbdirt_rocky001 9 0template gbdirt_grassy001 7 
++0template bluegranite001 12 0template gbdirt_rocky001 3 
++0template romancobblestone 14 0template bluegranite002 13 0template gbdirt_rocky001 3 
++0template gbdirt_rocky001 6 0template romancobblestone 13 0template 2gbdirt002 11 
++0template romanfloor002 10 0template romancobblestone 13 0template gbdirt_rocky001 7 
++0template brown/02 14 0template greekfloor 1 
++0template brown/20 10 0template brown/02 13 0template greekfloor 7 
++0template brown/12 14 0template brown/20 1 
++0template brown/02 10 0template brown/12 13 0template brown/20 7 
++0template brown/20 14 0template brown/02 5 0template 2grandcan001 11 
++0template brown/12 14 0template brown/20 13 0template canyon001 11 0template 2grandcan001 7 
++0template brown/20 14 0template brown/12 13 0template canyon002 3 
++0template 2rough001 10 0template brown/20 13 0template canyon001 7 
++0template jupi_pebbly002 14 0template 2rough002 1 
++0template canyon002 10 0template jupi_pebbly002 13 0template 2rough002 7 
++0template grandcan001 14 0template 2grandcan001 9 0template redgranite001 7 
++0template canyon001 14 0template grandcan001 9 0template 2rough001 7 
++0template redgranite001 14 0template canyon002 13 0template 2grandcan001 11 0template grandcan001 7 
++0template 1french002 4 0template francelight002 11 
++0template 1french001 12 0template francelight001 7 0template 2rough002 11 
++0template 2french003 14 0template 2rough001 5 0template francelight002 11 
++0template 2rough001 14 0template 2french003 13 0template francelight001 3 
++0template francelight004 6 0template 20bush001 9 
++0template 2french002 4 0template gbdirt_grassy001 11 
++0template gbdirt_grassy001 6 0template 2french004 13 0template gbdirt_rocky001 11 
++0template gbdirt_rocky001 12 0template 2gbdirt001 3 
++0template 2gbdirt002 6 0template gbdirt_rocky001 13 0template gbdirt001 11 
++0template gbdirt_rocky001 14 0template 2gbdirt001 13 0template gbdirt001 3 
++0template gbdirt_rocky001 8 0template gbdirt001 7 
++0template romanfloor002 14 0template gbdirt_rocky001 5 0template greekfloor 11 
++0template brown/02 14 0template brown/20 13 0template 2grandcan001 11 0template greekfloor 7 
++0template brown/20 14 0template brown/02 13 0template 2grandcan001 3 
++0template brown/20 12 0template 2grandcan001 3 
++0template brown/02 14 0template brown/20 13 0template 2grandcan001 3 
++0template 2grandcan001 2 0template brown/02 13 
++0template grandcan001 14 0template canyon002 5 0template redgranite003 11 
++0template francelight003 10 0template 1french003 5 
++0template 2rough002 14 0template francelight004 1 
++0template 2rough002 8 0template francelight002 7 
++0template 20bush001 12 0template francelight001 3 
++0template gbdirt_grassy001 14 0template 2french001 5 0template gbdirt_rocky001 11 
++0template gbdirt_rocky001 6 0template gbdirt_grassy001 13 0template 2gbdirt002 11 
++0template gbdirt_rocky001 12 0template 2gbdirt001 7 0template gbdirt002 11 
++0template 2gbdirt002 14 0template gbdirt_rocky001 13 0template 2rough002 11 0template gbdirt002 7 
++0template 2gbdirt002 12 0template 2rough001 7 0template 4granite001 11 
++0template gbdirt001 14 0template 2gbdirt001 13 0template 2rough002 11 0template 4granite002 7 
++0template gbdirt001 12 0template 2rough001 7 0template 1granite001 11 
++0template gbdirt_rocky001 14 0template gbdirt002 13 0template machuwall2 11 0template 1granite001 7 
++0template greekfloor 10 0template gbdirt_rocky001 5 
++0template 2grandcan001 14 0template greekfloor 5 0template grandcan001 11 
++0template 2rough001 10 0template francelight002 5 
++0template 2french004 14 0template francelight001 5 0template gbdirt_rocky001 11 
++0template gbdirt_rocky001 2 0template 2french002 13 
++0template 2gbdirt002 14 0template gbdirt_rocky001 5 0template gbdirt002 11 
++0template gbdirt001 6 0template 2gbdirt002 13 0template 2rough002 11 
++0template 2rough002 2 0template gbdirt001 13 
++0template 1granite001 10 0template 2rough002 5 
++0template machuwall2 14 0template 1granite001 5 0template 2gbdirt002 11 
++0template gbdirt_rocky001 10 0template machuwall2 13 0template 2gbdirt002 7 
++0template greekfloor 14 0template gbdirt_rocky001 1 
++0template greekfloor 8 0template gbdirt_rocky001 7 
++0template romanfloor002 12 0template greekfloor 7 0template 2grandcan001 11 
++0template greekfloor 14 0template romanfloor002 13 0template 2grandcan001 3 
++0template greekfloor 12 0template 2grandcan001 3 
++0template greekfloor 12 0template 2grandcan001 7 0template grandcan001 11 
++0template grandcan001 2 0template greekfloor 13 
++0template grandcan001 6 0template canyon003 13 0template redgranite001 11 
++0template canyon002 14 0template grandcan001 13 0template 2grandcan001 11 0template redgranite001 7 
++0template 2rough001 14 0template redgranite001 13 0template 2grandcan001 3 
++0template grandcan001 14 0template 2rough001 5 0template canyon001 11 
++0template redgranite003 14 0template 2rough002 13 0template grandcan001 11 0template canyon003 7 
++0template 1french004 10 0template redgranite002 13 0template grandcan001 7 
++0template francelight001 4 0template 2rough002 11 
++0template 2rough002 6 0template francelight004 9 
++0template francelight004 12 0template gbdirt_rocky001 3 
++0template gbdirt_rocky001 2 0template francelight002 13 
++0template gbdirt_rocky001 4 0template 2french003 11 
++0template gbdirt002 14 0template gbdirt_rocky001 13 0template gbdirt_grassy001 11 0template 2french004 7 
++0template 2rough001 14 0template gbdirt001 13 0template 1french003 11 0template gbdirt_grassy001 7 
++0template 2gbdirt002 10 0template 1granite001 5 
++0template gbdirt_rocky001 14 0template 2gbdirt002 5 0template machuwall2 11 
++0template gbdirt_rocky001 12 0template machuwall2 7 0template machuwall_L002 11 
++0template gbdirt_rocky001 12 0template machuwall_L001 3 
++0template greekfloor 14 0template gbdirt_rocky001 13 0template machuwall_L002 3 
++0template 2grandcan001 10 0template greekfloor 5 
++0template grandcan001 4 0template JJcanyon001 11 
++0template grandcan001 8 0template JJcanyon001 7 
++0template grandcan001 12 0template 2grandcan001 7 0template redgranite002 11 
++0template redgranite002 6 0template grandcan001 13 0template 2grandcan001 11 
++0template redgranite003 6 0template grandcan001 9 
++0template 1french001 14 0template grandcan001 1 
++0template 2rough002 10 0template 1french001 13 0template grandcan001 7 
++0template francelight003 14 0template 1french003 5 0template 2rough002 11 
++0template francelight002 4 0template 2french001 11 
++0template francelight001 12 0template 2french001 3 
++0template gbdirt_rocky001 10 0template francelight002 13 0template 2french003 7 
++0template 2french002 2 0template gbdirt_rocky001 13 
++0template gbdirt_grassy001 14 0template 2french004 5 0template 1french001 11 
++0template 1french004 2 0template gbdirt_grassy001 13 
++0template 2gbdirt001 14 0template 1granite001 5 0template machuwall_R003 11 
++0template machuwall2 14 0template 2gbdirt002 13 0template machuwall_R003 3 
++0template machuwall_L001 10 0template machuwall2 13 0template machuwall_R002 7 
+machuwall_L002
+machuwall_L001
++0template 2grandcan001 10 0template greekfloor 13 0template JJcanyon001 7 
++0template JJcanyon001 14 0template grandcan001 13 0template canyon002 11 0template 2grandcan001 7 
++0template grandcan001 10 0template JJcanyon001 13 0template canyon001 7 
++0template 2grandcan001 14 0template grandcan001 13 0template redgranite002 3 
++0template grandcan001 6 0template 2grandcan001 9 
++0template 2grandcan001 6 0template grandcan001 13 0template redgranite001 11 
++0template grandcan001 4 0template 1french002 11 
++0template 2rough002 10 0template grandcan001 13 0template 1french002 7 
++0template 1french002 4 0template 2french003 11 
++0template 1french001 12 0template 2french003 3 
++0template 2rough002 14 0template 1french003 13 0template francelight001 11 0template 2french004 7 
++0template gbdirt_rocky001 4 0template francelight004 11 
++0template 2french001 14 0template francelight003 1 
++0template 2french004 10 0template gbdirt_rocky001 5 
+2french001
++0template 1french003 10 0template 2french003 5 
++0template machuwall_R001 10 0template 1granite001 5 
+machuwall_R001
++0template 2grandcan001 14 0template JJcanyon001 13 0template 2rough001 11 0template machuwall_L002 7 
++0template canyon002 14 0template 2grandcan001 5 0template grandcan001 11 
++0template 1french002 10 0template grandcan001 5 
++0template 2french002 10 0template 1french002 5 
++0template francelight001 10 0template 2french004 5 
+2french002
+machuwall_R002
+machuwall_R003
++0template 2rough001 10 0template machuwall_L002 5 
++0template 2grandcan001 14 0template canyon002 13 0template grandcan001 3 
++0template 2grandcan001 14 0template redgranite002 13 0template grandcan001 11 0template 2rough001 7 
++0template 2grandcan001 14 0template redgranite003 5 0template 2rough001 11 
++0template gbdirt_rocky001 10 0template 2french003 13 0template francelight001 7 
++0template 2french004 4 0template 1french002 11 
++0template 1french004 2 0template 2french001 13 
++0template machuwall_L003 12 0template machuwall_B003 7 0template JJcanyon001 11 
++0template 2rough001 14 0template machuwall_L002 13 0template 2grandcan001 11 0template JJcanyon001 7 
++0template grandcan001 6 0template canyon003 13 0template JJcanyon001 11 
++0template redgranite002 10 0template grandcan001 13 0template JJcanyon001 7 
++0template redgranite003 6 0template 2rough002 13 0template grandcan001 11 
++0template 2rough001 10 0template redgranite003 13 0template grandcan001 7 
++0template 1french003 14 0template grandcan001 5 0template 2rough001 11 
++0template gbdirt_rocky001 6 0template francelight003 13 0template gbdirt_grassy001 11 
++0template francelight001 10 0template gbdirt_rocky001 13 0template gbdirt_grassy001 7 
++0template machuwall_R003 14 0template 1granite001 1 
++0template machuwall_R003 12 0template 1granite001 3 
++0template green-brown/16-greenbrown 14 0template machuwall_R001 13 0template 1granite001 3 
++0template green-brown/16-greenbrown 12 0template 1granite001 3 
++0template machuwall_B002 14 0template green-brown/16-greenbrown 13 0template 1granite001 3 
++0template JJcanyon001 14 0template machuwall_B001 13 0template 2rough002 11 0template 1granite001 7 
++0template 2grandcan001 14 0template JJcanyon001 13 0template redgranite003 11 0template 2rough002 7 
++0template grandcan001 14 0template canyon003 9 0template 2grandcan001 7 
++0template redgranite001 10 0template JJcanyon001 13 0template grandcan001 7 
++0template redgranite001 6 0template 2grandcan001 13 0template 2rough001 11 
++0template 2grandcan001 6 0template grandcan001 9 
++0template gbdirt_grassy001 6 0template gbdirt_rocky001 13 0template francelight003 11 
++0template francelight001 2 0template gbdirt_grassy001 13 
++0template 1granite001 4 0template 2rough002 11 
++0template 1granite001 12 0template 2rough002 3 
++0template 2rough002 2 0template 1granite001 13 
++0template redgranite003 14 0template grandcan001 5 0template canyon002 11 
++0template 1french002 14 0template 2rough001 5 0template france001 11 
++0template 1french003 12 0template france003 7 0template 2french001 11 
++0template 2french001 2 0template 1french002 13 
++0template gbdirt_grassy001 14 0template gbdirt_rocky001 5 0template francelight003 11 
++0template 1granite001 14 0template 2rough001 1 
++0template 1granite001 8 0template 2rough001 7 
++0template 2rough001 14 0template 1granite001 1 
++0template 2rough001 12 0template 1granite001 3 
++0template 2rough001 8 0template 1granite001 7 
++0template canyon002 6 0template grandcan001 13 0template redgranite003 11 
++0template france003 10 0template 2rough002 5 
++0template 2french003 10 0template france002 5 
++0template francelight002 14 0template 2french002 5 0template gbdirt_rocky001 11 
++0template 2french001 10 0template gbdirt_rocky001 13 0template francelight002 7 
++0template redgranite001 10 0template 2rough001 13 0template 1granite001 7 
++0template redgranite002 14 0template canyon002 5 0template grandcan001 11 
++0template redgranite002 14 0template 2rough002 13 0template 2grandcan001 3 
++0template canyon003 14 0template redgranite003 13 0template grandcan001 11 0template 2grandcan001 7 
++0template 2rough001 4 0template france003 11 
++0template france002 2 0template 2rough001 13 
++0template 2french004 4 0template francelight001 11 
++0template 1granite001 14 0template 2rough001 5 0template redgranite002 11 
++0template 1granite001 8 0template redgranite001 7 
++0template redgranite002 14 0template 1granite001 5 0template machuwall_B002 11 
++0template redgranite001 12 0template machuwall_B002 3 
++0template canyon002 14 0template redgranite002 13 0template machuwall_B003 3 
++0template canyon003 12 0template machuwall_B002 3 
++0template grandcan001 14 0template canyon001 13 0template redgranite002 11 0template machuwall_B002 7 
++0template grandcan001 10 0template redgranite001 13 0template 2grandcan001 7 
+france003
++0template 1granite001 14 0template redgranite003 1 
++0template 1granite001 4 0template machuwall_B002 11 
++0template machuwall_B001 2 0template 1granite001 13 
++0template redgranite001 14 0template machuwall_B003 1 
++0template redgranite003 8 0template machuwall_B003 7 
++0template canyon001 6 0template grandcan001 13 0template 2grandcan001 11 
++0template redgranite001 14 0template 2rough002 9 0template canyon001 7 
+france002
+france001
++0template francelight003 14 0template gbdirt_rocky001 13 0template 2french002 3 
++0template 20bush001 14 0template francelight002 13 0template 2french003 3 
++0template francelight002 10 0template 20bush003 13 0template 2french002 7 
++0template francelight004 8 0template 2french002 7 
++0template francelight002 12 0template 2french002 7 0template gbdirt_rocky001 11 
++0template gbdirt_rocky001 6 0template francelight002 13 0template 2french004 11 
++0template 2french001 2 0template francelight001 13 
++0template 1granite001 12 0template redgranite003 3 
++0template machuwall_B002 14 0template 1granite001 1 
++0template machuwall_B002 12 0template 1granite001 3 
++0template machuwall_B003 8 0template 1granite001 7 
++0template redgranite001 10 0template machuwall_B003 5 
++0template 2rough002 14 0template redgranite002 9 0template 2grandcan001 7 
++0template france003 14 0template 2rough002 13 0template 1french001 3 
++0template france003 12 0template 1french001 3 
++0template 2french001 14 0template france002 13 0template 1french004 3 
++0template 2french001 12 0template 1french001 3 
++0template francelight002 10 0template 2french002 13 0template 1french003 7 
++0template 2french003 8 0template francelight004 7 
++0template francelight002 14 0template 2french004 1 
++0template francelight004 12 0template 2french003 7 0template 2grandcan001 11 
++0template 2french003 10 0template francelight004 13 0template 2grandcan001 7 
++0template francelight002 6 0template 2french004 9 
++0template 2french002 4 0template gbdirt_rocky001 11 
++0template gbdirt_rocky001 6 0template 2french003 9 
++0template 1granite001 12 0template redgranite001 7 0template 2grandcan001 11 
++0template machuwall_B001 14 0template 1granite001 13 0template redgranite001 11 0template 2grandcan001 7 
++0template machuwall_B003 12 0template redgranite002 3 
++0template redgranite001 2 0template machuwall_B003 13 
++0template 2grandcan001 12 0template redgranite002 7 0template canyon001 11 
++0template redgranite001 14 0template 2grandcan001 13 0template canyon001 11 0template grandcan001 7 
++0template 1french002 14 0template 2rough002 13 0template france002 3 
++0template 1french004 8 0template france002 7 
++0template 2french004 14 0template gbdirt_rocky001 5 0template francelight001 11 
++0template 2grandcan001 14 0template 2french002 1 
++0template 2french001 2 0template 2grandcan001 13 
++0template redgranite002 12 0template 2grandcan001 7 0template canyon003 11 
++0template france002 4 0template 1french004 11 
++0template 1french001 2 0template france003 13 
++0template francelight001 14 0template gbdirt_rocky001 5 0template gbdirt_grassy001 11 
++0template 2french003 14 0template francelight002 9 0template gbdirt_grassy001 7 
++0template 2french002 12 0template gbdirt_grassy001 7 0template gbdirt002 11 
++0template 2french003 12 0template gbdirt001 7 0template gbdirt_rocky001 11 
++0template 1french003 10 0template france001 5 
++0template francelight004 6 0template 1french002 13 0template gbdirt_rocky001 11 
++0template gbdirt_grassy001 14 0template gbdirt_rocky001 1 
++0template francelight002 10 0template gbdirt_grassy001 13 0template gbdirt_rocky001 7 
++0template gbdirt_grassy001 14 0template 2french003 13 0template gbdirt_rocky001 3 
++0template gbdirt001 14 0template gbdirt_grassy001 13 0template gbdirt_rocky001 3 
++0template gbdirt_rocky001 6 0template gbdirt001 13 0template 2french004 11 
++0template 1french001 6 0template 2french002 9 
++0template 1french004 8 0template 2french002 7 
++0template france003 14 0template 2rough001 5 0template francelight002 11 
++0template france003 12 0template francelight001 3 
++0template 1french001 10 0template france003 13 0template francelight001 7 
++0template 1french003 12 0template francelight003 3 
++0template francelight002 2 0template 1french003 13 
++0template 2french002 14 0template francelight003 13 0template gbdirt_rocky001 11 0template gbdirt_grassy001 7 
++0template 1french001 6 0template 2french002 13 0template 2rough002 11 
++0template grandcan001 12 0template 2rough002 7 0template 2grandcan001 11 
++0template 2rough001 10 0template grandcan001 13 0template 2grandcan001 7 
++0template francelight001 10 0template 2rough001 13 0template france003 7 
++0template 1french001 10 0template francelight002 5 
++0template gbdirt_grassy001 14 0template francelight004 5 0template gbdirt_rocky001 11 
++0template gbdirt_rocky001 6 0template gbdirt_grassy001 13 0template 2french003 11 
++0template francelight004 10 0template france001 5 
++0template gbdirt_rocky001 8 0template francelight001 7 
++0template francelight003 14 0template gbdirt_rocky001 1 
++0template grandcan001 8 0template redgranite002 7 
++0template grandcan001 6 0template canyon002 13 0template 2grandcan001 11 
++0template gbdirt_rocky001 12 0template francelight002 7 0template 1french001 11 
++0template gbdirt_rocky001 12 0template 1french004 3 
++0template gbdirt_rocky001 12 0template 1french002 7 0template 2french004 11 
++0template canyon003 14 0template grandcan001 9 0template 2grandcan001 7 
++0template francelight002 14 0template france003 5 0template 1french002 11 
++0template francelight001 12 0template 1french002 3 
++0template 1french001 2 0template francelight001 13 
++0template francelight001 4 0template 1french004 11 
++0template 1french003 14 0template 2french002 5 0template 2rough001 11 
++0template francelight002 10 0template gbdirt_grassy001 5 
++0template 2french003 12 0template 1french003 7 0template 2rough002 11 
++0template 2french003 12 0template 2rough002 3 
++0template 2rough002 2 0template 2french004 13 
++0template canyon003 12 0template grandcan001 7 0template redgranite003 11 
++0template grandcan001 14 0template canyon002 13 0template 2rough001 3 
++0template francelight001 6 0template gbdirt_grassy001 13 0template 1french001 11 
++0template francelight004 14 0template 1french002 1 
++0template gbdirt_rocky001 10 0template francelight004 13 0template 1french004 7 
++0template 1french004 14 0template francelight003 9 0template gbdirt_rocky001 7 
++0template 1french003 8 0template francelight001 7 
++0template gbdirt_rocky001 14 0template 1french003 5 0template francelight001 11 
++0template grandcan001 14 0template canyon002 13 0template redgranite001 11 0template 2grandcan001 7 
++0template canyon002 6 0template 2rough002 13 0template redgranite001 11 
++0template redgranite001 6 0template 2grandcan001 13 0template grandcan001 11 
++0template gbdirt_rocky001 10 0template francelight004 13 0template gbdirt_grassy001 7 
++0template redgranite001 14 0template grandcan001 13 0template 2grandcan001 11 0template canyon002 7 
++0template 2grandcan001 6 0template canyon001 13 0template 2rough002 11 
++0template gbdirt_grassy001 14 0template francelight004 5 0template 1french002 11 
++0template gbdirt_rocky001 10 0template gbdirt_grassy001 13 0template 1french001 7 
++0template 1french003 14 0template francelight004 13 0template gbdirt_rocky001 3 
++0template gbdirt_rocky001 2 0template 1french001 13 
++0template francelight002 14 0template gbdirt_rocky001 5 0template 1french004 11 
++0template redgranite003 12 0template grandcan001 7 0template 2grandcan001 11 
++0template 1french003 10 0template 2rough001 13 0template france002 7 
++0template 1french003 10 0template gbdirt_rocky001 13 0template francelight004 7 
++0template 2grandcan001 12 0template canyon003 7 0template redgranite003 11 
++0template francelight004 6 0template 1french003 13 0template gbdirt_grassy001 11 
++0template gbdirt_grassy001 6 0template francelight003 13 0template gbdirt_rocky001 11 
++0template gbdirt_rocky001 6 0template gbdirt_grassy001 13 0template francelight002 11 
++0template francelight002 6 0template gbdirt_rocky001 13 0template 1french001 11 
++0template 2grandcan001 14 0template canyon003 9 0template grandcan001 7 
++0template gbdirt_grassy001 14 0template francelight002 9 0template 1french004 7 
++0template gbdirt_rocky001 10 0template gbdirt_grassy001 13 0template francelight004 7 
++0template redgranite003 6 0template canyon003 9 
++0template redgranite003 14 0template canyon003 13 0template 2rough002 11 0template grandcan001 7 
++0template 2grandcan001 14 0template canyon003 9 0template redgranite003 7 
++0template 2rough001 10 0template grandcan001 13 0template redgranite003 7 
++0template francelight003 14 0template 2rough001 5 0template 1french004 11 
++0template gbdirt_grassy001 14 0template francelight004 13 0template gbdirt_rocky001 3 
++0template 2rough001 10 0template 1french002 13 0template francelight002 7 
++0template grandcan001 14 0template redgranite002 9 0template 2rough002 7 
++0template redgranite001 12 0template 2grandcan001 7 0template grandcan001 11 
++0template francelight002 8 0template gbdirt_rocky001 7 
++0template 1french001 14 0template francelight002 1 
++0template gbdirt_rocky001 14 0template francelight002 9 0template 1french004 7 
++0template gbdirt_rocky001 12 0template francelight001 7 0template gbdirt_grassy001 11 
++0template francelight002 14 0template gbdirt_rocky001 9 0template gbdirt_grassy001 7 
++0template francelight002 8 0template gbdirt_grassy001 7 
++0template 2grandcan001 6 0template canyon003 13 0template grandcan001 11 
++0template 2rough001 6 0template francelight002 13 0template 2grandcan001 11 
++0template 2grandcan001 6 0template grandcan001 13 0template canyon002 11 
++0template 2grandcan001 6 0template 2rough002 13 0template redgranite001 11 
++0template 2rough002 2 0template francelight001 13 
++0template 2grandcan001 12 0template canyon002 7 0template 2rough002 11 
++0template canyon001 14 0template 2rough001 5 0template grandcan001 11 
++0template 1french003 14 0template redgranite003 1 
++0template 1french002 8 0template redgranite003 7 
++0template redgranite001 6 0template 2rough002 13 0template 2grandcan001 11 
++0template 1french001 14 0template redgranite002 5 0template france003 11 
++0template 2rough001 14 0template redgranite001 13 0template grandcan001 11 0template 2grandcan001 7 
++0template redgranite002 14 0template 2grandcan001 13 0template grandcan001 11 0template canyon003 7 
++0template redgranite001 4 0template france003 11 
++0template france002 2 0template redgranite001 13 
++0template francelight001 12 0template 1french004 7 0template gbdirt_rocky001 11 
++0template 2rough001 14 0template canyon003 9 0template redgranite001 7 
++0template france003 10 0template redgranite002 5 
++0template 1french001 12 0template francelight004 7 0template gbdirt_rocky001 11 
++0template gbdirt_rocky001 6 0template 1french001 13 0template francelight004 11 
++0template 2grandcan001 14 0template redgranite002 13 0template grandcan001 3 
++0template grandcan001 12 0template redgranite002 7 0template 2grandcan001 11 
++0template redgranite002 14 0template canyon002 13 0template 2grandcan001 3 
++0template redgranite002 14 0template grandcan001 13 0template 2grandcan001 11 0template 2rough001 7 
++0template redgranite003 14 0template 2grandcan001 13 0template grandcan001 3 
++0template france003 4 0template canyon003 11 
++0template 1french001 10 0template france001 13 0template canyon003 7 
++0template grandcan001 14 0template 2rough002 13 0template redgranite001 11 0template 2grandcan001 7 
++0template france002 14 0template redgranite003 5 0template grandcan001 11 
++0template canyon001 10 0template france001 13 0template grandcan001 7 
++0template 1french001 10 0template canyon003 5 
++0template 2grandcan001 14 0template grandcan001 5 0template 2rough002 11 
++0template 2grandcan001 14 0template 2rough002 13 0template canyon001 3 
++0template grandcan001 14 0template 2grandcan001 9 0template canyon003 7 
++0template 2rough001 6 0template grandcan001 13 0template 2grandcan001 11 
++0template grandcan001 10 0template 2grandcan001 13 0template redgranite001 7 
++0template 2rough001 6 0template 2grandcan001 13 0template redgranite001 11 
++0template 2grandcan001 14 0template grandcan001 9 0template 2rough001 7 
++0template 2grandcan001 6 0template 2rough002 13 0template canyon003 11 
++0template grandcan001 14 0template 2rough002 13 0template 2grandcan001 11 0template redgranite003 7 
++0template 1french003 14 0template canyon001 13 0template redgranite002 3 
++0template 1french002 12 0template redgranite002 7 0template green/09 11 
++0template 1french001 12 0template green/09 3 
++0template francelight001 14 0template 1french003 13 0template gbdirt_grassy001 11 0template green/09 7 
++0template 1french004 14 0template francelight004 13 0template green/09 11 0template gbdirt_grassy001 7 
++0template 2rough001 10 0template 1french001 13 0template green/09 7 

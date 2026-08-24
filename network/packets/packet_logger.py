@@ -3,27 +3,89 @@ from __future__ import annotations
 import struct
 from typing import Optional, Tuple
 
+
+# Canonical application packet names come from the client's
+# NetDebug_PopulatePacketHistogram table in wulfram2.exe.  The D_* entries are
+# transport-control packets registered by the lower-level datagram protocol.
+PACKET_NAMES: dict[int, str] = {
+    0x02: "D_ACK",
+    0x03: "D_HANDSHAKE",
+    0x04: "D_SET_START",
+    0x08: "ROOT",
+    0x09: "ACTION_DUMP",
+    0x0A: "ACTION_UPDATE",
+    0x0B: "PING_REQUEST",
+    0x0C: "PING",
+    0x0D: "TRANSIENT_ARRAY",
+    0x0E: "UPDATE_ARRAY",
+    0x0F: "VIEW_UPDATE",
+    0x10: "ACK1",
+    0x11: "HUD_MESSAGE",
+    0x12: "LAG_FIX",
+    0x13: "HELLO",
+    0x14: "HIDE_OBJECT",
+    0x15: "DELETE_OBJECT",
+    0x16: "WORLD_STATS",
+    0x17: "PLAYER",
+    0x18: "TANK",
+    0x19: "TANK_RESEND_REQUEST",
+    0x1A: "ADD_TO_ROSTER",
+    0x1B: "REMOVE_FROM_ROSTER",
+    0x1C: "UPDATE_STATS",
+    0x1D: "DEATH_NOTICE",
+    0x1E: "BIRTH_NOTICE",
+    0x1F: "COMM_MESSAGE",
+    0x20: "COMM_MESSAGE_REQUEST",
+    0x21: "LOGIN",
+    0x22: "LOGIN_STATUS",
+    0x23: "MOTD",
+    0x24: "BEHAVIOR",
+    0x25: "REINCARNATE",
+    0x26: "RETARGET",
+    0x27: "SHIP_STATUS",
+    0x28: "TEAM_INFO",
+    0x29: "CARRYING_INFO",
+    0x2A: "UPLINK_INFO",
+    0x2B: "DROP_REQUEST",
+    0x2C: "SPACE_MAP_UPDATE",
+    0x2D: "SUPPLY_SHIP_INFO",
+    0x2E: "WEAPON_DEMAND",
+    0x2F: "GAME_CLOCK",
+    0x30: "WARP_STATUS",
+    0x31: "CONTINUOUS_SOUND",
+    0x32: "TRANSLATION",
+    0x33: "ACK2",
+    0x34: "MODEM",
+    0x35: "VIEWPOINT_INFO",
+    0x36: "STRING_VALUE",
+    0x37: "VERSION_ERROR",
+    0x38: "DOCKING",
+    0x39: "WANT_UPDATES",
+    0x3A: "BEACON_REQUEST",
+    0x3B: "BEACON_MODIFY",
+    0x3C: "BEACON_STATUS",
+    0x3D: "BEACON_DELETE",
+    0x3E: "LOAD_STATUS",
+    0x40: "KEEP_ALIVE",
+    0x4C: "ROUTING_PING",
+    0x4D: "ID_UDP",
+    0x4E: "BPS_REQUEST",
+    # Added after the older histogram table. Net_SendWantVoiceData uses this
+    # generic key/value envelope for the "want_voice_data" request.
+    0x54: "GENERIC",
+    0x55: "DEBUG_COORDS",
+}
+
+
+def packet_name(opcode: int) -> Optional[str]:
+    """Return the reverse-engineered name for an opcode, if known."""
+    return PACKET_NAMES.get(opcode)
+
+
 class PacketLogger:
     def __init__(self):
-        # Map IDs to Readable Names
-        self.packet_names = {
-            0x02: "D_ACK",
-            0x03: "D_HANDSHAKE",
-            0x08: "HELLO_ACK",
-            0x09: "ACTION_DUMP",
-            0x0A: "ACTION_UPDATE",
-            0x0B: "PING_REQUEST",
-            0x13: "HELLO",
-            0x1F: "COMM_MESSAGE",
-            0x20: "COMM_REQ",
-            0x21: "LOGIN_REQ",
-            0x24: "BEHAVIOR",
-            0x33: "ACK2",
-            0x40: "KEEP_ALIVE",
-            0x4C: "ROUTING_PING",
-            0x4D: "ID_UDP",
-            0x4E: "BPS_REQUEST",
-        }
+        # Keep the public attribute for compatibility with existing tooling.
+        self.packet_names = PACKET_NAMES.copy()
 
     # ---------------------------
     # New API (matches my log_packet)

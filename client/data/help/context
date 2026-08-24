@@ -1,0 +1,46 @@
+
+
+low_fuel 10.0 5.0
+
+  Your Hovertank is low on fuel! 
+  Fuel does regenerate slowly when you keep your fuel consumption down.
+  Fuel will regenerate quicker if you land your tank.
+  Either slow down for a while, or find the closest fuel pad and refuel there.  
+  You can target your closest fuel pad with <target_closest_fuel>.
+{end}
+
+
+
+low_health 50.0 2.5
+
+  Your Hovertank is heavily damaged!
+  Health does regenerate slowly, but you probably want to repair at a base.
+  Find the closest repair pad with <target_closest_repair>.
+  Or land and your health will regenerate at a slightly higher than normal rate.	
+{end}
+
+
+cargo_pickup_fail 25.0 5.0
+
+  You can only carry one thing at a time!
+  You could ask somebody else to pick it up for you while you guard it.
+{end}
+
+uplink_pickup_fail_tournament 25.0 5.0
+
+  Can't pickup enemy Uplink when game isn't in tournament mode.
+{end}
+
+
+non_base_cargo_close_and_not_carrying 15.0 5.0
+
+  There is a cargo nearby!  Target it with <target_closest_cargo>.
+  You can pick it up by touching it.
+{end}
+
+
+near_unpowered_units 20.0 5.0
+
+  Hey look!  Neutral units.  
+  You can take these over by deploying an energy unit into their vicinity.
+{end}

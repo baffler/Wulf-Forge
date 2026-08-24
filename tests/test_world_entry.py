@@ -1,6 +1,7 @@
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from core.entity_manager import EntityManager
 from core.map_loader import (
@@ -15,7 +16,7 @@ from network.packets.player import (
     UpdateStatsPacket,
     parse_reincarnate_request,
 )
-from network.streams import PacketWriter
+from network.streams import PacketReader, PacketWriter
 
 
 def read_u16(data: bytes, offset: int) -> tuple[int, int]:
@@ -107,6 +108,23 @@ class WorldEntryProtocolTests(unittest.TestCase):
 
 
 class MapBootstrapTests(unittest.TestCase):
+    def test_map_lookup_uses_bundled_client_with_shared_override_precedence(self):
+        import main
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            shared_maps = root / "shared" / "data" / "maps"
+            client_maps = root / "client" / "data" / "maps"
+            bundled_map = client_maps / "crossroads"
+            bundled_map.mkdir(parents=True)
+
+            with patch.object(main, "MAP_DATA_ROOTS", (shared_maps, client_maps)):
+                self.assertEqual(Path(main._get_map_dir_path("crossroads")), bundled_map)
+
+                shared_map = shared_maps / "crossroads"
+                shared_map.mkdir(parents=True)
+                self.assertEqual(Path(main._get_map_dir_path("crossroads")), shared_map)
+
     def test_ensure_team_repair_pads_uses_land_height_for_empty_map(self):
         with tempfile.TemporaryDirectory() as tmp:
             map_dir = Path(tmp)
@@ -176,6 +194,7 @@ class SpawnHandlerTests(unittest.TestCase):
         session = type("Session", (), {})()
         session.player_id = 1
         session.team = 1
+        session.unit_type = 0
         session.entity = None
         session.is_logged_in = True
         session.name = "Pilot"
@@ -269,6 +288,42 @@ class SpawnHandlerTests(unittest.TestCase):
         self.assertIsNotNone(session.entity)
         self.assertEqual(session.entity.pos, selected_pad.pos)
         self.assertEqual(session.entity.unit_type, server.packet_cfg.tank.unit_type)
+
+    def test_spawn_request_uses_selected_scout_vehicle_type(self):
+        main, server, session, ctx = self._make_spawn_context()
+        session.unit_type = 1
+
+        selected_pad = server.entities.create_entity(
+            unit_type=REPAIR_PAD_UNIT_TYPE,
+            team_id=1,
+            pos=(400.0, 500.0, 90.0),
+            override_net_id=56,
+        )
+        selected_pad.is_manned = False
+
+        writer = PacketWriter()
+        writer.write_byte(0x25)
+        writer.write_int16(4)
+        writer.write_int16(17)
+        writer.write_byte(0)
+        writer.write_int32(selected_pad.net_id)
+        writer.write_int32(0)
+        writer.write_int32(2000)
+        writer.write_int32(700)
+
+        main.on_reincarnate(ctx, writer.get_bytes())
+
+        self.assertIsNotNone(session.entity)
+        self.assertEqual(session.entity.unit_type, 1)
+
+        vehicle_packet = next(payload for payload in ctx.sent if payload[0] == 0x18)
+        reader = PacketReader(vehicle_packet[1:])
+        reader.read_int32()
+        self.assertEqual(reader.read_bits(1), 1)
+        reader.read_bits(5)
+        reader.read_bits(10)
+        reader.read_bits(10)
+        self.assertEqual(reader.read_int32(), 1)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,119 @@
+
+Welcome to ShockForce!
+
+Hit <help_screen> for a complete help list.
+There is not yet a manual available.
+Hit F2 to change your view (cockpit, follow, and outside).
+Hit f3 to toggle between short range and long range radar and map.
+
+Use <general_tank_movement> to move your tank.
+Hit <autocannon_fire> to fire your autocannon.
+Use <lower_jet_strength> and <raise_jet_strength> to lower and raise your altitude.
+Land by lowering the jet strength to zero.
+Also, when you are landed you will be cloaked from enemy detection from far range.
+Raise your jet strength when you want to move.
+Holding down <shift> makes the tank accelerate at the maximum rate.
+
+Use <target_under_reticle> to target object under your reticle.
+Load up on special weapons by landing on one of your fuel units.
+Hit <target_closest_fuel> to target the closest fuel pad.
+Repair a damaged hovertank on one of your repair units.
+Hit <target_closest_repair> to target the closest repair pad.
+Hit <target_tank> to target the closest enemy tank.
+Hit <cycle_target> to cycle through enemy tanks once you have targeted one.
+
+Hit "i" to target incomming missiles.
+You can store targets into your tanks memory with ctrl+F5-8 keys.
+You can recall a stored target by hitting the F5-F8 key that you stored it on. 
+
+Remember, tanks of your own color are friendly -- don't shoot them.
+You will take damage if you fire on friendly units or tanks.
+Hit <weapon_keys> to fire any of the special weapons (you must have them).
+On tanks, pulse shells (default key 1 or right mouse button) have a range of aprox. 1100m.
+On scouts, 1 key or right mouse will fire your repair beam.
+This can repair friendly units, or damage and steal energy from enemy units.
+
+Use Insert and Delete to zoom in and out while aiming.
+Shift+Insert or Shift+Delete will zoom in max and zoom out max.
+Zooming in and firing Pulse shells is a good method of sniping enemies.
+Piercer missiles (key 2) are semi-guided armor-piercing weapons.
+Thumper missiles (key 3) are semi-guided concussion weapons that disorient targets.
+Hunter missiles (key 4) are guided weapons with extremely long range.
+All missiles need a target to be effective.
+Use TAB to cycle through targets in your field of view...
+Or use <target_under_reticle> to target under reticle...
+Or use <target_tank> to target the nearest enemy tank.
+Use ` (back-tick) to clear current target.
+Caltrops (key 5) are short-lived heat-seeking bombs that track tanks within 200m.
+Mines (key 6) are powerful permanent devices that are only triggered by enemies.
+
+
+Hit <map_overview> to look at the big game map.
+Press N to cycle through satellite, altitude, and slope maps.
+
+You can build or extend your base by picking up and installing cargo.
+Press C to target the nearest friendly cargo.
+Pickup cargo boxes by touching them.
+Hit <cargo_drop> to drop a cargo box that you are carrying.
+Hit <cargo_deploy> to deploy the contents your cargo box.
+You can only carry one cargo box at a time.
+Most installations need to be in range (300m) of a Power Cell to function.
+Fuel pads supply fuel and weapons to friendly tanks when landed on.
+Repair pads fix damaged tanks when landed on and allow new tanks to respawn.
+Sentry cannons fire automatically at incoming enemies and missiles in mid range.
+Gun turrets fire autocannons at enemy units within 400m.
+Missile launchers fire missiles at ememy units within a fairly long range.
+Target any defensive unit to view it's range on the radar and map.
+Darklights block enemy radar detection (but not enemy targetting).
+Skypumps are used to power starships.
+
+Hit <start_message> to send a message.
+Enter a / before your message to send it to a specific group.
+/t sends a message just to your team.
+/a sends a message to all players.
+/NAME sends a message to the named player.
+Entering two slashes (//) will make the channel your default from now on.
+For instance, //t will make TEAM your default channel.
+
+Tanks cannot damage starships by themselves.
+Starships will attack each other, but they are evenly matched.
+If the enemy has more ships than you in adjacent squares, they will overwhelm your ships.
+Your ships will send you distress signals when they are being overpowered.
+Your team must move then to a powered square to save them from destruction,
+or must move in another ship to even up the balance of ships between teams.
+Starships will drop cargo that you can pick up and deploy.
+
+If you have picked up and installed the UPLINK, you control your team's ships.
+Install the uplink by hitting the "." key.
+Uninstall the uplink by hitting the "," key.
+If you have the uplink, you can issue orders to the ships by doing the following.
+Hit "m" to bring up the map mode, and then click on the uplink tab on the top left button.
+Click on a starship and a menu of orders, and what is in their order queue will appear.
+Use the menus to issue the orders that you want to give your ships.
+Orbital bombardment will bomb all enemy units in the square below the ship.
+If there are no enemy units when the bombing is to begin, it will abort.
+Read the included manual for more info on starship control.
+
+Skypumps provide power for starships.
+One skypump in a sector will let a ship move into that area (the square will be lit).
+Two skypumps in a sector will allow a new ship to warp in (the square will be lit brightly).
+When warp glimpse occurs, a green cloud appears in the sky,
+and a warp symbol will appear in that square on the map.
+After this, a countdown to warp push begins.
+If there are still two skypumps active when warp push occurs, a new starship warps in.
+Starships can also bombard the sector they're in, destroying all enemy units.
+A team may only have a maximum of three starships at a time.
+
+Remember, your goal is to destroy the enemy bases. 
+As long as the foe has at least one active Repair Pad, destroyed tanks can respawn.
+Defend your own bases with sentry cannons and tanks.
+Use the strategic map <map_overview> to plan attacks. 
+
+	
+To turn off online help, hit ESC and reduce help level to zero in Options.
+Remember, report any bugs or suggestions to bolt@bolt-action.com!
+
+
+
+
+

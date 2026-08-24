@@ -1,16 +1,17 @@
 # Wulf Forge: Wulfram 2 Server Emulator
 
 ## Getting Started
-* Download client: https://download.cnet.com/wulfram-ii/3000-2119_4-10077757.html
-* Download the source code for Wulf-Forge: https://github.com/baffler/Wulf-Forge/archive/refs/heads/main.zip
-* Install the client and extract Wulf-Forge where best convenient
+* Clone or download Wulf-Forge. A release-ready Wulfram II client is included in `client/`.
+* Install Python (tested with Python 3.12 or newer).
 
 ### To get the server running
-* Install python (I've tested with Python 3.12)
-* Go to the directory where you extracted Wulf-Forge
-* Open a terminal and run `python main.py`
+* From the Wulf-Forge directory, run `launch-local.cmd`.
+* The launcher starts `main.py`, waits for the server port, and then runs the in-tree
+  `client/wulfram2.exe` with `-root -windowed`.
+* To use a separate client installation, pass `-GameDir C:\path\to\Game` to
+  `launch-local.ps1`.
 
-### Make Wulfram 2 connect to the server
+### Make another Wulfram 2 installation connect to the server
 * You'll need to pass a couple of parameters to get it working
 * You can run wulfram2.exe with command arguments `-root -windowed`
 * The simpliest way to do this is to create a text file alongside the exe (wherever you installed Wulfram 2)
@@ -29,6 +30,10 @@
 ## Server Configuration
 
 Wulf-Forge reads `config.toml` from the server directory.
+
+Choose the default playable vehicle with `player.unit_type`: `0` is the tank
+and `1` is the scout. A connected player can also use `/s vehicle tank` or
+`/s vehicle scout`; the selection applies on the next spawn.
 
 ### Network Address
 
@@ -67,6 +72,9 @@ as W2Mod, where the client sends local position, velocity, rotation, and angular
 velocity to Wulf-Forge. The server applies that state to the player's entity and
 rebroadcasts it with the normal entity update packets.
 
+Update arrays are automatically split at a 1,200-byte encoded-packet budget and
+at the protocol's 255-entity limit to avoid fragmented or truncated updates.
+
 To enable the W2Mod relay path:
 
 ```toml
@@ -98,7 +106,8 @@ you are running a compatible modified client.
 
 ## Loading Maps
 * Before spawning in you can use `/s map <map name>`
-* You can copy all the maps from `<Wulfram Install>\data\maps` into `<Wulf-Forge Folder>\shared\data\maps`
+* The server loads the bundled maps from `client/data/maps` automatically.
+* A map placed in `shared/data/maps` overrides a bundled map with the same name.
 * And (depending on the map) you can use `/s loadmap <map name>` to load in the `state` file from the map
 * This will load the initial base setup, with repair pads and other base units
 * Not all maps have state files, some have multiple

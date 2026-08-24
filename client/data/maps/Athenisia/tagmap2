@@ -1,0 +1,995 @@
+jupi_melty002
+jupi_melty001
+jupi_melty003
++0template jupi_melty002 4 0template jupi_dino002 11 
++0template jupi_melty001 12 0template jupi_dino003 3 
++0template jupi_melty003 8 0template jupi_dino003 7 
++0template Bdt001 14 0template jupi_melty001 1 
++0template jupi_melty003 2 0template Bdt001 13 
+jupi_pebbly002
+jupi_pebbly001
+jupi_pebbly003
+jupi_pebbly004
++0template aliencrust001 14 0template jupi_pebbly002 1 
++0template jupi_pebbly004 2 0template aliencrust004 13 
++0template jupi_melty002 14 0template jupi_pebbly003 1 
++0template jupi_melty001 12 0template jupi_pebbly002 3 
++0template jupi_pebbly001 2 0template jupi_melty002 13 
++0template jupi_melty001 8 0template jupi_pebbly002 7 
++0template jupi_melty002 4 0template jupi_pebbly003 11 
++0template jupi_dino003 10 0template jupi_melty001 5 
+jupi_dino002
+jupi_dino001
++0template jupi_melty001 14 0template jupi_dino001 1 
++0template jupi_dino002 2 0template jupi_melty002 13 
+jupi_dino003
++0template jupi_melty002 14 0template jupi_dino001 5 0template jupi_stoccolite003 11 
++0template jupi_dino002 10 0template jupi_melty001 13 0template jupi_stoccolite003 7 
++0template jupi_melty002 10 0template jupi_dino003 5 
++0template jupi_pebbly003 4 0template jupi_melty001 11 
++0template jupi_pebbly003 12 0template jupi_melty003 3 
++0template jupi_pebbly002 12 0template jupi_melty002 7 0template jupi_bumpy003 11 
++0template jupi_pebbly003 12 0template jupi_bumpy002 3 
++0template jupi_pebbly002 12 0template jupi_bumpy003 7 0template jupi_melty002 11 
++0template jupi_pebbly003 8 0template jupi_melty001 7 
++0template jupi_melty001 10 0template jupi_pebbly001 5 
++0template jupi_stoccolite001 14 0template jupi_dino002 1 
++0template jupi_dino003 2 0template jupi_stoccolite001 13 
++0template jupi_dino003 4 0template jupi_melty003 11 
++0template jupi_melty001 2 0template jupi_dino002 13 
++0template jupi_melty002 4 0template jupi_bark002 11 
++0template jupi_melty002 12 0template jupi_bark001 3 
++0template jupi_dino003 10 0template jupi_melty003 13 0template jupi_bark001 7 
++0template jupi_pebbly003 4 0template aliencrust002 11 
++0template jupi_pebbly003 12 0template aliencrust003 3 
++0template jupi_pebbly003 8 0template aliencrust003 7 
++0template jupi_bumpy001 14 0template jupi_melty001 13 0template jupi_pebbly003 3 
++0template jupi_bumpy002 12 0template jupi_pebbly002 3 
++0template jupi_melty002 14 0template jupi_bumpy001 13 0template jupi_pebbly001 3 
++0template jupi_dino001 4 0template jupi_stoccolite003 11 
++0template jupi_melty001 14 0template jupi_dino003 13 0template jupi_stoccolite001 3 
++0template jupi_melty001 12 0template jupi_stoccolite002 3 
++0template jupi_melty001 8 0template jupi_stoccolite003 7 
++0template jupi_bark002 14 0template jupi_melty002 5 0template jupi_dino001 11 
++0template jupi_bark002 12 0template jupi_dino003 3 
++0template jupi_dino001 2 0template jupi_bark002 13 
++0template jupi_pebbly001 10 0template jupi_melty003 5 
++0template aliencrust001 2 0template jupi_pebbly003 13 
+aliencrust004
+aliencrust001
+aliencrust003
++0template jupi_pebbly002 14 0template aliencrust001 1 
++0template jupi_dino002 8 0template jupi_melty003 7 
++0template jupi_stoccolite001 10 0template jupi_dino002 5 
+jupi_stoccolite003
++0template jupi_melty002 14 0template jupi_stoccolite002 5 0template jupi_dino001 11 
+aztec5_stairs
+aztec4
+aliencrust002
++0template jupi_pebbly002 10 0template aliencrust004 5 
+jupi_stoccolite001
++0template jupi_stoccolite001 4 0template jupi_dino002 11 
++0template aliencrust001 4 0template jupi_pebbly004 11 
++0template aliencrust002 8 0template jupi_pebbly003 7 
++0template jupi_dino002 14 0template jupi_melty001 1 
++0template jupi_stoccolite001 2 0template jupi_dino002 13 
+jupi_stoccolite002
++0template jupi_dino003 10 0template jupi_stoccolite001 5 
+aztec7_roof
++0template aliencrust001 10 0template jupi_pebbly004 5 
+aztec1
++0template aztec4 14 0template aztec1 1 
++0template jupi_dino001 4 0template jupi_bark001 11 
++0template jupi_stoccolite001 14 0template jupi_dino001 13 0template jupi_bark001 3 
++0template jupi_stoccolite002 12 0template jupi_bark002 3 
++0template jupi_dino002 10 0template jupi_stoccolite003 13 0template jupi_bark001 7 
++0template aztec7_roof 8 0template aztec6 7 
++0template aztec4 4 0template jupi_bark001 11 
++0template aztec4 12 0template jupi_bark001 3 
++0template aztec5_stairs 8 0template jupi_bark002 7 
++0template aztec1 12 0template aztec4 3 
++0template aztec1 8 0template aztec4 7 
++0template aztec1 4 0template aztec4 11 
++0template jupi_dino002 12 0template jupi_stoccolite001 3 
++0template jupi_bark001 10 0template jupi_dino003 13 0template jupi_stoccolite001 7 
+jupi_bark001
++0template jupi_dino002 14 0template jupi_bark002 1 
++0template jupi_dino002 12 0template jupi_bark002 3 
++0template jupi_dino002 8 0template jupi_bark002 7 
++0template jupi_dino003 12 0template jupi_bark002 7 0template jupi_melty002 11 
++0template aztec7_roof 10 0template aztec6 5 
++0template jupi_bark001 10 0template aztec4 5 
++0template aztec5_stairs 10 0template jupi_bark001 5 
++0template aztec1 10 0template aztec4 5 
++0template aztec4 10 0template aztec1 5 
++0template jupi_stoccolite002 4 0template jupi_bark002 11 
++0template jupi_bark002 2 0template jupi_stoccolite003 13 
+jupi_bark002
++0template jupi_bark002 14 0template jupi_dino003 1 
++0template jupi_melty003 14 0template jupi_bark002 13 0template jupi_dino003 3 
++0template aztec7_roof 2 0template aztec6 13 
++0template jupi_bark002 14 0template aztec4 1 
++0template jupi_bark002 12 0template aztec4 3 
++0template aztec5_stairs 2 0template jupi_bark002 13 
++0template aztec5_stairs 14 0template aztec4 1 
+aztec6
++0template aztec7_roof 4 0template aztec4 11 
++0template jupi_dino003 8 0template jupi_stoccolite002 7 
++0template jupi_bark002 10 0template jupi_stoccolite002 5 
++0template aztec4 10 0template aztec7_roof 5 
++0template aztec4 4 0template aztec8_doors 11 
++0template aztec8_doors 2 0template aztec4 13 
+aztec8_doors
++0template jupi_stoccolite002 8 0template jupi_dino002 7 
++0template jupi_bark002 4 0template jupi_funky003 11 
++0template jupi_bark001 12 0template jupi_funky002 3 
++0template jupi_bark002 12 0template jupi_funky002 7 0template jupi_melty003 11 
++0template jupi_bark002 8 0template jupi_melty003 7 
++0template jupi_bark002 4 0template jupi_dino001 11 
++0template aztec8_doors 10 0template aztec4 5 
++0template jupi_bark002 10 0template jupi_stoccolite002 13 0template jupi_dino002 7 
++0template jupi_funky001 10 0template jupi_bark001 5 
+jupi_funky001
+jupi_funky002
++0template jupi_melty001 10 0template jupi_funky003 5 
++0template jupi_bark001 10 0template jupi_melty003 5 
++0template jupi_dino001 10 0template jupi_bark001 5 
++0template jupi_pebbly004 14 0template jupi_melty002 1 
++0template jupi_dino003 4 0template jupi_funky001 11 
++0template jupi_dino002 8 0template jupi_funky003 7 
++0template jupi_bark002 14 0template jupi_dino003 5 0template jupi_stoccolite002 11 
++0template jupi_bark001 8 0template jupi_stoccolite003 7 
++0template jupi_funky002 14 0template jupi_bark001 1 
++0template jupi_funky003 12 0template jupi_bark002 3 
++0template jupi_melty003 10 0template jupi_funky002 13 0template jupi_bark002 7 
++0template jupi_bark001 8 0template jupi_dino003 7 
++0template jupi_dino001 12 0template jupi_melty003 3 
++0template aztec7_roof 2 0template aztec4 13 
++0template jupi_melty002 4 0template jupi_funky001 11 
++0template jupi_dino003 10 0template jupi_melty002 13 0template jupi_funky002 7 
++0template jupi_funky001 10 0template jupi_dino002 5 
++0template jupi_dino001 14 0template jupi_funky001 1 
++0template jupi_melty001 14 0template jupi_bark002 1 
++0template jupi_bark002 2 0template jupi_melty003 13 
++0template jupi_bark001 6 0template jupi_dino003 9 
++0template aztec6 4 0template aztec7_roof 11 
++0template jupi_funky003 2 0template jupi_melty002 13 
++0template jupi_dino003 12 0template jupi_funky003 3 
++0template jupi_funky001 2 0template jupi_dino001 13 
+jupi_funky003
++0template jupi_dino001 10 0template jupi_funky003 5 
++0template jupi_bark002 10 0template jupi_dino002 5 
++0template aztec6 2 0template aliencrust004 13 
++0template jupi_funky003 10 0template jupi_melty002 5 
+aztec2
+aztec3
++0template jupi_bark002 14 0template jupi_dino003 5 0template jupi_funky002 11 
++0template jupi_bark002 8 0template jupi_funky003 7 
++0template jupi_bark002 2 0template jupi_dino002 13 
++0template aztec5_stairs 10 0template aliencrust001 13 0template aztec6 7 
++0template jupi_funky002 4 0template jupi_stoccolite002 11 
++0template jupi_dino002 14 0template jupi_funky001 13 0template jupi_stoccolite002 3 
++0template jupi_funky001 14 0template jupi_dino001 1 
++0template jupi_bark002 14 0template jupi_funky003 13 0template jupi_dino003 3 
++0template jupi_bark001 12 0template jupi_dino003 7 0template jupi_funky002 11 
++0template jupi_bark002 12 0template jupi_melty002 3 
++0template aztec5_stairs 10 0template aztec6 5 
++0template jupi_melty003 4 0template jupi_stoccolite001 11 
++0template jupi_funky003 14 0template jupi_melty002 13 0template jupi_stoccolite002 3 
++0template jupi_funky003 12 0template jupi_stoccolite001 3 
++0template jupi_stoccolite002 2 0template jupi_funky001 13 
++0template jupi_funky002 12 0template jupi_dino001 3 
++0template jupi_dino002 2 0template jupi_funky001 13 
++0template jupi_melty003 14 0template jupi_funky002 13 0template jupi_dino003 3 
++0template jupi_bark002 14 0template jupi_melty002 13 0template jupi_dino003 3 
++0template aliencrust002 12 0template jupi_pebbly003 3 
++0template aliencrust003 12 0template jupi_pebbly004 7 0template jupi_melty002 11 
++0template aliencrust001 8 0template jupi_melty003 7 
++0template aliencrust002 12 0template jupi_pebbly002 7 0template jupi_bark001 11 
++0template aliencrust002 12 0template jupi_bark001 3 
++0template aliencrust002 12 0template jupi_bark002 7 0template jupi_pebbly003 11 
++0template aliencrust002 12 0template jupi_melty002 7 0template jupi_pebbly001 11 
++0template aztec5_stairs 12 0template aztec4 3 
++0template jupi_stoccolite001 10 0template jupi_melty003 13 0template jupi_dino002 7 
++0template jupi_melty002 2 0template jupi_pebbly004 13 
++0template aliencrust002 10 0template jupi_melty002 5 
++0template jupi_pebbly004 14 0template aliencrust001 5 0template jupi_bark002 11 
++0template jupi_bark002 2 0template jupi_pebbly004 13 
++0template jupi_pebbly004 14 0template jupi_bark002 1 
++0template jupi_pebbly001 12 0template jupi_bark002 3 
++0template jupi_melty001 10 0template jupi_pebbly003 13 0template jupi_bark001 7 
++0template aztec7_roof 14 0template aztec6 1 
++0template jupi_stoccolite003 12 0template jupi_dino002 3 
++0template jupi_bark001 6 0template jupi_dino002 13 0template marsvolc003 11 
++0template jupi_bark001 8 0template marsvolc003 7 
++0template jupi_bark002 10 0template aliencrust004 5 
++0template jupi_melty001 10 0template jupi_bark001 5 
++0template jupi_stoccolite003 10 0template jupi_dino003 13 0template jupi_melty003 7 
++0template jupi_funky001 4 0template jupi_dino001 11 
++0template jupi_dino002 12 0template jupi_melty003 7 0template marsvolc003 11 
++0template jupi_bark001 10 0template jupi_dino001 13 0template marsvolc003 7 
++0template marsvolc003 14 0template jupi_bark001 1 
++0template jupi_bark001 6 0template marsvolc003 9 
++0template jupi_dino001 14 0template jupi_bark001 5 0template marsvolc001 11 
++0template jupi_melty001 14 0template jupi_dino002 13 0template marsvolc001 3 
++0template jupi_melty002 8 0template marsvolc002 7 
++0template jupi_bark002 14 0template aliencrust001 5 0template jupi_pebbly002 11 
++0template jupi_bark001 8 0template jupi_pebbly004 7 
++0template aliencrust004 10 0template jupi_pebbly004 13 0template jupi_melty001 7 
++0template jupi_pebbly001 4 0template jupi_dino003 11 
++0template jupi_pebbly001 12 0template jupi_dino002 3 
++0template jupi_pebbly003 8 0template jupi_dino003 7 
++0template jupi_stoccolite002 14 0template jupi_melty002 1 
++0template jupi_stoccolite002 8 0template jupi_melty002 7 
++0template jupi_melty003 12 0template jupi_dino001 7 0template marsvolc003 11 
++0template jupi_melty001 12 0template marsvolc003 3 
++0template marsvolc002 2 0template jupi_melty002 13 
++0template jupi_bark002 10 0template marsvolc002 5 
++0template jupi_bark001 4 0template marsvolc002 11 
++0template marsvolc001 6 0template jupi_bark002 9 
++0template jupi_bark002 2 0template marsvolc003 13 
++0template marsvolc002 8 0template jupi_bark001 7 
++0template jupi_melty003 14 0template marsvolc003 5 0template jupi_dino002 11 
++0template jupi_melty002 4 0template aliencrust003 11 
++0template jupi_melty003 8 0template aliencrust002 7 
++0template aliencrust002 2 0template jupi_melty002 13 
++0template jupi_bark001 10 0template jupi_pebbly003 5 
++0template jupi_bark001 4 0template jupi_melty003 11 
++0template jupi_dino001 10 0template jupi_pebbly001 13 0template aliencrust004 7 
++0template jupi_dino003 4 0template aliencrust003 11 
++0template jupi_dino002 12 0template aliencrust004 3 
++0template jupi_pebbly003 14 0template jupi_dino001 13 0template aliencrust001 3 
++0template jupi_stoccolite002 14 0template jupi_melty001 5 0template jupi_dino001 11 
++0template marsvolc003 10 0template jupi_dino002 5 
+marsvolc003
+marsvolc001
++0template jupi_bark001 14 0template marsvolc002 1 
++0template marsvolc002 14 0template jupi_bark001 5 0template jupi_dino003 11 
++0template jupi_dino002 2 0template marsvolc002 13 
++0template aliencrust001 14 0template jupi_melty001 1 
++0template jupi_melty002 2 0template aliencrust002 13 
++0template jupi_bark002 14 0template jupi_pebbly002 13 0template aliencrust001 3 
++0template jupi_bark001 8 0template aliencrust002 7 
++0template jupi_dino002 10 0template aliencrust004 5 
++0template aliencrust002 10 0template jupi_dino002 5 
++0template jupi_dino001 4 0template marsvolc001 11 
++0template jupi_dino002 12 0template marsvolc002 3 
++0template marsvolc002 2 0template jupi_dino002 13 
++0template jupi_bark001 14 0template aliencrust001 5 0template 10martian003 11 
++0template jupi_bark002 12 0template 10martian003 3 
++0template jupi_bark001 12 0template 10martian003 7 0template jupi_melty002 11 
++0template jupi_melty002 2 0template jupi_bark001 13 
++0template aliencrust002 4 0template jupi_dino003 11 
++0template jupi_dino003 2 0template aliencrust002 13 
++0template aztec7_roof 14 0template aztec8_doors 1 
++0template aztec8_doors 2 0template aztec7_roof 13 
+marsvolc002
++0template jupi_stoccolite003 14 0template aliencrust004 5 0template aztec4 11 
++0template jupi_stoccolite002 12 0template aztec8_doors 3 
++0template aztec8_doors 2 0template jupi_stoccolite003 13 
++0template aliencrust003 14 0template aztec8_doors 1 
++0template 10martian001 14 0template aliencrust003 1 
++0template 10martian001 12 0template aliencrust002 3 
++0template jupi_melty001 10 0template 10martian001 13 0template aliencrust001 7 
++0template aztec4 4 0template aztec3 11 
++0template aztec4 12 0template aztec3 3 
++0template aztec4 8 0template aztec3 7 
++0template marsvolc003 4 0template jupi_funky003 11 
++0template marsvolc002 12 0template jupi_funky002 3 
++0template marsvolc002 8 0template jupi_funky003 7 
++0template jupi_bark001 14 0template marsvolc002 13 0template jupi_pebbly003 11 0template jupi_funky003 7 
++0template jupi_bark001 12 0template jupi_pebbly001 7 0template marsvolc003 11 
++0template jupi_dino001 6 0template jupi_bark001 9 
++0template jupi_melty002 14 0template jupi_dino002 5 0template jupi_pebbly004 11 
++0template aliencrust002 14 0template jupi_melty003 5 0template jupi_pebbly002 11 
++0template aztec4 2 0template aliencrust002 13 
++0template jupi_melty001 14 0template aliencrust004 1 
++0template aztec3 2 0template aztec4 13 
++0template aztec4 14 0template aztec3 1 
++0template jupi_dino002 14 0template jupi_melty001 5 0template jupi_stoccolite003 11 
++0template jupi_funky002 10 0template marsvolc001 5 
++0template marsvolc003 14 0template jupi_funky003 1 
++0template jupi_funky003 6 0template marsvolc003 9 
++0template jupi_pebbly002 14 0template jupi_funky003 9 0template marsvolc002 7 
++0template marsvolc003 10 0template jupi_pebbly004 13 0template jupi_funky003 7 
++0template jupi_pebbly004 10 0template jupi_dino001 5 
++0template jupi_melty001 10 0template aliencrust003 5 
++0template aliencrust001 14 0template jupi_dino003 5 0template jupi_pebbly003 11 
++0template aztec1 14 0template aztec4 13 0template aztec3 3 
++0template aztec1 8 0template aztec3 7 
++0template jupi_dino001 10 0template jupi_stoccolite001 13 0template jupi_melty003 7 
++0template jupi_dino002 6 0template jupi_stoccolite003 9 
++0template jupi_funky002 4 0template marsvolc001 11 
++0template marsvolc002 6 0template jupi_funky002 9 
++0template marsvolc002 2 0template jupi_funky003 13 
++0template jupi_pebbly002 10 0template jupi_dino002 13 0template jupi_bark002 7 
++0template jupi_pebbly002 4 0template jupi_funky003 11 
++0template jupi_melty001 14 0template jupi_pebbly001 9 0template jupi_funky001 7 
++0template jupi_melty002 12 0template aliencrust003 7 0template jupi_pebbly002 11 
++0template aliencrust002 10 0template jupi_melty002 13 0template jupi_pebbly002 7 
++0template jupi_pebbly001 14 0template jupi_dino002 1 
++0template aztec1 8 0template aztec6 7 
++0template aztec3 14 0template aztec4 1 
++0template aztec3 12 0template aztec4 3 
++0template aztec3 8 0template aztec4 7 
++0template aztec1 10 0template aztec3 5 
++0template marsvolc003 14 0template jupi_dino002 1 
++0template marsvolc002 8 0template jupi_dino003 7 
++0template jupi_funky001 14 0template marsvolc001 1 
++0template jupi_funky003 8 0template marsvolc001 7 
++0template jupi_funky002 12 0template marsvolc001 3 
++0template marsvolc003 4 0template jupi_bark001 11 
++0template jupi_pebbly004 10 0template jupi_bark001 5 
++0template jupi_funky002 2 0template jupi_pebbly001 13 
++0template jupi_pebbly002 10 0template jupi_funky001 5 
++0template jupi_dino003 4 0template jupi_pebbly002 11 
++0template jupi_dino001 8 0template jupi_pebbly002 7 
++0template jupi_dino002 4 0template olivesage001 11 
++0template marsvolc001 14 0template jupi_dino002 9 0template olivesage001 7 
++0template marsvolc001 12 0template jupi_dino001 3 
++0template jupi_bark002 12 0template marsvolc001 7 0template jupi_dino003 11 
++0template jupi_pebbly003 14 0template jupi_bark002 13 0template jupi_dino002 3 
++0template jupi_pebbly001 12 0template jupi_dino002 7 0template jupi_funky003 11 
++0template jupi_funky003 4 0template jupi_pebbly001 11 
++0template jupi_pebbly003 2 0template jupi_funky003 13 
++0template jupi_dino003 2 0template jupi_pebbly004 13 
++0template olivesage001 10 0template jupi_dino001 5 
++0template jupi_dino002 14 0template olivesage001 1 
++0template jupi_dino001 12 0template olivesage001 3 
++0template marsvolc003 14 0template jupi_dino003 13 0template olivesage001 3 
++0template marsvolc001 8 0template olivesage001 7 
++0template marsvolc003 10 0template jupi_bark001 5 
++0template jupi_dino003 14 0template marsvolc002 1 
++0template jupi_dino001 8 0template marsvolc003 7 
++0template jupi_funky003 14 0template jupi_dino001 5 0template jupi_pebbly002 11 
++0template jupi_funky002 12 0template jupi_pebbly003 3 
++0template jupi_melty001 14 0template jupi_pebbly002 5 0template aliencrust002 11 
++0template aliencrust003 10 0template jupi_pebbly001 13 0template jupi_dino001 7 
++0template aliencrust001 12 0template jupi_pebbly004 7 0template jupi_dino003 11 
++0template aliencrust004 12 0template jupi_dino001 3 
++0template jupi_pebbly003 4 0template jupi_bumpy003 11 
++0template jupi_pebbly002 8 0template jupi_bumpy003 7 
++0template jupi_melty001 12 0template jupi_funky003 3 
++0template jupi_melty002 8 0template jupi_funky002 7 
+olivesage001
++0template marsvolc001 14 0template olivesage001 1 
++0template marsvolc003 12 0template jupi_bark002 3 
++0template marsvolc002 14 0template jupi_bark001 5 0template olivesage001 11 
++0template marsvolc002 12 0template olivesage001 3 
++0template jupi_dino002 14 0template marsvolc003 9 0template olivesage001 7 
++0template aztec4 2 0template jupi_pebbly002 13 
+aztec9_doors
++0template aliencrust001 8 0template jupi_dino001 7 
++0template aliencrust004 14 0template jupi_dino002 1 
++0template jupi_pebbly001 10 0template aliencrust001 13 0template jupi_dino001 7 
++0template jupi_dino002 10 0template jupi_pebbly002 5 
++0template jupi_pebbly003 14 0template jupi_dino002 13 0template olivesage001 3 
++0template jupi_pebbly002 12 0template olivesage001 3 
++0template jupi_pebbly002 8 0template olivesage001 7 
++0template jupi_bumpy003 10 0template jupi_pebbly003 5 
++0template jupi_pebbly003 10 0template jupi_bumpy001 5 
++0template jupi_funky003 4 0template jupi_melty002 11 
++0template jupi_melty003 2 0template jupi_funky001 13 
++0template olivesage001 14 0template jupi_dino001 1 
++0template olivesage001 8 0template jupi_dino003 7 
++0template marsvolc003 14 0template olivesage001 5 0template jupi_dino003 11 
++0template marsvolc003 12 0template jupi_dino002 7 0template olivesage001 11 
++0template jupi_bark001 10 0template marsvolc003 13 0template olivesage001 7 
++0template olivesage001 10 0template jupi_bark001 5 
++0template jupi_dino002 14 0template marsvolc002 13 0template olivesage001 3 
++0template aliencrust003 14 0template jupi_pebbly004 13 0template jupi_dino003 3 
++0template jupi_melty001 10 0template aliencrust004 13 0template jupi_dino001 7 
++0template jupi_pebbly002 14 0template jupi_melty003 5 0template aliencrust003 11 
++0template jupi_pebbly003 14 0template aliencrust001 5 0template jupi_dino001 11 
++0template jupi_pebbly004 14 0template olivesage001 1 
++0template jupi_bumpy003 14 0template jupi_pebbly003 1 
++0template jupi_pebbly004 2 0template jupi_bumpy001 13 
++0template jupi_dino003 14 0template jupi_melty001 13 0template jupi_stoccolite002 3 
++0template olivesage001 14 0template jupi_dino001 5 0template jupi_stoccolite002 11 
++0template olivesage001 8 0template jupi_stoccolite003 7 
++0template olivesage001 2 0template jupi_dino003 13 
++0template jupi_bark001 14 0template olivesage001 1 
++0template jupi_bark002 8 0template olivesage001 7 
++0template jupi_bark001 4 0template olivesage001 11 
++0template olivesage001 2 0template jupi_bark002 13 
++0template jupi_pebbly004 14 0template olivesage001 5 0template jupi_dino003 11 
++0template jupi_melty003 14 0template jupi_dino003 5 0template aliencrust003 11 
++0template jupi_melty001 12 0template aliencrust001 3 
++0template jupi_pebbly004 12 0template olivesage001 7 0template jupi_melty003 11 
++0template jupi_stoccolite002 10 0template jupi_melty002 5 
++0template jupi_dino002 14 0template jupi_stoccolite003 1 
++0template olivesage001 10 0template jupi_stoccolite002 5 
++0template jupi_dino003 8 0template olivesage001 7 
++0template jupi_dino002 4 0template 3martian002 11 
++0template olivesage001 10 0template jupi_dino003 13 0template 3martian002 7 
++0template jupi_melty001 14 0template olivesage001 1 
++0template jupi_melty002 12 0template olivesage001 7 0template jupi_dino001 11 
++0template jupi_pebbly003 14 0template jupi_melty002 13 0template jupi_dino001 3 
++0template jupi_melty001 14 0template jupi_pebbly002 13 0template jupi_dino001 3 
++0template jupi_bark002 12 0template olivesage001 3 
++0template olivesage001 14 0template jupi_bark001 5 0template jupi_pebbly001 11 
++0template olivesage001 8 0template jupi_pebbly003 7 
++0template olivesage001 4 0template jupi_dino003 11 
++0template olivesage001 12 0template jupi_dino003 3 
++0template jupi_dino003 10 0template olivesage001 5 
++0template aliencrust004 12 0template jupi_pebbly002 7 0template jupi_soil002 11 
++0template aliencrust003 12 0template jupi_soil001 3 
++0template aliencrust004 12 0template jupi_soil001 7 0template jupi_pebbly002 11 
++0template aliencrust004 4 0template marsvolc001 11 
++0template jupi_dino002 10 0template aliencrust001 13 0template marsvolc003 7 
++0template 3martian002 14 0template jupi_dino003 1 
++0template olivesage001 10 0template 3martian001 13 0template jupi_dino003 7 
++0template jupi_dino001 10 0template jupi_melty001 13 0template jupi_pebbly002 7 
++0template jupi_melty001 12 0template jupi_dino001 7 0template jupi_pebbly004 11 
++0template jupi_stoccolite003 4 0template olivesage001 11 
++0template olivesage001 2 0template jupi_stoccolite001 13 
++0template olivesage001 4 0template jupi_pebbly001 11 
++0template jupi_bark001 14 0template olivesage001 13 0template jupi_pebbly003 3 
++0template jupi_bark002 12 0template jupi_pebbly004 3 
++0template jupi_pebbly002 6 0template jupi_bark001 13 0template jupi_dino002 11 
++0template olivesage001 14 0template jupi_pebbly004 13 0template jupi_dino001 3 
++0template jupi_dino003 2 0template olivesage001 13 
++0template jupi_soil002 10 0template jupi_pebbly003 5 
+jupi_soil002
++0template jupi_pebbly003 10 0template jupi_soil003 5 
++0template aliencrust002 14 0template jupi_pebbly004 5 0template jupi_soil003 11 
++0template aliencrust004 12 0template jupi_soil002 7 0template jupi_dino003 11 
++0template marsvolc003 10 0template aliencrust001 13 0template jupi_dino003 7 
++0template jupi_dino001 10 0template marsvolc003 5 
++0template olivesage001 14 0template jupi_stoccolite001 1 
++0template jupi_pebbly001 14 0template olivesage001 13 0template jupi_dino003 3 
++0template jupi_soil001 14 0template jupi_pebbly003 1 
++0template jupi_soil002 8 0template jupi_pebbly001 7 
+jupi_soil001
++0template jupi_dino002 10 0template jupi_soil003 5 
++0template jupi_pebbly004 14 0template jupi_dino003 5 0template jupi_melty003 11 
++0template jupi_dino001 14 0template jupi_pebbly003 9 0template jupi_melty003 7 
++0template jupi_dino002 14 0template jupi_melty001 9 0template jupi_funky002 7 
+easterhead5
++0template olivesage001 12 0template jupi_pebbly004 3 
++0template jupi_dino003 10 0template olivesage001 13 0template jupi_pebbly004 7 
++0template jupi_soil002 14 0template jupi_pebbly002 5 0template jupi_rocky001 11 
++0template jupi_soil003 12 0template jupi_rocky003 3 
++0template jupi_dino001 14 0template jupi_soil002 13 0template jupi_rocky004 3 
++0template jupi_dino001 8 0template jupi_rocky002 7 
++0template jupi_dino001 4 0template jupi_soil002 11 
++0template jupi_dino003 8 0template jupi_soil003 7 
++0template jupi_dino002 8 0template aliencrust003 7 
++0template jupi_dino003 10 0template jupi_pebbly002 13 0template jupi_melty001 7 
++0template jupi_funky001 14 0template jupi_melty002 1 
++0template jupi_funky002 12 0template jupi_melty003 3 
++0template jupi_rocky004 14 0template jupi_pebbly001 5 0template aliencrust004 11 
++0template jupi_rocky001 12 0template aliencrust003 3 
++0template jupi_dino003 14 0template jupi_rocky003 13 0template jupi_pebbly001 11 0template aliencrust003 7 
++0template jupi_soil002 14 0template jupi_dino003 13 0template jupi_rocky001 11 0template jupi_pebbly001 7 
++0template jupi_dino002 10 0template jupi_soil003 13 0template jupi_rocky004 7 
++0template jupi_dino002 14 0template olivesage001 5 0template jupi_pebbly001 11 
++0template jupi_pebbly002 14 0template jupi_dino001 5 0template aliencrust001 11 
++0template jupi_soil002 14 0template jupi_pebbly004 13 0template aliencrust004 3 
++0template jupi_pebbly002 10 0template jupi_soil001 13 0template aliencrust001 7 
++0template jupi_rocky001 14 0template jupi_pebbly001 13 0template aliencrust002 3 
++0template jupi_dino001 14 0template jupi_rocky002 13 0template aliencrust003 3 
++0template jupi_dino002 6 0template olivesage001 13 0template jupi_melty001 11 
++0template aztec2 4 0template jupi_stoccolite003 11 
++0template aztec2 12 0template jupi_stoccolite001 3 
++0template aztec2 8 0template jupi_stoccolite003 7 
++0template jupi_stoccolite001 8 0template jupi_bark001 7 
++0template olivesage001 14 0template jupi_dino003 13 0template aliencrust004 3 
++0template olivesage001 12 0template aliencrust003 3 
++0template jupi_dino002 14 0template olivesage001 13 0template aliencrust002 3 
++0template aliencrust004 2 0template jupi_dino002 13 
++0template jupi_dino001 14 0template aliencrust003 1 
++0template jupi_stoccolite002 14 0template jupi_bark002 13 0template olivesage001 11 0template jupi_dino002 7 
++0template jupi_dino002 12 0template aliencrust004 7 0template jupi_rocky004 11 
++0template jupi_dino001 12 0template jupi_melty001 7 0template jupi_pebbly002 11 
++0template jupi_bark001 14 0template jupi_stoccolite002 5 0template jupi_dino001 11 
++0template olivesage001 14 0template jupi_dino002 5 0template jupi_pebbly004 11 
++0template aliencrust004 12 0template jupi_dino002 7 0template jupi_pebbly002 11 
++0template aliencrust003 12 0template jupi_dino002 7 0template jupi_soil003 11 
++0template jupi_pebbly002 10 0template aliencrust002 13 0template jupi_soil001 7 
++0template aliencrust004 8 0template jupi_soil002 7 
++0template jupi_rocky002 10 0template aliencrust003 5 
++0template jupi_dino001 14 0template jupi_rocky003 5 0template jupi_pebbly001 11 
++0template jupi_pebbly002 14 0template jupi_dino002 5 0template olivesage001 11 
++0template olivesage001 2 0template jupi_pebbly002 13 
++0template jupi_dino002 14 0template jupi_pebbly002 13 0template aliencrust002 3 
++0template jupi_soil003 14 0template jupi_dino002 9 0template aliencrust002 7 
++0template jupi_pebbly004 10 0template jupi_soil003 13 0template jupi_dino003 7 
++0template jupi_soil001 14 0template jupi_pebbly002 5 0template jupi_dino003 11 
++0template aliencrust002 14 0template jupi_soil001 13 0template jupi_dino002 3 
++0template jupi_rocky001 14 0template aliencrust003 1 
++0template jupi_pebbly003 14 0template jupi_rocky001 13 0template aliencrust001 3 
++0template jupi_pebbly004 14 0template jupi_melty002 5 0template jupi_dino003 11 
++0template jupi_dino002 12 0template jupi_pebbly003 3 
++0template olivesage001 10 0template jupi_dino001 13 0template jupi_pebbly002 7 
++0template jupi_dino001 12 0template jupi_soil003 7 0template aliencrust003 11 
++0template jupi_dino001 14 0template aliencrust003 5 0template jupi_pebbly004 11 
++0template jupi_dino002 8 0template 3martian001 7 
++0template olivesage001 14 0template jupi_pebbly004 5 0template jupi_soil002 11 
++0template olivesage001 12 0template jupi_soil003 7 0template jupi_dino003 11 
++0template jupi_soil003 14 0template jupi_dino001 13 0template aliencrust004 3 
++0template aliencrust002 2 0template jupi_soil001 13 
++0template jupi_pebbly002 10 0template jupi_dino003 13 0template aliencrust002 7 
++0template jupi_dino002 14 0template jupi_pebbly001 5 0template aliencrust002 11 
++0template jupi_pebbly003 14 0template aliencrust002 5 0template jupi_rocky003 11 
++0template jupi_dino003 10 0template jupi_pebbly003 13 0template jupi_rocky001 7 
++0template jupi_dino003 2 0template 3martian002 13 
++0template jupi_pebbly003 2 0template jupi_dino002 13 
++0template jupi_soil002 14 0template jupi_pebbly003 5 0template olivesage001 11 
++0template jupi_dino001 10 0template jupi_soil001 13 0template olivesage001 7 
++0template jupi_dino001 10 0template jupi_rocky001 13 0template aliencrust001 7 
++0template olivesage001 14 0template jupi_pebbly001 1 
++0template jupi_dino003 8 0template aliencrust004 7 
++0template jupi_pebbly001 14 0template aliencrust003 13 0template jupi_dino003 11 0template jupi_soil003 7 
++0template jupi_dino001 14 0template aliencrust001 5 0template jupi_rocky005 11 
++0template jupi_melty002 14 0template jupi_dino001 9 0template jupi_pebbly001 7 
++0template jupi_pebbly001 4 0template jupi_soil002 11 
++0template jupi_pebbly004 12 0template jupi_soil002 7 0template jupi_dino003 11 
++0template aliencrust002 10 0template jupi_dino003 13 0template jupi_soil002 7 
++0template jupi_dino002 6 0template aliencrust004 9 
++0template jupi_soil002 4 0template jupi_dino003 11 
++0template jupi_dino003 2 0template jupi_soil001 13 
++0template aliencrust002 14 0template jupi_pebbly003 9 0template jupi_dino001 7 
++0template aliencrust001 12 0template jupi_dino001 7 0template jupi_rocky004 11 
++0template aliencrust003 8 0template jupi_rocky002 7 
++0template jupi_pebbly002 14 0template jupi_dino003 13 0template jupi_soil001 3 
++0template jupi_pebbly002 8 0template jupi_soil002 7 
++0template jupi_soil002 6 0template jupi_dino002 9 
++0template jupi_dino001 10 0template jupi_soil001 13 0template jupi_pebbly004 7 
++0template jupi_rocky001 14 0template jupi_dino002 9 0template aliencrust002 7 
++0template aliencrust004 10 0template jupi_rocky002 13 0template jupi_dino003 7 
++0template jupi_pebbly001 12 0template aliencrust003 7 0template jupi_rocky002 11 
++0template jupi_soil002 10 0template jupi_dino002 5 
++0template jupi_pebbly002 14 0template jupi_soil003 5 0template jupi_dino002 11 
++0template jupi_soil002 14 0template jupi_dino001 5 0template aliencrust002 11 
++0template jupi_dino002 10 0template jupi_soil003 13 0template aliencrust001 7 
++0template jupi_soil003 14 0template jupi_dino002 1 
++0template jupi_soil003 8 0template jupi_dino001 7 
++0template jupi_dino002 12 0template jupi_soil002 3 
++0template jupi_soil002 14 0template jupi_dino002 5 0template jupi_pebbly002 11 
++0template jupi_soil003 12 0template jupi_pebbly004 3 
++0template aliencrust003 10 0template jupi_soil003 13 0template jupi_pebbly004 7 
++0template aliencrust002 6 0template jupi_dino001 9 
++0template jupi_funky003 8 0template jupi_dino003 7 
++0template jupi_dino001 10 0template aliencrust002 13 0template jupi_pebbly002 7 
++0template jupi_funky001 6 0template aztec4 9 
++0template jupi_funky003 8 0template aztec4 7 
++0template aliencrust004 10 0template jupi_dino002 13 0template jupi_pebbly004 7 
++0template jupi_pebbly004 14 0template jupi_dino003 9 0template aliencrust003 7 
++0template jupi_pebbly004 14 0template aliencrust002 13 0template jupi_dino001 3 
++0template jupi_dino002 6 0template jupi_pebbly003 13 0template jupi_stocco002 11 
++0template jupi_dino001 8 0template jupi_stocco003 7 
++0template aztec4 2 0template jupi_funky002 13 
++0template jupi_funky003 14 0template aztec4 1 
++0template aliencrust001 6 0template jupi_dino001 13 0template jupi_craterous001 11 
++0template jupi_dino003 10 0template aliencrust002 13 0template jupi_craterous002 7 
++0template jupi_stocco001 14 0template jupi_dino002 13 0template aliencrust001 3 
++0template jupi_dino002 14 0template jupi_stocco002 13 0template aliencrust001 3 
++0template jupi_soil001 6 0template jupi_dino003 13 0template aliencrust002 11 
++0template jupi_craterous001 14 0template aliencrust004 5 0template jupi_dino003 11 
++0template jupi_dino003 2 0template jupi_craterous003 13 
++0template olivesage001 6 0template jupi_dino002 9 
+jupi_soil003
++0template aliencrust002 10 0template jupi_soil002 5 
++0template aliencrust001 4 0template jupi_soil003 11 
++0template aliencrust004 14 0template jupi_dino002 13 0template jupi_craterous002 11 0template jupi_pebbly002 7 
++0template aliencrust001 12 0template jupi_craterous001 7 0template jupi_dino002 11 
++0template jupi_rocky005 14 0template aliencrust003 5 0template jupi_dino003 11 
++0template jupi_dino001 2 0template jupi_rocky004 13 
++0template jupi_soil003 12 0template jupi_dino001 3 
++0template aliencrust004 10 0template jupi_soil002 13 0template jupi_dino001 7 
++0template jupi_soil002 14 0template aliencrust002 1 
++0template jupi_craterous002 14 0template jupi_pebbly003 5 0template jupi_dino003 11 
++0template jupi_pebbly004 14 0template aliencrust001 5 0template jupi_soil002 11 
++0template jupi_dino001 10 0template jupi_pebbly002 13 0template jupi_soil003 7 
++0template jupi_pebbly004 4 0template jupi_rocky004 11 
++0template jupi_pebbly001 12 0template jupi_rocky001 3 
++0template jupi_pebbly003 8 0template jupi_rocky003 7 
++0template jupi_pebbly002 14 0template jupi_dino001 5 0template 5graniteBrown001 11 
++0template aliencrust002 10 0template jupi_pebbly002 13 0template 5graniteBrown002 7 
++0template jupi_soil001 14 0template aliencrust002 5 0template jupi_dino001 11 
++0template jupi_pebbly002 14 0template aztec5_stairs 1 
++0template jupi_pebbly002 12 0template aztec4 3 
++0template aliencrust004 10 0template jupi_pebbly003 13 0template jupi_rocky003 7 
++0template 5graniteBrown002 10 0template jupi_dino002 5 
++0template aliencrust004 10 0template 5graniteBrown002 5 
++0template jupi_dino003 14 0template jupi_pebbly002 1 
++0template jupi_dino001 12 0template olivesage001 7 0template jupi_melty002 11 
++0template jupi_melty003 14 0template jupi_funky002 1 
++0template jupi_rocky004 10 0template jupi_pebbly003 5 
+jupi_rocky003
++0template aliencrust003 14 0template jupi_rocky005 5 0template jupi_pebbly003 11 
++0template jupi_melty001 10 0template olivesage001 5 
+jupi_rocky005
++0template jupi_pebbly004 10 0template jupi_rocky004 5 
++0template jupi_funky002 8 0template jupi_melty001 7 
+jupi_rocky001
++0template aliencrust004 14 0template jupi_dino001 5 0template jupi_stoccolite003 11 
++0template jupi_dino001 14 0template aliencrust003 13 0template jupi_stoccolite002 3 
++0template aliencrust002 10 0template jupi_dino001 13 0template jupi_stoccolite003 7 
++0template 5graniteBrown002 14 0template jupi_dino001 9 0template aliencrust004 7 
++0template aliencrust003 10 0template 5graniteBrown001 13 0template jupi_dino002 7 
++0template jupi_melty001 8 0template olivesage001 7 
++0template jupi_dino001 14 0template aztec4 1 
++0template aliencrust003 10 0template jupi_stoccolite002 5 
++0template jupi_rocky003 14 0template jupi_pebbly001 1 
++0template aztec4 8 0template jupi_pebbly003 7 
++0template jupi_rocky003 4 0template jupi_pebbly004 11 
++0template jupi_pebbly004 2 0template jupi_rocky001 13 
++0template aztec4 10 0template jupi_pebbly003 5 
++0template jupi_rocky003 12 0template jupi_pebbly002 3 
++0template jupi_melty002 14 0template olivesage001 13 0template jupi_dino001 3 
++0template jupi_funky003 14 0template jupi_melty001 13 0template jupi_dino003 3 
++0template jupi_melty001 14 0template jupi_funky001 9 0template jupi_dino001 7 
++0template aliencrust001 14 0template jupi_stoccolite003 1 
++0template aliencrust002 12 0template jupi_stoccolite001 3 
++0template aliencrust002 8 0template jupi_stoccolite002 7 
++0template jupi_dino003 12 0template jupi_pebbly004 7 0template 2gbdirt001 11 
++0template jupi_dino002 12 0template 2gbdirt002 7 0template jupi_pebbly004 11 
++0template jupi_melty001 14 0template jupi_stoccolite002 13 0template jupi_dino001 3 
++0template jupi_dino001 12 0template aliencrust004 7 0template jupi_pebbly003 11 
++0template 2gbdirt001 14 0template jupi_pebbly001 5 0template jupi_dino003 11 
++0template jupi_pebbly004 14 0template 2gbdirt001 13 0template jupi_dino003 3 
++0template jupi_dino003 12 0template jupi_stoccolite003 7 0template jupi_pebbly004 11 
++0template aliencrust003 4 0template 5graniteBrown001 11 
++0template aliencrust001 12 0template 5graniteBrown002 7 0template jupi_dino003 11 
++0template jupi_dino003 6 0template jupi_melty001 9 
++0template jupi_stoccolite003 14 0template jupi_dino003 13 0template jupi_pebbly002 3 
++0template jupi_pebbly004 2 0template jupi_stoccolite001 13 
++0template jupi_dino001 14 0template aliencrust002 1 
++0template 5graniteBrown002 10 0template aliencrust002 5 
++0template jupi_dino001 14 0template 5graniteBrown001 1 
++0template jupi_dino002 12 0template 5graniteBrown001 7 0template aliencrust004 11 
++0template jupi_dino003 14 0template aliencrust003 13 0template jupi_pebbly004 3 
++0template jupi_soil003 2 0template aliencrust001 13 
++0template 5graniteBrown002 4 0template jupi_dino002 11 
++0template aliencrust004 4 0template jupi_rocky005 11 
++0template jupi_pebbly002 10 0template aliencrust003 13 0template jupi_rocky001 7 
++0template jupi_soil003 14 0template aliencrust004 5 0template jupi_pebbly003 11 
++0template jupi_pebbly002 2 0template jupi_soil002 13 
++0template aliencrust003 12 0template jupi_dino002 7 0template 5graniteBrown002 11 
++0template 5graniteBrown002 2 0template aliencrust001 13 
++0template jupi_dino001 14 0template 5graniteBrown002 5 0template aliencrust001 11 
++0template jupi_rocky004 14 0template aliencrust004 5 0template jupi_pebbly002 11 
++0template jupi_dino001 12 0template olivesage001 7 0template jupi_pebbly001 11 
++0template jupi_funky001 14 0template jupi_dino003 5 0template jupi_melty003 11 
++0template jupi_dino001 14 0template jupi_melty002 5 0template jupi_rocky004 11 
++0template jupi_dino003 12 0template jupi_rocky003 7 0template jupi_melty002 11 
++0template aliencrust002 14 0template jupi_pebbly004 5 0template jupi_dino002 11 
++0template 5graniteBrown002 4 0template aliencrust003 11 
++0template aliencrust003 2 0template 5graniteBrown001 13 
++0template jupi_dino002 10 0template jupi_pebbly002 13 0template olivesage001 7 
++0template jupi_rocky003 14 0template jupi_melty002 1 
++0template jupi_melty003 2 0template jupi_rocky004 13 
++0template jupi_dino001 12 0template jupi_pebbly003 7 0template aliencrust004 11 
++0template 5graniteBrown001 14 0template jupi_dino003 1 
++0template jupi_rocky002 4 0template jupi_dino003 11 
++0template jupi_pebbly003 10 0template jupi_rocky001 13 0template jupi_dino001 7 
++0template jupi_melty003 14 0template jupi_dino003 5 0template jupi_funky003 11 
++0template jupi_pebbly002 10 0template jupi_melty001 13 0template jupi_dino002 7 
++0template jupi_dino001 14 0template jupi_pebbly004 9 0template aliencrust001 7 
++0template jupi_pebbly004 10 0template jupi_dino001 13 0template jupi_soil002 7 
++0template jupi_dino003 14 0template aliencrust003 9 0template jupi_pebbly004 7 
++0template jupi_rocky003 14 0template aliencrust003 13 0template jupi_dino001 3 
++0template jupi_dino003 6 0template jupi_rocky001 13 0template jupi_pebbly003 11 
++0template jupi_dino003 14 0template jupi_pebbly003 5 0template olivesage001 11 
++0template jupi_soil001 10 0template jupi_dino003 13 0template aliencrust003 7 
++0template jupi_pebbly001 14 0template jupi_soil002 1 
++0template aliencrust002 12 0template jupi_rocky002 3 
++0template jupi_dino001 10 0template aliencrust003 13 0template jupi_rocky003 7 
++0template olivesage001 10 0template jupi_pebbly003 5 
++0template jupi_soil003 10 0template aliencrust003 13 0template jupi_dino003 7 
++0template jupi_rocky004 14 0template aliencrust003 13 0template jupi_dino003 11 0template jupi_pebbly001 7 
++0template jupi_rocky002 12 0template jupi_dino001 3 
++0template jupi_pebbly002 6 0template jupi_melty002 9 
++0template jupi_pebbly004 12 0template jupi_melty002 7 0template olivesage001 11 
++0template jupi_pebbly002 6 0template jupi_dino001 13 0template jupi_melty003 11 
++0template jupi_melty002 6 0template jupi_pebbly003 13 0template olivesage001 11 
++0template olivesage001 2 0template jupi_melty001 13 
++0template jupi_stoccolite003 4 0template jupi_pebbly001 11 
++0template aliencrust003 14 0template jupi_stoccolite001 13 0template jupi_pebbly003 3 
++0template jupi_melty003 4 0template olivesage001 11 
++0template jupi_pebbly002 14 0template jupi_stoccolite001 1 
++0template jupi_pebbly003 12 0template jupi_stoccolite001 3 
++0template aliencrust002 14 0template jupi_pebbly003 13 0template jupi_stoccolite003 3 
++0template jupi_pebbly003 14 0template aliencrust003 9 0template jupi_soil001 7 
++0template aliencrust002 12 0template jupi_rocky003 7 0template jupi_pebbly002 11 
++0template olivesage001 10 0template jupi_melty002 13 0template jupi_dino003 7 
++0template jupi_dino003 14 0template jupi_pebbly001 5 0template jupi_stoccolite003 11 
++0template aliencrust001 12 0template jupi_stoccolite003 7 0template jupi_dino001 11 
++0template aliencrust001 4 0template jupi_pebbly004 11 
++0template jupi_pebbly004 6 0template aliencrust001 13 0template jupi_soil002 11 
++0template jupi_pebbly001 14 0template jupi_rocky005 13 0template jupi_dino002 3 
++0template jupi_stoccolite001 14 0template jupi_pebbly004 1 
++0template jupi_stoccolite002 8 0template jupi_pebbly004 7 
++0template aliencrust004 14 0template jupi_dino002 13 0template jupi_stoccolite003 3 
++0template jupi_soil002 14 0template jupi_pebbly003 5 0template aliencrust002 11 
++0template olivesage001 4 0template jupi_melty003 11 
++0template olivesage001 12 0template jupi_melty003 7 0template jupi_pebbly001 11 
++0template olivesage001 12 0template jupi_pebbly001 7 0template jupi_dino001 11 
++0template jupi_dino002 12 0template jupi_stoccolite001 7 0template jupi_melty003 11 
++0template aliencrust002 12 0template jupi_dino003 7 0template jupi_pebbly003 11 
++0template jupi_soil002 10 0template jupi_pebbly001 13 0template aliencrust002 7 
++0template olivesage001 10 0template jupi_dino003 13 0template jupi_melty001 7 
++0template jupi_stoccolite003 4 0template jupi_rocky003 11 
++0template jupi_melty002 10 0template jupi_stoccolite003 13 0template jupi_rocky001 7 
++0template jupi_pebbly004 14 0template jupi_dino002 13 0template jupi_stoccolite002 3 
++0template aliencrust004 10 0template jupi_pebbly004 13 0template jupi_stoccolite001 7 
++0template jupi_soil001 10 0template aliencrust001 5 
++0template aliencrust004 12 0template jupi_soil001 7 0template jupi_rocky001 11 
++0template aliencrust001 12 0template jupi_rocky001 7 0template jupi_soil003 11 
++0template olivesage001 10 0template jupi_melty003 5 
++0template jupi_melty001 14 0template olivesage001 5 0template jupi_dino002 11 
++0template jupi_rocky005 10 0template jupi_stoccolite002 5 
++0template jupi_melty002 10 0template jupi_rocky002 5 
++0template jupi_stoccolite001 10 0template jupi_pebbly002 13 0template jupi_dino001 7 
++0template aliencrust001 12 0template jupi_stoccolite003 7 0template jupi_pebbly003 11 
++0template jupi_rocky002 14 0template jupi_soil003 5 0template jupi_dino002 11 
++0template jupi_soil002 14 0template jupi_rocky003 13 0template jupi_dino002 3 
++0template jupi_rocky003 14 0template jupi_stoccolite002 5 0template jupi_melty001 11 
++0template jupi_dino002 14 0template jupi_melty002 5 0template jupi_pebbly002 11 
++0template aliencrust001 12 0template jupi_stoccolite002 7 0template jupi_soil001 11 
++0template jupi_soil003 2 0template aliencrust001 13 
++0template jupi_melty003 10 0template jupi_dino002 13 0template jupi_pebbly003 7 
++0template jupi_dino002 14 0template jupi_funky003 5 0template jupi_stoccolite002 11 
++0template jupi_stoccolite002 14 0template jupi_dino003 5 0template jupi_pebbly003 11 
++0template jupi_stoccolite002 12 0template jupi_pebbly003 7 0template jupi_dino001 11 
++0template jupi_soil003 14 0template jupi_stoccolite002 1 
++0template jupi_soil003 8 0template jupi_stoccolite002 7 
++0template jupi_stoccolite002 10 0template jupi_funky002 5 
++0template jupi_rocky005 6 0template jupi_stoccolite003 13 0template jupi_funky003 11 
++0template jupi_melty002 14 0template jupi_rocky003 13 0template jupi_funky001 3 
++0template jupi_funky003 6 0template jupi_melty001 13 0template jupi_pebbly004 11 
++0template jupi_funky001 12 0template jupi_pebbly002 7 0template jupi_melty001 11 
++0template jupi_funky002 12 0template jupi_melty002 7 0template jupi_pebbly001 11 
++0template jupi_melty003 14 0template jupi_funky001 13 0template jupi_pebbly002 3 
++0template jupi_melty003 12 0template jupi_pebbly003 7 0template jupi_funky002 11 
++0template jupi_funky001 6 0template jupi_melty003 9 
++0template jupi_pebbly004 14 0template jupi_stoccolite001 13 0template jupi_dino001 3 
++0template jupi_stoccolite001 14 0template jupi_pebbly002 13 0template jupi_dino003 3 
++0template jupi_soil001 10 0template jupi_stoccolite003 5 
++0template jupi_melty002 10 0template jupi_pebbly002 13 0template jupi_dino002 7 
++0template jupi_funky003 12 0template jupi_pebbly004 7 0template jupi_stoccolite002 11 
++0template jupi_rocky002 6 0template jupi_stoccolite003 13 0template jupi_pebbly003 11 
++0template jupi_funky002 14 0template jupi_rocky004 13 0template jupi_pebbly001 3 
++0template jupi_funky003 14 0template jupi_pebbly002 1 
++0template jupi_melty003 4 0template searockdark003 11 
++0template jupi_melty003 12 0template searockdark001 7 0template jupi_pebbly001 11 
++0template jupi_dino002 14 0template jupi_pebbly004 13 0template jupi_melty002 3 
++0template jupi_stoccolite001 4 0template jupi_soil001 11 
++0template jupi_soil002 2 0template jupi_stoccolite002 13 
++0template jupi_soil002 2 0template jupi_pebbly003 13 
++0template jupi_dino003 12 0template jupi_pebbly002 7 0template jupi_melty003 11 
++0template jupi_melty003 14 0template jupi_dino003 13 0template jupi_funky002 3 
++0template jupi_rocky001 14 0template jupi_stoccolite002 5 0template jupi_pebbly004 11 
++0template searockdark002 2 0template jupi_melty001 13 
++0template jupi_pebbly001 10 0template searockdark004 5 
++0template jupi_stoccolite002 12 0template jupi_pebbly001 3 
++0template jupi_pebbly001 14 0template jupi_funky002 9 0template jupi_melty001 7 
+searockdark001
++0template jupi_pebbly002 14 0template searockdark002 1 
++0template jupi_pebbly001 8 0template searockdark001 7 
++0template jupi_stoccolite001 10 0template jupi_pebbly004 5 
++0template jupi_stoccolite002 4 0template aliencrust001 11 
++0template jupi_soil003 10 0template jupi_stoccolite001 13 0template aliencrust004 7 
++0template jupi_soil003 4 0template jupi_pebbly003 11 
++0template jupi_soil002 12 0template aliencrust003 3 
++0template jupi_dino001 14 0template jupi_soil003 13 0template aliencrust003 3 
++0template jupi_dino001 12 0template aliencrust004 7 0template easterhead2 11 
++0template jupi_dino002 12 0template easterhead2 3 
++0template jupi_pebbly001 10 0template jupi_dino001 13 0template easterhead2 7 
++0template jupi_melty001 12 0template jupi_pebbly003 7 0template searockdark002 11 
++0template jupi_melty003 12 0template searockdark001 3 
+searockdark002
+searockdark004
++0template jupi_stoccolite003 4 0template easterhead2 11 
++0template jupi_stoccolite002 12 0template easterhead2 7 0template aliencrust004 11 
++0template aliencrust003 2 0template jupi_stoccolite001 13 
++0template easterhead2 14 0template aliencrust004 1 
++0template easterhead2 8 0template aliencrust004 7 
+easterhead2
++0template jupi_pebbly001 10 0template easterhead2 5 
++0template searockdark004 14 0template jupi_pebbly001 1 
++0template searockdark002 12 0template jupi_pebbly003 3 
+searockdark003
++0template jupi_pebbly002 2 0template searockdark004 13 
++0template jupi_stoccolite002 12 0template jupi_pebbly004 7 0template easterhead2 11 
++0template easterhead2 2 0template jupi_stoccolite003 13 
++0template aliencrust004 14 0template easterhead2 1 
++0template aliencrust002 8 0template easterhead2 7 
++0template aliencrust001 14 0template jupi_pebbly001 5 0template easterhead2 11 
++0template easterhead2 10 0template aliencrust003 5 
++0template jupi_dino003 14 0template jupi_melty003 13 0template aliencrust002 3 
++0template jupi_funky003 10 0template jupi_dino002 13 0template jupi_melty001 7 
++0template bluegranite003 10 0template aztec9_doors 5 
+bluegranite002
++0template aztec9_doors 10 0template bluegranite003 5 
++0template easterhead2 10 0template jupi_pebbly003 5 
++0template aliencrust001 12 0template easterhead2 3 
++0template jupi_pebbly002 14 0template aliencrust002 5 0template easterhead2 11 
++0template jupi_pebbly004 12 0template easterhead2 3 
++0template easterhead2 2 0template jupi_pebbly002 13 
++0template easterhead2 2 0template aliencrust003 13 
++0template bluegranite003 14 0template aztec6 1 
++0template bluegranite001 12 0template aztec6 3 
++0template aztec6 2 0template bluegranite002 13 
++0template jupi_pebbly004 12 0template jupi_dino002 7 0template jupi_melty001 11 
++0template easterhead2 14 0template jupi_pebbly003 13 0template jupi_melty002 3 
++0template easterhead2 8 0template jupi_melty002 7 
++0template easterhead2 4 0template jupi_dino003 11 
++0template easterhead2 12 0template jupi_dino002 3 
++0template jupi_pebbly002 14 0template easterhead2 13 0template jupi_dino003 3 
++0template aliencrust001 14 0template jupi_melty003 13 0template jupi_dino002 3 
++0template easterhead2 14 0template jupi_melty001 1 
++0template easterhead2 12 0template jupi_melty002 7 0template aliencrust002 11 
++0template easterhead2 12 0template aliencrust004 3 
++0template jupi_dino002 10 0template easterhead2 5 
++0template aztec8_doors 2 0template aztec3 13 
++0template jupi_melty002 4 0template easterhead2 11 
++0template aliencrust003 14 0template jupi_melty002 13 0template easterhead2 3 
++0template aztec4 10 0template easterhead2 5 
++0template jupi_dino003 14 0template jupi_pebbly002 5 0template jupi_melty002 11 
++0template jupi_dino001 6 0template jupi_pebbly002 13 0template marsvolc002 11 
++0template easterhead2 2 0template jupi_melty003 13 
++0template aztec3 10 0template aztec4 5 
++0template jupi_dino002 2 0template easterhead2 13 
++0template aztec6 4 0template aztec2 11 
++0template aztec6 12 0template aztec2 3 
++0template aztec6 8 0template aztec2 7 
++0template jupi_melty003 14 0template jupi_dino002 13 0template jupi_pebbly001 3 
++0template easterhead2 10 0template jupi_melty002 5 
++0template aztec4 2 0template easterhead2 13 
++0template aztec2 10 0template aztec3 13 0template aztec7_roof 7 
++0template aztec6 10 0template aztec2 5 
++0template jupi_melty001 4 0template jupi_bumpy001 11 
++0template jupi_melty001 12 0template jupi_bumpy001 3 
++0template jupi_melty003 8 0template jupi_bumpy003 7 
++0template jupi_pebbly001 14 0template jupi_dino003 9 0template jupi_melty001 7 
++0template jupi_melty003 14 0template jupi_pebbly004 5 0template jupi_dino002 11 
++0template aztec2 14 0template aztec7_roof 1 
++0template aztec2 12 0template aztec7_roof 3 
++0template aztec2 12 0template aztec7_roof 7 0template aztec1 11 
++0template aztec2 12 0template aztec1 3 
++0template aztec2 12 0template aztec1 7 0template aztec7_roof 11 
++0template aztec6 2 0template aztec2 13 
++0template jupi_bumpy003 14 0template jupi_melty001 9 0template easterhead2 7 
++0template jupi_bumpy001 12 0template jupi_melty001 3 
++0template jupi_melty002 2 0template jupi_bumpy001 13 
++0template easterhead2 12 0template jupi_melty001 3 
++0template aztec3 4 0template jupi_dino003 11 
++0template jupi_dino002 12 0template jupi_funky001 7 0template jupi_bumpy003 11 
++0template jupi_dino002 12 0template jupi_bumpy002 7 0template jupi_pebbly004 11 
++0template aztec7_roof 12 0template jupi_dino002 3 
++0template aztec4 8 0template jupi_dino001 7 
++0template aztec1 14 0template aztec7_roof 1 
++0template aztec1 8 0template aztec7_roof 7 
++0template aztec7_roof 10 0template aztec1 5 
++0template jupi_melty003 10 0template aztec5_stairs 5 
++0template jupi_melty002 2 0template easterhead2 13 
++0template jupi_dino003 14 0template jupi_melty003 5 0template aliencrust001 11 
++0template jupi_melty003 10 0template jupi_dino003 13 0template aliencrust001 7 
++0template jupi_bumpy002 14 0template jupi_funky003 13 0template jupi_dino003 3 
++0template jupi_pebbly004 10 0template jupi_bumpy001 13 0template jupi_dino001 7 
++0template marsvolc002 4 0template jupi_dino002 11 
++0template aztec7_roof 14 0template jupi_dino003 1 
++0template aztec7_roof 8 0template jupi_dino002 7 
++0template aztec7_roof 8 0template aztec1 7 
++0template easterhead2 14 0template jupi_melty002 5 0template jupi_bumpy001 11 
++0template easterhead2 12 0template jupi_bumpy003 3 
++0template easterhead2 8 0template jupi_bumpy002 7 
++0template easterhead2 4 0template jupi_bumpy001 11 
++0template jupi_dino001 10 0template easterhead2 13 0template jupi_bumpy003 7 
++0template jupi_pebbly003 14 0template jupi_dino002 5 0template jupi_bumpy003 11 
++0template jupi_dino002 4 0template searock004 11 
++0template jupi_dino002 12 0template searock001 3 
++0template jupi_dino003 8 0template searock004 7 
++0template jupi_melty001 8 0template easterhead2 7 
++0template jupi_bumpy003 14 0template jupi_melty003 1 
++0template jupi_bumpy002 8 0template jupi_melty001 7 
++0template easterhead2 14 0template jupi_bumpy003 1 
++0template jupi_bumpy003 10 0template easterhead2 5 
++0template jupi_dino003 10 0template jupi_bumpy002 5 
++0template jupi_dino001 4 0template jupi_bumpy002 11 
++0template jupi_dino002 12 0template jupi_bumpy002 3 
++0template jupi_bumpy003 14 0template jupi_dino003 13 0template jupi_pebbly004 3 
++0template jupi_dino003 14 0template jupi_melty001 5 0template marsvolc001 11 
++0template searock004 14 0template jupi_dino001 1 
++0template searock003 12 0template jupi_dino002 3 
++0template jupi_dino002 6 0template searock004 13 0template jupi_melty003 11 
++0template jupi_melty001 14 0template jupi_pebbly004 5 0template jupi_bumpy001 11 
++0template jupi_bumpy001 10 0template jupi_melty002 5 
+jupi_bumpy002
++0template easterhead2 10 0template jupi_bumpy003 5 
++0template easterhead2 4 0template aztec6 11 
++0template easterhead2 8 0template aztec6 7 
++0template jupi_bumpy001 2 0template jupi_dino003 13 
++0template marsvolc001 14 0template jupi_melty003 13 0template jupi_dino003 3 
++0template aztec9_doors 8 0template aztec4 7 
++0template easterhead2 14 0template jupi_bumpy003 5 0template aztec6 11 
++0template aztec6 2 0template easterhead2 13 
++0template easterhead2 10 0template aztec6 5 
++0template jupi_dino001 14 0template jupi_bumpy003 1 
++0template jupi_dino001 12 0template jupi_bumpy001 7 0template aztec6 11 
++0template jupi_dino002 12 0template aztec6 7 0template jupi_bumpy003 11 
++0template jupi_bumpy002 6 0template jupi_dino003 13 0template jupi_pebbly001 11 
++0template jupi_pebbly002 6 0template jupi_bumpy003 13 0template jupi_dino001 11 
++0template aztec9_doors 10 0template aztec4 5 
++0template jupi_melty002 4 0template aztec6 11 
++0template jupi_melty001 12 0template aztec6 3 
++0template jupi_bumpy002 14 0template jupi_melty003 13 0template aztec6 3 
++0template jupi_bumpy002 12 0template aztec6 3 
++0template aztec6 2 0template jupi_bumpy001 13 
++0template easterhead2 14 0template aztec6 1 
++0template easterhead2 12 0template aztec6 3 
++0template jupi_bumpy001 14 0template easterhead2 13 0template aztec6 3 
++0template jupi_bumpy003 10 0template aztec6 5 
++0template jupi_pebbly004 12 0template aliencrust004 7 0template jupi_funky001 11 
++0template jupi_melty002 14 0template jupi_pebbly003 13 0template aliencrust002 11 0template jupi_funky003 7 
++0template jupi_dino001 10 0template jupi_melty002 13 0template aliencrust002 7 
++0template jupi_melty001 12 0template jupi_dino001 7 0template easterhead2 11 
++0template aztec6 10 0template jupi_melty002 13 0template easterhead2 7 
++0template jupi_bumpy003 14 0template aztec6 5 0template jupi_pebbly004 11 
++0template aztec9_doors 2 0template aztec4 13 
++0template jupi_funky002 10 0template aliencrust003 5 
++0template aliencrust001 10 0template jupi_funky003 5 
++0template aliencrust002 10 0template jupi_melty003 13 0template jupi_dino003 7 
++0template easterhead2 14 0template jupi_dino002 1 
++0template aztec6 10 0template easterhead2 13 0template jupi_dino002 7 
++0template jupi_pebbly002 10 0template aztec6 5 
++0template jupi_funky003 10 0template aliencrust001 13 0template jupi_pebbly001 7 
++0template aztec6 10 0template jupi_dino002 5 
++0template aztec6 4 0template jupi_pebbly003 11 
++0template aztec8_doors 12 0template jupi_pebbly004 3 
++0template aztec6 8 0template jupi_pebbly001 7 
++0template jupi_pebbly002 14 0template jupi_dino003 5 0template jupi_funky002 11 
++0template jupi_dino002 14 0template jupi_pebbly001 13 0template jupi_funky003 3 
++0template jupi_funky001 10 0template jupi_pebbly002 5 
++0template aliencrust002 14 0template jupi_funky003 1 
++0template aliencrust004 8 0template jupi_funky002 7 
++0template jupi_dino001 14 0template aliencrust004 5 0template jupi_funky003 11 
++0template aztec6 14 0template jupi_dino001 13 0template jupi_bumpy002 3 
++0template aztec6 8 0template jupi_bumpy003 7 
++0template aztec6 10 0template jupi_pebbly003 5 
++0template jupi_dino001 14 0template jupi_pebbly003 5 0template jupi_funky001 11 
++0template jupi_funky003 6 0template aliencrust002 9 
++0template jupi_dino002 14 0template jupi_funky001 13 0template aliencrust003 3 
++0template jupi_dino001 12 0template aliencrust001 7 0template jupi_funky002 11 
++0template jupi_dino003 8 0template jupi_bumpy002 7 
++0template jupi_bumpy002 10 0template jupi_dino001 5 
+jupi_bumpy003
++0template aztec6 10 0template jupi_bumpy001 5 
++0template jupi_pebbly001 14 0template aztec6 1 
++0template jupi_pebbly001 12 0template aztec8_doors 3 
++0template aztec6 2 0template jupi_pebbly004 13 
++0template jupi_pebbly001 14 0template aztec6 5 0template jupi_bumpy003 11 
++0template jupi_pebbly001 12 0template jupi_funky002 3 
++0template aliencrust004 12 0template jupi_funky003 3 
++0template jupi_funky002 2 0template aliencrust001 13 
++0template aztec7_roof 14 0template aztec5_stairs 1 
++0template jupi_funky003 4 0template jupi_bumpy002 11 
++0template jupi_funky003 8 0template jupi_bumpy002 7 
++0template jupi_pebbly004 14 0template jupi_bumpy003 1 
++0template jupi_pebbly001 14 0template jupi_funky001 1 
++0template jupi_bumpy002 6 0template jupi_funky003 9 
++0template jupi_funky002 2 0template jupi_bumpy002 13 
++0template jupi_bumpy002 14 0template jupi_funky003 1 
++0template jupi_bumpy002 14 0template jupi_dino001 1 
++0template jupi_dino003 6 0template jupi_bumpy001 9 
+jupi_bumpy001
++0template aztec6 14 0template jupi_bumpy003 1 
++0template jupi_funky001 8 0template jupi_pebbly004 7 
++0template jupi_dino001 14 0template jupi_funky001 5 0template jupi_bumpy003 11 
++0template jupi_dino003 12 0template jupi_bumpy003 7 0template jupi_funky003 11 
++0template jupi_funky001 12 0template jupi_bumpy001 3 
++0template jupi_bumpy001 4 0template jupi_pebbly001 11 
++0template jupi_bumpy003 12 0template jupi_funky001 3 
++0template jupi_funky001 6 0template jupi_bumpy001 9 
++0template jupi_bumpy002 14 0template jupi_dino001 13 0template jupi_funky002 3 
++0template jupi_bumpy002 8 0template jupi_funky002 7 
++0template jupi_bumpy001 10 0template jupi_funky003 5 
++0template jupi_funky001 14 0template jupi_bumpy003 1 
++0template jupi_bumpy001 2 0template jupi_funky001 13 
++0template jupi_bumpy003 4 0template aztec6 11 
++0template jupi_bumpy002 14 0template aztec6 1 
++0template jupi_bumpy002 8 0template aztec6 7 
++0template jupi_funky003 10 0template jupi_pebbly002 13 0template jupi_bumpy001 7 

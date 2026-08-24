@@ -1,0 +1,80 @@
+3grass001
+3grass002
+3grass003
++0template 3grass001 4 0template sandstuff003 11 
++0template 3grass002 12 0template sandstuff002 3 
++0template 3grass003 8 0template sandstuff002 7 
++0template sandstuff004 2 0template 3grass001 13 
+sandstuff003
+sandstuff002
++0template 3grass002 14 0template sandstuff002 1 
+sandstuff004
+sandstuff001
++0template sandstuff003 4 0template 3grass001 11 
++0template sandstuff004 12 0template 3grass003 3 
++0template 3grass001 2 0template sandstuff004 13 
++0template sandstuff004 10 0template 3grass001 5 
++0template sandstuff003 14 0template 3grass001 1 
++0template sandstuff001 8 0template 3grass003 7 
++0template 3grass003 10 0template sandstuff003 5 
++0template 3grass003 12 0template turf003 3 
++0template 3grass002 8 0template turf003 7 
+turf003
+turf004
+turf002
+turf001
++0template 3grass002 14 0template turf004 1 
++0template 3grass002 10 0template turf002 5 
++0template 3grass002 14 0template turf004 5 0template sandstuff003 11 
++0template turf003 4 0template sandstuff002 11 
++0template sandstuff001 2 0template turf002 13 
++0template sandstuff001 10 0template turf001 5 
++0template sandstuff002 4 0template turf002 11 
++0template 3grass001 10 0template sandstuff002 13 0template turf003 7 
++0template sandstuff004 14 0template turf004 1 
++0template sandstuff001 8 0template turf001 7 
++0template turf003 10 0template sandstuff001 5 
++0template turf004 2 0template sandstuff002 13 
++0template 3grass003 4 0template jupi_dino001 11 
++0template 3grass003 12 0template jupi_dino002 3 
++0template 3grass003 8 0template jupi_dino001 7 
++0template jupi_dino003 6 0template 3grass003 13 0template blue/bluet 11 
++0template jupi_dino002 12 0template blue/bluet 3 
++0template 3grass003 14 0template jupi_dino001 9 0template blue/bluet 7 
++0template jupi_dino001 10 0template 3grass001 5 
++0template jupi_dino002 4 0template blue/bluet 11 
++0template blue/bluet 2 0template jupi_dino001 13 
+blue/bluet
++0template jupi_dino003 10 0template blue/bluet 5 
++0template 3grass001 10 0template jupi_dino001 5 
++0template blue/bluet 10 0template jupi_dino001 5 
++0template jupi_dino002 14 0template blue/bluet 1 
++0template jupi_dino001 14 0template 3grass002 1 
++0template blue/bluet 14 0template jupi_dino001 9 0template 3grass003 7 
++0template blue/bluet 8 0template jupi_dino001 7 
++0template blue/bluet 4 0template jupi_dino001 11 
++0template jupi_dino002 6 0template blue/bluet 13 0template 3grass001 11 
++0template 3grass002 2 0template jupi_dino003 13 
++0template blue/bluet 14 0template jupi_dino001 1 
++0template jupi_dino003 12 0template 3grass003 3 
++0template jupi_dino002 2 0template blue/bluet 13 
++0template turf002 4 0template 3grass002 11 
++0template turf002 12 0template 3grass002 3 
++0template turf002 8 0template 3grass001 7 
++0template turf003 10 0template 3grass003 5 
++0template turf001 2 0template 3grass002 13 
++0template turf002 12 0template sandstuff003 3 
++0template turf004 8 0template sandstuff004 7 
++0template turf003 14 0template sandstuff001 1 
++0template sandstuff003 12 0template turf003 3 
++0template sandstuff004 12 0template turf004 7 0template 3grass001 11 
++0template turf001 14 0template 3grass002 1 
++0template sandstuff003 14 0template turf003 13 0template 3grass002 3 
++0template sandstuff001 12 0template 3grass001 7 0template turf003 11 
++0template turf002 6 0template 3grass003 9 
++0template 3grass002 2 0template turf003 13 
++0template 3grass002 4 0template turf001 11 
++0template turf001 14 0template 3grass001 5 0template 1bush001 11 
++0template 3grass002 10 0template turf003 13 0template 1bush002 7 
++0template 1bush001 14 0template 3grass003 1 
++0template 3grass002 2 0template 1bush002 13 

@@ -1,0 +1,877 @@
+3litegrass003
+3litegrass002
+3litegrass001
++0template 3litegrass002 4 0template 1french001 11 
++0template 1french004 2 0template 3litegrass003 13 
+1french002
+1french001
+1french004
++0template 20bush_4sand001 14 0template 1french001 1 
++0template crusty001 14 0template 20bush_4sand001 13 0template 1french001 3 
++0template crusty003 8 0template 1french002 7 
+crusty002
+crusty004
++0template stones004 14 0template crusty002 1 
++0template crusty003 2 0template stones003 13 
+crusty003
+crusty001
++0template crusty001 4 0template stones002 11 
++0template stones003 2 0template crusty001 13 
+stones001
++0template crusty004 10 0template stones003 5 
++0template 3litegrass002 4 0template junglecanyon001 11 
++0template 3litegrass002 12 0template junglecanyon001 3 
++0template 3litegrass003 8 0template junglecanyon001 7 
++0template 3litegrass001 4 0template 20bush_4sand002 11 
++0template 3litegrass003 12 0template 20bush_4sand002 3 
++0template 1french004 10 0template 3litegrass003 13 0template 20bush_4sand002 7 
+1french003
++0template crusty001 10 0template 1french001 5 
++0template crusty002 4 0template canyon003 11 
++0template crusty004 12 0template canyon003 3 
++0template crusty004 8 0template canyon003 7 
++0template crusty001 12 0template stones003 3 
++0template crusty003 8 0template stones002 7 
++0template stones003 10 0template crusty003 5 
++0template stones001 4 0template crusty001 11 
++0template junglecanyon001 10 0template 3litegrass002 5 
+junglecanyon001
++0template 3litegrass001 14 0template junglecanyon002 1 
++0template 20bush_4sand002 10 0template 3litegrass003 5 
+20bush_4sand001
++0template 1french001 14 0template 20bush_4sand002 5 0template 3litegrass003 11 
++0template 1french004 8 0template 3litegrass003 7 
++0template crusty001 14 0template 1french001 5 0template 20bush_4sand001 11 
++0template crusty004 8 0template 20bush_4sand001 7 
++0template canyon003 10 0template crusty004 5 
+canyon002
++0template crusty001 14 0template canyon002 5 0template stones001 11 
++0template crusty001 12 0template stones004 7 0template canyon003 11 
+canyon001
++0template crusty001 10 0template canyon003 5 
+stones004
++0template stones003 8 0template crusty002 7 
++0template crusty002 14 0template stones001 1 
++0template stones003 14 0template crusty002 13 0template canyon003 3 
++0template stones004 12 0template canyon002 3 
++0template stones003 8 0template canyon001 7 
++0template junglecanyon002 14 0template 3litegrass002 1 
++0template junglecanyon001 8 0template 3litegrass003 7 
+junglecanyon003
+junglecanyon002
++0template 20bush_4sand001 2 0template 3litegrass003 13 
+20bush_4sand002
++0template 3litegrass002 14 0template 20bush_4sand002 5 0template 1french003 11 
++0template crusty004 14 0template 20bush_4sand002 9 0template 1french003 7 
++0template stones001 12 0template crusty004 3 
++0template crusty001 6 0template stones002 9 
++0template canyon003 14 0template crusty002 5 0template stones003 11 
++0template canyon001 12 0template stones002 3 
++0template stones004 2 0template canyon001 13 
++0template canyon003 10 0template stones003 5 
++0template canyon003 2 0template crusty002 13 
++0template canyon003 4 0template crusty002 11 
++0template crusty001 2 0template canyon001 13 
++0template stones004 4 0template canyon002 11 
++0template crusty002 14 0template stones004 13 0template canyon003 3 
+canyon003
++0template stones004 12 0template crusty002 7 0template canyon002 11 
++0template stones002 10 0template canyon002 5 
++0template 3litegrass003 10 0template junglecanyon003 5 
++0template 20bush_4sand001 4 0template 3litegrass003 11 
++0template 1french003 10 0template 20bush_4sand002 13 0template 3litegrass001 7 
++0template 20bush_4sand001 10 0template 1french004 5 
++0template crusty002 14 0template 20bush_4sand001 1 
++0template crusty002 6 0template stones003 13 0template canyon002 11 
++0template stones003 10 0template crusty002 13 0template canyon003 7 
+stones003
+stones002
++0template crusty004 14 0template canyon001 1 
++0template canyon001 10 0template stones003 13 0template crusty003 7 
++0template canyon003 12 0template crusty002 3 
++0template canyon001 14 0template stones003 1 
++0template canyon003 12 0template stones003 7 0template crusty001 11 
++0template canyon001 12 0template crusty002 7 0template stones002 11 
++0template junglecanyon002 4 0template 3litegrass002 11 
++0template junglecanyon003 12 0template 3litegrass002 3 
++0template 3litegrass003 2 0template junglecanyon003 13 
++0template 3litegrass003 8 0template 20bush_4sand001 7 
++0template 20bush_4sand002 14 0template 3litegrass001 1 
++0template 20bush_4sand002 12 0template 3litegrass003 3 
++0template 3litegrass003 6 0template 20bush_4sand001 9 
++0template 1french002 14 0template 3litegrass002 13 0template 20bush_4sand001 3 
++0template 1french002 12 0template 20bush_4sand002 7 0template 3litegrass001 11 
++0template 1french002 12 0template 3litegrass001 3 
++0template 20bush_4sand002 8 0template 1french004 7 
++0template crusty003 10 0template 20bush_4sand002 5 
++0template canyon003 10 0template crusty002 13 0template stones003 7 
++0template stones002 14 0template canyon002 5 0template crusty001 11 
++0template canyon001 6 0template stones001 9 
++0template crusty003 14 0template canyon001 13 0template stones002 3 
++0template canyon001 14 0template crusty004 1 
++0template canyon001 14 0template crusty004 13 0template stones003 3 
++0template canyon002 8 0template stones001 7 
++0template stones004 10 0template canyon003 13 0template crusty003 7 
++0template canyon002 8 0template crusty001 7 
++0template crusty002 4 0template olivesage001 11 
++0template crusty001 8 0template olivesage001 7 
++0template crusty003 12 0template canyon002 7 0template stones001 11 
++0template crusty001 10 0template canyon001 13 0template stones001 7 
++0template canyon001 4 0template stones002 11 
++0template 3litegrass001 6 0template junglecanyon003 9 
++0template 3litegrass003 10 0template 20bush_4sand002 5 
++0template 1french001 10 0template 3litegrass002 5 
++0template crusty004 12 0template stones001 7 0template francelight004 11 
++0template stones003 10 0template crusty003 13 0template francelight002 7 
++0template olivesage001 10 0template crusty002 5 
++0template crusty003 10 0template olivesage001 5 
++0template canyon002 14 0template crusty002 13 0template olivesage001 11 0template stones002 7 
++0template stones001 10 0template canyon003 13 0template olivesage001 7 
++0template 3litegrass003 14 0template 20bush_4sand002 1 
++0template 1french002 14 0template 3litegrass003 1 
++0template 20bush_4sand002 14 0template 1french003 5 0template crusty003 11 
++0template crusty004 2 0template 20bush_4sand002 13 
++0template francelight003 14 0template stones002 13 0template crusty002 3 
++0template stones004 14 0template francelight001 9 0template crusty004 7 
++0template stones003 12 0template francelight001 7 0template crusty004 11 
++0template stones003 12 0template canyon002 7 0template crusty001 11 
++0template stones003 14 0template canyon002 13 0template crusty001 3 
++0template olivesage001 14 0template crusty004 13 0template stones001 3 
++0template crusty001 14 0template olivesage001 13 0template stones002 3 
++0template olivesage001 10 0template stones001 5 
++0template stones001 14 0template olivesage001 1 
++0template stones001 8 0template olivesage001 7 
++0template stones001 6 0template canyon003 9 
++0template 1french002 4 0template 3litegrass003 11 
++0template crusty004 10 0template 1french003 13 0template 3litegrass002 7 
++0template francelight001 14 0template crusty003 1 
++0template crusty003 2 0template francelight002 13 
++0template canyon003 2 0template stones004 13 
++0template stones001 14 0template canyon002 5 0template olivesage001 11 
++0template stones001 12 0template olivesage001 3 
++0template crusty003 10 0template stones002 13 0template olivesage001 7 
++0template canyon002 14 0template stones001 9 0template crusty001 7 
++0template olivesage001 14 0template stones003 13 0template canyon001 3 
++0template olivesage001 12 0template canyon002 7 0template stones004 11 
++0template stones001 2 0template olivesage001 13 
++0template 20bush_4sand002 4 0template groundstruct001 11 
++0template 20bush_4sand001 12 0template groundstruct002 3 
++0template 20bush_4sand002 12 0template groundstruct002 7 0template 3litegrass003 11 
++0template 20bush_4sand001 8 0template 3litegrass002 7 
++0template 3litegrass003 2 0template 20bush_4sand002 13 
++0template 3litegrass003 2 0template 1french004 13 
++0template crusty004 2 0template 3litegrass001 13 
++0template stones004 14 0template canyon001 13 0template pumus002 11 0template crusty004 7 
++0template crusty002 10 0template stones003 13 0template pumus004 7 
++0template canyon003 14 0template crusty002 9 0template stones004 7 
++0template olivesage001 10 0template canyon002 13 0template crusty002 7 
++0template olivesage001 4 0template crusty003 11 
++0template crusty001 2 0template olivesage001 13 
++0template stones004 14 0template crusty002 5 0template canyon001 11 
++0template crusty003 10 0template stones001 13 0template canyon001 7 
++0template canyon003 14 0template stones001 5 0template crusty002 11 
+groundstruct002
+groundstruct001
++0template pumus003 10 0template crusty001 5 
++0template crusty004 14 0template pumus003 1 
++0template crusty004 12 0template pumus001 7 0template stones002 11 
++0template crusty003 14 0template stones002 5 0template canyon001 11 
++0template olivesage001 14 0template crusty001 5 0template canyon003 11 
++0template crusty002 10 0template olivesage001 13 0template canyon003 7 
++0template stones004 6 0template crusty002 9 
++0template stones002 4 0template olivesage001 11 
++0template canyon003 14 0template stones002 13 0template olivesage001 3 
++0template canyon003 12 0template olivesage001 3 
++0template stones002 14 0template canyon003 13 0template crusty003 11 0template olivesage001 7 
++0template 3litegrass001 14 0template junglecanyon003 5 0template 20bush_4sand001 11 
++0template groundstruct002 14 0template 20bush_4sand002 5 0template 3litegrass001 11 
++0template stones003 14 0template canyon002 1 
++0template crusty003 4 0template pumus002 11 
++0template pumus002 2 0template crusty004 13 
+pumus001
++0template stones002 10 0template pumus004 5 
++0template olivesage001 10 0template stones004 13 0template canyon003 7 
+olivesage001
++0template 20bush_4sand002 10 0template junglecanyon002 5 
++0template pumus001 10 0template crusty004 13 0template stones004 7 
+pumus004
++0template stones003 14 0template pumus004 1 
++0template stones003 8 0template pumus002 7 
++0template olivesage001 14 0template canyon002 5 0template crusty003 11 
++0template olivesage001 12 0template crusty003 3 
++0template 20bush_4sand002 14 0template junglecanyon003 5 0template 3litegrass001 11 
++0template pumus001 14 0template stones003 13 0template crusty002 3 
++0template pumus001 8 0template crusty003 7 
+pumus003
++0template stones003 6 0template canyon002 13 0template crusty001 11 
++0template crusty002 6 0template canyon003 13 0template stones003 11 
++0template junglecanyon003 14 0template 3litegrass002 5 0template 20bush_4sand002 11 
++0template junglecanyon003 12 0template 20bush_4sand002 3 
++0template junglecanyon001 8 0template 20bush_4sand001 7 
++0template pumus001 14 0template crusty004 9 0template stones002 7 
++0template pumus002 12 0template crusty001 3 
++0template crusty003 14 0template pumus002 5 0template canyon002 11 
++0template canyon001 14 0template stones004 13 0template crusty001 3 
++0template junglecanyon002 14 0template 20bush_4sand001 1 
++0template pumus002 14 0template crusty003 1 
++0template canyon002 10 0template pumus002 13 0template crusty004 7 
++0template junglecanyon003 10 0template 20bush_4sand002 5 
++0template canyon003 4 0template olivesage001 11 
++0template canyon002 8 0template olivesage001 7 
++0template crusty002 14 0template canyon001 5 0template olivesage001 11 
++0template stones003 14 0template crusty003 9 0template olivesage001 7 
++0template olivesage001 10 0template canyon003 5 
++0template canyon001 14 0template olivesage001 13 0template crusty001 3 
++0template stones004 14 0template crusty003 9 0template canyon002 7 
++0template canyon003 12 0template crusty004 7 0template olivesage001 11 
++0template olivesage001 2 0template canyon002 13 
++0template crusty001 14 0template olivesage001 1 
++0template crusty003 12 0template olivesage001 7 0template stones003 11 
+wallmetal1
++0template olivesage001 14 0template canyon003 13 0template crusty002 3 
++0template canyon002 14 0template stones001 5 0template olivesage001 11 
++0template 20bush_4sand002 14 0template 3litegrass003 13 0template junglecanyon002 3 
++0template 20bush_4sand001 12 0template junglecanyon001 3 
++0template 20bush_4sand001 8 0template junglecanyon003 7 
++0template junglecanyon001 12 0template 20bush_4sand002 7 0template 3litegrass001 11 
+groundrunway4
+groundrunway002
+groundrunway8
++0template canyon001 6 0template crusty002 13 0template olivesage001 11 
++0template olivesage001 14 0template crusty002 13 0template canyon001 3 
++0template olivesage001 8 0template canyon002 7 
++0template olivesage001 4 0template canyon001 11 
++0template olivesage001 12 0template canyon003 3 
++0template stones001 10 0template olivesage001 13 0template canyon002 7 
++0template stones001 14 0template crusty004 5 0template olivesage001 11 
++0template olivesage001 2 0template stones004 13 
++0template crusty001 14 0template olivesage001 5 0template canyon002 11 
+smallbuilding2
+smallbuilding3
+groundrunway001
++0template canyon003 14 0template olivesage001 1 
++0template olivesage001 14 0template canyon001 5 0template stones001 11 
++0template canyon001 10 0template olivesage001 13 0template stones003 7 
++0template canyon001 2 0template olivesage001 13 
++0template junglecanyon002 2 0template 3litegrass003 13 
++0template olivesage001 14 0template canyon002 9 0template crusty004 7 
+airbase001
+groundstruct7
++0template junglecanyon003 10 0template 3litegrass001 13 0template 20bush_4sand002 7 
++0template 20bush_4sand002 14 0template junglecanyon002 1 
++0template 20bush_4sand001 12 0template junglecanyon003 7 0template 3litegrass002 11 
++0template junglecanyon003 4 0template 20bush_4sand001 11 
++0template 3litegrass001 14 0template junglecanyon002 13 0template 20bush_4sand002 3 
++0template 20bush_4sand002 12 0template 3litegrass001 7 0template junglecanyon003 11 
++0template junglecanyon001 2 0template 20bush_4sand002 13 
+groundstruct39
++0template crusty001 6 0template canyon001 9 
++0template 3litegrass001 12 0template crusty001 3 
++0template 3litegrass002 8 0template crusty003 7 
++0template junglecanyon003 14 0template 3litegrass003 13 0template 20bush_4sand001 3 
+groundstruct30
++0template crusty002 12 0template 3litegrass002 3 
++0template 3litegrass001 2 0template crusty002 13 
++0template 3litegrass003 14 0template junglecanyon001 5 0template marsh004 11 
++0template 3litegrass001 12 0template marsh004 7 0template 20bush_4sand002 11 
++0template wallmetal1 2 0template crusty003 13 
++0template marsh001 14 0template junglecanyon001 13 0template 3litegrass002 11 0template 20bush_4sand001 7 
++0template 20bush_4sand001 10 0template marsh001 13 0template 3litegrass002 7 
++0template crusty001 12 0template stones003 7 0template france002 11 
++0template crusty003 12 0template france001 7 0template stones002 11 
++0template 3litegrass002 4 0template crusty004 11 
++0template france002 10 0template stones003 5 
++0template stones003 10 0template france003 5 
++0template crusty002 14 0template 3litegrass003 1 
++0template france002 14 0template stones001 9 0template crusty002 7 
++0template stones003 2 0template france001 13 
++0template 3litegrass001 4 0template marsh002 11 
++0template 3litegrass001 12 0template marsh001 3 
++0template 3litegrass003 12 0template marsh004 7 0template crusty001 11 
++0template 20bush_4sand001 10 0template 3litegrass001 13 0template crusty003 7 
++0template marsh002 10 0template 3litegrass003 5 
+marsh004
++0template crusty002 14 0template marsh003 5 0template 3litegrass001 11 
++0template 20bush_4sand001 14 0template crusty001 9 0template 3litegrass001 7 
++0template 20bush_4sand001 12 0template crusty001 3 
++0template 20bush_4sand002 12 0template crusty002 7 0template 3litegrass001 11 
++0template 3litegrass001 10 0template crusty003 5 
++0template marsh003 6 0template 3litegrass002 13 0template 20bush_4sand001 11 
++0template marsh004 12 0template 20bush_4sand001 3 
++0template 3litegrass002 14 0template marsh002 13 0template 20bush_4sand002 3 
++0template crusty001 14 0template 3litegrass003 9 0template 20bush_4sand002 7 
++0template crusty001 8 0template 3litegrass001 7 
++0template 3litegrass003 14 0template crusty002 1 
++0template 20bush_4sand002 10 0template marsh004 5 
++0template crusty004 10 0template 3litegrass002 5 
++0template stones003 8 0template groundstruct001 7 
++0template groundstruct30 10 0template crusty004 5 
++0template marsh002 14 0template 3litegrass002 1 
++0template groundstruct40 12 0template groundstruct002 3 
++0template groundstruct001 2 0template groundstruct40 13 
++0template crusty002 4 0template sandstuff003 11 
++0template crusty003 8 0template sandstuff002 7 
+groundrunway2
++0template crusty002 10 0template 3litegrass001 13 0template 20bush_4sand001 7 
++0template sandstuff004 14 0template crusty003 1 
++0template crusty003 2 0template sandstuff004 13 
++0template crusty002 4 0template 3litegrass001 11 
++0template 20bush_4sand001 14 0template 3litegrass002 5 0template marsh001 11 
++0template 20bush_4sand002 8 0template marsh001 7 
++0template marsh001 14 0template 3litegrass002 13 0template 20bush_4sand001 3 
++0template 20bush_4sand001 6 0template marsh004 13 0template 3litegrass003 11 
+groundrunway6
++0template 3litegrass002 14 0template crusty003 5 0template 20bush_4sand001 11 
++0template crusty003 14 0template 20bush_4sand001 5 0template marsh001 11 
++0template crusty002 12 0template marsh003 3 
++0template crusty003 8 0template marsh001 7 
++0template crusty002 4 0template 2grandcan001 11 
++0template crusty002 12 0template 2grandcan001 3 
++0template crusty001 8 0template 2grandcan001 7 
++0template 20bush_4sand001 10 0template crusty002 5 
++0template marsh001 10 0template 20bush_4sand002 13 0template 3litegrass002 7 
+marsh003
++0template crusty001 10 0template marsh001 5 
++0template 2grandcan001 10 0template crusty001 5 
+2grandcan001
++0template crusty004 10 0template 2grandcan001 5 
++0template groundstruct30 14 0template crusty001 1 
++0template groundstruct30 8 0template crusty004 7 
++0template 20bush_4sand002 14 0template crusty003 5 0template 3litegrass001 11 
++0template marsh003 12 0template 3litegrass001 3 
++0template crusty004 14 0template marsh002 13 0template 3litegrass001 3 
++0template 2grandcan001 14 0template crusty004 1 
++0template 2grandcan001 12 0template crusty003 3 
++0template crusty002 2 0template 2grandcan001 13 
++0template 3litegrass002 14 0template 20bush_4sand001 5 0template crusty004 11 
++0template crusty002 14 0template 2grandcan001 1 
++0template 3litegrass002 12 0template crusty002 7 0template 20bush_4sand002 11 
++0template 2grandcan001 8 0template crusty004 7 
++0template 2grandcan001 6 0template crusty002 9 
++0template 2grandcan001 4 0template crusty004 11 
++0template crusty004 14 0template 20bush_4sand002 5 0template 3litegrass003 11 
++0template crusty003 12 0template 2grandcan001 7 0template canyon001 11 
++0template 2grandcan001 10 0template crusty001 13 0template canyon001 7 
++0template 2grandcan001 14 0template crusty003 13 0template canyon003 3 
++0template 2grandcan001 8 0template canyon001 7 
++0template 2grandcan001 4 0template canyon003 11 
++0template 2grandcan001 12 0template canyon002 3 
++0template crusty004 14 0template 2grandcan001 13 0template canyon003 3 
++0template crusty002 4 0template groundstruct30 11 
++0template groundstruct30 2 0template crusty004 13 
++0template 20bush_4sand002 10 0template crusty001 13 0template 3litegrass003 7 
++0template canyon001 10 0template 2grandcan001 5 
++0template 2grandcan001 10 0template canyon001 5 
++0template 2grandcan001 14 0template canyon001 5 0template crusty003 11 
++0template canyon001 10 0template 2grandcan001 13 0template crusty003 7 
++0template crusty004 4 0template Bdt001 11 
++0template crusty004 8 0template Bdt001 7 
++0template 2grandcan001 2 0template crusty003 13 
++0template canyon002 14 0template 2grandcan001 9 0template crusty001 7 
++0template canyon003 12 0template 2grandcan001 3 
++0template 2grandcan001 2 0template canyon003 13 
++0template 2grandcan001 14 0template crusty003 5 0template canyon002 11 
++0template canyon001 2 0template 2grandcan001 13 
++0template crusty004 12 0template groundstruct30 3 
++0template 20bush_4sand002 14 0template 3litegrass003 5 0template crusty002 11 
++0template 20bush_4sand002 8 0template crusty003 7 
++0template 3litegrass001 6 0template 20bush_4sand002 13 0template crusty001 11 
++0template Bdt001 14 0template crusty004 1 
++0template crusty003 2 0template Bdt001 13 
++0template 2grandcan001 12 0template canyon003 7 0template crusty004 11 
++0template crusty003 14 0template 3litegrass001 13 0template 20bush_4sand002 3 
++0template 20bush_4sand002 2 0template crusty001 13 
++0template 20bush_4sand001 4 0template crusty002 11 
++0template 3litegrass002 10 0template 20bush_4sand001 13 0template crusty003 7 
++0template 2grandcan001 6 0template crusty004 13 0template canyon002 11 
++0template crusty002 14 0template 2grandcan001 13 0template 1granite001 11 0template canyon002 7 
++0template crusty001 12 0template 1granite001 3 
++0template canyon003 14 0template crusty003 13 0template 2grandcan001 11 0template 1granite001 7 
++0template crusty002 10 0template canyon003 13 0template 2grandcan001 7 
++0template crusty002 14 0template canyon002 5 0template jupi_soil003 11 
++0template canyon002 14 0template crusty003 13 0template jupi_soil003 3 
++0template canyon003 12 0template jupi_soil002 7 0template junglecanyon001 11 
++0template crusty001 14 0template canyon002 13 0template junglecanyon001 3 
++0template canyon002 10 0template crusty003 13 0template junglecanyon002 7 
++0template canyon001 10 0template crusty001 13 0template jupi_soil002 7 
++0template 1granite001 10 0template canyon001 5 
++0template 1granite001 4 0template canyon003 11 
++0template 2grandcan001 14 0template 1granite001 13 0template canyon001 3 
++0template crusty002 12 0template canyon003 7 0template junglecanyon003 11 
++0template crusty003 12 0template junglecanyon001 3 
++0template crusty003 12 0template junglecanyon003 7 0template jupi_soil002 11 
++0template canyon002 14 0template crusty002 13 0template junglecanyon002 11 0template jupi_soil002 7 
++0template canyon001 12 0template junglecanyon002 3 
++0template jupi_soil001 14 0template canyon002 13 0template junglecanyon002 3 
++0template jupi_soil001 12 0template junglecanyon001 3 
++0template junglecanyon001 2 0template jupi_soil002 13 
++0template canyon002 14 0template junglecanyon002 1 
++0template canyon003 14 0template jupi_soil001 13 0template junglecanyon001 3 
++0template crusty002 10 0template canyon002 13 0template junglecanyon001 7 
++0template crusty002 10 0template 20bush_4sand001 13 0template 3litegrass002 7 
++0template 2grandcan001 12 0template canyon002 7 0template grandcan001 11 
++0template 2grandcan001 8 0template grandcan001 7 
++0template canyon001 10 0template 1granite001 5 
++0template junglecanyon003 10 0template canyon002 5 
++0template jupi_soil002 14 0template junglecanyon003 1 
++0template crusty002 14 0template junglecanyon001 1 
++0template crusty002 12 0template junglecanyon003 7 0template groundstruct30 11 
++0template crusty002 12 0template 20bush_4sand002 3 
++0template 2grandcan001 10 0template crusty001 13 0template 20bush_4sand001 7 
++0template grandcan001 14 0template canyon001 5 0template 2grandcan001 11 
++0template 2grandcan001 2 0template grandcan001 13 
++0template 1granite001 14 0template canyon001 13 0template crusty003 11 0template 2grandcan001 7 
++0template canyon002 14 0template 1granite001 13 0template crusty003 3 
++0template canyon002 4 0template jupi_soil003 11 
++0template junglecanyon003 2 0template canyon002 13 
++0template groundstruct30 14 0template junglecanyon002 1 
++0template groundstruct30 12 0template junglecanyon002 3 
++0template groundstruct30 8 0template junglecanyon003 7 
++0template 20bush_4sand001 14 0template crusty003 5 0template brownmud001 11 
++0template 20bush_4sand001 12 0template brownmud001 3 
++0template 3litegrass002 10 0template 20bush_4sand002 13 0template brownmud001 7 
++0template 2grandcan001 14 0template 20bush_4sand001 5 0template crusty001 11 
++0template jupi_soil001 14 0template canyon001 5 0template junglecanyon002 11 
++0template groundstruct30 12 0template junglecanyon001 7 0template jupi_soil003 11 
++0template groundstruct30 12 0template jupi_soil001 3 
++0template groundstruct30 8 0template jupi_soil003 7 
++0template brownmud001 14 0template crusty003 1 
++0template brownmud001 8 0template crusty003 7 
++0template 3litegrass003 14 0template brownmud001 5 0template crusty001 11 
++0template crusty003 12 0template 20bush_4sand001 7 0template 3litegrass003 11 
++0template canyon001 14 0template crusty002 5 0template jupi_soil001 11 
++0template junglecanyon002 4 0template pumus003 11 
++0template junglecanyon001 12 0template pumus004 3 
++0template junglecanyon003 8 0template pumus003 7 
++0template groundstruct30 10 0template jupi_soil002 13 0template junglecanyon001 7 
++0template crusty004 2 0template brownmud001 13 
++0template 3litegrass002 14 0template crusty002 5 0template brownmud001 11 
++0template 3litegrass002 8 0template brownmud001 7 
++0template crusty002 6 0template 2grandcan001 9 
++0template crusty001 12 0template canyon001 7 0template jupi_soil001 11 
++0template jupi_soil003 6 0template crusty003 13 0template junglecanyon001 11 
++0template pumus003 2 0template junglecanyon001 13 
+pumus002
++0template junglecanyon002 14 0template pumus001 1 
++0template brownmud001 10 0template crusty002 5 
++0template crusty004 14 0template 2grandcan001 5 0template canyon002 11 
++0template pumus004 4 0template Gmd001 11 
++0template pumus004 12 0template Gmd001 3 
++0template pumus004 8 0template Gmd001 7 
++0template junglecanyon002 10 0template pumus003 5 
++0template groundstruct30 14 0template jupi_soil003 13 0template junglecanyon003 3 
++0template crusty003 6 0template 3litegrass001 13 0template brownmud001 11 
++0template crusty001 8 0template brownmud001 7 
++0template crusty004 14 0template canyon002 5 0template 2grandcan001 11 
++0template canyon003 6 0template crusty004 13 0template jupi_soil003 11 
++0template pumus002 6 0template junglecanyon002 13 0template Gmd001 11 
++0template Gmd001 10 0template pumus002 5 
+Gmd001
++0template pumus004 10 0template Gmd001 5 
++0template Gmd001 14 0template pumus002 1 
++0template Gmd001 12 0template pumus004 3 
++0template pumus003 2 0template Gmd001 13 
++0template groundstruct30 14 0template junglecanyon001 5 0template jupi_soil002 11 
++0template brownmud001 14 0template crusty001 13 0template 2grandcan001 3 
++0template crusty004 10 0template brownmud001 13 0template 2grandcan001 7 
++0template canyon001 14 0template crusty001 5 0template olivesage001 11 
++0template canyon001 12 0template olivesage001 7 0template 2grandcan001 11 
++0template pumus002 10 0template junglecanyon002 5 
++0template Gmd001 4 0template pumus002 11 
++0template Gmd001 8 0template pumus004 7 
++0template pumus004 14 0template Gmd001 1 
++0template 2grandcan001 14 0template olivesage001 1 
++0template 2grandcan001 12 0template olivesage001 3 
++0template crusty004 14 0template 2grandcan001 13 0template canyon003 11 0template olivesage001 7 
++0template canyon001 12 0template crusty004 7 0template junglecanyon003 11 
++0template olivesage001 14 0template crusty002 13 0template 2grandcan001 3 
++0template olivesage001 8 0template 2grandcan001 7 
++0template canyon003 10 0template olivesage001 13 0template crusty001 7 
++0template crusty001 4 0template junglecanyon003 11 
++0template junglecanyon003 2 0template crusty004 13 
++0template Gmd001 6 0template pumus003 9 
++0template olivesage001 14 0template 2grandcan001 5 0template crusty003 11 
++0template junglecanyon001 10 0template crusty001 5 
++0template Gmd001 2 0template pumus003 13 
++0template pumus001 6 0template Gmd001 9 
++0template canyon003 6 0template crusty001 9 
++0template groundstruct30 10 0template junglecanyon001 5 
++0template 2grandcan001 12 0template crusty004 7 0template canyon001 11 
++0template junglecanyon003 10 0template crusty001 13 0template canyon002 7 
++0template crusty002 10 0template 2grandcan001 13 0template canyon003 7 
++0template canyon002 14 0template 2grandcan001 5 0template crusty003 11 
++0template junglecanyon001 10 0template canyon001 13 0template crusty004 7 
++0template canyon001 14 0template crusty001 5 0template 2grandcan001 11 
++0template canyon002 8 0template 2grandcan001 7 
++0template canyon003 4 0template brownmud001 11 
++0template crusty004 10 0template canyon003 13 0template brownmud001 7 
++0template crusty003 10 0template jupi_soil002 13 0template junglecanyon003 7 
++0template canyon003 12 0template crusty004 7 0template brownmud001 11 
++0template brownmud001 2 0template canyon001 13 
++0template crusty001 10 0template brownmud001 5 
++0template canyon003 14 0template 2grandcan001 13 0template crusty004 3 
++0template crusty003 10 0template junglecanyon003 5 
++0template brownmud001 10 0template crusty001 13 0template canyon003 7 
+brownmud002
++0template pumus004 4 0template junglecanyon003 11 
++0template junglecanyon001 2 0template pumus002 13 
++0template junglecanyon001 4 0template canyon003 11 
++0template crusty002 14 0template junglecanyon003 13 0template canyon001 3 
++0template brownmud001 10 0template canyon003 5 
++0template brownmud001 4 0template canyon002 11 
++0template crusty001 14 0template brownmud001 13 0template canyon003 3 
++0template canyon003 12 0template crusty004 7 0template 2grandcan001 11 
++0template crusty004 14 0template canyon002 13 0template 2grandcan001 3 
++0template canyon002 14 0template crusty002 13 0template 2grandcan001 3 
++0template junglecanyon002 10 0template crusty002 13 0template 2grandcan001 7 
++0template canyon001 10 0template junglecanyon002 5 
++0template brownmud001 10 0template canyon003 13 0template crusty004 7 
++0template canyon001 10 0template brownmud001 5 
++0template crusty002 6 0template 2grandcan001 13 0template canyon002 11 
++0template junglecanyon001 10 0template 2grandcan001 5 
++0template pumus004 14 0template junglecanyon001 1 
++0template pumus004 8 0template junglecanyon002 7 
++0template canyon001 14 0template junglecanyon002 5 0template jupi_soil003 11 
++0template canyon003 8 0template jupi_soil003 7 
++0template crusty001 4 0template brownmud001 11 
++0template canyon001 14 0template crusty003 13 0template brownmud001 3 
++0template canyon003 12 0template brownmud001 3 
++0template crusty003 14 0template canyon001 13 0template brownmud001 3 
++0template crusty002 12 0template brownmud001 3 
++0template brownmud001 2 0template crusty003 13 
++0template crusty003 14 0template canyon003 5 0template redgranite003 11 
++0template crusty002 12 0template redgranite001 3 
++0template 2grandcan001 14 0template crusty001 9 0template redgranite002 7 
++0template 2grandcan001 12 0template crusty003 7 0template junglecanyon002 11 
++0template junglecanyon002 2 0template 2grandcan001 13 
++0template jupi_soil001 14 0template junglecanyon003 5 0template crusty004 11 
++0template canyon003 14 0template jupi_soil001 13 0template crusty004 3 
+brownmud001
++0template canyon001 14 0template brownmud001 1 
++0template canyon003 8 0template brownmud001 7 
++0template canyon003 14 0template crusty004 9 0template 2grandcan001 7 
++0template crusty002 12 0template canyon003 7 0template 2grandcan001 11 
++0template crusty002 14 0template 2grandcan001 5 0template redgranite003 11 
++0template canyon001 14 0template crusty001 13 0template redgranite003 3 
++0template canyon002 12 0template redgranite001 3 
++0template redgranite002 2 0template canyon002 13 
+redgranite003
++0template crusty002 10 0template redgranite001 5 
++0template brownmud001 12 0template crusty001 7 0template canyon002 11 
++0template brownmud001 12 0template canyon002 3 
++0template brownmud001 12 0template canyon002 7 0template crusty003 11 
++0template canyon003 14 0template brownmud001 5 0template crusty001 11 
++0template redgranite001 10 0template 2grandcan001 13 0template crusty003 7 
+redgranite002
++0template redgranite002 4 0template canyon001 11 
++0template redgranite002 12 0template canyon003 3 
++0template redgranite002 12 0template canyon002 7 0template 2grandcan001 11 
++0template crusty002 14 0template redgranite003 13 0template canyon003 11 0template 2grandcan001 7 
++0template junglecanyon001 14 0template crusty004 13 0template canyon001 3 
++0template junglecanyon002 8 0template canyon001 7 
++0template crusty003 12 0template canyon002 7 0template brownmud001 11 
++0template canyon002 10 0template crusty003 13 0template brownmud001 7 
++0template canyon003 4 0template 2grandcan001 11 
++0template canyon002 12 0template 2grandcan001 7 0template crusty001 11 
++0template 2grandcan001 14 0template canyon002 13 0template crusty004 3 
++0template redgranite003 14 0template crusty003 5 0template 2grandcan001 11 
++0template redgranite003 12 0template 2grandcan001 3 
++0template canyon001 10 0template redgranite003 13 0template 2grandcan001 7 
++0template canyon002 14 0template 2grandcan001 1 
++0template 2grandcan001 6 0template canyon003 13 0template crusty002 11 
++0template canyon002 12 0template crusty004 7 0template jupi_soil002 11 
++0template junglecanyon002 10 0template canyon003 13 0template jupi_soil003 7 
++0template brownmud001 14 0template canyon001 1 
++0template crusty001 10 0template brownmud001 13 0template canyon003 7 
++0template jupi_soil003 14 0template crusty003 13 0template 2grandcan001 3 
++0template junglecanyon002 10 0template jupi_soil001 13 0template 2grandcan001 7 
++0template pumus002 12 0template junglecanyon001 3 
++0template brownmud001 14 0template crusty004 5 0template canyon001 11 
++0template brownmud001 8 0template canyon003 7 
++0template 2grandcan001 14 0template canyon003 1 
++0template crusty002 14 0template 2grandcan001 9 0template canyon001 7 
++0template junglecanyon003 14 0template 2grandcan001 13 0template canyon002 3 
++0template canyon003 2 0template junglecanyon001 13 
++0template canyon003 10 0template crusty002 13 0template 2grandcan001 7 
++0template junglecanyon002 14 0template canyon003 5 0template jupi_soil003 11 
++0template junglecanyon001 8 0template jupi_soil003 7 
++0template jupi_soil001 14 0template canyon001 13 0template crusty002 3 
++0template junglecanyon003 10 0template jupi_soil003 13 0template crusty004 7 
++0template junglecanyon002 4 0template crusty004 11 
++0template canyon002 14 0template junglecanyon001 13 0template crusty002 3 
++0template crusty001 14 0template brownmud001 5 0template canyon001 11 
++0template brownmud001 14 0template crusty004 13 0template canyon003 3 
++0template canyon003 14 0template crusty003 5 0template brownmud001 11 
++0template brownmud001 6 0template canyon003 9 
++0template canyon001 6 0template brownmud001 9 
++0template canyon002 12 0template brownmud001 7 0template crusty001 11 
++0template 2grandcan001 14 0template crusty001 9 0template canyon003 7 
++0template junglecanyon001 14 0template crusty003 1 
++0template junglecanyon001 8 0template crusty004 7 
++0template canyon001 2 0template brownmud001 13 
++0template crusty003 14 0template brownmud001 1 
++0template canyon002 14 0template crusty003 9 0template brownmud001 7 
++0template junglecanyon001 4 0template jupi_soil002 11 
++0template canyon002 10 0template junglecanyon003 13 0template jupi_soil003 7 
++0template crusty004 6 0template canyon001 13 0template 2grandcan001 11 
++0template jupi_soil003 14 0template junglecanyon003 5 0template canyon002 11 
++0template canyon002 2 0template jupi_soil001 13 
++0template canyon003 10 0template jupi_soil002 13 0template crusty003 7 
++0template brownmud001 4 0template crusty004 11 
++0template canyon003 10 0template brownmud001 13 0template crusty002 7 
++0template junglecanyon003 14 0template canyon002 1 
++0template junglecanyon003 12 0template canyon003 3 
++0template crusty004 10 0template junglecanyon003 13 0template canyon001 7 
++0template brownmud001 14 0template canyon002 13 0template crusty003 3 
++0template junglecanyon003 14 0template canyon003 13 0template crusty002 3 
++0template junglecanyon003 12 0template crusty001 3 
++0template junglecanyon003 12 0template jupi_soil003 7 0template crusty002 11 
++0template canyon001 10 0template junglecanyon003 13 0template crusty003 7 
++0template brownmud001 14 0template canyon003 5 0template crusty003 11 
++0template brownmud001 12 0template crusty003 3 
++0template crusty001 6 0template brownmud001 9 
++0template junglecanyon003 14 0template crusty001 5 0template canyon002 11 
++0template jupi_soil002 14 0template junglecanyon002 13 0template canyon002 3 
++0template crusty001 10 0template jupi_soil002 13 0template canyon001 7 
++0template canyon002 14 0template brownmud001 13 0template crusty004 3 
++0template crusty001 14 0template canyon001 9 0template brownmud001 7 
++0template crusty002 4 0template 9martian002 11 
++0template crusty002 12 0template 9martian001 3 
++0template canyon002 14 0template crusty003 9 0template 9martian002 7 
++0template junglecanyon001 14 0template canyon002 5 0template crusty001 11 
++0template crusty003 12 0template brownmud001 7 0template canyon002 11 
++0template 9martian002 10 0template crusty002 5 
+9martian002
++0template crusty004 10 0template 9martian002 5 
++0template junglecanyon003 12 0template canyon002 7 0template jupi_soil003 11 
++0template junglecanyon003 12 0template canyon001 7 0template crusty001 11 
++0template crusty003 10 0template Bdt001 5 
++0template 9martian002 2 0template crusty003 13 
+9martian001
++0template jupi_soil002 14 0template canyon002 5 0template crusty002 11 
++0template junglecanyon003 14 0template jupi_soil002 13 0template canyon003 11 0template crusty002 7 
++0template junglecanyon002 12 0template jupi_soil002 3 
++0template 9martian002 4 0template 2grandcan001 11 
++0template crusty003 14 0template 9martian002 13 0template 2grandcan001 3 
++0template jupi_soil001 12 0template crusty001 3 
++0template junglecanyon003 12 0template crusty004 7 0template canyon001 11 
++0template brownmud001 6 0template crusty004 9 
++0template crusty002 14 0template 2grandcan001 5 0template 9martian001 11 
++0template 2grandcan001 10 0template 9martian001 5 
++0template 9martian002 10 0template 2grandcan001 5 
++0template 9martian002 4 0template crusty002 11 
++0template 2grandcan001 14 0template 9martian001 13 0template crusty001 3 
++0template 2grandcan001 12 0template crusty003 7 0template 2rough001 11 
++0template 2grandcan001 12 0template 2rough001 3 
++0template 2grandcan001 12 0template 2rough002 7 0template crusty003 11 
++0template crusty004 14 0template canyon001 5 0template brownmud001 11 
++0template 9martian001 14 0template 2grandcan001 9 0template crusty001 7 
++0template 9martian001 12 0template 2grandcan001 3 
++0template crusty002 10 0template 9martian001 13 0template 2grandcan001 7 
++0template 2rough002 10 0template crusty003 5 
+2rough001
++0template crusty002 14 0template 2rough002 5 0template 2grandcan001 11 
++0template crusty003 6 0template 2grandcan001 13 0template 2rough002 11 
++0template crusty003 12 0template 2rough001 3 
++0template 2rough001 6 0template crusty001 9 
++0template 2rough001 12 0template crusty002 7 0template 2grandcan001 11 
++0template 2grandcan001 2 0template 2rough001 13 
++0template crusty003 4 0template 20bush_4sand001 11 
++0template canyon003 14 0template 2grandcan001 13 0template 6redcanyon002 11 0template crusty001 7 
++0template canyon002 12 0template 6redcanyon001 7 0template crusty004 11 
++0template 2rough001 2 0template crusty001 13 
+2rough002
++0template 2grandcan001 10 0template 2rough002 5 
++0template brownmud001 4 0template 5granite001 11 
++0template brownmud001 12 0template 5granite002 3 
++0template crusty001 14 0template brownmud001 13 0template 5granite001 3 
++0template crusty003 12 0template 5granite001 3 
++0template crusty003 8 0template 5granite001 7 
++0template 6redcanyon001 14 0template crusty001 5 0template canyon001 11 
++0template crusty003 14 0template 6redcanyon002 13 0template canyon003 3 
++0template 2grandcan001 14 0template 2rough001 5 0template crusty002 11 
++0template canyon003 14 0template crusty004 5 0template 2rough002 11 
++0template canyon002 12 0template 2rough002 3 
++0template crusty002 14 0template canyon001 9 0template 2rough001 7 
+5granite002
+5granite001
++0template crusty003 14 0template 5granite001 1 
++0template canyon002 12 0template 2grandcan001 7 0template olivesage001 11 
++0template canyon002 14 0template crusty002 13 0template olivesage001 3 
++0template 2rough001 14 0template crusty002 13 0template 2grandcan001 3 
++0template 2rough002 12 0template 2grandcan001 3 
++0template 2rough001 12 0template 2grandcan001 7 0template crusty003 11 
++0template crusty004 2 0template 2rough002 13 
++0template canyon002 10 0template 2rough002 5 
++0template canyon003 4 0template 2rough001 11 
++0template crusty004 14 0template canyon002 13 0template 2rough001 3 
++0template crusty004 8 0template 2rough002 7 
++0template crusty002 6 0template brownmud001 13 0template canyon001 11 
++0template 5granite002 12 0template groundstruct30 3 
++0template 5granite002 8 0template groundstruct30 7 
++0template crusty003 10 0template 5granite002 5 
++0template olivesage001 10 0template 2grandcan001 5 
++0template olivesage001 10 0template canyon001 13 0template 2grandcan001 7 
++0template canyon001 14 0template olivesage001 5 0template 2grandcan001 11 
++0template 2grandcan001 6 0template canyon001 9 
++0template 2rough002 14 0template crusty003 5 0template 2grandcan001 11 
++0template canyon002 10 0template 2rough001 13 0template 2grandcan001 7 
++0template 2rough002 10 0template canyon002 5 
++0template crusty001 10 0template 2rough002 5 
++0template crusty001 4 0template 2rough001 11 
++0template groundstruct30 10 0template 5granite002 5 
+machuwall4
+machuwall1
+machuwall3
++0template 5granite001 10 0template groundstruct30 5 
++0template olivesage001 2 0template 2grandcan001 13 
++0template 2grandcan001 14 0template olivesage001 13 0template canyon003 3 
++0template 2rough002 14 0template canyon002 1 
++0template 2rough002 12 0template canyon001 3 
++0template crusty002 14 0template 2rough001 13 0template canyon001 3 
++0template 2rough002 14 0template crusty002 13 0template 9martian002 11 0template canyon002 7 
++0template 2rough001 8 0template 9martian001 7 
+machuwall2
++0template canyon003 10 0template olivesage001 5 
++0template 9martian002 10 0template canyon003 5 
++0template 2rough002 14 0template 9martian001 1 
++0template 2rough001 12 0template 9martian001 3 
++0template crusty001 10 0template 2rough001 13 0template 9martian001 7 
++0template 2grandcan001 4 0template olivesage001 11 
++0template olivesage001 14 0template canyon001 1 
++0template canyon001 4 0template 9martian002 11 
++0template canyon001 12 0template 9martian002 3 
++0template 9martian002 2 0template canyon003 13 
++0template 9martian001 4 0template 2rough002 11 
++0template crusty003 14 0template 9martian002 13 0template canyon001 11 0template 2rough001 7 
++0template crusty001 6 0template canyon001 13 0template brownmud001 11 
++0template canyon003 12 0template crusty002 7 0template 9martian002 11 
++0template brownmud001 10 0template canyon002 13 0template 9martian001 7 
+machuwall5
++0template canyon003 6 0template crusty001 13 0template 2grandcan001 11 
++0template olivesage001 10 0template 2grandcan001 13 0template canyon001 7 
++0template olivesage001 4 0template 2grandcan001 11 
++0template olivesage001 12 0template 2grandcan001 3 
++0template canyon003 10 0template olivesage001 13 0template 2grandcan001 7 
++0template 9martian001 12 0template 2rough001 3 
++0template 2rough001 2 0template 9martian001 13 
++0template crusty002 6 0template 20bush_4sand002 13 0template canyon002 11 
++0template 9martian001 10 0template crusty003 13 0template canyon003 7 
++0template brownmud001 14 0template 9martian002 1 
++0template brownmud001 12 0template 9martian002 7 0template crusty004 11 
++0template olivesage001 14 0template canyon002 5 0template 2grandcan001 11 
++0template 2grandcan001 2 0template olivesage001 13 
++0template 9martian001 14 0template canyon001 1 
++0template 9martian001 12 0template canyon001 3 
++0template 2rough002 14 0template 9martian001 13 0template crusty001 11 0template canyon002 7 
++0template 2rough002 12 0template crusty003 3 
++0template canyon003 10 0template 2rough002 13 0template crusty002 7 
++0template crusty004 12 0template canyon003 7 0template 9martian002 11 
++0template crusty003 8 0template 9martian001 7 
++0template canyon003 14 0template crusty001 5 0template 9martian002 11 
++0template canyon001 12 0template 9martian002 7 0template crusty002 11 
++0template 2grandcan001 10 0template canyon002 13 0template crusty003 7 
++0template 20bush_4sand002 4 0template canyon003 11 
++0template 20bush_4sand001 12 0template canyon002 3 
++0template 20bush_4sand001 8 0template canyon001 7 
++0template 20bush_4sand001 12 0template canyon002 7 0template 9martian002 11 
++0template 20bush_4sand002 12 0template 9martian002 3 
++0template 20bush_4sand002 8 0template 9martian002 7 
++0template 9martian001 14 0template canyon003 5 0template crusty002 11 
++0template crusty001 2 0template 9martian001 13 
++0template crusty001 10 0template 9martian002 13 0template canyon002 7 
++0template 2grandcan001 4 0template greenrock001 11 
++0template canyon002 10 0template 2grandcan001 13 0template greenrock004 7 
++0template 20bush_4sand001 14 0template crusty003 1 
++0template canyon002 10 0template 20bush_4sand002 13 0template crusty002 7 
++0template 20bush_4sand002 14 0template canyon001 1 
++0template 20bush_4sand001 10 0template 9martian002 5 
++0template crusty004 10 0template canyon001 13 0template 9martian002 7 
++0template crusty001 14 0template canyon003 13 0template 9martian001 3 
++0template crusty001 4 0template greenrock004 11 
++0template crusty002 12 0template greenrock002 3 
++0template crusty001 8 0template greenrock004 7 
++0template canyon003 14 0template crusty002 5 0template greenrock001 11 
++0template canyon001 12 0template greenrock002 3 
++0template 2grandcan001 14 0template canyon002 13 0template crusty002 11 0template greenrock005 7 
++0template greenrock005 14 0template 2grandcan001 13 0template canyon001 3 
++0template canyon001 6 0template greenrock004 9 
++0template canyon003 8 0template greenrock001 7 
++0template 20bush_4sand001 14 0template canyon001 5 0template crusty003 11 
++0template 9martian002 12 0template canyon001 7 0template 20bush_4sand001 11 
++0template 20bush_4sand001 2 0template 9martian002 13 
++0template canyon003 10 0template crusty001 13 0template 20bush_4sand001 7 
++0template crusty002 14 0template 9martian002 1 
++0template canyon001 8 0template 9martian001 7 
++0template 9martian001 10 0template canyon001 13 0template crusty003 7 
++0template greenrock002 10 0template crusty003 13 0template 2grandcan001 7 
+greenrock003
++0template crusty004 14 0template greenrock004 1 
++0template greenrock002 2 0template crusty002 13 
+greenrock001
++0template crusty001 10 0template greenrock005 5 
++0template greenrock005 14 0template canyon003 5 0template crusty001 11 
++0template greenrock003 12 0template crusty001 3 
++0template canyon002 14 0template greenrock001 13 0template crusty002 3 
++0template canyon002 14 0template 20bush_4sand001 5 0template crusty004 11 
++0template 9martian002 8 0template crusty004 7 
++0template crusty001 14 0template 9martian001 5 0template 20bush_4sand002 11 
++0template canyon003 10 0template 9martian002 5 
++0template 9martian001 12 0template canyon002 7 0template crusty004 11 
++0template crusty001 14 0template 9martian002 5 0template canyon001 11 
++0template 2grandcan001 14 0template canyon001 9 0template crusty003 7 
++0template greenrock002 14 0template 2grandcan001 1 
++0template greenrock004 8 0template 2grandcan001 7 
+greenrock002
++0template greenrock001 4 0template crusty001 11 
++0template crusty001 6 0template greenrock005 13 0template 2grandcan001 11 
++0template 9martian002 14 0template crusty002 5 0template 20bush_4sand002 11 
++0template 9martian002 12 0template 20bush_4sand002 3 
++0template crusty001 10 0template 9martian001 13 0template 20bush_4sand001 7 
++0template 9martian001 14 0template crusty001 9 0template 20bush_4sand002 7 
++0template 9martian002 14 0template crusty004 5 0template canyon003 11 
++0template canyon002 2 0template 9martian001 13 
++0template canyon003 14 0template crusty004 13 0template 9martian002 3 
++0template 9martian002 14 0template crusty002 1 
++0template 9martian002 4 0template canyon002 11 
++0template crusty001 14 0template 9martian002 13 0template canyon003 3 
++0template 2grandcan001 12 0template canyon003 7 0template greenrock001 11 
++0template greenrock001 2 0template 2grandcan001 13 
+greenrock004
+greenrock005
++0template crusty001 6 0template 20bush_4sand002 9 
++0template 9martian002 12 0template crusty004 3 
++0template canyon003 14 0template 9martian001 13 0template crusty002 3 
++0template canyon001 10 0template 9martian001 13 0template crusty004 7 
++0template greenrock004 10 0template canyon001 5 
++0template 2grandcan001 14 0template crusty002 13 0template greenrock001 3 
++0template 2grandcan001 12 0template greenrock001 3 
++0template crusty001 10 0template 2grandcan001 13 0template greenrock002 7 
++0template 5granite002 4 0template crusty001 11 
++0template greenrock004 14 0template canyon003 1 
++0template greenrock004 8 0template canyon003 7 
++0template canyon003 10 0template crusty004 13 0template greenrock003 7 
++0template greenrock003 4 0template canyon003 11 
++0template greenrock004 12 0template canyon003 3 
++0template canyon002 14 0template greenrock004 1 
++0template 9martian001 10 0template crusty004 13 0template 20bush_4sand001 7 
++0template crusty003 14 0template canyon001 5 0template 20bush_4sand001 11 
++0template canyon002 10 0template greenrock003 5 
++0template canyon002 4 0template greenrock005 11 
++0template greenrock005 2 0template canyon003 13 
++0template 9martian001 14 0template 20bush_4sand001 1 
++0template canyon001 14 0template 9martian002 13 0template 20bush_4sand001 3 
++0template canyon002 12 0template 20bush_4sand002 3 
++0template 20bush_4sand001 2 0template canyon002 13 
+machuwall6
++0template canyon002 2 0template greenrock001 13 
++0template canyon003 14 0template greenrock004 5 0template 2grandcan001 11 
++0template greenrock003 10 0template canyon002 13 0template 2grandcan001 7 
++0template 5granite002 14 0template groundstruct30 1 
++0template greenrock004 12 0template canyon002 7 0template crusty002 11 
++0template 2grandcan001 10 0template greenrock001 13 0template crusty001 7 
++0template greenrock001 12 0template 2grandcan001 7 0template canyon002 11 
++0template 2grandcan001 14 0template greenrock001 13 0template canyon001 3 
++0template groundstruct30 14 0template 5granite001 1 
++0template groundstruct30 8 0template 5granite002 7 
++0template 5granite001 10 0template crusty001 5 

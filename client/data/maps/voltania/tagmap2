@@ -1,0 +1,167 @@
+metal
+groundstruct40
+groundrunway8
+column1
+groundrunway002
+groundrunway4
+groundstruct28
+groundstruct27
+redshock3
+redshock2
+groundrunway001
+SC2btmmid
+groundstruct29
+groundstruct25
+groundrunway3
+groundrunway2
+groundrunway1
+groundstruct26
++0template metal 4 0template 14martian001 11 
++0template metal 12 0template 14martian001 3 
++0template metal 8 0template 14martian001 7 
+smallbuilding2
++0template 14martian001 2 0template metal 13 
+14martian001
++0template metal 14 0template 14martian001 1 
+groundrunway6
+groundrunway7
+groundstruct30
++0template 14martian001 4 0template 12martian001 11 
++0template 14martian001 12 0template 12martian001 3 
++0template 14martian001 8 0template 12martian001 7 
++0template 14martian001 4 0template 11martian001 11 
++0template 14martian001 12 0template 11martian002 3 
++0template metal 14 0template 14martian001 9 0template 11martian002 7 
++0template 14martian001 10 0template metal 5 
++0template 12martian001 10 0template 14martian001 5 
+12martian001
++0template 14martian001 10 0template 12martian001 5 
++0template 11martian002 10 0template 14martian001 5 
+11martian001
++0template 14martian001 10 0template 11martian002 5 
++0template metal 10 0template 14martian001 5 
+wallmetal2
++0template 12martian001 14 0template 14martian001 13 0template 11martian002 3 
++0template 12martian001 12 0template 11martian001 7 0template 3martian002 11 
++0template 14martian001 10 0template 12martian001 13 0template 3martian002 7 
++0template 11martian001 14 0template 14martian001 13 0template 12martian001 3 
++0template 11martian002 12 0template 12martian001 7 0template 14martian001 11 
++0template 14martian001 6 0template 11martian002 13 0template metal 11 
++0template metal 2 0template 14martian001 13 
+groundstruct20a
+groundstruct21
+groundstruct18a
+groundstruct17
++0template 14martian001 14 0template metal 5 0template 9martian001 11 
++0template 14martian001 8 0template 9martian001 7 
++0template 3martian001 10 0template 11martian001 5 
+aurora022
+groundstruct19
+groundstruct22
+groundstruct18
++0template 9martian001 10 0template metal 5 
++0template 14martian001 10 0template 9martian001 5 
++0template 11martian001 14 0template 14martian001 1 
++0template 11martian001 12 0template 14martian001 3 
++0template 3martian002 10 0template 11martian002 13 0template 14martian001 7 
++0template 14martian001 10 0template 3martian002 5 
++0template 12martian001 14 0template 14martian001 1 
++0template 12martian001 12 0template 14martian001 3 
++0template 14martian001 2 0template 12martian001 13 
+groundstruct14a
+groundstruct16a
++0template 9martian001 14 0template metal 1 
++0template 14martian001 14 0template 9martian001 9 0template metal 7 
++0template 14martian001 12 0template 9martian001 7 0template 3martian001 11 
++0template 14martian001 12 0template 3martian001 3 
++0template 3martian002 2 0template 14martian001 13 
++0template 3martian001 14 0template 9martian001 13 0template metal 3 
++0template 3martian001 12 0template metal 3 
++0template 14martian001 14 0template 3martian001 13 0template metal 3 
++0template 14martian001 8 0template metal 7 
+groundstruct7
+groundstruct6
++0template 14martian001 14 0template metal 1 
++0template 14martian001 12 0template metal 3 
++0template groundrunway002 4 0template groundrunway4 11 
++0template groundrunway3 4 0template groundrunway001 11 
++0template groundrunway2 12 0template groundrunway002 3 
+groundstruct4
+w2rt_barrel
+wallmetal1
+stepleft
+!steprig
++0template ramp2G 10 0template w2rt_barrel 5 
+ramp2G
+w2blu_bottomback
+metal1
++0template groundstruct40 4 0template asphalt002 11 
++0template groundrunway8 12 0template asphalt004 3 
++0template groundrunway001 8 0template asphalt004 7 
+fire/1
+insides2
+e2insides
++0template asphalt001 10 0template groundstruct40 5 
+asphalt004
++0template groundrunway002 10 0template asphalt004 5 
++0template ramp1G 10 0template w2rt_barrel 5 
+ramp1G
+groundrunway5
++0template asphalt001 14 0template groundstruct40 1 
++0template asphalt003 12 0template groundrunway8 3 
++0template groundrunway002 2 0template asphalt003 13 
+redshock1
+padtankG
+bridge3
+wallmetal3
+red_crest
+stepdown
+blue_crest
+redshock4
++0template groundstruct40 14 0template metal 1 
++0template groundstruct40 12 0template metal 3 
++0template metal 2 0template groundstruct40 13 
+redshock5
++0template metal 8 0template column2 7 
+missle pack
+column2
+redsands001
++0template redsands001 4 0template fire/1 11 
++0template redsands001 12 0template fire/1 3 
++0template redsands001 8 0template fire/1 7 
+red
++0template fire/1 2 0template redsands001 13 
++0template redsands001 14 0template fire/1 1 
+blue
+padtankR
+e2posts
++0template redsands001 10 0template fire/1 5 
+padtankB
++0template fire/1 10 0template redsands001 5 
+w2rt_topfrt
+w2rt_turrettop
++0template fire/1 14 0template redsands001 1 
++0template fire/1 8 0template redsands001 7 
++0template fire/1 4 0template redsands001 11 
++0template fire/1 12 0template redsands001 3 
++0template redsands001 2 0template fire/1 13 
+stepup
+w2blu_bottomfront
+fisheye2
+gn3
+sk2dishblue
+blb
+rplanding3
+rplanding4
+sk2dish
+gun
+cargosdR
+rplanding1
+rplanding2
+bottomsides
+insides
+ULgreekwall001
+toppipe1
++0template metal 12 0template w2blu_bottomback 3 
++0template w2blu_bottomback 12 0template metal 3 
++0template metal 4 0template column1 11 

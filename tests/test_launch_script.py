@@ -12,6 +12,8 @@ class LaunchScriptTests(unittest.TestCase):
 
         self.assertIn("main.py", text)
         self.assertIn("wulfram2.exe", text)
+        self.assertIn('Join-Path $RepoRoot "client"', text)
+        self.assertNotIn('Join-Path $RepoRoot "..\\Game"', text)
         self.assertIn("-root", text)
         self.assertIn("-windowed", text)
         self.assertIn("Start-Process", text)

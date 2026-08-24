@@ -62,7 +62,7 @@ function Wait-ForTcpPort {
 
 $RepoRoot = Resolve-RequiredPath -Path $PSScriptRoot -Description "Wulf-Forge directory"
 if ([string]::IsNullOrWhiteSpace($GameDir)) {
-    $GameDir = Join-Path $RepoRoot "..\Game"
+    $GameDir = Join-Path $RepoRoot "client"
 }
 
 $ServerScript = Resolve-RequiredPath -Path (Join-Path $RepoRoot "main.py") -Description "Server script"

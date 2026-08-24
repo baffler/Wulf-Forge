@@ -119,6 +119,40 @@ class EntitySerializer:
             # Write the compressed int using the calculated bit count
             self.writer.write_bits(compressed_val, num_bits)
 
+
+def get_entity_update_bit_length(
+    entity: GameEntity,
+    force_spawn: bool = False,
+    forced_mask: int | None = None,
+) -> int:
+    """Measure one encoded entity record without byte-aligning it."""
+    writer = PacketWriter()
+    EntitySerializer(writer).serialize(
+        entity,
+        force_definition=force_spawn,
+        forced_mask=forced_mask,
+    )
+    return writer.bit_length
+
+
+def get_update_array_header_bit_length(
+    is_view_update: bool,
+    local_stats: tuple[float, float] | None,
+) -> int:
+    """Measure the fields before the first entity record, including count."""
+    bits = 32  # Server sequence.
+    if is_view_update:
+        bits += 32  # View timestamp.
+
+    bits += 1  # Local-stats-present flag.
+    if local_stats is not None:
+        _, _, health_bits = COMPRESSOR_STAT.compress(local_stats[0])
+        _, _, energy_bits = COMPRESSOR_STAT.compress(local_stats[1])
+        bits += 5 + health_bits + energy_bits
+
+    bits += 8  # Entity count.
+    return bits
+
 class UpdateArrayPacket:
     def __init__(self, sequence_id:int, is_view_update=False):
         self.writer = PacketWriter()

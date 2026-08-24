@@ -1,0 +1,27 @@
+<P><P><P>
+Weapon Keys
+<BR>
+---------------
+<P>
+spacebar:      Fire autocannon
+<BR>
+left mouse:    Fire autocannon
+<P>
+1 :            Fire Pulse Shell (Tank)
+<BR>
+1 :            Fire Repair Beam (Scout)
+<P>
+2 :            Fire Piercer
+<BR>
+3 :            Fire Thumper
+<BR>
+4 :            Fire Hunter
+<BR>
+5 :            Drop Caltrop
+<BR>
+6 :            Lay Mine
+<BR>
+7 :            Launch Flare
+<BR>
+8 :            Fire Maser
+<BR>

@@ -1,6 +1,8 @@
 # Shared Wulfram Assets/Data
 shared/
 logs/
+# Per-user client settings can contain saved login credentials.
+client/wulfram2_player_config
 
 .claude/
 

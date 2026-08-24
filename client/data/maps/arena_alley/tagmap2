@@ -1,0 +1,2202 @@
++0template Bdt001 8 0template gbdirt_grassy001 7 
+Bdt001
++0template Bdt001 4 0template gbdirt_grassy001 11 
++0template Bdt001 12 0template gbdirt_grassy001 3 
++0template gbdirt_grassy001 2 0template Bdt001 13 
+gbdirt_grassy001
++0template gbdirt_grassy001 4 0template Bdt001 11 
++0template gbdirt_grassy001 12 0template Bdt001 3 
++0template gbdirt_grassy001 8 0template Bdt001 7 
++0template gbdirt_grassy001 12 0template Bdt001 7 0template 1bush001 11 
++0template gbdirt_grassy001 12 0template 1bush002 7 0template Bdt001 11 
++0template gbdirt_grassy001 12 0template Bdt001 7 0template turf003 11 
++0template turf004 2 0template gbdirt_grassy001 13 
+turf003
+turf004
+turf001
+turf002
+groundstruct002
+groundstruct001
+groundstruct30
++0template Bdt001 14 0template gbdirt_grassy001 1 
++0template gbdirt_grassy001 6 0template Bdt001 9 
++0template Bdt001 2 0template gbdirt_grassy001 13 
++0template Bdt001 4 0template 1bush001 11 
++0template Bdt001 12 0template 1bush001 3 
++0template Bdt001 8 0template 1bush002 7 
++0template gbdirt_grassy001 14 0template Bdt001 5 0template 1bush002 11 
++0template Bdt001 10 0template gbdirt_grassy001 13 0template 1bush001 7 
++0template 1bush001 10 0template Bdt001 5 
++0template Bdt001 10 0template 1bush001 5 
++0template gbdirt_grassy001 14 0template Bdt001 13 0template 1bush001 3 
++0template gbdirt_grassy001 12 0template 1bush002 3 
++0template turf003 10 0template Bdt001 5 
++0template groundstruct002 12 0template smallbuilding2 3 
++0template gbdirt_grassy001 14 0template Bdt001 1 
++0template gbdirt_grassy001 10 0template Bdt001 5 
++0template Bdt001 10 0template gbdirt_grassy001 5 
++0template 1bush002 4 0template Bdt001 11 
++0template Bdt001 6 0template 1bush001 13 0template gbdirt_grassy001 11 
++0template 1bush001 10 0template Bdt001 13 0template gbdirt_grassy001 7 
++0template Bdt001 14 0template 1bush001 1 
++0template 1bush001 6 0template Bdt001 13 0template gbdirt_grassy001 11 
++0template Bdt001 10 0template 1bush001 13 0template gbdirt_grassy001 7 
++0template 1bush002 2 0template Bdt001 13 
+1bush001
+1bush002
++0template turf004 14 0template Bdt001 5 0template gbdirt_grassy001 11 
++0template turf003 8 0template gbdirt_grassy001 7 
++0template turf003 4 0template 1bush001 11 
++0template turf003 8 0template 1bush001 7 
+smallbuilding2
++0template groundstruct001 10 0template smallbuilding2 5 
++0template Bdt001 14 0template 1bush002 5 0template gbdirt_grassy001 11 
++0template 1bush001 14 0template gbdirt_grassy001 13 0template Bdt001 3 
++0template 1bush001 12 0template Bdt001 3 
++0template gbdirt_grassy001 10 0template 1bush002 13 0template Bdt001 7 
++0template 1bush002 14 0template Bdt001 5 0template gbdirt_grassy001 11 
++0template 1bush001 8 0template gbdirt_grassy001 7 
++0template 1bush001 8 0template Bdt001 7 
++0template turf003 14 0template gbdirt_grassy001 5 0template 1bush002 11 
++0template 1bush001 6 0template turf001 9 
++0template turf002 2 0template 1bush001 13 
++0template smallbuilding2 4 0template groundstruct002 11 
++0template smallbuilding2 12 0template groundstruct001 3 
++0template smallbuilding2 8 0template groundstruct001 7 
+groundstruct26
+marsh003
+marsh002
+marsh004
+marsh001
++0template Bdt001 6 0template gbdirt_grassy001 9 
++0template 1bush002 6 0template Bdt001 9 
++0template Bdt001 2 0template 1bush002 13 
++0template gbdirt_grassy001 2 0template 1bush001 13 
++0template 1bush002 14 0template gbdirt_grassy001 1 
++0template Bdt001 14 0template 1bush002 13 0template gbdirt_grassy001 3 
++0template 1bush002 14 0template Bdt001 9 0template gbdirt_grassy001 7 
++0template gbdirt_grassy001 4 0template 1bush001 11 
++0template gbdirt_grassy001 8 0template 1bush001 7 
++0template turf004 10 0template 1bush001 13 0template gbdirt_grassy001 7 
++0template smallbuilding2 10 0template groundstruct001 5 
+groundstruct22
++0template marsh002 4 0template 20bush002 11 
++0template marsh004 12 0template 20bush004 3 
++0template marsh004 12 0template 20bush002 7 0template crusty003 11 
++0template marsh001 12 0template crusty004 3 
++0template marsh001 8 0template crusty003 7 
++0template marsh004 4 0template crusty004 11 
++0template 20bush_4sand001 10 0template marsh004 5 
++0template marsh001 10 0template 20bush_4sand001 5 
++0template Bdt001 12 0template gbdirt_grassy001 7 0template 1bush002 11 
++0template Bdt001 14 0template gbdirt_grassy001 9 0template 1bush001 7 
++0template 1bush002 2 0template gbdirt_grassy001 13 
++0template gbdirt_grassy001 10 0template 1bush002 5 
++0template turf004 14 0template gbdirt_grassy001 13 0template 1bush001 3 
++0template turf004 4 0template reddirt002 11 
++0template turf002 8 0template reddirt002 7 
++0template 20bush002 10 0template marsh003 5 
++0template 20bush003 4 0template crusty004 11 
++0template crusty003 2 0template 20bush004 13 
+crusty003
++0template marsh003 10 0template crusty002 5 
++0template marsh003 4 0template 1silt002 11 
++0template marsh003 8 0template 1silt002 7 
++0template marsh001 8 0template 20bush003 7 
++0template marsh001 4 0template stones001 11 
++0template crusty003 14 0template marsh004 9 0template stones004 7 
++0template marsh004 6 0template crusty002 13 0template stones004 11 
++0template marsh002 8 0template stones003 7 
++0template crusty001 14 0template marsh002 1 
++0template marsh003 6 0template crusty004 9 
++0template crusty003 2 0template marsh003 13 
++0template 1bush001 14 0template gbdirt_grassy001 5 0template Bdt001 11 
++0template 1bush002 4 0template gbdirt_grassy001 11 
++0template 1bush001 12 0template gbdirt_grassy001 7 0template Bdt001 11 
++0template 1bush001 10 0template gbdirt_grassy001 5 
++0template 1bush001 4 0template turf002 11 
++0template turf004 6 0template 1bush001 13 0template reddirt001 11 
++0template turf001 12 0template reddirt002 3 
++0template reddirt002 2 0template turf003 13 
++0template turf003 14 0template reddirt001 1 
++0template 20bush003 14 0template marsh003 1 
++0template crusty003 14 0template 20bush002 13 0template marsh004 3 
++0template crusty002 12 0template marsh003 3 
++0template crusty003 12 0template marsh001 7 0template 1silt003 11 
++0template marsh004 14 0template crusty004 13 0template 1silt001 3 
++0template 1silt002 10 0template marsh003 5 
++0template marsh002 14 0template 1silt001 1 
++0template 20bush003 10 0template marsh002 13 0template 1silt001 7 
+20bush004
++0template marsh004 10 0template 20bush004 5 
++0template stones001 14 0template marsh001 1 
++0template marsh001 6 0template stones002 9 
++0template stones003 6 0template marsh002 9 
++0template marsh004 2 0template stones002 13 
++0template crusty004 12 0template marsh002 7 0template 20bush004 11 
++0template marsh003 14 0template crusty003 13 0template 20bush003 3 
++0template crusty001 10 0template marsh004 5 
+crusty001
++0template crusty002 4 0template marsh002 11 
++0template marsh002 12 0template stones004 3 
++0template 20bush_4sand001 14 0template marsh003 1 
++0template marsh004 6 0template 20bush_4sand002 9 
++0template marsh001 8 0template 20bush_4sand002 7 
++0template gbdirt_grassy001 10 0template Bdt001 13 0template 1bush001 7 
++0template 1bush002 6 0template gbdirt_grassy001 9 
++0template 1bush002 12 0template gbdirt_grassy001 3 
++0template gbdirt_grassy001 6 0template 1bush002 9 
++0template reddirt001 10 0template turf001 5 
++0template reddirt002 4 0template 20bush_4sand001 11 
++0template reddirt001 12 0template 20bush_4sand001 7 0template turf004 11 
++0template reddirt002 8 0template turf003 7 
++0template turf002 10 0template reddirt002 5 
++0template 1silt001 14 0template marsh002 1 
++0template 1silt002 12 0template marsh003 3 
++0template marsh002 2 0template 1silt002 13 
++0template 1silt002 8 0template marsh002 7 
++0template 20bush004 14 0template 1silt001 5 0template stones004 11 
++0template 20bush004 12 0template stones003 3 
++0template marsh004 10 0template 20bush001 13 0template stones001 7 
++0template stones003 14 0template marsh001 5 0template 20bush001 11 
++0template marsh002 14 0template stones003 13 0template 20bush001 3 
++0template marsh003 12 0template 20bush002 7 0template stones002 11 
++0template 20bush002 14 0template marsh004 9 0template stones003 7 
++0template 20bush002 8 0template marsh001 7 
++0template crusty002 8 0template marsh003 7 
++0template stones001 10 0template marsh004 5 
++0template stones004 4 0template marsh004 11 
++0template marsh001 6 0template stones002 13 0template 20bush_4sand002 11 
++0template marsh001 14 0template stones004 1 
++0template marsh003 4 0template 20bush_4sand002 11 
++0template 20bush_4sand002 2 0template marsh001 13 
++0template gbdirt_grassy001 14 0template 1bush002 1 
++0template turf002 10 0template gbdirt_grassy001 5 
++0template reddirt001 14 0template turf002 5 0template 20bush_4sand002 11 
++0template 20bush_4sand002 2 0template reddirt001 13 
++0template turf001 10 0template 20bush_4sand001 5 
++0template reddirt001 14 0template turf004 1 
++0template turf003 2 0template reddirt002 13 
++0template 20bush004 14 0template marsh003 5 0template crusty001 11 
++0template marsh002 14 0template 20bush001 13 0template crusty002 3 
++0template 1silt002 14 0template marsh003 9 0template crusty001 7 
++0template stones003 14 0template 1silt003 9 0template marsh004 7 
++0template stones001 12 0template 1silt003 3 
++0template marsh001 14 0template stones001 13 0template crusty004 11 0template 1silt003 7 
+20bush001
++0template 20bush004 4 0template marsh001 11 
++0template stones001 10 0template 20bush004 13 0template marsh001 7 
++0template marsh002 14 0template stones003 5 0template 20bush001 11 
++0template 20bush004 2 0template marsh001 13 
++0template marsh002 14 0template 20bush004 1 
++0template crusty004 14 0template marsh003 9 0template 20bush003 7 
++0template marsh001 2 0template crusty001 13 
++0template marsh003 10 0template stones004 5 
++0template stones001 14 0template marsh001 9 0template 20bush_4sand001 7 
++0template stones003 8 0template marsh001 7 
++0template 20bush_4sand002 8 0template marsh002 7 
++0template groundstruct002 4 0template groundstruct22 11 
++0template groundstruct002 12 0template groundstruct22 3 
++0template smallbuilding2 10 0template groundstruct002 13 0template groundstruct22 7 
++0template gbdirt_grassy001 6 0template 1bush001 13 0template turf001 11 
++0template turf001 6 0template gbdirt_grassy001 13 0template 20bush_4sand002 11 
++0template 20bush_4sand002 2 0template turf004 13 
+20bush_4sand002
++0template crusty004 14 0template marsh001 13 0template 20bush003 3 
++0template crusty002 12 0template 20bush004 7 0template marsh004 11 
++0template crusty002 12 0template marsh002 7 0template stones004 11 
++0template marsh004 10 0template crusty001 13 0template stones004 7 
+1silt002
++0template crusty001 14 0template 1silt003 5 0template marsh004 11 
++0template 20bush004 14 0template marsh001 5 0template 1silt002 11 
++0template 20bush001 12 0template 1silt002 7 0template marsh004 11 
++0template 20bush004 12 0template marsh001 7 0template france002 11 
++0template marsh002 10 0template 20bush003 13 0template france002 7 
++0template 20bush004 14 0template stones004 5 0template marsh002 11 
++0template 20bush004 12 0template marsh002 3 
++0template marsh001 2 0template 20bush002 13 
++0template stones003 2 0template marsh001 13 
++0template marsh003 14 0template stones004 5 0template france002 11 
++0template marsh001 12 0template france001 3 
++0template 20bush_4sand002 10 0template marsh001 13 0template france003 7 
++0template groundstruct22 10 0template groundstruct001 5 
++0template smallbuilding2 10 0template groundstruct22 5 
++0template 1bush002 14 0template Bdt001 1 
++0template turf002 14 0template gbdirt_grassy001 1 
++0template 20bush_4sand001 14 0template turf002 13 0template 1bush001 11 0template gbdirt_grassy001 7 
++0template 20bush_4sand001 12 0template 1bush002 3 
++0template 20bush_4sand001 12 0template 1bush001 7 0template turf003 11 
++0template turf003 6 0template 20bush_4sand002 13 0template 1bush002 11 
++0template reddirt002 10 0template turf003 13 0template 1bush001 7 
++0template smallbuilding1 4 0template smallbuilding2 11 
++0template smallbuilding1 12 0template smallbuilding2 3 
++0template groundstruct22 14 0template smallbuilding1 9 0template smallbuilding2 7 
++0template 1silt003 14 0template marsh003 13 0template france001 11 0template stones003 7 
++0template 1silt002 12 0template france003 7 0template marsh001 11 
++0template 1silt002 6 0template marsh001 9 
++0template marsh002 6 0template 1silt002 13 0template 20bush003 11 
++0template france003 14 0template marsh003 9 0template 20bush003 7 
++0template marsh004 2 0template france002 13 
++0template stones001 12 0template marsh004 3 
++0template france003 14 0template stones004 5 0template marsh002 11 
++0template france003 12 0template marsh001 3 
++0template 20bush_4sand001 10 0template france001 13 0template marsh001 7 
++0template 1bush001 4 0template 20bush_4sand002 11 
++0template turf004 10 0template 1bush002 13 0template 20bush_4sand001 7 
++0template 1bush002 10 0template turf003 5 
++0template reddirt001 14 0template 1bush002 5 0template turf001 11 
++0template reddirt002 12 0template turf003 3 
++0template smallbuilding2 10 0template smallbuilding1 5 
++0template marsh001 12 0template 1silt002 3 
++0template marsh003 12 0template 1silt003 7 0template 20bush004 11 
++0template marsh003 6 0template stones004 13 0template megadirt001 11 
++0template stones004 14 0template marsh001 9 0template megadirt002 7 
++0template stones004 12 0template marsh001 7 0template megadirt001 11 
++0template france001 10 0template stones004 13 0template megadirt001 7 
++0template marsh004 14 0template france001 1 
++0template marsh002 8 0template france002 7 
++0template marsh002 6 0template 1silt002 13 0template megadirt001 11 
++0template 20bush002 14 0template marsh002 13 0template megadirt001 3 
++0template marsh001 14 0template 20bush004 13 0template crusty003 11 0template megadirt001 7 
++0template stones002 12 0template 20bush003 7 0template marsh001 11 
++0template marsh002 12 0template 20bush001 7 0template 20bush_4sand001 11 
++0template marsh001 12 0template 20bush_4sand001 3 
++0template 20bush_4sand002 12 0template marsh004 3 
++0template marsh001 2 0template 20bush_4sand002 13 
++0template marsh001 4 0template france001 11 
++0template groundstruct22 4 0template groundstruct001 11 
++0template smallbuilding2 10 0template groundstruct22 13 0template groundstruct002 7 
++0template 1bush002 12 0template gbdirt_grassy001 7 0template turf004 11 
++0template 1bush001 12 0template turf003 3 
++0template 20bush_4sand001 14 0template 1bush001 13 0template turf001 3 
++0template turf004 2 0template 20bush_4sand002 13 
++0template 1bush002 14 0template turf002 1 
++0template turf001 12 0template reddirt001 7 0template 1bush001 11 
++0template turf002 12 0template 1bush002 7 0template 20bush_4sand002 11 
++0template turf003 8 0template 20bush_4sand002 7 
++0template smallbuilding2 6 0template smallbuilding1 13 0template groundstruct22 11 
++0template 20bush002 14 0template 1silt003 13 0template marsh001 3 
++0template marsh001 14 0template stones004 5 0template megadirt002 11 
++0template megadirt001 6 0template marsh002 9 
++0template marsh003 6 0template megadirt002 13 0template france001 11 
++0template megadirt001 14 0template marsh002 13 0template france003 3 
++0template france002 6 0template megadirt001 13 0template marsh003 11 
++0template megadirt002 10 0template marsh003 13 0template crusty003 7 
++0template megadirt002 4 0template marsh001 11 
++0template crusty001 14 0template megadirt001 9 0template marsh003 7 
++0template marsh002 14 0template crusty004 13 0template 20bush001 11 0template megadirt002 7 
++0template 20bush002 14 0template marsh001 9 0template france001 7 
+20bush002
++0template 20bush_4sand002 14 0template 20bush003 5 0template marsh002 11 
++0template marsh001 12 0template stones001 7 0template 20bush004 11 
++0template france001 10 0template marsh002 13 0template 20bush003 7 
++0template 20bush_4sand002 10 0template france003 5 
++0template groundstruct22 14 0template groundstruct002 1 
++0template groundstruct22 12 0template groundstruct002 3 
++0template groundstruct001 2 0template groundstruct22 13 
++0template gbdirt_grassy001 4 0template turf003 11 
++0template gbdirt_grassy001 12 0template turf003 3 
++0template gbdirt_grassy001 8 0template turf004 7 
++0template 1bush002 10 0template reddirt001 5 
++0template 20bush_4sand001 10 0template 1bush001 5 
++0template groundstruct22 2 0template smallbuilding2 13 
++0template megadirt002 14 0template stones001 1 
++0template marsh001 14 0template megadirt001 13 0template france002 11 0template stones004 7 
++0template france003 2 0template marsh004 13 
++0template france001 4 0template marsh004 11 
++0template crusty001 6 0template marsh004 13 0template 1silt001 11 
++0template megadirt001 14 0template crusty001 13 0template 1silt002 3 
++0template marsh003 10 0template megadirt002 13 0template 1silt003 7 
++0template megadirt002 14 0template marsh001 1 
++0template 20bush004 14 0template megadirt001 13 0template marsh004 3 
++0template marsh004 6 0template 20bush004 13 0template stones003 11 
++0template france003 10 0template marsh001 13 0template stones004 7 
++0template 20bush004 14 0template marsh001 13 0template stones003 11 0template france001 7 
++0template 20bush003 8 0template stones002 7 
++0template 20bush003 10 0template stones002 13 0template marsh004 7 
++0template france003 14 0template 20bush001 1 
++0template 20bush_4sand002 14 0template france001 13 0template 20bush002 3 
++0template marsh004 10 0template 20bush_4sand002 13 0template 20bush001 7 
++0template gbdirt_grassy001 6 0template Bdt001 13 0template 1bush002 11 
++0template gbdirt_grassy001 14 0template 1bush001 13 0template Bdt001 3 
++0template gbdirt_grassy001 10 0template turf004 5 
++0template 1bush001 14 0template reddirt002 13 0template turf003 3 
++0template stones004 14 0template marsh001 5 0template megadirt001 11 
++0template stones002 12 0template megadirt002 7 0template marsh003 11 
++0template france001 10 0template stones003 13 0template marsh001 7 
++0template marsh002 6 0template france002 13 0template crusty001 11 
++0template 1silt002 14 0template crusty004 5 0template marsh004 11 
++0template marsh001 6 0template 1silt001 9 
++0template stones002 14 0template france002 13 0template 20bush003 11 0template marsh003 7 
++0template 20bush002 2 0template stones001 13 
++0template marsh004 14 0template 20bush003 5 0template crusty004 11 
++0template 20bush001 10 0template marsh004 13 0template crusty004 7 
++0template marsh004 6 0template 20bush003 13 0template france003 11 
++0template stones002 14 0template marsh002 5 0template france001 11 
++0template marsh004 14 0template stones002 9 0template france001 7 
++0template 20bush004 14 0template marsh002 13 0template stones002 3 
++0template 20bush003 12 0template stones004 7 0template france003 11 
++0template 20bush002 12 0template france003 7 0template 9bush_1silt001 11 
++0template marsh004 10 0template 20bush001 13 0template 9bush_1silt001 7 
++0template gbdirt_grassy001 14 0template Bdt001 5 0template turf004 11 
++0template turf004 12 0template 1bush002 7 0template 3litegrass001 11 
++0template turf003 12 0template 3litegrass002 7 0template 1bush002 11 
++0template turf002 12 0template 1bush001 3 
++0template groundstruct002 10 0template turf004 5 
++0template turf004 14 0template groundstruct001 1 
++0template turf001 12 0template groundstruct002 3 
++0template groundstruct002 2 0template turf004 13 
++0template turf004 8 0template groundstruct002 7 
++0template marsh001 6 0template 20bush003 13 0template megadirt002 11 
++0template marsh003 12 0template megadirt001 7 0template 1silt003 11 
++0template megadirt002 14 0template marsh002 9 0template 1silt001 7 
++0template france003 6 0template marsh002 9 
++0template crusty003 6 0template marsh002 9 
++0template marsh003 14 0template 1silt001 5 0template stones004 11 
++0template stones004 6 0template marsh003 13 0template 20bush004 11 
++0template marsh002 6 0template stones001 13 0template 20bush003 11 
++0template crusty001 14 0template 20bush003 13 0template france002 11 0template marsh001 7 
++0template 20bush002 14 0template crusty002 13 0template marsh004 11 0template france002 7 
++0template stones001 14 0template france003 13 0template marsh004 3 
++0template france003 14 0template stones001 1 
++0template 9bush_1silt001 14 0template france003 9 0template stones003 7 
++0template marsh001 10 0template 9bush_1silt001 13 0template france003 7 
++0template Bdt001 12 0template 1bush002 7 0template gbdirt_grassy001 11 
++0template turf002 4 0template 3litegrass002 11 
++0template turf003 12 0template 3litegrass001 3 
++0template turf002 8 0template 3litegrass003 7 
++0template 1bush001 14 0template turf002 5 0template 3litegrass001 11 
++0template 3litegrass002 2 0template 1bush002 13 
++0template 1bush002 14 0template 3litegrass003 5 0template turf001 11 
++0template 1bush001 8 0template turf004 7 
++0template turf002 10 0template 1bush001 5 
++0template turf001 10 0template groundstruct001 5 
++0template marsh003 4 0template megadirt001 11 
++0template 1silt002 10 0template megadirt002 13 0template marsh001 7 
++0template france001 14 0template marsh002 13 0template 1silt003 3 
++0template marsh002 14 0template france002 13 0template 1silt001 3 
++0template crusty001 14 0template marsh001 9 0template 1silt002 7 
++0template stones003 10 0template 1silt003 13 0template marsh004 7 
++0template stones003 4 0template 20bush002 11 
++0template marsh001 14 0template 20bush002 5 0template megadirt002 11 
++0template 20bush001 14 0template marsh001 9 0template megadirt002 7 
++0template marsh003 6 0template 20bush001 13 0template 20bush_4sand002 11 
++0template france002 14 0template marsh004 9 0template 20bush_4sand002 7 
++0template marsh002 6 0template france001 13 0template 2rough002 11 
++0template france003 14 0template marsh004 9 0template 2rough002 7 
++0template france001 12 0template marsh004 7 0template crusty001 11 
++0template france002 12 0template crusty002 3 
++0template marsh002 14 0template france001 13 0template crusty003 3 
++0template france001 14 0template stones003 5 0template 2rough002 11 
++0template marsh003 10 0template france003 13 0template 2rough002 7 
++0template Bdt001 14 0template gbdirt_grassy001 13 0template 1bush001 3 
++0template 3litegrass002 10 0template turf002 5 
+3litegrass001
++0template turf002 14 0template 3litegrass001 1 
++0template 3litegrass002 6 0template turf004 9 
++0template 3litegrass001 12 0template turf001 7 0template 1bush001 11 
++0template turf003 14 0template 3litegrass001 13 0template 1bush002 3 
+groundrunway001
+groundrunway002
++0template megadirt001 10 0template marsh001 5 
++0template marsh003 14 0template megadirt001 1 
++0template 1silt001 14 0template marsh004 13 0template stones004 11 0template megadirt002 7 
++0template 1silt002 12 0template stones004 3 
++0template 1silt003 12 0template stones002 7 0template marsh003 11 
++0template marsh002 4 0template wheat001 11 
++0template marsh002 8 0template wheat002 7 
++0template megadirt001 14 0template 20bush003 1 
++0template marsh001 14 0template megadirt001 9 0template 20bush003 7 
++0template marsh004 12 0template megadirt001 7 0template france001 11 
++0template marsh003 12 0template france001 7 0template megadirt002 11 
++0template 20bush_4sand001 14 0template marsh002 9 0template megadirt001 7 
++0template 2rough002 10 0template marsh001 5 
++0template marsh004 10 0template 2rough002 5 
++0template crusty003 12 0template marsh002 7 0template 2rough001 11 
++0template crusty003 12 0template 2rough001 7 0template marsh003 11 
++0template 2rough002 14 0template stones001 1 
++0template marsh004 10 0template 2rough002 13 0template stones002 7 
++0template 1bush002 12 0template Bdt001 7 0template gbdirt_grassy001 11 
++0template 3litegrass003 10 0template turf004 13 0template gbdirt_grassy001 7 
+3litegrass002
++0template 3litegrass001 4 0template 1bush001 11 
++0template turf003 14 0template 3litegrass001 9 0template 1bush001 7 
++0template 1bush001 14 0template turf003 9 0template 3litegrass002 7 
+groundrunway6
++0template turf003 4 0template 20bush_4sand001 11 
++0template turf001 12 0template 20bush_4sand001 7 0template 1bush001 11 
++0template megadirt002 8 0template marsh002 7 
++0template stones002 10 0template megadirt001 5 
++0template marsh002 6 0template stones001 13 0template france002 11 
++0template marsh004 14 0template crusty004 1 
++0template wheat002 2 0template marsh004 13 
++0template marsh001 10 0template wheat002 5 
++0template marsh002 4 0template 2rough002 11 
++0template marsh001 8 0template 2rough002 7 
++0template 20bush001 14 0template marsh002 5 0template megadirt002 11 
++0template 20bush003 12 0template megadirt001 7 0template marsh001 11 
++0template 20bush002 12 0template marsh002 7 0template 20bush_4sand001 11 
++0template megadirt001 14 0template 20bush001 13 0template 1silt001 11 0template 20bush_4sand002 7 
++0template france003 14 0template megadirt002 13 0template marsh002 11 0template 1silt002 7 
++0template megadirt002 10 0template france001 13 0template marsh003 7 
++0template marsh001 12 0template megadirt001 3 
++0template 2rough001 14 0template marsh001 13 0template 20bush002 11 0template megadirt002 7 
++0template marsh004 10 0template 2rough002 13 0template 20bush001 7 
++0template 2rough001 14 0template marsh001 13 0template 1silt002 3 
++0template marsh003 10 0template 2rough001 13 0template 1silt002 7 
++0template stones002 4 0template france002 11 
++0template marsh004 10 0template stones001 13 0template france003 7 
++0template 3litegrass001 14 0template gbdirt_grassy001 5 0template turf002 11 
++0template 3litegrass002 8 0template turf004 7 
++0template 1bush002 10 0template 3litegrass001 5 
++0template 3litegrass001 14 0template 1bush001 1 
++0template groundstruct001 14 0template turf004 1 
++0template 20bush_4sand002 14 0template turf003 1 
++0template 1bush002 14 0template 20bush_4sand001 13 0template turf002 3 
++0template megadirt002 14 0template marsh002 5 0template stones002 11 
++0template stones004 6 0template megadirt001 13 0template marsh001 11 
++0template france002 10 0template marsh004 5 
++0template marsh003 10 0template france001 5 
++0template wheat002 10 0template marsh004 5 
++0template wheat001 4 0template marsh001 11 
++0template marsh004 2 0template wheat002 13 
++0template 2rough002 14 0template marsh002 1 
++0template marsh003 2 0template 2rough002 13 
++0template 1silt001 14 0template 20bush_4sand002 13 0template marsh001 3 
++0template megadirt001 12 0template marsh004 3 
++0template 20bush004 10 0template megadirt002 5 
++0template 1silt002 14 0template marsh003 13 0template 20bush003 3 
++0template 1silt001 12 0template 20bush003 7 0template marsh004 11 
++0template marsh003 14 0template crusty003 5 0template 20bush_4sand002 11 
++0template stones002 10 0template marsh004 13 0template 20bush_4sand001 7 
++0template france002 10 0template stones003 5 
++0template 3litegrass003 14 0template turf004 1 
++0template 1bush002 14 0template 3litegrass003 9 0template turf003 7 
++0template 1bush002 12 0template 3litegrass002 3 
++0template turf001 10 0template 3litegrass003 5 
++0template turf003 4 0template groundstruct001 11 
++0template stones003 14 0template marsh001 13 0template 20bush004 11 0template megadirt001 7 
++0template marsh004 14 0template stones003 9 0template 20bush002 7 
++0template marsh003 12 0template stones001 7 0template france001 11 
++0template marsh001 14 0template france002 5 0template 1silt001 11 
++0template megadirt001 10 0template marsh004 13 0template 20bush001 7 
++0template marsh001 6 0template megadirt002 13 0template 20bush_4sand001 11 
++0template 20bush004 14 0template megadirt001 5 0template marsh004 11 
+20bush003
++0template 20bush_4sand001 10 0template crusty002 13 0template marsh001 7 
++0template stones004 14 0template 20bush_4sand002 5 0template marsh003 11 
++0template 1bush001 14 0template gbdirt_grassy001 9 0template Bdt001 7 
++0template 3litegrass002 12 0template 1bush001 3 
++0template 20bush004 14 0template megadirt001 1 
++0template stones001 10 0template 20bush001 13 0template megadirt002 7 
++0template france001 12 0template marsh001 7 0template 1silt002 11 
++0template 1silt002 2 0template france002 13 
+1silt003
++0template 1silt001 4 0template crusty002 11 
++0template marsh001 14 0template 1silt002 13 0template wheat002 11 0template crusty004 7 
++0template marsh004 12 0template wheat001 3 
++0template wheat001 6 0template marsh004 9 
++0template 20bush002 14 0template marsh004 9 0template crusty003 7 
++0template megadirt001 14 0template 20bush002 13 0template marsh001 3 
++0template marsh001 2 0template megadirt002 13 
++0template 20bush002 8 0template megadirt001 7 
++0template marsh004 6 0template 20bush_4sand001 13 0template stones003 11 
++0template 1bush001 8 0template 3litegrass001 7 
++0template groundstruct001 8 0template turf002 7 
++0template megadirt001 4 0template 20bush001 11 
++0template stones003 14 0template megadirt002 13 0template marsh002 11 0template 20bush001 7 
++0template 1silt002 14 0template marsh003 9 0template france001 7 
++0template crusty004 10 0template 1silt001 5 
++0template wheat002 10 0template crusty002 5 
++0template marsh001 6 0template wheat001 13 0template 20bush002 11 
++0template marsh002 12 0template 20bush_4sand002 7 0template megadirt001 11 
++0template 20bush002 14 0template megadirt002 9 0template marsh002 7 
++0template 20bush004 12 0template megadirt002 3 
++0template marsh002 14 0template 20bush002 13 0template megadirt001 3 
++0template groundrunway6 12 0template groundrunway8 3 
++0template turf002 14 0template reddirt001 5 0template 1bush002 11 
++0template smallbuilding1 10 0template smallbuilding2 5 
++0template marsh002 14 0template 20bush003 13 0template france003 11 0template megadirt001 7 
++0template marsh003 6 0template france002 13 0template 1silt003 11 
++0template 1silt002 2 0template marsh001 13 
++0template crusty003 6 0template 1silt003 9 
++0template wheat001 14 0template crusty001 13 0template 20bush004 11 0template 1silt003 7 
++0template marsh004 14 0template wheat002 13 0template 20bush002 3 
++0template megadirt002 14 0template 20bush_4sand001 5 0template marsh003 11 
++0template megadirt002 14 0template marsh001 5 0template 20bush_4sand002 11 
++0template megadirt001 12 0template 20bush_4sand001 7 0template marsh004 11 
++0template 3litegrass002 2 0template turf003 13 
+groundrunway8
++0template 1bush002 10 0template reddirt002 13 0template turf002 7 
++0template smallbuilding2 14 0template smallbuilding1 1 
++0template smallbuilding1 2 0template smallbuilding2 13 
++0template france001 14 0template megadirt002 13 0template 20bush003 11 0template marsh001 7 
++0template marsh001 14 0template france003 13 0template 20bush002 3 
++0template 1silt003 10 0template marsh001 13 0template 20bush002 7 
+1silt001
++0template 1silt001 10 0template crusty004 5 
++0template 20bush004 10 0template 1silt003 5 
++0template 20bush002 4 0template 20bush_4sand001 11 
++0template 20bush002 8 0template 20bush_4sand001 7 
++0template stones004 14 0template 20bush003 5 0template marsh002 11 
++0template 20bush_4sand002 14 0template marsh002 5 0template stones002 11 
++0template marsh002 14 0template 20bush_4sand002 13 0template stones002 3 
++0template 1silt003 10 0template marsh003 13 0template stones003 7 
++0template marsh001 10 0template 1silt001 5 
++0template marsh004 6 0template 20bush_4sand001 13 0template crusty004 11 
++0template marsh004 12 0template crusty002 7 0template 20bush_4sand001 11 
++0template marsh002 12 0template 20bush_4sand002 7 0template france003 11 
++0template 3litegrass001 12 0template turf003 3 
++0template turf001 2 0template 3litegrass002 13 
++0template groundstruct002 4 0template turf003 11 
++0template groundstruct001 12 0template turf001 3 
++0template 1bush001 14 0template turf003 5 0template reddirt002 11 
++0template turf002 10 0template 1bush001 13 0template reddirt002 7 
++0template 20bush004 4 0template france001 11 
++0template 1silt002 14 0template 20bush004 13 0template france002 3 
++0template 1silt001 12 0template france003 3 
++0template crusty003 14 0template 1silt001 13 0template marsh002 11 0template france002 7 
++0template 1silt002 14 0template crusty002 13 0template france002 11 0template marsh001 7 
++0template 20bush004 14 0template 1silt002 13 0template france003 3 
++0template 20bush_4sand001 10 0template 20bush002 13 0template france002 7 
++0template 20bush003 14 0template 20bush_4sand001 5 0template france001 11 
++0template 20bush002 12 0template france001 3 
++0template 20bush003 14 0template marsh003 5 0template 20bush_4sand001 11 
++0template marsh004 10 0template 20bush004 13 0template 20bush_4sand001 7 
++0template stones003 14 0template marsh004 13 0template 20bush_4sand002 3 
++0template stones001 8 0template 20bush_4sand001 7 
++0template 1silt001 14 0template stones003 9 0template megadirt002 7 
++0template marsh004 14 0template 1silt001 13 0template stones002 3 
++0template france002 10 0template 20bush_4sand001 5 
+france003
++0template marsh004 6 0template france001 13 0template megadirt001 11 
++0template marsh001 8 0template megadirt001 7 
++0template turf004 6 0template gbdirt_grassy001 13 0template 3litegrass001 11 
++0template groundstruct22 10 0template smallbuilding2 5 
++0template france003 14 0template 20bush004 13 0template stones002 11 0template megadirt001 7 
++0template france002 12 0template stones003 7 0template megadirt001 11 
++0template france002 8 0template megadirt001 7 
++0template france002 14 0template marsh002 13 0template 20bush_4sand002 11 0template 1silt003 7 
++0template france002 12 0template 20bush_4sand002 3 
++0template 20bush_4sand001 6 0template france002 13 0template marsh001 11 
++0template france002 14 0template 20bush_4sand001 9 0template marsh002 7 
++0template france002 12 0template 20bush_4sand002 7 0template 20bush004 11 
++0template marsh003 14 0template france001 13 0template 20bush_4sand002 11 0template 20bush001 7 
++0template 20bush_4sand001 6 0template marsh002 13 0template 20bush001 11 
++0template marsh003 14 0template 20bush_4sand001 13 0template stones001 11 0template 20bush004 7 
++0template 20bush_4sand001 14 0template marsh004 9 0template stones003 7 
++0template 20bush_4sand001 12 0template marsh004 7 0template 20bush003 11 
++0template stones004 14 0template 20bush_4sand002 13 0template marsh001 11 0template 20bush002 7 
++0template stones002 14 0template megadirt002 13 0template france003 3 
++0template stones004 12 0template france001 3 
++0template stones004 12 0template france001 7 0template 20bush004 11 
++0template stones001 8 0template 20bush001 7 
++0template 20bush_4sand002 14 0template marsh003 13 0template stones002 3 
++0template france003 14 0template 20bush_4sand002 13 0template marsh002 11 0template stones004 7 
++0template 20bush_4sand002 14 0template turf002 5 0template 1bush002 11 
++0template turf002 10 0template 20bush_4sand001 13 0template 1bush001 7 
++0template turf003 14 0template 1bush002 1 
++0template france001 14 0template marsh003 1 
++0template megadirt002 14 0template marsh001 13 0template 1silt001 3 
++0template megadirt001 12 0template 1silt003 7 0template stones004 11 
++0template megadirt002 14 0template stones001 13 0template 20bush004 11 0template marsh004 7 
++0template france003 14 0template megadirt001 13 0template marsh003 11 0template 20bush003 7 
++0template 1silt001 10 0template france003 13 0template marsh002 7 
++0template 20bush_4sand002 14 0template 1silt003 5 0template megadirt001 11 
++0template 20bush_4sand002 12 0template megadirt001 3 
++0template marsh003 10 0template 20bush_4sand002 13 0template megadirt002 7 
++0template 20bush002 14 0template 20bush_4sand002 13 0template megadirt001 11 0template marsh003 7 
++0template 20bush_4sand002 14 0template 20bush001 13 0template marsh001 11 0template megadirt001 7 
++0template stones004 14 0template 20bush001 13 0template marsh001 11 0template megadirt002 7 
++0template 20bush004 14 0template marsh002 5 0template france002 11 
++0template marsh004 14 0template 20bush001 9 0template france002 7 
++0template france001 12 0template marsh002 7 0template 20bush002 11 
++0template france002 12 0template 20bush002 7 0template megadirt001 11 
++0template france002 12 0template megadirt002 3 
++0template france002 12 0template megadirt001 7 0template marsh002 11 
++0template 20bush003 14 0template france001 13 0template marsh003 3 
++0template stones002 14 0template 20bush002 13 0template france001 11 0template marsh001 7 
++0template stones001 8 0template france003 7 
+stones001
++0template 3litegrass002 10 0template gbdirt_grassy001 5 
+3litegrass003
++0template stones004 14 0template 1silt001 5 0template marsh001 11 
++0template 1silt002 14 0template marsh003 5 0template 20bush_4sand001 11 
++0template megadirt001 14 0template 1silt002 13 0template 20bush_4sand002 3 
++0template marsh003 6 0template megadirt002 9 
++0template megadirt001 2 0template marsh002 13 
++0template marsh001 10 0template megadirt001 5 
++0template 20bush001 14 0template france001 9 0template marsh004 7 
++0template megadirt001 14 0template 20bush002 5 0template marsh004 11 
++0template france002 14 0template marsh003 9 0template crusty003 7 
++0template stones002 14 0template france001 13 0template megadirt002 11 0template marsh003 7 
++0template stones004 12 0template megadirt002 3 
++0template marsh003 14 0template stones002 13 0template megadirt002 3 
++0template 3litegrass001 14 0template gbdirt_grassy001 13 0template turf003 11 0template Bdt001 7 
++0template turf003 6 0template 1bush001 9 
++0template 20bush_4sand001 14 0template marsh003 13 0template 1silt003 3 
++0template 20bush_4sand002 12 0template 1silt003 7 0template marsh003 11 
++0template france001 14 0template marsh001 5 0template crusty002 11 
++0template 20bush003 14 0template france001 13 0template crusty003 3 
++0template 20bush001 12 0template crusty004 3 
++0template marsh002 10 0template 20bush003 13 0template crusty002 7 
++0template 1bush002 2 0template turf004 13 
++0template 1silt003 4 0template marsh002 11 
++0template turf001 10 0template Bdt001 13 0template gbdirt_grassy001 7 
++0template groundstruct001 14 0template smallbuilding2 1 
++0template smallbuilding2 2 0template groundstruct002 13 
++0template groundstruct22 14 0template smallbuilding2 1 
++0template groundstruct22 12 0template smallbuilding2 3 
++0template turf003 4 0template Bdt001 11 
++0template turf001 8 0template Bdt001 7 
++0template groundrunway8 10 0template groundrunway6 5 
++0template gbdirt_grassy001 14 0template Bdt001 9 0template 1bush002 7 
++0template Bdt001 10 0template turf003 5 
++0template smallbuilding2 12 0template groundstruct002 7 0template gbdirt_grassy001 11 
++0template smallbuilding2 12 0template gbdirt_grassy001 3 
++0template groundstruct002 14 0template smallbuilding2 13 0template turf001 11 0template gbdirt_grassy001 7 
++0template groundstruct30 12 0template turf001 3 
++0template gbdirt_grassy001 10 0template groundstruct001 5 
++0template gbdirt_grassy001 14 0template 1bush001 5 0template Bdt001 11 
++0template 1bush001 10 0template gbdirt_grassy001 13 0template Bdt001 7 
++0template Bdt001 14 0template turf004 1 
++0template turf003 6 0template Bdt001 13 0template 1bush002 11 
++0template groundstruct002 14 0template 1bush002 5 0template turf004 11 
++0template gbdirt_grassy001 14 0template groundstruct002 13 0template turf002 3 
++0template turf001 12 0template gbdirt_grassy001 3 
++0template turf003 14 0template 1bush001 5 0template reddirt002 11 
++0template turf002 4 0template plaid002 11 
++0template turf004 12 0template plaid002 3 
++0template turf003 8 0template plaid003 7 
++0template 1bush002 6 0template gbdirt_grassy001 13 0template Bdt001 11 
++0template groundrunway8 2 0template groundrunway6 13 
++0template reddirt001 10 0template 1bush001 13 0template turf001 7 
++0template plaid002 10 0template turf004 5 
+plaid001
++0template turf002 14 0template plaid001 1 
++0template turf004 4 0template gbdirt_grassy001 11 
++0template turf004 12 0template gbdirt_grassy001 7 0template 1bush001 11 
++0template turf004 12 0template 1bush001 7 0template gbdirt_grassy001 11 
++0template turf004 10 0template gbdirt_grassy001 13 0template Bdt001 7 
++0template turf004 14 0template 1bush001 5 0template Bdt001 11 
++0template reddirt001 14 0template turf004 13 0template 1bush001 11 0template Bdt001 7 
++0template reddirt001 12 0template 1bush001 3 
++0template reddirt001 8 0template 1bush002 7 
++0template reddirt001 4 0template turf002 11 
++0template plaid002 14 0template turf002 13 0template reddirt001 3 
++0template plaid001 12 0template reddirt002 3 
++0template plaid002 12 0template reddirt001 7 0template turf004 11 
++0template plaid003 12 0template turf002 3 
++0template plaid003 12 0template turf002 7 0template 1bush001 11 
++0template plaid003 12 0template 1bush002 3 
++0template plaid003 12 0template 1bush002 7 0template turf003 11 
++0template turf001 6 0template plaid002 9 
++0template turf001 12 0template plaid003 7 0template sandstuff004 11 
++0template turf001 12 0template sandstuff002 3 
++0template turf001 12 0template sandstuff003 7 0template 1bush001 11 
++0template turf001 12 0template 1bush001 7 0template sandstuff002 11 
++0template turf002 8 0template sandstuff003 7 
++0template turf001 12 0template 1bush001 7 0template 9bush_1silt002 11 
++0template turf004 12 0template 9bush_1silt001 7 0template 1bush001 11 
++0template 1bush001 6 0template turf002 13 0template gbdirt_grassy001 11 
++0template gbdirt_grassy001 14 0template turf002 13 0template 1bush001 3 
++0template 1bush001 6 0template gbdirt_grassy001 13 0template turf004 11 
++0template gbdirt_grassy001 10 0template 1bush001 13 0template turf003 7 
++0template turf001 14 0template Bdt001 1 
++0template turf002 12 0template Bdt001 3 
++0template Bdt001 10 0template 1bush002 13 0template turf002 7 
++0template 1bush002 12 0template Bdt001 7 0template reddirt001 11 
++0template reddirt001 6 0template 1bush001 13 0template turf003 11 
++0template Bdt001 14 0template turf004 5 0template 1bush002 11 
++0template turf004 14 0template Bdt001 13 0template 1bush002 3 
+plaid002
++0template sandstuff001 14 0template plaid003 5 0template reddirt002 11 
++0template sandstuff001 8 0template reddirt001 7 
++0template sandstuff002 4 0template Bdt001 11 
++0template sandstuff004 12 0template Bdt001 3 
++0template sandstuff001 12 0template Bdt001 7 0template turf003 11 
++0template sandstuff004 12 0template turf004 7 0template 1bush002 11 
++0template 1bush001 6 0template sandstuff002 13 0template turf004 11 
++0template sandstuff003 14 0template 1bush002 9 0template turf002 7 
++0template turf002 14 0template sandstuff002 13 0template 1bush002 3 
++0template turf002 4 0template 9bush_1silt002 11 
++0template 1bush002 10 0template turf004 13 0template 9bush_1silt001 7 
++0template 9bush_1silt001 14 0template 1bush002 1 
++0template 1bush001 6 0template 9bush_1silt001 9 
++0template 1bush001 12 0template 9bush_1silt001 3 
++0template turf002 10 0template 1bush001 13 0template 9bush_1silt002 7 
++0template gbdirt_grassy001 10 0template turf003 13 0template 1bush001 7 
++0template Bdt001 4 0template turf004 11 
++0template Bdt001 12 0template turf004 3 
++0template Bdt001 2 0template turf001 13 
++0template reddirt001 14 0template Bdt001 13 0template 1bush002 3 
++0template turf001 14 0template reddirt001 13 0template 1bush002 3 
++0template 1bush002 10 0template turf003 13 0template Bdt001 7 
++0template turf002 14 0template 1bush002 13 0template reddirt002 11 0template Bdt001 7 
++0template reddirt002 4 0template plaid001 11 
++0template turf002 14 0template reddirt002 13 0template plaid003 3 
++0template reddirt001 14 0template turf004 9 0template plaid001 7 
++0template turf004 14 0template 1bush002 5 0template plaid002 11 
++0template plaid002 2 0template turf003 13 
++0template plaid001 4 0template 1french002 11 
++0template plaid003 12 0template 1french004 3 
++0template reddirt002 10 0template plaid003 13 0template 1french002 7 
++0template sandstuff004 14 0template reddirt001 5 0template turf004 11 
++0template Bdt001 10 0template sandstuff002 13 0template turf004 7 
++0template turf001 14 0template Bdt001 13 0template 1french003 11 0template 1bush001 7 
++0template 1bush002 14 0template turf004 13 0template 1french002 3 
++0template turf004 14 0template 1bush002 13 0template Bdt001 11 0template 1french001 7 
++0template 1bush001 14 0template turf002 13 0template sandstuff002 11 0template Bdt001 7 
++0template 1bush002 12 0template sandstuff004 7 0template turf001 11 
++0template turf004 6 0template 1bush001 13 0template Bdt001 11 
++0template 9bush_1silt001 14 0template turf002 13 0template Bdt001 3 
++0template 1bush001 14 0template 9bush_1silt002 9 0template Bdt001 7 
++0template 9bush_1silt002 6 0template 1bush001 13 0template Bdt001 11 
++0template 9bush_1silt002 8 0template Bdt001 7 
++0template turf001 10 0template 9bush_1silt001 5 
++0template 1bush002 14 0template turf001 9 0template Bdt001 7 
++0template 1bush002 4 0template 1french001 11 
++0template 1bush002 12 0template 1french001 7 0template Bdt001 11 
++0template 1bush001 12 0template Bdt001 7 0template 1french004 11 
++0template turf002 14 0template 1bush001 13 0template 1french004 3 
++0template turf001 8 0template 1french003 7 
++0template 1bush001 6 0template turf004 13 0template 1french003 11 
++0template turf004 14 0template 1bush002 9 0template 1french003 7 
++0template gbdirt_grassy001 14 0template 1bush002 13 0template turf002 3 
++0template 1bush001 14 0template gbdirt_grassy001 13 0template turf002 3 
++0template 1bush002 12 0template turf001 7 0template gbdirt_grassy001 11 
++0template 1bush001 10 0template Bdt001 13 0template turf004 7 
++0template 1bush002 4 0template reddirt001 11 
++0template 1bush001 12 0template reddirt001 7 0template turf004 11 
++0template turf002 4 0template sandstuff001 11 
++0template Bdt001 6 0template turf003 13 0template 1bush002 11 
++0template reddirt001 14 0template Bdt001 1 
++0template reddirt001 12 0template Bdt001 7 0template turf001 11 
++0template turf002 6 0template reddirt001 13 0template plaid001 11 
++0template reddirt002 14 0template turf004 13 0template plaid001 3 
++0template plaid001 6 0template reddirt002 13 0template turf004 11 
++0template plaid003 12 0template turf001 7 0template reddirt002 11 
++0template turf003 14 0template plaid002 13 0template reddirt001 3 
++0template reddirt001 6 0template turf004 13 0template 1bush002 11 
++0template 1bush002 2 0template reddirt002 13 
++0template plaid001 14 0template 1bush001 13 0template turf001 3 
++0template plaid002 8 0template turf003 7 
++0template 1french002 14 0template plaid001 1 
++0template 1french002 8 0template plaid003 7 
++0template reddirt001 14 0template 1french004 1 
++0template turf004 14 0template reddirt002 13 0template 1french002 3 
++0template Bdt001 14 0template turf004 13 0template 1bush002 11 0template 1french001 7 
++0template 1bush001 6 0template Bdt001 13 0template 1french003 11 
++0template 1french003 6 0template 1bush001 13 0template Bdt001 11 
++0template 1french002 8 0template Bdt001 7 
++0template Bdt001 14 0template 1french001 5 0template sandstuff001 11 
++0template sandstuff003 2 0template Bdt001 13 
++0template turf004 14 0template sandstuff004 5 0template 1bush001 11 
++0template Bdt001 14 0template turf002 13 0template 1bush001 3 
++0template Bdt001 12 0template 1bush002 7 0template turf002 11 
++0template Bdt001 12 0template turf004 7 0template 1bush002 11 
++0template 9bush_1silt002 14 0template Bdt001 13 0template 1bush001 3 
++0template 9bush_1silt001 12 0template 1bush001 7 0template Bdt001 11 
++0template Bdt001 2 0template 9bush_1silt001 13 
++0template 9bush_1silt002 10 0template Bdt001 5 
++0template 1bush002 14 0template turf004 5 0template Bdt001 11 
++0template turf001 14 0template 1bush002 13 0template Bdt001 3 
++0template 1french004 14 0template 1bush001 13 0template Bdt001 11 0template turf002 7 
++0template Bdt001 2 0template 1french001 13 
++0template 1french003 14 0template Bdt001 5 0template turf002 11 
++0template 1french002 8 0template turf002 7 
++0template turf001 14 0template 1french003 5 0template 1bush001 11 
++0template 1bush001 14 0template 1french003 13 0template Bdt001 3 
++0template turf003 10 0template 1bush001 13 0template Bdt001 7 
++0template gbdirt_grassy001 6 0template turf004 9 
++0template turf002 6 0template gbdirt_grassy001 9 
++0template turf004 6 0template reddirt002 13 0template 1bush002 11 
++0template sandstuff002 6 0template turf003 9 
++0template sandstuff001 8 0template turf003 7 
++0template turf002 14 0template sandstuff002 1 
++0template Bdt001 14 0template turf001 13 0template 1bush002 11 0template sandstuff002 7 
++0template Bdt001 12 0template 1bush002 7 0template reddirt001 11 
++0template Bdt001 12 0template reddirt001 3 
++0template turf003 14 0template Bdt001 13 0template reddirt001 3 
++0template plaid002 10 0template turf001 13 0template reddirt001 7 
+plaid003
++0template turf003 14 0template plaid002 5 0template reddirt001 11 
++0template reddirt001 4 0template 1bush001 11 
++0template 1bush002 6 0template reddirt002 13 0template turf003 11 
++0template plaid001 10 0template turf002 13 0template 1bush002 7 
++0template plaid003 4 0template reddirt002 11 
++0template 1french003 14 0template plaid003 13 0template reddirt001 3 
++0template 1french002 8 0template reddirt002 7 
++0template 1french004 4 0template turf002 11 
++0template 1bush001 14 0template 1french003 9 0template turf001 7 
++0template 1french001 14 0template Bdt001 1 
++0template sandstuff004 14 0template 1french001 13 0template 9bush_1silt002 11 0template Bdt001 7 
++0template sandstuff003 12 0template 9bush_1silt002 7 0template 1bush002 11 
++0template 1bush001 2 0template sandstuff004 13 
++0template turf002 14 0template 1bush001 9 0template Bdt001 7 
++0template 9bush_1silt001 14 0template Bdt001 13 0template turf002 11 0template gbdirt_grassy001 7 
++0template turf003 6 0template 9bush_1silt001 9 
++0template turf003 12 0template 9bush_1silt001 7 0template Bdt001 11 
++0template turf003 14 0template Bdt001 5 0template 1french004 11 
++0template Bdt001 10 0template turf001 13 0template 1french001 7 
++0template 1french003 14 0template turf001 5 0template 1bush001 11 
++0template 1bush001 6 0template 1french004 13 0template turf001 11 
++0template Bdt001 10 0template turf002 13 0template 1bush001 7 
++0template turf004 6 0template Bdt001 9 
++0template gbdirt_grassy001 14 0template turf001 1 
++0template turf001 6 0template gbdirt_grassy001 13 0template 1french003 11 
++0template turf004 12 0template 1french001 7 0template gbdirt_grassy001 11 
++0template gbdirt_grassy001 2 0template turf004 13 
++0template 1bush001 12 0template turf002 7 0template reddirt001 11 
++0template turf003 14 0template 1bush001 13 0template reddirt002 3 
++0template 1bush002 14 0template turf004 13 0template sandstuff002 11 0template reddirt001 7 
++0template sandstuff004 2 0template 1bush001 13 
++0template sandstuff001 4 0template turf001 11 
++0template turf001 6 0template sandstuff001 9 
++0template sandstuff001 2 0template turf002 13 
++0template 1bush002 10 0template sandstuff003 13 0template turf002 7 
++0template plaid002 10 0template reddirt001 13 0template turf001 7 
++0template reddirt001 10 0template plaid002 5 
++0template plaid001 14 0template 1bush002 1 
++0template reddirt001 14 0template plaid001 9 0template 1bush001 7 
++0template reddirt002 12 0template plaid002 3 
++0template 1french002 14 0template reddirt002 13 0template plaid003 3 
++0template turf003 10 0template 1french002 13 0template plaid003 7 
++0template 1french002 10 0template turf002 5 
++0template Bdt001 14 0template 1french003 1 
++0template Bdt001 12 0template 1french004 3 
++0template Bdt001 12 0template 1french001 7 0template turf001 11 
++0template 9bush_1silt002 14 0template Bdt001 13 0template 1french001 11 0template turf001 7 
++0template 1bush001 10 0template 9bush_1silt002 13 0template 1french003 7 
++0template 1bush001 4 0template sandstuff004 11 
++0template turf003 14 0template 1bush001 13 0template sandstuff003 3 
++0template 1bush001 10 0template turf002 13 0template sandstuff001 7 
++0template Bdt001 14 0template 1bush002 13 0template 9bush_1silt001 11 0template 1french003 7 
++0template Bdt001 12 0template 9bush_1silt001 3 
++0template 1bush001 14 0template Bdt001 13 0template sandstuff002 11 0template 9bush_1silt001 7 
++0template turf004 14 0template 1bush001 13 0template 1french003 11 0template sandstuff001 7 
++0template 9bush_1silt002 14 0template turf002 5 0template sandstuff002 11 
++0template Bdt001 14 0template 9bush_1silt001 13 0template turf004 11 0template sandstuff001 7 
++0template Bdt001 8 0template turf003 7 
++0template Bdt001 6 0template turf003 9 
++0template Bdt001 12 0template turf004 7 0template 1french002 11 
++0template 1french003 2 0template Bdt001 13 
++0template Bdt001 10 0template 1french002 5 
++0template turf001 14 0template Bdt001 5 0template 1bush002 11 
++0template 1bush002 12 0template turf001 7 0template Bdt001 11 
++0template Bdt001 6 0template 1bush001 13 0template turf004 11 
++0template turf001 2 0template Bdt001 13 
++0template turf003 4 0template 1french004 11 
++0template 1french002 2 0template turf003 13 
++0template gbdirt_grassy001 10 0template 1french003 5 
++0template reddirt002 14 0template turf001 9 0template 1bush001 7 
++0template reddirt001 12 0template turf002 7 0template 1bush002 11 
++0template sandstuff004 14 0template reddirt001 9 0template 1bush001 7 
++0template sandstuff004 12 0template reddirt001 3 
++0template turf002 10 0template sandstuff004 13 0template reddirt001 7 
++0template sandstuff004 14 0template turf003 5 0template 1bush002 11 
++0template sandstuff002 8 0template 1bush001 7 
++0template reddirt001 14 0template 1bush002 13 0template sandstuff001 3 
++0template turf004 14 0template reddirt002 13 0template plaid002 11 0template sandstuff002 7 
++0template plaid003 4 0template turf003 11 
++0template reddirt002 14 0template plaid002 13 0template turf001 3 
++0template turf004 6 0template reddirt002 9 
++0template 1bush002 14 0template turf001 13 0template reddirt001 3 
++0template reddirt001 6 0template 1bush002 13 0template sandstuff001 11 
++0template 1bush001 10 0template reddirt001 13 0template sandstuff002 7 
++0template plaid003 14 0template 1bush002 13 0template turf004 11 0template sandstuff002 7 
++0template turf004 14 0template plaid001 5 0template 1french003 11 
+1french001
+1french003
++0template turf004 14 0template 1french003 1 
++0template 1bush001 14 0template 1french001 5 0template sandstuff001 11 
++0template sandstuff002 6 0template 1bush002 13 0template 9bush_1silt001 11 
++0template sandstuff002 12 0template 9bush_1silt001 7 0template 1french002 11 
++0template 1bush002 14 0template sandstuff003 9 0template 1french002 7 
++0template Bdt001 10 0template 1bush002 13 0template sandstuff004 7 
++0template Bdt001 4 0template sandstuff002 11 
++0template 1french001 10 0template Bdt001 13 0template sandstuff002 7 
++0template 9bush_1silt001 14 0template 1french001 5 0template sandstuff003 11 
++0template 9bush_1silt002 12 0template sandstuff002 3 
++0template sandstuff002 6 0template 9bush_1silt001 9 
++0template 1french001 10 0template sandstuff003 13 0template 9bush_1silt001 7 
++0template turf003 14 0template gbdirt_grassy001 5 0template sandstuff001 11 
++0template Bdt001 10 0template turf002 13 0template sandstuff003 7 
++0template 1french002 14 0template turf001 1 
++0template 1french001 12 0template turf004 3 
++0template Bdt001 10 0template 1french001 13 0template turf004 7 
++0template Bdt001 4 0template reddirt002 11 
++0template gbdirt_grassy001 14 0template Bdt001 13 0template reddirt001 3 
++0template turf002 10 0template gbdirt_grassy001 13 0template reddirt002 7 
++0template 1bush002 14 0template turf004 13 0template Bdt001 3 
++0template reddirt001 14 0template 1bush002 13 0template turf002 11 0template Bdt001 7 
++0template reddirt001 12 0template turf003 7 0template sandstuff001 11 
++0template turf004 14 0template reddirt002 13 0template sandstuff001 3 
++0template sandstuff004 14 0template 1bush001 5 0template reddirt002 11 
++0template sandstuff004 12 0template reddirt002 7 0template 1bush001 11 
++0template 1bush001 6 0template sandstuff002 13 0template reddirt001 11 
++0template sandstuff001 14 0template 1bush001 13 0template reddirt002 3 
++0template plaid001 14 0template sandstuff004 5 0template 1bush002 11 
++0template plaid001 8 0template 1bush002 7 
++0template turf004 14 0template plaid001 5 0template 1bush002 11 
++0template reddirt002 14 0template turf002 13 0template sandstuff001 11 0template 1bush001 7 
++0template reddirt001 12 0template sandstuff004 7 0template 1bush001 11 
++0template 1bush002 10 0template sandstuff003 13 0template reddirt002 7 
++0template turf002 6 0template 1bush002 13 0template sandstuff001 11 
++0template 1bush002 14 0template turf002 13 0template sandstuff004 3 
++0template sandstuff001 6 0template 1bush002 9 
++0template turf004 14 0template sandstuff003 9 0template 1bush001 7 
++0template plaid002 14 0template turf001 13 0template 1bush001 11 0template sandstuff004 7 
++0template plaid001 12 0template 1bush002 7 0template sandstuff002 11 
++0template 1french004 14 0template plaid003 13 0template sandstuff003 3 
++0template 1french004 12 0template sandstuff002 7 0template 1bush001 11 
++0template 1french001 12 0template 1bush001 3 
++0template 1french004 12 0template 1bush001 7 0template sandstuff002 11 
++0template 1french003 12 0template sandstuff001 3 
++0template sandstuff004 6 0template 1french003 13 0template plaid001 11 
++0template 9bush_1silt002 14 0template sandstuff004 13 0template turf001 11 0template plaid003 7 
++0template 1french003 10 0template 9bush_1silt001 13 0template turf002 7 
++0template sandstuff001 14 0template 1french004 1 
++0template Bdt001 14 0template sandstuff001 13 0template 1french004 3 
++0template sandstuff001 10 0template Bdt001 13 0template 1french003 7 
++0template 1french001 14 0template sandstuff003 5 0template turf002 11 
++0template sandstuff004 14 0template 1french002 13 0template turf001 3 
++0template sandstuff002 12 0template turf004 7 0template 1french002 11 
++0template 9bush_1silt001 14 0template sandstuff001 13 0template turf001 11 0template 1french001 7 
++0template Bdt001 14 0template 1french004 5 0template turf004 11 
++0template gbdirt_grassy001 10 0template Bdt001 13 0template turf003 7 
++0template sandstuff001 14 0template gbdirt_grassy001 1 
++0template sandstuff004 12 0template gbdirt_grassy001 7 0template 9bush_1silt002 11 
++0template sandstuff003 12 0template 9bush_1silt002 7 0template turf001 11 
++0template gbdirt_grassy001 4 0template reddirt002 11 
++0template gbdirt_grassy001 12 0template reddirt001 3 
++0template gbdirt_grassy001 8 0template reddirt001 7 
++0template Bdt001 14 0template gbdirt_grassy001 5 0template reddirt001 11 
++0template reddirt002 2 0template Bdt001 13 
+reddirt002
++0template sandstuff003 14 0template turf002 1 
++0template 1bush002 10 0template sandstuff002 5 
++0template reddirt002 14 0template 1bush001 1 
++0template reddirt002 14 0template 1bush002 13 0template sandstuff003 11 0template turf001 7 
++0template reddirt002 12 0template sandstuff004 3 
++0template sandstuff003 6 0template reddirt002 13 0template turf004 11 
++0template plaid002 14 0template 1bush001 5 0template turf004 11 
++0template plaid003 12 0template turf003 7 0template sandstuff004 11 
++0template plaid001 12 0template sandstuff001 7 0template 1bush002 11 
++0template 1bush002 6 0template plaid001 13 0template sandstuff003 11 
++0template 1bush001 12 0template sandstuff003 3 
++0template sandstuff001 14 0template turf004 13 0template 1bush002 3 
++0template sandstuff002 12 0template 1bush002 3 
++0template sandstuff001 10 0template 1bush002 13 0template turf001 7 
++0template 1bush001 14 0template sandstuff001 1 
++0template sandstuff004 6 0template 1bush001 13 0template plaid001 11 
++0template sandstuff002 12 0template plaid002 7 0template 1bush001 11 
++0template 1bush001 6 0template sandstuff001 13 0template plaid002 11 
++0template 1bush002 12 0template plaid001 3 
++0template 1bush002 8 0template plaid001 7 
++0template sandstuff002 14 0template 1bush001 5 0template plaid001 11 
++0template plaid001 10 0template sandstuff002 13 0template 1bush002 7 
++0template 1french001 14 0template turf003 13 0template plaid002 3 
+1french004
++0template sandstuff001 14 0template 1french004 5 0template turf004 11 
++0template turf002 6 0template sandstuff001 13 0template 1bush001 11 
++0template 1french004 10 0template turf004 13 0template sandstuff002 7 
++0template turf003 14 0template 1french003 5 0template Bdt001 11 
++0template 1french002 14 0template turf004 13 0template Bdt001 3 
++0template turf001 14 0template 1french002 9 0template Bdt001 7 
++0template gbdirt_grassy001 14 0template turf004 13 0template 1french004 3 
++0template gbdirt_grassy001 12 0template 1french002 7 0template turf003 11 
++0template 9bush_1silt001 14 0template gbdirt_grassy001 9 0template turf003 7 
++0template turf004 14 0template 9bush_1silt002 13 0template 1french001 11 0template gbdirt_grassy001 7 
++0template Bdt001 14 0template turf004 13 0template 1french003 3 
++0template reddirt001 10 0template gbdirt_grassy001 5 
++0template gbdirt_grassy001 10 0template reddirt002 5 
+reddirt001
++0template sandstuff002 14 0template turf001 9 0template 1bush001 7 
++0template sandstuff003 12 0template turf001 3 
++0template 1bush001 14 0template turf001 9 0template sandstuff001 7 
++0template 1bush002 14 0template sandstuff003 9 0template turf004 7 
++0template sandstuff002 6 0template 1bush002 13 0template turf001 11 
++0template 1bush001 14 0template sandstuff003 13 0template turf001 3 
++0template plaid002 14 0template sandstuff003 9 0template turf004 7 
++0template 1bush002 10 0template plaid003 13 0template sandstuff003 7 
++0template 1bush002 2 0template plaid002 13 
++0template plaid003 10 0template 1bush002 5 
++0template 1bush002 10 0template plaid003 5 
++0template plaid003 12 0template turf003 7 0template 2french004 11 
++0template 1french003 14 0template plaid002 9 0template 2french004 7 
++0template 1french003 12 0template plaid001 3 
++0template 1bush002 14 0template turf001 5 0template sandstuff004 11 
++0template 1french002 14 0template sandstuff002 1 
++0template Bdt001 10 0template 1french001 13 0template sandstuff001 7 
++0template turf003 6 0template 1french002 13 0template gbdirt_grassy001 11 
++0template 1french002 10 0template gbdirt_grassy001 5 
++0template Bdt001 14 0template turf002 9 0template 1french002 7 
++0template turf004 6 0template Bdt001 13 0template sandstuff001 11 
++0template Bdt001 14 0template turf004 9 0template sandstuff001 7 
++0template gbdirt_grassy001 14 0template 1french003 13 0template turf003 3 
++0template 1bush001 12 0template gbdirt_grassy001 7 0template reddirt001 11 
++0template gbdirt_grassy001 14 0template 1bush002 9 0template reddirt001 7 
++0template reddirt002 2 0template gbdirt_grassy001 13 
++0template gbdirt_grassy001 14 0template reddirt001 1 
++0template 1bush002 12 0template Bdt001 7 0template turf001 11 
++0template turf004 2 0template sandstuff002 13 
++0template 1bush002 14 0template plaid003 13 0template turf003 3 
++0template 2french002 14 0template turf002 5 0template 1french001 11 
++0template plaid003 14 0template 2french003 13 0template 1french001 3 
++0template plaid001 12 0template 1french004 7 0template turf002 11 
++0template turf003 6 0template plaid001 13 0template 1bush001 11 
++0template sandstuff004 14 0template turf003 13 0template 1french002 11 0template 1bush002 7 
++0template sandstuff002 12 0template 1french001 7 0template 1bush002 11 
++0template sandstuff004 12 0template 1bush001 7 0template Bdt001 11 
++0template Bdt001 6 0template sandstuff004 13 0template 1bush002 11 
++0template gbdirt_grassy001 14 0template turf004 13 0template Bdt001 3 
++0template turf001 14 0template 1french004 5 0template gbdirt_grassy001 11 
++0template sandstuff003 10 0template turf002 13 0template gbdirt_grassy001 7 
++0template turf002 10 0template sandstuff003 5 
++0template gbdirt_grassy001 10 0template 1bush001 13 0template reddirt002 7 
++0template reddirt002 14 0template gbdirt_grassy001 5 0template 1bush001 11 
++0template gbdirt_grassy001 12 0template reddirt002 7 0template Grs003 11 
++0template reddirt002 10 0template gbdirt_grassy001 13 0template Grs002 7 
++0template reddirt002 4 0template gbdirt_grassy001 11 
++0template reddirt001 8 0template gbdirt_grassy001 7 
++0template 1french004 12 0template turf003 7 0template sandstuff004 11 
++0template turf002 14 0template 1french003 9 0template sandstuff003 7 
++0template 1bush001 14 0template turf003 13 0template gbdirt_grassy001 11 0template 1french004 7 
++0template 1french004 14 0template 1bush002 9 0template gbdirt_grassy001 7 
++0template 1bush001 2 0template 1french002 13 
++0template turf001 14 0template Bdt001 9 0template 1bush002 7 
++0template gbdirt_grassy001 14 0template Bdt001 13 0template 1french002 11 0template turf004 7 
++0template 1french003 2 0template gbdirt_grassy001 13 
++0template 1french004 6 0template turf004 9 
++0template gbdirt_grassy001 10 0template 1french001 13 0template turf001 7 
++0template sandstuff001 10 0template gbdirt_grassy001 5 
++0template turf003 14 0template Bdt001 5 0template sandstuff002 11 
++0template Bdt001 12 0template turf002 7 0template sandstuff004 11 
++0template Bdt001 12 0template sandstuff003 7 0template turf003 11 
++0template Bdt001 14 0template sandstuff001 5 0template turf004 11 
++0template 1bush002 14 0template gbdirt_grassy001 5 0template reddirt002 11 
++0template 1bush001 12 0template reddirt002 3 
++0template gbdirt_grassy001 14 0template 1bush001 13 0template reddirt002 3 
++0template Grs001 14 0template reddirt002 1 
++0template reddirt001 6 0template Grs003 9 
++0template reddirt001 12 0template Grs001 3 
++0template reddirt001 12 0template Grs002 7 0template Bdt001 11 
++0template reddirt001 8 0template Bdt001 7 
++0template gbdirt_grassy001 2 0template reddirt002 13 
++0template reddirt001 14 0template gbdirt_grassy001 1 
++0template turf001 14 0template reddirt001 13 0template gbdirt_grassy001 3 
++0template sandstuff004 10 0template turf002 5 
++0template 1french003 10 0template sandstuff002 5 
++0template gbdirt_grassy001 14 0template 1french003 5 0template sandstuff002 11 
++0template 1bush001 14 0template gbdirt_grassy001 13 0template 1french001 11 0template sandstuff001 7 
++0template 1bush002 12 0template 1french002 7 0template sandstuff002 11 
++0template Bdt001 14 0template 1bush001 9 0template sandstuff004 7 
++0template gbdirt_grassy001 10 0template turf003 13 0template 1french004 7 
++0template sandstuff004 14 0template gbdirt_grassy001 5 0template turf002 11 
++0template Bdt001 14 0template turf004 5 0template sandstuff003 11 
++0template sandstuff003 14 0template turf004 5 0template Bdt001 11 
++0template turf004 14 0template sandstuff001 13 0template Bdt001 3 
++0template sandstuff004 14 0template turf003 13 0template Bdt001 3 
++0template reddirt001 12 0template gbdirt_grassy001 3 
++0template Grs001 14 0template reddirt001 13 0template gbdirt_grassy001 3 
++0template Grs003 12 0template gbdirt_grassy001 3 
++0template Bdt001 10 0template Grs002 13 0template gbdirt_grassy001 7 
++0template reddirt001 10 0template Bdt001 5 
++0template gbdirt_grassy001 14 0template reddirt001 13 0template 1bush001 3 
++0template sandstuff001 2 0template 1french003 13 
++0template 1french001 14 0template sandstuff002 5 0template Bdt001 11 
++0template sandstuff003 14 0template 1french003 13 0template Bdt001 3 
++0template 1bush002 10 0template sandstuff003 13 0template Bdt001 7 
++0template 1french004 14 0template turf001 9 0template gbdirt_grassy001 7 
++0template 1french001 12 0template turf002 7 0template gbdirt_grassy001 11 
++0template 1french003 12 0template gbdirt_grassy001 3 
++0template gbdirt_grassy001 2 0template 1french001 13 
++0template sandstuff001 12 0template turf004 7 0template Bdt001 11 
++0template 1bush001 14 0template reddirt002 1 
++0template reddirt001 2 0template 1bush002 13 
++0template 1bush001 10 0template reddirt001 13 0template Bdt001 7 
+sandstuff001
++0template Bdt001 14 0template sandstuff002 13 0template gbdirt_grassy001 11 0template turf003 7 
++0template gbdirt_grassy001 4 0template sandstuff004 11 
++0template gbdirt_grassy001 12 0template sandstuff002 3 
++0template turf001 14 0template gbdirt_grassy001 13 0template sandstuff002 3 
++0template Bdt001 14 0template turf001 13 0template sandstuff002 3 
++0template Bdt001 8 0template sandstuff002 7 
++0template turf002 14 0template sandstuff002 5 0template Bdt001 11 
++0template Bdt001 14 0template turf004 13 0template gbdirt_grassy001 11 0template sandstuff003 7 
++0template gbdirt_grassy001 14 0template turf004 13 0template sandstuff004 3 
++0template Bdt001 14 0template gbdirt_grassy001 13 0template sandstuff003 3 
++0template 1bush002 14 0template Bdt001 9 0template sandstuff004 7 
++0template gbdirt_grassy001 12 0template turf002 7 0template sandstuff004 11 
++0template sandstuff004 6 0template gbdirt_grassy001 13 0template turf001 11 
++0template sandstuff004 4 0template 1french003 11 
++0template sandstuff002 12 0template 1french004 7 0template turf001 11 
+sandstuff002
+sandstuff003
++0template turf001 6 0template Bdt001 13 0template 1french002 11 
++0template sandstuff004 10 0template turf004 13 0template 1french004 7 
++0template Bdt001 14 0template sandstuff003 1 
++0template sandstuff003 14 0template turf001 9 0template gbdirt_grassy001 7 
++0template sandstuff004 12 0template turf001 7 0template gbdirt_grassy001 11 
++0template gbdirt_grassy001 2 0template sandstuff003 13 
++0template sandstuff003 4 0template 1bush002 11 
++0template Bdt001 14 0template sandstuff004 13 0template 1bush001 3 
++0template sandstuff002 6 0template turf002 13 0template 1french001 11 
++0template 1french002 6 0template sandstuff003 9 
++0template sandstuff003 14 0template turf004 9 0template 1french003 7 
++0template turf002 14 0template sandstuff002 5 0template gbdirt_grassy001 11 
++0template Bdt001 14 0template turf003 13 0template gbdirt_grassy001 3 
++0template reddirt001 12 0template gbdirt_grassy001 7 0template 1bush001 11 
++0template sandstuff004 6 0template 1french003 13 0template 2rough001 11 
++0template 1french001 14 0template sandstuff001 9 0template 2rough002 7 
++0template turf003 10 0template 1french002 13 0template sandstuff001 7 
++0template turf001 2 0template 1french003 13 
++0template turf004 12 0template 1french002 3 
++0template sandstuff004 14 0template turf004 13 0template gbdirt_grassy001 11 0template 1french001 7 
++0template gbdirt_grassy001 12 0template 1bush002 7 0template reddirt002 11 
++0template gbdirt_grassy001 12 0template reddirt002 7 0template 1bush002 11 
++0template reddirt002 10 0template 1bush001 5 
++0template 1bush002 14 0template gbdirt_grassy001 13 0template reddirt001 3 
++0template 1bush002 8 0template reddirt002 7 
++0template 1bush001 12 0template reddirt002 7 0template gbdirt_grassy001 11 
++0template reddirt002 10 0template gbdirt_grassy001 13 0template 1bush002 7 
+sandstuff004
++0template sandstuff004 12 0template turf003 7 0template 2rough001 11 
++0template sandstuff003 8 0template 2rough002 7 
++0template 2rough001 10 0template sandstuff003 5 
++0template sandstuff002 10 0template 2rough001 5 
++0template gbdirt_grassy001 14 0template 1french003 1 
++0template Bdt001 10 0template gbdirt_grassy001 13 0template turf002 7 
++0template gbdirt_grassy001 14 0template Bdt001 5 0template sandstuff003 11 
++0template gbdirt_grassy001 12 0template sandstuff004 7 0template turf001 11 
++0template turf001 6 0template gbdirt_grassy001 13 0template sandstuff004 11 
++0template gbdirt_grassy001 10 0template turf003 13 0template sandstuff003 7 
++0template reddirt002 10 0template 1bush001 13 0template gbdirt_grassy001 7 
++0template sandstuff004 12 0template 1bush001 7 0template turf001 11 
++0template 2rough001 14 0template turf001 13 0template sandstuff001 3 
++0template sandstuff003 6 0template 2rough002 13 0template turf001 11 
++0template turf003 6 0template sandstuff004 13 0template 2rough002 11 
++0template sandstuff003 10 0template turf003 13 0template 2rough002 7 
++0template sandstuff001 14 0template 2rough002 1 
++0template sandstuff004 12 0template 2rough002 3 
++0template sandstuff002 10 0template Bdt001 13 0template turf004 7 
++0template gbdirt_grassy001 14 0template sandstuff003 1 
++0template gbdirt_grassy001 8 0template sandstuff004 7 
++0template reddirt001 14 0template gbdirt_grassy001 9 0template 1bush002 7 
++0template 1bush001 10 0template reddirt001 13 0template gbdirt_grassy001 7 
++0template reddirt001 14 0template 1bush001 5 0template gbdirt_grassy001 11 
++0template gbdirt_grassy001 14 0template reddirt001 5 0template 20bush_4sand002 11 
++0template 1bush001 14 0template gbdirt_grassy001 9 0template 20bush_4sand002 7 
++0template turf002 14 0template gbdirt_grassy001 5 0template Bdt001 11 
++0template sandstuff003 14 0template 1bush002 13 0template 2rough002 11 0template turf002 7 
++0template turf003 14 0template sandstuff002 9 0template 2rough001 7 
++0template sandstuff001 2 0template 2rough002 13 
++0template 2rough002 14 0template sandstuff003 1 
++0template 2rough002 12 0template sandstuff002 3 
++0template 2rough001 8 0template sandstuff003 7 
++0template gbdirt_grassy001 14 0template sandstuff003 5 0template turf004 11 
++0template gbdirt_grassy001 10 0template 20bush_4sand002 5 
++0template 1bush001 14 0template turf002 5 0template 2rough002 11 
++0template turf003 10 0template 1bush001 13 0template 2rough001 7 
++0template 2rough002 10 0template turf004 5 
++0template 2rough002 4 0template gbdirt_grassy001 11 
++0template 2rough001 12 0template gbdirt_grassy001 3 
++0template sandstuff003 14 0template 2rough002 13 0template gbdirt_grassy001 3 
++0template sandstuff002 8 0template gbdirt_grassy001 7 
+2rough001
++0template gbdirt_grassy001 4 0template Grs003 11 
++0template gbdirt_grassy001 8 0template Grs003 7 
++0template gbdirt_grassy001 4 0template marsh001 11 
++0template reddirt002 14 0template gbdirt_grassy001 9 0template marsh001 7 
++0template 20bush_4sand001 10 0template reddirt002 13 0template gbdirt_grassy001 7 
+20bush_4sand001
++0template gbdirt_grassy001 14 0template 20bush_4sand002 1 
++0template gbdirt_grassy001 8 0template 20bush_4sand001 7 
++0template turf003 14 0template 2rough001 5 0template 1bush002 11 
++0template 2rough002 10 0template turf002 13 0template 1bush001 7 
++0template gbdirt_grassy001 14 0template 2rough001 1 
++0template gbdirt_grassy001 12 0template 2rough001 3 
++0template gbdirt_grassy001 12 0template 2rough002 7 0template sandstuff004 11 
++0template sandstuff004 6 0template gbdirt_grassy001 13 0template 2rough001 11 
++0template turf002 14 0template sandstuff003 13 0template 2rough001 3 
+2rough002
++0template sandstuff001 4 0template 2rough001 11 
++0template Grs001 14 0template gbdirt_grassy001 1 
++0template gbdirt_grassy001 6 0template Grs001 9 
++0template marsh004 14 0template gbdirt_grassy001 13 0template 1bush002 11 0template Grs002 7 
++0template gbdirt_grassy001 14 0template marsh003 13 0template 20bush_4sand001 11 0template 1bush002 7 
++0template 20bush_4sand002 2 0template gbdirt_grassy001 13 
++0template gbdirt_grassy001 14 0template 20bush_4sand001 5 0template 1bush001 11 
++0template Bdt001 14 0template gbdirt_grassy001 5 0template turf003 11 
++0template 1bush001 14 0template 2rough002 1 
++0template 2rough001 2 0template 1bush002 13 
++0template 2rough001 2 0template sandstuff001 13 
++0template sandstuff001 14 0template 2rough001 5 0template turf002 11 
++0template 1bush001 14 0template Grs001 13 0template gbdirt_grassy001 3 
++0template 20bush_4sand002 10 0template 1bush001 13 0template gbdirt_grassy001 7 
++0template 20bush_4sand002 4 0template Bdt001 11 
++0template 20bush_4sand002 12 0template Bdt001 3 
++0template 20bush_4sand001 12 0template Bdt001 7 0template gbdirt_grassy001 11 
++0template 1bush002 14 0template 20bush_4sand001 13 0template gbdirt_grassy001 3 
++0template gbdirt_grassy001 6 0template 1bush002 13 0template 1french003 11 
++0template 1bush001 10 0template gbdirt_grassy001 13 0template 1french002 7 
++0template 2rough001 4 0template sandstuff002 11 
++0template sandstuff004 4 0template gbdirt_grassy001 11 
++0template 2rough002 10 0template sandstuff003 13 0template gbdirt_grassy001 7 
++0template turf003 14 0template 2rough002 5 0template sandstuff001 11 
++0template gbdirt_grassy001 14 0template reddirt002 5 0template Bdt001 11 
++0template 20bush_4sand002 14 0template gbdirt_grassy001 13 0template reddirt002 3 
++0template Bdt001 10 0template 20bush_4sand001 13 0template reddirt001 7 
++0template 1french001 14 0template gbdirt_grassy001 1 
++0template 1bush001 10 0template 1french002 13 0template gbdirt_grassy001 7 
++0template sandstuff002 6 0template 2rough001 9 
++0template sandstuff003 10 0template 2rough002 13 0template gbdirt_grassy001 7 
++0template 2rough001 14 0template sandstuff004 5 0template turf001 11 
++0template 2rough002 8 0template turf003 7 
++0template gbdirt_grassy001 6 0template sandstuff003 9 
++0template 2rough001 10 0template gbdirt_grassy001 13 0template sandstuff004 7 
++0template sandstuff003 14 0template turf004 9 0template 2rough001 7 
++0template sandstuff004 6 0template turf001 13 0template 2rough001 11 
++0template Bdt001 10 0template reddirt001 5 
++0template gbdirt_grassy001 12 0template Bdt001 7 0template 20bush_4sand002 11 
++0template gbdirt_grassy001 12 0template 20bush_4sand001 3 
++0template gbdirt_grassy001 12 0template 20bush_4sand002 7 0template 1bush002 11 
++0template reddirt002 14 0template gbdirt_grassy001 13 0template 1bush001 3 
++0template Bdt001 14 0template reddirt002 1 
++0template Bdt001 8 0template reddirt002 7 
++0template 2rough001 6 0template sandstuff003 13 0template gbdirt_grassy001 11 
++0template 2rough001 8 0template gbdirt_grassy001 7 
++0template gbdirt_grassy001 14 0template 2rough002 13 0template sandstuff004 3 
++0template 2rough001 10 0template turf001 13 0template sandstuff001 7 
++0template turf004 14 0template 2rough001 1 
++0template sandstuff003 14 0template turf003 13 0template gbdirt_grassy001 11 0template 2rough002 7 
++0template sandstuff004 12 0template gbdirt_grassy001 3 
++0template gbdirt_grassy001 6 0template sandstuff003 13 0template turf002 11 
++0template sandstuff003 10 0template gbdirt_grassy001 13 0template turf001 7 
++0template turf002 14 0template 2rough001 9 0template sandstuff001 7 
++0template 2rough002 6 0template turf001 13 0template sandstuff003 11 
++0template sandstuff004 14 0template turf004 13 0template 2rough002 3 
++0template 20bush_4sand002 10 0template Bdt001 5 
++0template 1bush001 10 0template 20bush_4sand001 5 
++0template reddirt001 10 0template 1bush002 13 0template 20bush_4sand001 7 
++0template reddirt001 4 0template Bdt001 11 
++0template Bdt001 2 0template reddirt002 13 
++0template 2rough002 14 0template turf002 1 
++0template 2rough002 12 0template turf004 7 0template 1bush002 11 
++0template 2rough001 12 0template 1bush001 3 
++0template 2rough002 8 0template 1bush002 7 
++0template sandstuff003 14 0template 2rough002 5 0template gbdirt_grassy001 11 
++0template gbdirt_grassy001 2 0template 2rough001 13 
++0template 2rough001 10 0template gbdirt_grassy001 5 
++0template 2rough002 10 0template sandstuff004 13 0template turf004 7 
++0template gbdirt_grassy001 14 0template 2rough001 5 0template turf002 11 
++0template 2rough002 6 0template sandstuff001 13 0template turf003 11 
++0template 2rough002 4 0template turf003 11 
++0template 2rough001 12 0template turf003 7 0template sandstuff003 11 
++0template 20bush_4sand001 14 0template Bdt001 13 0template reddirt002 3 
++0template 20bush_4sand002 8 0template reddirt001 7 
++0template 1bush002 14 0template 20bush_4sand002 1 
++0template 20bush_4sand002 2 0template 1bush001 13 
++0template reddirt002 10 0template 20bush_4sand001 5 
++0template 1bush001 12 0template turf002 7 0template 2rough002 11 
++0template 2rough001 2 0template gbdirt_grassy001 13 
++0template turf004 12 0template 2rough001 3 
++0template 2rough001 2 0template turf001 13 
++0template turf004 14 0template 2rough001 13 0template sandstuff004 3 
++0template turf004 10 0template 2rough002 13 0template sandstuff001 7 
++0template 20bush_4sand001 14 0template reddirt002 1 
++0template reddirt001 14 0template 20bush_4sand002 1 
++0template Bdt001 10 0template reddirt001 13 0template 20bush_4sand001 7 
++0template 2rough001 14 0template turf004 5 0template sandstuff004 11 
++0template 2rough001 6 0template turf004 13 0template gbdirt_grassy001 11 
++0template 2rough002 12 0template gbdirt_grassy001 7 0template turf004 11 
++0template 2rough002 12 0template turf001 3 
++0template 2rough002 12 0template turf002 7 0template gbdirt_grassy001 11 
++0template 2rough001 6 0template sandstuff001 9 
++0template turf002 10 0template sandstuff003 13 0template 2rough002 7 
++0template 20bush_4sand002 12 0template reddirt001 3 
++0template Bdt001 14 0template 20bush_4sand001 5 0template reddirt002 11 
++0template 2rough001 14 0template sandstuff001 13 0template turf001 3 
++0template sandstuff004 14 0template 2rough002 13 0template turf001 3 
++0template 2rough001 14 0template sandstuff003 9 0template turf003 7 
++0template turf002 14 0template gbdirt_grassy001 13 0template Bdt001 3 
++0template turf001 12 0template Bdt001 7 0template gbdirt_grassy001 11 
++0template turf003 14 0template sandstuff002 5 0template 2rough001 11 
++0template turf003 2 0template 2rough001 13 
++0template gbdirt_grassy001 6 0template reddirt001 9 
++0template reddirt002 12 0template gbdirt_grassy001 7 0template Bdt001 11 
++0template reddirt002 12 0template Bdt001 3 
++0template 20bush_4sand002 14 0template reddirt001 9 0template Bdt001 7 
++0template reddirt002 2 0template 20bush_4sand002 13 
++0template gbdirt_grassy001 10 0template 2rough002 5 
++0template gbdirt_grassy001 6 0template Bdt001 13 0template turf003 11 
++0template 2rough002 14 0template gbdirt_grassy001 5 0template turf003 11 
++0template turf001 10 0template Bdt001 13 0template sandstuff002 7 
++0template gbdirt_grassy001 6 0template turf002 13 0template sandstuff004 11 
++0template turf003 14 0template gbdirt_grassy001 13 0template 1bush001 11 0template sandstuff003 7 
++0template 2rough001 14 0template turf002 9 0template sandstuff002 7 
++0template gbdirt_grassy001 10 0template 2rough002 13 0template turf003 7 
++0template turf001 12 0template gbdirt_grassy001 7 0template Bdt001 11 
++0template turf001 10 0template 2rough002 5 
++0template Bdt001 6 0template reddirt001 13 0template turf004 11 
++0template sandstuff002 14 0template gbdirt_grassy001 13 0template Bdt001 11 0template 1bush002 7 
++0template sandstuff004 10 0template 1bush002 13 0template Bdt001 7 
++0template gbdirt_grassy001 10 0template turf004 13 0template Bdt001 7 
++0template gbdirt_grassy001 14 0template turf002 5 0template Bdt001 11 
++0template sandstuff004 6 0template turf001 13 0template Bdt001 11 
++0template turf002 14 0template 1bush001 9 0template sandstuff003 7 
++0template 1bush002 6 0template gbdirt_grassy001 13 0template sandstuff002 11 
++0template sandstuff001 14 0template Bdt001 1 
++0template turf001 14 0template sandstuff001 9 0template Bdt001 7 
++0template turf003 8 0template 2rough001 7 
++0template 1bush002 14 0template reddirt002 5 0template gbdirt_grassy001 11 
++0template gbdirt_grassy001 12 0template 1bush001 7 0template turf001 11 
++0template Bdt001 14 0template sandstuff004 13 0template turf001 3 
++0template Bdt001 6 0template sandstuff003 13 0template turf003 11 
++0template turf003 6 0template gbdirt_grassy001 13 0template Bdt001 11 
++0template 2rough001 10 0template turf004 13 0template Bdt001 7 
++0template sandstuff003 14 0template 1bush001 5 0template gbdirt_grassy001 11 
++0template sandstuff003 12 0template gbdirt_grassy001 7 0template 1bush002 11 
++0template sandstuff001 12 0template 1bush002 7 0template gbdirt_grassy001 11 
++0template turf001 14 0template sandstuff001 13 0template Bdt001 11 0template gbdirt_grassy001 7 
++0template turf004 10 0template 1french004 5 
++0template gbdirt_grassy001 14 0template turf004 9 0template Bdt001 7 
++0template gbdirt_grassy001 12 0template turf002 7 0template Bdt001 11 
++0template 2rough001 10 0template Bdt001 5 
++0template gbdirt_grassy001 12 0template Bdt001 7 0template reddirt002 11 
++0template turf002 6 0template 1bush002 13 0template plaid001 11 
++0template turf002 12 0template plaid003 7 0template gbdirt_grassy001 11 
++0template 1bush002 14 0template turf003 13 0template gbdirt_grassy001 3 
++0template 1bush001 14 0template gbdirt_grassy001 5 0template turf004 11 
++0template gbdirt_grassy001 14 0template 1bush001 13 0template Bdt001 11 0template turf001 7 
++0template 1french004 10 0template Bdt001 5 
++0template 2rough002 14 0template Bdt001 5 0template turf003 11 
++0template 2rough002 12 0template turf003 7 0template Bdt001 11 
++0template 2rough002 12 0template Bdt001 3 
++0template turf003 14 0template 2rough002 9 0template Bdt001 7 
++0template turf002 12 0template 2rough001 7 0template sandstuff002 11 
++0template turf004 12 0template sandstuff003 7 0template 2rough002 11 
++0template gbdirt_grassy001 14 0template turf001 5 0template reddirt002 11 
++0template gbdirt_grassy001 10 0template reddirt001 13 0template turf004 7 
++0template Bdt001 6 0template sandstuff001 9 
++0template turf004 14 0template Bdt001 13 0template sandstuff003 3 
++0template gbdirt_grassy001 14 0template plaid003 5 0template turf002 11 
++0template 1french001 10 0template Bdt001 13 0template turf004 7 
++0template Bdt001 6 0template turf002 13 0template gbdirt_grassy001 11 
++0template Bdt001 12 0template sandstuff002 3 
++0template plaid001 6 0template turf002 13 0template 1bush002 11 
++0template turf002 10 0template plaid003 13 0template 1bush002 7 
++0template turf002 14 0template Bdt001 13 0template 1french004 3 
++0template gbdirt_grassy001 12 0template 1french001 3 
++0template Bdt001 4 0template 1french003 11 
++0template Bdt001 8 0template 1french001 7 
++0template 2rough001 14 0template Bdt001 1 
++0template sandstuff003 10 0template 2rough002 13 0template Bdt001 7 
++0template turf004 4 0template 2rough001 11 
++0template reddirt001 14 0template gbdirt_grassy001 13 0template turf004 3 
++0template sandstuff003 10 0template Bdt001 5 
++0template 1bush002 14 0template plaid001 13 0template sandstuff002 11 0template turf003 7 
++0template turf004 10 0template 1bush001 13 0template sandstuff002 7 
++0template Bdt001 12 0template sandstuff003 7 0template gbdirt_grassy001 11 
++0template Bdt001 12 0template gbdirt_grassy001 7 0template turf004 11 
++0template 1french003 12 0template Bdt001 3 
++0template gbdirt_grassy001 14 0template Bdt001 13 0template 1french004 3 
++0template Bdt001 14 0template gbdirt_grassy001 13 0template 1french004 3 
++0template Bdt001 12 0template 1french003 7 0template gbdirt_grassy001 11 
++0template sandstuff003 10 0template Bdt001 13 0template gbdirt_grassy001 7 
++0template sandstuff004 10 0template 2rough002 13 0template turf001 7 
++0template 1bush001 14 0template reddirt001 13 0template gbdirt_grassy001 3 
++0template turf002 12 0template reddirt001 7 0template gbdirt_grassy001 11 
++0template 1bush002 14 0template turf003 5 0template gbdirt_grassy001 11 
++0template Bdt001 14 0template 1bush002 13 0template turf003 3 
++0template plaid002 4 0template sandstuff003 11 
++0template turf003 14 0template plaid001 13 0template sandstuff001 3 
++0template sandstuff001 14 0template turf002 5 0template gbdirt_grassy001 11 
++0template turf002 12 0template sandstuff001 7 0template gbdirt_grassy001 11 
++0template Bdt001 14 0template sandstuff001 9 0template turf001 7 
++0template 1french004 12 0template Bdt001 7 0template turf003 11 
++0template 1french002 14 0template turf003 9 0template sandstuff002 7 
++0template Bdt001 14 0template 1french001 13 0template gbdirt_grassy001 11 0template turf002 7 
++0template turf004 14 0template Bdt001 13 0template gbdirt_grassy001 3 
++0template Bdt001 14 0template turf004 9 0template gbdirt_grassy001 7 
++0template 1french003 14 0template Bdt001 13 0template gbdirt_grassy001 11 0template turf004 7 
++0template 1french001 12 0template gbdirt_grassy001 7 0template turf003 11 
++0template gbdirt_grassy001 14 0template 1french003 5 0template turf002 11 
++0template reddirt001 14 0template turf004 5 0template gbdirt_grassy001 11 
++0template sandstuff002 14 0template turf004 13 0template gbdirt_grassy001 3 
++0template sandstuff003 12 0template gbdirt_grassy001 7 0template Bdt001 11 
++0template sandstuff004 8 0template Bdt001 7 
++0template sandstuff001 14 0template plaid003 5 0template gbdirt_grassy001 11 
++0template turf001 14 0template sandstuff001 13 0template gbdirt_grassy001 3 
++0template turf004 14 0template 2rough002 5 0template gbdirt_grassy001 11 
++0template 1bush001 6 0template gbdirt_grassy001 13 0template reddirt002 11 
++0template gbdirt_grassy001 14 0template turf003 9 0template 1bush001 7 
++0template Bdt001 14 0template gbdirt_grassy001 13 0template turf001 3 
++0template Bdt001 12 0template turf003 7 0template gbdirt_grassy001 11 
++0template Bdt001 12 0template gbdirt_grassy001 7 0template sandstuff001 11 
++0template sandstuff004 12 0template 2rough001 7 0template turf002 11 
++0template sandstuff004 12 0template 1bush002 7 0template 3bush003 11 
++0template sandstuff003 8 0template 3bush003 7 
++0template turf003 12 0template plaid002 7 0template 1bush001 11 
++0template plaid001 14 0template turf001 1 
++0template plaid003 12 0template turf004 7 0template 1french003 11 
++0template gbdirt_grassy001 14 0template plaid002 13 0template 1french003 3 
++0template gbdirt_grassy001 12 0template turf001 7 0template 1french004 11 
++0template turf002 14 0template gbdirt_grassy001 13 0template 1french003 3 
++0template turf002 10 0template Bdt001 13 0template 1french004 7 
++0template sandstuff002 10 0template turf003 13 0template 1bush001 7 
++0template gbdirt_grassy001 14 0template sandstuff003 13 0template turf004 3 
++0template sandstuff001 14 0template gbdirt_grassy001 9 0template turf001 7 
++0template sandstuff003 12 0template gbdirt_grassy001 7 0template turf004 11 
++0template gbdirt_grassy001 8 0template 2rough001 7 
++0template turf002 14 0template reddirt002 13 0template gbdirt_grassy001 11 0template Bdt001 7 
++0template turf002 12 0template 1bush002 7 0template Bdt001 11 
++0template turf004 6 0template 2rough001 13 0template sandstuff002 11 
++0template turf002 12 0template 2rough001 7 0template plaid001 11 
++0template turf001 12 0template plaid002 7 0template 2rough001 11 
++0template sandstuff001 4 0template 3bush001 11 
++0template 1bush001 10 0template sandstuff003 13 0template 3bush003 7 
++0template 3bush004 14 0template 1bush002 5 0template sandstuff004 11 
++0template sandstuff004 2 0template 3bush004 13 
++0template 1bush001 14 0template plaid001 1 
++0template turf004 14 0template 1bush001 9 0template plaid002 7 
++0template turf003 12 0template 1bush001 7 0template plaid002 11 
++0template 1french003 10 0template turf002 13 0template plaid001 7 
++0template 1french002 4 0template gbdirt_grassy001 11 
++0template 1french001 8 0template gbdirt_grassy001 7 
+1french002
++0template 1french003 12 0template turf001 7 0template Bdt001 11 
++0template sandstuff002 10 0template 1bush001 5 
++0template gbdirt_grassy001 14 0template turf003 9 0template sandstuff002 7 
++0template gbdirt_grassy001 14 0template turf003 9 0template 1french004 7 
++0template 2rough002 14 0template gbdirt_grassy001 13 0template Bdt001 3 
++0template 2rough001 12 0template Bdt001 7 0template gbdirt_grassy001 11 
++0template 2rough002 14 0template sandstuff003 9 0template gbdirt_grassy001 7 
++0template 1bush002 10 0template turf002 13 0template gbdirt_grassy001 7 
++0template sandstuff002 14 0template gbdirt_grassy001 13 0template turf002 3 
++0template plaid002 14 0template 2rough001 9 0template turf002 7 
++0template 2rough001 6 0template plaid001 9 
++0template sandstuff002 14 0template 2rough002 13 0template plaid003 3 
++0template sandstuff001 8 0template plaid003 7 
++0template 3bush004 14 0template sandstuff003 5 0template 2rough001 11 
++0template 1bush001 10 0template 3bush003 13 0template 2rough002 7 
++0template plaid002 14 0template turf003 5 0template 1bush002 11 
++0template 1bush002 14 0template plaid003 5 0template turf002 11 
++0template 1french004 14 0template plaid001 13 0template gbdirt_grassy001 11 0template turf003 7 
++0template 1french004 14 0template turf003 13 0template 1bush001 11 0template Bdt001 7 
++0template turf004 14 0template 1french001 13 0template 1bush001 3 
++0template 1bush002 6 0template turf004 13 0template sandstuff002 11 
++0template 1bush002 8 0template sandstuff002 7 
++0template Bdt001 14 0template turf001 5 0template 1french001 11 
++0template 1french003 14 0template Bdt001 9 0template turf001 7 
++0template turf003 6 0template 1french004 13 0template Bdt001 11 
++0template Bdt001 6 0template gbdirt_grassy001 13 0template turf004 11 
++0template gbdirt_grassy001 14 0template Bdt001 13 0template turf001 3 
++0template turf003 14 0template 2rough001 13 0template plaid003 11 0template sandstuff001 7 
++0template 2rough001 14 0template turf004 13 0template plaid002 3 
++0template plaid001 6 0template 2rough002 9 
++0template plaid003 12 0template 2rough001 7 0template sandstuff004 11 
++0template sandstuff001 6 0template plaid002 9 
++0template 2rough002 10 0template sandstuff004 13 0template plaid002 7 
++0template 1bush002 10 0template 2rough002 5 
++0template sandstuff003 14 0template 1bush002 5 0template 2rough002 11 
++0template turf002 2 0template plaid002 13 
++0template plaid003 14 0template turf001 13 0template 1bush001 3 
++0template 1french002 14 0template gbdirt_grassy001 5 0template turf003 11 
++0template turf004 12 0template Bdt001 7 0template 1bush001 11 
++0template turf001 10 0template Bdt001 13 0template 1bush001 7 
++0template 1bush001 6 0template sandstuff004 9 
++0template sandstuff002 14 0template 1bush001 1 
++0template turf003 6 0template 1french004 9 
++0template 1french001 6 0template Bdt001 13 0template turf003 11 
++0template Bdt001 6 0template turf003 13 0template 2rough002 11 
++0template turf004 14 0template Bdt001 13 0template gbdirt_grassy001 11 0template 2rough002 7 
++0template plaid001 14 0template sandstuff002 1 
++0template plaid001 8 0template sandstuff001 7 
++0template 2rough002 14 0template plaid003 1 
++0template sandstuff004 14 0template 2rough002 13 0template turf001 11 0template plaid002 7 
++0template 2rough001 14 0template plaid003 13 0template turf002 11 0template sandstuff004 7 
++0template 1bush002 14 0template 2rough001 13 0template plaid003 11 0template turf003 7 
++0template 2rough002 14 0template 1bush001 13 0template sandstuff003 11 0template plaid003 7 
++0template gbdirt_grassy001 4 0template plaid002 11 
++0template 1bush002 12 0template turf004 7 0template 1french003 11 
++0template 1bush002 12 0template 1french001 3 
++0template 1bush001 12 0template 1french001 7 0template turf004 11 
++0template 1bush001 14 0template sandstuff004 5 0template turf003 11 
++0template sandstuff003 14 0template 1bush002 13 0template turf003 3 
++0template turf003 14 0template 1french004 13 0template Bdt001 3 
++0template 2rough001 14 0template Bdt001 13 0template turf001 3 
++0template gbdirt_grassy001 14 0template 2rough001 9 0template turf003 7 
++0template turf003 14 0template gbdirt_grassy001 13 0template 2rough001 3 
++0template Bdt001 14 0template gbdirt_grassy001 9 0template reddirt002 7 
++0template sandstuff004 10 0template gbdirt_grassy001 13 0template Bdt001 7 
++0template plaid001 14 0template sandstuff002 5 0template turf003 11 
++0template turf001 14 0template plaid003 5 0template sandstuff004 11 
++0template turf003 6 0template sandstuff002 13 0template plaid002 11 
++0template sandstuff004 14 0template plaid001 13 0template turf001 11 0template 1bush001 7 
++0template plaid001 10 0template gbdirt_grassy001 5 
++0template turf004 10 0template plaid002 5 
++0template Bdt001 14 0template 1bush002 13 0template 1french004 11 0template turf002 7 
++0template 1french001 4 0template 1bush001 11 
++0template 2rough001 14 0template turf002 5 0template gbdirt_grassy001 11 
++0template reddirt001 14 0template turf002 5 0template 1bush001 11 
++0template gbdirt_grassy001 14 0template reddirt001 5 0template 1bush002 11 
++0template 1bush001 14 0template Bdt001 13 0template turf004 3 
++0template sandstuff002 14 0template plaid001 13 0template turf004 3 
++0template 1bush001 14 0template Bdt001 13 0template 1french002 3 
++0template Bdt001 14 0template 1bush002 13 0template 1french002 3 
++0template 1bush001 14 0template 1french001 1 
++0template turf001 14 0template gbdirt_grassy001 5 0template 2rough002 11 
++0template gbdirt_grassy001 10 0template turf002 13 0template 2rough002 7 
++0template reddirt001 12 0template 1bush001 7 0template gbdirt_grassy001 11 
++0template Bdt001 14 0template reddirt001 5 0template gbdirt_grassy001 11 
++0template turf001 6 0template plaid002 13 0template sandstuff003 11 
++0template 1bush001 12 0template turf001 7 0template sandstuff002 11 
++0template 2rough002 14 0template gbdirt_grassy001 13 0template turf002 3 
++0template turf004 10 0template gbdirt_grassy001 13 0template 2rough002 7 
++0template gbdirt_grassy001 14 0template reddirt002 13 0template turf002 3 
++0template 1bush001 10 0template gbdirt_grassy001 13 0template turf003 7 
++0template 2rough001 4 0template plaid003 11 
++0template sandstuff003 14 0template 2rough002 9 0template plaid003 7 
++0template 1bush001 4 0template plaid003 11 
++0template turf002 10 0template 1bush001 13 0template plaid003 7 
++0template plaid001 14 0template gbdirt_grassy001 1 
++0template turf001 14 0template gbdirt_grassy001 9 0template 1bush002 7 
++0template Bdt001 10 0template reddirt002 13 0template gbdirt_grassy001 7 
++0template plaid003 14 0template 2rough002 5 0template turf001 11 
++0template 2rough002 10 0template plaid001 13 0template turf004 7 
++0template 1bush001 14 0template turf001 5 0template plaid001 11 
++0template plaid002 6 0template 1bush001 13 0template turf004 11 
++0template plaid002 6 0template turf003 9 
++0template turf004 6 0template Bdt001 13 0template gbdirt_grassy001 11 
++0template Bdt001 10 0template sandstuff004 5 
++0template 2rough002 12 0template sandstuff002 7 0template plaid003 11 
++0template turf003 10 0template 2rough002 13 0template plaid003 7 
++0template 2rough002 14 0template turf003 5 0template plaid001 11 
++0template turf002 14 0template 2rough002 13 0template plaid003 3 
++0template plaid001 2 0template 1bush001 13 
++0template gbdirt_grassy001 14 0template turf004 5 0template 1bush002 11 
++0template gbdirt_grassy001 4 0template 1french001 11 
++0template 1french004 14 0template turf003 5 0template sandstuff001 11 
++0template 1bush002 10 0template turf001 13 0template 1french001 7 
++0template Bdt001 2 0template sandstuff003 13 
++0template plaid002 14 0template sandstuff002 13 0template 2rough002 3 
++0template turf002 14 0template plaid003 13 0template 2rough002 3 
++0template plaid001 10 0template turf003 13 0template 2rough001 7 
++0template turf004 14 0template 2rough001 5 0template plaid003 11 
++0template 1french001 10 0template sandstuff001 13 0template turf001 7 
++0template 1bush002 14 0template 1french003 5 0template turf002 11 
++0template 1french004 14 0template 1bush001 13 0template turf002 3 
++0template turf004 6 0template sandstuff001 13 0template Bdt001 11 
++0template plaid002 10 0template 2rough001 13 0template turf001 7 
++0template plaid001 14 0template turf002 9 0template 1bush001 7 
++0template 1french003 10 0template turf003 13 0template Bdt001 7 
++0template sandstuff003 14 0template turf001 13 0template 1french001 3 
++0template turf001 14 0template sandstuff004 13 0template 1french001 3 
++0template 1french002 14 0template turf004 9 0template 1bush001 7 
++0template turf002 6 0template 1french004 13 0template sandstuff004 11 
++0template turf002 14 0template Bdt001 9 0template gbdirt_grassy001 7 
++0template turf004 6 0template gbdirt_grassy001 13 0template 2rough001 11 
++0template turf003 6 0template 2rough002 13 0template plaid002 11 
++0template 1french003 14 0template Bdt001 13 0template 1bush002 3 
++0template turf001 10 0template 1french002 13 0template 1bush001 7 
++0template 1french004 8 0template 1bush002 7 
++0template plaid001 14 0template turf002 9 0template 2rough001 7 
++0template 2rough001 14 0template turf003 9 0template plaid001 7 
++0template plaid003 14 0template 2rough002 13 0template 1bush002 11 0template turf002 7 
++0template 1bush001 14 0template 1french001 13 0template turf001 3 
++0template 1french004 12 0template turf003 7 0template 1bush001 11 
++0template turf002 6 0template Bdt001 13 0template 2rough001 11 
++0template 1bush001 12 0template turf001 7 0template plaid003 11 
++0template turf004 14 0template plaid003 5 0template gbdirt_grassy001 11 
++0template turf003 12 0template gbdirt_grassy001 7 0template 1french004 11 
++0template turf004 12 0template Bdt001 7 0template 1french002 11 
++0template 1bush002 14 0template Bdt001 5 0template turf001 11 
++0template 1bush001 14 0template Bdt001 5 0template 1french001 11 
++0template 1bush002 8 0template 1french004 7 
++0template turf001 6 0template 2rough001 13 0template Bdt001 11 
++0template sandstuff002 10 0template turf003 13 0template Bdt001 7 
++0template groundstruct002 12 0template groundstruct20 3 
++0template groundstruct20 2 0template groundstruct002 13 
+groundstruct20
+wallmetal1
++0template plaid002 10 0template turf001 13 0template sandstuff004 7 
++0template plaid003 12 0template turf004 7 0template gbdirt_grassy001 11 
++0template gbdirt_grassy001 2 0template plaid003 13 
++0template Bdt001 6 0template turf004 13 0template 1french002 11 
++0template sandstuff002 14 0template 1french002 9 0template turf001 7 
++0template Bdt001 14 0template 1bush001 13 0template 1french003 11 0template sandstuff004 7 
++0template 1bush001 14 0template 1french001 13 0template turf004 11 0template Bdt001 7 
++0template Bdt001 14 0template 1bush001 13 0template gbdirt_grassy001 11 0template turf004 7 
++0template 1bush001 14 0template turf002 5 0template 1french003 11 
++0template sandstuff004 14 0template Bdt001 5 0template turf002 11 
++0template plaid003 10 0template sandstuff003 13 0template turf003 7 
++0template turf004 6 0template plaid003 13 0template gbdirt_grassy001 11 
++0template 1french001 10 0template sandstuff004 13 0template 1bush002 7 
++0template turf004 10 0template gbdirt_grassy001 13 0template 1bush001 7 
++0template turf002 6 0template 1bush001 13 0template 1french001 11 
++0template 1bush001 14 0template turf003 9 0template 1french002 7 
++0template 1french001 14 0template turf002 13 0template 1bush002 3 
++0template Bdt001 4 0template 2rough002 11 
++0template turf004 14 0template Bdt001 13 0template 2rough001 3 
++0template turf004 6 0template 2rough002 9 
++0template sandstuff001 14 0template turf004 5 0template plaid001 11 
++0template turf002 14 0template sandstuff002 13 0template plaid003 3 
++0template plaid003 4 0template gbdirt_grassy001 11 
++0template turf002 10 0template plaid001 13 0template gbdirt_grassy001 7 
++0template 1french001 14 0template gbdirt_grassy001 13 0template turf004 3 
++0template turf002 14 0template 1french003 13 0template gbdirt_grassy001 11 0template Bdt001 7 
++0template 1french001 2 0template 1bush001 13 
++0template 1french002 6 0template turf004 13 0template 1bush001 11 
++0template 1french004 12 0template 1bush002 7 0template turf004 11 
++0template 1bush002 10 0template 1french001 5 
++0template turf003 6 0template 1bush001 13 0template gbdirt_grassy001 11 
++0template gbdirt_grassy001 6 0template turf001 13 0template 1french002 11 
++0template turf001 14 0template gbdirt_grassy001 9 0template 1french001 7 
++0template 2rough001 10 0template Bdt001 13 0template turf003 7 
+groundstruct10
+groundstruct11
++0template groundstruct002 2 0template groundrunway002 13 
++0template sandstuff002 14 0template turf001 13 0template 2rough002 11 0template plaid003 7 
++0template turf003 14 0template sandstuff004 13 0template plaid003 11 0template 2rough002 7 
++0template turf003 14 0template 1french002 13 0template gbdirt_grassy001 11 0template 1bush001 7 
++0template 1french004 14 0template turf003 13 0template 1bush002 11 0template gbdirt_grassy001 7 
++0template 1french002 12 0template 1bush001 7 0template gbdirt_grassy001 11 
++0template turf002 10 0template 1bush001 13 0template 1french003 7 
++0template turf004 14 0template 1bush002 5 0template 1french001 11 
++0template 2rough001 14 0template turf004 9 0template Bdt001 7 
++0template turf002 6 0template 2rough002 13 0template 1french003 11 
++0template 2rough002 14 0template turf004 13 0template 1french003 3 
++0template 2rough001 12 0template 1french004 7 0template turf001 11 
++0template groundrunway001 2 0template groundrunway6 13 
+groundstruct13
+groundstruct12
+groundstruct39
++0template 2rough001 14 0template plaid002 13 0template turf004 3 
++0template plaid002 4 0template 2rough002 11 
++0template plaid002 8 0template 2rough002 7 
++0template gbdirt_grassy001 14 0template turf004 5 0template sandstuff001 11 
++0template 1french001 14 0template Bdt001 13 0template turf002 3 
++0template gbdirt_grassy001 12 0template turf001 7 0template 1bush002 11 
++0template turf004 10 0template gbdirt_grassy001 13 0template 1french004 7 
++0template 1french004 14 0template 1bush002 5 0template turf002 11 
++0template groundstruct39 4 0template groundstruct001 11 
++0template plaid002 4 0template 1bush002 11 
++0template turf001 14 0template plaid002 13 0template 1bush001 3 
++0template plaid003 14 0template turf003 13 0template 2rough002 11 0template 1bush001 7 
++0template 2rough001 2 0template plaid003 13 
++0template plaid001 14 0template 2rough002 1 
++0template turf002 10 0template plaid002 13 0template 2rough002 7 
++0template gbdirt_grassy001 14 0template turf002 5 0template 1french002 11 
++0template gbdirt_grassy001 14 0template sandstuff004 9 0template turf002 7 
++0template turf002 10 0template gbdirt_grassy001 13 0template sandstuff001 7 
++0template turf002 14 0template gbdirt_grassy001 9 0template sandstuff002 7 
++0template turf001 14 0template 1bush001 9 0template gbdirt_grassy001 7 
++0template turf004 14 0template 1bush002 13 0template gbdirt_grassy001 3 
++0template groundrunway002 4 0template groundstruct002 11 
++0template groundrunway002 12 0template groundstruct002 3 
++0template groundrunway001 8 0template groundstruct001 7 
++0template groundstruct002 14 0template groundstruct39 1 
++0template 1bush002 6 0template Bdt001 13 0template turf001 11 
++0template turf002 14 0template 2rough001 13 0template gbdirt_grassy001 3 
++0template 1french004 10 0template turf002 13 0template gbdirt_grassy001 7 
++0template turf002 10 0template sandstuff004 13 0template gbdirt_grassy001 7 
++0template gbdirt_grassy001 10 0template sandstuff003 13 0template turf001 7 
++0template gbdirt_grassy001 14 0template turf002 5 0template 2rough001 11 
++0template Bdt001 14 0template gbdirt_grassy001 13 0template 2rough001 3 
++0template Bdt001 8 0template 2rough001 7 
++0template Bdt001 12 0template 2rough001 3 
++0template Bdt001 12 0template 2rough002 7 0template turf003 11 
+groundstruct40
++0template 2rough002 12 0template turf003 7 0template 1french004 11 
++0template turf003 14 0template 2rough002 13 0template 1french004 3 
++0template 1french002 6 0template turf003 13 0template gbdirt_grassy001 11 
++0template turf003 10 0template 1french003 13 0template gbdirt_grassy001 7 
++0template turf002 14 0template 1french002 13 0template gbdirt_grassy001 3 
++0template 1bush001 12 0template sandstuff003 7 0template groundstruct001 11 
++0template 1bush001 12 0template groundstruct002 3 
++0template 1bush001 8 0template groundstruct002 7 
++0template Bdt001 10 0template 2rough002 5 
++0template turf002 14 0template 2rough002 13 0template Bdt001 3 
++0template turf002 14 0template 1french004 5 0template sandstuff002 11 
++0template plaid001 14 0template turf002 9 0template Bdt001 7 
++0template turf001 14 0template Bdt001 13 0template 2rough001 11 0template gbdirt_grassy001 7 
++0template 1bush001 14 0template groundstruct001 1 
++0template 2rough002 10 0template 1bush001 5 
++0template plaid001 12 0template turf002 7 0template Bdt001 11 
++0template plaid003 12 0template Bdt001 3 
++0template turf002 10 0template plaid001 13 0template Bdt001 7 
++0template 1french004 14 0template turf003 9 0template Bdt001 7 
++0template 1french001 14 0template turf001 5 0template gbdirt_grassy001 11 
++0template turf002 14 0template 1french004 13 0template 1bush001 11 0template gbdirt_grassy001 7 
++0template 2rough001 14 0template gbdirt_grassy001 13 0template france001 11 0template sandstuff004 7 
++0template sandstuff003 14 0template 2rough001 9 0template france003 7 
++0template sandstuff002 4 0template france001 11 
++0template sandstuff001 12 0template france002 7 0template 2rough001 11 
++0template sandstuff001 12 0template 2rough002 7 0template france001 11 
++0template sandstuff004 8 0template france003 7 
++0template sandstuff003 12 0template france003 7 0template turf003 11 
++0template sandstuff004 12 0template turf002 7 0template stones003 11 
++0template sandstuff001 12 0template stones001 7 0template turf004 11 
++0template sandstuff004 14 0template 2rough001 9 0template turf001 7 
++0template sandstuff001 14 0template turf002 5 0template francelight003 11 
++0template sandstuff002 12 0template francelight002 7 0template 2rough002 11 
++0template 2rough001 14 0template 1bush001 5 0template turf004 11 
++0template Bdt001 14 0template 2rough001 13 0template 1french003 3 
++0template 2rough001 14 0template Bdt001 13 0template turf003 11 0template 1french003 7 
++0template Bdt001 14 0template 2rough001 13 0template turf002 3 
++0template groundstruct001 4 0template groundrunway001 11 
++0template groundstruct001 12 0template groundrunway001 3 
++0template turf004 6 0template Bdt001 13 0template plaid001 11 
++0template Bdt001 14 0template turf002 5 0template 2rough001 11 
++0template france002 14 0template sandstuff001 9 0template 2rough002 7 
++0template 2rough001 10 0template france002 13 0template sandstuff002 7 
++0template france002 10 0template sandstuff004 13 0template 2rough002 7 
++0template 2rough002 14 0template france002 1 
++0template 2rough002 12 0template france002 3 
++0template france002 2 0template 2rough001 13 
++0template sandstuff004 14 0template france003 5 0template 2rough002 11 
++0template france001 14 0template sandstuff004 13 0template stones003 11 0template 2rough002 7 
++0template turf003 14 0template france003 13 0template sandstuff004 11 0template stones004 7 
++0template stones002 14 0template turf004 13 0template sandstuff001 3 
++0template turf004 14 0template stones003 9 0template sandstuff003 7 
++0template turf003 12 0template stones003 3 
++0template turf003 8 0template stones004 7 
++0template turf001 4 0template stones004 11 
++0template 2rough002 10 0template turf001 13 0template stones004 7 
++0template turf004 12 0template 2rough001 7 0template stones001 11 
++0template francelight003 14 0template turf004 13 0template 2rough002 11 0template stones003 7 
++0template 2rough002 6 0template francelight004 9 
++0template 2rough001 12 0template francelight002 3 
++0template turf004 14 0template 2rough001 9 0template francelight002 7 
+asphalt001
++0template turf002 14 0template Bdt001 5 0template plaid001 11 
++0template plaid003 4 0template Bdt001 11 
++0template turf003 14 0template plaid002 13 0template 1bush001 11 0template Bdt001 7 
++0template plaid003 14 0template turf002 13 0template Bdt001 11 0template 1bush001 7 
++0template 1bush002 10 0template plaid002 13 0template Bdt001 7 
++0template 1bush001 14 0template turf002 9 0template gbdirt_grassy001 7 
++0template turf004 4 0template france001 11 
++0template turf004 12 0template france001 3 
++0template turf001 12 0template france002 7 0template Bdt001 11 
++0template sandstuff004 14 0template 2rough001 13 0template france002 11 0template turf004 7 
++0template 2rough001 14 0template sandstuff003 13 0template francelight004 11 0template france003 7 
++0template sandstuff003 14 0template 2rough002 13 0template francelight003 3 
++0template sandstuff002 12 0template francelight002 7 0template france003 11 
++0template 2rough001 14 0template sandstuff002 13 0template stones004 11 0template france001 7 
++0template france001 14 0template 2rough002 13 0template stones004 3 
++0template france002 8 0template stones004 7 
++0template france001 4 0template 2rough002 11 
++0template france003 12 0template 2rough001 7 0template sandstuff002 11 
++0template france001 12 0template sandstuff003 3 
++0template 2rough002 14 0template france001 13 0template sandstuff002 3 
++0template stones004 10 0template 2rough001 13 0template sandstuff003 7 
++0template sandstuff002 14 0template stones001 5 0template turf003 11 
++0template stones001 10 0template sandstuff004 13 0template 2rough001 7 
+stones003
++0template turf004 10 0template stones002 5 
++0template stones004 10 0template turf004 5 
++0template 2rough002 8 0template stones002 7 
++0template stones001 10 0template 2rough002 5 
++0template 2rough001 10 0template stones004 5 
++0template francelight001 14 0template 2rough001 1 
++0template francelight002 12 0template 2rough001 3 
++0template 2rough002 2 0template francelight001 13 
+asphalt004
++0template turf001 14 0template 1bush002 13 0template groundstruct001 3 
++0template plaid002 10 0template Bdt001 5 
++0template Bdt001 6 0template plaid003 13 0template turf003 11 
++0template turf002 6 0template 1bush001 13 0template francelight001 11 
++0template 1bush002 14 0template turf002 13 0template francelight003 3 
++0template gbdirt_grassy001 14 0template 1bush001 13 0template turf002 11 0template francelight002 7 
++0template france002 10 0template turf002 13 0template Bdt001 7 
++0template france001 4 0template Bdt001 11 
++0template Bdt001 2 0template france003 13 
++0template turf004 12 0template 2rough001 7 0template france002 11 
++0template france003 6 0template turf003 9 
++0template francelight002 14 0template france003 13 0template sandstuff001 11 0template turf001 7 
++0template francelight002 12 0template sandstuff004 3 
++0template france003 14 0template francelight001 13 0template turf003 11 0template sandstuff003 7 
++0template stones004 10 0template france001 13 0template turf001 7 
+stones004
++0template 2rough001 6 0template france002 13 0template stones001 11 
++0template sandstuff002 14 0template 2rough002 13 0template stones001 3 
++0template sandstuff004 12 0template stones003 3 
++0template stones003 2 0template sandstuff004 13 
++0template turf003 14 0template stones003 1 
++0template stones003 4 0template turf003 11 
++0template turf002 6 0template stones001 9 
++0template stones003 6 0template turf001 13 0template 2rough002 11 
++0template stones003 12 0template 2rough002 3 
++0template 2rough002 2 0template stones002 13 
++0template stones004 14 0template 2rough002 5 0template sandstuff003 11 
++0template 2rough001 14 0template stones001 9 0template sandstuff003 7 
+asphalt003
+asphalt002
+bridge2
++0template turf001 12 0template Bdt001 7 0template plaid001 11 
++0template Bdt001 14 0template turf003 13 0template plaid003 3 
++0template plaid003 2 0template Bdt001 13 
++0template Bdt001 14 0template plaid001 5 0template turf001 11 
++0template francelight004 14 0template turf003 1 
++0template francelight004 12 0template turf003 3 
++0template turf004 6 0template francelight004 9 
++0template turf004 12 0template francelight001 3 
++0template turf002 8 0template francelight003 7 
++0template Bdt001 12 0template 1bush002 7 0template france002 11 
++0template Bdt001 12 0template france001 3 
++0template france002 2 0template Bdt001 13 
++0template Bdt001 14 0template france003 5 0template 1bush002 11 
++0template turf003 6 0template Bdt001 13 0template france002 11 
++0template 2rough002 14 0template turf002 13 0template france002 3 
++0template turf002 10 0template france002 5 
++0template turf003 14 0template sandstuff002 13 0template francelight001 11 0template france002 7 
++0template stones004 10 0template turf004 13 0template francelight003 7 
++0template stones002 12 0template sandstuff001 7 0template 2rough001 11 
++0template stones004 8 0template 2rough002 7 
++0template stones003 14 0template 2rough001 1 
++0template turf002 10 0template stones002 13 0template 2rough001 7 
++0template stones002 14 0template turf002 5 0template sandstuff001 11 
++0template 2rough002 14 0template stones004 13 0template sandstuff001 3 
++0template 2rough001 12 0template stones003 3 
++0template groundstruct002 10 0template groundrunway001 5 
++0template Bdt001 14 0template turf002 5 0template francelight001 11 
++0template plaid003 14 0template Bdt001 13 0template francelight004 3 
++0template plaid002 12 0template francelight001 7 0template turf002 11 
++0template Bdt001 14 0template turf003 9 0template plaid001 7 
++0template 1bush002 14 0template Bdt001 13 0template plaid003 11 0template turf004 7 
++0template Bdt001 14 0template 1bush001 9 0template plaid001 7 
++0template turf003 4 0template francelight001 11 
++0template turf004 12 0template francelight002 7 0template 1bush001 11 
++0template francelight004 14 0template turf004 9 0template 1bush001 7 
++0template turf002 12 0template francelight003 7 0template sandstuff004 11 
++0template Bdt001 14 0template 1bush001 5 0template turf002 11 
++0template 1bush002 14 0template turf004 5 0template france003 11 
++0template 1bush002 12 0template france003 7 0template turf003 11 
++0template france001 14 0template 1bush002 13 0template turf001 3 
++0template france001 12 0template turf003 7 0template 1bush002 11 
++0template france002 12 0template 1bush002 3 
++0template 1bush002 6 0template france001 13 0template Bdt001 11 
++0template france002 14 0template turf003 13 0template Bdt001 11 0template 1bush001 7 
++0template Bdt001 6 0template france003 13 0template turf004 11 
++0template turf001 8 0template france003 7 
++0template france001 10 0template turf004 5 
+france001
++0template turf001 14 0template france002 5 0template sandstuff001 11 
++0template france002 14 0template sandstuff003 5 0template 2rough001 11 
++0template francelight002 14 0template france003 13 0template turf004 11 0template 2rough002 7 
++0template stones003 14 0template francelight001 9 0template turf003 7 
++0template stones003 8 0template francelight003 7 
++0template 2rough001 14 0template stones003 5 0template francelight001 11 
++0template sandstuff003 14 0template 2rough001 13 0template stones001 11 0template francelight003 7 
++0template 2rough001 14 0template sandstuff003 13 0template stones001 3 
++0template sandstuff004 14 0template turf002 13 0template stones002 11 0template 2rough001 7 
++0template sandstuff003 12 0template stones001 7 0template 2rough001 11 
++0template 2rough002 6 0template sandstuff004 13 0template stones003 11 
++0template 2rough001 12 0template stones004 7 0template sandstuff002 11 
++0template stones003 4 0template 2rough001 11 
++0template turf004 6 0template francelight001 13 0template 1bush001 11 
++0template 1bush002 14 0template plaid002 13 0template gbdirt_grassy001 11 0template turf002 7 
++0template francelight004 10 0template turf001 13 0template 1bush002 7 
++0template 1bush002 14 0template francelight004 1 
++0template 1bush002 8 0template francelight001 7 
++0template turf003 14 0template 1bush002 5 0template gbdirt_grassy001 11 
++0template sandstuff003 14 0template francelight004 13 0template turf002 3 
++0template turf001 6 0template 1bush001 13 0template france001 11 
++0template Bdt001 14 0template turf004 13 0template francelight004 11 0template france002 7 
++0template Bdt001 12 0template francelight002 3 
++0template turf001 14 0template Bdt001 13 0template francelight001 3 
++0template france001 14 0template turf004 9 0template francelight004 7 
++0template turf002 2 0template france001 13 
++0template 1bush002 14 0template turf002 9 0template france001 7 
++0template Bdt001 14 0template 1bush002 13 0template france001 11 0template turf002 7 
++0template 1bush001 14 0template Bdt001 13 0template turf003 11 0template france002 7 
++0template turf003 10 0template Bdt001 13 0template france003 7 
++0template turf003 14 0template france003 1 
++0template france003 2 0template turf003 13 
++0template france003 4 0template sandstuff002 11 
++0template france001 12 0template sandstuff002 7 0template turf003 11 
++0template sandstuff001 10 0template france003 13 0template turf001 7 
++0template 2rough001 14 0template sandstuff002 13 0template stones003 11 0template turf004 7 
++0template turf003 14 0template 2rough002 13 0template stones002 3 
++0template francelight004 14 0template turf003 13 0template stones003 3 
++0template stones001 6 0template francelight002 9 
++0template francelight002 6 0template stones004 9 
++0template stones002 2 0template francelight003 13 
+stones002
++0template sandstuff002 14 0template stones001 13 0template 2rough002 3 
++0template 2rough002 12 0template stones002 7 0template francelight002 11 
++0template 2rough002 12 0template francelight001 7 0template turf003 11 
+groundstruct35
+groundstruct37
++0template 1bush002 14 0template turf004 9 0template francelight003 7 
++0template plaid002 10 0template 1bush001 13 0template turf004 7 
++0template gbdirt_grassy001 10 0template turf002 13 0template plaid003 7 
++0template francelight004 14 0template 1bush002 13 0template gbdirt_grassy001 11 0template turf003 7 
++0template francelight001 12 0template gbdirt_grassy001 3 
++0template 1bush002 14 0template francelight003 13 0template gbdirt_grassy001 3 
++0template gbdirt_grassy001 6 0template 1bush002 13 0template francelight002 11 
++0template turf004 14 0template gbdirt_grassy001 13 0template francelight004 3 
++0template sandstuff002 14 0template turf003 5 0template 20bush002 11 
++0template turf002 14 0template sandstuff004 9 0template 20bush001 7 
++0template turf001 12 0template sandstuff001 7 0template francelight003 11 
++0template france003 10 0template turf004 13 0template francelight002 7 
++0template francelight003 14 0template france001 5 0template turf002 11 
++0template francelight001 12 0template turf002 7 0template france001 11 
++0template francelight002 12 0template france001 3 
++0template turf001 14 0template francelight003 13 0template france001 3 
++0template turf003 14 0template france001 5 0template plaid002 11 
++0template france003 10 0template turf002 13 0template plaid003 7 
++0template france002 4 0template turf002 11 
++0template france001 12 0template turf001 7 0template sandstuff002 11 
++0template sandstuff003 2 0template france003 13 
++0template stones001 14 0template turf003 1 
++0template stones003 8 0template turf004 7 
++0template francelight002 10 0template stones004 5 
++0template stones003 14 0template francelight004 5 0template 2rough002 11 
++0template stones003 4 0template sandstuff003 11 
++0template 2rough001 12 0template turf001 7 0template stones004 11 
++0template 2rough002 12 0template stones003 7 0template turf003 11 
++0template stones003 6 0template 2rough001 9 
++0template 2rough001 4 0template stones003 11 
++0template stones001 2 0template 2rough001 13 
++0template francelight001 14 0template stones002 5 0template 2rough001 11 
++0template turf001 14 0template francelight001 13 0template 2rough001 3 
++0template groundstruct002 8 0template groundstruct30 7 
+groundstruct33
+groundstruct31
++0template francelight004 10 0template turf003 5 
+francelight002
++0template turf001 14 0template francelight003 5 0template plaid001 11 
++0template gbdirt_grassy001 14 0template turf001 13 0template plaid003 3 
++0template gbdirt_grassy001 12 0template plaid001 7 0template turf002 11 
++0template francelight002 10 0template gbdirt_grassy001 13 0template turf001 7 
++0template francelight003 4 0template turf004 11 
++0template francelight003 8 0template turf002 7 
++0template turf004 14 0template francelight004 1 
++0template 20bush002 10 0template turf002 13 0template francelight003 7 
++0template sandstuff004 14 0template 20bush003 1 
++0template francelight004 14 0template sandstuff004 9 0template 20bush003 7 
++0template francelight004 12 0template sandstuff001 7 0template 20bush002 11 
++0template france002 14 0template francelight003 13 0template 2rough002 11 0template 20bush001 7 
++0template turf001 14 0template france003 13 0template 20bush004 11 0template 2rough001 7 
++0template france002 14 0template turf002 9 0template 20bush004 7 
++0template france003 12 0template turf002 7 0template 20bush002 11 
++0template france003 12 0template 20bush002 7 0template turf001 11 
++0template france001 12 0template turf003 3 
++0template plaid002 14 0template france002 13 0template turf001 3 
++0template france002 14 0template plaid003 1 
++0template france002 12 0template plaid003 7 0template francelight002 11 
++0template france003 12 0template francelight002 7 0template turf003 11 
++0template turf001 6 0template france003 13 0template sandstuff002 11 
++0template stones002 14 0template turf003 13 0template 2rough001 3 
++0template stones004 12 0template 2rough002 7 0template sandstuff003 11 
++0template francelight001 10 0template stones002 13 0template sandstuff002 7 
++0template 2rough001 14 0template francelight003 1 
++0template stones001 14 0template 2rough002 13 0template francelight003 3 
++0template stones001 12 0template francelight003 7 0template sandstuff004 11 
++0template sandstuff001 6 0template stones004 9 
++0template stones002 6 0template sandstuff002 13 0template francelight003 11 
++0template 2rough001 14 0template stones004 9 0template francelight001 7 
++0template stones004 2 0template turf004 13 
++0template turf001 14 0template stones001 5 0template sandstuff002 11 
++0template stones001 4 0template francelight001 11 
++0template 2rough002 14 0template stones003 13 0template francelight002 11 0template sandstuff002 7 
++0template 2rough001 12 0template francelight001 7 0template sandstuff001 11 
++0template groundstruct002 2 0template groundstruct30 13 
++0template francelight001 12 0template turf002 7 0template Bdt001 11 
++0template plaid003 14 0template francelight002 13 0template turf001 11 0template Bdt001 7 
++0template francelight002 2 0template turf002 13 
+francelight001
++0template 20bush001 14 0template francelight002 1 
++0template 20bush002 12 0template francelight001 7 0template sandstuff003 11 
++0template sandstuff002 2 0template 20bush001 13 
++0template 20bush002 10 0template sandstuff002 5 
++0template 2rough002 14 0template 20bush003 1 
++0template 20bush004 6 0template 2rough001 9 
++0template turf003 14 0template 20bush002 13 0template 2rough001 3 
++0template 20bush001 14 0template turf003 13 0template 2rough002 3 
++0template turf002 14 0template 20bush002 9 0template 2rough001 7 
++0template turf001 12 0template 20bush002 7 0template 2rough002 11 
++0template plaid002 14 0template turf001 13 0template 2rough001 3 
++0template plaid002 12 0template 2rough002 7 0template francelight002 11 
++0template francelight004 2 0template plaid001 13 
++0template turf001 12 0template francelight004 7 0template 2rough001 11 
++0template francelight002 14 0template sandstuff004 9 0template 2rough002 7 
++0template francelight002 12 0template sandstuff003 7 0template turf001 11 
++0template francelight002 12 0template turf002 7 0template sandstuff001 11 
++0template sandstuff004 6 0template francelight003 13 0template stones001 11 
++0template francelight004 6 0template stones004 13 0template sandstuff004 11 
++0template stones002 14 0template francelight001 13 0template sandstuff002 3 
++0template stones003 12 0template sandstuff002 7 0template francelight002 11 
++0template sandstuff004 6 0template stones004 13 0template francelight004 11 
++0template sandstuff003 12 0template francelight001 3 
++0template stones003 14 0template sandstuff003 9 0template francelight002 7 
++0template stones002 12 0template francelight004 7 0template turf004 11 
++0template stones004 12 0template turf002 7 0template francelight003 11 
++0template sandstuff004 14 0template francelight004 1 
++0template francelight002 6 0template sandstuff001 9 
++0template sandstuff004 6 0template francelight003 13 0template 2rough002 11 
++0template turf002 14 0template francelight003 5 0template Bdt001 11 
++0template francelight004 4 0template 20bush004 11 
++0template francelight004 12 0template 20bush003 7 0template turf003 11 
++0template sandstuff004 10 0template francelight001 13 0template turf001 7 
++0template 20bush004 14 0template sandstuff004 13 0template 2rough001 11 0template turf003 7 
++0template 20bush001 8 0template 2rough001 7 
++0template 2rough001 12 0template 20bush002 3 
++0template 2rough001 8 0template 20bush002 7 
++0template 20bush004 10 0template 2rough002 5 
++0template francelight004 14 0template 2rough002 13 0template 20bush002 3 
++0template francelight004 12 0template 20bush003 3 
++0template francelight004 12 0template 20bush002 7 0template 2rough002 11 
++0template francelight001 12 0template 2rough002 7 0template plaid001 11 
++0template 2rough001 14 0template francelight004 13 0template plaid001 3 
++0template 2rough002 6 0template turf003 9 
++0template stones001 14 0template sandstuff004 5 0template 2rough001 11 
++0template francelight004 14 0template stones001 13 0template 2rough002 3 
++0template sandstuff002 10 0template francelight003 13 0template 2rough002 7 
++0template sandstuff004 2 0template francelight004 13 
++0template francelight004 14 0template sandstuff003 5 0template 2rough002 11 
++0template sandstuff002 14 0template francelight003 13 0template 2rough002 3 
++0template turf001 14 0template francelight002 13 0template sandstuff004 3 
++0template francelight003 10 0template turf003 13 0template sandstuff004 7 
++0template sandstuff002 10 0template francelight001 5 
++0template francelight002 10 0template sandstuff003 5 
++0template francelight003 4 0template 2rough002 11 
++0template Bdt001 14 0template francelight002 1 
++0template Bdt001 12 0template francelight002 7 0template turf004 11 
++0template francelight004 14 0template turf003 5 0template plaid003 11 
++0template francelight004 12 0template plaid003 7 0template turf004 11 
++0template 20bush002 10 0template francelight001 13 0template turf001 7 
++0template turf004 14 0template 20bush002 5 0template sandstuff001 11 
++0template turf002 14 0template sandstuff004 5 0template plaid001 11 
++0template 2rough001 10 0template turf001 13 0template plaid002 7 
++0template 20bush003 4 0template 2rough002 11 
++0template 20bush001 12 0template 2rough002 7 0template francelight003 11 
++0template 2rough002 14 0template 20bush004 13 0template francelight004 3 
++0template plaid003 10 0template 2rough001 13 0template francelight002 7 
++0template 2rough002 10 0template plaid002 13 0template sandstuff002 7 
++0template francelight003 14 0template sandstuff001 13 0template turf004 3 
++0template 2rough002 14 0template francelight003 13 0template turf001 3 
+francelight004
++0template turf001 10 0template francelight002 5 
++0template turf004 14 0template plaid001 5 0template francelight001 11 
++0template plaid003 10 0template turf003 13 0template francelight004 7 
++0template turf001 14 0template plaid002 5 0template 20bush003 11 
++0template 20bush002 6 0template turf001 13 0template plaid003 11 
++0template sandstuff002 10 0template 20bush002 13 0template plaid002 7 
++0template 2rough001 14 0template plaid003 13 0template sandstuff003 3 
++0template 20bush002 10 0template 2rough001 13 0template sandstuff003 7 
++0template 2rough002 14 0template 20bush003 5 0template plaid003 11 
++0template 20bush001 14 0template 2rough001 9 0template plaid002 7 
++0template 2rough002 6 0template 20bush001 9 
++0template 20bush003 2 0template 2rough001 13 
++0template 2rough001 2 0template 20bush003 13 
++0template francelight004 14 0template 2rough001 5 0template 20bush003 11 
++0template francelight003 8 0template 20bush002 7 
++0template plaid002 14 0template francelight002 5 0template 2rough002 11 
++0template sandstuff004 14 0template plaid001 13 0template 2rough002 3 
+groundstruct14
++0template turf003 14 0template francelight004 13 0template Bdt001 3 
++0template francelight003 10 0template plaid002 5 
++0template plaid003 14 0template francelight002 5 0template turf004 11 
++0template 20bush003 14 0template plaid002 13 0template sandstuff001 11 0template turf004 7 
++0template plaid001 14 0template 20bush004 13 0template sandstuff001 3 
++0template sandstuff004 2 0template plaid002 13 
++0template sandstuff001 14 0template turf004 5 0template 2rough002 11 
++0template 20bush003 14 0template sandstuff004 9 0template 2rough001 7 
++0template 2rough002 14 0template plaid003 9 0template sandstuff003 7 
++0template 20bush004 14 0template 2rough001 13 0template sandstuff003 11 0template plaid002 7 
++0template 20bush004 12 0template sandstuff003 7 0template plaid002 11 
++0template 2rough001 14 0template 20bush004 9 0template plaid003 7 
++0template 2rough002 4 0template 20bush002 11 
++0template francelight002 14 0template 20bush004 5 0template sandstuff004 11 
++0template 2rough002 14 0template francelight004 13 0template plaid001 11 0template sandstuff002 7 
++0template 2rough001 12 0template plaid001 7 0template sandstuff001 11 
++0template Bdt001 8 0template francelight004 7 
++0template francelight002 10 0template plaid003 13 0template sandstuff004 7 
++0template sandstuff002 14 0template turf001 13 0template 20bush002 11 0template plaid003 7 
++0template sandstuff002 12 0template 20bush004 3 
++0template sandstuff003 12 0template 20bush001 7 0template plaid002 11 
++0template turf002 10 0template sandstuff002 13 0template plaid003 7 
++0template sandstuff004 14 0template 2rough001 13 0template 1silt003 11 0template 20bush004 7 
++0template sandstuff002 12 0template 1silt002 7 0template 2rough001 11 
++0template plaid003 10 0template sandstuff003 13 0template 2rough002 7 
++0template sandstuff002 14 0template plaid002 5 0template 20bush001 11 
++0template plaid002 14 0template sandstuff001 9 0template 20bush002 7 
++0template 20bush004 14 0template plaid003 13 0template sandstuff002 3 
++0template 2rough002 10 0template 20bush002 13 0template plaid003 7 
++0template 20bush003 6 0template 2rough002 13 0template sandstuff004 11 
++0template 20bush004 12 0template sandstuff002 3 
++0template plaid002 14 0template sandstuff001 5 0template francelight001 11 
++0template sandstuff002 10 0template plaid003 13 0template francelight003 7 
++0template Bdt001 10 0template francelight001 5 
++0template francelight001 14 0template sandstuff003 13 0template plaid001 11 0template turf003 7 
++0template plaid002 2 0template francelight002 13 
++0template 20bush003 14 0template plaid001 1 
++0template 20bush003 12 0template plaid003 3 
++0template plaid003 6 0template 20bush001 9 
++0template turf004 10 0template plaid002 13 0template 20bush003 7 
++0template 1silt001 14 0template 20bush004 5 0template francelight003 11 
++0template 2rough001 14 0template 1silt001 13 0template francelight002 3 
++0template plaid003 14 0template 2rough001 13 0template francelight004 3 
++0template 20bush003 14 0template plaid003 13 0template 2rough002 11 0template francelight001 7 
++0template sandstuff002 14 0template 20bush002 9 0template 2rough001 7 
++0template 20bush002 14 0template 2rough001 13 0template plaid003 3 
++0template sandstuff002 14 0template 20bush002 13 0template plaid002 3 
++0template sandstuff003 14 0template francelight003 13 0template plaid001 11 0template 2rough001 7 
+bridge1
++0template Bdt001 14 0template francelight001 5 0template 1bush002 11 
++0template plaid003 14 0template turf001 9 0template francelight004 7 
++0template 20bush001 14 0template plaid003 9 0template turf002 7 
++0template turf003 10 0template 20bush002 13 0template plaid002 7 
++0template 20bush004 14 0template 2rough002 1 
++0template francelight002 14 0template 20bush001 9 0template 2rough002 7 
++0template francelight003 8 0template 2rough002 7 
++0template 20bush002 10 0template 2rough002 13 0template francelight004 7 
++0template plaid002 10 0template sandstuff002 13 0template 20bush003 7 
++0template plaid003 4 0template 20bush003 11 
++0template plaid002 12 0template 20bush002 3 
++0template sandstuff003 14 0template plaid003 9 0template 20bush002 7 
++0template sandstuff004 12 0template plaid001 3 
++0template 2rough002 14 0template sandstuff002 13 0template francelight002 11 0template plaid001 7 
++0template 2rough001 10 0template plaid003 13 0template francelight002 7 
+groundstruct34
++0template 1bush001 10 0template francelight001 5 
++0template 1bush001 12 0template Bdt001 7 0template francelight004 11 
++0template turf002 14 0template 1bush001 13 0template francelight002 3 
++0template 1bush002 12 0template turf004 7 0template francelight002 11 
++0template turf003 10 0template 1bush002 13 0template francelight001 7 
++0template 20bush001 6 0template francelight004 13 0template 2rough002 11 
++0template plaid003 10 0template 20bush004 13 0template 2rough002 7 
++0template 20bush004 14 0template plaid001 5 0template francelight004 11 
++0template 20bush002 12 0template francelight001 3 
++0template plaid003 14 0template 20bush003 13 0template francelight004 3 
++0template plaid001 12 0template francelight003 7 0template 2rough002 11 
++0template francelight004 10 0template plaid001 13 0template 2rough002 7 
++0template 2rough001 10 0template francelight002 13 0template 20bush001 7 
+groundstruct26a
+groundstruct28a
++0template francelight001 14 0template Bdt001 9 0template 1bush001 7 
++0template francelight003 8 0template Bdt001 7 
++0template 1bush002 10 0template turf004 13 0template francelight003 7 
++0template 2rough001 10 0template 20bush002 5 
++0template 20bush004 14 0template 2rough002 5 0template francelight002 11 
++0template francelight004 6 0template plaid002 13 0template 20bush001 11 
++0template francelight001 6 0template 2rough001 13 0template 20bush004 11 
++0template 1bush001 14 0template francelight003 5 0template turf004 11 
++0template 1bush001 12 0template francelight002 7 0template turf002 11 
++0template francelight002 14 0template Bdt001 1 
++0template turf003 14 0template francelight004 9 0template Bdt001 7 
++0template francelight001 6 0template turf003 9 
++0template 1bush002 14 0template francelight002 9 0template turf004 7 
++0template francelight004 12 0template 2rough001 7 0template 20bush001 11 
++0template 20bush002 12 0template 2rough001 3 
++0template francelight001 14 0template 20bush003 13 0template 2rough001 3 
++0template 20bush003 14 0template francelight001 13 0template 2rough002 3 
++0template turf004 2 0template francelight002 13 
++0template francelight002 14 0template Bdt001 13 0template turf002 3 
++0template 20bush002 14 0template 2rough002 13 0template turf004 3 
++0template 20bush002 12 0template turf004 3 
++0template 2rough002 14 0template 20bush001 13 0template turf004 3 

@@ -1,0 +1,2151 @@
++0template wheat002 2 0template 4sand004 13 
+wheat002
+wheat001
++0template 4sand002 14 0template wheat002 1 
++0template 4sand004 12 0template wheat002 3 
++0template 4sand002 12 0template wheat001 7 0template inwall 11 
++0template inwall 2 0template 4sand001 13 
++0template 4sand001 14 0template inwall 1 
++0template 4sand002 12 0template inwall 7 0template 1french004 11 
++0template Bdt001 14 0template 4sand004 13 0template 1french001 3 
++0template 1french001 2 0template Bdt001 13 
++0template 4sand003 10 0template 1french003 5 
+4sand002
++0template 4sand004 4 0template et_base 11 
++0template et_base 2 0template 4sand003 13 
+et_base
++0template sandstuff004 14 0template et_base 1 
++0template et_base 2 0template sandstuff002 13 
++0template sandstuff002 12 0template et_base 3 
++0template francelight003 14 0template sandstuff001 13 0template et_base 3 
++0template francelight002 8 0template et_base 7 
++0template 4sand004 14 0template francelight003 5 0template megadirt001 11 
++0template 1french004 10 0template 4sand003 13 0template megadirt002 7 
+4sand003
+4sand004
+4sand001
++0template 4sand001 4 0template pyramid1 11 
++0template 4sand003 8 0template pyramid1 7 
++0template 20bush_4sand002 14 0template 4sand001 1 
++0template 20bush_4sand001 12 0template 4sand001 3 
++0template 4sand003 2 0template 20bush_4sand001 13 
++0template wheat001 4 0template 4sand001 11 
++0template wheat001 8 0template 4sand001 7 
++0template wheat002 4 0template pyramid1 11 
++0template wheat001 12 0template pyramid1 3 
++0template wheat001 8 0template pyramid1 7 
++0template inwall 10 0template wheat002 5 
+inwall
++0template 1french001 14 0template inwall 5 0template 4sand001 11 
++0template 1french004 12 0template 4sand001 3 
++0template 1french003 12 0template 4sand004 7 0template Bdt001 11 
++0template 4sand002 14 0template 1french003 13 0template et_base 11 0template Bdt001 7 
++0template 4sand004 12 0template et_base 3 
++0template et_base 4 0template brownmud001 11 
++0template et_base 12 0template brownmud001 3 
++0template et_base 12 0template brownmud001 7 0template sandstuff003 11 
++0template francelight001 10 0template et_base 13 0template sandstuff003 7 
++0template megadirt002 10 0template francelight002 5 
++0template 1french002 14 0template megadirt002 5 0template 4sand002 11 
++0template 4sand002 2 0template 1french001 13 
++0template 4sand002 4 0template Bdt001 11 
++0template 4sand003 8 0template Bdt001 7 
++0template pyramid1 14 0template 4sand004 1 
++0template 4sand001 2 0template pyramid1 13 
++0template 4sand001 6 0template pyramid1 9 
++0template wheat001 6 0template 4sand002 13 0template pyramid1 11 
++0template pyramid1 2 0template wheat001 13 
+pyramid1
++0template wheat001 10 0template pyramid1 5 
++0template inwall 4 0template 4sand003 11 
++0template 4sand001 6 0template inwall 13 0template 1french002 11 
++0template 4sand004 12 0template 1french003 7 0template Bdt001 11 
++0template Bdt001 6 0template 4sand002 9 
++0template et_base 14 0template Bdt001 13 0template francelight003 11 0template 4sand003 7 
++0template et_base 12 0template francelight001 3 
++0template et_base 12 0template francelight003 7 0template brownmud001 11 
++0template brownmud001 2 0template et_base 13 
+brownmud001
+brownmud002
++0template brownmud001 4 0template francelight001 11 
++0template sandstuff001 14 0template brownmud001 13 0template francelight002 3 
++0template francelight003 6 0template sandstuff004 13 0template Bdt001 11 
++0template megadirt002 10 0template francelight003 13 0template Bdt001 7 
++0template 4sand001 14 0template megadirt001 5 0template 1french004 11 
++0template 4sand004 2 0template Bdt001 13 
++0template 4sand004 4 0template sandrock001 11 
++0template 4sand003 8 0template sandrock002 7 
++0template pyramid1 10 0template wheat002 5 
++0template wheat002 14 0template pyramid1 5 0template sandstuff003 11 
++0template inwall 10 0template wheat002 13 0template sandstuff004 7 
++0template 4sand001 14 0template inwall 5 0template 1french004 11 
++0template 1french004 6 0template 4sand003 13 0template francelight003 11 
++0template Bdt001 14 0template 1french001 13 0template 4sand002 11 0template francelight004 7 
++0template 4sand003 6 0template Bdt001 13 0template francelight001 11 
++0template francelight001 2 0template 4sand001 13 
+francelight002
++0template brownmud001 10 0template francelight004 5 
++0template francelight003 2 0template brownmud001 13 
+francelight004
++0template Bdt001 10 0template francelight003 5 
++0template megadirt001 14 0template Bdt001 5 0template 1french004 11 
++0template 1french004 2 0template megadirt001 13 
++0template Bdt001 14 0template 1french003 5 0template megadirt001 11 
++0template 4sand001 14 0template Bdt001 9 0template megadirt002 7 
++0template sandrock005 14 0template 4sand003 5 0template megadirt002 11 
++0template 4sand004 10 0template sandrock003 13 0template megadirt002 7 
++0template sandrock004 14 0template 4sand001 1 
++0template 4sand001 6 0template sandrock003 9 
++0template 4sand002 12 0template sandrock002 3 
++0template 4sand003 4 0template 6redcanyon001 11 
++0template 4sand001 8 0template 6redcanyon002 7 
++0template 4sand003 12 0template 6redcanyon001 3 
++0template sandstuff003 10 0template pyramid1 5 
++0template inwall 10 0template sandstuff003 5 
++0template 1french002 10 0template inwall 5 
++0template francelight004 14 0template 1french004 5 0template 4sand002 11 
++0template 4sand001 6 0template francelight002 9 
++0template francelight001 4 0template brownmud001 11 
++0template francelight003 12 0template brownmud001 3 
++0template brownmud001 2 0template francelight001 13 
+francelight001
++0template 1french003 10 0template Bdt001 5 
+1french003
++0template megadirt001 14 0template 1french002 5 0template Bdt001 11 
++0template Bdt001 6 0template megadirt001 13 0template 4sand001 11 
++0template 4sand003 6 0template Bdt001 13 0template megadirt001 11 
++0template 4sand003 12 0template megadirt002 3 
++0template megadirt001 6 0template 4sand002 9 
++0template 4sand004 2 0template megadirt002 13 
++0template sandrock001 12 0template 4sand003 3 
++0template 4sand004 2 0template sandrock004 13 
++0template 6redcanyon002 14 0template 4sand002 1 
++0template 4sand001 2 0template 6redcanyon002 13 
++0template 6redcanyon001 10 0template 4sand003 5 
+6redcanyon002
++0template 4sand001 10 0template 6redcanyon001 5 
++0template pyramid1 4 0template wheat002 11 
++0template pyramid1 8 0template wheat002 7 
++0template sandstuff002 14 0template pyramid1 5 0template inwall 11 
++0template inwall 2 0template sandstuff001 13 
++0template 1french004 14 0template inwall 5 0template francelight002 11 
++0template 4sand003 10 0template 1french001 13 0template francelight003 7 
++0template francelight003 10 0template 4sand004 5 
++0template brownmud001 14 0template francelight001 1 
++0template brownmud001 8 0template francelight003 7 
++0template francelight004 10 0template brownmud001 5 
+francelight003
++0template Bdt001 14 0template francelight001 5 0template sandrock004 11 
++0template 1french002 10 0template Bdt001 13 0template sandrock004 7 
++0template Bdt001 14 0template 1french003 5 0template 4sand003 11 
++0template megadirt002 2 0template 4sand001 13 
++0template megadirt002 4 0template 4sand003 11 
++0template 6redcanyon001 2 0template 4sand004 13 
++0template pyramid1 14 0template wheat002 1 
++0template pyramid1 12 0template wheat002 3 
++0template pyramid1 12 0template wheat002 7 0template inwall 11 
++0template pyramid1 12 0template inwall 3 
++0template inwall 2 0template pyramid1 13 
++0template inwall 4 0template 1french002 11 
++0template francelight001 14 0template inwall 13 0template 4sand004 11 0template 1french004 7 
++0template 4sand004 2 0template francelight003 13 
++0template francelight002 4 0template sandrock001 11 
++0template sandrock005 6 0template francelight003 13 0template 1french003 11 
++0template 1french002 6 0template sandrock004 13 0template Bdt001 11 
++0template 1french003 12 0template Bdt001 3 
++0template 4sand002 10 0template 1french001 13 0template Bdt001 7 
++0template megadirt002 14 0template 4sand001 1 
++0template megadirt001 12 0template 4sand001 7 0template sandrock002 11 
++0template 4sand004 14 0template megadirt002 13 0template sandrock005 3 
++0template 4sand003 4 0template 20bush_4sand001 11 
++0template 4sand004 8 0template 20bush_4sand001 7 
+6redcanyon001
++0template wheat001 2 0template pyramid1 13 
++0template wheat001 4 0template inwall 11 
++0template wheat001 12 0template inwall 3 
++0template inwall 2 0template wheat001 13 
++0template inwall 4 0template sandstuff002 11 
++0template 1french004 10 0template inwall 13 0template sandstuff001 7 
++0template 4sand004 14 0template 1french003 1 
++0template 4sand002 8 0template 1french001 7 
++0template sandrock001 14 0template francelight004 5 0template Bdt001 11 
++0template 1french001 10 0template sandrock002 13 0template Bdt001 7 
++0template Bdt001 14 0template 1french004 1 
++0template Bdt001 12 0template 1french004 3 
++0template 4sand004 14 0template Bdt001 13 0template 4granite002 11 0template 1french004 7 
++0template 4sand003 8 0template 4granite001 7 
++0template 4sand001 4 0template 20bush002 11 
++0template 4sand004 8 0template 20bush004 7 
++0template sandrock002 2 0template 4sand002 13 
++0template 4sand003 10 0template sandrock003 5 
++0template 20bush_4sand002 14 0template 4sand004 5 0template 20bush003 11 
++0template 4sand003 14 0template 20bush_4sand002 13 0template 20bush004 3 
++0template pyramid1 14 0template wheat002 13 0template inwall 3 
++0template wheat002 14 0template pyramid1 13 0template inwall 3 
++0template sandstuff002 14 0template inwall 5 0template 1french001 11 
++0template 1french004 2 0template sandstuff004 13 
+1french002
++0template 4sand004 14 0template 1french004 5 0template francelight003 11 
++0template Bdt001 14 0template francelight002 1 
++0template 1french001 10 0template Bdt001 13 0template francelight002 7 
++0template 1french002 4 0template 4granite002 11 
++0template 4granite003 2 0template 1french004 13 
++0template 4sand001 10 0template 4granite001 5 
++0template 20bush004 14 0template 4sand003 1 
++0template 4sand003 6 0template 20bush001 9 
++0template 4sand001 12 0template 20bush003 3 
++0template sandrock001 14 0template 4sand003 13 0template 20bush_4sand002 11 0template 20bush002 7 
++0template sandrock004 12 0template 20bush_4sand002 7 0template 4sand004 11 
++0template 20bush004 14 0template 4sand003 9 0template 20bush_4sand002 7 
++0template 20bush002 12 0template 4sand001 3 
++0template 4sand003 2 0template 20bush003 13 
++0template 4sand004 4 0template 4granite001 11 
++0template 4sand001 4 0template wall2 11 
++0template 4sand002 12 0template wall2 3 
++0template 4sand004 8 0template wall2 7 
++0template inwall 14 0template wheat002 1 
++0template inwall 8 0template wheat001 7 
++0template inwall 4 0template pyramid1 11 
++0template inwall 12 0template pyramid1 3 
++0template inwall 8 0template pyramid1 7 
++0template 1french001 14 0template inwall 1 
++0template 1french003 12 0template inwall 7 0template aztec4 11 
++0template 1french002 12 0template aztec4 7 0template francelight004 11 
++0template francelight001 2 0template 1french003 13 
++0template francelight004 4 0template stonepath001 11 
++0template brownmud001 10 0template francelight003 13 0template stonepath001 7 
++0template francelight004 14 0template brownmud001 1 
++0template francelight001 8 0template brownmud001 7 
++0template francelight001 4 0template 1french001 11 
++0template 1french001 2 0template francelight002 13 
+1french004
++0template 4granite003 14 0template 1french002 5 0template 4sand003 11 
++0template 4granite002 12 0template 4sand004 3 
++0template 4sand003 6 0template 4granite001 13 0template Bdt001 11 
++0template 20bush002 10 0template 4sand004 13 0template 20bush_4sand001 7 
++0template 20bush002 4 0template 20bush_4sand002 11 
++0template 20bush_4sand002 6 0template 20bush002 13 0template 4sand002 11 
++0template 4sand001 12 0template 20bush_4sand001 7 0template 20bush002 11 
++0template 20bush_4sand001 14 0template 4sand002 13 0template 20bush003 3 
++0template 4sand004 10 0template 20bush_4sand002 13 0template 20bush004 7 
++0template 4granite001 14 0template 4sand004 1 
++0template 4sand002 2 0template 4granite002 13 
++0template wall2 2 0template 4sand004 13 
+wall2
++0template 4sand001 10 0template wall2 5 
++0template pyramid1 10 0template inwall 5 
++0template pyramid1 4 0template wall2 11 
++0template pyramid1 8 0template wall2 7 
++0template pyramid1 4 0template 4sand001 11 
++0template inwall 10 0template pyramid1 13 0template 4sand004 7 
++0template aztec4 14 0template inwall 1 
++0template francelight001 10 0template aztec4 13 0template inwall 7 
++0template stonepath003 14 0template francelight002 13 0template brownmud001 3 
++0template brownmud001 2 0template stonepath002 13 
++0template 1french001 14 0template francelight003 5 0template 4sand002 11 
++0template 1french003 8 0template 4sand002 7 
++0template 4sand001 14 0template 1french001 5 0template Bdt001 11 
++0template 4sand004 12 0template Bdt001 3 
++0template 20bush003 10 0template 20bush_4sand001 13 0template 4sand003 7 
++0template 20bush_4sand002 14 0template 20bush001 1 
++0template 20bush_4sand001 14 0template 4sand001 13 0template sandrock003 11 0template 20bush003 7 
++0template 20bush004 14 0template 20bush_4sand001 13 0template sandrock004 3 
++0template 20bush004 12 0template sandrock004 3 
++0template 4sand003 14 0template 20bush001 13 0template sandrock004 3 
+sandrock004
+sandrock005
++0template 4sand001 14 0template sandrock004 1 
++0template 4sand004 12 0template sandrock001 7 0template 4granite003 11 
++0template 4sand001 12 0template 4granite001 3 
++0template 6redcanyon002 8 0template 4sand003 7 
++0template 4sand003 14 0template 6redcanyon002 1 
++0template 6redcanyon002 12 0template 4sand003 3 
++0template inwall 12 0template wheat002 3 
++0template pyramid1 2 0template inwall 13 
++0template wall2 10 0template pyramid1 5 
++0template pyramid1 10 0template wall2 5 
++0template 4sand001 14 0template pyramid1 5 0template sandstuff002 11 
++0template inwall 10 0template 4sand001 13 0template sandstuff002 7 
++0template francelight003 10 0template inwall 5 
++0template brownmud001 12 0template francelight002 3 
++0template francelight002 4 0template 4sand001 11 
++0template francelight004 12 0template 4sand002 3 
++0template 1french003 10 0template 4sand002 5 
++0template Bdt001 10 0template 1french003 5 
++0template Bdt001 4 0template megadirt001 11 
++0template 4sand002 10 0template Bdt001 13 0template megadirt001 7 
++0template 4granite002 2 0template 4sand003 13 
++0template 4sand002 14 0template 4granite003 1 
++0template 20bush002 14 0template 4sand003 13 0template 20bush_4sand001 3 
++0template 20bush003 8 0template 20bush_4sand001 7 
++0template 4sand002 14 0template 20bush001 1 
++0template 20bush001 2 0template 4sand003 13 
++0template sandrock003 10 0template 20bush004 5 
+sandrock001
+sandrock002
+sandrock003
++0template 4granite002 14 0template sandrock004 1 
++0template 4granite001 12 0template sandrock004 3 
++0template 4sand001 10 0template 4granite001 13 0template sandrock005 7 
++0template wall2 10 0template 4sand001 5 
++0template inwall 14 0template wheat001 13 0template wall2 11 0template pyramid1 7 
++0template inwall 8 0template wall2 7 
++0template pyramid1 14 0template inwall 1 
++0template pyramid1 8 0template inwall 7 
++0template wall2 14 0template pyramid1 1 
++0template pyramid1 2 0template wall2 13 
++0template sandstuff003 14 0template pyramid1 5 0template 4sand004 11 
++0template inwall 10 0template sandstuff004 13 0template 4sand004 7 
++0template 4sand004 4 0template 1french004 11 
++0template 1french004 6 0template 4sand002 13 0template Bdt001 11 
++0template Bdt001 2 0template 1french003 13 
++0template megadirt002 10 0template Bdt001 5 
++0template 4sand001 14 0template megadirt001 5 0template easterhead3 11 
++0template 4granite002 14 0template 4sand002 13 0template easterhead3 3 
++0template 4granite003 12 0template easterhead3 3 
++0template 4granite002 12 0template easterhead3 7 0template 4sand003 11 
++0template 4sand004 6 0template 4granite003 13 0template 20bush_4sand002 11 
++0template 20bush_4sand001 6 0template 4sand003 9 
++0template 20bush_4sand002 12 0template 4sand002 7 0template 20bush002 11 
++0template 20bush002 6 0template 20bush_4sand002 13 0template 4sand001 11 
++0template 20bush002 8 0template 4sand002 7 
++0template 4sand003 14 0template sandrock002 5 0template 4granite001 11 
++0template 4granite002 14 0template 4sand002 13 0template wall2 3 
++0template 4sand004 14 0template 4granite003 13 0template wall2 3 
++0template inwall 10 0template wall2 13 0template pyramid1 7 
++0template inwall 4 0template brownmud001 11 
++0template francelight001 14 0template inwall 13 0template brownmud001 3 
++0template 4sand001 10 0template francelight004 5 
++0template 4sand003 12 0template Bdt001 7 0template megadirt002 11 
++0template 1french004 14 0template 4sand003 13 0template Bdt001 11 0template megadirt002 7 
+Bdt001
++0template megadirt001 6 0template Bdt001 13 0template easterhead3 11 
++0template easterhead3 2 0template megadirt001 13 
+easterhead3
++0template 4sand004 14 0template easterhead3 1 
++0template 20bush_4sand002 10 0template 4sand003 13 0template easterhead3 7 
++0template 4sand004 10 0template 20bush_4sand002 5 
++0template 20bush001 14 0template 4sand001 13 0template sandrock001 3 
++0template sandrock004 2 0template 20bush001 13 
++0template 4granite001 10 0template sandrock005 5 
++0template wall2 14 0template 4sand001 1 
++0template wall2 8 0template 4sand001 7 
++0template 4sand001 4 0template megadirt002 11 
++0template 6redcanyon001 14 0template 4sand002 9 0template megadirt002 7 
++0template 6redcanyon002 6 0template 4sand001 9 
++0template inwall 14 0template pyramid1 5 0template wheat002 11 
++0template wall2 10 0template pyramid1 13 0template inwall 7 
++0template pyramid1 14 0template wall2 5 0template inwall 11 
++0template sandstuff004 14 0template pyramid1 13 0template inwall 3 
++0template inwall 4 0template francelight002 11 
++0template brownmud001 10 0template inwall 13 0template francelight001 7 
++0template francelight001 12 0template brownmud001 7 0template 1french004 11 
++0template francelight004 8 0template 1french001 7 
++0template Bdt001 14 0template 4sand002 5 0template 1french002 11 
++0template megadirt002 14 0template Bdt001 9 0template 1french002 7 
++0template Bdt001 2 0template megadirt001 13 
++0template Bdt001 12 0template megadirt002 3 
++0template 20bush_4sand002 14 0template easterhead3 5 0template 4sand002 11 
++0template sandrock005 4 0template 20bush_4sand001 11 
++0template sandrock003 8 0template 4sand003 7 
++0template 4granite003 14 0template sandrock003 5 0template redgranite003 11 
++0template 4sand004 14 0template 4granite002 13 0template redgranite003 3 
++0template 4sand003 12 0template redgranite002 3 
++0template 4granite002 14 0template 4sand003 13 0template redgranite001 3 
++0template 4granite001 12 0template redgranite002 3 
++0template 4sand003 10 0template 4granite002 13 0template redgranite003 7 
++0template megadirt002 12 0template 4sand004 3 
++0template 4sand003 6 0template 6redcanyon002 9 
++0template wheat001 6 0template pyramid1 13 0template francelight001 11 
++0template inwall 14 0template wheat002 13 0template francelight002 3 
++0template inwall 12 0template francelight002 3 
++0template wall2 14 0template inwall 13 0template francelight001 3 
++0template inwall 10 0template wall2 13 0template francelight003 7 
++0template inwall 12 0template francelight004 7 0template brownmud001 11 
++0template inwall 12 0template brownmud001 3 
++0template 1french002 14 0template brownmud001 13 0template francelight004 3 
++0template francelight001 4 0template Bdt001 11 
++0template 4sand003 10 0template francelight003 13 0template Bdt001 7 
++0template Bdt001 12 0template megadirt002 7 0template 4sand001 11 
++0template megadirt002 14 0template Bdt001 13 0template 4sand001 3 
++0template megadirt002 8 0template 4sand002 7 
++0template easterhead3 10 0template megadirt001 5 
++0template 4sand001 14 0template easterhead3 5 0template sandrock003 11 
++0template 4sand001 12 0template sandrock002 7 0template 20bush_4sand002 11 
++0template sandrock002 10 0template 4sand003 13 0template 20bush_4sand001 7 
++0template 20bush_4sand001 14 0template sandrock005 1 
++0template 4sand002 14 0template 20bush_4sand002 13 0template sandrock004 3 
++0template redgranite002 14 0template sandrock003 5 0template 4granite002 11 
++0template redgranite001 12 0template 4granite002 3 
++0template redgranite001 8 0template 4granite002 7 
+redgranite002
+redgranite001
+redgranite003
++0template 4sand002 14 0template redgranite002 5 0template 4granite001 11 
++0template 4sand004 8 0template megadirt002 7 
++0template 4sand002 6 0template megadirt001 9 
++0template pyramid1 14 0template wheat001 13 0template 4sand003 3 
++0template pyramid1 12 0template 4sand004 3 
++0template wheat001 14 0template pyramid1 13 0template francelight001 11 0template 4sand003 7 
++0template francelight004 2 0template wheat002 13 
++0template inwall 14 0template francelight004 1 
++0template francelight002 2 0template inwall 13 
++0template Bdt001 14 0template francelight004 5 0template 4sand003 11 
++0template 4sand002 6 0template Bdt001 9 
++0template 1french003 14 0template 4sand004 5 0template Bdt001 11 
++0template megadirt002 14 0template 1french002 13 0template 4sand003 11 0template Bdt001 7 
++0template easterhead3 10 0template megadirt001 13 0template 4sand004 7 
++0template sandrock001 10 0template easterhead3 5 
++0template 20bush_4sand001 14 0template sandrock001 5 0template 20bush002 11 
++0template sandrock003 10 0template 20bush_4sand001 13 0template 20bush003 7 
++0template sandrock003 4 0template sphinx_body3 11 
++0template sandrock005 12 0template sphinx_body3 3 
++0template sandrock004 12 0template sphinx_body3 7 0template pyramid1 11 
++0template sandrock002 12 0template pyramid1 3 
++0template sandrock004 8 0template pyramid1 7 
++0template 4granite002 8 0template sandrock004 7 
++0template 4granite003 4 0template redgranite002 11 
++0template redgranite002 2 0template 4granite002 13 
++0template 4granite001 14 0template redgranite002 1 
++0template 4sand003 14 0template 4granite001 9 0template redgranite001 7 
++0template 4sand001 6 0template megadirt002 13 0template Bdt001 11 
++0template 6redcanyon001 10 0template 4sand004 13 0template megadirt001 7 
++0template 4sand003 2 0template wheat001 13 
++0template 4sand004 4 0template francelight003 11 
++0template 4sand001 14 0template francelight001 5 0template 1french003 11 
++0template Bdt001 10 0template 4sand001 13 0template 1french002 7 
++0template 4sand003 14 0template Bdt001 1 
++0template easterhead3 14 0template 4sand004 1 
++0template easterhead3 8 0template 4sand001 7 
++0template sandrock002 14 0template easterhead3 5 0template 4sand003 11 
++0template 20bush004 14 0template sandrock004 9 0template 4sand004 7 
++0template sphinx_body3 2 0template sandrock004 13 
+sphinx_body3
++0template pyramid1 14 0template sphinx_body3 1 
++0template pyramid1 8 0template sphinx_body3 7 
++0template sandrock001 14 0template pyramid1 5 0template sphinx_body3 11 
++0template sandrock004 8 0template sphinx_body3 7 
++0template 4granite001 14 0template sandrock001 5 0template 4sand004 11 
++0template redgranite002 10 0template 4granite002 13 0template 4sand001 7 
++0template redgranite003 4 0template 20bush_4sand001 11 
++0template redgranite002 8 0template 20bush_4sand001 7 
++0template redgranite001 12 0template 20bush_4sand001 7 0template 4granite003 11 
++0template 4granite001 8 0template redgranite002 7 
++0template 4sand004 12 0template 4granite001 7 0template wall2 11 
++0template wall2 4 0template 4sand001 11 
++0template 4sand002 2 0template wall2 13 
++0template Bdt001 10 0template 4sand002 13 0template megadirt001 7 
++0template megadirt002 14 0template Bdt001 1 
++0template 6redcanyon001 10 0template megadirt001 13 0template Bdt001 7 
++0template 6redcanyon002 4 0template Bdt001 11 
++0template 6redcanyon001 8 0template Bdt001 7 
++0template 1french003 10 0template francelight003 5 
++0template easterhead3 4 0template 4sand001 11 
++0template 4sand003 6 0template easterhead3 13 0template 20bush_4sand002 11 
++0template sandrock004 14 0template 4sand004 13 0template 20bush004 11 0template 20bush_4sand002 7 
++0template sandrock005 8 0template 20bush004 7 
++0template sphinx_body3 10 0template sandrock002 5 
++0template sphinx_body3 4 0template sand 11 
++0template sphinx_body3 8 0template sand 7 
++0template sphinx_body3 4 0template pyramid1 11 
++0template pyramid1 2 0template sphinx_body3 13 
++0template sphinx_body3 10 0template pyramid1 5 
++0template sphinx_body3 4 0template sandrock002 11 
++0template sandrock003 2 0template sphinx_body3 13 
++0template 4sand002 14 0template sandrock001 5 0template redgranite002 11 
++0template redgranite001 2 0template 4sand003 13 
++0template 20bush_4sand002 14 0template redgranite003 1 
++0template redgranite002 2 0template 20bush_4sand001 13 
++0template 4granite001 14 0template 20bush_4sand002 13 0template redgranite002 3 
++0template 4granite003 10 0template redgranite002 5 
++0template 4sand002 14 0template 4granite002 5 0template inwall 11 
++0template 4sand003 12 0template inwall 3 
++0template 4granite003 14 0template 4sand001 13 0template inwall 3 
++0template 4sand003 14 0template 4granite003 13 0template inwall 3 
++0template 4sand003 8 0template inwall 7 
++0template 4granite001 14 0template 4sand002 5 0template wall2 11 
++0template wall2 2 0template 4granite001 13 
++0template 4sand002 10 0template megadirt002 5 
++0template megadirt002 4 0template Bdt001 11 
++0template Bdt001 4 0template 6redcanyon002 11 
++0template 6redcanyon001 2 0template Bdt001 13 
++0template Bdt001 14 0template 6redcanyon002 1 
++0template francelight004 12 0template Bdt001 7 0template 1french001 11 
++0template 1french003 6 0template francelight001 13 0template 4sand001 11 
++0template megadirt001 14 0template 1french003 13 0template 4sand001 3 
++0template 4sand002 12 0template francelight003 3 
++0template 4sand003 8 0template francelight001 7 
++0template easterhead3 12 0template 4sand003 3 
++0template 4sand002 2 0template easterhead3 13 
++0template 20bush004 14 0template 20bush_4sand002 13 0template 4sand002 3 
++0template sandrock002 10 0template 20bush002 13 0template 4sand003 7 
++0template sand 14 0template sphinx_body3 5 0template pyramid1 11 
++0template sphinx_body3 14 0template sand 13 0template pyramid1 3 
++0template sand 14 0template sphinx_body3 13 0template pyramid1 3 
++0template sphinx_body3 14 0template pyramid1 1 
++0template sandrock004 10 0template sphinx_body3 13 0template pyramid1 7 
++0template redgranite002 14 0template sandrock002 5 0template 4sand004 11 
++0template redgranite002 8 0template 4sand004 7 
++0template redgranite002 4 0template 4granite001 11 
++0template 4granite001 6 0template redgranite001 13 0template inwall 11 
++0template inwall 2 0template 4granite002 13 
++0template wall2 10 0template 4sand001 13 0template inwall 7 
++0template megadirt002 10 0template 4sand004 5 
++0template Bdt001 10 0template megadirt001 13 0template 4sand003 7 
++0template 6redcanyon001 10 0template Bdt001 13 0template megadirt002 7 
++0template Bdt001 14 0template francelight003 13 0template 1french004 11 0template 4sand003 7 
++0template 1french002 6 0template Bdt001 13 0template 4sand002 11 
++0template sandrock002 10 0template 4sand001 13 0template 20bush004 7 
++0template pyramid1 10 0template sphinx_body3 5 
++0template pyramid1 4 0template sand 11 
++0template pyramid1 8 0template sand 7 
++0template pyramid1 4 0template sandrock001 11 
++0template sandrock003 2 0template pyramid1 13 
++0template redgranite003 10 0template 4sand003 13 0template 4granite002 7 
++0template 4granite003 6 0template redgranite003 9 
++0template inwall 10 0template 4granite003 13 0template redgranite003 7 
++0template wall2 10 0template inwall 5 
++0template 4sand003 14 0template megadirt001 1 
++0template Bdt001 14 0template 4sand001 5 0template megadirt001 11 
++0template megadirt002 6 0template Bdt001 13 0template 4sand002 11 
++0template megadirt002 12 0template 4sand002 7 0template Bdt001 11 
++0template francelight001 12 0template 4sand001 7 0template stonepath003 11 
++0template francelight003 12 0template stonepath002 7 0template 4sand003 11 
++0template francelight001 14 0template 4sand001 1 
++0template 20bush001 6 0template 4sand004 13 0template sandrock005 11 
++0template sand 14 0template pyramid1 1 
++0template pyramid1 2 0template sand 13 
++0template sandrock001 14 0template pyramid1 1 
++0template redgranite001 4 0template sphinx_body2 11 
++0template redgranite001 8 0template sphinx_body2 7 
++0template 4granite002 14 0template redgranite001 5 0template sphinx_body2 11 
++0template redgranite003 14 0template 4granite002 13 0template inwall 11 0template sphinx_body2 7 
++0template inwall 2 0template redgranite001 13 
++0template inwall 4 0template wall2 11 
++0template inwall 12 0template wall2 7 0template pyramid1 11 
++0template inwall 12 0template pyramid1 7 0template 4granite003 11 
++0template inwall 12 0template 4granite003 3 
++0template inwall 12 0template 4granite002 7 0template pyramid1 11 
++0template 4sand003 14 0template megadirt001 5 0template Bdt001 11 
++0template megadirt001 14 0template 4sand003 13 0template Bdt001 3 
++0template megadirt001 12 0template Bdt001 7 0template 4sand003 11 
++0template 4sand004 10 0template megadirt002 13 0template Bdt001 7 
++0template megadirt002 14 0template 4sand004 5 0template Bdt001 11 
++0template Bdt001 14 0template 4sand003 1 
++0template 6redcanyon002 10 0template Bdt001 13 0template 4sand003 7 
++0template 6redcanyon002 4 0template 4sand002 11 
++0template francelight002 4 0template sandstuff003 11 
++0template francelight001 8 0template sandstuff001 7 
++0template stonepath002 14 0template 4sand003 1 
++0template 4sand004 6 0template stonepath001 13 0template 1french003 11 
++0template 1french004 14 0template 4sand004 1 
++0template 4sand002 4 0template sandstuff001 11 
++0template 4sand004 12 0template sandstuff001 3 
++0template 4sand004 8 0template sandstuff001 7 
++0template 4sand003 14 0template francelight001 5 0template sandstuff004 11 
++0template sandrock004 14 0template 20bush001 13 0template 4sand002 3 
++0template sphinx_body3 14 0template sandrock003 5 0template 4sand003 11 
++0template sphinx_body3 12 0template 4sand001 7 0template redgranite002 11 
++0template pyramid1 14 0template sphinx_body3 13 0template redgranite003 3 
++0template pyramid1 12 0template redgranite003 3 
++0template pyramid1 8 0template redgranite002 7 
++0template pyramid1 4 0template redgranite003 11 
++0template sandrock002 10 0template pyramid1 13 0template redgranite003 7 
++0template redgranite002 12 0template 4sand001 7 0template 4granite003 11 
++0template sphinx_body2 10 0template redgranite001 13 0template 4granite003 7 
++0template redgranite002 14 0template sphinx_body2 1 
++0template sphinx_body2 2 0template redgranite001 13 
++0template sphinx_body2 6 0template redgranite002 13 0template inwall 11 
++0template inwall 2 0template sphinx_body2 13 
++0template wall2 2 0template inwall 13 
++0template pyramid1 14 0template wall2 5 0template 4granite002 11 
++0template 4granite002 2 0template pyramid1 13 
++0template 4granite001 4 0template pyramid1 11 
++0template 4granite003 12 0template pyramid1 3 
++0template pyramid1 2 0template 4granite002 13 
++0template inwall 14 0template pyramid1 5 0template 4sand003 11 
++0template wall2 10 0template inwall 13 0template 4sand001 7 
++0template megadirt002 10 0template 4sand004 13 0template Bdt001 7 
+megadirt002
++0template Bdt001 10 0template megadirt002 5 
++0template Bdt001 4 0template 4sand002 11 
++0template sandstuff002 10 0template francelight003 5 
++0template francelight002 14 0template sandstuff003 5 0template brownmud001 11 
++0template sandrock001 14 0template 4sand001 13 0template 4granite003 3 
++0template sandrock005 12 0template 4granite003 3 
++0template 4sand002 10 0template sandrock002 13 0template 4granite001 7 
++0template 4sand001 6 0template 4granite003 9 
++0template sandstuff003 10 0template 4sand003 13 0template 4granite002 7 
+sandstuff003
++0template 4sand002 14 0template sandstuff004 1 
++0template francelight001 14 0template 4sand004 9 0template sandstuff004 7 
++0template sandstuff003 10 0template francelight001 13 0template 4sand003 7 
++0template 4sand004 10 0template sandstuff003 5 
++0template sandrock004 10 0template 4sand001 5 
++0template redgranite002 14 0template 4sand001 13 0template sandrock003 3 
++0template redgranite001 12 0template sandrock002 3 
++0template redgranite002 8 0template sandrock005 7 
++0template pyramid1 14 0template redgranite002 1 
++0template redgranite002 14 0template pyramid1 1 
++0template sandrock001 10 0template redgranite002 13 0template pyramid1 7 
++0template 4granite003 10 0template 4sand003 5 
++0template 4granite002 4 0template sphinx_body2 11 
++0template sphinx_body2 2 0template 4granite003 13 
++0template sphinx_body2 4 0template redgranite001 11 
++0template sphinx_body2 8 0template redgranite001 7 
++0template sphinx_body2 4 0template inwall 11 
++0template 4granite002 14 0template wall2 1 
++0template 4granite001 8 0template wall2 7 
++0template pyramid1 14 0template 4granite003 5 0template 4sand004 11 
++0template pyramid1 8 0template 4sand004 7 
++0template 4sand001 10 0template pyramid1 5 
++0template wall2 12 0template 4sand003 3 
++0template 4sand004 6 0template wall2 13 0template 5graniteBrown002 11 
++0template 4sand004 8 0template 5graniteBrown001 7 
++0template Bdt001 14 0template 4sand002 13 0template megadirt002 3 
++0template megadirt002 6 0template Bdt001 9 
++0template Bdt001 14 0template megadirt002 13 0template 4sand002 3 
++0template 6redcanyon002 14 0template 4sand004 5 0template Bdt001 11 
++0template 6redcanyon002 4 0template 6redrockwall002 11 
++0template 6redcanyon002 8 0template 6redrockwall001 7 
++0template sandstuff001 14 0template francelight002 5 0template brownmud001 11 
++0template brownmud001 2 0template sandstuff004 13 
++0template 4sand003 12 0template 20bush_4sand002 3 
++0template 1french003 14 0template 4sand001 9 0template 20bush_4sand002 7 
++0template 4granite001 14 0template sandrock004 13 0template 4sand003 3 
++0template 4granite001 6 0template 4sand003 9 
++0template sandstuff004 10 0template 4granite003 13 0template 4sand004 7 
+sandstuff002
+sandstuff004
++0template sandstuff004 2 0template 4sand003 13 
++0template 4sand002 14 0template sandstuff002 5 0template sandrock002 11 
++0template 4sand002 12 0template sandrock004 7 0template sandstuff003 11 
++0template sandrock002 10 0template 4sand003 13 0template sandstuff001 7 
++0template redgranite001 14 0template sandrock004 1 
++0template redgranite002 12 0template sandrock005 7 0template pyramid1 11 
++0template pyramid1 2 0template redgranite003 13 
++0template 4granite002 6 0template 4sand001 13 0template sphinx_body2 11 
+sphinx_body2
++0template inwall 10 0template sphinx_body2 5 
++0template 4granite001 10 0template wall2 5 
++0template pyramid1 14 0template 4sand001 5 0template 5graniteBrown001 11 
++0template pyramid1 8 0template 5graniteBrown001 7 
++0template 5graniteBrown001 14 0template 4sand004 1 
++0template 4sand003 6 0template 5graniteBrown001 13 0template Bdt001 11 
++0template megadirt001 14 0template 4sand004 9 0template Bdt001 7 
++0template pyr-bdrt2 14 0template 4sand004 1 
++0template Bdt001 14 0template 4sand002 5 0template 6redcanyon002 11 
++0template 6redrockwall002 14 0template 6redcanyon002 5 0template Bdt001 11 
++0template 6redcanyon001 10 0template 6redrockwall001 13 0template Bdt001 7 
++0template brownmud001 14 0template francelight003 5 0template et_base 11 
++0template brownmud001 8 0template et_base 7 
++0template francelight004 4 0template france003 11 
++0template francelight001 12 0template france003 7 0template 4sand004 11 
++0template 4sand004 6 0template francelight001 13 0template 20bush_4sand002 11 
++0template 20bush_4sand002 10 0template 4sand004 13 0template 20bush001 7 
++0template 20bush_4sand002 4 0template 4sand001 11 
++0template sandstuff003 14 0template 4sand003 1 
++0template sandstuff001 12 0template 4sand001 3 
++0template sandstuff001 8 0template 4sand002 7 
+sandstuff001
++0template sandrock004 14 0template sandstuff003 1 
++0template sandstuff003 2 0template sandrock001 13 
++0template sandrock005 12 0template sandstuff003 3 
++0template sandrock001 8 0template sandstuff004 7 
++0template pyramid1 14 0template sandrock004 5 0template redgranite002 11 
++0template sandrock003 10 0template pyramid1 5 
++0template sphinx_body2 14 0template 4granite001 13 0template pyramid1 11 0template 4sand002 7 
++0template sphinx_body2 12 0template pyramid1 3 
++0template sphinx_body2 12 0template pyramid1 7 0template inwall 11 
++0template inwall 12 0template pyramid1 7 0template wall2 11 
++0template wall2 4 0template 4granite003 11 
++0template wall2 12 0template 4granite003 7 0template 4sand004 11 
++0template 4granite002 14 0template wall2 13 0template 4sand003 3 
++0template 4sand001 6 0template 4granite002 13 0template pyramid1 11 
++0template 5graniteBrown001 14 0template 4sand004 13 0template pyramid1 3 
++0template pyramid1 2 0template 5graniteBrown001 13 
++0template 4sand002 14 0template pyramid1 5 0template redgranite002 11 
++0template 4sand003 8 0template redgranite002 7 
++0template et_base 2 0template francelight004 13 
++0template brownmud001 10 0template et_base 5 
++0template france001 14 0template francelight003 13 0template 1french001 3 
++0template 4sand004 10 0template france001 13 0template 1french003 7 
++0template 20bush001 6 0template 20bush_4sand002 13 0template 1french004 11 
++0template 20bush_4sand002 14 0template 20bush002 9 0template 1french001 7 
++0template sandstuff001 10 0template 4sand001 5 
++0template sandrock005 10 0template sandstuff002 5 
++0template redgranite001 10 0template sandrock005 5 
++0template pyramid1 10 0template redgranite001 5 
++0template sandrock001 14 0template pyramid1 5 0template 4sand002 11 
++0template sandrock002 12 0template 4sand003 7 0template pyramid1 11 
++0template pyramid1 10 0template 4sand002 13 0template 4granite003 7 
++0template pyramid1 4 0template inwall 11 
++0template wall2 14 0template pyramid1 5 0template sphinx_body2 11 
++0template wall2 8 0template sphinx_body2 7 
++0template 4granite001 14 0template wall2 5 0template redgranite003 11 
++0template 4sand002 12 0template 4granite002 7 0template redgranite001 11 
++0template pyramid1 14 0template 4sand004 9 0template redgranite002 7 
++0template redgranite003 14 0template pyramid1 5 0template 4sand004 11 
++0template 4sand003 2 0template redgranite002 13 
++0template Bdt001 14 0template 4sand004 5 0template 5graniteBrown001 11 
++0template megadirt002 14 0template Bdt001 13 0template 4sand002 11 0template 5graniteBrown002 7 
++0template 6redrockwall002 14 0template 6redcanyon001 1 
++0template 6redcanyon002 2 0template 6redrockwall002 13 
++0template 1french004 4 0template 4sand004 11 
++0template 1french001 14 0template 20bush003 9 0template 4sand001 7 
++0template 20bush001 2 0template 1french001 13 
++0template 4sand004 10 0template 20bush003 5 
++0template 20bush004 14 0template 4sand003 13 0template sandstuff001 3 
++0template 4sand002 14 0template 20bush004 9 0template sandstuff002 7 
++0template sandstuff004 14 0template 4sand003 9 0template 20bush004 7 
++0template sandstuff001 4 0template sandrock002 11 
++0template sandrock002 2 0template sandstuff004 13 
++0template 4sand004 14 0template pyramid1 5 0template sandrock004 11 
++0template pyramid1 10 0template 4sand003 13 0template sandrock002 7 
++0template 4granite002 14 0template sandrock002 5 0template pyramid1 11 
++0template pyramid1 6 0template inwall 13 0template sphinx_body2 11 
++0template sphinx_body2 2 0template pyramid1 13 
++0template wall2 14 0template sphinx_body2 1 
++0template redgranite003 10 0template wall2 13 0template sphinx_body2 7 
+4granite002
++0template redgranite001 14 0template 4granite003 5 0template 4sand003 11 
++0template 4sand001 6 0template redgranite003 9 
++0template pyramid1 10 0template 4sand002 13 0template redgranite001 7 
++0template 5graniteBrown001 14 0template 4sand001 5 0template Bdt001 11 
++0template 4sand001 10 0template 5graniteBrown001 13 0template Bdt001 7 
++0template 4sand004 4 0template pyramid_diag1 11 
++0template 4sand001 8 0template pyramid_diag1 7 
++0template francelight004 12 0template 4sand004 7 0template 1french002 11 
++0template 4sand001 6 0template 1french004 9 
++0template 20bush003 10 0template 4sand004 5 
+20bush004
++0template 4sand004 14 0template 20bush004 5 0template 20bush_4sand002 11 
++0template 4granite001 8 0template 4sand003 7 
++0template sandstuff002 14 0template 4sand001 5 0template 20bush002 11 
++0template sandstuff003 8 0template 20bush002 7 
++0template 20bush001 14 0template sandstuff002 5 0template 4sand002 11 
++0template sandstuff001 4 0template 4sand004 11 
++0template sandrock004 10 0template sandstuff001 13 0template 4sand001 7 
++0template pyramid1 14 0template redgranite001 13 0template sandrock005 3 
++0template pyramid1 8 0template sandrock003 7 
++0template pyramid1 2 0template sandrock004 13 
++0template pyramid1 14 0template inwall 13 0template wall2 3 
++0template sphinx_body2 14 0template pyramid1 13 0template wall2 3 
++0template sphinx_body2 8 0template wall2 7 
++0template redgranite001 2 0template sphinx_body2 13 
++0template 4granite002 14 0template redgranite002 5 0template 4sand004 11 
++0template 4granite002 12 0template 4sand001 7 0template redgranite003 11 
++0template Bdt001 10 0template 4sand002 5 
++0template Bdt001 12 0template 4sand003 3 
++0template Bdt001 8 0template 4sand001 7 
++0template 4sand004 10 0template Bdt001 5 
++0template 4sand002 4 0template pyr-bdrt4 11 
++0template pyramid_diag4 6 0template 4sand001 9 
++0template 4sand004 2 0template pyramid_diag4 13 
++0template 4sand004 6 0template francelight002 13 0template 1french001 11 
++0template 1french003 6 0template 4sand003 9 
++0template 4sand003 12 0template 1french001 3 
++0template 1french001 2 0template 4sand002 13 
++0template 20bush002 4 0template 4sand002 11 
++0template 20bush_4sand001 14 0template 20bush002 9 0template 4sand002 7 
++0template 4granite002 4 0template 4sand001 11 
++0template sandstuff002 14 0template 20bush001 1 
++0template 4sand002 14 0template sandstuff002 9 0template 20bush004 7 
++0template 4sand002 6 0template sandstuff002 9 
++0template pyramid1 14 0template sandrock004 1 
++0template inwall 10 0template pyramid1 5 
++0template wall2 14 0template inwall 13 0template pyramid1 3 
++0template wall2 8 0template pyramid1 7 
++0template sphinx_body2 14 0template wall2 1 
++0template redgranite001 10 0template sphinx_body2 13 0template wall2 7 
++0template 4sand004 14 0template redgranite003 1 
++0template megadirt001 14 0template Bdt001 9 0template 4sand002 7 
++0template 4sand003 14 0template Bdt001 5 0template megadirt001 11 
++0template Bdt001 2 0template 4sand004 13 
++0template 4sand002 10 0template pyr-bdrt4 5 
++0template francelight001 6 0template brownmud001 13 0template 4sand003 11 
++0template 4granite002 14 0template 4sand003 9 0template 20bush002 7 
++0template 4granite001 12 0template 4sand003 7 0template 20bush002 11 
++0template 4sand002 14 0template 4granite001 13 0template 20bush003 3 
++0template 4sand001 12 0template 20bush004 7 0template sandstuff004 11 
++0template 20bush004 12 0template sandstuff004 3 
++0template sandstuff003 2 0template 20bush003 13 
++0template pyramid1 12 0template wall2 7 0template redgranite002 11 
++0template wall2 14 0template pyramid1 13 0template 4sand001 11 0template redgranite001 7 
++0template redgranite002 10 0template wall2 5 
++0template redgranite002 4 0template pyramid1 11 
++0template redgranite003 8 0template pyramid1 7 
++0template megadirt001 2 0template Bdt001 13 
++0template 4sand003 4 0template 2rough002 11 
++0template brownmud001 14 0template et_base 1 
++0template 4sand002 10 0template francelight002 13 0template stonepath003 7 
++0template 20bush002 14 0template 4sand002 5 0template 20bush_4sand001 11 
++0template 4sand003 14 0template 20bush004 9 0template 20bush_4sand001 7 
++0template sandstuff003 14 0template 20bush004 13 0template 4sand002 3 
++0template sandstuff002 12 0template 4sand002 7 0template 20bush001 11 
++0template sandstuff003 12 0template 4sand002 7 0template sandrock001 11 
++0template sandrock003 4 0template 4sand001 11 
++0template sandrock003 4 0template redgranite001 11 
++0template sandrock004 8 0template redgranite001 7 
++0template pyramid1 10 0template sandrock001 5 
++0template wall2 12 0template pyramid1 3 
++0template redgranite001 14 0template wall2 13 0template pyramid1 3 
++0template 4sand001 14 0template redgranite001 13 0template pyramid1 3 
++0template wall2 14 0template 4sand004 13 0template pyramid1 3 
++0template redgranite001 12 0template pyramid1 3 
++0template 4sand002 14 0template pyramid1 1 
++0template 4sand003 12 0template pyramid1 3 
++0template megadirt002 14 0template 4sand002 13 0template pyramid1 3 
++0template megadirt001 12 0template pyramid1 3 
++0template megadirt001 12 0template pyramid1 7 0template 4sand004 11 
++0template megadirt002 12 0template 4sand004 7 0template 6redcanyon001 11 
++0template 4sand002 10 0template megadirt001 13 0template 6redcanyon001 7 
++0template 6redcanyon001 12 0template 4sand002 7 0template 2rough002 11 
++0template 4sand002 14 0template 6redcanyon001 13 0template 2rough002 3 
++0template 2rough001 2 0template 4sand002 13 
++0template stonepath003 14 0template 4sand002 5 0template 1french001 11 
++0template 4sand002 14 0template stonepath003 13 0template 1french002 3 
++0template 20bush001 14 0template 20bush_4sand002 9 0template 4sand002 7 
++0template 20bush001 12 0template 20bush_4sand002 3 
++0template 20bush002 14 0template 4sand001 5 0template sandstuff003 11 
++0template sandrock001 14 0template 4sand002 5 0template canyon002 11 
++0template sandrock005 8 0template canyon003 7 
++0template sandrock001 14 0template redgranite003 1 
++0template sandrock002 12 0template redgranite003 3 
++0template pyramid1 10 0template sandrock005 13 0template redgranite003 7 
++0template inwall 10 0template pyramid1 13 0template sandrock002 7 
++0template megadirt001 14 0template Bdt001 5 0template 4sand004 11 
++0template 4sand002 14 0template 6redcanyon002 9 0template Bdt001 7 
++0template 2rough001 14 0template 4sand002 1 
++0template 2rough001 8 0template 4sand003 7 
++0template 2rough002 4 0template 4sand003 11 
++0template et_base 12 0template sandstuff003 3 
++0template brownmud001 10 0template et_base 13 0template sandstuff004 7 
++0template francelight003 6 0template brownmud001 13 0template 20bush002 11 
++0template francelight004 12 0template 20bush002 7 0template 4sand004 11 
++0template 4sand001 6 0template 1french003 13 0template pyramid1 11 
++0template 20bush_4sand001 14 0template 4sand001 9 0template francelight002 7 
++0template 20bush_4sand001 8 0template 4sand004 7 
++0template 20bush002 14 0template 20bush_4sand002 5 0template 4sand001 11 
++0template 4sand001 6 0template 20bush004 13 0template sandstuff002 11 
++0template 4sand001 2 0template sandstuff002 13 
++0template canyon003 10 0template 4sand003 5 
++0template sandrock001 10 0template canyon001 5 
++0template pyramid1 6 0template redgranite001 13 0template sandrock004 11 
++0template inwall 10 0template sandrock003 5 
++0template pyramid1 14 0template inwall 5 0template wall2 11 
++0template pyramid1 12 0template wall2 3 
++0template 4sand004 10 0template Bdt001 13 0template 6redcanyon002 7 
++0template 6redcanyon001 14 0template Bdt001 9 0template 4sand003 7 
++0template 4sand002 10 0template 6redcanyon001 13 0template Bdt001 7 
++0template 4sand004 2 0template 2rough001 13 
++0template brownmud001 14 0template sandstuff004 5 0template francelight003 11 
++0template 20bush002 6 0template francelight002 13 0template 1french001 11 
++0template 4sand002 14 0template 20bush004 9 0template 1french004 7 
++0template 1french004 10 0template 4sand004 13 0template 20bush004 7 
++0template pyramid1 2 0template 4sand001 13 
++0template 4sand003 12 0template pyramid1 7 0template francelight002 11 
++0template sandstuff002 12 0template 4sand001 7 0template 4granite001 11 
++0template 4sand004 10 0template sandstuff004 13 0template 4granite001 7 
++0template pyramid1 10 0template redgranite002 13 0template sandrock003 7 
++0template sandrock001 6 0template pyramid1 9 
++0template inwall 10 0template sandrock001 13 0template pyramid1 7 
++0template wall2 14 0template inwall 5 0template pyramid1 11 
++0template pyramid1 14 0template wall2 1 
++0template 6redcanyon002 14 0template Bdt001 5 0template 4sand004 11 
++0template Bdt001 14 0template 6redcanyon001 5 0template 4sand003 11 
++0template 6redcanyon001 14 0template Bdt001 13 0template megadirt002 11 0template 4sand002 7 
++0template 6redcanyon001 8 0template megadirt001 7 
++0template sandstuff001 4 0template francelight001 11 
++0template francelight004 2 0template sandstuff001 13 
++0template 20bush002 14 0template francelight004 13 0template 1french004 3 
++0template 1french004 6 0template 20bush002 13 0template 20bush_4sand002 11 
++0template 20bush001 14 0template 1french004 9 0template 20bush_4sand002 7 
++0template 4sand002 10 0template 1french003 13 0template 20bush_4sand002 7 
++0template pyramid1 10 0template 4sand002 5 
++0template francelight004 14 0template pyramid1 1 
++0template francelight002 12 0template pyramid1 7 0template 4sand002 11 
++0template francelight003 8 0template 4sand003 7 
++0template 4sand001 14 0template francelight003 1 
++0template sandstuff003 14 0template 4sand001 5 0template 4granite002 11 
++0template sandstuff003 8 0template 4granite003 7 
++0template 4granite003 14 0template 4sand002 5 0template sandstuff003 11 
++0template 4sand003 10 0template 4granite002 13 0template sandstuff004 7 
++0template 4sand004 4 0template canyon001 11 
++0template canyon001 2 0template 4sand004 13 
++0template sandrock004 4 0template pyramid1 11 
++0template pyramid1 6 0template sandrock002 13 0template redgranite002 11 
++0template inwall 10 0template pyramid1 13 0template redgranite001 7 
++0template pyramid1 14 0template wall2 5 0template megadirt002 11 
++0template pyramid1 8 0template megadirt002 7 
++0template 6redcanyon001 14 0template 4sand001 13 0template Bdt001 3 
++0template 4sand001 14 0template 6redcanyon002 13 0template Bdt001 3 
++0template megadirt002 6 0template 4sand004 13 0template 6redcanyon001 11 
++0template megadirt002 8 0template 6redcanyon001 7 
++0template 4sand004 14 0template 6redcanyon002 5 0template Bdt001 11 
++0template megadirt002 14 0template 4sand004 13 0template 6redcanyon002 11 0template Bdt001 7 
++0template 6redcanyon002 6 0template megadirt002 13 0template 4sand003 11 
++0template francelight003 10 0template sandstuff003 5 
++0template francelight001 4 0template 20bush_4sand001 11 
++0template 1french004 10 0template francelight002 13 0template 20bush_4sand002 7 
++0template 1french003 4 0template stonepath003 11 
++0template 20bush_4sand002 14 0template 1french003 9 0template stonepath002 7 
++0template 1french004 6 0template 20bush_4sand001 13 0template stonepath002 11 
++0template 20bush_4sand002 14 0template 1french001 13 0template 4sand001 11 0template stonepath001 7 
++0template francelight003 4 0template ceiling 11 
++0template francelight003 12 0template ceiling 3 
++0template francelight002 8 0template ceiling 7 
++0template sandstuff001 14 0template 4granite003 13 0template 4sand003 3 
++0template sandstuff002 6 0template 4sand003 9 
++0template 4sand003 6 0template sandstuff002 13 0template canyon002 11 
+canyon003
++0template pyramid1 12 0template sandrock002 3 
++0template sandrock002 6 0template pyramid1 13 0template redgranite002 11 
++0template redgranite002 14 0template pyramid1 5 0template wall2 11 
++0template inwall 10 0template redgranite002 13 0template wall2 7 
++0template megadirt001 14 0template wall2 13 0template pyramid1 3 
++0template pyramid1 2 0template megadirt002 13 
++0template 4sand001 14 0template pyramid1 5 0template Bdt001 11 
++0template 4sand004 14 0template Bdt001 13 0template megadirt001 11 0template 6redcanyon002 7 
++0template 6redcanyon001 14 0template megadirt001 13 0template 4sand003 3 
++0template megadirt002 14 0template 6redcanyon001 9 0template 4sand002 7 
++0template Bdt001 14 0template 6redcanyon001 9 0template 4sand003 7 
++0template 20bush_4sand002 6 0template francelight002 13 0template 1french003 11 
++0template stonepath002 2 0template 1french004 13 
++0template 1french004 14 0template stonepath003 1 
++0template 4sand004 10 0template stonepath003 5 
++0template pyramid1 12 0template sandrock002 7 0template 4sand002 11 
++0template 4sand003 6 0template pyramid1 13 0template sandrock003 11 
++0template ceiling 10 0template francelight004 13 0template 4sand002 7 
+ceiling
++0template francelight002 14 0template ceiling 1 
++0template 4sand004 14 0template francelight003 13 0template ceiling 3 
++0template 4sand003 8 0template ceiling 7 
++0template canyon002 10 0template 4sand002 13 0template sandstuff003 7 
+canyon002
++0template 4sand003 14 0template sandrock002 5 0template pyramid1 11 
++0template sandrock003 14 0template 4sand004 13 0template pyramid1 3 
++0template inwall 10 0template wall2 5 
++0template Bdt001 14 0template pyramid1 5 0template megadirt002 11 
++0template 4sand001 14 0template Bdt001 13 0template megadirt002 3 
++0template megadirt002 6 0template 6redcanyon001 13 0template 4sand001 11 
++0template francelight001 14 0template sandstuff001 13 0template 4sand002 3 
++0template 20bush_4sand002 10 0template francelight002 13 0template 4sand003 7 
++0template 1french003 14 0template 20bush_4sand002 1 
++0template stonepath001 14 0template 1french003 9 0template 20bush_4sand001 7 
++0template stonepath003 8 0template 1french002 7 
+stonepath003
+stonepath001
++0template sandrock004 4 0template inwall 11 
++0template 4sand004 10 0template sandrock002 13 0template inwall 7 
++0template ceiling 14 0template 4sand001 13 0template pyramid1 3 
++0template ceiling 12 0template pyramid1 3 
++0template ceiling 8 0template pyramid1 7 
++0template 4sand004 10 0template ceiling 5 
++0template canyon002 10 0template sandstuff002 5 
+canyon001
++0template wall2 14 0template pyramid1 13 0template sandrock002 11 0template redgranite003 7 
++0template inwall 10 0template wall2 13 0template sandrock001 7 
++0template wall2 4 0template sphinx_body2 11 
++0template wall2 12 0template sphinx_body2 3 
++0template pyramid1 14 0template wall2 13 0template mural1 11 0template sphinx_body2 7 
++0template pyramid1 8 0template mural1 7 
++0template megadirt001 10 0template pyramid1 5 
++0template Bdt001 12 0template 4sand001 7 0template megadirt001 11 
++0template 20bush_4sand002 14 0template 4sand001 5 0template stonepath001 11 
++0template 20bush_4sand002 12 0template stonepath002 3 
++0template 1french004 14 0template 20bush_4sand002 13 0template stonepath002 3 
+stonepath002
++0template sandrock001 6 0template 4sand002 9 
++0template sandrock005 12 0template 4sand002 7 0template inwall 11 
++0template inwall 2 0template sandrock005 13 
++0template 4sand002 10 0template inwall 5 
++0template ceiling 10 0template pyramid1 5 
++0template 4sand003 14 0template ceiling 1 
++0template 4sand004 12 0template francelight001 7 0template sandstuff001 11 
++0template canyon001 4 0template pyramid1 11 
++0template sandrock002 10 0template canyon001 13 0template pyramid1 7 
++0template sandrock005 14 0template pyramid1 5 0template sand 11 
++0template sandrock004 12 0template sand 3 
++0template sandrock001 12 0template sand 7 0template redgranite002 11 
++0template redgranite003 6 0template sandrock002 9 
++0template sandrock002 2 0template redgranite001 13 
++0template pyramid1 14 0template inwall 5 0template 2rough001 11 
++0template pyramid1 8 0template 2rough001 7 
++0template wall2 14 0template pyramid1 5 0template mural1 11 
++0template sphinx_body2 14 0template wall2 13 0template mural1 3 
++0template wall2 14 0template sphinx_body2 13 0template mural1 3 
++0template sphinx_body2 12 0template mural1 3 
++0template mural1 2 0template sphinx_body2 13 
++0template pyramid1 14 0template mural1 5 0template wall2 11 
++0template megadirt001 14 0template pyramid1 5 0template Bdt001 11 
++0template 4sand003 14 0template megadirt002 13 0template Bdt001 3 
++0template stonepath002 10 0template 4sand003 5 
++0template 4sand002 14 0template sandrock005 13 0template pyramid1 3 
++0template inwall 10 0template 4sand001 13 0template pyramid1 7 
++0template pyramid1 14 0template 4sand003 9 0template inwall 7 
++0template pyramid1 10 0template canyon001 5 
++0template pyramid1 12 0template sandrock002 7 0template sand 11 
++0template sand 10 0template pyramid1 5 
+sand
++0template redgranite002 14 0template sand 5 0template sphinx_body3 11 
++0template sandrock001 10 0template redgranite003 13 0template sphinx_body3 7 
++0template 2rough002 14 0template inwall 5 0template pyramid1 11 
++0template pyramid1 2 0template 2rough001 13 
++0template mural1 10 0template pyramid1 5 
+mural1
++0template mural1 4 0template egypttower 11 
++0template mural1 12 0template egypttower 3 
++0template mural1 12 0template egypttower 7 0template mural3 11 
++0template wall2 14 0template mural1 13 0template sphinx_body2 11 0template mural3 7 
++0template Bdt001 10 0template pyramid1 5 
++0template Bdt001 4 0template pyramid1 11 
++0template 4sand004 14 0template Bdt001 9 0template pyramid1 7 
++0template Bdt001 10 0template 6redcanyon002 5 
++0template stonepath003 4 0template 4sand002 11 
++0template stonepath003 8 0template 4sand003 7 
++0template 4sand002 2 0template stonepath001 13 
++0template pyramid1 4 0template ceiling 11 
++0template ceiling 2 0template pyramid1 13 
++0template francelight003 14 0template 4sand001 5 0template sandstuff001 11 
++0template sandstuff001 2 0template francelight001 13 
++0template sandstuff004 4 0template canyon003 11 
++0template canyon003 2 0template sandstuff003 13 
++0template pyramid1 14 0template canyon001 1 
++0template pyramid1 8 0template canyon001 7 
++0template sand 14 0template sandrock003 13 0template pyramid1 3 
++0template sand 12 0template pyramid1 3 
++0template sandrock001 14 0template sphinx_body3 9 0template pyramid1 7 
++0template sandrock001 12 0template sphinx_body3 7 0template wall2 11 
++0template inwall 10 0template sandrock002 13 0template wall2 7 
++0template egypttower 10 0template mural1 5 
+egypttower
++0template mural3 10 0template egypttower 5 
++0template sphinx_body2 10 0template mural3 5 
++0template wall2 10 0template sphinx_body2 5 
++0template pyramid1 14 0template Bdt001 5 0template 4sand001 11 
++0template Bdt001 10 0template pyramid1 13 0template 4sand003 7 
++0template Bdt001 14 0template 6redcanyon001 13 0template 4sand002 3 
++0template 4sand004 4 0template stonepath002 11 
++0template stonepath002 2 0template 4sand003 13 
++0template 4sand004 14 0template stonepath001 1 
++0template stonepath001 6 0template 4sand003 9 
++0template 4sand002 6 0template stonepath002 9 
++0template 4sand004 8 0template stonepath003 7 
++0template pyramid1 6 0template 4sand001 9 
++0template inwall 14 0template pyramid1 13 0template 4sand001 3 
++0template inwall 8 0template 4sand002 7 
++0template pyramid1 14 0template 4sand002 5 0template ceiling 11 
++0template pyramid1 12 0template ceiling 3 
++0template ceiling 4 0template inwall 11 
++0template ceiling 12 0template inwall 3 
++0template 4sand001 14 0template ceiling 13 0template inwall 3 
++0template sandstuff001 14 0template 4sand004 13 0template inwall 3 
++0template sandstuff001 12 0template inwall 3 
++0template sandstuff002 8 0template inwall 7 
++0template pyramid1 12 0template sand 7 0template sphinx_body3 11 
++0template wall2 10 0template sphinx_body3 5 
++0template sphinx_body2 14 0template mural3 1 
++0template wall2 10 0template sphinx_body2 13 0template mural3 7 
++0template wall2 4 0template pyramid1 11 
++0template 4sand001 14 0template Bdt001 5 0template pyramid1 11 
++0template Bdt001 10 0template 4sand004 13 0template pyramid1 7 
++0template 4sand003 6 0template pyramid1 13 0template archway 11 
++0template 4sand004 8 0template archway 7 
++0template 4sand003 4 0template inwall 11 
++0template ceiling 14 0template 4sand003 13 0template inwall 3 
++0template ceiling 8 0template inwall 7 
++0template inwall 2 0template ceiling 13 
++0template sandstuff003 14 0template inwall 1 
++0template pyramid1 12 0template sandrock002 7 0template inwall 11 
++0template pyramid1 8 0template inwall 7 
++0template sand 10 0template pyramid1 13 0template sandrock005 7 
++0template sphinx_body3 14 0template sand 1 
++0template pyramid1 14 0template sphinx_body3 13 0template archway 11 0template sand 7 
++0template pyramid1 12 0template archway 3 
++0template sphinx_body3 10 0template pyramid1 13 0template archway 7 
++0template pyramid1 4 0template megadirt001 11 
++0template egypttower 14 0template mural1 1 
++0template egypttower 12 0template mural1 7 0template wall2 11 
++0template egypttower 12 0template wall2 3 
++0template mural3 14 0template egypttower 13 0template mural1 11 0template wall2 7 
++0template mural3 12 0template mural1 7 0template wall2 11 
++0template wall2 2 0template mural3 13 
++0template pyramid1 14 0template Bdt001 1 
++0template Bdt001 2 0template pyramid1 13 
++0template 4sand002 4 0template pyramid_diag3 11 
++0template 6redcanyon002 14 0template 4sand002 9 0template pyramid_diag3 7 
++0template 4sand002 12 0template stonepath003 3 
++0template stonepath003 12 0template 4sand003 3 
++0template 4sand003 4 0template archway 11 
++0template archway 6 0template 4sand002 9 
++0template 4sand004 2 0template archway 13 
++0template ceiling 14 0template inwall 1 
++0template inwall 12 0template 4sand003 3 
++0template inwall 12 0template 4sand003 7 0template francelight002 11 
++0template inwall 8 0template francelight003 7 
++0template sandstuff003 14 0template inwall 5 0template 4sand001 11 
++0template sandrock004 14 0template pyramid1 5 0template inwall 11 
++0template inwall 2 0template sandrock004 13 
++0template pyramid1 14 0template inwall 5 0template sandrock002 11 
++0template sand 14 0template sandrock003 5 0template sphinx_body3 11 
++0template sand 12 0template sphinx_body3 7 0template archway 11 
++0template archway 2 0template sand 13 
+archway
++0template sphinx_body3 10 0template archway 5 
++0template megadirt002 14 0template pyramid1 1 
++0template mural1 4 0template mural2 11 
++0template wall2 14 0template mural1 9 0template mural2 7 
++0template wall2 12 0template mural1 7 0template sphinx_body2 11 
++0template mural1 14 0template wall2 13 0template sphinx_body2 3 
++0template wall2 10 0template mural1 13 0template sphinx_body2 7 
++0template Bdt001 8 0template pyramid1 7 
+megadirt001
++0template pyramid_diag3 6 0template 4sand002 13 0template 6redcanyon001 11 
++0template 4sand004 14 0template landpyr_sandB 13 0template 6redcanyon001 3 
++0template archway 14 0template 4sand004 1 
++0template inwall 14 0template sandstuff003 13 0template 4sand003 3 
++0template inwall 4 0template ceiling 11 
++0template inwall 12 0template ceiling 3 
++0template 4sand001 14 0template inwall 13 0template ceiling 3 
++0template 4sand002 12 0template ceiling 7 0template francelight002 11 
++0template inwall 14 0template francelight003 5 0template 4sand001 11 
++0template sandstuff004 10 0template 4sand002 13 0template inwall 7 
++0template canyon002 4 0template sandrock002 11 
++0template pyramid1 10 0template canyon002 13 0template sandrock005 7 
++0template pyramid1 4 0template inwall 11 
++0template inwall 2 0template pyramid1 13 
++0template sandrock002 10 0template inwall 5 
++0template archway 10 0template sphinx_body3 5 
++0template wall2 14 0template sphinx_body3 5 0template pyramid1 11 
++0template mural1 14 0template pyramid1 1 
++0template mural1 12 0template pyramid1 7 0template sphinx_body2 11 
++0template mural2 14 0template mural1 13 0template sphinx_body2 3 
++0template mural1 14 0template mural2 13 0template sphinx_body2 3 
++0template sphinx_body2 6 0template mural1 13 0template wall2 11 
++0template sphinx_body2 12 0template wall2 3 
++0template wall2 2 0template sphinx_body2 13 
++0template pyramid_diag3 14 0template 4sand001 1 
++0template 6redcanyon001 10 0template landpyr_sandB 13 0template 4sand004 7 
++0template inwall 14 0template 4sand003 5 0template ceiling 11 
++0template 4sand004 10 0template inwall 13 0template ceiling 7 
++0template inwall 10 0template 4sand002 5 
++0template ceiling 2 0template inwall 13 
++0template ceiling 4 0template francelight003 11 
++0template ceiling 8 0template francelight002 7 
++0template francelight003 10 0template ceiling 5 
++0template 4sand001 14 0template francelight004 13 0template sandstuff003 3 
++0template sandstuff002 10 0template inwall 5 
++0template canyon002 14 0template sandstuff001 5 0template sandrock004 11 
++0template canyon003 8 0template sandrock001 7 
++0template sandrock004 14 0template inwall 5 0template sand 11 
++0template sandrock002 8 0template sand 7 
++0template archway 4 0template pyramid1 11 
++0template sphinx_body3 14 0template archway 13 0template pyramid1 3 
++0template Bdt001 14 0template pyramid1 1 
++0template 4sand003 10 0template Bdt001 13 0template pyramid1 7 
++0template 4sand002 12 0template pyramid1 7 0template sandstuff003 11 
++0template ceiling 14 0template 4sand004 9 0template sandstuff004 7 
++0template 4sand004 2 0template ceiling 13 
++0template ceiling 14 0template francelight001 5 0template sandstuff004 11 
++0template francelight002 14 0template ceiling 13 0template sandstuff004 3 
++0template inwall 14 0template sandstuff002 1 
++0template inwall 8 0template sandstuff001 7 
++0template sandrock005 10 0template sandstuff001 13 0template inwall 7 
++0template canyon001 14 0template sandrock003 1 
++0template sandrock005 14 0template canyon001 5 0template 4sand004 11 
++0template inwall 10 0template pyramid1 13 0template sandrock001 7 
++0template inwall 4 0template pyramid1 11 
++0template inwall 12 0template pyramid1 7 0template sandrock001 11 
++0template inwall 12 0template sandrock004 7 0template sand 11 
++0template sand 6 0template inwall 13 0template sandrock001 11 
++0template sandrock002 6 0template sand 13 0template 4sand004 11 
++0template sphinx_body3 14 0template sandrock005 9 0template 4sand002 7 
++0template archway 14 0template sphinx_body3 13 0template 4sand002 11 0template sandrock002 7 
++0template archway 12 0template 4sand002 3 
++0template archway 12 0template 4sand002 7 0template pyramid1 11 
++0template pyramid1 2 0template archway 13 
++0template pyramid1 6 0template wall2 13 0template inwall 11 
++0template 4sand004 14 0template pyramid1 5 0template megadirt002 11 
++0template 20bush_4sand002 14 0template 4sand003 13 0template 20bush001 11 0template stonepath002 7 
++0template 20bush002 6 0template 4sand001 13 0template 20bush_4sand001 11 
++0template 4sand001 14 0template 20bush002 13 0template 20bush_4sand002 3 
++0template archway 14 0template 4sand004 9 0template 20bush_4sand002 7 
++0template 4sand001 6 0template archway 13 0template 20bush_4sand001 11 
++0template sandstuff002 14 0template pyramid1 1 
++0template 4sand004 14 0template sandstuff003 13 0template pyramid1 3 
++0template 4sand003 12 0template pyramid1 7 0template ceiling 11 
++0template inwall 10 0template 4sand004 13 0template ceiling 7 
++0template ceiling 10 0template inwall 5 
++0template ceiling 4 0template sandstuff004 11 
++0template ceiling 12 0template sandstuff004 7 0template francelight003 11 
++0template francelight004 6 0template ceiling 13 0template 4sand001 11 
++0template sandrock001 14 0template inwall 5 0template canyon003 11 
++0template sandrock001 12 0template canyon003 3 
++0template canyon003 2 0template sandrock004 13 
++0template 4sand001 10 0template canyon003 5 
++0template sandrock003 4 0template inwall 11 
++0template sand 10 0template sandrock001 5 
++0template sandrock002 10 0template sand 5 
++0template pyramid1 14 0template 4sand003 13 0template wall2 11 0template sandrock001 7 
++0template inwall 14 0template pyramid1 9 0template wall2 7 
++0template megadirt002 14 0template pyramid1 5 0template 4sand004 11 
++0template stonepath002 4 0template 20bush004 11 
++0template 20bush001 6 0template stonepath002 13 0template 20bush_4sand001 11 
++0template 20bush_4sand002 6 0template 20bush001 13 0template archway 11 
++0template 20bush_4sand001 12 0template archway 3 
++0template 4sand004 14 0template 20bush_4sand001 13 0template archway 3 
++0template 20bush_4sand001 14 0template 4sand003 13 0template archway 3 
++0template 4sand001 12 0template archway 3 
++0template 4sand002 12 0template sandstuff003 7 0template pyramid1 11 
++0template inwall 10 0template ceiling 5 
++0template sandstuff003 14 0template ceiling 1 
++0template francelight001 14 0template sandstuff003 13 0template 4sand002 11 0template ceiling 7 
++0template 4sand003 6 0template francelight001 13 0template sandstuff002 11 
++0template inwall 12 0template sandstuff003 7 0template 4sand002 11 
++0template canyon001 14 0template inwall 1 
++0template canyon002 12 0template inwall 3 
++0template 4sand001 10 0template canyon002 13 0template inwall 7 
++0template sandrock001 6 0template 4sand003 13 0template inwall 11 
++0template inwall 4 0template sandrock005 11 
++0template sandrock005 2 0template inwall 13 
++0template sandrock001 14 0template sand 5 0template 4sand002 11 
++0template sandrock004 4 0template 2rough002 11 
++0template sandrock003 12 0template 2rough002 3 
++0template wall2 10 0template sandrock003 13 0template 2rough001 7 
++0template 4sand004 8 0template landpyr_sandA 7 
++0template 20bush002 10 0template stonepath002 5 
++0template 20bush_4sand002 14 0template 20bush002 5 0template 4sand003 11 
++0template archway 10 0template 20bush_4sand001 13 0template 20bush004 7 
++0template 4sand003 10 0template archway 5 
++0template sandstuff002 12 0template inwall 7 0template 4sand004 11 
++0template pyramid1 14 0template sandstuff002 13 0template 4sand001 3 
++0template pyramid1 4 0template sandstuff002 11 
++0template ceiling 10 0template pyramid1 13 0template sandstuff004 7 
++0template 4sand002 14 0template ceiling 5 0template sandstuff004 11 
++0template sandrock005 14 0template 4sand003 13 0template inwall 3 
++0template sand 14 0template sandrock004 1 
++0template 4sand001 14 0template sand 13 0template sandrock005 3 
++0template sandrock005 12 0template 4sand003 7 0template 2rough001 11 
++0template 2rough002 2 0template sandrock004 13 
+2rough002
++0template wall2 14 0template 2rough001 1 
++0template pyramid1 10 0template wall2 13 0template 2rough002 7 
++0template 4sand004 4 0template 1silt003 11 
++0template 4sand002 8 0template 1silt003 7 
++0template 4sand003 12 0template 1silt003 3 
++0template 20bush003 6 0template stonepath001 9 
++0template 4sand003 10 0template 20bush001 13 0template stonepath003 7 
++0template archway 10 0template 20bush004 13 0template 4sand002 7 
++0template archway 4 0template inwall 11 
++0template archway 12 0template inwall 3 
++0template archway 8 0template inwall 7 
++0template pyramid1 14 0template 4sand002 5 0template inwall 11 
++0template pyramid1 12 0template inwall 7 0template 4sand004 11 
++0template sandstuff004 14 0template pyramid1 13 0template inwall 11 0template 4sand003 7 
++0template ceiling 14 0template sandstuff001 13 0template inwall 3 
++0template ceiling 10 0template inwall 13 0template sandstuff002 7 
++0template ceiling 8 0template sandstuff004 7 
++0template sandstuff002 8 0template ceiling 7 
++0template inwall 14 0template sandstuff003 5 0template 4sand003 11 
++0template inwall 12 0template 4sand002 7 0template canyon003 11 
++0template inwall 8 0template canyon001 7 
++0template 2rough002 14 0template 4sand002 9 0template sandrock005 7 
++0template 2rough002 12 0template 4sand004 7 0template sandrock002 11 
++0template 2rough002 8 0template sandrock001 7 
++0template 2rough001 4 0template sandrock005 11 
++0template pyramid1 14 0template 2rough002 13 0template wall2 11 0template sandrock003 7 
++0template pyramid1 12 0template 4sand004 7 0template megadirt001 11 
++0template pyramid1 4 0template Bdt001 11 
++0template pyramid1 8 0template Bdt001 7 
++0template 1silt002 14 0template 4sand004 1 
++0template 4sand002 2 0template 1silt003 13 
++0template 1silt002 10 0template 4sand002 5 
++0template 1silt001 4 0template 4sand001 11 
++0template 20bush002 14 0template stonepath001 5 0template 20bush_4sand001 11 
++0template stonepath001 14 0template 20bush003 13 0template 4sand001 11 0template 20bush_4sand001 7 
++0template archway 10 0template 4sand002 5 
++0template inwall 10 0template archway 5 
++0template archway 10 0template inwall 5 
++0template sandstuff002 6 0template inwall 13 0template ceiling 11 
++0template ceiling 2 0template sandstuff002 13 
++0template sandstuff002 14 0template ceiling 5 0template 4sand003 11 
++0template ceiling 14 0template sandstuff001 9 0template 4sand003 7 
++0template sandstuff003 10 0template ceiling 5 
++0template 4sand004 14 0template sandstuff004 5 0template reddirt001 11 
++0template canyon002 14 0template 4sand002 13 0template reddirt002 3 
++0template inwall 14 0template canyon002 9 0template reddirt001 7 
++0template inwall 12 0template sandrock002 7 0template 4sand001 11 
++0template sandrock005 10 0template inwall 13 0template 4sand002 7 
++0template 2rough002 14 0template sandrock001 1 
++0template sandrock002 6 0template 2rough001 9 
++0template wall2 14 0template sandrock003 13 0template 2rough002 3 
++0template wall2 2 0template pyramid1 13 
++0template pyramid1 14 0template wall2 5 0template 4sand002 11 
++0template pyramid1 14 0template megadirt001 1 
++0template Bdt001 14 0template pyramid1 9 0template megadirt001 7 
++0template pyramid1 2 0template Bdt001 13 
++0template pyramid1 12 0template megadirt001 7 0template Bdt001 11 
++0template pyramid1 12 0template Bdt001 7 0template megadirt002 11 
++0template pyramid1 12 0template megadirt002 7 0template 4sand001 11 
++0template 1silt003 2 0template 4sand004 13 
++0template 4sand002 10 0template 1silt003 5 
++0template 4sand001 14 0template 6redcanyon001 5 0template 1silt002 11 
++0template 20bush_4sand001 14 0template stonepath003 1 
++0template 4sand002 10 0template 20bush_4sand001 13 0template stonepath002 7 
++0template inwall 14 0template 4sand001 1 
++0template inwall 12 0template 4sand003 7 0template sandstuff002 11 
++0template ceiling 4 0template 4sand001 11 
++0template sandstuff003 14 0template 4sand002 5 0template ceiling 11 
++0template reddirt002 14 0template sandstuff003 1 
++0template reddirt002 8 0template sandstuff003 7 
++0template canyon001 10 0template reddirt002 5 
++0template inwall 14 0template canyon002 1 
++0template inwall 8 0template canyon002 7 
++0template 2rough002 12 0template sandrock001 3 
++0template pyramid1 14 0template 2rough002 13 0template redgranite002 11 0template sandrock003 7 
++0template wall2 14 0template inwall 5 0template 2rough001 11 
++0template wall2 12 0template 2rough001 3 
++0template wall2 12 0template 2rough001 7 0template 4sand003 11 
++0template pyramid1 10 0template megadirt002 5 
++0template pyramid1 10 0template Bdt001 13 0template megadirt002 7 
++0template pyramid1 14 0template megadirt001 5 0template 4sand001 11 
++0template megadirt002 10 0template pyramid1 13 0template 4sand003 7 
++0template Bdt001 14 0template megadirt002 5 0template 4sand002 11 
++0template megadirt002 10 0template Bdt001 13 0template 4sand003 7 
++0template 4sand004 14 0template megadirt002 5 0template pyramid1 11 
++0template 1silt003 6 0template 4sand004 9 
++0template 1silt003 12 0template 4sand001 3 
++0template 4sand001 6 0template 1silt003 9 
++0template 1silt002 14 0template 6redcanyon001 5 0template 4sand002 11 
++0template 4sand001 6 0template 1silt003 13 0template 6redcanyon001 11 
++0template inwall 14 0template archway 1 
++0template inwall 12 0template archway 3 
++0template archway 2 0template inwall 13 
++0template inwall 12 0template sandstuff001 3 
++0template 4sand003 10 0template inwall 13 0template sandstuff001 7 
++0template ceiling 14 0template 4sand001 1 
++0template ceiling 12 0template 4sand001 3 
++0template sandstuff002 10 0template ceiling 13 0template 4sand002 7 
++0template reddirt001 14 0template sandstuff001 9 0template 4sand004 7 
++0template canyon003 14 0template reddirt002 13 0template 4sand001 11 0template sandstuff004 7 
++0template canyon003 12 0template 4sand004 3 
++0template inwall 10 0template canyon003 13 0template 4sand004 7 
++0template redgranite003 14 0template sandrock005 5 0template pyramid1 11 
++0template pyramid1 6 0template redgranite003 13 0template inwall 11 
++0template 2rough001 10 0template inwall 5 
++0template 4sand001 6 0template 2rough002 13 0template Bdt001 11 
++0template megadirt001 14 0template 4sand002 5 0template pyramid1 11 
++0template 4sand004 14 0template 1silt003 1 
++0template 4sand003 14 0template megadirt001 5 0template 6redcanyon001 11 
++0template 6redcanyon002 2 0template 1silt002 13 
++0template archway 8 0template 4sand001 7 
++0template ceiling 10 0template 4sand004 5 
++0template 4sand001 6 0template ceiling 13 0template sandstuff004 11 
++0template 4sand002 12 0template sandstuff003 7 0template megadirt002 11 
++0template sandstuff001 14 0template 4sand002 13 0template megadirt001 3 
++0template 4sand002 14 0template sandstuff004 13 0template megadirt001 3 
++0template 4sand004 12 0template megadirt002 7 0template inwall 11 
++0template inwall 2 0template 4sand004 13 
++0template inwall 4 0template 4sand002 11 
++0template sandrock002 14 0template 4sand002 5 0template redgranite001 11 
++0template inwall 14 0template pyramid1 1 
++0template 2rough002 14 0template inwall 5 0template 4sand003 11 
++0template 4sand004 6 0template 2rough001 13 0template sphinx_body2 11 
++0template Bdt001 10 0template 4sand002 13 0template sphinx_body2 7 
++0template megadirt002 8 0template Bdt001 7 
++0template 4sand002 14 0template megadirt002 13 0template pyramid1 11 0template Bdt001 7 
++0template pyramid1 12 0template 4sand001 7 0template Bdt001 11 
++0template pyramid1 12 0template Bdt001 3 
++0template 4sand001 10 0template pyramid1 13 0template megadirt002 7 
+1silt002
++0template megadirt002 4 0template 6redcanyon002 11 
++0template 6redcanyon001 2 0template megadirt002 13 
++0template archway 14 0template 4sand004 5 0template sandrock002 11 
++0template archway 12 0template sandrock001 3 
++0template archway 12 0template sandrock003 7 0template 4sand003 11 
++0template archway 12 0template 4sand003 7 0template 20bush004 11 
++0template 4sand003 14 0template archway 13 0template 20bush004 3 
++0template megadirt001 10 0template sandstuff004 5 
++0template inwall 10 0template megadirt002 13 0template 4sand003 7 
++0template 4sand003 10 0template inwall 5 
++0template redgranite002 14 0template 4sand002 5 0template sandrock001 11 
++0template redgranite003 12 0template sandrock005 7 0template 4sand002 11 
++0template redgranite001 12 0template 4sand003 7 0template sandrock004 11 
++0template sandrock003 6 0template redgranite003 13 0template sphinx_body2 11 
++0template pyramid1 10 0template sandrock004 13 0template sphinx_body2 7 
++0template 4sand003 14 0template inwall 5 0template sphinx_body2 11 
++0template sphinx_body2 2 0template 4sand004 13 
++0template Bdt001 14 0template sphinx_body2 1 
++0template Bdt001 12 0template sphinx_body2 7 0template 4sand004 11 
++0template Bdt001 6 0template megadirt001 9 
++0template Bdt001 14 0template pyramid1 5 0template 4sand004 11 
++0template pyramid1 14 0template Bdt001 13 0template megadirt002 11 0template 4sand004 7 
++0template 4sand002 12 0template megadirt001 7 0template Bdt001 11 
++0template 4sand001 14 0template megadirt002 9 0template Bdt001 7 
++0template 1silt003 8 0template 4sand003 7 
++0template 6redcanyon001 14 0template 4sand002 13 0template 1silt001 3 
++0template 6redcanyon002 12 0template 1silt003 3 
++0template 4sand003 10 0template 6redcanyon002 13 0template 1silt002 7 
++0template 4sand001 6 0template sandrock003 13 0template 20bush_4sand001 11 
++0template 4sand001 6 0template 20bush003 13 0template 20bush_4sand001 11 
++0template inwall 10 0template 4sand002 13 0template megadirt001 7 
++0template 4sand002 14 0template inwall 5 0template sandrock001 11 
++0template sphinx_body2 10 0template sandrock002 5 
++0template pyramid1 10 0template sphinx_body2 5 
++0template sphinx_body2 14 0template inwall 5 0template 4sand003 11 
++0template sphinx_body2 8 0template 4sand002 7 
++0template sphinx_body2 4 0template 4sand002 11 
++0template 4sand002 2 0template sphinx_body2 13 
++0template 4sand004 14 0template megadirt001 13 0template Bdt001 11 0template pyramid1 7 
++0template Bdt001 14 0template megadirt002 1 
+1silt003
++0template 4sand001 14 0template megadirt002 5 0template 1silt001 11 
++0template megadirt002 10 0template 4sand001 13 0template 1silt001 7 
++0template 6redcanyon001 10 0template megadirt001 5 
++0template 1silt003 14 0template 4sand001 5 0template 6redcanyon001 11 
++0template 1silt001 12 0template 6redcanyon002 3 
++0template 1silt003 12 0template 6redcanyon002 7 0template 4sand003 11 
++0template 4sand004 10 0template 20bush001 13 0template 20bush_4sand001 7 
++0template 20bush_4sand001 14 0template 4sand002 5 0template sandstuff001 11 
++0template 4sand003 14 0template 20bush_4sand002 13 0template sandstuff003 3 
++0template megadirt002 14 0template sandstuff003 9 0template 4sand003 7 
++0template megadirt001 12 0template sandstuff002 3 
++0template megadirt001 8 0template sandstuff003 7 
++0template inwall 10 0template megadirt001 5 
++0template pyramid1 14 0template sphinx_body2 1 
++0template pyramid1 8 0template sphinx_body2 7 
++0template inwall 14 0template pyramid1 5 0template sphinx_body2 11 
++0template inwall 8 0template sphinx_body2 7 
++0template sphinx_body2 14 0template 4sand004 13 0template Bdt001 11 0template inwall 7 
++0template 4sand002 10 0template sphinx_body2 13 0template Bdt001 7 
++0template pyramid1 10 0template Bdt001 5 
++0template pyramid1 10 0template 4sand001 13 0template megadirt002 7 
++0template megadirt002 14 0template 4sand002 5 0template 1silt003 11 
++0template megadirt002 8 0template 1silt003 7 
++0template megadirt001 4 0template 1silt002 11 
++0template 1silt003 14 0template megadirt002 5 0template 6redcanyon001 11 
++0template megadirt002 14 0template 1silt003 13 0template 6redcanyon002 3 
++0template 4sand003 6 0template sandrock001 13 0template archway 11 
++0template 20bush_4sand001 6 0template 4sand003 13 0template 20bush001 11 
++0template 4sand001 14 0template 20bush_4sand002 13 0template sandstuff002 11 0template 20bush001 7 
++0template 4sand002 6 0template sandstuff001 13 0template 1silt001 11 
++0template sandstuff001 12 0template 4sand004 7 0template inwall 11 
++0template megadirt002 14 0template sandstuff003 13 0template inwall 3 
++0template inwall 2 0template megadirt002 13 
++0template sandrock001 4 0template megadirt001 11 
++0template sandrock001 8 0template megadirt001 7 
++0template sphinx_body2 14 0template sandrock001 1 
++0template sphinx_body2 8 0template sandrock001 7 
++0template sphinx_body2 6 0template pyramid1 13 0template sandrock005 11 
++0template inwall 10 0template sphinx_body2 13 0template sandrock003 7 
++0template Bdt001 14 0template inwall 1 
++0template 4sand001 14 0template Bdt001 13 0template inwall 3 
++0template 4sand002 12 0template inwall 7 0template Bdt001 11 
++0template pyramid1 10 0template megadirt001 13 0template 4sand001 7 
++0template pyramid1 14 0template megadirt002 13 0template 4sand002 3 
++0template Bdt001 14 0template pyramid1 13 0template megadirt001 11 0template 4sand002 7 
++0template megadirt002 14 0template 1silt003 5 0template 6redcanyon002 11 
++0template 1silt002 14 0template megadirt001 13 0template 6redcanyon001 3 
++0template 4sand004 12 0template 1silt001 7 0template 6redcanyon002 11 
++0template 4sand002 6 0template archway 13 0template 20bush002 11 
++0template 20bush001 14 0template 20bush_4sand001 5 0template sandstuff003 11 
++0template sandstuff002 4 0template 20bush_4sand002 11 
++0template 4sand004 10 0template sandstuff001 13 0template 20bush_4sand001 7 
++0template sandstuff004 14 0template 4sand002 5 0template 1silt002 11 
++0template 4sand002 14 0template sandstuff004 13 0template 1silt001 3 
++0template megadirt001 14 0template sandrock001 1 
++0template sandrock004 2 0template megadirt001 13 
++0template sandrock005 6 0template 4sand003 13 0template redgranite001 11 
++0template sphinx_body2 12 0template sandrock005 3 
++0template sandrock003 6 0template sphinx_body2 13 0template 4sand001 11 
++0template inwall 14 0template sandrock001 13 0template 4sand004 3 
++0template megadirt002 10 0template Bdt001 13 0template inwall 7 
++0template pyramid1 14 0template 4sand004 9 0template megadirt002 7 
++0template megadirt001 14 0template 4sand003 13 0template Bdt001 11 0template pyramid1 7 
++0template 6redcanyon002 10 0template 1silt002 5 
++0template 1silt003 10 0template 6redcanyon002 5 
++0template 6redcanyon002 14 0template 1silt003 5 0template 4sand004 11 
++0template 6redcanyon002 10 0template 4sand004 13 0template 1silt002 7 
++0template 20bush_4sand002 14 0template 20bush003 13 0template sandstuff001 3 
++0template sandstuff003 2 0template 20bush_4sand001 13 
++0template sandstuff003 4 0template 20bush001 11 
++0template 20bush_4sand002 14 0template sandstuff001 5 0template 4sand002 11 
++0template megadirt002 14 0template 4sand003 13 0template sandstuff001 3 
++0template inwall 14 0template megadirt001 13 0template sandstuff001 3 
++0template inwall 8 0template sandstuff001 7 
++0template inwall 14 0template 4sand002 13 0template sandrock001 3 
++0template inwall 8 0template sandrock003 7 
++0template megadirt001 14 0template inwall 1 
++0template megadirt002 8 0template inwall 7 
++0template 6redcanyon002 14 0template 1silt001 13 0template 4sand003 3 
++0template 4sand001 6 0template 6redcanyon001 13 0template 1silt003 11 
++0template 4sand001 12 0template sandstuff003 7 0template archway 11 
++0template sandstuff003 10 0template 4sand002 13 0template archway 7 
++0template 20bush002 14 0template sandstuff003 1 
++0template sandstuff002 6 0template 20bush003 13 0template 4sand004 11 
++0template sandstuff004 4 0template inwall 11 
++0template inwall 2 0template sandstuff001 13 
++0template sandrock004 14 0template 4sand001 5 0template brownmud001 11 
++0template sandrock004 8 0template brownmud001 7 
++0template sandrock004 10 0template redgranite002 5 
++0template inwall 10 0template sandrock003 13 0template 4sand002 7 
++0template 4sand001 14 0template megadirt001 13 0template inwall 3 
++0template Bdt001 10 0template 4sand003 13 0template inwall 7 
++0template megadirt002 14 0template pyramid1 13 0template 4sand003 3 
++0template 1silt001 10 0template 4sand004 13 0template 6redcanyon002 7 
++0template archway 14 0template sandstuff001 1 
++0template sandstuff004 6 0template archway 9 
++0template sandstuff001 8 0template archway 7 
++0template sandstuff004 12 0template 4sand003 7 0template 20bush_4sand002 11 
++0template sandstuff003 14 0template 4sand001 9 0template 1silt003 7 
++0template sandstuff001 6 0template 4sand003 13 0template megadirt002 11 
++0template inwall 10 0template sandstuff002 13 0template megadirt002 7 
++0template 4sand002 14 0template inwall 5 0template brownmud001 11 
++0template 4sand004 8 0template brownmud001 7 
++0template brownmud001 14 0template 4sand003 5 0template sandrock004 11 
++0template sandrock005 2 0template brownmud001 13 
++0template 4sand002 14 0template sandrock005 5 0template brownmud001 11 
++0template sandrock002 14 0template 4sand002 9 0template brownmud001 7 
++0template redgranite002 14 0template sandrock005 13 0template brownmud001 11 0template 4sand002 7 
++0template redgranite001 12 0template brownmud001 7 0template sandrock005 11 
++0template 4sand004 6 0template sandrock004 13 0template megadirt002 11 
++0template inwall 14 0template 4sand004 13 0template megadirt001 3 
++0template inwall 8 0template megadirt002 7 
++0template Bdt001 14 0template inwall 5 0template 4sand001 11 
++0template 6redcanyon001 4 0template megadirt001 11 
++0template 1silt002 12 0template 4sand002 7 0template 6redcanyon002 11 
++0template sandstuff004 4 0template archway 11 
++0template archway 6 0template sandstuff001 9 
++0template sandstuff003 2 0template archway 13 
++0template brownmud001 14 0template inwall 5 0template 4sand004 11 
++0template 4sand004 2 0template brownmud001 13 
++0template brownmud001 14 0template sandrock005 5 0template megadirt002 11 
++0template 4sand001 14 0template brownmud001 13 0template sandrock002 11 0template megadirt001 7 
++0template brownmud001 14 0template 4sand001 13 0template sphinx_body3 11 0template sandrock005 7 
++0template sandrock001 10 0template brownmud001 13 0template sphinx_body3 7 
++0template inwall 10 0template megadirt001 5 
++0template inwall 4 0template megadirt001 11 
++0template 4sand001 14 0template inwall 13 0template Bdt001 11 0template megadirt001 7 
++0template megadirt001 14 0template 6redcanyon001 1 
++0template stonepath003 14 0template 4sand002 13 0template sandstuff002 3 
++0template stonepath003 12 0template sandstuff002 3 
++0template 4sand004 10 0template stonepath003 13 0template sandstuff004 7 
++0template archway 14 0template sandstuff003 9 0template 4sand003 7 
++0template sandstuff002 10 0template 4sand004 13 0template 1silt003 7 
++0template megadirt001 14 0template sandstuff002 13 0template 4sand002 3 
++0template inwall 4 0template megadirt002 11 
++0template 4sand001 10 0template inwall 13 0template megadirt001 7 
++0template 4sand004 4 0template brownmud001 11 
++0template sandrock005 10 0template 4sand004 13 0template brownmud001 7 
++0template megadirt002 10 0template sandrock004 5 
++0template sandrock001 14 0template megadirt001 5 0template sphinx_body3 11 
++0template sandrock002 14 0template sphinx_body3 1 
++0template inwall 14 0template megadirt002 1 
++0template inwall 12 0template megadirt002 7 0template 4sand002 11 
++0template inwall 12 0template 4sand001 7 0template sandrock004 11 
++0template inwall 12 0template sandrock005 7 0template 4sand003 11 
++0template megadirt001 14 0template inwall 13 0template 4sand001 3 
++0template Bdt001 14 0template megadirt001 9 0template 4sand002 7 
++0template 1silt002 12 0template 4sand003 7 0template sandstuff003 11 
++0template 1silt002 8 0template sandstuff004 7 
++0template sandstuff004 10 0template 1silt003 5 
++0template inwall 10 0template 4sand001 5 
++0template megadirt001 10 0template inwall 5 
++0template brownmud001 6 0template 4sand002 13 0template megadirt001 11 
++0template sandrock002 10 0template brownmud001 13 0template megadirt002 7 
++0template megadirt002 14 0template sandrock001 5 0template brownmud001 11 
++0template sphinx_body3 10 0template megadirt001 13 0template brownmud001 7 
++0template sphinx_body3 12 0template sand 3 
++0template sandrock005 14 0template sphinx_body3 9 0template sand 7 
++0template megadirt001 10 0template 4sand002 13 0template sandrock003 7 
++0template Bdt001 6 0template 4sand003 13 0template megadirt002 11 
++0template 4sand003 12 0template 6redcanyon001 7 0template 1silt002 11 
++0template 4sand002 6 0template 1silt002 13 0template sandstuff001 11 
++0template 1silt002 14 0template 4sand004 9 0template sandstuff001 7 
++0template 1silt001 14 0template sandstuff001 1 
++0template sandstuff004 6 0template 1silt002 13 0template 4sand004 11 
++0template 4sand002 4 0template inwall 11 
++0template 4sand003 14 0template megadirt002 5 0template brownmud001 11 
++0template brownmud001 6 0template 4sand001 9 
++0template megadirt002 14 0template brownmud001 13 0template 4sand004 3 
++0template sandrock002 10 0template megadirt002 13 0template 4sand003 7 
++0template brownmud001 14 0template sandrock001 5 0template 4sand002 11 
++0template sphinx_body3 10 0template brownmud001 13 0template 4sand001 7 
++0template sand 2 0template sphinx_body3 13 
++0template sphinx_body3 10 0template sand 5 
++0template megadirt002 14 0template sandrock003 5 0template 4sand004 11 
++0template 4sand003 12 0template sandrock002 7 0template megadirt001 11 
++0template Bdt001 14 0template 4sand003 9 0template megadirt001 7 
++0template megadirt001 12 0template Bdt001 3 
++0template Bdt001 8 0template megadirt001 7 
++0template 6redcanyon001 10 0template 1silt002 13 0template 4sand003 7 
++0template 4sand001 10 0template sandstuff001 13 0template 1silt002 7 
++0template sandstuff003 14 0template 1silt002 1 
++0template sandstuff002 8 0template 1silt003 7 
++0template megadirt002 10 0template inwall 13 0template brownmud001 7 
++0template brownmud001 14 0template megadirt002 1 
++0template 4sand002 14 0template brownmud001 13 0template megadirt001 3 
++0template 4sand002 12 0template megadirt001 7 0template sandrock005 11 
++0template sphinx_body3 10 0template 4sand001 13 0template sandrock002 7 
++0template sand 10 0template sphinx_body3 5 
++0template sandrock003 10 0template sphinx_body3 5 
++0template megadirt002 6 0template sandrock001 9 
++0template 4sand004 10 0template megadirt001 13 0template sandrock005 7 
+1silt001
++0template 6redcanyon001 4 0template 1silt001 11 
++0template 6redcanyon001 8 0template 1silt002 7 
++0template sandstuff003 8 0template sandrock004 7 
++0template 4sand001 14 0template 1silt001 5 0template sandstuff001 11 
++0template 4sand003 12 0template sandstuff004 7 0template 1silt001 11 
++0template 1silt002 4 0template sandstuff004 11 
++0template 1silt002 12 0template sandstuff003 3 
++0template sandstuff002 2 0template 1silt003 13 
++0template brownmud001 14 0template inwall 5 0template megadirt001 11 
++0template megadirt002 2 0template brownmud001 13 
++0template sandrock002 10 0template megadirt002 5 
++0template sand 4 0template sphinx_body3 11 
++0template sphinx_body3 2 0template sand 13 
++0template megadirt001 14 0template 4sand001 9 0template sandrock003 7 
++0template 4sand004 14 0template sandrock005 5 0template megadirt001 11 
++0template 1silt001 14 0template 6redcanyon001 1 
++0template sandrock003 14 0template sandstuff002 13 0template 4sand001 3 
++0template sandstuff004 14 0template sandrock003 9 0template 4sand004 7 
++0template 4sand002 10 0template sandstuff003 13 0template sandrock003 7 
++0template 4sand001 14 0template 1silt003 9 0template sandstuff001 7 
++0template 1silt002 10 0template sandstuff004 5 
++0template sandstuff001 14 0template 1silt002 13 0template 4sand004 3 
++0template sandstuff004 12 0template 4sand001 7 0template 1silt001 11 
++0template inwall 10 0template 4sand004 13 0template brownmud001 7 
++0template megadirt002 4 0template brownmud001 11 
++0template megadirt001 12 0template brownmud001 7 0template 4sand003 11 
++0template sand 14 0template sphinx_body3 1 
++0template sand 12 0template sphinx_body3 3 
++0template 4sand004 14 0template sandrock004 13 0template megadirt002 3 
++0template sandrock001 10 0template 4sand002 13 0template megadirt002 7 
++0template 6redcanyon001 6 0template 4sand002 13 0template 1silt001 11 
++0template sandstuff002 10 0template 1silt001 13 0template 4sand004 7 
++0template 4sand004 10 0template 1silt002 13 0template sandstuff002 7 
++0template brownmud001 14 0template 4sand001 5 0template inwall 11 
++0template inwall 2 0template brownmud001 13 
++0template megadirt002 2 0template inwall 13 
++0template brownmud001 6 0template megadirt002 13 0template 4sand002 11 
++0template 4sand002 6 0template brownmud001 9 
++0template sandrock003 4 0template brownmud001 11 
++0template sphinx_body3 14 0template sandrock001 13 0template brownmud001 3 
++0template sphinx_body3 8 0template brownmud001 7 
++0template megadirt001 14 0template 4sand003 5 0template sandrock005 11 
++0template sandrock002 6 0template megadirt002 9 
++0template megadirt001 6 0template sandrock002 13 0template Bdt001 11 
++0template 1silt003 14 0template 6redcanyon001 9 0template 4sand001 7 
++0template sandrock004 14 0template 4sand004 13 0template sandstuff002 3 
++0template sandstuff004 14 0template 4sand003 9 0template sandrock002 7 
++0template brownmud001 14 0template megadirt001 5 0template 4sand003 11 
++0template brownmud001 14 0template 4sand002 1 
++0template sandrock005 10 0template brownmud001 13 0template 4sand003 7 
++0template brownmud001 14 0template sandrock001 1 
++0template brownmud001 12 0template sandrock005 3 
++0template sphinx_body3 10 0template brownmud001 13 0template sandrock001 7 
++0template sphinx_body3 4 0template redgranite003 11 
++0template sphinx_body3 8 0template redgranite001 7 
++0template megadirt001 14 0template sandrock001 13 0template Bdt001 11 0template 4sand001 7 
++0template sandstuff004 10 0template 4sand001 13 0template 6redcanyon002 7 
++0template 4sand003 14 0template sandrock001 13 0template sandstuff004 3 
++0template sandrock004 14 0template 4sand001 9 0template sandstuff003 7 
++0template sandrock004 4 0template sandstuff004 11 
++0template 4sand004 10 0template sandrock001 13 0template sandstuff003 7 
++0template redgranite001 14 0template sphinx_body3 1 
++0template sphinx_body3 2 0template redgranite002 13 
++0template sphinx_body3 12 0template redgranite001 7 0template megadirt002 11 
++0template sphinx_body3 8 0template megadirt001 7 
++0template 6redcanyon001 14 0template 4sand001 13 0template megadirt002 3 
++0template 6redcanyon001 12 0template megadirt001 3 
++0template megadirt002 6 0template 6redcanyon002 9 
++0template 6redcanyon001 6 0template megadirt001 9 
++0template sandstuff004 14 0template 6redcanyon001 1 
++0template sandstuff003 12 0template 6redcanyon002 3 
++0template sandstuff003 12 0template 6redcanyon002 7 0template 4sand001 11 
++0template megadirt002 14 0template inwall 13 0template 4sand002 3 
++0template megadirt001 12 0template 4sand002 7 0template brownmud001 11 
++0template 4sand004 14 0template megadirt001 9 0template brownmud001 7 
++0template sphinx_body3 14 0template sandrock003 1 
++0template sphinx_body3 8 0template sandrock003 7 
++0template redgranite001 14 0template sphinx_body3 13 0template brownmud001 11 0template sandrock005 7 
++0template megadirt001 14 0template redgranite003 13 0template 4sand001 11 0template brownmud001 7 
++0template sphinx_body3 14 0template megadirt002 13 0template sandrock001 11 0template 4sand002 7 
++0template megadirt002 12 0template 6redcanyon002 7 0template 4sand002 11 
++0template 6redcanyon002 14 0template megadirt002 9 0template 4sand003 7 
++0template sandstuff001 14 0template 4sand002 9 0template 6redcanyon002 7 
++0template sandrock002 14 0template 4sand001 5 0template sandstuff001 11 
++0template brownmud001 14 0template 4sand002 13 0template megadirt002 3 
++0template 4sand001 12 0template megadirt002 7 0template brownmud001 11 
++0template brownmud001 6 0template 4sand001 13 0template sandrock005 11 
++0template sphinx_body3 12 0template sandrock004 3 
++0template 4sand003 10 0template brownmud001 13 0template megadirt002 7 
++0template 6redcanyon001 14 0template megadirt001 13 0template 4sand003 11 0template 1silt003 7 
++0template megadirt002 14 0template 4sand001 13 0template 6redcanyon001 3 
++0template 1silt002 14 0template 4sand002 13 0template 6redcanyon002 3 
++0template 4sand004 14 0template 1silt003 9 0template 6redcanyon001 7 
++0template 4sand001 6 0template inwall 13 0template brownmud001 11 
++0template megadirt001 10 0template 4sand001 13 0template brownmud001 7 
++0template sandrock002 14 0template brownmud001 13 0template megadirt001 3 
++0template megadirt001 6 0template sandrock001 13 0template 4sand002 11 
++0template 4sand001 6 0template megadirt002 13 0template sandrock002 11 
++0template 1silt003 14 0template 4sand004 5 0template megadirt001 11 
++0template 4sand003 10 0template 1silt003 13 0template megadirt002 7 
++0template sandstuff003 14 0template 4sand004 5 0template 6redcanyon002 11 
++0template sandstuff003 8 0template 6redcanyon001 7 
++0template 4sand001 14 0template inwall 5 0template megadirt001 11 
++0template brownmud001 10 0template 4sand002 13 0template megadirt002 7 
++0template megadirt001 14 0template brownmud001 1 
++0template megadirt001 8 0template brownmud001 7 
++0template 4sand001 14 0template sandrock002 5 0template Bdt001 11 
++0template sandstuff003 10 0template 6redcanyon001 5 
++0template brownmud001 12 0template megadirt002 3 
++0template megadirt002 8 0template sandrock005 7 
++0template Bdt001 14 0template sandrock001 5 0template megadirt001 11 
++0template 6redcanyon001 14 0template 4sand002 5 0template megadirt001 11 
++0template 4sand001 14 0template sandstuff004 13 0template 6redcanyon002 3 
++0template inwall 14 0template 4sand003 1 
++0template inwall 8 0template 4sand004 7 
++0template megadirt001 2 0template sandrock003 13 
++0template sandrock001 14 0template megadirt001 1 
++0template megadirt002 14 0template sandrock001 13 0template 4sand002 3 
++0template 4sand001 6 0template Bdt001 13 0template 6redcanyon002 11 
++0template 4sand004 12 0template 1silt001 7 0template megadirt001 11 
++0template 1silt001 10 0template 6redcanyon002 13 0template 4sand003 7 
++0template landpyr_sandD 14 0template 4sand002 5 0template 6redcanyon002 11 
++0template brownmud001 10 0template megadirt001 5 
++0template megadirt002 10 0template brownmud001 5 
++0template brownmud001 14 0template sandrock003 9 0template megadirt001 7 
++0template megadirt001 10 0template 1silt002 5 
++0template megadirt002 2 0template 1silt003 13 
++0template megadirt002 6 0template brownmud001 13 0template 4sand001 11 
++0template megadirt002 4 0template sandrock002 11 
++0template sandrock004 12 0template megadirt001 3 
++0template sandrock001 6 0template redgranite003 13 0template megadirt002 11 
++0template megadirt001 14 0template 1silt003 5 0template 4sand002 11 
++0template 4sand003 12 0template 1silt002 7 0template inwall 11 
++0template megadirt002 14 0template inwall 13 0template 1silt002 11 0template 4sand004 7 
++0template megadirt002 12 0template 1silt001 7 0template 4sand001 11 
++0template sandrock002 10 0template megadirt001 13 0template brownmud001 7 
++0template redgranite003 14 0template sandrock004 9 0template megadirt002 7 
++0template sandrock001 14 0template redgranite003 5 0template 4sand004 11 
++0template megadirt001 10 0template sandrock003 13 0template 4sand002 7 
++0template 4sand004 6 0template 1silt003 13 0template megadirt001 11 
++0template 4sand004 6 0template megadirt001 13 0template 6redcanyon002 11 
++0template 1silt002 14 0template 4sand002 13 0template megadirt001 11 0template 6redcanyon002 7 
++0template 6redcanyon001 14 0template megadirt001 1 
++0template 6redcanyon001 12 0template megadirt001 7 0template 4sand004 11 
++0template 1silt001 14 0template 6redcanyon002 13 0template 4sand003 3 
++0template 1silt003 6 0template 4sand002 13 0template inwall 11 
++0template inwall 2 0template 1silt002 13 
++0template inwall 4 0template 1silt002 11 
++0template 4sand002 10 0template inwall 13 0template 1silt002 7 
++0template sandrock005 12 0template 4sand004 7 0template brownmud001 11 
++0template brownmud001 2 0template sandrock002 13 
++0template sandrock005 10 0template brownmud001 5 
++0template megadirt001 14 0template sandrock001 13 0template brownmud001 11 0template 4sand003 7 
++0template redgranite002 14 0template sandrock004 13 0template megadirt002 3 
++0template 4sand004 14 0template redgranite003 13 0template megadirt002 3 
++0template megadirt001 14 0template 4sand002 13 0template 1silt002 3 
++0template 4sand001 14 0template megadirt001 13 0template 1silt002 3 
++0template 6redcanyon002 14 0template 4sand001 9 0template 1silt003 7 
++0template megadirt001 10 0template 6redcanyon001 13 0template 4sand002 7 
++0template 4sand004 4 0template landpyr_sandD 11 
++0template 1silt002 14 0template 4sand003 5 0template inwall 11 
++0template 1silt003 2 0template inwall 13 
++0template megadirt001 14 0template 1silt002 13 0template 4sand004 3 
++0template brownmud001 14 0template 4sand002 5 0template megadirt002 11 
++0template brownmud001 8 0template megadirt002 7 
++0template 1silt003 12 0template 4sand002 7 0template megadirt002 11 
++0template 4sand002 14 0template 1silt003 9 0template megadirt002 7 
++0template 4sand004 12 0template 6redcanyon001 7 0template megadirt002 11 
++0template landpyr_sandB 14 0template 4sand004 9 0template 6redcanyon001 7 
++0template 1silt003 14 0template inwall 5 0template 4sand002 11 
++0template sandrock001 14 0template brownmud001 5 0template et_base 11 
++0template megadirt002 14 0template sandrock005 13 0template et_base 3 
++0template megadirt001 12 0template et_base 3 
++0template megadirt002 8 0template et_base 7 
++0template 4sand002 14 0template megadirt002 13 0template Bdt001 11 0template sandrock003 7 
++0template 1silt003 14 0template megadirt001 1 
++0template megadirt001 6 0template 1silt002 13 0template 6redcanyon002 11 
++0template 4sand004 14 0template inwall 13 0template 1silt002 3 
++0template brownmud001 14 0template megadirt001 13 0template 4sand004 3 
++0template et_base 14 0template brownmud001 13 0template 4sand003 3 
++0template et_base 8 0template 4sand001 7 
++0template megadirt001 14 0template et_base 1 
++0template megadirt001 12 0template et_base 7 0template brownmud001 11 
++0template sandrock002 14 0template megadirt001 13 0template Bdt001 11 0template 4sand002 7 
++0template Bdt001 6 0template sandrock005 9 
++0template 4sand001 10 0template Bdt001 13 0template sandrock004 7 
++0template 1silt001 14 0template inwall 13 0template 4sand004 3 
++0template et_base 10 0template 4sand003 5 
++0template 4sand002 14 0template brownmud001 1 
++0template sandrock004 14 0template Bdt001 9 0template megadirt002 7 
++0template 4sand001 10 0template sandrock001 13 0template Bdt001 7 
++0template megadirt002 14 0template 1silt003 1 
++0template 4sand004 14 0template 6redcanyon001 5 0template inwall 11 
++0template 4sand003 14 0template inwall 5 0template 1silt001 11 
++0template et_base 4 0template 6redcanyon002 11 
++0template et_base 12 0template 6redcanyon002 3 
++0template brownmud001 10 0template et_base 13 0template 6redcanyon002 7 
++0template brownmud001 4 0template 4sand002 11 
++0template megadirt001 6 0template 4sand001 13 0template Bdt001 11 
++0template 6redcanyon001 4 0template inwall 11 
++0template 6redcanyon002 12 0template inwall 3 
++0template 4sand004 14 0template 6redcanyon002 9 0template inwall 7 
++0template 6redcanyon001 6 0template 4sand004 13 0template inwall 11 
++0template 4sand001 14 0template 6redcanyon002 13 0template inwall 3 
++0template 4sand001 12 0template inwall 3 
++0template 6redcanyon002 14 0template 4sand004 13 0template inwall 3 
++0template inwall 2 0template 6redcanyon002 13 
++0template inwall 12 0template 4sand002 7 0template 1silt002 11 
++0template et_base 14 0template 4sand003 9 0template 6redcanyon001 7 
++0template 6redcanyon001 2 0template et_base 13 
++0template brownmud001 14 0template 6redcanyon002 5 0template 4sand004 11 
++0template 1silt002 6 0template 6redcanyon002 13 0template 4sand002 11 
++0template 4sand002 12 0template 6redcanyon001 7 0template sand 11 
++0template 6redcanyon002 10 0template 4sand001 13 0template sand 7 
++0template inwall 10 0template 6redcanyon001 5 
++0template 6redcanyon002 14 0template inwall 1 
++0template inwall 4 0template 6redcanyon001 11 
++0template 4sand003 10 0template inwall 13 0template 6redcanyon001 7 
++0template et_base 14 0template 4sand002 1 
++0template 6redcanyon001 10 0template et_base 13 0template 4sand003 7 
++0template 1silt003 14 0template 4sand004 9 0template megadirt002 7 
++0template sand 14 0template 6redcanyon002 13 0template 4sand001 3 
++0template 6redcanyon001 10 0template sand 13 0template 4sand003 7 
++0template inwall 12 0template 4sand003 7 0template 6redcanyon002 11 
++0template inwall 8 0template 6redcanyon001 7 
++0template 6redcanyon001 2 0template inwall 13 
++0template 6redcanyon002 14 0template megadirt002 5 0template 4sand001 11 
++0template inwall 14 0template 6redcanyon002 13 0template 4sand003 3 
++0template inwall 12 0template 4sand003 3 
++0template 6redcanyon002 14 0template inwall 13 0template 1silt003 11 0template 4sand001 7 
++0template 4sand002 14 0template 1silt003 13 0template 6redcanyon001 3 
++0template 1silt002 4 0template megadirt002 11 
++0template 1silt003 12 0template megadirt001 3 
++0template landpyr_sandD 14 0template 4sand001 1 
++0template 6redcanyon001 6 0template 1silt002 9 
++0template 4sand003 12 0template stonepath002 7 0template 6redcanyon001 11 
++0template inwall 10 0template 6redcanyon002 13 0template 4sand001 7 
++0template 4sand004 14 0template inwall 5 0template 6redcanyon001 11 
++0template 6redcanyon002 12 0template 1silt003 7 0template 4sand003 11 
++0template 4sand004 12 0template megadirt001 7 0template 6redcanyon002 11 
++0template stonepath002 14 0template 4sand001 13 0template archway 11 0template 6redcanyon001 7 
++0template 6redcanyon002 10 0template stonepath001 13 0template archway 7 
++0template 4sand003 14 0template 6redcanyon001 5 0template stonepath003 11 
++0template inwall 10 0template 4sand004 13 0template 6redcanyon001 7 
++0template 6redcanyon002 8 0template inwall 7 
++0template 4sand002 10 0template 1silt003 13 0template 6redcanyon001 7 
++0template megadirt001 6 0template 1silt002 13 0template 4sand001 11 
++0template 1silt003 14 0template megadirt001 9 0template 4sand002 7 
++0template 6redcanyon002 10 0template megadirt001 13 0template 4sand001 7 
++0template archway 14 0template 6redcanyon001 1 
++0template 6redcanyon002 2 0template archway 13 
++0template stonepath002 14 0template 6redcanyon001 1 
++0template 4sand003 10 0template stonepath001 13 0template 6redcanyon002 7 
++0template megadirt001 12 0template 6redcanyon002 3 
++0template 4sand003 14 0template megadirt001 13 0template 6redcanyon002 3 
++0template megadirt001 14 0template 4sand004 13 0template Bdt001 11 0template 6redcanyon001 7 
++0template Bdt001 12 0template 6redcanyon002 7 0template 4sand003 11 
++0template Bdt001 14 0template megadirt001 5 0template 6redcanyon001 11 
++0template megadirt002 14 0template Bdt001 13 0template 6redcanyon001 3 
++0template 4sand004 14 0template megadirt002 9 0template 6redcanyon002 7 
++0template 4sand003 10 0template megadirt001 13 0template 1silt001 7 
++0template megadirt001 14 0template 4sand004 5 0template 6redcanyon001 11 
++0template 1silt001 14 0template 4sand004 9 0template 6redcanyon002 7 
++0template 4sand003 14 0template 6redcanyon002 5 0template sandrock004 11 
++0template 6redcanyon001 14 0template 4sand002 13 0template sandrock005 3 
++0template 4sand002 14 0template 6redcanyon001 9 0template sandrock001 7 
++0template Bdt001 14 0template 4sand002 13 0template 6redcanyon002 11 0template megadirt002 7 
++0template 4sand004 10 0template 6redcanyon002 13 0template megadirt001 7 
++0template 6redcanyon001 14 0template 4sand003 5 0template inwall 11 
++0template inwall 12 0template 6redcanyon001 3 
++0template 6redcanyon001 6 0template inwall 13 0template 4sand002 11 
++0template 6redcanyon001 4 0template sandrock004 11 
++0template sandrock003 6 0template 6redcanyon001 9 
++0template sandrock002 12 0template 6redcanyon002 3 
++0template 6redcanyon001 2 0template sandrock004 13 
++0template 6redcanyon002 8 0template sandrock001 7 
++0template sandrock002 14 0template 6redcanyon001 1 
++0template 4sand001 10 0template sandrock002 13 0template 6redcanyon002 7 
++0template 6redcanyon001 14 0template 4sand004 5 0template sandrock001 11 
++0template 4sand001 14 0template 6redcanyon002 9 0template megadirt002 7 
++0template 4sand001 14 0template 6redcanyon002 13 0template megadirt002 3 
++0template 4sand004 6 0template 6redcanyon001 13 0template inwall 11 
++0template 6redcanyon002 12 0template sandrock003 3 
++0template 6redcanyon002 6 0template sandrock001 9 
++0template 6redcanyon001 12 0template sandrock003 7 0template 4sand001 11 
++0template 6redcanyon001 12 0template 4sand004 7 0template sandrock004 11 
++0template 6redcanyon001 14 0template sandrock004 1 
++0template 4sand001 10 0template 6redcanyon001 13 0template sandrock003 7 
++0template 6redcanyon002 12 0template 4sand002 7 0template wheat001 11 
++0template 4sand001 10 0template 6redcanyon001 13 0template wheat002 7 
++0template 4sand003 14 0template 1silt001 5 0template 6redcanyon001 11 
++0template 4sand004 12 0template sandrock004 7 0template 6redcanyon001 11 
++0template 6redcanyon002 14 0template inwall 13 0template 4sand002 3 
++0template sandrock005 10 0template 6redcanyon001 5 
++0template sandrock003 14 0template 6redcanyon002 5 0template 4sand004 11 
++0template 4sand002 14 0template sandrock002 13 0template 6redcanyon002 11 0template redgranite001 7 
++0template 4sand004 12 0template 6redcanyon002 7 0template sandrock002 11 
++0template wheat001 14 0template 4sand001 13 0template 6redcanyon001 3 
++0template 4sand003 14 0template wheat001 9 0template 6redcanyon001 7 
++0template 6redcanyon002 14 0template 4sand001 9 0template wheat002 7 
++0template 1silt003 4 0template 6redcanyon002 11 
++0template 6redcanyon002 10 0template 4sand001 13 0template stonepath002 7 
++0template 6redcanyon001 10 0template sandrock005 13 0template 4sand001 7 
++0template 4sand003 14 0template inwall 1 
++0template 4sand001 8 0template inwall 7 
++0template sandrock003 4 0template 6redcanyon001 11 
++0template redgranite001 14 0template 4sand004 13 0template 6redcanyon002 3 
++0template 6redcanyon002 2 0template redgranite002 13 
++0template sandrock001 12 0template 4sand002 7 0template 6redcanyon001 11 
++0template sandrock002 12 0template 6redcanyon002 7 0template 4sand001 11 
++0template 4sand003 6 0template sandrock005 13 0template 6redcanyon002 11 
++0template wheat002 14 0template 6redcanyon001 9 0template 4sand001 7 
++0template 4sand004 14 0template wheat001 13 0template 6redcanyon002 3 
++0template 6redcanyon002 14 0template 1silt001 9 0template 4sand004 7 
++0template 1silt003 6 0template 6redcanyon002 9 
++0template megadirt001 14 0template 6redcanyon002 13 0template 4sand004 11 0template 1silt003 7 
++0template stonepath001 4 0template 6redcanyon001 11 
++0template 6redcanyon002 2 0template stonepath003 13 
++0template 6redcanyon002 10 0template 4sand003 13 0template sandrock004 7 
++0template 6redcanyon002 14 0template 4sand002 5 0template landpyr_sandA 11 
++0template 6redcanyon002 12 0template pyramid_diag4 7 0template 4sand001 11 
++0template 4sand002 14 0template sandrock005 13 0template 6redcanyon001 3 
++0template 4sand004 4 0template wheat001 11 
++0template 4sand004 12 0template wheat001 7 0template 6redcanyon001 11 
++0template 6redcanyon001 14 0template 1silt003 1 
++0template sandrock001 14 0template 4sand001 13 0template 6redcanyon002 3 
++0template 6redcanyon002 10 0template inwall 5 
++0template 4sand002 14 0template landpyr_sandA 1 
++0template 6redcanyon002 10 0template 4sand004 13 0template pyramid_diag4 7 
++0template 6redcanyon001 4 0template redgranite001 11 
++0template 6redcanyon002 8 0template redgranite002 7 
++0template wheat001 14 0template 4sand003 1 
++0template 6redcanyon001 10 0template wheat001 13 0template 4sand004 7 
++0template 1silt002 8 0template 6redcanyon001 7 
++0template 6redcanyon002 14 0template 1silt002 5 0template megadirt002 11 
++0template 4sand002 14 0template 6redcanyon002 5 0template megadirt001 11 
++0template 6redcanyon001 14 0template landpyr_sandA 5 0template 4sand001 11 
++0template 6redcanyon001 6 0template 4sand003 13 0template sandrock001 11 
++0template redgranite002 14 0template 6redcanyon002 1 
++0template 1silt001 2 0template 6redcanyon001 13 
++0template megadirt002 2 0template 6redcanyon001 13 
++0template megadirt001 10 0template 6redcanyon002 5 
++0template megadirt001 14 0template 1silt001 13 0template 4sand004 11 0template 6redcanyon002 7 
++0template megadirt001 12 0template 4sand004 7 0template 1silt003 11 
++0template 6redcanyon001 14 0template inwall 5 0template 4sand001 11 
++0template 6redcanyon002 14 0template 4sand004 9 0template sandrock003 7 
++0template 6redcanyon001 6 0template 1silt003 13 0template 4sand002 11 
++0template 1silt002 10 0template megadirt001 5 
++0template 6redcanyon002 14 0template 4sand001 5 0template sand 11 
++0template 6redcanyon002 8 0template sand 7 
++0template 4sand001 4 0template sand 11 
++0template inwall 10 0template 4sand004 13 0template sand 7 
++0template 6redcanyon001 14 0template 4sand002 5 0template stonepath002 11 
++0template 6redcanyon002 8 0template stonepath002 7 
++0template sandrock001 8 0template 6redcanyon001 7 
++0template sand 10 0template 4sand003 5 
++0template 6redcanyon002 14 0template sand 1 
++0template 6redcanyon002 12 0template sand 3 
++0template 4sand004 14 0template 6redcanyon001 13 0template sand 3 
++0template sand 6 0template 4sand001 13 0template inwall 11 
++0template inwall 2 0template sand 13 
++0template sand 14 0template 4sand001 1 
++0template 6redcanyon002 4 0template stonepath002 11 
++0template 4sand001 14 0template 6redcanyon002 13 0template stonepath002 3 
++0template 6redcanyon001 10 0template stonepath001 5 
++0template sandrock005 14 0template 6redcanyon001 13 0template 4sand003 3 
++0template 6redcanyon002 14 0template sandrock004 9 0template 4sand002 7 
++0template 4sand004 6 0template 6redcanyon002 13 0template sandrock002 11 
++0template 6redcanyon002 6 0template sandrock005 13 0template 4sand004 11 
++0template 1silt003 2 0template megadirt002 13 
++0template 4sand003 14 0template 1silt001 5 0template megadirt001 11 
++0template inwall 10 0template sand 5 
++0template inwall 4 0template sand 11 
++0template sandrock002 14 0template inwall 13 0template sand 3 
++0template 4sand004 10 0template sandrock003 13 0template sand 7 
++0template stonepath002 10 0template 6redcanyon001 13 0template 4sand001 7 
++0template 6redcanyon002 10 0template stonepath002 13 0template 4sand003 7 
++0template 6redcanyon001 14 0template sandrock004 13 0template 4sand004 3 
++0template sandrock005 10 0template 4sand002 13 0template 6redcanyon002 7 
++0template 6redcanyon001 10 0template sandrock005 5 
++0template 1silt002 14 0template megadirt001 5 0template 4sand003 11 
++0template megadirt002 14 0template 6redcanyon001 5 0template 1silt003 11 
++0template sand 4 0template archway 11 
++0template sand 12 0template archway 3 
++0template inwall 14 0template sand 13 0template archway 3 
++0template sand 10 0template inwall 13 0template archway 7 
++0template 4sand002 14 0template sand 1 
++0template sandrock002 14 0template 4sand004 13 0template sand 3 
++0template 6redcanyon002 6 0template 6redrockwall001 13 0template sandrock003 11 
++0template 6redrockwall001 10 0template 6redcanyon002 5 
++0template 6redcanyon002 14 0template 6redrockwall001 1 
++0template 1silt002 14 0template 6redcanyon001 13 0template megadirt001 11 0template 4sand001 7 
++0template sand 14 0template archway 1 
++0template sand 8 0template archway 7 
++0template 4sand002 10 0template sand 5 
++0template 6redrockwall001 4 0template sandrock001 11 
++0template 6redcanyon001 14 0template 6redrockwall002 13 0template 4sand002 11 0template sandrock005 7 
++0template 4sand004 6 0template 6redcanyon001 13 0template megadirt002 11 
++0template sand 12 0template 4sand001 3 
++0template sand 8 0template 4sand002 7 
++0template archway 10 0template sand 5 
++0template archway 12 0template pyramid1 7 0template pyramid_diag1 11 
++0template archway 12 0template pyramid_diag1 3 
++0template archway 12 0template pyramid_diag1 7 0template pyramid1 11 
++0template archway 8 0template pyramid1 7 
++0template sand 10 0template archway 5 
++0template 4sand003 8 0template sand 7 
++0template sandrock003 14 0template 6redrockwall002 5 0template 4sand004 11 
++0template 6redcanyon002 6 0template 4sand003 13 0template wheat002 11 
++0template 4sand004 14 0template 6redcanyon001 13 0template wheat001 3 
++0template 4sand003 8 0template wheat001 7 
++0template 4sand002 12 0template sand 3 
++0template sand 2 0template 4sand001 13 
++0template pyramid1 10 0template archway 5 
++0template pyramid_diag1 10 0template pyramid1 5 
+pyramid_diag1
++0template pyramid1 14 0template pyramid_diag1 5 0template pyramid_diag4 11 
++0template archway 10 0template pyramid1 13 0template pyramid_diag4 7 
++0template sand 14 0template archway 5 0template sandrock004 11 
++0template sand 8 0template sandrock003 7 
++0template sandrock001 14 0template 6redcanyon001 9 0template 4sand001 7 
++0template 6redrockwall001 6 0template 6redcanyon002 13 0template 4sand003 11 
++0template 4sand001 2 0template 6redrockwall001 13 
++0template 6redcanyon001 14 0template 4sand002 5 0template wheat002 11 
++0template wheat001 6 0template 6redcanyon002 13 0template 4sand002 11 
++0template wheat001 12 0template 4sand004 3 
++0template 6redcanyon002 6 0template 4sand003 13 0template megadirt002 11 
++0template pyramid1 14 0template archway 5 0template pyramid_diag2 11 
++0template pyramid_diag1 14 0template pyramid1 13 0template pyramid_diag2 3 
++0template pyramid_diag1 8 0template pyramid_diag2 7 
++0template pyramid_diag1 4 0template pyramid_diag4 11 
++0template pyramid_diag4 2 0template pyramid_diag1 13 
++0template archway 10 0template pyramid_diag4 5 
++0template sandrock002 14 0template archway 5 0template 4sand004 11 
++0template sand 10 0template sandrock004 13 0template 4sand004 7 
++0template 4sand001 14 0template sand 5 0template 20bush004 11 
++0template 4sand001 14 0template 6redrockwall002 13 0template 6redcanyon001 3 
++0template 1silt002 6 0template megadirt001 13 0template 6redcanyon001 11 
++0template sand 8 0template pyramid1 7 
++0template sand 4 0template 4sand004 11 
++0template archway 10 0template sand 13 0template 4sand002 7 
++0template pyramid_diag2 10 0template archway 5 
+pyramid_diag2
++0template pyramid_diag1 14 0template pyramid_diag2 1 
++0template pyramid_diag4 14 0template pyramid_diag1 13 0template pyramid1 11 0template pyramid_diag2 7 
++0template pyramid_diag4 12 0template pyramid1 3 
++0template archway 10 0template pyramid_diag4 13 0template pyramid1 7 
++0template 4sand001 14 0template archway 5 0template sand 11 
++0template 20bush001 10 0template sand 5 
+20bush001
++0template sandrock003 10 0template 6redcanyon001 13 0template 4sand004 7 
++0template 6redcanyon002 12 0template wheat001 3 
++0template 6redcanyon001 12 0template wheat001 7 0template 4sand003 11 
++0template sand 14 0template pyramid1 5 0template 4sand002 11 
++0template archway 10 0template 4sand001 13 0template sand 7 
++0template pyramid_diag2 14 0template archway 5 0template pyramid1 11 
++0template pyramid_diag2 8 0template pyramid1 7 
++0template pyramid1 14 0template pyramid_diag2 1 
++0template pyramid1 8 0template pyramid_diag2 7 
++0template archway 10 0template pyramid1 5 
++0template 20bush004 14 0template sand 1 
++0template 20bush004 8 0template sand 7 
++0template sandrock003 6 0template 4sand002 13 0template 6redcanyon002 11 
++0template 6redcanyon001 8 0template wheat001 7 
++0template wheat002 10 0template 4sand003 5 
++0template 4sand004 10 0template wheat002 5 
++0template 6redcanyon001 10 0template 4sand002 13 0template wheat001 7 
++0template 4sand002 6 0template pyramid1 13 0template sand 11 
++0template sand 6 0template 4sand001 9 
++0template pyramid_diag2 10 0template pyramid1 5 
++0template pyramid_diag2 4 0template pyramid1 11 
++0template pyramid1 2 0template pyramid_diag2 13 
++0template 20bush004 10 0template sand 13 0template 4sand001 7 
++0template sandrock004 14 0template 4sand003 9 0template 6redcanyon001 7 
++0template 4sand003 14 0template 6redcanyon001 13 0template redgranite001 11 0template sandrock004 7 
++0template 6redcanyon001 10 0template 4sand004 13 0template redgranite002 7 
++0template wheat002 14 0template 4sand003 5 0template 6redcanyon002 11 
++0template 6redcanyon001 6 0template wheat002 13 0template 4sand001 11 
++0template 4sand003 6 0template 6redcanyon002 13 0template wheat001 11 
++0template 6redcanyon002 14 0template wheat002 13 0template 4sand002 3 
++0template sand 6 0template 4sand004 13 0template 20bush004 11 
++0template 4sand002 14 0template sand 9 0template 20bush001 7 
++0template pyramid1 14 0template archway 1 
++0template pyramid_diag2 14 0template pyramid1 13 0template archway 3 
++0template pyramid_diag2 12 0template archway 3 
++0template pyramid1 14 0template pyramid_diag2 13 0template archway 3 
++0template archway 2 0template pyramid1 13 
++0template 20bush001 14 0template 4sand003 9 0template sand 7 
++0template sandrock003 14 0template 4sand002 5 0template 6redcanyon002 11 
++0template redgranite003 14 0template sandrock004 9 0template 6redcanyon002 7 
++0template 6redcanyon002 10 0template redgranite001 13 0template sandrock005 7 
++0template 6redcanyon001 4 0template 20bush_4sand001 11 
++0template megadirt002 10 0template 6redcanyon002 13 0template 20bush_4sand001 7 
++0template megadirt001 14 0template 6redcanyon001 5 0template 4sand002 11 
++0template sand 10 0template 20bush004 5 
++0template archway 14 0template 4sand002 9 0template 20bush001 7 
++0template sand 10 0template archway 13 0template pyramid1 7 
++0template 4sand004 6 0template wheat002 9 
++0template 4sand003 6 0template wheat001 13 0template 6redcanyon001 11 
++0template 20bush_4sand001 14 0template 6redcanyon002 13 0template 4sand003 3 
++0template megadirt001 14 0template 20bush_4sand002 13 0template 4sand001 3 
++0template sandrock004 14 0template 4sand003 13 0template megadirt001 3 
++0template 4sand002 14 0template 20bush004 13 0template sand 3 
++0template archway 14 0template 4sand004 9 0template sand 7 
++0template archway 12 0template pyramid1 3 
++0template archway 12 0template pyramid1 7 0template sand 11 
++0template archway 12 0template sand 7 0template pyramid1 11 
++0template pyramid1 14 0template archway 13 0template sand 3 
++0template sand 2 0template pyramid1 13 
++0template 4sand001 14 0template sand 5 0template sandrock002 11 
++0template 20bush003 6 0template 4sand003 13 0template 6redcanyon001 11 
++0template 4sand004 14 0template 20bush004 13 0template 6redcanyon002 3 
++0template sandrock001 6 0template megadirt001 13 0template 4sand002 11 
++0template sand 14 0template 20bush002 1 
++0template sand 8 0template 20bush003 7 
++0template pyramid1 14 0template 4sand001 13 0template sand 3 
++0template pyramid1 12 0template sand 3 
++0template pyramid1 14 0template sand 1 
++0template sandrock005 14 0template sand 13 0template 4sand003 3 
++0template 6redcanyon002 14 0template 20bush002 1 
++0template 6redcanyon001 8 0template 20bush001 7 
++0template 4sand001 14 0template 6redcanyon001 5 0template 20bush003 11 
++0template wheat001 6 0template 4sand001 9 
++0template 6redcanyon002 12 0template 4sand003 7 0template 1silt002 11 
++0template sandrock004 14 0template megadirt002 9 0template 4sand002 7 
++0template 4sand002 6 0template sand 13 0template 20bush002 11 
+20bush002
++0template 6redcanyon001 14 0template 20bush002 5 0template 4sand001 11 
++0template 20bush003 14 0template 6redcanyon002 13 0template 4sand004 3 
+20bush003
++0template sand 14 0template 20bush003 5 0template 4sand004 11 
++0template 4sand002 2 0template sand 13 
++0template 20bush001 6 0template 4sand003 9 
++0template 6redcanyon002 4 0template brownmud001 11 
++0template 6redcanyon002 8 0template brownmud001 7 
++0template sandrock001 2 0template 6redcanyon001 13 
++0template sand 14 0template 4sand002 9 0template 20bush004 7 
++0template sand 4 0template sandrock003 11 
++0template sand 12 0template sandrock005 7 0template 4sand002 11 
++0template sand 4 0template 20bush004 11 
++0template sand 12 0template 20bush001 7 0template 4sand001 11 
++0template brownmud001 14 0template 6redcanyon001 1 
++0template 6redcanyon002 2 0template brownmud001 13 
++0template sand 12 0template 4sand002 7 0template 20bush002 11 
++0template 20bush001 6 0template sand 13 0template 4sand004 11 
++0template 20bush001 12 0template 4sand002 7 0template sand 11 
++0template 4sand004 14 0template 20bush002 9 0template sand 7 
++0template sand 14 0template 20bush001 9 0template 4sand001 7 
++0template sand 12 0template 20bush003 3 
++0template 20bush001 2 0template sand 13 
++0template 4sand001 12 0template 6redcanyon001 7 0template brownmud001 11 
++0template 6redcanyon001 14 0template 4sand004 9 0template brownmud001 7 
++0template 20bush003 14 0template sand 13 0template 4sand003 3 
++0template 6redcanyon002 12 0template 4sand003 7 0template brownmud001 11 
++0template brownmud001 2 0template 6redcanyon002 13 
++0template 4sand001 10 0template brownmud001 5 

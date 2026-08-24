@@ -1,0 +1,12 @@
+max_xy_speed    95.000000
+jet_abate_max   1.500000
+tilt_err_mag    1.000000
+roll_err_mag    1.000000
+tilt_max        0.900000
+roll_max        1.000000
+roll_turn_fac   1.000000
+roll_strafe_fac 0.700000
+base_react      0.005000
+slope_react     0.000500
+degen_on_slope  1
+zero_push       0.400000

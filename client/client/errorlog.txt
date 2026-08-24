@@ -1,0 +1,174 @@
+
+
+
+
+client caused an Access Violation in module client.exe at 001b:004be689.
+Exception handler called in main thread.
+Error occurred at 10/29/2001 15:07:28.
+D:\wulfram\client\client.exe, run by Administrator.
+1 processor(s), type 586.
+384 MBytes physical memory.
+Read from location 00000014 caused an access violation.
+
+Registers:
+EAX=0012fe60 CS=001b EIP=004be689 EFLGS=00210216
+EBX=00000000 SS=0023 ESP=0012fe08 EBP=00000000
+ECX=00000000 DS=0023 ESI=00002b11 FS=0038
+EDX=00000000 ES=0023 EDI=00f5a9d8 GS=0000
+Bytes at CS:EIP:
+8a 45 14 84 c0 0f 84 ec 00 00 00 8b 45 04 85 c0 
+Stack dump:
+0012fe08: 00f5a9d8 00002b11 00000000 00000000 00000000 00000001 004d9644 0000000a
+0012fe28: 004d9631 0012ff24 00000789 00000000 027f0e7f 00000000 004a2238 00482792
+0012fe48: 0012fe84 0012fe60 00000000 00e5cfac 00000000 00e5cfac 004eb4c8 ffffffff
+0012fe68: 00000000 00f5a798 00000200 00e64a38 00e64a38 00000001 00480b3a 00539f34
+0012fe88: 004197d9 ffffffff 00e5cfa8 0012ff34 0012ff00 00000000 00000000 0012ff00
+0012fea8: 004685fa 00000001 00e5cfa8 00400000 005388c4 005388c0 005455f0 005388b4
+0012fec8: 005388b0 005455d0 00000006 00000000 7ffdf000 7ffdf000 00e5cfa8 00000000
+0012fee8: 00000000 0012ff00 00000000 00000000 00000000 00000001 00e5cf78 00000200
+0012ff08: 00e64a38 00e64a38 00000001 004d91d9 ffffffff 0012fed0 0012fa54 0012ffb0
+0012ff28: 004db9ec 004ea350 00000000 0012ffc0 004dc14c 00400000 00000000 001338a7
+0012ff48: 00000001 00000006 0457daac 7ffdf000 804024d7 001338a7 00000000 00000044
+0012ff68: 00135998 00134698 001346c0 00000000 00000000 00000000 00000000 00000000
+0012ff88: 00000000 00000000 00000401 00000001 00000000 00000000 00010001 00000000
+0012ffa8: 0012ff4c 00000000 0012ffe0 004db9ec 004eb628 00000000 0012fff0 77e97d08
+0012ffc8: 00000006 0457daac 7ffdf000 0457da80 0012ffc8 0457da80 ffffffff 77e8615b
+0012ffe8: 77e97d10 00000000 00000000 00000000 004dc06c 00000000
+
+	Module list: names, addresses, sizes, time stamps and file times:
+D:\wulfram\client\client.exe, loaded at 0x00400000 - 1351763 bytes - 3bddd1fb - file date is 10/29/2001 14:02:38
+C:\WINNT\System32\NVDESK32.DLL, loaded at 0x10000000 - 102400 bytes - 3ba2b480 - file date is 9/14/2001 15:52:00
+D:\wulfram\client\QMIXER.dll, loaded at 0x18000000 - 198144 bytes - 35bc0368 - file date is 7/26/1998 21:34:48
+C:\WINNT\System32\DDRAW.dll, loaded at 0x72800000 - 266512 bytes - 38439988 - file date is 12/7/1999 04:00:00
+C:\WINNT\System32\DCIMAN32.dll, loaded at 0x728a0000 - 8464 bytes - 38439988 - file date is 12/7/1999 04:00:00
+C:\WINNT\System32\WS2HELP.DLL, loaded at 0x75020000 - 18192 bytes - 3843995d - file date is 12/7/1999 04:00:00
+C:\WINNT\System32\WS2_32.DLL, loaded at 0x75030000 - 69392 bytes - 3af320a2 - file date is 5/4/2001 11:05:02
+C:\WINNT\System32\WSOCK32.dll, loaded at 0x75050000 - 21776 bytes - 3af320a3 - file date is 5/4/2001 11:05:02
+C:\WINNT\System32\DINPUT.dll, loaded at 0x759d0000 - 134416 bytes - 3af3205a - file date is 5/4/2001 11:05:02
+C:\WINNT\System32\WINMM.dll, loaded at 0x77570000 - 189200 bytes - 3844d038 - file date is 12/7/1999 04:00:00
+C:\WINNT\system32\ole32.dll, loaded at 0x77a50000 - 993040 bytes - 3af32051 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\RPCRT4.DLL, loaded at 0x77d40000 - 447760 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\ADVAPI32.dll, loaded at 0x77db0000 - 360208 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\USER32.dll, loaded at 0x77e10000 - 402192 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\KERNEL32.dll, loaded at 0x77e80000 - 731920 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\GDI32.DLL, loaded at 0x77f40000 - 234256 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\System32\ntdll.dll, loaded at 0x77f80000 - 490256 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\MSVCRT.dll, loaded at 0x78000000 - 290869 bytes - 396d3314 - file date is 5/4/2001 11:05:02
+
+
+
+
+client caused a Privileged Instruction in module glide2x.dll at 001b:00f91652.
+Exception handler called in main thread.
+Error occurred at 10/29/2001 15:09:54.
+D:\wulfram\client\client.exe, run by Administrator.
+1 processor(s), type 586.
+384 MBytes physical memory.
+
+Registers:
+EAX=80000000 CS=001b EIP=00f91652 EFLGS=00010206
+EBX=00000000 SS=0023 ESP=0012fd78 EBP=0012fdd4
+ECX=00000000 DS=0023 ESI=00000000 FS=0038
+EDX=00000cf8 ES=0023 EDI=00000001 GS=0000
+Bytes at CS:EIP:
+ef ba fc 0c 00 00 ed 25 ff ff 00 00 3d ff ff 00 
+Stack dump:
+0012fd78: 77e89ac1 00000014 00000001 00f9197c 0012fdd4 77e89ac1 00000014 00000001
+0012fd98: 00000014 00000001 00f8f88e 0000121a 0000ffff 0012fdc0 00000000 77e89ac1
+0012fdb8: 00000014 00000001 0012fdd4 0000121a 00000000 0000ffff 00000000 00f67630
+0012fdd8: 00f84595 00f674a1 0012fdec 00f60000 00f67450 0012fe9c 005de1e0 7ffde000
+0012fdf8: 00000030 00000000 00000020 0012fe50 7ffdebf8 00000000 0012fe38 0370036e
+0012fe18: 00f67580 00f72640 0012fdd4 0012fd90 0000000c 0012ff24 77fb9da7 77f86448
+0012fe38: ffffffff 0012fe7c 77f86523 00f60000 0012fe74 00000000 0012fe88 00000001
+0012fe58: 77e89afd 0012fe7c 77e89b0f 00f60000 00000000 77e89ac1 00f67450 000d000c
+0012fe78: 0053f2c4 00f67630 004a1b5a 0012fea8 0012fe9c ffffffff 00000000 0012ff34
+0012fe98: 0012ff00 00f73138 00f67580 004a1c9d 00f730a8 00e5cfa8 004685e8 00400000
+0012feb8: 005388c4 005388c0 005455f0 005388b4 005388b0 005455d0 00000006 00000000
+0012fed8: 7ffdf000 7ffdf000 00e5cfa8 00000000 00000000 0012ff00 00000000 00000000
+0012fef8: 00000000 00000001 00e5cf78 00000200 00e64a38 00e64a38 00000001 004d91d9
+0012ff18: ffffffff 0012fed0 0012f9cc 0012ffb0 004db9ec 004ea350 00000000 0012ffc0
+0012ff38: 004dc14c 00400000 00000000 001338a7 00000001 00000006 0457daac 7ffdf000
+0012ff58: 804024d7 001338a7 00000000 00000044 00135998 00134698 001346c0 00000000
+0012ff78: 00000000 00000000 00000000 00000000 00000000 00000000 00000401 00000001
+0012ff98: 00000000 00000000 00010001 00000000 0012ff4c 00000000 0012ffe0 004db9ec
+0012ffb8: 004eb628 00000000 0012fff0 77e97d08 00000006 0457daac 7ffdf000 0457da80
+0012ffd8: 0012ffc8 0457da80 ffffffff 77e8615b 77e97d10 00000000 00000000 00000000
+0012fff8: 004dc06c 00000000
+
+	Module list: names, addresses, sizes, time stamps and file times:
+D:\wulfram\client\client.exe, loaded at 0x00400000 - 1351763 bytes - 3bddd1fb - file date is 10/29/2001 14:02:38
+D:\wulfram\client\win32_glide.dll, loaded at 0x00f60000 - 102400 bytes - 3bddcdfc - file date is 10/29/2001 13:45:34
+D:\wulfram\client\glide2x.dll, loaded at 0x00f80000 - 368128 bytes - 33558641 - file date is 4/16/1997 16:09:06
+C:\WINNT\System32\NVDESK32.DLL, loaded at 0x10000000 - 102400 bytes - 3ba2b480 - file date is 9/14/2001 15:52:00
+D:\wulfram\client\QMIXER.dll, loaded at 0x18000000 - 198144 bytes - 35bc0368 - file date is 7/26/1998 21:34:48
+C:\WINNT\System32\DDRAW.dll, loaded at 0x72800000 - 266512 bytes - 38439988 - file date is 12/7/1999 04:00:00
+C:\WINNT\System32\DCIMAN32.dll, loaded at 0x728a0000 - 8464 bytes - 38439988 - file date is 12/7/1999 04:00:00
+C:\WINNT\System32\WS2HELP.DLL, loaded at 0x75020000 - 18192 bytes - 3843995d - file date is 12/7/1999 04:00:00
+C:\WINNT\System32\WS2_32.DLL, loaded at 0x75030000 - 69392 bytes - 3af320a2 - file date is 5/4/2001 11:05:02
+C:\WINNT\System32\WSOCK32.dll, loaded at 0x75050000 - 21776 bytes - 3af320a3 - file date is 5/4/2001 11:05:02
+C:\WINNT\System32\DINPUT.dll, loaded at 0x759d0000 - 134416 bytes - 3af3205a - file date is 5/4/2001 11:05:02
+C:\WINNT\System32\WINMM.dll, loaded at 0x77570000 - 189200 bytes - 3844d038 - file date is 12/7/1999 04:00:00
+C:\WINNT\system32\ole32.dll, loaded at 0x77a50000 - 993040 bytes - 3af32051 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\RPCRT4.DLL, loaded at 0x77d40000 - 447760 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\ADVAPI32.dll, loaded at 0x77db0000 - 360208 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\USER32.dll, loaded at 0x77e10000 - 402192 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\KERNEL32.dll, loaded at 0x77e80000 - 731920 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\GDI32.DLL, loaded at 0x77f40000 - 234256 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\System32\ntdll.dll, loaded at 0x77f80000 - 490256 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\MSVCRT.dll, loaded at 0x78000000 - 290869 bytes - 396d3314 - file date is 5/4/2001 11:05:02
+
+
+
+
+client caused an Access Violation in module client.exe at 001b:004be689.
+Exception handler called in main thread.
+Error occurred at 10/29/2001 15:10:24.
+D:\wulfram\client\client.exe, run by Administrator.
+1 processor(s), type 586.
+384 MBytes physical memory.
+Read from location 00000014 caused an access violation.
+
+Registers:
+EAX=0012fe60 CS=001b EIP=004be689 EFLGS=00210216
+EBX=00000000 SS=0023 ESP=0012fe08 EBP=00000000
+ECX=00000000 DS=0023 ESI=00002b11 FS=0038
+EDX=00000000 ES=0023 EDI=00f5a9d8 GS=0000
+Bytes at CS:EIP:
+8a 45 14 84 c0 0f 84 ec 00 00 00 8b 45 04 85 c0 
+Stack dump:
+0012fe08: 00f5a9d8 00002b11 00000000 00000000 00000000 00000001 004d9644 0000000a
+0012fe28: 004d9631 0012ff24 00000789 00000000 027f0e7f 00000000 004a2238 00482792
+0012fe48: 0012fe84 0012fe60 00000000 00e5cfac 00000000 00e5cfac 004eb4c8 ffffffff
+0012fe68: 00000000 00f5a798 00000200 00e64a38 00e64a38 00000001 00480b3a 00539f34
+0012fe88: 004197d9 ffffffff 00e5cfa8 0012ff34 0012ff00 00000000 00000000 0012ff00
+0012fea8: 004685fa 00000001 00e5cfa8 00400000 005388c4 005388c0 005455f0 005388b4
+0012fec8: 005388b0 005455d0 00000006 00000000 7ffdf000 7ffdf000 00e5cfa8 00000000
+0012fee8: 00000000 0012ff00 00000000 00000000 00000000 00000001 00e5cf78 00000200
+0012ff08: 00e64a38 00e64a38 00000001 004d91d9 ffffffff 0012fed0 0012fa54 0012ffb0
+0012ff28: 004db9ec 004ea350 00000000 0012ffc0 004dc14c 00400000 00000000 001338a7
+0012ff48: 00000001 00000006 0457daac 7ffdf000 77e45955 001338a7 82835320 00000044
+0012ff68: 00135998 00134698 001346c0 00000000 00000000 00000000 00000000 00000000
+0012ff88: 00000000 00000000 00000401 00000001 00000000 00000000 00010001 00000000
+0012ffa8: 0012ff4c 00000000 0012ffe0 004db9ec 004eb628 00000000 0012fff0 77e97d08
+0012ffc8: 00000006 0457daac 7ffdf000 0457da80 0012ffc8 0457da80 ffffffff 77e8615b
+0012ffe8: 77e97d10 00000000 00000000 00000000 004dc06c 00000000
+
+	Module list: names, addresses, sizes, time stamps and file times:
+D:\wulfram\client\client.exe, loaded at 0x00400000 - 1351763 bytes - 3bddd1fb - file date is 10/29/2001 14:02:38
+C:\WINNT\System32\NVDESK32.DLL, loaded at 0x10000000 - 102400 bytes - 3ba2b480 - file date is 9/14/2001 15:52:00
+D:\wulfram\client\QMIXER.dll, loaded at 0x18000000 - 198144 bytes - 35bc0368 - file date is 7/26/1998 21:34:48
+C:\WINNT\System32\DDRAW.dll, loaded at 0x72800000 - 266512 bytes - 38439988 - file date is 12/7/1999 04:00:00
+C:\WINNT\System32\DCIMAN32.dll, loaded at 0x728a0000 - 8464 bytes - 38439988 - file date is 12/7/1999 04:00:00
+C:\WINNT\System32\WS2HELP.DLL, loaded at 0x75020000 - 18192 bytes - 3843995d - file date is 12/7/1999 04:00:00
+C:\WINNT\System32\WS2_32.DLL, loaded at 0x75030000 - 69392 bytes - 3af320a2 - file date is 5/4/2001 11:05:02
+C:\WINNT\System32\WSOCK32.dll, loaded at 0x75050000 - 21776 bytes - 3af320a3 - file date is 5/4/2001 11:05:02
+C:\WINNT\System32\DINPUT.dll, loaded at 0x759d0000 - 134416 bytes - 3af3205a - file date is 5/4/2001 11:05:02
+C:\WINNT\System32\WINMM.dll, loaded at 0x77570000 - 189200 bytes - 3844d038 - file date is 12/7/1999 04:00:00
+C:\WINNT\system32\ole32.dll, loaded at 0x77a50000 - 993040 bytes - 3af32051 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\RPCRT4.DLL, loaded at 0x77d40000 - 447760 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\ADVAPI32.dll, loaded at 0x77db0000 - 360208 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\USER32.dll, loaded at 0x77e10000 - 402192 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\KERNEL32.dll, loaded at 0x77e80000 - 731920 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\GDI32.DLL, loaded at 0x77f40000 - 234256 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\System32\ntdll.dll, loaded at 0x77f80000 - 490256 bytes - 3af32050 - file date is 5/4/2001 11:05:02
+C:\WINNT\system32\MSVCRT.dll, loaded at 0x78000000 - 290869 bytes - 396d3314 - file date is 5/4/2001 11:05:02

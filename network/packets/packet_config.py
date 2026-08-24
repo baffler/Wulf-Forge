@@ -86,39 +86,55 @@ class UnitDefaults:
 
 @dataclass(slots=True)
 class VehiclePhysics:
-    speed: float = 20.0
-    accel: float = 4.0
-    engine_torque: int = 700
-    suspension_stiffness: int = 550
-    ground_friction: float = 0.5
-    turn_rate: float = 0.2
-    suspension_dampening: float = 2.0
-    unknown_int_30: int = 0
-    mass: int = 33000
+    bang_min_velocity: float = 20.0
+    scrape_min_velocity: float = 4.0
+    bang_interval_ms: int = 700
+    scrape_interval_ms: int = 550
+    starting_jet_strength: float = 0.8
+    minimum_jet_strength: float = 0.05
+    jet_response_coefficient: float = 1.3
+    max_weapon_weight: int = 0
+    max_fuel: int = 33000
+
+
+def default_scout_vehicle_physics() -> VehiclePhysics:
+    """Ghidra defaults from VehicleInfo_CreateForType(type=1)."""
+    return VehiclePhysics(
+        minimum_jet_strength=0.15,
+        jet_response_coefficient=1.1,
+        max_fuel=13000,
+    )
 
 @dataclass(slots=True)
 class ActiveVehiclePhysics:
     turn_adjust: float = 4.5
     move_adjust: float = 85.0 # move_forward_adjust
-    move_backward_adjust: float = 38.0
     strafe_adjust: float = 69.7
     max_velocity: float = 80.0
     low_fuel_level: float = 2000.0
     hover_height: float | None = None
-    max_altitude: float = 9.75
-    max_speed_height_pickup: float = 3.5
-    gravity_pct: float = 0.5
-    jet_reaction_width: float = 2.0
-    jet_reaction_length: float = 2.0
-    jet_reaction_z: float = -0.5
-    jet_reaction_normal_z: float = -0.75
-    jet_reaction_range: float = 5.0
+    max_altitude: float = 3.25
+    gravity_pct: float = 1.0
 
     @property
     def tank_hover_height(self) -> float:
         if self.hover_height is not None:
             return self.hover_height
         return self.max_altitude
+
+
+@dataclass(slots=True)
+class MedicVehiclePhysics:
+    """Ghidra defaults from MedicVehicleTuning_ConstructDefaults."""
+    turn_adjust: float = 4.5
+    move_forward_adjust: float = 85.0
+    move_backward_adjust: float = 38.0
+    strafe_adjust: float = 72.0
+    max_velocity: float = 85.0
+    low_fuel_level: float = 2000.0
+    max_altitude: float = 4.9
+    max_speed_height_pickup: float = 3.5
+    gravity_pct: float = 1.0
 
 @dataclass(slots=True)
 class BehaviorHeader:
@@ -164,8 +180,10 @@ class BehaviorConfig:
     unit_defaults: UnitDefaults = field(default_factory=UnitDefaults)
     vehicle_physics_count: int = 2
     vehicle_physics: VehiclePhysics = field(default_factory=VehiclePhysics)
+    scout_vehicle_physics: VehiclePhysics = field(default_factory=default_scout_vehicle_physics)
     active_vehicles_count: int = 3
     active_vehicle_physics: ActiveVehiclePhysics = field(default_factory=ActiveVehiclePhysics)
+    medic_vehicle_physics: MedicVehiclePhysics = field(default_factory=MedicVehiclePhysics)
 
 @dataclass(frozen=True, slots=True)
 class PacketConfig:

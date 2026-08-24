@@ -1,0 +1,36 @@
+axis_key "movement" "up"   "moving_forward" absolute  1.0
+axis_key "movement" "down" "moving_forward" absolute -1.0
+
+axis_key "movement" "right" "turning" absolute  0.6
+axis_key "movement" "left" "turning"  absolute -0.6
+
+axis_key "movement" "shift-right" "turning" absolute  1.0
+axis_key "movement" "shift-left"  "turning" absolute -1.0
+
+axis "movement" "mousex" "turning"    absolute     0.06
+axis "movement" "mousey" "tilting"    relative -0.0010
+axis "movement" "mousez" "zoom_level" relative  1.0
+
+axis "movement" "joyx" "turning" absolute  1.0
+axis "movement" "joyy" "tilting" relative -1.0
+
+weapon_key "weapons" " " "autocannon"
+weapon_key "weapons" "1" "pulse shell"
+weapon_key "weapons" "2" "piercer"
+weapon_key "weapons" "3" "thumper"
+weapon_key "weapons" "4" "hunter"
+weapon_key "weapons" "5" "caltrop"
+weapon_key "weapons" "6" "mine"
+weapon_key "weapons" "7" "flare"
+weapon_key "weapons" "8" "maser"
+
+weapon_key "weapons" "joy1" "autocannon"
+weapon_key "weapons" "joy2" "pulse shell"
+action_key "movement" "joy3" "jumpjet"
+
+weapon_key "weapons" "mouse1" "autocannon"
+weapon_key "weapons" "mouse3" "pulse shell"
+action_key "movement" "mouse2" "jumpjet"
+action_key "movement" "j" "jumpjet"
+
+

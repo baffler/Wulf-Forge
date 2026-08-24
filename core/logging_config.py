@@ -14,6 +14,18 @@ from typing import TextIO
 _HANDLER_MARKER = "_wulf_forge_file_handler"
 
 
+def _unique_log_file(log_path: Path) -> Path:
+    """Return a boot log path that does not collide at coarse clock resolution."""
+    timestamp = datetime.now().strftime("%Y%m%d-%H%M%S-%f")
+    stem = f"wulf-forge-{timestamp}-{os.getpid()}"
+    candidate = log_path / f"{stem}.log"
+    suffix = 1
+    while candidate.exists():
+        candidate = log_path / f"{stem}-{suffix}.log"
+        suffix += 1
+    return candidate
+
+
 class TeeLoggingStream(io.TextIOBase):
     """Mirror writes to the original stream and line-buffer them into logging."""
 
@@ -95,8 +107,7 @@ def setup_logging(
     log_path = Path(log_dir).resolve()
     log_path.mkdir(parents=True, exist_ok=True)
 
-    timestamp = datetime.now().strftime("%Y%m%d-%H%M%S-%f")
-    log_file = log_path / f"wulf-forge-{timestamp}-{os.getpid()}.log"
+    log_file = _unique_log_file(log_path)
 
     root = logging.getLogger()
     root.setLevel(logging.DEBUG)

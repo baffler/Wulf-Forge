@@ -1,0 +1,1889 @@
+groundrunway001
+groundrunway002
++0template rockwall001 10 0template groundrunway002 5 
+rockwall005
+rockwall002
+rockwall003
+rockwall001
++0template groundrunway002 10 0template rockwall003 5 
++0template groundrunway002 4 0template Gdt001 11 
++0template Gdt001 2 0template groundrunway001 13 
+Gdt001
++0template groundrunway002 4 0template SC2back 11 
++0template groundrunway001 12 0template SC2back 3 
++0template groundrunway002 8 0template SC2back 7 
++0template groundrunway002 4 0template searockdark004 11 
++0template groundrunway001 12 0template searockdark004 3 
++0template groundrunway001 8 0template searockdark003 7 
++0template rockwall003 4 0template Gdt001 11 
++0template rockwall003 8 0template Gdt001 7 
+rockwall004
++0template rockwall001 12 0template Gdt001 3 
++0template Gdt001 10 0template groundrunway002 5 
++0template groundrunway002 4 0template asphalt001 11 
++0template groundrunway001 12 0template asphalt004 3 
++0template groundrunway001 8 0template asphalt002 7 
++0template SC2back 10 0template groundrunway002 5 
+SC2back
++0template SC2back 4 0template gun 11 
++0template SC2back 12 0template gun 3 
++0template SC2back 8 0template gun 7 
++0template groundrunway002 10 0template SC2back 5 
++0template searockdark002 10 0template groundrunway001 5 
+searockdark003
++0template groundrunway002 10 0template searockdark004 5 
++0template Gdt001 14 0template rockwall001 1 
++0template rockwall004 2 0template Gdt001 13 
++0template Gdt001 10 0template rockwall002 5 
++0template rockwall005 14 0template Gdt001 1 
++0template asphalt004 10 0template groundrunway001 5 
+asphalt004
++0template groundrunway002 10 0template asphalt002 5 
++0template gun 10 0template SC2back 5 
+gun
++0template SC2back 14 0template gun 1 
++0template groundrunway001 14 0template SC2back 1 
++0template searockdark004 14 0template groundrunway002 1 
++0template searockdark001 12 0template groundrunway002 3 
++0template groundrunway002 2 0template searockdark001 13 
++0template groundrunway002 4 0template gn1 11 
++0template groundrunway001 12 0template gn1 3 
++0template groundrunway002 8 0template gn1 7 
+asphalt003
++0template rockwall005 14 0template groundrunway002 5 0template Gdt001 11 
++0template Gdt001 2 0template rockwall001 13 
++0template Gdt001 4 0template rockwall004 11 
++0template Gdt001 14 0template groundrunway002 1 
++0template Gdt001 8 0template groundrunway002 7 
++0template Gdt001 4 0template roman001 11 
++0template Gdt001 8 0template roman001 7 
++0template asphalt001 14 0template groundrunway001 1 
++0template asphalt002 12 0template groundrunway002 3 
++0template groundrunway002 2 0template asphalt004 13 
++0template SC2back 14 0template gun 5 0template SC2btmmid 11 
++0template SC2back 8 0template SC2btmmid 7 
++0template gn1 10 0template groundrunway001 5 
+gn1
++0template groundrunway002 10 0template gn1 5 
++0template rockwall003 10 0template Gdt001 5 
++0template roman002 10 0template Gdt001 5 
++0template Gdt001 10 0template roman002 5 
++0template SC2btmmid 10 0template gun 5 
++0template SC2back 14 0template SC2btmmid 1 
++0template groundrunway002 10 0template SC2back 13 0template SC2btmmid 7 
++0template Gdt001 4 0template groundrunway001 11 
++0template Gdt001 12 0template groundrunway002 3 
++0template rockwall004 14 0template Gdt001 13 0template groundrunway001 3 
++0template rockwall004 12 0template groundrunway002 3 
++0template groundrunway001 2 0template rockwall002 13 
++0template roman001 14 0template Gdt001 1 
++0template Gdt001 2 0template roman002 13 
+SC2btmmid
++0template groundrunway001 10 0template SC2btmmid 5 
++0template gn1 14 0template groundrunway002 1 
++0template gn1 12 0template groundrunway002 3 
++0template groundrunway001 2 0template gn1 13 
++0template groundrunway002 4 0template smallbuilding2 11 
++0template groundrunway001 12 0template smallbuilding2 3 
++0template Gdt001 14 0template groundrunway002 13 0template smallbuilding2 3 
++0template Gdt001 12 0template smallbuilding2 3 
++0template groundrunway001 14 0template Gdt001 13 0template smallbuilding2 3 
++0template groundrunway002 8 0template smallbuilding2 7 
++0template groundrunway001 4 0template wallmetal2 11 
++0template groundrunway001 12 0template wallmetal2 3 
++0template groundrunway002 8 0template wallmetal2 7 
++0template groundrunway001 4 0template SC1frontbottom 11 
++0template groundrunway001 12 0template SC1frontbottom 3 
++0template groundrunway002 12 0template SC1frontbottom 7 0template asphalt004 11 
++0template groundrunway002 12 0template asphalt004 7 0template SC2btmmid 11 
++0template groundrunway002 12 0template SC2btmmid 3 
++0template Gdt001 14 0template groundrunway002 9 0template SC2btmmid 7 
+searockdark002
++0template groundrunway002 14 0template searockdark001 1 
++0template SC2btmmid 14 0template gun 5 0template SC2back 11 
++0template SC2btmmid 12 0template SC2back 3 
++0template groundrunway002 10 0template SC2btmmid 13 0template SC2back 7 
++0template groundrunway001 4 0template w2blu_bottomback 11 
++0template groundrunway001 12 0template w2blu_bottomback 3 
++0template groundrunway002 12 0template w2blu_bottomback 7 0template w2blu_bottomfront 11 
++0template groundrunway002 12 0template w2blu_bottomfront 3 
++0template groundrunway001 8 0template w2blu_bottomfront 7 
+asphalt002
++0template smallbuilding2 10 0template groundrunway001 5 
+smallbuilding2
++0template groundrunway002 14 0template smallbuilding2 1 
++0template groundrunway001 4 0template commblue1 11 
++0template groundrunway001 12 0template commblue1 3 
++0template wallmetal2 10 0template groundrunway001 13 0template commblue1 7 
+wallmetal2
++0template groundrunway001 14 0template wallmetal2 5 0template commblue1 11 
++0template groundrunway001 14 0template wallmetal2 1 
++0template SC1frontbottom 10 0template groundrunway002 5 
+SC1frontbottom
++0template asphalt004 10 0template SC1frontbottom 5 
++0template SC2btmmid 10 0template asphalt001 5 
++0template searockdark004 8 0template groundrunway001 7 
++0template gun 14 0template SC2back 1 
++0template gun 8 0template SC2back 7 
++0template gun 4 0template SC2back 11 
++0template gun 12 0template SC2back 3 
++0template SC2back 10 0template gun 5 
++0template w2blu_bottomback 10 0template groundrunway002 5 
+w2blu_bottomback
++0template w2blu_bottomfront 10 0template w2blu_bottomback 5 
+w2blu_bottomfront
++0template groundrunway002 14 0template w2blu_bottomfront 1 
++0template smallbuilding2 4 0template groundrunway001 11 
++0template smallbuilding2 12 0template groundrunway001 3 
++0template smallbuilding2 12 0template groundrunway8 3 
++0template smallbuilding2 8 0template groundrunway002 7 
++0template groundrunway001 14 0template smallbuilding2 5 0template searockdark001 11 
++0template commblue1 10 0template groundrunway001 13 0template searockdark004 7 
+commblue1
++0template wallmetal2 14 0template commblue1 1 
++0template wallmetal2 12 0template commblue1 3 
++0template commblue1 2 0template wallmetal2 13 
++0template wallmetal2 8 0template commblue1 7 
++0template groundrunway002 10 0template wallmetal2 5 
+asphalt001
++0template SC1frontbottom 14 0template groundrunway002 1 
++0template SC1frontbottom 12 0template groundrunway002 7 0template asphalt003 11 
++0template asphalt001 2 0template SC1frontbottom 13 
++0template SC2btmmid 14 0template asphalt003 1 
++0template SC2btmmid 12 0template asphalt004 3 
++0template groundrunway001 10 0template SC2btmmid 13 0template asphalt001 7 
++0template groundrunway001 8 0template SC2btmmid 7 
++0template SC2back 2 0template gun 13 
++0template SC2back 4 0template groundrunway001 11 
++0template groundrunway002 2 0template SC2back 13 
++0template w2blu_bottomback 14 0template groundrunway001 5 0template w2blu_bottomfront 11 
++0template w2blu_bottomback 12 0template w2blu_bottomfront 3 
++0template w2blu_bottomfront 6 0template w2blu_bottomback 13 0template groundrunway001 11 
++0template w2blu_bottomfront 12 0template groundrunway002 3 
++0template w2blu_bottomfront 12 0template groundrunway001 7 0template w2blu_bottomback 11 
++0template w2blu_bottomfront 12 0template w2blu_bottomback 3 
++0template groundrunway001 10 0template w2blu_bottomfront 13 0template w2blu_bottomback 7 
+groundstruct29
++0template groundrunway002 10 0template groundstruct29 5 
++0template groundrunway001 10 0template smallbuilding2 5 
++0template groundrunway8 12 0template groundrunway002 3 
++0template smallbuilding2 14 0template groundrunway001 1 
++0template searockdark002 10 0template smallbuilding2 5 
+searockdark001
++0template commblue1 14 0template searockdark001 5 0template bridge3 11 
++0template commblue1 12 0template bridge3 3 
++0template commblue1 8 0template bridge3 7 
++0template groundrunway001 10 0template wallmetal2 13 0template commblue1 7 
++0template asphalt002 4 0template groundrunway002 11 
++0template SC2back 14 0template groundrunway001 1 
++0template SC2back 12 0template groundrunway001 3 
+searockdark004
++0template w2blu_bottomfront 10 0template groundrunway001 5 
++0template groundrunway002 14 0template w2blu_bottomfront 5 0template w2blu_bottomback 11 
++0template w2blu_bottomback 2 0template groundrunway002 13 
++0template groundrunway002 10 0template w2blu_bottomback 5 
+groundstruct30
++0template groundrunway002 14 0template groundstruct29 1 
++0template searockdark001 14 0template smallbuilding2 5 0template groundrunway002 11 
++0template bridge3 10 0template searockdark004 13 0template groundrunway001 7 
+bridge3
++0template commblue1 10 0template bridge3 5 
++0template commblue1 4 0template wallmetal3 11 
++0template commblue1 12 0template wallmetal3 3 
++0template groundrunway002 10 0template commblue1 13 0template wallmetal3 7 
++0template groundrunway001 4 0template groundstruct35 11 
++0template groundrunway001 12 0template groundstruct35 3 
++0template groundrunway002 8 0template groundstruct35 7 
++0template SC2btmmid 12 0template asphalt003 7 0template groundrunway001 11 
++0template groundrunway002 2 0template SC2btmmid 13 
++0template groundrunway001 4 0template SC1topback2 11 
++0template groundrunway002 12 0template SC1topback2 3 
++0template groundrunway001 12 0template SC1topback2 7 0template SC1topback 11 
++0template groundrunway001 12 0template SC1topback 3 
++0template groundrunway001 12 0template SC1topback 7 0template SC1topback2 11 
++0template groundrunway001 8 0template SC1topback2 7 
++0template w2blu_bottomback 10 0template w2blu_bottomfront 5 
++0template w2blu_bottomback 4 0template w2blu_bottomfront 11 
++0template groundrunway002 10 0template w2blu_bottomback 13 0template w2blu_bottomfront 7 
++0template groundrunway002 4 0template gun 11 
++0template groundrunway002 12 0template gun 3 
++0template groundstruct29 8 0template gun 7 
++0template smallbuilding2 2 0template groundrunway001 13 
++0template groundrunway001 14 0template smallbuilding2 5 0template asphalt002 11 
++0template bridge3 14 0template groundrunway002 13 0template commblue1 11 0template asphalt004 7 
++0template bridge3 12 0template commblue1 3 
++0template commblue1 2 0template bridge3 13 
++0template commblue1 4 0template ventpannel 11 
++0template commblue1 12 0template ventpannel 3 
++0template commblue1 8 0template ventpannel 7 
++0template wallmetal3 10 0template commblue1 5 
+wallmetal3
++0template groundrunway001 10 0template wallmetal3 5 
++0template groundstruct35 10 0template groundrunway001 13 0template asphalt002 7 
+groundstruct35
++0template groundrunway002 10 0template groundstruct35 5 
++0template SC1topback2 2 0template groundrunway002 13 
+SC1topback2
++0template SC1topback 10 0template SC1topback2 5 
+SC1topback
++0template SC1topback2 10 0template SC1topback 5 
++0template groundrunway002 14 0template SC1topback2 1 
++0template w2blu_bottomfront 14 0template groundrunway002 5 0template w2blu_barrel 11 
++0template w2blu_bottomfront 12 0template w2blu_barrel 7 0template gun 11 
++0template w2blu_bottomback 14 0template w2blu_bottomfront 13 0template gun 3 
++0template w2blu_bottomback 12 0template gun 7 0template w2blu_barrel 11 
++0template w2blu_bottomfront 14 0template w2blu_bottomback 13 0template w2blu_barrel 3 
++0template w2blu_bottomfront 12 0template w2blu_barrel 7 0template groundrunway002 11 
++0template groundrunway002 2 0template w2blu_bottomfront 13 
++0template groundrunway002 4 0template groundstruct34 11 
++0template gun 10 0template groundrunway001 13 0template groundstruct34 7 
++0template groundstruct29 14 0template gun 5 0template groundstruct34 11 
++0template groundstruct30 8 0template groundstruct34 7 
++0template asphalt004 10 0template smallbuilding2 13 0template groundrunway001 7 
++0template commblue1 10 0template asphalt003 5 
++0template commblue1 4 0template bridge3 11 
++0template ventpannel 10 0template commblue1 13 0template bridge3 7 
+ventpannel
++0template commblue1 10 0template ventpannel 5 
++0template commblue1 4 0template p2stacks 11 
++0template wallmetal3 10 0template commblue1 13 0template p2stacks 7 
++0template groundstruct35 10 0template asphalt002 5 
++0template groundstruct35 4 0template groundrunway001 11 
++0template groundstruct35 12 0template groundrunway002 3 
++0template groundstruct35 8 0template groundrunway002 7 
++0template SC1topback2 10 0template groundrunway001 5 
++0template SC1topback 14 0template SC1topback2 5 0template SC1frontbottom 11 
++0template SC1topback 12 0template SC1frontbottom 3 
++0template SC1topback2 14 0template SC1topback 13 0template SC1frontbottom 3 
++0template SC1topback2 12 0template SC1frontbottom 3 
++0template SC1topback2 8 0template SC1frontbottom 7 
++0template groundrunway002 10 0template SC1topback2 5 
++0template w2blu_barrel 10 0template groundrunway002 5 
++0template gun 10 0template w2blu_barrel 5 
++0template w2blu_barrel 10 0template gun 5 
+w2blu_barrel
++0template groundrunway001 10 0template w2blu_barrel 5 
++0template groundstruct34 2 0template groundrunway002 13 
++0template gun 14 0template groundstruct34 1 
++0template gun 12 0template groundstruct34 3 
++0template groundstruct34 2 0template gun 13 
++0template groundstruct30 10 0template groundstruct34 5 
++0template groundrunway001 14 0template smallbuilding2 5 0template groundrunway4 11 
++0template groundrunway001 2 0template smallbuilding2 13 
++0template commblue1 14 0template asphalt001 13 0template groundrunway002 3 
++0template bridge3 10 0template commblue1 13 0template groundrunway002 7 
++0template ventpannel 14 0template bridge3 5 0template commblue1 11 
++0template ventpannel 12 0template commblue1 3 
++0template commblue1 2 0template ventpannel 13 
++0template p2stacks 10 0template commblue1 5 
++0template wallmetal3 14 0template p2stacks 1 
++0template wallmetal3 12 0template p2stacks 7 0template commblue1 11 
++0template groundrunway001 10 0template wallmetal3 13 0template commblue1 7 
++0template groundrunway001 14 0template groundstruct35 1 
++0template groundstruct35 2 0template groundrunway001 13 
++0template SC1topback2 4 0template SC1frontbottom 11 
++0template SC1frontbottom 2 0template SC1topback2 13 
++0template SC1topback2 14 0template SC1frontbottom 1 
++0template groundrunway001 8 0template SC1frontbottom 7 
++0template groundrunway002 4 0template w2blu_barrel 11 
++0template w2blu_barrel 2 0template groundrunway002 13 
++0template gun 14 0template w2blu_barrel 5 0template groundrunway002 11 
++0template gun 12 0template groundrunway001 3 
++0template w2blu_barrel 14 0template gun 13 0template groundrunway001 3 
++0template w2blu_barrel 12 0template groundrunway001 7 0template gun 11 
++0template groundrunway001 14 0template w2blu_barrel 13 0template gun 3 
++0template groundstruct34 10 0template groundrunway002 13 0template gun 7 
+groundstruct34
++0template groundrunway4 14 0template smallbuilding2 1 
++0template bridge3 14 0template groundrunway002 1 
++0template bridge3 12 0template groundrunway002 3 
++0template commblue1 14 0template bridge3 13 0template groundrunway001 3 
++0template commblue1 12 0template groundrunway002 3 
++0template p2stacks 14 0template commblue1 13 0template groundrunway001 3 
++0template p2stacks 12 0template groundrunway001 3 
++0template commblue1 14 0template p2stacks 13 0template groundrunway002 3 
++0template groundrunway001 2 0template commblue1 13 
++0template groundstruct35 10 0template asphalt002 13 0template groundrunway002 7 
++0template groundrunway002 14 0template searockdark003 5 0template asphalt004 11 
++0template SC1frontbottom 10 0template SC1topback2 5 
++0template SC1topback2 14 0template SC1frontbottom 5 0template SC1topback 11 
++0template groundrunway002 10 0template SC1topback2 13 0template SC1topback 7 
++0template groundrunway002 10 0template SC1frontbottom 5 
++0template gun 10 0template groundrunway001 5 
++0template groundstruct34 10 0template gun 5 
++0template groundstruct34 4 0template gn2 11 
++0template groundstruct30 14 0template groundstruct34 13 0template gn2 3 
++0template groundstruct30 8 0template gn2 7 
++0template asphalt004 14 0template groundrunway001 5 0template groundstruct34 11 
++0template asphalt002 12 0template groundstruct34 3 
++0template groundrunway002 10 0template asphalt004 13 0template groundstruct34 7 
++0template smallbuilding2 10 0template groundrunway002 13 0template wallmetal2 7 
++0template groundstruct35 10 0template groundrunway002 5 
++0template searockdark002 12 0template groundrunway002 7 0template asphalt004 11 
++0template asphalt003 2 0template searockdark002 13 
++0template SC1frontbottom 4 0template SC1topback 11 
++0template SC1topback 2 0template SC1frontbottom 13 
++0template groundrunway002 10 0template SC1topback 5 
++0template groundrunway001 14 0template SC1frontbottom 1 
++0template gun 14 0template groundrunway002 5 0template w2blu_barrel 11 
++0template gun 12 0template w2blu_barrel 3 
++0template groundstruct34 14 0template gun 13 0template groundrunway001 11 0template w2blu_barrel 7 
++0template groundstruct34 8 0template groundrunway001 7 
++0template gn2 10 0template groundstruct34 5 
+gn2
++0template groundstruct30 14 0template gn2 5 0template metal 11 
++0template groundstruct30 12 0template metal 7 0template groundstruct34 11 
++0template groundrunway002 12 0template gn2 7 0template gn3 11 
++0template groundrunway002 12 0template gn3 3 
++0template groundstruct34 14 0template groundrunway001 13 0template gn3 3 
++0template groundstruct34 8 0template gn3 7 
++0template groundrunway002 10 0template groundstruct34 5 
++0template smallbuilding2 14 0template groundrunway001 5 0template asphalt002 11 
++0template smallbuilding2 12 0template asphalt003 3 
++0template smallbuilding2 12 0template asphalt003 7 0template groundrunway4 11 
++0template groundrunway002 12 0template smallbuilding2 7 0template wallmetal2 11 
++0template wallmetal2 2 0template groundrunway002 13 
++0template smallbuilding2 10 0template wallmetal2 5 
++0template asphalt001 12 0template groundrunway001 7 0template SC2back 11 
++0template groundrunway002 14 0template asphalt003 13 0template SC2back 3 
++0template groundrunway002 12 0template SC2back 7 0template asphalt002 11 
++0template SC1topback 14 0template SC1frontbottom 5 0template SC1topback2 11 
++0template SC1topback 12 0template SC1topback2 3 
++0template groundrunway002 10 0template SC1topback 13 0template SC1topback2 7 
++0template groundrunway002 14 0template w2blu_barrel 5 0template gun 11 
++0template w2blu_barrel 10 0template groundrunway002 13 0template gun 7 
++0template groundstruct34 10 0template groundrunway001 5 
++0template groundstruct34 4 0template groundstruct30 11 
++0template gn2 14 0template groundstruct34 9 0template groundstruct30 7 
++0template gn2 12 0template groundstruct34 7 0template metal 11 
++0template metal 2 0template gn2 13 
++0template groundstruct34 10 0template metal 5 
++0template gn3 10 0template gn2 5 
+gn3
++0template groundstruct34 10 0template gn3 5 
++0template groundrunway001 14 0template groundstruct34 1 
++0template groundrunway001 12 0template groundstruct34 7 0template asphalt002 11 
++0template asphalt002 2 0template groundrunway001 13 
++0template groundrunway5 10 0template asphalt004 5 
++0template groundrunway002 14 0template groundrunway6 1 
++0template groundrunway002 12 0template groundrunway6 3 
++0template groundrunway6 2 0template groundrunway002 13 
++0template smallbuilding2 14 0template groundrunway6 5 0template wallmetal2 11 
++0template wallmetal2 2 0template smallbuilding2 13 
++0template wallmetal2 4 0template building2 11 
++0template smallbuilding2 14 0template wallmetal2 13 0template building2 3 
++0template smallbuilding2 12 0template building2 7 0template wallmetal2 11 
++0template groundrunway002 10 0template smallbuilding2 13 0template wallmetal2 7 
++0template groundrunway002 12 0template smallbuilding2 7 0template groundstruct26a 11 
++0template groundrunway002 12 0template groundstruct26a 3 
++0template searockdark004 14 0template groundrunway002 13 0template groundstruct26a 3 
++0template searockdark002 12 0template groundstruct26a 3 
++0template groundrunway002 14 0template searockdark002 13 0template asphalt002 11 0template groundstruct26a 7 
++0template asphalt004 10 0template SC2back 5 
++0template SC1frontbottom 14 0template SC1topback2 1 
++0template SC1frontbottom 8 0template SC1topback2 7 
++0template SC1frontbottom 4 0template SC1topback2 11 
++0template SC1topback2 2 0template SC1frontbottom 13 
++0template SC1frontbottom 12 0template groundrunway001 3 
++0template groundrunway002 2 0template SC1frontbottom 13 
++0template w2blu_barrel 4 0template gun 11 
++0template gun 2 0template w2blu_barrel 13 
++0template w2blu_barrel 14 0template gun 5 0template groundrunway001 11 
++0template w2blu_barrel 12 0template groundrunway001 3 
++0template groundrunway002 6 0template w2blu_barrel 13 0template groundstruct34 11 
++0template groundstruct34 14 0template groundstruct30 1 
++0template metal 14 0template groundstruct34 13 0template groundstruct30 3 
++0template metal 12 0template groundstruct30 3 
++0template groundstruct34 14 0template metal 13 0template groundstruct30 3 
++0template gn2 14 0template groundstruct34 1 
++0template gn3 14 0template gn2 13 0template groundrunway001 3 
++0template gn3 12 0template groundrunway002 3 
++0template gn3 12 0template groundrunway001 7 0template s1bottomsG 11 
++0template groundstruct34 14 0template gn3 13 0template s1bottomsG 3 
++0template groundstruct34 8 0template s1bottomsG 7 
++0template asphalt004 14 0template groundstruct34 5 0template groundrunway002 11 
++0template wallmetal2 10 0template groundrunway002 5 
++0template wallmetal2 4 0template groundrunway002 11 
++0template wallmetal2 12 0template groundrunway002 3 
++0template building2 10 0template wallmetal2 5 
+building2
++0template wallmetal2 10 0template building2 5 
++0template groundrunway002 14 0template searockdark002 5 0template smallbuilding2 11 
++0template groundrunway002 12 0template smallbuilding2 7 0template SC1frontbottom 11 
++0template smallbuilding2 14 0template groundrunway001 13 0template SC1frontbottom 3 
++0template smallbuilding2 8 0template SC1frontbottom 7 
++0template groundstruct26a 10 0template smallbuilding2 5 
+groundstruct26a
++0template asphalt003 10 0template groundstruct26a 5 
++0template groundstruct35 14 0template groundrunway002 1 
++0template groundrunway001 2 0template groundstruct35 13 
++0template SC2back 12 0template groundrunway001 7 0template asphalt004 11 
++0template asphalt002 2 0template SC2back 13 
++0template groundrunway002 4 0template SC2btmmid 11 
++0template asphalt003 14 0template groundrunway002 13 0template SC2btmmid 3 
++0template asphalt003 8 0template SC2btmmid 7 
++0template SC1topback2 14 0template groundrunway002 1 
++0template SC1topback2 8 0template groundrunway001 7 
++0template SC1frontbottom 12 0template SC1topback2 7 0template SC1topback 11 
++0template SC1frontbottom 12 0template SC1topback 3 
++0template SC1topback2 10 0template SC1frontbottom 13 0template SC1topback 7 
++0template SC1topback2 4 0template groundrunway002 11 
++0template groundrunway002 2 0template SC1topback2 13 
++0template w2blu_barrel 14 0template groundrunway002 1 
++0template gun 14 0template w2blu_barrel 13 0template groundrunway002 3 
++0template groundrunway002 2 0template gun 13 
++0template groundstruct30 14 0template groundstruct34 1 
++0template groundstruct30 12 0template groundstruct34 3 
++0template s1bottomsG 10 0template groundrunway001 5 
+s1bottomsG
++0template groundstruct34 10 0template s1bottomsG 5 
++0template bridge3 10 0template groundrunway002 5 
++0template wallmetal2 10 0template bridge3 5 
++0template bridge3 10 0template wallmetal2 5 
++0template building2 14 0template bridge3 1 
++0template building2 12 0template bridge3 3 
++0template wallmetal2 14 0template building2 13 0template groundrunway002 11 0template bridge3 7 
++0template groundrunway001 2 0template wallmetal2 13 
++0template smallbuilding2 10 0template searockdark003 13 0template groundrunway001 7 
++0template SC1frontbottom 10 0template smallbuilding2 5 
++0template smallbuilding2 10 0template SC1frontbottom 5 
++0template smallbuilding2 4 0template groundstruct26a 11 
++0template smallbuilding2 12 0template groundstruct26a 3 
++0template groundstruct26a 6 0template smallbuilding2 13 0template groundrunway001 11 
++0template groundstruct26a 12 0template groundrunway001 3 
++0template groundstruct26a 8 0template groundrunway001 7 
++0template asphalt003 14 0template groundstruct26a 5 0template groundrunway001 11 
++0template SC2btmmid 10 0template groundrunway002 13 0template Gdt001 7 
++0template asphalt003 10 0template SC2btmmid 5 
++0template SC1topback2 12 0template groundrunway001 3 
++0template SC1topback 14 0template SC1topback2 13 0template groundrunway002 3 
++0template SC1topback 12 0template groundrunway001 3 
++0template SC1topback2 14 0template SC1topback 13 0template groundrunway001 3 
++0template groundrunway002 4 0template SC2turretback 11 
++0template groundrunway001 12 0template SC2turretback 3 
++0template groundrunway001 8 0template SC2turretback 7 
++0template groundstruct34 4 0template gun 11 
++0template groundstruct34 12 0template gun 3 
++0template groundstruct34 8 0template gun 7 
++0template groundstruct34 4 0template s1bottomsG 11 
++0template groundstruct34 12 0template s1bottomsG 3 
++0template groundstruct30 14 0template groundstruct34 9 0template s1bottomsG 7 
++0template groundrunway002 8 0template groundstruct34 7 
++0template groundrunway001 10 0template bridge3 5 
++0template groundrunway002 10 0template groundstruct26a 5 
++0template groundstruct26a 10 0template groundrunway002 5 
++0template groundrunway002 6 0template groundstruct35 13 0template searockdark002 11 
++0template SC2btmmid 14 0template Gdt001 13 0template groundrunway001 3 
++0template SC2btmmid 12 0template groundrunway002 3 
++0template asphalt004 14 0template SC2btmmid 13 0template groundrunway002 3 
++0template groundrunway001 12 0template searockdark001 7 0template SC2turretback 11 
++0template SC2turretback 2 0template groundrunway001 13 
+SC2turretback
++0template SC2turretback 4 0template gun 11 
++0template SC2turretback 12 0template gun 3 
++0template groundrunway002 10 0template SC2turretback 13 0template gun 7 
++0template groundstruct34 14 0template groundrunway001 1 
++0template gun 10 0template groundstruct34 13 0template groundrunway002 7 
++0template s1bottomsG 10 0template groundstruct34 5 
++0template s1bottomsG 10 0template groundrunway002 13 0template groundstruct34 7 
++0template groundstruct34 14 0template s1bottomsG 5 0template groundrunway001 11 
++0template groundrunway001 2 0template groundstruct34 13 
++0template wallmetal2 10 0template groundrunway002 13 0template asphalt002 7 
++0template groundrunway001 14 0template wallmetal2 13 0template bridge3 11 0template building2 7 
++0template groundrunway002 12 0template bridge3 3 
++0template bridge3 6 0template groundrunway001 13 0template building2 11 
++0template bridge3 12 0template building2 3 
++0template groundrunway001 10 0template bridge3 13 0template building2 7 
++0template SC2turretback 10 0template searockdark002 5 
++0template gun 2 0template SC2turretback 13 
++0template groundrunway001 14 0template gun 5 0template SC2turretback 11 
++0template gun 14 0template groundrunway002 1 
++0template gun 12 0template groundrunway002 7 0template groundstruct29 11 
++0template groundstruct34 14 0template gun 13 0template groundstruct30 3 
++0template s1bottomsG 14 0template groundstruct34 13 0template groundstruct30 3 
++0template s1bottomsG 12 0template groundstruct29 3 
++0template groundstruct34 10 0template s1bottomsG 13 0template groundstruct29 7 
++0template groundstruct34 14 0template groundrunway001 5 0template s1bottomsG 11 
++0template s1bottomsG 2 0template groundstruct34 13 
++0template groundrunway002 10 0template s1bottomsG 5 
++0template wallmetal2 14 0template asphalt003 5 0template groundrunway001 11 
++0template building2 10 0template wallmetal2 13 0template groundrunway001 7 
++0template bridge3 10 0template building2 5 
++0template building2 10 0template bridge3 5 
++0template groundrunway001 10 0template building2 5 
++0template groundrunway001 14 0template groundstruct26a 1 
++0template groundstruct26a 2 0template groundrunway002 13 
++0template groundrunway001 12 0template Gdt001 3 
++0template SC2turretback 10 0template searockdark003 13 0template groundrunway002 7 
++0template gun 10 0template SC2turretback 5 
++0template SC2turretback 14 0template gun 13 0template SC2back 3 
++0template SC2turretback 12 0template SC2back 3 
++0template groundrunway002 10 0template SC2turretback 13 0template SC2back 7 
++0template groundstruct29 12 0template groundrunway001 3 
++0template groundstruct30 12 0template groundrunway002 3 
++0template groundstruct29 8 0template groundrunway002 7 
++0template groundstruct34 14 0template smallbuilding2 5 0template s1bottomsG 11 
++0template groundrunway002 10 0template groundstruct34 13 0template s1bottomsG 7 
++0template s1bottomsG 4 0template groundrunway002 11 
++0template groundrunway001 2 0template s1bottomsG 13 
++0template building2 14 0template groundrunway001 1 
++0template bridge3 14 0template building2 13 0template groundrunway001 3 
++0template building2 14 0template bridge3 13 0template groundrunway002 3 
++0template building2 12 0template groundrunway002 3 
++0template groundrunway001 2 0template building2 13 
++0template groundstruct26a 14 0template smallbuilding2 1 
++0template groundstruct26a 8 0template smallbuilding2 7 
++0template groundrunway002 4 0template w2blu_wingtopback 11 
++0template groundrunway001 12 0template w2blu_wingtopback 3 
++0template groundrunway001 12 0template w2blu_wingtopback 7 0template w2blu_wingtopfront 11 
++0template groundrunway001 12 0template w2blu_wingtopfront 3 
++0template groundrunway001 12 0template w2blu_wingtopfront 7 0template w2blu_wingtopmid 11 
++0template groundrunway002 12 0template w2blu_wingtopmid 3 
++0template groundrunway002 12 0template w2blu_wingtopmid 7 0template w2blu_wingtopback 11 
++0template groundrunway001 8 0template w2blu_wingtopback 7 
++0template SC2turretback 10 0template groundrunway002 5 
++0template gun 14 0template SC2turretback 1 
++0template gun 8 0template SC2turretback 7 
++0template groundstruct29 10 0template groundrunway002 5 
++0template s1bottomsG 14 0template groundrunway002 5 0template groundstruct34 11 
++0template s1bottomsG 12 0template groundstruct34 3 
++0template groundrunway001 10 0template s1bottomsG 13 0template groundstruct34 7 
++0template groundstruct26a 14 0template smallbuilding2 5 0template groundrunway002 11 
++0template groundrunway002 2 0template groundstruct26a 13 
++0template w2blu_wingtopback 10 0template groundrunway001 5 
+w2blu_wingtopback
++0template w2blu_wingtopfront 14 0template w2blu_wingtopback 1 
++0template w2blu_wingtopfront 8 0template w2blu_wingtopback 7 
++0template w2blu_wingtopmid 10 0template w2blu_wingtopfront 5 
+w2blu_wingtopmid
++0template w2blu_wingtopback 10 0template w2blu_wingtopmid 5 
++0template groundrunway001 10 0template w2blu_wingtopback 5 
++0template s1bottomsG 14 0template groundrunway001 5 0template gun 11 
++0template s1bottomsG 12 0template gun 3 
++0template groundrunway002 14 0template s1bottomsG 13 0template groundstruct34 11 0template gun 7 
++0template SC1frontbottom 14 0template smallbuilding2 1 
++0template SC1frontbottom 12 0template smallbuilding2 3 
++0template smallbuilding2 2 0template SC1frontbottom 13 
++0template SC1frontbottom 2 0template groundrunway002 13 
++0template w2blu_wingtopfront 10 0template w2blu_wingtopback 5 
++0template w2blu_wingtopmid 14 0template w2blu_wingtopfront 1 
++0template w2blu_wingtopmid 8 0template w2blu_wingtopfront 7 
++0template w2blu_wingtopback 14 0template w2blu_wingtopmid 1 
++0template groundrunway001 10 0template w2blu_wingtopback 13 0template w2blu_wingtopmid 7 
++0template SC2turretback 14 0template groundrunway001 1 
++0template SC2turretback 12 0template groundrunway001 3 
++0template gun 14 0template SC2turretback 13 0template groundrunway002 3 
++0template gun 12 0template groundrunway002 7 0template SC2turretback 11 
++0template gun 12 0template SC2turretback 3 
++0template SC2back 14 0template gun 13 0template SC2turretback 3 
++0template SC2back 12 0template SC2turretback 7 0template groundrunway001 11 
++0template groundstruct34 14 0template gun 5 0template s1bottomsG 11 
++0template smallbuilding2 12 0template groundrunway002 7 0template asphalt003 11 
++0template smallbuilding2 12 0template asphalt004 7 0template groundrunway001 11 
++0template searockdark002 10 0template smallbuilding2 13 0template groundrunway002 7 
++0template SC1frontbottom 4 0template groundstruct35 11 
++0template SC1frontbottom 12 0template groundstruct35 3 
++0template SC1frontbottom 8 0template groundstruct35 7 
++0template w2blu_wingtopback 6 0template groundrunway002 13 0template w2blu_wingtopfront 11 
++0template w2blu_wingtopback 12 0template w2blu_wingtopfront 3 
++0template w2blu_wingtopfront 2 0template w2blu_wingtopback 13 
++0template w2blu_wingtopfront 4 0template w2blu_wingtopback 11 
++0template w2blu_wingtopmid 14 0template w2blu_wingtopfront 13 0template w2blu_wingtopback 3 
++0template w2blu_wingtopmid 8 0template w2blu_wingtopback 7 
++0template groundrunway002 10 0template w2blu_wingtopmid 5 
++0template groundrunway001 2 0template SC2turretback 13 
++0template searockdark001 2 0template groundrunway002 13 
++0template groundrunway002 14 0template SC2turretback 1 
++0template groundrunway002 12 0template SC2turretback 7 0template gun 11 
++0template groundrunway002 12 0template gun 7 0template SC2turretback 11 
++0template groundstruct37 12 0template SC2turretback 7 0template groundrunway002 11 
++0template groundrunway001 2 0template groundstruct37 13 
++0template gun 14 0template groundrunway002 5 0template groundstruct34 11 
++0template s1bottomsG 10 0template gun 13 0template groundstruct34 7 
++0template groundstruct35 10 0template SC1frontbottom 5 
++0template SC1frontbottom 10 0template groundstruct35 5 
+w2blu_wingtopfront
++0template w2blu_wingtopfront 4 0template w2blu_wingtopmid 11 
++0template w2blu_wingtopback 10 0template w2blu_wingtopfront 13 0template w2blu_wingtopmid 7 
++0template w2blu_wingtopmid 14 0template w2blu_wingtopback 1 
++0template groundrunway002 10 0template w2blu_wingtopmid 13 0template w2blu_wingtopback 7 
++0template SC1frontbottom 6 0template groundrunway001 13 0template gun 11 
++0template SC1frontbottom 12 0template gun 3 
++0template SC1frontbottom 8 0template gun 7 
++0template searockdark001 4 0template groundrunway002 11 
++0template SC2turretback 14 0template gun 1 
++0template SC2turretback 8 0template gun 7 
++0template groundrunway001 10 0template SC2turretback 5 
++0template s1bottomsG 14 0template groundstruct34 13 0template groundrunway002 3 
++0template s1bottomsG 12 0template groundrunway002 3 
++0template groundstruct34 14 0template s1bottomsG 13 0template groundrunway002 3 
++0template w2blu_wingtopback 14 0template groundrunway002 9 0template asphalt002 7 
++0template w2blu_wingtopfront 14 0template w2blu_wingtopback 9 0template groundrunway001 7 
++0template w2blu_wingtopfront 12 0template w2blu_wingtopback 3 
++0template w2blu_wingtopback 2 0template w2blu_wingtopmid 13 
++0template SC1frontbottom 14 0template groundrunway002 5 0template gun 11 
++0template gun 2 0template SC1frontbottom 13 
++0template SC1frontbottom 10 0template gun 5 
++0template SC2turretback 14 0template groundrunway002 13 0template w2blu_barrel 3 
++0template gun 10 0template SC2turretback 13 0template w2blu_barrel 7 
++0template gun 4 0template w2blu_barrel 11 
++0template gun 8 0template w2blu_barrel 7 
++0template SC2turretback 10 0template gun 5 
++0template groundstruct35 14 0template SC1frontbottom 1 
++0template groundstruct35 12 0template SC1frontbottom 3 
++0template SC1frontbottom 2 0template groundstruct35 13 
++0template w2blu_wingtopback 4 0template groundrunway001 11 
++0template groundrunway002 2 0template w2blu_wingtopback 13 
++0template gun 4 0template SC1frontbottom 11 
++0template SC1frontbottom 2 0template gun 13 
++0template SC1frontbottom 4 0template groundrunway002 11 
++0template gun 14 0template w2blu_barrel 5 0template SC2turretback 11 
++0template SC2turretback 2 0template gun 13 
++0template groundrunway001 6 0template asphalt004 13 0template searockdark002 11 
++0template w2blu_wingtopback 14 0template groundrunway002 13 0template searockdark003 3 
++0template w2blu_wingtopback 12 0template searockdark001 7 0template groundrunway001 11 
++0template w2blu_wingtopback 12 0template groundrunway002 3 
++0template Gdt001 4 0template easterhead2 11 
++0template Gdt001 12 0template easterhead2 3 
++0template Gdt001 8 0template easterhead2 7 
++0template SC1frontbottom 14 0template gun 9 0template groundrunway002 7 
++0template groundrunway002 10 0template SC1frontbottom 13 0template gun 7 
++0template groundrunway002 4 0template SC1backbottom 11 
++0template groundrunway002 12 0template SC1backbottom 3 
++0template groundrunway002 8 0template SC1backbottom 7 
++0template gun 8 0template groundrunway001 7 
++0template w2blu_barrel 14 0template gun 1 
++0template w2blu_barrel 12 0template gun 3 
++0template SC2turretback 10 0template w2blu_barrel 13 0template gun 7 
++0template asphalt002 12 0template groundrunway001 7 0template searockdark001 11 
++0template groundrunway001 14 0template asphalt002 13 0template searockdark004 3 
++0template groundrunway001 4 0template groundstruct7 11 
++0template groundrunway002 12 0template groundstruct7 3 
++0template groundrunway001 8 0template groundstruct7 7 
++0template SC1frontbottom 12 0template groundrunway002 7 0template Gmd001 11 
++0template SC1frontbottom 12 0template Gmd001 3 
++0template groundrunway001 10 0template SC1frontbottom 13 0template Gmd001 7 
++0template easterhead2 10 0template Gdt001 5 
+easterhead2
++0template Gdt001 10 0template easterhead2 5 
++0template groundrunway001 10 0template gun 5 
++0template SC1backbottom 10 0template groundrunway002 5 
+SC1backbottom
++0template groundrunway002 10 0template SC1backbottom 5 
++0template groundrunway002 2 0template w2blu_barrel 13 
++0template gun 14 0template groundrunway001 5 0template SC2turretback 11 
++0template SC2turretback 4 0template groundrunway001 11 
++0template groundstruct7 10 0template groundrunway002 5 
+groundstruct7
++0template groundrunway002 10 0template groundstruct7 5 
++0template Gmd001 14 0template groundrunway001 1 
++0template Gmd001 12 0template groundrunway002 3 
++0template groundrunway002 2 0template Gmd001 13 
++0template easterhead2 14 0template Gdt001 1 
++0template easterhead2 12 0template Gdt001 3 
++0template Gdt001 2 0template easterhead2 13 
++0template SC1backbottom 4 0template groundrunway001 11 
++0template SC1backbottom 12 0template groundrunway001 3 
++0template SC1backbottom 8 0template groundrunway001 7 
++0template groundrunway002 14 0template SC1backbottom 1 
++0template groundstruct7 2 0template groundrunway002 13 
++0template groundstruct7 4 0template groundrunway001 11 
++0template groundrunway002 2 0template groundstruct7 13 
++0template groundstruct7 14 0template groundrunway002 1 
++0template groundstruct7 12 0template groundrunway001 3 
++0template SC1backbottom 14 0template groundrunway001 5 0template SC1frontbottom 11 
++0template SC1backbottom 12 0template SC1frontbottom 3 
++0template groundrunway001 10 0template SC1backbottom 13 0template SC1frontbottom 7 
++0template groundrunway002 8 0template w2blu_wingtopfront 7 
++0template groundstruct7 6 0template groundrunway001 13 0template p2ramp1G 11 
++0template groundstruct7 12 0template p2ramp1G 7 0template groundrunway001 11 
++0template SC1backbottom 10 0template groundrunway002 13 0template SC1frontbottom 7 
++0template p2ramp1 14 0template groundstruct7 5 0template groundrunway002 11 
++0template groundrunway002 2 0template p2ramp1 13 
++0template groundrunway001 4 0template groundstruct3 11 
++0template groundrunway002 12 0template groundstruct3 3 
++0template groundrunway002 8 0template groundstruct3 7 
++0template groundrunway001 14 0template asphalt004 5 0template searockdark002 11 
++0template SC1backbottom 14 0template SC1frontbottom 5 0template groundrunway001 11 
++0template groundrunway001 2 0template SC1backbottom 13 
++0template groundrunway001 8 0template toppipe2 7 
++0template groundrunway001 4 0template groundstruct4 11 
++0template groundstruct3 10 0template groundrunway001 13 0template groundstruct4 7 
+groundstruct3
++0template groundrunway001 14 0template groundstruct3 1 
++0template groundstruct7 10 0template groundrunway002 13 0template groundstruct3 7 
++0template searockdark001 10 0template asphalt001 13 0template groundrunway001 7 
++0template groundrunway001 12 0template groundstruct4 3 
++0template groundrunway002 8 0template groundstruct4 7 
++0template groundstruct4 10 0template groundrunway002 5 
++0template groundstruct3 14 0template groundstruct4 1 
++0template groundstruct3 12 0template groundstruct4 7 0template groundrunway002 11 
++0template groundstruct3 12 0template groundrunway001 3 
++0template groundstruct3 12 0template groundrunway002 7 0template groundstruct4 11 
++0template groundstruct3 8 0template groundstruct4 7 
++0template groundstruct7 14 0template groundstruct3 5 0template groundstruct5 11 
++0template groundstruct7 12 0template groundstruct5 3 
++0template groundrunway001 10 0template groundstruct7 13 0template groundstruct5 7 
++0template groundrunway002 4 0template w2blu_wingtopfront 11 
++0template groundrunway002 12 0template w2blu_wingtopfront 7 0template w2blu_wingtopback 11 
++0template SC2back 2 0template groundrunway002 13 
+groundstruct4
++0template groundrunway002 10 0template groundstruct4 5 
++0template groundstruct4 14 0template groundrunway001 13 0template searockdark004 3 
++0template groundstruct3 14 0template groundstruct4 13 0template groundrunway001 11 0template searockdark003 7 
++0template groundstruct5 14 0template groundstruct3 13 0template groundrunway001 3 
++0template groundstruct5 12 0template groundrunway002 3 
++0template groundrunway001 2 0template groundstruct5 13 
++0template w2blu_wingtopfront 10 0template groundrunway001 5 
++0template w2blu_wingtopback 10 0template w2blu_wingtopfront 5 
++0template groundrunway001 14 0template w2blu_wingtopfront 13 0template w2blu_wingtopback 3 
++0template easterhead2 2 0template Gdt001 13 
++0template groundrunway2 10 0template groundrunway001 5 
++0template SC2back 10 0template groundrunway2 5 
++0template w2blu_wingtopfront 14 0template groundrunway002 5 0template w2blu_wingtopback 11 
++0template w2blu_wingtopback 2 0template w2blu_wingtopfront 13 
++0template w2blu_wingtopfront 10 0template w2blu_wingtopback 13 0template groundrunway001 7 
++0template groundstruct4 2 0template groundrunway002 13 
++0template groundrunway001 4 0template p2ramp1 11 
++0template groundrunway001 8 0template p2ramp1 7 
++0template groundrunway001 14 0template groundstruct4 5 0template groundstruct3 11 
++0template w2blu_wingtopback 14 0template groundrunway002 5 0template w2blu_wingtopfront 11 
++0template groundrunway002 14 0template w2blu_wingtopback 9 0template w2blu_wingtopfront 7 
++0template w2blu_wingtopfront 14 0template groundrunway002 13 0template w2blu_wingtopback 3 
++0template easterhead2 8 0template Gdt001 7 
++0template SC2btmmid 2 0template groundrunway001 13 
++0template groundrunway001 14 0template SC2btmmid 1 
++0template groundrunway001 4 0template building1 11 
++0template groundrunway002 12 0template building1 7 0template smallbuilding1 11 
++0template groundrunway001 12 0template smallbuilding1 3 
++0template groundrunway001 12 0template smallbuilding1 7 0template building1 11 
++0template groundrunway002 8 0template building1 7 
++0template groundrunway001 4 0template w2rt_barrel 11 
++0template groundrunway002 12 0template w2rt_barrel 3 
++0template groundrunway002 12 0template w2rt_barrel 7 0template asphalt004 11 
++0template various 14 0template groundrunway001 1 
++0template groundrunway002 2 0template various 13 
++0template groundstruct4 14 0template groundrunway001 1 
++0template groundstruct4 12 0template groundrunway001 3 
++0template groundrunway001 2 0template groundstruct4 13 
++0template groundstruct3 10 0template groundstruct4 13 0template groundrunway001 7 
++0template groundrunway002 10 0template groundstruct3 5 
++0template w2blu_wingtopback 4 0template w2blu_wingtopfront 11 
++0template w2blu_wingtopback 12 0template w2blu_wingtopfront 7 0template groundrunway002 11 
++0template SC2btmmid 10 0template groundrunway002 5 
++0template SC2btmmid 4 0template groundrunway002 11 
++0template SC2btmmid 8 0template groundrunway002 7 
++0template building1 10 0template groundrunway001 5 
++0template smallbuilding1 10 0template building1 5 
+smallbuilding1
++0template building1 10 0template smallbuilding1 5 
++0template groundrunway001 14 0template building1 1 
++0template groundrunway001 12 0template building1 7 0template asphalt004 11 
++0template w2rt_barrel 10 0template groundrunway002 5 
+w2rt_barrel
++0template asphalt003 10 0template w2rt_barrel 5 
++0template groundrunway002 14 0template asphalt003 1 
++0template SC2back 10 0template groundrunway001 13 0template asphalt001 7 
++0template groundstruct3 14 0template groundrunway002 1 
++0template groundstruct3 12 0template groundrunway002 7 0template groundstruct5 11 
++0template groundrunway002 14 0template groundstruct3 13 0template groundstruct5 3 
++0template groundrunway001 8 0template groundstruct5 7 
++0template w2blu_wingtopfront 14 0template groundrunway001 1 
++0template w2blu_wingtopfront 12 0template groundrunway001 3 
++0template w2blu_wingtopback 14 0template w2blu_wingtopfront 13 0template groundrunway002 3 
++0template w2blu_wingtopfront 14 0template w2blu_wingtopback 13 0template groundrunway002 3 
++0template groundrunway001 2 0template w2blu_wingtopfront 13 
++0template SC2btmmid 14 0template groundrunway001 1 
++0template groundrunway002 6 0template SC2btmmid 9 
++0template building1 14 0template groundrunway002 1 
++0template smallbuilding1 14 0template building1 13 0template groundrunway001 3 
++0template smallbuilding1 12 0template groundrunway002 3 
++0template building1 14 0template smallbuilding1 13 0template smallbuilding2 11 0template groundrunway002 7 
++0template building1 12 0template smallbuilding2 3 
++0template asphalt002 10 0template building1 13 0template smallbuilding2 7 
++0template w2rt_barrel 6 0template groundrunway001 9 
++0template w2rt_barrel 12 0template groundrunway001 3 
++0template w2rt_barrel 8 0template groundrunway002 7 
++0template asphalt003 14 0template w2rt_barrel 1 
++0template asphalt003 8 0template w2rt_barrel 7 
++0template SC2back 14 0template asphalt003 1 
++0template SC2back 8 0template asphalt002 7 
++0template groundstruct5 10 0template groundrunway002 5 
+groundstruct5
++0template groundrunway002 10 0template groundstruct5 5 
++0template groundrunway002 4 0template Gmd001 11 
++0template groundrunway002 12 0template Gmd001 3 
++0template groundrunway001 8 0template Gmd001 7 
++0template groundrunway001 4 0template stormsky026 11 
++0template groundrunway002 12 0template stormsky011 7 0template Gmd001 11 
++0template groundrunway001 12 0template building1 3 
++0template asphalt003 14 0template smallbuilding2 5 0template groundrunway001 11 
++0template groundrunway002 10 0template w2rt_barrel 5 
+bridge1
++0template w2rt_barrel 10 0template bridge1 5 
++0template SC2back 14 0template asphalt001 5 0template groundrunway001 11 
++0template SC2back 12 0template groundrunway4 3 
++0template groundrunway001 14 0template SC2back 13 0template asphalt004 3 
++0template groundstruct5 14 0template groundrunway001 5 0template groundstruct7 11 
++0template groundstruct5 12 0template groundstruct7 3 
++0template groundrunway002 10 0template groundstruct5 13 0template groundstruct7 7 
++0template Gmd001 10 0template groundrunway002 5 
+Gmd001
++0template groundrunway001 10 0template Gmd001 5 
++0template stormsky024 14 0template groundrunway002 5 0template Gmd001 11 
++0template Gmd001 2 0template stormsky032 13 
++0template Gmd001 4 0template groundrunway001 11 
++0template Gmd001 8 0template groundrunway002 7 
+building1
++0template groundrunway002 10 0template building1 5 
++0template smallbuilding2 14 0template groundrunway001 5 0template building1 11 
++0template smallbuilding2 12 0template building1 3 
++0template groundrunway001 10 0template smallbuilding2 13 0template building1 7 
++0template groundrunway001 14 0template w2rt_barrel 1 
++0template bridge1 8 0template w2rt_barrel 7 
++0template asphalt003 12 0template w2rt_barrel 7 0template bridge1 11 
+groundrunway4
++0template groundrunway001 4 0template groundstruct6 11 
++0template groundrunway002 12 0template groundstruct6 3 
++0template groundrunway002 8 0template groundstruct6 7 
++0template groundrunway002 12 0template Gmd001 7 0template w2rt_barrel 11 
++0template groundrunway001 12 0template w2rt_barrel 7 0template Gmd001 11 
++0template groundrunway001 8 0template w2rt_barrel 7 
++0template groundrunway002 8 0template Gdt001 7 
++0template groundrunway001 14 0template Gmd001 1 
++0template Gmd001 2 0template groundrunway002 13 
++0template building1 14 0template groundrunway001 5 0template smallbuilding1 11 
++0template building1 12 0template smallbuilding1 3 
++0template groundrunway002 10 0template building1 13 0template smallbuilding1 7 
++0template bridge1 10 0template w2rt_barrel 5 
++0template w2rt_barrel 14 0template bridge1 1 
++0template w2rt_barrel 8 0template bridge1 7 
++0template bridge1 14 0template w2rt_barrel 1 
++0template groundrunway4 8 0template w2rt_barrel 7 
++0template groundstruct6 10 0template groundrunway002 5 
+groundstruct6
++0template groundrunway002 10 0template groundstruct6 5 
++0template groundstruct7 14 0template groundrunway002 5 0template groundstruct5 11 
++0template w2rt_barrel 10 0template Gmd001 5 
++0template Gmd001 10 0template w2rt_barrel 5 
++0template w2rt_barrel 4 0template Gmd001 11 
++0template groundrunway001 14 0template w2rt_barrel 13 0template Gmd001 3 
++0template groundrunway002 2 0template Gdt001 13 
++0template Gmd001 4 0template stormsky013 11 
++0template Gmd001 8 0template stormsky013 7 
++0template smallbuilding1 10 0template groundrunway001 5 
++0template groundrunway001 10 0template smallbuilding1 5 
++0template groundrunway001 4 0template groundrunway4 11 
++0template w2rt_barrel 14 0template groundstruct40 1 
++0template groundrunway4 14 0template w2rt_barrel 1 
++0template groundstruct6 14 0template groundrunway002 1 
++0template groundstruct6 12 0template groundrunway001 3 
++0template groundstruct6 8 0template groundrunway002 7 
++0template Gmd001 14 0template groundrunway002 5 0template w2rt_barrel 11 
++0template Gmd001 12 0template w2rt_barrel 3 
++0template w2rt_barrel 6 0template Gmd001 13 0template groundrunway001 11 
++0template Gmd001 14 0template w2rt_barrel 13 0template groundrunway001 3 
++0template w2rt_barrel 14 0template Gmd001 13 0template groundrunway001 3 
++0template Gmd001 10 0template w2rt_barrel 13 0template groundrunway002 7 
++0template stormsky014 14 0template Gmd001 13 0template groundrunway001 3 
++0template Gmd001 10 0template stormsky009 13 0template groundrunway002 7 
++0template smallbuilding1 14 0template groundrunway002 5 0template building1 11 
++0template smallbuilding1 12 0template building1 3 
++0template groundrunway002 10 0template smallbuilding1 13 0template building1 7 
++0template groundrunway4 10 0template groundrunway002 5 
+groundstruct40
++0template w2rt_barrel 12 0template bridge1 3 
++0template groundrunway2 14 0template w2rt_barrel 1 
++0template groundrunway2 8 0template w2rt_barrel 7 
+groundrunway2
++0template groundstruct7 14 0template groundrunway2 5 0template groundrunway001 11 
++0template groundrunway2 14 0template groundstruct7 13 0template groundrunway001 3 
++0template groundrunway001 2 0template groundrunway2 13 
++0template groundrunway002 2 0template groundstruct6 13 
++0template w2rt_barrel 14 0template groundrunway002 1 
++0template groundrunway001 2 0template w2rt_barrel 13 
++0template groundrunway001 10 0template Gmd001 13 0template w2rt_barrel 7 
++0template groundrunway002 14 0template SC2btmmid 5 0template searockdark003 11 
++0template building1 4 0template smallbuilding1 11 
++0template bridge1 12 0template w2rt_barrel 3 
++0template w2rt_barrel 12 0template groundrunway4 3 
++0template w2rt_barrel 4 0template groundrunway002 11 
++0template groundrunway001 12 0template Gmd001 7 0template groundstruct7 11 
++0template w2rt_barrel 14 0template groundrunway002 13 0template Gmd001 3 
++0template w2rt_barrel 12 0template Gmd001 3 
++0template groundrunway002 10 0template w2rt_barrel 13 0template Gmd001 7 
++0template searockdark004 14 0template SC2btmmid 5 0template groundrunway001 11 
++0template groundrunway001 6 0template searockdark004 9 
++0template w2rt_barrel 8 0template ms3 7 
++0template groundstruct7 10 0template Gmd001 5 
++0template w2rt_barrel 14 0template groundrunway002 5 0template Gmd001 11 
++0template Gmd001 14 0template groundrunway002 5 0template stormsky022 11 
++0template Gmd001 6 0template groundrunway002 9 
++0template building1 14 0template groundrunway001 5 0template smallbuilding2 11 
++0template smallbuilding1 14 0template building1 13 0template smallbuilding2 3 
++0template smallbuilding1 12 0template smallbuilding2 7 0template groundrunway002 11 
++0template groundrunway002 2 0template smallbuilding1 13 
++0template w2rt_barrel 10 0template p2frontrtG 5 
++0template groundrunway001 14 0template w2rt_barrel 5 0template Gmd001 11 
++0template groundstruct7 14 0template Gmd001 5 0template groundrunway002 11 
++0template groundrunway002 4 0template groundstruct17 11 
++0template groundrunway001 12 0template groundstruct17 3 
++0template groundrunway002 8 0template groundstruct17 7 
++0template groundstruct5 14 0template groundrunway002 1 
++0template w2rt_barrel 14 0template groundrunway002 5 0template w2blu_wingtopfront 11 
++0template w2rt_barrel 12 0template w2blu_wingtopfront 3 
++0template Gmd001 14 0template w2rt_barrel 13 0template groundrunway002 11 0template w2blu_wingtopfront 7 
++0template w2rt_barrel 14 0template Gmd001 9 0template groundrunway001 7 
++0template Gmd001 2 0template w2rt_barrel 13 
++0template Gmd001 4 0template w2rt_barrel 11 
++0template groundrunway001 14 0template Gmd001 13 0template w2rt_barrel 3 
++0template groundrunway002 12 0template Gmd001 7 0template searockdark004 11 
++0template groundrunway002 12 0template searockdark003 7 0template Gmd001 11 
++0template stormsky031 10 0template groundrunway001 5 
++0template Gmd001 14 0template stormsky016 5 0template groundrunway001 11 
++0template groundrunway4 14 0template groundrunway002 5 0template searockdark003 11 
++0template groundrunway4 12 0template w2rt_barrel 3 
++0template w2rt_barrel 2 0template p2frontrtG 13 
++0template groundstruct17 10 0template groundrunway001 5 
+groundstruct17
++0template groundrunway001 10 0template groundstruct17 5 
++0template groundrunway002 10 0template w2blu_wingtopfront 5 
++0template searockdark002 10 0template Gmd001 5 
++0template Gmd001 10 0template searockdark004 5 
++0template groundrunway001 14 0template searockdark004 5 0template Gdt001 11 
++0template groundrunway001 10 0template stormsky016 13 0template Gmd001 7 
++0template SC2btmmid 12 0template groundrunway002 7 0template groundstruct3 11 
++0template groundrunway001 10 0template SC2btmmid 13 0template groundstruct3 7 
++0template smallbuilding2 14 0template groundrunway001 5 0template smallbuilding1 11 
++0template smallbuilding2 12 0template smallbuilding1 3 
++0template groundrunway001 10 0template smallbuilding2 13 0template smallbuilding1 7 
++0template groundrunway6 10 0template searockdark004 5 
+groundrunway6
++0template groundrunway6 4 0template w2rt_barrel 11 
++0template w2rt_barrel 2 0template groundrunway6 13 
++0template groundstruct17 14 0template groundrunway002 1 
++0template groundstruct17 12 0template groundrunway001 3 
++0template groundrunway002 2 0template groundstruct17 13 
++0template w2blu_wingtopfront 14 0template groundrunway002 5 0template w2rt_barrel 11 
++0template w2blu_wingtopfront 12 0template w2rt_barrel 3 
++0template groundrunway002 14 0template w2blu_wingtopfront 13 0template w2rt_barrel 3 
++0template Gmd001 14 0template groundrunway001 13 0template w2rt_barrel 3 
++0template Gmd001 8 0template w2rt_barrel 7 
++0template w2rt_barrel 14 0template Gmd001 5 0template groundrunway002 11 
++0template searockdark003 14 0template Gmd001 13 0template groundrunway002 3 
++0template Gmd001 14 0template searockdark004 13 0template groundrunway002 3 
++0template Gdt001 10 0template searockdark001 13 0template groundrunway002 7 
++0template groundstruct3 10 0template groundrunway002 5 
++0template groundrunway002 4 0template groundstruct30 11 
++0template w2rt_barrel 14 0template groundrunway001 13 0template groundstruct30 3 
++0template w2rt_barrel 8 0template groundstruct30 7 
++0template w2rt_barrel 12 0template groundrunway001 7 0template p2topside 11 
++0template w2rt_barrel 12 0template p2topside 3 
++0template w2rt_barrel 12 0template p2topside 7 0template p2sqrtop 11 
++0template w2rt_barrel 12 0template p2sqrtop 7 0template groundrunway002 11 
++0template w2rt_barrel 12 0template groundrunway001 7 0template p2sqrtop 11 
++0template w2rt_barrel 12 0template p2sqrtop 3 
++0template Gmd001 10 0template w2rt_barrel 13 0template p2sqrtop 7 
++0template groundrunway002 4 0template repair_side 11 
++0template groundrunway002 12 0template repair_side 3 
++0template groundrunway002 12 0template repair_side 7 0template repair_top 11 
++0template groundrunway001 12 0template repair_top 3 
++0template groundrunway002 12 0template repair_top 7 0template w2blu_wingtopfront 11 
++0template w2rt_barrel 12 0template groundrunway001 7 0template w2blu_wingtopfront 11 
++0template w2rt_barrel 8 0template w2blu_wingtopfront 7 
++0template groundstruct3 14 0template groundrunway001 13 0template SC2btmmid 3 
++0template groundrunway001 10 0template groundstruct3 13 0template SC2btmmid 7 
+groundstruct22a
++0template groundstruct30 10 0template building1 5 
++0template w2rt_barrel 10 0template groundstruct30 5 
++0template building1 10 0template w2rt_barrel 5 
++0template p2topside 10 0template building1 5 
+p2topside
++0template p2sqrtop 10 0template p2topside 5 
++0template groundrunway001 10 0template p2sqrtop 5 
++0template p2sqrtop 10 0template groundrunway002 5 
+p2sqrtop
++0template Gmd001 14 0template p2sqrtop 5 0template groundrunway001 11 
++0template repair_side 14 0template groundrunway002 5 0template repair_front 11 
++0template repair_side 12 0template repair_front 3 
++0template repair_top 14 0template repair_side 9 0template repair_front 7 
++0template repair_top 8 0template repair_side 7 
+repair_top
++0template w2blu_wingtopfront 10 0template repair_top 5 
++0template groundrunway001 14 0template w2blu_wingtopfront 1 
++0template w2rt_barrel 14 0template w2blu_wingtopfront 5 0template groundrunway002 11 
++0template building1 2 0template smallbuilding1 13 
++0template building1 4 0template groundrunway001 11 
++0template groundstruct28 12 0template groundrunway002 7 0template asphalt003 11 
++0template groundstruct22a 8 0template groundrunway001 7 
++0template groundstruct40 4 0template groundrunway002 11 
++0template groundstruct30 14 0template groundstruct40 13 0template groundrunway002 3 
++0template groundstruct30 12 0template groundrunway001 7 0template w2rt_barrel 11 
++0template w2rt_barrel 2 0template groundstruct30 13 
++0template p2topside 14 0template groundrunway001 1 
++0template p2topside 12 0template groundrunway001 7 0template JJcanyon001 11 
++0template p2sqrtop 14 0template p2topside 13 0template JJcanyon001 3 
++0template groundrunway002 14 0template p2sqrtop 13 0template JJcanyon001 3 
++0template p2sqrtop 14 0template groundrunway001 13 0template JJcanyon001 3 
++0template p2sqrtop 12 0template JJcanyon001 7 0template Gmd001 11 
++0template groundrunway002 10 0template p2sqrtop 13 0template Gmd001 7 
++0template groundrunway002 6 0template Gmd001 9 
++0template repair_front 10 0template groundrunway002 5 
+repair_front
++0template repair_side 10 0template repair_front 5 
++0template repair_top 10 0template repair_side 5 
++0template w2blu_wingtopfront 14 0template repair_top 5 0template repair_front 11 
++0template w2blu_wingtopfront 8 0template repair_front 7 
++0template groundstruct30 14 0template groundrunway002 1 
++0template groundrunway001 6 0template groundstruct30 9 
++0template asphalt003 14 0template groundrunway002 13 0template Gmd001 11 0template groundstruct30 7 
++0template groundrunway001 14 0template asphalt001 13 0template Gmd001 3 
++0template groundstruct22a 14 0template groundrunway001 1 
++0template groundrunway001 2 0template groundstruct40 13 
++0template w2rt_barrel 12 0template groundrunway001 7 0template groundstruct40 11 
++0template building1 2 0template w2rt_barrel 13 
++0template JJcanyon001 10 0template groundrunway002 5 
+JJcanyon001
++0template Gmd001 14 0template JJcanyon001 5 0template groundrunway001 11 
++0template groundrunway001 6 0template Gmd001 13 0template SC1frontbottom 11 
++0template Gmd001 10 0template groundrunway002 13 0template SC1frontbottom 7 
++0template asphalt004 6 0template groundrunway001 9 
++0template repair_side 14 0template repair_front 5 0template repair_frontside 11 
++0template repair_top 10 0template repair_side 13 0template repair_frontside 7 
++0template repair_front 10 0template repair_top 5 
++0template w2blu_wingtopfront 10 0template repair_front 5 
++0template groundrunway001 8 0template easterhead2 7 
++0template SC2btmmid 12 0template groundrunway001 7 0template smallbuilding3 11 
++0template groundrunway002 10 0template SC2btmmid 13 0template smallbuilding3 7 
++0template groundstruct30 10 0template groundrunway001 5 
++0template Gmd001 10 0template groundstruct30 5 
++0template groundstruct40 14 0template groundrunway001 1 
++0template building1 12 0template groundrunway002 7 0template groundstruct30 11 
++0template groundrunway002 12 0template groundstruct30 3 
++0template JJcanyon001 10 0template groundrunway002 13 0template groundstruct30 7 
++0template groundrunway001 10 0template JJcanyon001 5 
++0template Gmd001 14 0template SC1frontbottom 13 0template groundrunway002 3 
++0template groundrunway001 6 0template Gmd001 13 0template asphalt002 11 
++0template repair_frontside 14 0template repair_front 1 
++0template repair_top 10 0template repair_frontside 13 0template repair_front 7 
++0template repair_top 4 0template repair_front 11 
++0template repair_front 2 0template repair_top 13 
++0template w2blu_wingtopfront 14 0template repair_front 5 0template p2Rlanding2 11 
++0template w2blu_wingtopfront 12 0template p2Rlanding2 7 0template groundrunway002 11 
++0template groundrunway001 10 0template easterhead2 5 
++0template smallbuilding3 14 0template groundrunway002 13 0template SC2btmmid 3 
++0template groundrunway002 10 0template smallbuilding3 13 0template SC2btmmid 7 
++0template Gmd001 14 0template groundstruct30 13 0template groundrunway001 3 
++0template Gmd001 12 0template groundrunway002 7 0template asphalt001 11 
++0template groundrunway002 14 0template Gmd001 13 0template asphalt004 3 
++0template JJcanyon001 10 0template groundstruct30 5 
++0template asphalt002 14 0template groundrunway002 9 0template Gmd001 7 
++0template repair_front 14 0template groundrunway002 5 0template asphalt003 11 
++0template repair_front 8 0template asphalt001 7 
++0template repair_top 14 0template repair_front 1 
++0template repair_top 12 0template repair_front 3 
++0template p2Rlanding2 14 0template repair_front 5 0template groundrunway001 11 
++0template groundrunway002 2 0template p2Rlanding2 13 
++0template groundrunway002 2 0template easterhead2 13 
++0template groundrunway001 12 0template groundstruct28 3 
++0template asphalt001 14 0template groundrunway002 9 0template building2 7 
++0template JJcanyon001 14 0template groundstruct30 13 0template groundrunway001 3 
++0template JJcanyon001 12 0template groundrunway001 3 
++0template groundrunway001 14 0template JJcanyon001 13 0template Gmd001 11 0template ms3 7 
++0template asphalt001 14 0template groundrunway001 13 0template Gmd001 3 
++0template asphalt004 12 0template Gmd001 7 0template groundrunway002 11 
++0template repair_front 10 0template asphalt003 5 
++0template repair_front 4 0template repair_top 11 
++0template repair_front 12 0template repair_top 3 
++0template groundrunway001 10 0template repair_front 13 0template repair_top 7 
++0template groundrunway002 12 0template asphalt002 7 0template groundstruct30 11 
++0template groundstruct30 2 0template groundrunway001 13 
+groundstruct28
++0template groundrunway001 4 0template groundstruct22a 11 
++0template asphalt004 14 0template groundrunway002 13 0template groundstruct40 3 
++0template asphalt004 12 0template groundstruct40 3 
++0template groundrunway002 14 0template asphalt004 13 0template groundstruct40 3 
++0template groundrunway001 12 0template groundstruct40 3 
++0template groundrunway001 8 0template groundstruct40 7 
++0template repair_front 14 0template asphalt002 13 0template groundrunway002 3 
++0template repair_front 8 0template groundrunway002 7 
++0template repair_front 4 0template groundrunway002 11 
++0template repair_top 14 0template repair_front 13 0template groundrunway001 3 
++0template repair_top 12 0template groundrunway001 3 
++0template groundrunway002 2 0template repair_top 13 
++0template asphalt002 10 0template groundrunway002 13 0template building1 7 
++0template building1 10 0template asphalt004 5 
++0template groundstruct22a 2 0template groundrunway002 13 
++0template groundstruct40 10 0template building1 5 
++0template groundrunway001 10 0template groundstruct40 5 
++0template repair_front 14 0template groundrunway001 1 
++0template repair_front 12 0template groundrunway002 3 
++0template groundrunway001 2 0template repair_front 13 
++0template SC2btmmid 6 0template groundrunway001 9 
++0template groundrunway002 4 0template groundrunway6 11 
++0template asphalt003 14 0template groundrunway6 1 
++0template asphalt004 12 0template groundrunway6 3 
++0template groundrunway6 2 0template asphalt003 13 
++0template groundstruct40 10 0template groundrunway6 5 
++0template groundrunway6 10 0template groundstruct40 5 
++0template groundrunway001 12 0template groundrunway6 7 0template SC1frontbottom 11 
++0template groundrunway001 12 0template groundstruct3 7 0template w2rt_barrel 11 
++0template groundstruct3 14 0template groundrunway002 13 0template w2rt_barrel 3 
++0template groundstruct3 12 0template w2rt_barrel 3 
++0template groundrunway002 14 0template groundstruct3 13 0template w2rt_barrel 3 
++0template groundstruct40 10 0template groundrunway001 5 
++0template SC1frontbottom 4 0template gun 11 
++0template w2rt_barrel 10 0template groundstruct3 5 
++0template groundrunway002 4 0template commred1 11 
++0template groundrunway002 12 0template commred1 3 
++0template groundrunway001 12 0template commred1 7 0template caltropR 11 
++0template groundrunway002 12 0template caltropR 3 
++0template groundrunway002 8 0template caltropR 7 
++0template w2blu_bottomfront 4 0template SC1frontbottom 11 
++0template w2blu_bottomfront 12 0template SC1frontbottom 3 
++0template w2blu_bottomfront 8 0template SC1frontbottom 7 
++0template groundstruct40 12 0template groundrunway001 7 0template w2blu_bottomfront 11 
++0template groundstruct40 12 0template w2blu_bottomfront 7 0template SC1frontbottom 11 
++0template groundstruct40 12 0template SC1frontbottom 3 
++0template groundstruct40 12 0template SC1frontbottom 7 0template w2blu_bottomfront 11 
++0template groundstruct40 12 0template w2blu_bottomfront 3 
++0template w2blu_bottomfront 2 0template groundstruct40 13 
++0template SC1frontbottom 14 0template gun 1 
++0template w2rt_barrel 14 0template groundstruct3 1 
++0template w2rt_barrel 8 0template groundstruct3 7 
++0template groundrunway002 14 0template searockdark001 13 0template asphalt003 3 
++0template groundrunway002 4 0template commred3 11 
++0template commred1 10 0template groundrunway002 13 0template commred3 7 
+commred1
++0template caltropR 10 0template commred1 5 
+caltropR
++0template groundrunway002 14 0template caltropR 5 0template commred3 11 
++0template groundrunway002 8 0template commred3 7 
++0template SC1frontbottom 14 0template w2blu_bottomfront 5 0template SC2btmmid 11 
++0template SC1frontbottom 12 0template SC2btmmid 3 
++0template groundrunway002 14 0template SC1frontbottom 9 0template SC2btmmid 7 
++0template SC1frontbottom 6 0template groundrunway002 13 0template SC2btmmid 11 
++0template w2blu_bottomfront 14 0template SC1frontbottom 13 0template SC2btmmid 3 
++0template w2blu_bottomfront 8 0template SC2btmmid 7 
+w2rt_topbrgt
++0template SC1frontbottom 10 0template w2blu_bottomfront 5 
++0template w2rt_topbrgt 10 0template SC1frontbottom 5 
++0template groundrunway8 12 0template SC1frontbottom 3 
++0template gun 10 0template SC1frontbottom 5 
++0template w2rt_barrel 2 0template groundrunway001 13 
++0template commred3 14 0template groundrunway002 5 0template commred4 11 
++0template commred1 14 0template commred3 13 0template commred4 3 
++0template commred1 12 0template commred4 3 
++0template caltropR 14 0template commred1 13 0template commred4 3 
++0template caltropR 12 0template commred4 3 
++0template commred3 10 0template caltropR 13 0template commred4 7 
++0template groundrunway002 10 0template commred3 5 
++0template SC2btmmid 10 0template w2blu_bottomfront 5 
++0template SC1frontbottom 10 0template SC2btmmid 5 
++0template SC2btmmid 10 0template SC1frontbottom 5 
++0template w2blu_bottomfront 10 0template SC2btmmid 5 
++0template w2blu_bottomfront 14 0template groundstruct40 1 
++0template SC1frontbottom 14 0template w2blu_bottomfront 13 0template groundstruct40 3 
++0template SC1frontbottom 12 0template groundstruct40 3 
++0template w2rt_topfrt 6 0template SC1frontbottom 9 
++0template gun 12 0template SC1frontbottom 3 
++0template groundstruct3 12 0template groundrunway002 7 0template w2rt_barrel 11 
++0template w2rt_barrel 2 0template groundstruct3 13 
++0template commred4 10 0template groundrunway001 5 
+commred4
++0template commred3 10 0template commred4 5 
++0template SC2btmmid 14 0template w2blu_bottomfront 1 
++0template SC2btmmid 12 0template groundrunway001 7 0template SC1frontbottom 11 
++0template SC1frontbottom 2 0template SC2btmmid 13 
++0template SC2btmmid 14 0template SC1frontbottom 5 0template groundrunway001 11 
++0template SC2btmmid 12 0template SC1frontbottom 3 
++0template w2blu_bottomfront 10 0template SC2btmmid 13 0template SC1frontbottom 7 
++0template groundstruct40 4 0template SC1frontbottom 11 
++0template SC1frontbottom 2 0template w2rt_topfrt 13 
++0template SC1frontbottom 4 0template SC2btmmid 11 
++0template groundrunway001 10 0template SC1frontbottom 13 0template SC2btmmid 7 
++0template groundrunway002 10 0template groundstruct30 5 
++0template asphalt003 14 0template groundrunway001 5 0template SC1topback2 11 
++0template asphalt003 12 0template SC1topback2 3 
++0template groundrunway002 14 0template asphalt003 13 0template SC1topback2 3 
++0template commred4 14 0template groundrunway002 5 0template commred3 11 
++0template commred4 12 0template commred3 3 
++0template commred3 6 0template commred4 13 0template searockdark003 11 
++0template groundrunway002 10 0template commred3 13 0template searockdark003 7 
++0template SC1frontbottom 12 0template groundrunway002 7 0template w2blu_bottomfront 11 
++0template w2blu_bottomfront 2 0template SC1frontbottom 13 
++0template SC1frontbottom 4 0template w2rt_topfrt 11 
++0template SC2btmmid 10 0template SC1frontbottom 13 0template groundrunway001 7 
++0template groundstruct30 8 0template groundrunway001 7 
++0template groundrunway001 4 0template mlaunch3 11 
++0template SC1topback2 10 0template groundrunway002 13 0template mlaunch3 7 
++0template SC1topback2 4 0template mlaunch3 11 
++0template SC1topback2 12 0template mlaunch3 3 
++0template SC1topback2 8 0template mlaunch3 7 
++0template commred3 10 0template groundrunway001 5 
++0template commred3 4 0template gun 11 
++0template commred3 8 0template gun 7 
+commred3
++0template searockdark004 10 0template commred3 5 
++0template w2rt_topfrt 14 0template SC1frontbottom 5 0template w2blu_bottomfront 11 
++0template SC2btmmid 10 0template groundrunway001 13 0template w2blu_bottomfront 7 
++0template groundrunway001 14 0template SC2btmmid 5 0template w2blu_bottomfront 11 
++0template mlaunch3 10 0template groundrunway001 5 
++0template SC1topback2 14 0template mlaunch3 1 
++0template mlaunch3 2 0template SC1topback2 13 
+mlaunch3
++0template SC1topback2 14 0template mlaunch3 5 0template w2blu_wingtopmid 11 
++0template groundrunway001 10 0template SC1topback2 13 0template w2blu_wingtopmid 7 
++0template commred3 14 0template groundrunway002 1 
++0template gun 14 0template commred3 13 0template groundrunway002 3 
++0template commred3 14 0template gun 13 0template groundrunway002 3 
++0template commred3 12 0template groundrunway002 3 
++0template searockdark003 14 0template commred3 13 0template groundrunway002 3 
++0template w2blu_bottomfront 4 0template groundrunway002 11 
++0template w2blu_bottomfront 10 0template w2rt_turrettop 13 0template groundrunway002 7 
++0template SC1frontbottom 14 0template w2blu_bottomfront 1 
++0template SC1frontbottom 12 0template w2blu_bottomfront 3 
++0template SC2btmmid 12 0template w2blu_bottomfront 3 
++0template w2blu_bottomfront 2 0template SC2btmmid 13 
++0template groundrunway001 10 0template w2blu_bottomfront 5 
++0template gun 14 0template SC1frontbottom 1 
++0template mlaunch3 14 0template groundrunway001 5 0template SC1topback2 11 
++0template mlaunch3 12 0template SC1topback2 3 
++0template mlaunch3 8 0template SC1topback2 7 
++0template w2blu_wingtopmid 14 0template mlaunch3 5 0template SC1topback2 11 
++0template groundrunway002 10 0template w2blu_wingtopmid 13 0template SC1topback2 7 
++0template w2rt_topbrgt 12 0template groundrunway001 3 
++0template w2blu_bottomfront 14 0template groundrunway001 1 
++0template w2blu_bottomfront 12 0template groundrunway001 7 0template asphalt003 11 
++0template w2blu_bottomfront 12 0template asphalt004 3 
++0template w2blu_bottomfront 12 0template asphalt002 7 0template groundrunway8 11 
++0template groundrunway001 14 0template groundstruct30 1 
++0template mlaunch3 10 0template SC1topback2 5 
++0template SC1topback2 10 0template mlaunch3 5 
++0template groundrunway001 4 0template w2rt_turrettop 11 
++0template groundrunway001 8 0template w2rt_turrettop 7 
++0template groundrunway8 10 0template asphalt003 5 
++0template SC1frontbottom 12 0template asphalt003 3 
++0template SC1frontbottom 12 0template asphalt004 7 0template groundrunway002 11 
++0template groundrunway002 4 0template w2rt_topbrgt 11 
++0template groundrunway001 12 0template w2rt_topbrgt 3 
++0template groundrunway002 12 0template w2rt_topbrgt 7 0template w2rt_topflt 11 
++0template w2rt_turrettop 10 0template groundrunway002 13 0template w2rt_topflt 7 
++0template groundrunway002 14 0template w2rt_turrettop 1 
++0template groundrunway001 12 0template w2rt_turrettop 3 
++0template groundrunway8 2 0template asphalt003 13 
++0template SC1topback2 14 0template groundrunway002 5 0template asphalt004 11 
++0template SC1topback2 12 0template asphalt002 3 
++0template mlaunch3 14 0template SC1topback2 9 0template asphalt001 7 
++0template SC1topback2 2 0template mlaunch3 13 
++0template w2rt_topbrgt 10 0template groundrunway001 5 
++0template w2rt_topflt 14 0template w2rt_topbrgt 5 0template groundrunway002 11 
++0template w2rt_turrettop 14 0template w2rt_topflt 13 0template groundrunway002 3 
++0template w2rt_turrettop 12 0template groundrunway001 3 
++0template w2rt_turrettop 8 0template groundrunway002 7 
++0template w2rt_turrettop 4 0template groundrunway001 11 
++0template groundrunway002 6 0template w2rt_turrettop 13 0template searockdark003 11 
++0template groundrunway8 8 0template groundrunway001 7 
++0template groundrunway002 8 0template metal1 7 
++0template SC1topback2 14 0template asphalt002 5 0template groundrunway001 11 
++0template groundrunway002 10 0template w2rt_topbrgt 5 
++0template w2rt_turrettop 14 0template groundrunway001 5 0template w2rt_topflt 11 
++0template groundrunway001 10 0template w2rt_turrettop 13 0template w2rt_topflt 7 
++0template groundrunway001 4 0template s1wingsG 11 
++0template groundrunway001 12 0template s1wingsG 3 
++0template groundrunway001 12 0template s1wingsG 7 0template ventpannel2G 11 
++0template groundrunway001 12 0template ventpannel2G 3 
++0template groundrunway001 12 0template ventpannel2G 7 0template s1wingsG 11 
++0template asphalt004 10 0template groundrunway001 13 0template s1wingsG 7 
++0template groundrunway002 14 0template asphalt002 5 0template s1wingsG 11 
++0template searockdark004 14 0template groundrunway001 9 0template s1wingsG 7 
++0template groundrunway002 4 0template insides2 11 
++0template groundrunway002 12 0template insides2 3 
++0template groundrunway002 8 0template insides2 7 
++0template groundrunway001 4 0template Msentry2 11 
++0template groundrunway001 12 0template Msentry2 3 
++0template groundrunway002 8 0template Msentry2 7 
++0template groundrunway8 14 0template groundrunway001 5 0template SC2back 11 
++0template groundrunway001 12 0template SC2back 7 0template 19bush001 11 
++0template groundrunway001 12 0template metal1 3 
++0template asphalt002 14 0template groundrunway001 5 0template SC2back 11 
++0template asphalt004 12 0template SC2back 3 
++0template groundrunway002 10 0template asphalt001 13 0template SC2back 7 
++0template w2rt_topbrgt 14 0template groundrunway002 5 0template w2rt_topflt 11 
++0template w2rt_topbrgt 12 0template w2rt_topflt 3 
++0template groundrunway002 14 0template w2rt_topbrgt 13 0template w2rt_topflt 3 
++0template groundrunway002 12 0template w2rt_topflt 3 
++0template w2rt_topflt 2 0template groundrunway002 13 
++0template groundrunway001 10 0template w2rt_topflt 5 
++0template s1wingsG 10 0template groundrunway002 5 
+s1wingsG
++0template ventpannel2G 10 0template s1wingsG 5 
+ventpannel2G
++0template s1wingsG 10 0template ventpannel2G 5 
++0template asphalt001 14 0template s1wingsG 1 
++0template asphalt003 12 0template s1wingsG 3 
++0template s1wingsG 2 0template asphalt001 13 
++0template groundrunway001 10 0template s1wingsG 5 
++0template groundrunway001 4 0template bottomsides 11 
++0template groundrunway002 12 0template bottomsides 3 
++0template insides2 10 0template groundrunway002 13 0template bottomsides 7 
+insides2
++0template groundrunway001 14 0template insides2 5 0template Msentry2 11 
++0template groundrunway001 12 0template Msentry2 7 0template bottomsides 11 
++0template groundrunway002 12 0template bottomsides 7 0template gun 11 
++0template Msentry2 10 0template groundrunway001 13 0template gun 7 
+Msentry2
++0template groundrunway002 14 0template Msentry2 1 
++0template w2blu_bottomfront 14 0template SC2back 1 
++0template metal1 14 0template w2blu_bottomfront 13 0template SC2back 3 
++0template groundrunway002 10 0template metal1 13 0template SC2back 7 
++0template groundstruct30 4 0template groundrunway002 11 
++0template w2rt_topflt 14 0template groundrunway001 1 
++0template w2rt_topflt 12 0template groundrunway002 7 0template w2rt_topbrgt 11 
++0template w2rt_topflt 12 0template w2rt_topbrgt 3 
++0template groundrunway001 10 0template w2rt_topflt 13 0template w2rt_topbrgt 7 
++0template s1wingsG 14 0template groundrunway002 5 0template s1sideG 11 
++0template s1wingsG 12 0template s1sideG 3 
++0template s1wingsG 12 0template s1sideG 7 0template groundrunway002 11 
++0template ventpannel2G 14 0template s1wingsG 13 0template groundrunway001 3 
++0template ventpannel2G 12 0template groundrunway002 7 0template SC1frontbottom 11 
++0template s1wingsG 14 0template ventpannel2G 13 0template groundrunway001 11 0template SC1frontbottom 7 
++0template s1wingsG 12 0template groundrunway001 3 
++0template s1wingsG 12 0template groundrunway001 7 0template SC1frontbottom 11 
++0template s1wingsG 12 0template SC1frontbottom 7 0template groundrunway001 11 
++0template s1wingsG 12 0template groundrunway002 7 0template s1sideG 11 
++0template groundrunway002 10 0template s1wingsG 13 0template s1sideG 7 
++0template bottomsides 10 0template groundrunway002 5 
+bottomsides
++0template insides2 14 0template bottomsides 1 
++0template insides2 12 0template bottomsides 3 
++0template Msentry2 14 0template insides2 13 0template bottomsides 3 
++0template bottomsides 2 0template Msentry2 13 
++0template gun 14 0template bottomsides 5 0template cdtex/dark_marble 11 
++0template gun 12 0template cdtex/dark_marble 3 
++0template Msentry2 14 0template gun 13 0template p2Rlanding4 11 0template cdtex/dark_marble 7 
++0template Msentry2 12 0template p2Rlanding4 7 0template groundrunway001 11 
++0template Msentry2 8 0template groundrunway002 7 
++0template Msentry2 4 0template top 11 
++0template groundrunway002 14 0template Msentry2 13 0template top 3 
++0template SC2back 8 0template groundrunway002 7 
++0template groundrunway001 4 0template groundmetal002 11 
++0template groundrunway002 12 0template groundmetal001 3 
++0template groundrunway002 12 0template groundmetal001 7 0template groundstruct7 11 
++0template w2rt_topbrgt 14 0template groundrunway002 1 
++0template w2rt_topbrgt 8 0template groundrunway002 7 
++0template s1sideG 10 0template groundrunway001 5 
+s1sideG
++0template groundrunway001 10 0template s1sideG 5 
++0template cdtex/dark_marble 10 0template bottomsides 5 
+cdtex/dark_marble
++0template p2Rlanding4 10 0template cdtex/dark_marble 5 
++0template groundrunway002 10 0template p2Rlanding4 5 
++0template Msentry2 14 0template groundrunway001 1 
++0template top 10 0template Msentry2 13 0template groundrunway001 7 
+top
++0template groundmetal001 10 0template groundrunway002 5 
++0template groundmetal002 4 0template groundrunway002 11 
++0template groundmetal002 12 0template groundrunway001 3 
++0template groundstruct7 10 0template groundmetal001 13 0template groundrunway002 7 
++0template groundrunway002 12 0template groundstruct7 7 0template groundmetal002 11 
++0template groundrunway001 8 0template groundmetal002 7 
++0template groundrunway002 4 0template SC1topback 11 
++0template groundrunway001 8 0template SC1topback 7 
++0template groundrunway002 2 0template w2rt_topbrgt 13 
++0template s1sideG 14 0template groundrunway001 5 0template s1wingsG 11 
++0template s1sideG 12 0template s1wingsG 3 
++0template groundrunway002 14 0template s1sideG 13 0template SC1frontbottom 11 0template s1wingsG 7 
++0template groundrunway001 10 0template s1sideG 13 0template s1wingsG 7 
++0template bottomsides 4 0template insides2 11 
++0template bottomsides 12 0template insides2 3 
++0template bottomsides 8 0template insides2 7 
++0template cdtex/dark_marble 14 0template bottomsides 5 0template gun 11 
++0template cdtex/dark_marble 12 0template gun 3 
++0template p2Rlanding4 14 0template cdtex/dark_marble 13 0template p2Rlanding3 11 0template gun 7 
++0template groundrunway001 14 0template p2Rlanding4 13 0template Msentry2 11 0template p2Rlanding3 7 
++0template top 14 0template groundrunway002 13 0template bottomsides 11 0template Msentry2 7 
++0template top 12 0template bottomsides 3 
++0template groundrunway001 10 0template groundmetal001 5 
++0template groundmetal001 14 0template groundstruct7 5 0template groundrunway002 11 
++0template groundrunway001 2 0template groundmetal002 13 
++0template Gdt001 14 0template groundrunway002 5 0template easterhead2 11 
++0template groundrunway001 14 0template asphalt003 9 0template SC2back 7 
++0template SC1topback 10 0template groundrunway002 5 
++0template groundrunway001 14 0template SC1topback 1 
++0template SC1frontbottom 10 0template s1wingsG 13 0template s1sideG 7 
++0template SC1frontbottom 8 0template groundrunway002 7 
++0template s1wingsG 14 0template groundrunway001 5 0template s1legsG 11 
++0template s1wingsG 12 0template s1legsG 3 
++0template groundrunway002 10 0template s1wingsG 13 0template s1legsG 7 
++0template insides2 10 0template bottomsides 5 
++0template bottomsides 14 0template insides2 5 0template groundrunway001 11 
++0template gun 14 0template bottomsides 13 0template groundrunway002 3 
++0template p2Rlanding3 14 0template gun 13 0template Msentry2 11 0template groundrunway001 7 
++0template Msentry2 2 0template p2Rlanding3 13 
++0template bottomsides 14 0template Msentry2 1 
++0template bottomsides 12 0template Msentry2 7 0template groundrunway002 11 
++0template groundstruct7 14 0template groundrunway001 5 0template groundstruct4 11 
++0template groundstruct7 12 0template groundstruct4 3 
++0template groundstruct7 12 0template groundstruct4 7 0template groundrunway002 11 
++0template easterhead2 10 0template groundrunway001 5 
++0template SC1topback 10 0template groundrunway002 13 0template SC1frontbottom 7 
++0template groundrunway001 4 0template w2rt_topblft 11 
++0template groundrunway001 12 0template w2rt_topblft 3 
++0template groundrunway001 12 0template w2rt_topblft 7 0template w2rt_turrettop 11 
++0template groundrunway001 12 0template w2rt_turrettop 7 0template w2rt_topblft 11 
++0template groundrunway001 8 0template w2rt_topblft 7 
++0template SC1frontbottom 14 0template s1sideG 5 0template groundrunway001 11 
++0template s1legsG 10 0template groundrunway002 5 
+s1legsG
++0template groundrunway001 10 0template s1legsG 5 
++0template bottomsides 14 0template groundrunway002 9 0template asphalt004 7 
++0template bottomsides 12 0template groundrunway002 3 
++0template insides2 14 0template bottomsides 13 0template groundrunway001 3 
++0template insides2 12 0template groundrunway002 3 
++0template groundrunway001 2 0template insides2 13 
++0template groundrunway002 2 0template Msentry2 13 
++0template groundstruct4 14 0template groundrunway001 13 0template groundstruct7 3 
++0template groundstruct4 12 0template groundstruct7 3 
++0template groundrunway001 14 0template groundstruct4 13 0template groundstruct7 3 
++0template easterhead2 14 0template groundrunway002 5 0template Gdt001 11 
++0template Gdt001 6 0template easterhead2 9 
++0template easterhead2 6 0template Gdt001 9 
++0template SC2back 14 0template groundrunway001 5 0template asphalt001 11 
++0template SC2back 12 0template asphalt002 3 
++0template asphalt002 6 0template SC2back 13 0template groundrunway001 11 
++0template SC1topback 14 0template SC1frontbottom 1 
++0template groundrunway002 10 0template SC1topback 13 0template SC1frontbottom 7 
++0template w2rt_topblft 10 0template groundrunway002 5 
+w2rt_topblft
++0template w2rt_turrettop 10 0template w2rt_topblft 5 
+w2rt_turrettop
++0template w2rt_topblft 14 0template w2rt_turrettop 1 
++0template w2rt_topblft 12 0template w2rt_turrettop 3 
++0template groundrunway001 10 0template w2rt_topblft 13 0template w2rt_turrettop 7 
++0template s1legsG 14 0template groundrunway002 5 0template s1wingsG 11 
++0template s1legsG 12 0template s1wingsG 3 
++0template groundrunway001 10 0template s1legsG 13 0template s1wingsG 7 
++0template groundrunway001 14 0template groundmetal001 1 
++0template SC1frontbottom 10 0template groundrunway002 13 0template SC1topback 7 
++0template w2rt_topblft 14 0template groundrunway002 5 0template w2rt_turrettop 11 
++0template w2rt_turrettop 6 0template w2rt_topblft 13 0template groundrunway001 11 
++0template groundrunway002 2 0template w2rt_turrettop 13 
++0template groundrunway001 14 0template s1wingsG 1 
++0template groundrunway002 12 0template s1wingsG 7 0template s1legsG 11 
++0template groundrunway001 12 0template s1legsG 3 
++0template groundrunway001 12 0template s1legsG 7 0template s1wingsG 11 
++0template s1wingsG 2 0template groundrunway002 13 
+groundmetal001
++0template groundstruct7 10 0template groundmetal002 5 
++0template easterhead2 14 0template Gdt001 5 0template asphalt004 11 
++0template easterhead2 12 0template asphalt003 3 
++0template Gdt001 14 0template easterhead2 13 0template asphalt003 3 
++0template Gdt001 8 0template asphalt003 7 
++0template SC1frontbottom 10 0template SC1topback 5 
++0template w2rt_turrettop 10 0template groundrunway002 5 
++0template groundrunway002 10 0template w2rt_turrettop 5 
++0template w2rt_turrettop 14 0template groundrunway002 5 0template w2rt_topblft 11 
++0template s1legsG 10 0template s1wingsG 5 
++0template s1wingsG 10 0template s1legsG 5 
++0template groundmetal002 14 0template groundrunway001 1 
++0template groundstruct7 14 0template groundmetal001 13 0template groundrunway002 3 
++0template asphalt001 10 0template Gdt001 13 0template groundrunway002 7 
++0template Gdt001 10 0template asphalt003 5 
++0template SC1topback 14 0template groundrunway002 1 
++0template SC1frontbottom 10 0template SC1topback 13 0template groundrunway002 7 
++0template w2rt_turrettop 12 0template w2rt_topblft 3 
++0template groundrunway001 10 0template w2rt_turrettop 13 0template w2rt_topblft 7 
++0template groundrunway001 14 0template w2rt_topblft 13 0template w2rt_turrettop 3 
++0template s1wingsG 14 0template groundrunway001 1 
++0template s1legsG 14 0template s1wingsG 13 0template groundrunway001 3 
++0template s1legsG 12 0template groundrunway001 3 
++0template s1legsG 12 0template groundrunway002 7 0template asphalt002 11 
++0template s1legsG 12 0template asphalt001 3 
++0template s1wingsG 14 0template s1legsG 13 0template groundrunway001 11 0template asphalt002 7 
++0template groundrunway001 2 0template s1wingsG 13 
++0template groundrunway002 12 0template SC1backbottom 7 0template p2sqrfrontG 11 
++0template groundrunway002 12 0template metal1 7 0template SC1frontbottom 11 
++0template groundrunway001 12 0template SC1frontbottom 7 0template p2ramp1G 11 
++0template groundrunway001 8 0template p2ramp1G 7 
++0template asphalt003 14 0template groundrunway001 9 0template searockdark003 7 
++0template asphalt004 14 0template groundrunway001 5 0template Gdt001 11 
++0template asphalt004 12 0template Gdt001 3 
++0template Gdt001 2 0template asphalt003 13 
++0template w2rt_topblft 4 0template w2rt_turrettop 11 
++0template w2rt_turrettop 10 0template groundrunway002 13 0template w2rt_topblft 7 
++0template groundrunway001 4 0template cdtex/dark_marble 11 
++0template groundrunway002 12 0template cdtex/dark_marble 3 
++0template groundrunway002 8 0template cdtex/dark_marble 7 
++0template p2stacksR 14 0template SC1backbottom 1 
++0template p2ramp1G 12 0template SC1backbottom 7 0template p2frontrtG 11 
++0template SC1frontbottom 14 0template p2ramp1G 13 0template groundrunway001 11 0template p2frontrtG 7 
++0template p2ramp1G 14 0template SC1frontbottom 5 0template p2frontrtG 11 
++0template groundrunway002 10 0template p2ramp1G 13 0template p2frontrtG 7 
++0template w2rt_topblft 10 0template w2rt_turrettop 5 
++0template w2rt_turrettop 14 0template w2rt_topblft 1 
++0template cdtex/dark_marble 10 0template groundrunway002 5 
++0template groundrunway001 10 0template cdtex/dark_marble 5 
++0template groundrunway001 12 0template Gmd001 7 0template s1bottomsG 11 
++0template groundrunway001 12 0template s1bottomsG 3 
++0template groundrunway001 12 0template s1bottomsG 7 0template groundstruct37 11 
++0template asphalt003 14 0template groundrunway002 13 0template Gmd001 11 0template groundstruct37 7 
++0template asphalt001 12 0template Gmd001 3 
++0template p2frontrtG 10 0template SC1backbottom 5 
++0template groundrunway002 10 0template p2frontrtG 5 
++0template p2frontrtG 14 0template SC1frontbottom 1 
++0template groundrunway001 10 0template p2frontrtG 13 0template SC1frontbottom 7 
++0template asphalt003 8 0template groundrunway002 7 
++0template w2rt_topblft 14 0template groundrunway002 1 
++0template w2rt_turrettop 14 0template w2rt_topblft 13 0template groundrunway002 3 
++0template w2rt_topblft 14 0template w2rt_turrettop 13 0template groundrunway002 3 
++0template w2rt_topblft 12 0template groundrunway002 3 
++0template groundrunway002 2 0template w2rt_topblft 13 
++0template cdtex/dark_marble 14 0template groundrunway002 1 
++0template cdtex/dark_marble 12 0template groundrunway002 3 
++0template groundrunway002 2 0template cdtex/dark_marble 13 
++0template Gmd001 4 0template SC1frontbottom 11 
++0template s1bottomsG 14 0template Gmd001 13 0template SC1frontbottom 3 
++0template s1bottomsG 12 0template SC1frontbottom 3 
++0template groundstruct37 14 0template s1bottomsG 13 0template SC1frontbottom 3 
++0template Gmd001 14 0template groundstruct37 13 0template SC1frontbottom 3 
++0template Gmd001 12 0template SC1frontbottom 3 
++0template Gmd001 8 0template SC1frontbottom 7 
++0template Gdt001 10 0template easterhead2 13 0template asphalt003 7 
++0template groundrunway001 4 0template groundstruct37 11 
++0template groundrunway002 12 0template groundstruct37 3 
++0template groundrunway001 8 0template groundstruct37 7 
++0template SC1frontbottom 2 0template Gmd001 13 
++0template Gmd001 10 0template SC1frontbottom 5 
++0template groundrunway001 14 0template Gmd001 5 0template asphalt001 11 
++0template SC1backbottom 10 0template groundrunway001 13 0template asphalt001 7 
++0template groundrunway002 14 0template p2frontrtG 5 0template SC1frontbottom 11 
++0template asphalt001 14 0template Gdt001 13 0template easterhead2 3 
++0template asphalt002 8 0template easterhead2 7 
++0template groundstruct37 2 0template groundrunway001 13 
+groundstruct37
++0template groundrunway002 10 0template groundstruct37 5 
++0template SC1frontbottom 10 0template Gmd001 5 
++0template SC1frontbottom 4 0template Gmd001 11 
++0template SC1frontbottom 8 0template Gmd001 7 
++0template asphalt003 10 0template Gmd001 5 
++0template SC1backbottom 10 0template asphalt001 5 
++0template SC1frontbottom 10 0template p2frontrtG 5 
++0template asphalt001 14 0template easterhead2 5 0template Gdt001 11 
++0template groundstruct37 10 0template groundrunway001 5 
++0template groundstruct37 4 0template groundrunway001 11 
++0template groundstruct37 12 0template groundrunway001 7 0template SC1frontbottom 11 
++0template groundstruct37 12 0template SC1frontbottom 3 
++0template groundrunway002 14 0template groundstruct37 13 0template groundstruct33 11 0template SC1frontbottom 7 
++0template groundrunway002 12 0template groundstruct33 3 
++0template groundrunway002 8 0template groundstruct33 7 
++0template asphalt001 14 0template Gmd001 5 0template groundrunway001 11 
++0template SC1backbottom 10 0template asphalt002 13 0template groundrunway002 7 
++0template p2frontrtG 14 0template SC1backbottom 5 0template groundrunway001 11 
++0template SC1frontbottom 14 0template p2frontrtG 13 0template groundrunway002 3 
++0template SC1frontbottom 12 0template groundrunway8 3 
++0template groundrunway001 12 0template ramp2G 7 0template asphalt001 11 
++0template groundstruct37 14 0template groundrunway002 5 0template groundstruct32 11 
++0template groundstruct37 12 0template groundstruct32 3 
++0template groundrunway002 10 0template groundstruct37 13 0template groundstruct32 7 
++0template groundstruct33 14 0template SC1frontbottom 5 0template groundstruct35 11 
++0template groundstruct33 12 0template groundstruct35 3 
++0template groundrunway001 10 0template groundstruct33 13 0template groundstruct35 7 
++0template Gmd001 14 0template SC1frontbottom 1 
++0template groundrunway001 10 0template Gmd001 13 0template SC1frontbottom 7 
++0template groundrunway8 4 0template searockdark004 11 
++0template groundstruct32 14 0template groundrunway002 5 0template groundstruct37 11 
++0template groundstruct32 12 0template groundstruct37 3 
++0template groundrunway001 14 0template groundstruct32 13 0template SC1frontbottom 11 0template groundstruct37 7 
++0template groundstruct35 14 0template SC1frontbottom 5 0template groundstruct33 11 
++0template groundstruct35 12 0template groundstruct33 3 
++0template groundrunway001 10 0template groundstruct35 13 0template groundstruct33 7 
++0template SC1backbottom 14 0template groundrunway001 1 
++0template searockdark003 10 0template groundrunway8 5 
++0template groundrunway001 4 0template w2blu_bottomfront 11 
++0template asphalt002 10 0template Gdt001 5 
++0template SC1frontbottom 10 0template groundstruct37 13 0template groundstruct32 7 
++0template groundstruct33 14 0template SC1frontbottom 5 0template groundstruct37 11 
++0template groundstruct33 12 0template groundstruct37 3 
++0template groundrunway002 10 0template groundstruct33 13 0template groundstruct37 7 
++0template SC1frontbottom 14 0template Gmd001 1 
++0template SC1frontbottom 12 0template Gmd001 7 0template groundrunway002 11 
++0template w2blu_bottomfront 2 0template groundrunway002 13 
++0template asphalt003 14 0template Gdt001 1 
++0template groundstruct32 10 0template groundrunway002 5 
+groundstruct32
++0template SC1frontbottom 10 0template groundstruct32 5 
++0template groundstruct37 10 0template SC1frontbottom 13 0template groundrunway002 7 
++0template groundrunway001 14 0template Gmd001 5 0template SC1frontbottom 11 
++0template SC1frontbottom 4 0template s1bottomsG 11 
++0template groundrunway002 10 0template SC1frontbottom 13 0template s1bottomsG 7 
++0template searockdark004 14 0template groundrunway8 13 0template groundrunway001 3 
++0template groundstruct32 14 0template groundrunway002 1 
++0template groundstruct32 8 0template groundrunway001 7 
++0template SC1frontbottom 14 0template groundstruct32 1 
++0template SC1frontbottom 12 0template groundstruct32 3 
++0template groundrunway002 14 0template SC1frontbottom 13 0template groundstruct32 3 
++0template groundstruct37 14 0template groundrunway001 13 0template groundstruct32 3 
++0template groundstruct37 8 0template groundstruct32 7 
++0template s1bottomsG 10 0template SC1frontbottom 5 
++0template w2blu_bottomfront 4 0template w2blu_bottomback 11 
++0template w2blu_bottomfront 8 0template w2blu_bottomback 7 
++0template groundstruct37 14 0template groundstruct32 5 0template groundrunway001 11 
++0template SC1frontbottom 14 0template Gmd001 13 0template groundrunway002 3 
++0template s1bottomsG 14 0template SC1frontbottom 13 0template groundrunway001 3 
++0template groundrunway002 12 0template SC1frontbottom 7 0template w2rt_jetsides 11 
++0template groundrunway001 12 0template w2rt_jetsides 3 
++0template groundrunway002 12 0template w2rt_jetsides 7 0template SC1frontbottom 11 
++0template w2blu_bottomfront 14 0template w2blu_bottomback 1 
++0template groundstruct6 2 0template groundrunway002 13 
++0template groundrunway002 14 0template groundstruct6 1 
++0template Gdt001 10 0template groundrunway002 13 0template groundstruct6 7 
++0template searockdark001 14 0template groundrunway001 5 0template asphalt002 11 
++0template searockdark004 12 0template asphalt002 3 
++0template groundrunway002 10 0template searockdark004 13 0template asphalt004 7 
++0template groundstruct32 12 0template groundrunway002 3 
++0template groundrunway002 2 0template groundstruct32 13 
++0template SC1frontbottom 4 0template w2rt_jetsides 11 
++0template SC1frontbottom 12 0template w2rt_jetsides 3 
++0template w2rt_jetsides 2 0template SC1frontbottom 13 
+w2rt_jetsides
++0template SC1frontbottom 14 0template w2rt_jetsides 1 
++0template groundrunway001 10 0template SC1frontbottom 13 0template w2rt_jetsides 7 
++0template w2blu_bottomback 2 0template w2blu_bottomfront 13 
++0template w2blu_bottomback 4 0template groundrunway001 11 
++0template w2blu_bottomback 12 0template groundrunway002 3 
++0template w2blu_bottomback 8 0template groundrunway001 7 
++0template groundstruct6 4 0template groundrunway001 11 
++0template Gdt001 14 0template groundstruct6 1 
++0template Gdt001 8 0template groundstruct6 7 
++0template SC1frontbottom 14 0template groundrunway001 5 0template w2rt_jetsides 11 
++0template w2rt_jetsides 4 0template SC1frontbottom 11 
++0template w2rt_jetsides 12 0template SC1frontbottom 3 
++0template w2rt_jetsides 8 0template SC1frontbottom 7 
++0template groundrunway001 10 0template w2rt_jetsides 5 
++0template groundrunway001 14 0template w2blu_bottomback 1 
++0template Gdt001 10 0template groundstruct6 5 
++0template groundrunway001 4 0template groundstruct28 11 
++0template groundrunway001 8 0template groundstruct28 7 
++0template w2rt_jetsides 10 0template groundrunway002 5 
++0template SC1frontbottom 10 0template w2rt_jetsides 5 
++0template w2rt_jetsides 10 0template SC1frontbottom 5 
++0template groundstruct28 10 0template groundrunway001 5 
++0template groundrunway002 14 0template groundstruct28 1 
++0template w2blu_bottomback 14 0template w2blu_bottomfront 1 
++0template w2blu_bottomback 8 0template w2blu_bottomfront 7 
++0template w2blu_bottomfront 2 0template w2blu_bottomback 13 
++0template groundstruct28 4 0template groundrunway002 11 
++0template groundstruct28 12 0template groundrunway002 3 
++0template groundstruct28 8 0template groundrunway001 7 
++0template w2rt_jetsides 14 0template groundrunway002 5 0template SC1frontbottom 11 
++0template groundrunway002 10 0template groundstruct28 5 
++0template groundstruct28 14 0template groundrunway002 1 
++0template groundrunway001 12 0template groundstruct6 7 0template groundstruct4 11 
++0template w2blu_bottomfront 8 0template groundrunway002 7 
++0template groundstruct6 4 0template Gdt001 11 
++0template groundstruct6 12 0template Gdt001 3 
++0template Gdt001 6 0template groundstruct6 13 0template asphalt004 11 
++0template Gdt001 12 0template asphalt001 3 
++0template groundstruct6 14 0template groundrunway001 13 0template groundstruct4 3 
++0template groundstruct6 8 0template groundstruct4 7 
++0template groundstruct4 10 0template groundstruct6 5 
++0template groundstruct4 10 0template groundrunway002 13 0template various 7 
++0template groundstruct6 14 0template groundstruct4 5 0template groundrunway001 11 
++0template groundstruct4 10 0template groundstruct6 13 0template groundrunway001 7 
++0template Gdt001 10 0template groundstruct6 13 0template groundrunway002 7 
++0template groundstruct28 2 0template groundrunway001 13 
++0template groundrunway002 4 0template groundstruct27 11 
++0template groundrunway002 12 0template groundstruct27 3 
++0template groundrunway002 8 0template groundstruct27 7 
++0template groundstruct4 10 0template various 13 0template groundstruct3 7 
++0template groundstruct4 8 0template groundrunway002 7 
++0template groundstruct27 10 0template groundrunway001 5 
+groundstruct27
++0template groundrunway002 14 0template groundstruct27 5 0template groundstruct6 11 
++0template groundrunway002 12 0template groundstruct6 7 0template groundstruct3 11 
++0template groundstruct3 2 0template groundrunway002 13 
++0template groundstruct4 10 0template groundstruct3 5 
++0template groundstruct4 14 0template groundrunway001 13 0template groundstruct6 3 
++0template groundstruct4 8 0template groundstruct6 7 
+groundstruct8
++0template groundrunway002 2 0template groundstruct28 13 
++0template groundstruct27 4 0template groundrunway001 11 
++0template groundstruct27 12 0template groundrunway002 3 
++0template groundstruct27 8 0template groundrunway001 7 
++0template groundstruct6 10 0template groundstruct27 5 
++0template groundstruct3 10 0template groundstruct6 5 
++0template groundstruct3 4 0template groundrunway001 11 
++0template groundstruct3 8 0template groundrunway002 7 
++0template groundrunway001 14 0template groundstruct4 5 0template groundstruct6 11 
++0template groundstruct4 14 0template groundstruct6 5 0template groundrunway001 11 
++0template groundrunway001 10 0template groundstruct27 5 
++0template groundstruct4 14 0template groundstruct3 5 0template groundrunway001 11 
++0template groundstruct4 12 0template groundrunway002 7 0template groundstruct6 11 
++0template groundstruct6 2 0template groundstruct4 13 
++0template groundrunway002 4 0template groundstruct14a 11 
++0template groundrunway001 12 0template groundstruct14a 3 
++0template Gdt001 10 0template groundrunway002 13 0template groundstruct14a 7 
++0template groundstruct27 4 0template Gmd001 11 
++0template groundstruct27 12 0template Gmd001 3 
++0template groundstruct27 8 0template Gmd001 7 
+groundstruct001
++0template asphalt001 14 0template groundrunway002 5 0template groundstruct27 11 
++0template asphalt003 12 0template groundstruct27 3 
++0template groundrunway002 10 0template asphalt003 13 0template groundstruct27 7 
++0template groundstruct3 14 0template groundstruct6 5 0template groundrunway001 11 
++0template groundrunway001 2 0template groundstruct3 13 
++0template groundstruct14a 10 0template groundrunway002 5 
+groundstruct14a
++0template Gdt001 10 0template groundstruct14a 5 
++0template Gmd001 10 0template groundstruct27 5 
++0template groundstruct27 10 0template Gmd001 5 
+groundstruct002
++0template groundrunway001 14 0template groundstruct27 1 
++0template groundstruct27 2 0template groundrunway001 13 
++0template groundrunway001 14 0template groundstruct6 5 0template groundstruct4 11 
++0template Gmd001 14 0template groundstruct27 1 
++0template Gmd001 12 0template groundstruct27 3 
++0template groundstruct6 14 0template groundstruct27 5 0template groundrunway002 11 
++0template groundstruct6 10 0template groundstruct4 5 
++0template groundrunway001 12 0template asphalt002 7 0template Gdt001 11 
++0template groundrunway001 12 0template Gdt001 7 0template asphalt002 11 
++0template groundrunway002 12 0template searockdark001 7 0template groundrunway3 11 
++0template groundstruct27 14 0template groundrunway001 1 
++0template groundrunway002 2 0template groundstruct27 13 
++0template groundstruct4 14 0template groundstruct6 13 0template groundrunway001 3 
++0template groundstruct6 10 0template groundstruct4 13 0template groundrunway002 7 
++0template groundrunway001 14 0template Gdt001 1 
++0template groundrunway002 12 0template Gdt001 7 0template snowrocks001 11 
++0template groundrunway001 12 0template snowrocks004 3 
++0template groundrunway002 12 0template pumus002 3 
++0template Gdt001 10 0template groundrunway002 13 0template pumus004 7 
++0template groundrunway4 10 0template searockdark004 5 
++0template groundrunway001 4 0template groundrunway8 11 
++0template asphalt003 14 0template groundrunway001 13 0template w2rt_turrettop 3 
++0template asphalt002 12 0template w2rt_turrettop 3 
++0template Gdt001 10 0template asphalt001 13 0template w2rt_turrettop 7 
++0template snowrocks001 10 0template Gdt001 5 
++0template w2rt_turrettop 4 0template groundstruct7 11 
++0template w2rt_turrettop 12 0template groundstruct7 3 
++0template w2rt_turrettop 8 0template groundstruct7 7 
++0template Gdt001 14 0template pumus003 13 0template groundmetal002 3 
++0template asphalt004 14 0template Gdt001 9 0template groundmetal001 7 
++0template asphalt001 8 0template Gdt001 7 
++0template groundstruct14a 4 0template Gdt001 11 
++0template groundstruct14a 12 0template Gdt001 3 
++0template Gdt001 2 0template groundstruct14a 13 
++0template groundstruct27 14 0template groundrunway001 9 0template asphalt002 7 
++0template groundrunway4 10 0template searockdark001 13 0template groundrunway001 7 
++0template groundrunway8 4 0template groundrunway001 11 
++0template groundrunway8 10 0template groundrunway002 13 0template asphalt004 7 
++0template w2rt_turrettop 2 0template groundrunway001 13 
++0template Gdt001 10 0template w2rt_turrettop 5 
++0template Gdt001 4 0template 14martian001 11 
++0template Gdt001 8 0template 14martian001 7 
+w2rt_misslepack
++0template groundstruct7 2 0template groundstruct17 13 
++0template w2rt_turrettop 10 0template groundstruct7 5 
+groundstruct18a
++0template Gdt001 14 0template groundmetal001 1 
++0template groundrunway001 10 0template asphalt004 13 0template Gdt001 7 
++0template groundstruct14a 14 0template groundrunway001 1 
++0template groundstruct14a 12 0template groundrunway002 3 
++0template groundstruct14a 8 0template groundrunway002 7 
++0template groundrunway5 14 0template groundrunway002 5 0template asphalt004 11 
++0template groundrunway6 12 0template asphalt002 7 0template groundrunway001 11 
++0template groundrunway6 12 0template groundrunway001 3 
++0template groundrunway001 2 0template groundrunway7 13 
++0template groundrunway001 12 0template Gdt001 7 0template w2rt_turrettop 11 
++0template 14martian001 10 0template Gdt001 5 
++0template Gdt001 10 0template 14martian001 5 
++0template w2rt_jetsides 4 0template w2rt_turrettop 11 
++0template groundstruct7 10 0template w2rt_turrettop 5 
+groundstruct19
+groundmetal002
++0template Gdt001 10 0template groundstruct19 5 
++0template Gdt001 4 0template asphalt001 11 
++0template groundrunway002 10 0template Gdt001 5 
++0template Gdt001 10 0template groundstruct14a 13 0template groundrunway002 7 
++0template asphalt002 14 0template groundrunway002 9 0template groundstruct27 7 
++0template groundrunway001 12 0template groundstruct28 7 0template asphalt003 11 
++0template groundrunway8 10 0template asphalt003 13 0template groundrunway001 7 
++0template w2rt_turrettop 10 0template Gdt001 5 
++0template w2rt_turrettop 2 0template snowrocks001 13 
++0template Gdt001 14 0template w2rt_turrettop 1 
++0template Gdt001 8 0template w2rt_turrettop 7 
++0template 14martian001 14 0template Gdt001 1 
++0template Gdt001 2 0template 14martian001 13 
++0template snowrocks001 14 0template Gdt001 5 0template 1snow002 11 
++0template w2rt_topbrgt 12 0template w2rt_jetsides 3 
++0template w2rt_jetsides 4 0template w2rt_topbrgt 11 
++0template w2rt_sides 12 0template w2rt_topbrgt 7 0template w2rt_topflt 11 
++0template w2rt_misslepack 12 0template w2rt_topflt 7 0template w2rt_topbrgt 11 
++0template w2rt_jetsides 12 0template w2rt_topbrgt 3 
++0template w2rt_turrettop 10 0template w2rt_jetsides 13 0template w2rt_topbrgt 7 
++0template groundstruct7 14 0template w2rt_turrettop 1 
++0template groundstruct7 12 0template w2rt_turrettop 3 
++0template w2rt_turrettop 2 0template groundstruct7 13 
++0template groundmetal001 4 0template Gdt001 11 
++0template Gdt001 2 0template groundstruct19 13 
++0template asphalt003 14 0template groundrunway6 13 0template Gdt001 3 
++0template asphalt001 12 0template Gdt001 7 0template groundrunway6 11 
++0template groundrunway001 14 0template asphalt001 13 0template groundrunway6 3 
++0template groundrunway001 8 0template groundrunway6 7 
++0template groundrunway8 10 0template groundrunway001 5 
++0template 1snow001 14 0template Gdt001 1 
++0template Gdt001 2 0template 1snow002 13 
++0template w2rt_topbrgt 10 0template w2rt_jetsides 5 
++0template w2rt_topflt 10 0template w2rt_topbrgt 5 
++0template w2rt_topbrgt 10 0template w2rt_topflt 5 
++0template w2rt_turrettop 14 0template w2rt_topbrgt 5 0template w2rt_jetsides 11 
+groundstruct18
++0template Gdt001 10 0template groundmetal001 5 
++0template groundrunway002 6 0template groundstruct27 13 0template Gdt001 11 
++0template groundstruct28 14 0template Gdt001 1 
++0template groundstruct28 12 0template Gdt001 7 0template asphalt002 11 
++0template groundstruct28 12 0template asphalt001 3 
++0template groundstruct28 12 0template asphalt002 7 0template Gdt001 11 
++0template groundrunway001 10 0template groundstruct28 13 0template Gdt001 7 
++0template groundrunway001 4 0template groundstruct5 11 
++0template groundrunway002 12 0template groundstruct5 3 
++0template w2rt_turrettop 14 0template Gdt001 5 0template 1snow002 11 
++0template w2rt_turrettop 8 0template 1snow001 7 
++0template Gdt001 10 0template w2rt_turrettop 13 0template 14martian001 7 
++0template w2rt_jetsides 14 0template Gdt001 1 
++0template w2rt_jetsides 12 0template Gdt001 3 
++0template w2rt_topbrgt 14 0template w2rt_jetsides 13 0template Gdt001 3 
++0template w2rt_topflt 14 0template w2rt_topbrgt 13 0template Gdt001 3 
++0template w2rt_topbrgt 14 0template w2rt_topflt 13 0template Gdt001 3 
++0template w2rt_topbrgt 12 0template Gdt001 7 0template groundstruct19 11 
++0template groundmetal002 2 0template w2rt_topbrgt 13 
++0template Gdt001 8 0template groundstruct19 7 
++0template Gdt001 10 0template groundrunway002 13 0template asphalt004 7 
++0template Gdt001 14 0template groundrunway002 5 0template asphalt003 11 
++0template 1snow001 14 0template Gdt001 13 0template 12martian001 11 0template asphalt004 7 
++0template w2rt_turrettop 10 0template 1snow002 13 0template 12martian001 7 
++0template w2rt_turrettop 4 0template Gdt001 11 
++0template Gdt001 4 0template groundstruct19 11 
++0template groundstruct19 2 0template Gdt001 13 
+groundstruct16a
++0template groundrunway001 14 0template Gdt001 13 0template asphalt004 3 
++0template groundstruct5 14 0template groundrunway001 13 0template Gdt001 3 
++0template groundstruct5 12 0template Gdt001 7 0template asphalt004 11 
++0template groundstruct5 12 0template asphalt004 3 
++0template groundrunway001 10 0template groundstruct5 13 0template asphalt003 7 
++0template asphalt004 10 0template groundrunway001 13 0template Gdt001 7 
++0template 12martian001 14 0template asphalt001 5 0template Gdt001 11 
++0template w2rt_turrettop 14 0template 12martian001 13 0template Gdt001 3 
++0template w2rt_turrettop 12 0template Gdt001 3 
++0template Gdt001 2 0template w2rt_turrettop 13 
++0template groundstruct19 14 0template Gdt001 1 
++0template groundstruct19 8 0template Gdt001 7 
++0template groundmetal002 12 0template Gdt001 3 
++0template groundmetal001 8 0template Gdt001 7 
++0template groundrunway001 14 0template asphalt003 5 0template Gdt001 11 
++0template groundrunway8 14 0template groundrunway002 13 0template Gdt001 3 
++0template asphalt004 4 0template Gdt001 11 
++0template groundstruct14a 14 0template Gdt001 1 
++0template groundstruct17 12 0template Gdt001 3 
++0template Gdt001 2 0template groundstruct17 13 
++0template groundstruct17 14 0template Gdt001 1 

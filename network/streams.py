@@ -18,6 +18,11 @@ class PacketWriter:
             self._current_byte = 0
             self._bit_index = 0
 
+    @property
+    def bit_length(self) -> int:
+        """Return the exact number of written bits without padding the stream."""
+        return (len(self._buffer) * 8) + self._bit_index
+
     def get_bytes(self) -> bytes:
         """Finalizes the stream (pads the last byte with 0s if needed) and returns the payload."""
         self._flush_bits()

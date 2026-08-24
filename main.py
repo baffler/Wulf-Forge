@@ -10,6 +10,7 @@ import random
 import secrets
 import ipaddress
 import queue
+from pathlib import Path
 from typing import Dict, Tuple, Optional
 
 from network.transport.tcp_transport import TcpTransport
@@ -30,7 +31,7 @@ from network.packets import (
     TankPacket, BehaviorPacket, TranslationPacket,
     UpdateStatsPacket, CommMessagePacket, parse_reincarnate_request,
 )
-from network.packets.packet_logger import PacketLogger, log_packet
+from network.packets.packet_logger import PacketLogger, log_packet, packet_name
 
 from core.entity import GameEntity, UpdateMask
 from core.entity_manager import EntityManager
@@ -41,6 +42,27 @@ from network.translation_config import get_config_by_index, GLOBAL_CONFIGS
 from mod_relay.listener import ModStateRelayListener
 from mod_relay.packets import ClientStateV1
 from mod_relay.state_apply import apply_mod_client_state
+
+
+REPO_ROOT = Path(__file__).resolve().parent
+MAP_DATA_ROOTS = (
+    REPO_ROOT / "shared" / "data" / "maps",
+    REPO_ROOT / "client" / "data" / "maps",
+)
+
+PLAYABLE_VEHICLE_TYPES = {
+    "tank": 0,
+    "scout": 1,
+    "medic": 1,
+}
+
+
+def get_selected_vehicle_type(session, server) -> int:
+    """Return the session's validated tank/scout selection."""
+    player_cfg = getattr(getattr(server, "cfg", None), "player", None)
+    configured_type = getattr(player_cfg, "unit_type", 0)
+    selected_type = getattr(session, "unit_type", configured_type)
+    return selected_type if selected_type in (0, 1) else 0
 
 # -------------------------------------------------------------------------
 # CONTEXTS
@@ -60,6 +82,7 @@ class ClientSession:
         self.player_id: int = 0
         self.name: str = "Unknown"
         self.team: int = 0
+        self.unit_type: int = get_selected_vehicle_type(self, server)
 
         # --- SESSION KEY LOGIC ---
         # Generate a random 10-char key (Wulfram seems to like strings)
@@ -549,7 +572,7 @@ def send_existing_player_entity_definitions(ctx: TcpContext | UdpContext, reason
         | UpdateMask.HEALTH
     )
     local_stats = (session.entity.health, session.entity.energy)
-    payload = ctx.server.entities.build_forced_update_packet(
+    payloads = ctx.server.entities.build_forced_update_packets(
         entities,
         sequence_num=get_ticks(),
         is_view_update=False,
@@ -557,10 +580,11 @@ def send_existing_player_entity_definitions(ctx: TcpContext | UdpContext, reason
         local_stats=local_stats,
         force_spawn=True,
     )
-    if not payload:
+    if not payloads:
         return False
 
-    target_ctx.send(b"\x0E" + payload)
+    for payload in payloads:
+        target_ctx.send(payload)
     ids = ",".join(str(entity.net_id) for entity in entities)
     print(
         "[sync] sent late-join entity definitions "
@@ -577,8 +601,6 @@ def global_game_loop(server: WulframServerContext):
     print("[Server] Starting Global Game Loop...")
     TARGET_FPS = 10
     FRAME_TIME = 1.0 / TARGET_FPS
-    STATIC_ANCHOR_INTERVAL = 0.5
-    last_static_anchor_time = 0.0
 
     while not server.stop_update_event.is_set():
         start_time = time.time()
@@ -609,11 +631,9 @@ def global_game_loop(server: WulframServerContext):
         # We get the list ONCE. The state remains valid for all clients.
         dirty_entities = server.entities.get_dirty_entities()
         current_tick = get_ticks()
-        static_anchor_due = False
-
-        if start_time - last_static_anchor_time >= STATIC_ANCHOR_INTERVAL:
-            static_anchor_due = True
-            last_static_anchor_time = start_time
+        # The client simulates collision impulses locally even for base props.
+        # Reassert their authoritative transform on every 10 Hz movement tick.
+        static_anchor_due = True
 
         # --- 3. Broadcast Loop ---
         if dirty_entities or static_anchor_due:
@@ -638,15 +658,14 @@ def global_game_loop(server: WulframServerContext):
                 
                 if others:
                     # We MUST pass local_stats here, even though it's an update for "others"
-                    payload = server.entities.build_update_packet(
+                    payloads = server.entities.build_update_packets(
                         others, 
                         sequence_num=current_tick, 
                         is_view_update=False,
                         local_stats=my_stats
                     )
-                    if payload:
-                        # Prepend OpCode 0x0E
-                        session.udp_context.send(b'\x0E' + payload)
+                    for payload in payloads:
+                        session.udp_context.send(payload)
 
                 # --- B. PACKET FOR "SELF" (0x0F - View Update) ---
                 # Check if "I" am dirty. If so, send View Update.
@@ -660,22 +679,21 @@ def global_game_loop(server: WulframServerContext):
                         # Build payload (Includes Timestamp, Includes Local Stats)
                         stats = (my_entity.health, my_entity.energy)
                         
-                        payload = server.entities.build_update_packet(
+                        payloads = server.entities.build_update_packets(
                             [my_entity], 
                             sequence_num=current_tick, 
                             is_view_update=True, 
                             local_stats=stats
                         )
-                        if payload:
-                            # Prepend OpCode 0x0F
-                            session.udp_context.send(b'\x0F' + payload)
+                        for payload in payloads:
+                            session.udp_context.send(payload)
 
                 if static_anchor_due:
-                    static_anchor_payload = server.entities.build_static_anchor_packet(
+                    static_anchor_payloads = server.entities.build_static_anchor_packets(
                         sequence_num=current_tick,
                         local_stats=my_stats,
                     )
-                    if static_anchor_payload:
+                    for static_anchor_payload in static_anchor_payloads:
                         session.udp_context.send(static_anchor_payload)
 
         # --- 4. Cleanup ---
@@ -729,10 +747,10 @@ def start_update_loop(ctx: UdpContext):
                             my_ent.mark_dirty(UpdateMask.VEL)"""
                     
                     # Todo: just update the local player's tank, no need to get dirty for all entities here
-                    update_view_payload = ctx.server.entities.get_dirty_packet_view(sequence_num=get_ticks(), health=0.9, energy=1.0)
+                    update_view_payloads = ctx.server.entities.get_dirty_packets_view(sequence_num=get_ticks(), health=0.9, energy=1.0)
                 
                     # 3. BROADCAST (Send to this client)
-                    if update_view_payload:
+                    for update_view_payload in update_view_payloads:
                         ctx.send(update_view_payload)
 
                 for ent in ctx.server.entities.get_all():
@@ -765,10 +783,10 @@ def start_update_loop(ctx: UdpContext):
                 # 2. GATHER DELTAS
                 # Pass health and energy/fuel for our local tank
                 #ctx.outgoing_seq += 1
-                update_payload = ctx.server.entities.get_dirty_packet(sequence_num=get_ticks(), health=0.9, energy=1.0)
+                update_payloads = ctx.server.entities.get_dirty_packets(sequence_num=get_ticks(), health=0.9, energy=1.0)
                 
                 # 3. BROADCAST (Send to this client)
-                if update_payload:
+                for update_payload in update_payloads:
                     ctx.send(update_payload)
                 
             except Exception as e:
@@ -798,12 +816,20 @@ def start_ping_loop(ctx: TcpContext):
     threading.Thread(target=run, daemon=True).start()
 
 def unknown_packet(ctx, payload: bytes):
+    if not payload:
+        print("[?] Empty packet received")
+        return
+
     opcode = payload[0]
     
     if opcode in [0x09, 0x0A, 0x0B, 0x0C, 0x10, 0x40, 0x49]:
-            return
+        return
     
-    print(f"[?] Unknown opcode 0x{opcode:02X} (len={len(payload)})")
+    name = packet_name(opcode)
+    if name is None:
+        print(f"[?] Unknown opcode 0x{opcode:02X} (len={len(payload)})")
+    else:
+        print(f"[?] Unhandled {name} (0x{opcode:02X}, len={len(payload)})")
 
 # Create dispatcher early here
 dispatcher = PacketDispatcher(on_unknown=unknown_packet)
@@ -926,9 +952,10 @@ def on_want_updates(ctx: TcpContext, payload: bytes):
                 message="To spawn in type /s spawn"
             ))
     # SEND FULL WORLD SNAPSHOT
-    snapshot = ctx.server.entities.get_snapshot_packet(sequence_num=get_ticks(), health=1.0, energy=1.0)
+    snapshots = ctx.server.entities.get_snapshot_packets(sequence_num=get_ticks(), health=1.0, energy=1.0)
     # We send this over TCP to ensure they get the initial world state reliably
-    ctx.send(snapshot)
+    for snapshot in snapshots:
+        ctx.send(snapshot)
 
     ctx.session.is_ready_for_updates = True
     print(f">>> Snapshot sent. Client {ctx.session.name} is now SYNCED.")
@@ -1135,7 +1162,7 @@ def on_reincarnate(ctx: UdpContext, payload: bytes):
     if not request.is_team_switch:
         selected_entry_id = request.selected_entry_id
         base_id = request.base_id
-        unit_id = ctx.server.packet_cfg.tank.unit_type
+        unit_id = get_selected_vehicle_type(ctx.session, ctx.server)
         print(
             "    > RECV REINCARNATE (SPAWN REQ): "
             f"Entry ID: {selected_entry_id} | base_id #{base_id} | unit_type {unit_id}"
@@ -1429,8 +1456,7 @@ def cmd_jump(ctx, force="80"):
     Applies a vertical velocity impulse to the player.
     Usage: /s jump [force]
     """
-    player_id = ctx.session.player_id
-    player = ctx.server.entities.get_entity(player_id)
+    player = ctx.session.entity
     
     if not player:
         send_system_message(ctx, "Player entity not found.")
@@ -1443,7 +1469,9 @@ def cmd_jump(ctx, force="80"):
 
     # 1. Keep existing X/Y velocity (momentum), but set Z to jump speed
     current_x, current_y, _ = player.vel
-    player.vel = (0.001, 0.001, float(force_val))
+    final_x = current_x if abs(current_x) > 0.01 else 0.001
+    final_y = current_y if abs(current_y) > 0.01 else 0.001
+    player.vel = (final_x, final_y, float(force_val))
 
     # 2. Mark ONLY the VEL flag. 
     # CRITICAL: Do NOT use UpdateMask.HARD_SYNC!
@@ -1453,8 +1481,13 @@ def cmd_jump(ctx, force="80"):
     
     # 3. (Optional) Force the packet to send immediately
     #ctx.outgoing_seq += 1
-    update_payload = ctx.server.entities.get_dirty_packet_view(sequence_num=get_ticks(), health=0.75, energy=0.25)
-    if update_payload:
+    update_payloads = ctx.server.entities.build_update_packets(
+        [player],
+        sequence_num=get_ticks(),
+        is_view_update=True,
+        local_stats=(player.health, player.energy),
+    )
+    for update_payload in update_payloads:
         ctx.send(update_payload)
         
     send_system_message(ctx, "Jump Jets Activated!")
@@ -1468,8 +1501,9 @@ def cmd_spawn(ctx, unit_type_str=None):
     """
     # CASE 1: No arguments -> Spawn Player
     if unit_type_str is None:
+        selected_unit_type = get_selected_vehicle_type(ctx.session, ctx.server)
         ctx.session.entity = ctx.server.entities.create_entity(
-            unit_type=ctx.server.packet_cfg.tank.unit_type, 
+            unit_type=selected_unit_type,
             team_id=ctx.session.team,
             pos=(100.0, 100.0, 100.0),
         )
@@ -1482,6 +1516,7 @@ def cmd_spawn(ctx, unit_type_str=None):
             sequence_id=get_ticks(),
             tank_cfg=ctx.server.packet_cfg.tank,
             team_id=ctx.session.team,
+            unit_type=selected_unit_type,
             pos=(100.0, 100.0, 100.0),
             rot=(0.0, 0.0, 0.0)
         )
@@ -1513,11 +1548,38 @@ def cmd_spawn(ctx, unit_type_str=None):
         pos=(80.0 + v_big, 80.0 + v_big, 25.0 + v_small),
     )
 
-    update_payload = ctx.server.entities.get_dirty_packet(health=0.9, energy=0.5)
-    if update_payload:
+    update_payloads = ctx.server.entities.get_dirty_packets(
+        sequence_num=get_ticks(),
+        health=0.9,
+        energy=0.5,
+    )
+    for update_payload in update_payloads:
         ctx.send(update_payload)
-    
+
     send_system_message(ctx, f"Spawned Entity #{new_ent.net_id} (Type {u_type})")
+
+
+@commands.command("vehicle")
+def cmd_vehicle(ctx, vehicle_name=None):
+    """Select tank or scout for the next player spawn."""
+    if vehicle_name is None:
+        selected_type = get_selected_vehicle_type(ctx.session, ctx.server)
+        selected_name = "scout" if selected_type == 1 else "tank"
+        send_system_message(ctx, f"Selected vehicle: {selected_name} (type {selected_type}).")
+        return
+
+    normalized_name = vehicle_name.strip().lower()
+    if normalized_name not in PLAYABLE_VEHICLE_TYPES:
+        send_system_message(ctx, "Usage: /s vehicle tank|scout")
+        return
+
+    selected_type = PLAYABLE_VEHICLE_TYPES[normalized_name]
+    selected_name = "scout" if selected_type == 1 else "tank"
+    ctx.session.unit_type = selected_type
+    send_system_message(
+        ctx,
+        f"Vehicle set to {selected_name} (type {selected_type}) for your next spawn.",
+    )
 
 @commands.command("list")
 def cmd_list(ctx):
@@ -1557,7 +1619,7 @@ def cmd_map(ctx, map_name="tron"):
 @commands.command("loadmap")
 def cmd_loadmap(ctx, map_name="bpass"):
     """
-    Loads map entities from: ./shared/data/maps/<map_name>/state when present.
+    Loads map entities from a shared override or the bundled client map data.
     Land-only maps are still bootstrapped with team repair pads.
     Usage: /s loadmap bpass
     """
@@ -1594,8 +1656,9 @@ def cmd_loadmap(ctx, map_name="bpass"):
         
         # Just send the full snapshot
         #ctx.outgoing_seq += 1
-        snapshot = ctx.server.entities.get_snapshot_packet(sequence_num=get_ticks(), health=1.0, energy=1.0)
-        broadcast(ctx.server, snapshot)
+        snapshots = ctx.server.entities.get_snapshot_packets(sequence_num=get_ticks(), health=1.0, energy=1.0)
+        for snapshot in snapshots:
+            broadcast(ctx.server, snapshot)
         
     except Exception as e:
         print(f"Failed to load map: {e}")
@@ -1762,7 +1825,12 @@ def _get_map_land_path(map_name):
     return os.path.join(_get_map_dir_path(map_name), "land")
 
 def _get_map_dir_path(map_name):
-    return os.path.join("shared", "data", "maps", map_name)
+    """Resolve a shared map override, then fall back to the in-tree client."""
+    for root in MAP_DATA_ROOTS:
+        candidate = root / map_name
+        if candidate.is_dir():
+            return str(candidate)
+    return str(MAP_DATA_ROOTS[-1] / map_name)
 
 def verify_map_state_exists(map_name):
     """

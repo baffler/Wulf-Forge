@@ -1,0 +1,45 @@
+<P><P><P>
+Targeting Commands
+<BR>
+------------------
+<P>
+t :              Target enemy tanks (if in range)
+<br>
+alt-t:			 Target friendly tanks
+<P>
+TAB:             Target objects in your view
+<P>
+u :              Target object under your reticle
+<BR>
+` :              Clear your target
+<P>
+f :              Target friendly refuel pad
+<BR>
+alt-f:			 Target hostile refuel pad (if in range)
+<P>
+r :              Target friendly repair pad
+<BR>
+alt-r:			 Target hostile repaid pad (if in range)
+<P>
+g :				 Target friendly energy unit
+<BR>
+alt-g:			 Target hostile energy unit (if in range)
+<p>
+F3:              Change radar range between short and long
+<P>
+Ctrl-F5:         Store current target in key F5
+<BR>
+Ctrl-F6:         Store current target in key F6
+<BR>
+Ctrl-F7:         Store current target in key F7
+<BR>
+Ctrl-F8:         Store current target in key F8
+<P>
+F5:              Recall target from key F5
+<BR>
+F6:              Recall target from key F6
+<BR>
+F7:              Recall target from key F7
+<BR>
+F8:              Recall target from key F8
+<BR>
