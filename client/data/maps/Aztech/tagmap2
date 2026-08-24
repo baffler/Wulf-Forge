@@ -1,0 +1,1911 @@
++0template Grs001 2 0template 3grass003 13 
++0template Grs003 6 0template 3grass003 13 0template grass3 11 
++0template Grs003 14 0template 3grass003 13 0template grass3 3 
++0template Grs003 10 0template 3grass002 13 0template grass3 7 
++0template grass3 10 0template 3grass001 13 0template Grs003 7 
+grass3
++0template Grs003 10 0template grass3 5 
++0template Grs001 6 0template 3grass003 13 0template Bdt001 11 
++0template Grs001 10 0template 3grass001 13 0template Bdt001 7 
++0template Grs001 14 0template grass3 1 
++0template grass3 2 0template Grs003 13 
++0template grass3 2 0template 3grass001 13 
++0template grass3 4 0template 9bush002 11 
++0template grass3 8 0template 9bush001 7 
++0template Grs003 14 0template grass3 5 0template 9bush001 11 
++0template grass3 10 0template 3grass001 13 0template 9bush001 7 
+Grs001
+Grs002
++0template Bdt001 2 0template 3grass001 13 
++0template Grs003 14 0template Bdt001 5 0template grass3 11 
++0template grass3 12 0template 9bush001 3 
++0template grass3 4 0template 5granite001 11 
++0template grass3 8 0template 5granite002 7 
++0template 9bush001 14 0template grass3 1 
++0template grass3 6 0template 9bush002 9 
++0template 9bush002 10 0template grass3 5 
++0template grass3 10 0template 9bush002 5 
++0template Grs002 12 0template grass3 3 
++0template Grs003 8 0template grass3 7 
++0template Grs001 4 0template bdtdark001 11 
++0template Grs003 12 0template bdtdark001 3 
++0template Grs002 8 0template bdtdark001 7 
+Grs003
++0template Grs003 12 0template bdtdark001 7 0template grass3 11 
++0template Bdt001 14 0template Grs001 13 0template grass3 3 
++0template Bdt001 12 0template grass3 3 
++0template grass3 2 0template Bdt001 13 
++0template junglecanyon003 10 0template Grs003 13 0template grass3 7 
++0template grass3 10 0template junglecanyon002 5 
++0template 9bush001 6 0template grass3 13 0template pumus003 11 
++0template 9bush001 12 0template pumus004 3 
++0template grass3 14 0template 9bush001 13 0template pumus002 3 
++0template grass3 12 0template pumus003 3 
++0template grass3 8 0template pumus003 7 
++0template 5granite002 14 0template grass3 1 
++0template grass3 2 0template 5granite001 13 
++0template 9bush002 6 0template grass3 9 
++0template 9bush002 12 0template grass3 3 
++0template bdtdark001 14 0template Grs003 1 
++0template bdtdark001 8 0template Grs003 7 
+bdtdark001
++0template Grs003 14 0template bdtdark001 1 
++0template bdtdark001 2 0template Grs003 13 
++0template grass3 10 0template bdtdark001 5 
++0template Grs002 4 0template turf002 11 
++0template 9bush002 14 0template grass3 5 0template pumus001 11 
++0template pumus002 2 0template 9bush001 13 
+pumus001
+pumus003
+pumus004
++0template grass3 14 0template pumus001 1 
++0template 9bush002 8 0template grass3 7 
++0template bdtdark001 10 0template grass3 5 
++0template Grs003 10 0template bdtdark001 5 
++0template Grs003 4 0template grass3 11 
++0template bdtdark001 14 0template Grs002 13 0template grass3 3 
++0template Grs001 14 0template bdtdark001 13 0template grass3 3 
++0template bdtdark001 10 0template Grs002 13 0template grass3 7 
++0template bdtdark001 4 0template Grs001 11 
++0template bdtdark001 12 0template Grs002 3 
++0template Grs003 6 0template bdtdark001 9 
++0template grass3 10 0template Grs001 13 0template bdtdark001 7 
++0template turf002 10 0template Grs003 5 
++0template pumus003 10 0template grass3 5 
++0template pumus004 4 0template marslava002 11 
++0template pumus001 12 0template marslava001 3 
++0template pumus003 8 0template marslava002 7 
+pumus002
++0template grass3 2 0template 9bush002 13 
++0template bdtdark001 14 0template grass3 5 0template Grs003 11 
++0template bdtdark001 12 0template Grs003 7 0template grass3 11 
++0template grass3 2 0template bdtdark001 13 
++0template Grs003 14 0template grass3 5 0template bdtdark001 11 
++0template bdtdark001 6 0template Grs003 9 
++0template grass3 10 0template Grs003 5 
++0template grass3 4 0template Grs001 11 
++0template grass3 12 0template Grs001 3 
++0template grass3 8 0template Grs002 7 
++0template marslava001 10 0template pumus004 5 
+marslava002
++0template pumus003 14 0template marslava003 1 
++0template grass3 10 0template pumus001 5 
++0template Grs003 2 0template bdtdark001 13 
++0template bdtdark001 10 0template Grs001 5 
++0template grass3 14 0template 9bush001 1 
++0template 1bush002 14 0template grass3 1 
++0template Grs003 14 0template 1bush001 9 0template grass3 7 
++0template grass3 14 0template Grs003 9 0template 1bush001 7 
++0template marslava001 14 0template pumus002 1 
++0template marslava003 12 0template pumus004 3 
++0template marslava001 8 0template pumus002 7 
++0template marslava001 4 0template fire/1 11 
++0template marslava001 8 0template fire/1 7 
++0template pumus002 10 0template marslava002 5 
++0template bdtdark001 14 0template Grs002 9 0template grass3 7 
++0template 1bush002 14 0template Grs001 13 0template grass3 3 
++0template grass3 6 0template 1bush001 13 0template Grs003 11 
++0template grass3 12 0template Grs001 7 0template 1bush002 11 
++0template grass3 8 0template 1bush001 7 
++0template fire/1 14 0template marslava002 1 
++0template marslava002 2 0template fire/1 13 
++0template grass3 14 0template bdtdark001 9 0template Grs003 7 
++0template grass3 8 0template bdtdark001 7 
++0template grass3 10 0template Grs002 13 0template 1bush001 7 
++0template 9bush001 2 0template grass3 13 
++0template pumus002 2 0template marslava001 13 
++0template 5granite002 14 0template grass3 5 0template 9bush002 11 
++0template grass3 14 0template 5granite001 13 0template 9bush001 3 
++0template Grs002 12 0template bdtdark001 7 0template gbdirt_grassy001 11 
++0template 3grass002 14 0template Grs003 13 0template gbdirt_grassy001 3 
++0template Grs002 14 0template 3grass001 13 0template gbdirt_grassy001 3 
++0template grass3 14 0template Grs001 13 0template gbdirt_grassy001 3 
++0template grass3 12 0template gbdirt_grassy001 3 
++0template grass3 12 0template gbdirt_grassy001 7 0template Grs001 11 
++0template grass3 12 0template Grs003 7 0template 3grass003 11 
++0template grass3 12 0template 3grass001 3 
++0template grass3 12 0template 3grass002 7 0template Grs001 11 
++0template grass3 12 0template Grs001 7 0template gbdirt_grassy001 11 
++0template grass3 12 0template gbdirt_grassy001 7 0template 3grass002 11 
++0template 3grass001 14 0template grass3 1 
++0template grass3 6 0template 3grass002 9 
++0template grass3 12 0template Grs002 7 0template 9bush002 11 
++0template grass3 2 0template 1bush001 13 
++0template 9bush002 4 0template grass3 11 
++0template pumus004 4 0template grass3 11 
++0template grass3 2 0template pumus004 13 
+9bush002
++0template grass3 14 0template Grs001 1 
++0template Grs003 4 0template gbdirt_grassy001 11 
++0template gbdirt_grassy001 2 0template Grs001 13 
+gbdirt_grassy001
++0template gbdirt_grassy001 4 0template Grs003 11 
++0template gbdirt_grassy001 12 0template Grs002 7 0template 3grass001 11 
++0template gbdirt_grassy001 12 0template 3grass002 7 0template Grs003 11 
+aztec4
+aztec5_stairs
++0template 3grass002 14 0template Grs003 13 0template turf002 11 0template Bdt001 7 
++0template 3grass001 12 0template turf003 3 
++0template gbdirt_grassy001 14 0template 3grass002 13 0template Grs002 11 0template turf002 7 
++0template Grs003 6 0template gbdirt_grassy001 13 0template 2gbdirt002 11 
++0template 3grass003 14 0template Grs002 13 0template Bdt001 11 0template 2gbdirt002 7 
++0template 3grass001 8 0template Bdt001 7 
+3grass002
++0template Grs001 10 0template 3grass001 5 
++0template darkrock001 10 0template Grs002 5 
++0template darkrock001 4 0template Grs003 11 
++0template grass3 10 0template darkrock002 13 0template Grs003 7 
++0template 3grass002 8 0template grass3 7 
++0template 9bush001 14 0template 3grass003 5 0template Grs002 11 
++0template grass3 14 0template 9bush001 9 0template Grs003 7 
++0template pumus002 14 0template grass3 1 
++0template pumus004 8 0template grass3 7 
++0template Grs002 12 0template grass3 7 0template turf002 11 
++0template gbdirt_grassy001 14 0template Grs001 13 0template turf003 3 
++0template gbdirt_grassy001 12 0template turf002 3 
++0template Grs001 14 0template gbdirt_grassy001 13 0template turf003 3 
++0template Grs002 12 0template turf004 3 
++0template 3grass001 14 0template Grs003 13 0template gbdirt_grassy001 11 0template turf003 7 
++0template turf001 10 0template Bdt001 13 0template Grs003 7 
+turf004
++0template Grs002 14 0template turf003 1 
++0template 2gbdirt001 14 0template Grs003 13 0template turf002 3 
++0template Bdt001 14 0template 2gbdirt002 13 0template turf004 3 
++0template Grs002 14 0template Bdt001 13 0template turf003 3 
++0template Grs003 12 0template turf003 7 0template 3grass003 11 
++0template 3grass002 2 0template Grs002 13 
++0template Grs001 14 0template 3grass001 1 
++0template Grs003 8 0template 3grass001 7 
++0template 3grass002 12 0template grass3 3 
++0template 9bush001 14 0template 3grass002 9 0template grass3 7 
++0template grass3 14 0template 9bush001 13 0template 3grass002 3 
++0template pumus003 12 0template grass3 7 0template 9bush002 11 
++0template pumus001 12 0template 9bush001 3 
++0template pumus001 12 0template 9bush001 7 0template grass3 11 
++0template grass3 14 0template pumus002 13 0template 9bush002 3 
++0template grass3 10 0template 5granite001 13 0template 9bush001 7 
++0template grass3 4 0template turf001 11 
++0template turf004 2 0template grass3 13 
+turf001
+turf003
+turf002
++0template gbdirt_grassy001 14 0template turf002 5 0template Grs003 11 
++0template turf001 10 0template 3grass002 13 0template Grs002 7 
++0template darkrock002 14 0template Grs002 13 0template turf004 3 
++0template darkrock002 12 0template turf002 7 0template Grs003 11 
++0template darkrock001 12 0template Grs003 7 0template 3grass002 11 
++0template grass3 10 0template darkrock003 13 0template 3grass003 7 
++0template Grs002 14 0template 3grass003 9 0template grass3 7 
++0template grass3 14 0template Grs003 13 0template 3grass002 3 
++0template grass3 8 0template 3grass001 7 
++0template grass3 12 0template 5granite001 3 
++0template grass3 6 0template 9bush002 13 0template 5granite002 11 
++0template turf002 10 0template grass3 5 
++0template turf004 4 0template aztec4 11 
++0template turf001 12 0template aztec4 3 
++0template aztec4 2 0template turf001 13 
++0template turf002 14 0template aztec4 1 
++0template turf004 8 0template 2gbdirt001 7 
++0template Grs003 10 0template turf003 5 
++0template grass3 14 0template darkrock001 1 
++0template grass3 8 0template darkrock002 7 
++0template 3grass003 14 0template grass3 5 0template 9bush001 11 
++0template 3grass002 12 0template 9bush002 3 
++0template turf001 10 0template Grs001 13 0template grass3 7 
++0template 5granite001 12 0template grass3 3 
++0template 5granite002 10 0template grass3 5 
++0template grass3 10 0template 5granite001 5 
++0template 9bush001 4 0template 5granite001 11 
++0template grass3 10 0template 9bush001 13 0template 5granite001 7 
++0template aztec4 10 0template turf001 5 
+aztec3
++0template turf002 10 0template 2gbdirt001 13 0template grandcan001 7 
++0template grass3 14 0template Grs003 5 0template darkrock001 11 
++0template grass3 4 0template gbdirt_grassy001 11 
++0template grass3 8 0template gbdirt_grassy001 7 
++0template 5granite001 14 0template 9bush002 9 0template grass3 7 
++0template grass3 14 0template 5granite001 9 0template 9bush002 7 
++0template turf004 10 0template grandcan001 13 0template 3grass001 7 
++0template darkrock001 14 0template Grs001 1 
++0template Grs001 2 0template darkrock001 13 
++0template gbdirt_grassy001 10 0template grass3 5 
++0template grass3 10 0template gbdirt_grassy001 5 
++0template 9bush002 14 0template grass3 13 0template 3grass003 3 
++0template grass3 12 0template 3grass001 7 0template 1bush002 11 
++0template grass3 12 0template 1bush001 7 0template gbdirt_grassy001 11 
++0template 9bush002 14 0template grass3 13 0template gbdirt_grassy001 3 
++0template grass3 14 0template 9bush001 13 0template gbdirt_grassy001 3 
++0template grass3 12 0template gbdirt_grassy001 7 0template 9bush001 11 
++0template 5granite002 10 0template 9bush001 13 0template grass3 7 
++0template grass3 14 0template 5granite001 1 
++0template 5granite002 2 0template grass3 13 
++0template turf002 10 0template Grs002 13 0template 2gbdirt002 7 
++0template Grs003 14 0template turf001 5 0template gbdirt_grassy001 11 
++0template Grs001 12 0template gbdirt_grassy001 3 
++0template darkrock003 14 0template Grs002 9 0template gbdirt_grassy001 7 
++0template darkrock001 12 0template Grs003 3 
++0template darkrock001 12 0template Grs002 7 0template grass3 11 
++0template grass3 2 0template darkrock001 13 
++0template gbdirt_grassy001 14 0template grass3 9 0template 9bush002 7 
++0template grass3 6 0template gbdirt_grassy001 9 
++0template gbdirt_grassy001 6 0template grass3 13 0template 3grass001 11 
++0template gbdirt_grassy001 12 0template 3grass002 3 
++0template 3grass003 2 0template gbdirt_grassy001 13 
+3grass003
+3grass001
++0template 1bush001 14 0template 3grass002 1 
++0template gbdirt_grassy001 14 0template 1bush002 13 0template 9bush001 11 0template 3grass001 7 
++0template gbdirt_grassy001 12 0template 9bush001 7 0template 1bush001 11 
++0template gbdirt_grassy001 12 0template 1bush001 7 0template 3grass003 11 
++0template 9bush002 10 0template gbdirt_grassy001 13 0template 3grass002 7 
++0template 5granite002 8 0template grass3 7 
++0template 5granite001 4 0template grass3 11 
++0template aztec5_stairs 14 0template aztec4 1 
++0template turf004 10 0template 2gbdirt002 13 0template 19bush001 7 
++0template gbdirt_grassy001 10 0template turf003 5 
++0template Grs001 14 0template gbdirt_grassy001 5 0template grass3 11 
++0template darkrock002 14 0template Grs002 13 0template grass3 3 
++0template grass3 14 0template 9bush002 5 0template gbdirt_grassy001 11 
++0template gbdirt_grassy001 2 0template grass3 13 
++0template 3grass001 10 0template gbdirt_grassy001 5 
++0template 3grass001 4 0template 9bush002 11 
++0template 3grass001 8 0template 9bush001 7 
++0template 9bush001 10 0template 3grass003 5 
++0template 1bush001 14 0template 9bush002 5 0template 3grass001 11 
++0template 3grass001 2 0template 1bush001 13 
++0template 9bush001 6 0template 3grass002 9 
++0template grass3 10 0template 9bush002 13 0template 3grass003 7 
+5granite002
++0template 9bush001 14 0template darkrock002 13 0template Grs003 3 
++0template grass3 14 0template 9bush002 13 0template Grs002 3 
++0template grass3 12 0template Grs001 7 0template turf003 11 
++0template turf001 10 0template 19bush001 5 
++0template gbdirt_grassy001 14 0template turf003 5 0template grass3 11 
++0template gbdirt_grassy001 12 0template grass3 3 
++0template grass3 2 0template gbdirt_grassy001 13 
++0template gbdirt_grassy001 10 0template 9bush001 5 
++0template gbdirt_grassy001 4 0template 3grass002 11 
+9bush001
++0template 3grass002 10 0template 9bush001 5 
++0template 9bush001 14 0template 3grass002 1 
++0template 9bush002 12 0template 3grass001 3 
++0template 3grass001 2 0template 9bush002 13 
++0template grass3 14 0template 3grass002 1 
+darkrock002
+darkrock003
++0template turf002 10 0template darkrock001 5 
++0template aztec4 4 0template turf002 11 
++0template turf002 2 0template 19bush001 13 
++0template grass3 10 0template turf004 5 
++0template gbdirt_grassy001 14 0template 9bush001 13 0template 3grass003 11 0template grass3 7 
++0template 9bush002 4 0template 3grass002 11 
++0template 3grass001 6 0template 9bush001 9 
++0template grass3 14 0template 3grass001 5 0template gbdirt_grassy001 11 
++0template grass3 12 0template gbdirt_grassy001 7 0template Gdt001 11 
++0template grass3 12 0template Gdt001 7 0template 1bush002 11 
++0template grass3 12 0template 1bush001 3 
++0template grass3 12 0template 1bush001 7 0template Grs001 11 
++0template darkrock002 12 0template grass3 3 
++0template turf004 14 0template darkrock003 13 0template grass3 3 
++0template turf004 8 0template grass3 7 
++0template turf004 10 0template aztec4 5 
++0template turf004 14 0template grass3 5 0template Grs002 11 
++0template grass3 4 0template 3grass002 11 
++0template 3grass003 6 0template grass3 13 0template 9bush001 11 
++0template gbdirt_grassy001 14 0template 3grass001 5 0template 1bush001 11 
++0template Gdt001 14 0template gbdirt_grassy001 13 0template 1bush001 3 
++0template 1bush001 2 0template Gdt001 13 
+1bush002
+1bush001
++0template 1bush001 4 0template Grs003 11 
++0template Grs002 2 0template 1bush001 13 
++0template aztec4 8 0template 19bush001 7 
++0template Grs003 14 0template grass3 5 0template 3grass003 11 
++0template 1bush002 10 0template 3grass003 5 
++0template 1bush002 4 0template gbdirt_grassy001 11 
++0template 1bush002 12 0template gbdirt_grassy001 7 0template Gdt001 11 
++0template 1bush002 8 0template Gdt001 7 
++0template Grs003 14 0template 1bush001 5 0template 9bush002 11 
++0template Grs001 12 0template 9bush002 7 0template 1bush002 11 
++0template Grs001 12 0template 1bush001 3 
++0template 3grass003 14 0template Grs003 9 0template 1bush002 7 
++0template 9bush002 14 0template grass3 9 0template Grs001 7 
++0template aztec4 2 0template 19bush001 13 
++0template turf003 8 0template 19bush001 7 
++0template grass3 12 0template turf003 7 0template Grs003 11 
++0template Bdt001 14 0template grass3 13 0template turf003 3 
++0template 3grass003 4 0template 19bush001 11 
++0template 3grass001 12 0template 19bush001 3 
++0template 3grass003 12 0template 19bush001 7 0template 1bush002 11 
++0template 1bush002 2 0template 3grass003 13 
++0template gbdirt_grassy001 14 0template 1bush001 1 
++0template Grs002 14 0template gbdirt_grassy001 9 0template 1bush001 7 
++0template 1bush002 14 0template Grs002 13 0template gbdirt_grassy001 3 
++0template 1bush002 8 0template gbdirt_grassy001 7 
++0template 9bush002 14 0template 1bush002 1 
++0template 1bush002 2 0template 9bush002 13 
++0template Grs003 14 0template 1bush001 1 
++0template 3grass002 14 0template Grs003 13 0template 1bush002 3 
++0template 3grass001 8 0template 1bush002 7 
++0template grass3 14 0template 3grass002 5 0template Grs001 11 
++0template turf002 14 0template grass3 5 0template 3grass002 11 
++0template Grs003 14 0template turf004 13 0template 3grass003 3 
++0template turf004 14 0template Grs002 13 0template 3grass003 3 
++0template turf003 12 0template 3grass002 3 
++0template 3grass002 10 0template 9bush002 13 0template grass3 7 
++0template 19bush001 10 0template 3grass002 5 
+19bush001
++0template 19bush001 4 0template greenrock005 11 
++0template 19bush001 12 0template greenrock002 3 
++0template 19bush001 12 0template greenrock001 7 0template rockwall001 11 
++0template 1bush001 14 0template 19bush001 13 0template Gdt001 11 0template rockwall001 7 
++0template 1bush002 12 0template Gdt001 3 
++0template gbdirt_grassy001 12 0template 1bush001 3 
++0template 1bush001 2 0template gbdirt_grassy001 13 
++0template 1bush002 8 0template Grs003 7 
++0template grass3 14 0template Grs003 13 0template 3grass001 11 0template 1bush002 7 
+aztec8_doors
++0template 3grass001 10 0template grass3 5 
++0template Grs001 12 0template 3grass003 3 
++0template greenrock005 6 0template 19bush001 9 
++0template greenrock005 12 0template 19bush001 3 
++0template rockwall003 14 0template greenrock004 13 0template 19bush001 3 
++0template rockwall005 12 0template 19bush001 3 
++0template Gdt001 14 0template rockwall005 13 0template 19bush001 3 
++0template rockwall003 14 0template Gdt001 13 0template 19bush001 3 
++0template 1bush002 14 0template rockwall005 13 0template 19bush001 3 
++0template 1bush001 12 0template 19bush001 3 
++0template 1bush002 12 0template 19bush001 7 0template gbdirt_grassy001 11 
++0template 1bush002 12 0template gbdirt_grassy001 3 
++0template Gdt001 14 0template 1bush001 13 0template gbdirt_grassy001 3 
++0template 1bush002 10 0template Gdt001 13 0template gbdirt_grassy001 7 
++0template 1bush002 4 0template 9bush001 11 
++0template 1bush001 8 0template 9bush001 7 
++0template grass3 14 0template 3grass001 9 0template Grs002 7 
++0template aztec4 4 0template aztec5_stairs 11 
++0template aztec4 12 0template aztec5_stairs 3 
++0template aztec4 8 0template aztec5_stairs 7 
++0template darkrock001 14 0template grass3 1 
++0template grass3 12 0template Grs002 7 0template darkrock002 11 
++0template 3grass003 4 0template Grs001 11 
++0template Grs001 6 0template 3grass002 9 
++0template 3grass003 6 0template Grs002 9 
++0template 3grass001 10 0template grass3 13 0template gbdirt_grassy001 7 
++0template 19bush001 6 0template 3grass003 13 0template greenrock005 11 
++0template greenrock003 2 0template 19bush001 13 
++0template greenrock003 4 0template 19bush001 11 
++0template 19bush001 2 0template greenrock002 13 
++0template 19bush001 4 0template 9bush002 11 
++0template 19bush001 12 0template 9bush002 3 
++0template 19bush001 12 0template 9bush002 7 0template 3grass002 11 
++0template 19bush001 12 0template 3grass003 7 0template 1bush002 11 
++0template gbdirt_grassy001 14 0template 19bush001 13 0template 1bush002 3 
++0template gbdirt_grassy001 8 0template 1bush002 7 
++0template 1bush001 14 0template gbdirt_grassy001 1 
++0template grass3 14 0template 3grass003 9 0template 1bush001 7 
++0template 9bush001 14 0template grass3 13 0template Grs001 11 0template 3grass003 7 
++0template grass3 10 0template 9bush001 13 0template Grs001 7 
++0template Grs001 14 0template grass3 13 0template 9bush001 3 
++0template darkrock003 10 0template Grs003 13 0template 9bush001 7 
++0template grass3 12 0template darkrock003 3 
++0template grass3 12 0template darkrock001 7 0template Grs001 11 
++0template grass3 4 0template darkrock002 11 
++0template darkrock003 6 0template grass3 13 0template 3grass001 11 
++0template 3grass002 2 0template darkrock003 13 
++0template gbdirt_grassy001 6 0template grass3 13 0template 1bush002 11 
++0template 3grass002 10 0template gbdirt_grassy001 13 0template 1bush002 7 
++0template 3grass001 4 0template Gdt001 11 
++0template 3grass003 12 0template Gdt001 7 0template 19bush001 11 
++0template greenrock005 12 0template 19bush001 7 0template 9bush001 11 
++0template 19bush001 14 0template greenrock005 13 0template 9bush002 3 
++0template 9bush001 2 0template 19bush001 13 
++0template 1bush002 14 0template 3grass002 5 0template 19bush001 11 
++0template 1bush001 8 0template 19bush001 7 
++0template gbdirt_grassy001 14 0template 1bush002 5 0template Gdt001 11 
++0template gbdirt_grassy001 8 0template Gdt001 7 
++0template Grs002 14 0template gbdirt_grassy001 1 
++0template Grs002 10 0template 1bush002 5 
++0template Grs003 4 0template 9bush001 11 
++0template grass3 14 0template Grs002 13 0template 9bush001 3 
++0template turf002 14 0template 19bush001 13 0template grass3 11 0template darkrock002 7 
++0template turf002 12 0template grass3 3 
++0template grass3 2 0template turf004 13 
++0template darkrock003 14 0template 9bush002 5 0template grass3 11 
++0template darkrock002 12 0template grass3 7 0template Grs001 11 
++0template Grs002 6 0template darkrock002 9 
++0template Grs002 8 0template darkrock002 7 
++0template Grs002 4 0template darkrock002 11 
++0template grass3 10 0template Grs003 13 0template darkrock001 7 
++0template darkrock002 8 0template grass3 7 
++0template Grs003 14 0template darkrock003 1 
++0template 3grass003 10 0template Grs001 13 0template darkrock001 7 
++0template 1bush002 10 0template gbdirt_grassy001 5 
++0template 3grass003 10 0template 1bush001 5 
++0template Gdt001 14 0template 3grass002 5 0template 19bush001 11 
++0template 19bush001 2 0template Gdt001 13 
++0template 9bush002 10 0template 19bush001 5 
++0template 9bush001 4 0template 19bush001 11 
++0template 9bush002 12 0template 19bush001 3 
++0template 3grass002 14 0template 9bush002 13 0template 19bush001 3 
++0template 19bush001 2 0template 3grass002 13 
++0template 1bush002 14 0template 19bush001 1 
++0template Gdt001 14 0template 1bush001 13 0template 19bush001 3 
++0template gbdirt_grassy001 14 0template Gdt001 13 0template 19bush001 3 
++0template gbdirt_grassy001 12 0template 19bush001 3 
++0template gbdirt_grassy001 8 0template 19bush001 7 
++0template 1bush002 12 0template gbdirt_grassy001 7 0template Grs003 11 
++0template 9bush001 10 0template Grs003 13 0template 1bush001 7 
++0template turf003 14 0template grass3 1 
++0template grass3 10 0template Bdt001 13 0template 19bush001 7 
++0template bdtdark001 14 0template grass3 1 
++0template darkrock002 10 0template bdtdark001 13 0template grass3 7 
++0template darkrock001 14 0template grass3 5 0template Grs002 11 
++0template darkrock001 12 0template Grs003 7 0template turf004 11 
++0template darkrock002 8 0template turf002 7 
++0template 3grass002 14 0template 1bush002 1 
+greenrock005
++0template 19bush001 10 0template greenrock004 5 
++0template 9bush001 14 0template 19bush001 1 
++0template 19bush001 2 0template 9bush001 13 
++0template 19bush001 8 0template greenrock003 7 
++0template gbdirt_grassy001 14 0template 19bush001 1 
++0template Grs002 14 0template gbdirt_grassy001 9 0template 19bush001 7 
++0template 9bush002 2 0template 1bush001 13 
++0template 9bush002 4 0template Grs003 11 
++0template 9bush001 8 0template Grs002 7 
++0template grass3 14 0template 9bush001 5 0template Grs001 11 
++0template grass3 8 0template Bdt001 7 
++0template aztec4 14 0template turf004 1 
++0template aztec4 12 0template turf004 3 
++0template aztec3 10 0template aztec4 13 0template turf003 7 
++0template aztec4 14 0template aztec3 5 0template turf001 11 
++0template grass3 14 0template 19bush001 13 0template turf001 3 
++0template grass3 8 0template turf003 7 
++0template bdtdark001 10 0template Grs001 13 0template 9bush002 7 
++0template darkrock003 14 0template bdtdark001 5 0template grass3 11 
++0template Grs003 14 0template darkrock001 13 0template grass3 3 
++0template Grs002 14 0template turf003 5 0template darkrock003 11 
+greenrock001
++0template 19bush001 14 0template greenrock005 1 
++0template 1bush001 12 0template gbdirt_grassy001 7 0template 9bush001 11 
++0template 1bush001 12 0template 9bush002 7 0template Grs002 11 
++0template 9bush001 14 0template 1bush001 13 0template Grs003 3 
++0template Grs002 10 0template 9bush001 5 
++0template 9bush002 10 0template Grs001 5 
++0template Grs001 6 0template 9bush001 9 
++0template Grs003 12 0template 9bush002 7 0template Gdt001 11 
++0template Grs003 8 0template Gdt001 7 
++0template Grs002 4 0template 3grass003 11 
++0template grass3 14 0template Grs002 9 0template 3grass003 7 
++0template aztec3 14 0template turf001 5 0template 9bush001 11 
++0template aztec3 12 0template 9bush002 3 
+aztec9_doors
++0template aztec3 14 0template aztec9_doors 13 0template 9bush002 3 
++0template turf001 10 0template aztec3 13 0template 9bush001 7 
++0template bdtdark001 14 0template 9bush002 1 
++0template grass3 10 0template bdtdark001 13 0template 9bush002 7 
++0template Grs001 14 0template grass3 5 0template darkrock003 11 
++0template turf002 14 0template Grs001 9 0template darkrock002 7 
++0template Grs001 2 0template turf001 13 
++0template grass3 14 0template Grs002 5 0template Bdt001 11 
++0template 3grass002 12 0template 1bush002 3 
++0template 19bush001 10 0template 3grass003 13 0template 1bush001 7 
++0template greenrock005 10 0template 19bush001 5 
+greenrock003
++0template greenrock001 4 0template junglecanyon003 11 
++0template greenrock003 12 0template junglecanyon002 7 0template searockdark004 11 
++0template greenrock002 12 0template searockdark002 7 0template rockwall001 11 
++0template greenrock002 12 0template rockwall002 7 0template junglecanyon001 11 
++0template greenrock005 8 0template junglecanyon003 7 
++0template greenrock001 4 0template asphalt004 11 
++0template greenrock003 12 0template asphalt002 7 0template junglecanyon001 11 
++0template greenrock001 12 0template junglecanyon003 3 
++0template 19bush001 14 0template greenrock003 9 0template junglecanyon002 7 
++0template 9bush001 14 0template gbdirt_grassy001 13 0template Grs001 11 0template 19bush001 7 
++0template Grs001 6 0template 9bush001 13 0template aztec3 11 
++0template 3grass003 14 0template Grs002 13 0template aztec3 3 
++0template 9bush001 14 0template 3grass001 13 0template Grs003 11 0template aztec3 7 
++0template Grs002 2 0template 9bush002 13 
++0template 9bush002 14 0template Grs003 1 
++0template 3grass001 14 0template Grs003 1 
++0template 3grass003 12 0template Grs002 3 
++0template grass3 14 0template 3grass003 13 0template Grs003 3 
++0template 9bush001 14 0template turf002 13 0template 19bush001 11 0template grass3 7 
++0template 9bush002 12 0template 19bush001 7 0template Gmd001 11 
++0template 9bush002 12 0template Gmd001 7 0template Gdt001 11 
++0template 9bush002 12 0template Gdt001 7 0template 19bush001 11 
++0template 9bush001 8 0template 19bush001 7 
++0template turf004 10 0template 9bush002 5 
++0template turf001 4 0template Grs002 11 
++0template turf004 12 0template Grs001 7 0template grass3 11 
++0template darkrock002 10 0template grass3 5 
+darkrock001
++0template Grs002 10 0template darkrock001 5 
++0template 19bush001 10 0template 1bush002 5 
+greenrock004
++0template junglecanyon003 6 0template greenrock005 13 0template searockdark002 11 
++0template searockdark003 6 0template junglecanyon001 13 0template rockwall005 11 
++0template rockwall004 6 0template searockdark001 9 
++0template junglecanyon001 14 0template rockwall004 13 0template searockdark002 3 
++0template greenrock003 14 0template junglecanyon003 13 0template asphalt004 11 0template searockdark001 7 
++0template asphalt004 2 0template greenrock001 13 
++0template junglecanyon002 14 0template asphalt004 5 0template searockdark003 11 
++0template junglecanyon003 12 0template searockdark001 3 
++0template junglecanyon003 12 0template searockdark002 7 0template pumus001 11 
++0template greenrock005 14 0template junglecanyon002 13 0template pumus001 3 
++0template greenrock005 12 0template pumus003 7 0template junglecanyon001 11 
++0template Grs001 14 0template 19bush001 9 0template greenrock003 7 
++0template aztec3 10 0template Grs001 13 0template 19bush001 7 
++0template Grs001 10 0template aztec3 5 
++0template 3grass003 10 0template Grs002 5 
++0template 3grass001 8 0template Grs001 7 
++0template Grs003 12 0template 3grass003 7 0template 9bush001 11 
++0template grass3 14 0template Grs001 9 0template 9bush001 7 
++0template grass3 12 0template 1bush002 7 0template turf002 11 
++0template grass3 12 0template turf001 7 0template 1bush002 11 
++0template 19bush001 10 0template grass3 5 
++0template Gmd001 14 0template 19bush001 5 0template Gdt001 11 
++0template Gdt001 6 0template Gmd001 9 
++0template 19bush001 14 0template Gdt001 9 0template Gmd001 7 
++0template 9bush002 14 0template 19bush001 9 0template Gdt001 7 
++0template turf002 14 0template 9bush001 13 0template grass3 11 0template 19bush001 7 
++0template Grs002 14 0template turf003 13 0template grass3 3 
++0template darkrock002 8 0template Grs002 7 
++0template gbdirt_grassy001 14 0template grass3 1 
++0template gbdirt_grassy001 8 0template grass3 7 
++0template greenrock005 14 0template 19bush001 5 0template 1bush001 11 
++0template greenrock003 8 0template 1bush001 7 
+greenrock002
++0template greenrock002 6 0template 19bush001 13 0template junglecanyon002 11 
++0template searockdark002 6 0template junglecanyon001 9 
++0template rockwall002 10 0template searockdark001 13 0template junglecanyon001 7 
++0template searockdark004 14 0template rockwall003 1 
++0template searockdark002 12 0template rockwall005 7 0template junglecanyon001 11 
++0template asphalt004 14 0template searockdark002 13 0template junglecanyon001 3 
++0template asphalt004 12 0template junglecanyon002 3 
++0template searockdark003 14 0template asphalt003 13 0template junglecanyon001 3 
++0template searockdark002 12 0template junglecanyon001 3 
++0template pumus001 10 0template searockdark002 13 0template junglecanyon002 7 
++0template junglecanyon003 14 0template pumus003 5 0template searockdark002 11 
++0template greenrock001 14 0template junglecanyon002 13 0template searockdark003 3 
++0template greenrock005 12 0template searockdark004 7 0template asphalt003 11 
++0template greenrock005 8 0template asphalt002 7 
++0template aztec3 14 0template 19bush001 1 
++0template aztec3 12 0template 19bush001 7 0template Grs002 11 
++0template 3grass002 14 0template aztec3 13 0template Grs002 3 
++0template 3grass002 14 0template Grs002 5 0template 9bush002 11 
++0template 3grass003 6 0template 9bush001 13 0template 1bush002 11 
++0template turf001 10 0template 1bush001 5 
++0template 1bush002 10 0template turf003 5 
++0template 1bush002 4 0template turf001 11 
++0template grass3 14 0template 1bush001 9 0template turf003 7 
++0template 19bush001 10 0template grass3 13 0template 1bush002 7 
++0template Gdt001 10 0template 19bush001 5 
++0template Gmd001 14 0template Gdt001 1 
++0template grass3 14 0template 19bush001 9 0template Gdt001 7 
++0template grass3 8 0template 19bush001 7 
++0template Grs002 14 0template grass3 5 0template turf002 11 
++0template grass3 12 0template 9bush002 7 0template darkrock003 11 
++0template gbdirt_grassy001 14 0template grass3 13 0template Grs001 11 0template 3grass001 7 
++0template gbdirt_grassy001 8 0template Grs003 7 
++0template 19bush001 14 0template 1bush002 1 
++0template 1bush001 6 0template 19bush001 9 
++0template greenrock001 10 0template 1bush002 13 0template 19bush001 7 
++0template junglecanyon003 2 0template greenrock004 13 
++0template searockdark002 10 0template junglecanyon003 5 
++0template junglecanyon001 10 0template searockdark003 5 
++0template rockwall001 14 0template junglecanyon002 1 
++0template rockwall002 12 0template junglecanyon002 3 
++0template junglecanyon001 6 0template rockwall002 13 0template 13martian001 11 
++0template junglecanyon001 12 0template 13martian001 3 
++0template junglecanyon003 8 0template 13martian001 7 
+junglecanyon002
++0template pumus002 14 0template junglecanyon002 1 
++0template pumus001 12 0template junglecanyon002 3 
++0template searockdark003 14 0template pumus003 13 0template junglecanyon002 3 
++0template searockdark004 12 0template junglecanyon002 7 0template asphalt003 11 
++0template asphalt003 2 0template searockdark004 13 
++0template greenrock004 14 0template asphalt001 5 0template junglecanyon001 11 
++0template Grs003 14 0template 19bush001 1 
++0template Grs002 8 0template 19bush001 7 
++0template 3grass003 6 0template Grs002 13 0template 9bush001 11 
++0template 3grass003 6 0template 9bush001 13 0template Grs003 11 
++0template 3grass001 12 0template 9bush002 7 0template 1bush002 11 
++0template 1bush002 8 0template turf001 7 
++0template turf002 14 0template 1bush002 1 
++0template 1bush001 2 0template turf002 13 
++0template Gdt001 14 0template 19bush001 1 
++0template Gdt001 12 0template 19bush001 3 
++0template Gmd001 14 0template Gdt001 9 0template 19bush001 7 
++0template Gdt001 2 0template Gmd001 13 
++0template 19bush001 10 0template Gdt001 5 
++0template grass3 10 0template 19bush001 5 
++0template turf002 14 0template grass3 13 0template Grs002 3 
++0template turf002 8 0template Grs001 7 
++0template 3grass002 14 0template 9bush001 1 
++0template 3grass001 12 0template 9bush001 7 0template Grs003 11 
++0template Grs003 6 0template 3grass003 13 0template darkrock001 11 
++0template gbdirt_grassy001 14 0template 3grass002 1 
++0template 1bush001 14 0template gbdirt_grassy001 9 0template 3grass002 7 
++0template greenrock003 10 0template 19bush001 13 0template 1bush002 7 
++0template greenrock001 4 0template bdtdark001 11 
++0template 19bush001 10 0template greenrock002 13 0template bdtdark001 7 
++0template junglecanyon003 10 0template greenrock003 5 
++0template junglecanyon002 4 0template searockdark003 11 
++0template junglecanyon001 10 0template searockdark003 13 0template rockwall002 7 
+junglecanyon003
++0template 13martian001 10 0template junglecanyon003 5 
+13martian001
++0template junglecanyon003 10 0template 13martian001 5 
++0template asphalt001 14 0template junglecanyon002 1 
++0template junglecanyon001 2 0template asphalt001 13 
++0template greenrock001 14 0template junglecanyon001 1 
++0template Grs001 12 0template 19bush001 3 
++0template Grs001 12 0template 9bush002 3 
++0template 9bush001 14 0template 3grass002 13 0template 1bush002 3 
++0template 1bush002 6 0template turf003 9 
++0template 1bush002 12 0template turf003 7 0template 3grass001 11 
++0template 1bush001 8 0template 3grass003 7 
++0template 1bush002 12 0template turf004 7 0template grass3 11 
++0template 19bush001 14 0template 1bush001 13 0template grass3 3 
++0template 19bush001 12 0template grass3 3 
++0template 19bush001 8 0template grass3 7 
++0template Gdt001 4 0template Gmd001 11 
++0template 19bush001 10 0template Gdt001 13 0template Gmd001 7 
++0template grass3 12 0template turf002 3 
++0template Grs002 10 0template grass3 13 0template turf001 7 
++0template darkrock002 12 0template turf001 3 
++0template turf004 2 0template darkrock001 13 
++0template 3grass002 14 0template 9bush001 13 0template grass3 3 
++0template 3grass001 12 0template grass3 7 0template 9bush001 11 
++0template 3grass001 12 0template 9bush002 7 0template grass3 11 
++0template 3grass002 12 0template grass3 7 0template Grs002 11 
++0template gbdirt_grassy001 10 0template 3grass002 5 
++0template greenrock002 10 0template 1bush002 13 0template gbdirt_grassy001 7 
++0template bdtdark001 14 0template greenrock004 5 0template 19bush001 11 
++0template 19bush001 2 0template bdtdark001 13 
++0template searockdark002 14 0template junglecanyon001 5 0template rockwall001 11 
++0template junglecanyon001 10 0template rockwall003 13 0template searockdark002 7 
+junglecanyon001
++0template 13martian001 14 0template junglecanyon003 1 
++0template 13martian001 12 0template junglecanyon001 3 
++0template junglecanyon003 2 0template 13martian001 13 
++0template junglecanyon002 4 0template rockwall002 11 
++0template junglecanyon002 12 0template rockwall005 3 
++0template junglecanyon003 8 0template rockwall005 7 
++0template junglecanyon001 4 0template pumus003 11 
++0template junglecanyon003 12 0template pumus001 3 
++0template junglecanyon003 12 0template pumus004 7 0template 13martian001 11 
++0template junglecanyon003 12 0template 13martian001 7 0template rockwall005 11 
++0template greenrock004 14 0template junglecanyon001 13 0template rockwall005 3 
++0template greenrock001 8 0template rockwall001 7 
++0template 9bush002 14 0template Grs003 13 0template 1bush001 11 0template 19bush001 7 
++0template 9bush002 12 0template 1bush001 3 
++0template 3grass001 10 0template turf004 5 
++0template 1bush001 12 0template 3grass002 3 
++0template turf004 14 0template 1bush001 13 0template grass3 11 0template 3grass002 7 
++0template 19bush001 10 0template Gmd001 13 0template Gdt001 7 
++0template grass3 6 0template 5granite002 13 0template 9bush002 11 
++0template turf002 2 0template Grs003 13 
++0template Grs001 12 0template grass3 7 0template 3grass002 11 
++0template gbdirt_grassy001 14 0template Grs003 13 0template 3grass003 3 
++0template 1bush002 14 0template gbdirt_grassy001 13 0template 3grass001 3 
++0template gbdirt_grassy001 14 0template 1bush002 13 0template 3grass001 3 
++0template greenrock004 14 0template gbdirt_grassy001 13 0template Grs002 11 0template 3grass003 7 
++0template greenrock002 8 0template Grs002 7 
++0template searockdark002 10 0template rockwall005 13 0template junglecanyon002 7 
++0template junglecanyon003 8 0template pumus002 7 
++0template rockwall001 10 0template junglecanyon001 5 
+rockwall002
++0template junglecanyon003 10 0template rockwall002 5 
++0template pumus003 10 0template junglecanyon002 5 
++0template 13martian001 14 0template pumus001 5 0template rockwall005 11 
++0template 13martian001 8 0template rockwall002 7 
++0template rockwall001 10 0template 13martian001 5 
+rockwall003
++0template greenrock003 14 0template rockwall003 5 0template junglecanyon002 11 
++0template greenrock003 12 0template junglecanyon002 7 0template rockwall002 11 
++0template greenrock004 12 0template rockwall002 3 
++0template 19bush001 14 0template greenrock004 9 0template rockwall005 7 
++0template 1bush001 4 0template 3grass001 11 
++0template turf004 14 0template 1bush001 13 0template 3grass002 3 
++0template 3grass002 2 0template turf001 13 
++0template Gdt001 14 0template 19bush001 5 0template Gmd001 11 
++0template Gdt001 8 0template Gmd001 7 
++0template grass3 4 0template 19bush001 11 
++0template grass3 12 0template 19bush001 3 
++0template 9bush002 10 0template grass3 13 0template 19bush001 7 
++0template 1bush001 14 0template grass3 5 0template Grs002 11 
++0template 1bush002 14 0template Grs003 1 
++0template Grs001 6 0template 1bush002 9 
++0template Grs001 8 0template 1bush001 7 
++0template greenrock005 10 0template 3grass002 5 
++0template junglecanyon002 14 0template greenrock001 1 
++0template junglecanyon001 12 0template greenrock001 7 0template asphalt004 11 
++0template searockdark003 14 0template junglecanyon003 13 0template asphalt001 3 
++0template junglecanyon002 14 0template searockdark001 9 0template asphalt004 7 
++0template pumus001 10 0template junglecanyon001 13 0template searockdark002 7 
++0template junglecanyon001 10 0template pumus002 5 
++0template junglecanyon001 2 0template rockwall004 13 
++0template pumus001 12 0template junglecanyon002 7 0template rockwall001 11 
++0template rockwall004 2 0template pumus002 13 
++0template 13martian001 14 0template rockwall002 5 0template junglecanyon001 11 
++0template rockwall001 14 0template 13martian001 13 0template junglecanyon003 3 
++0template rockwall004 8 0template junglecanyon001 7 
++0template greenrock004 14 0template rockwall005 1 
++0template 1bush002 10 0template 19bush001 5 
++0template 1bush001 4 0template 19bush001 11 
++0template 3grass001 10 0template 1bush001 13 0template 19bush001 7 
++0template grass3 10 0template 3grass001 5 
++0template 19bush001 2 0template grass3 13 
++0template 9bush002 14 0template 19bush001 5 0template aztec6 11 
++0template grass3 10 0template 9bush002 13 0template aztec6 7 
++0template turf002 8 0template 3grass003 7 
++0template turf003 12 0template Grs003 3 
++0template 1bush002 12 0template grass3 3 
++0template Grs003 14 0template 1bush002 13 0template grass3 3 
++0template 3grass002 14 0template Grs002 13 0template grass3 3 
++0template greenrock003 14 0template Grs001 13 0template gbdirt_grassy001 11 0template grass3 7 
++0template 19bush001 14 0template greenrock005 13 0template gbdirt_grassy001 3 
++0template 19bush001 8 0template gbdirt_grassy001 7 
++0template greenrock001 14 0template 19bush001 1 
++0template greenrock001 8 0template 19bush001 7 
++0template asphalt002 10 0template greenrock004 5 
+asphalt003
++0template searockdark002 14 0template asphalt002 5 0template junglecanyon003 11 
++0template pumus004 14 0template searockdark003 13 0template junglecanyon001 3 
++0template junglecanyon002 2 0template pumus003 13 
++0template junglecanyon002 4 0template 13martian001 11 
++0template junglecanyon003 12 0template 13martian001 7 0template pumus004 11 
++0template rockwall001 14 0template junglecanyon001 13 0template pumus003 3 
++0template rockwall005 8 0template pumus003 7 
+rockwall005
++0template greenrock002 10 0template rockwall001 5 
++0template 1bush001 12 0template 19bush001 7 0template Grs002 11 
++0template 19bush001 10 0template 1bush002 13 0template Grs002 7 
++0template Grs003 12 0template 19bush001 7 0template 3grass002 11 
+Gdt001
++0template aztec6 14 0template 19bush001 5 0template grass3 11 
++0template grass3 6 0template aztec6 13 0template 9bush001 11 
++0template 3grass002 14 0template Grs002 13 0template turf004 3 
++0template turf003 6 0template 3grass001 9 
++0template grass3 12 0template 5granite001 7 0template 9bush001 11 
++0template 19bush001 14 0template gbdirt_grassy001 1 
+asphalt001
++0template junglecanyon001 14 0template asphalt003 5 0template 13martian001 11 
++0template junglecanyon002 4 0template asphalt003 11 
++0template junglecanyon001 12 0template asphalt003 3 
++0template junglecanyon003 8 0template asphalt001 7 
++0template pumus002 10 0template 13martian001 5 
++0template rockwall004 14 0template pumus004 5 0template junglecanyon002 11 
++0template greenrock003 10 0template rockwall003 13 0template junglecanyon002 7 
++0template 3grass002 14 0template 19bush001 1 
++0template 19bush001 6 0template 3grass001 13 0template Grs002 11 
++0template 19bush001 8 0template Grs001 7 
++0template Grs003 10 0template 19bush001 5 
++0template Gdt001 12 0template Gmd001 7 0template asphalt002 11 
++0template 19bush001 10 0template Gdt001 13 0template asphalt003 7 
++0template 19bush001 14 0template grass3 1 
++0template 19bush001 12 0template easterhead3 3 
++0template grass3 10 0template 19bush001 13 0template easterhead3 7 
++0template 9bush001 12 0template grass3 7 0template 5granite001 11 
++0template grass3 14 0template 9bush001 13 0template Grs001 11 0template 5granite001 7 
++0template 3grass003 14 0template turf002 5 0template Grs002 11 
++0template turf001 14 0template 3grass002 13 0template Grs003 3 
++0template 9bush002 10 0template 5granite001 13 0template grass3 7 
++0template gbdirt_grassy001 14 0template grass3 5 0template Grs003 11 
++0template 19bush001 10 0template gbdirt_grassy001 5 
++0template asphalt003 14 0template greenrock001 5 0template junglecanyon003 11 
++0template asphalt001 12 0template junglecanyon003 7 0template searockdark002 11 
++0template 13martian001 10 0template asphalt002 13 0template searockdark001 7 
++0template asphalt004 14 0template junglecanyon002 5 0template searockdark001 11 
++0template asphalt001 8 0template searockdark001 7 
++0template junglecanyon003 10 0template asphalt003 5 
++0template pumus001 10 0template 13martian001 13 0template junglecanyon001 7 
++0template greenrock004 14 0template junglecanyon003 5 0template Gdt001 11 
++0template 19bush001 14 0template greenrock002 9 0template Gdt001 7 
++0template 19bush001 6 0template Grs003 13 0template 3grass003 11 
++0template Grs002 14 0template 19bush001 9 0template 3grass001 7 
++0template 3grass003 14 0template Grs003 9 0template 19bush001 7 
++0template asphalt004 14 0template Gmd001 13 0template Gdt001 3 
++0template 19bush001 10 0template asphalt001 13 0template Gdt001 7 
++0template easterhead3 14 0template grass3 13 0template 19bush001 3 
++0template easterhead3 12 0template 19bush001 7 0template turf004 11 
++0template grass3 10 0template easterhead3 13 0template turf001 7 
++0template 3grass003 14 0template 5granite001 13 0template Grs002 11 0template grass3 7 
++0template 9bush001 14 0template 3grass002 9 0template Grs002 7 
++0template 9bush001 10 0template grass3 13 0template 3grass001 7 
++0template 3grass002 14 0template turf003 1 
++0template Grs001 14 0template 3grass001 13 0template turf003 3 
++0template 3grass002 10 0template Grs003 13 0template turf002 7 
++0template gbdirt_grassy001 10 0template Grs002 5 
++0template junglecanyon003 14 0template greenrock002 9 0template 19bush001 7 
++0template searockdark001 10 0template junglecanyon001 13 0template greenrock003 7 
++0template 13martian001 14 0template searockdark002 5 0template junglecanyon002 11 
++0template searockdark004 14 0template junglecanyon002 9 0template pumus002 7 
++0template greenrock005 14 0template rockwall005 13 0template junglecanyon001 3 
++0template 19bush001 2 0template Grs002 13 
++0template Gdt001 14 0template 19bush001 5 0template asphalt003 11 
++0template Gdt001 12 0template asphalt003 3 
++0template turf004 14 0template 19bush001 13 0template 3grass001 11 0template greenrock004 7 
++0template grass3 14 0template turf002 13 0template 3grass003 3 
++0template 9bush001 14 0template 3grass001 5 0template grass3 11 
++0template grass3 6 0template 9bush002 13 0template Grs001 11 
++0template gbdirt_grassy001 10 0template bdtdark001 13 0template grass3 7 
++0template searockdark004 14 0template greenrock001 5 0template junglecanyon001 11 
++0template junglecanyon001 6 0template searockdark003 9 
++0template rockwall004 10 0template junglecanyon001 13 0template pumus004 7 
+rockwall001
++0template 3grass002 10 0template Grs001 13 0template 19bush001 7 
++0template asphalt004 14 0template 19bush001 5 0template Gdt001 11 
++0template asphalt004 12 0template Gdt001 7 0template Gmd001 11 
++0template 19bush001 10 0template asphalt004 13 0template Gmd001 7 
++0template grass3 14 0template 19bush001 5 0template 3grass003 11 
++0template 19bush001 10 0template grass3 13 0template 3grass003 7 
++0template 3grass003 14 0template greenrock005 1 
++0template 3grass001 8 0template greenrock005 7 
++0template searockdark002 14 0template junglecanyon002 9 0template greenrock001 7 
++0template junglecanyon001 6 0template rockwall001 13 0template searockdark002 11 
++0template junglecanyon001 8 0template searockdark002 7 
++0template junglecanyon001 14 0template pumus003 5 0template rockwall004 11 
++0template greenrock004 12 0template junglecanyon002 7 0template Gdt001 11 
++0template greenrock001 12 0template Gdt001 3 
++0template 19bush001 12 0template greenrock001 7 0template bdtdark001 11 
++0template 19bush001 12 0template bdtdark001 7 0template greenrock002 11 
++0template Grs003 14 0template 3grass002 9 0template 19bush001 7 
++0template 19bush001 10 0template grass3 13 0template Grs002 7 
++0template Gmd001 6 0template Gdt001 9 
++0template 19bush001 14 0template Gmd001 13 0template Gdt001 3 
++0template 3grass003 14 0template 19bush001 9 0template Gdt001 7 
++0template 3grass002 14 0template greenrock003 5 0template turf004 11 
++0template 3grass001 8 0template turf003 7 
++0template 3grass003 4 0template grass3 11 
++0template pumus002 14 0template junglecanyon003 13 0template greenrock001 3 
++0template pumus004 12 0template greenrock005 7 0template junglecanyon001 11 
++0template pumus004 12 0template junglecanyon002 7 0template searockdark001 11 
++0template junglecanyon002 10 0template pumus003 13 0template searockdark003 7 
++0template searockdark001 14 0template junglecanyon003 1 
++0template junglecanyon002 6 0template searockdark001 13 0template 13martian001 11 
++0template junglecanyon002 12 0template 13martian001 7 0template Gdt001 11 
++0template junglecanyon002 12 0template Gdt001 3 
++0template junglecanyon003 8 0template Gdt001 7 
+rockwall004
++0template junglecanyon002 12 0template asphalt001 7 0template 13martian001 11 
++0template Gdt001 14 0template junglecanyon001 1 
++0template Gdt001 12 0template junglecanyon001 7 0template rockwall002 11 
++0template greenrock004 14 0template Gdt001 9 0template rockwall003 7 
++0template bdtdark001 14 0template greenrock002 13 0template Gdt001 3 
++0template greenrock001 14 0template bdtdark001 13 0template Gdt001 3 
++0template Grs003 10 0template 3grass003 13 0template 19bush001 7 
++0template 19bush001 14 0template Grs003 5 0template 3grass001 11 
++0template Gmd001 14 0template 19bush001 9 0template 3grass001 7 
++0template Gdt001 14 0template Gmd001 9 0template 19bush001 7 
++0template 19bush001 14 0template Gdt001 13 0template asphalt002 3 
++0template 19bush001 8 0template asphalt002 7 
++0template turf001 14 0template greenrock002 1 
++0template 3grass001 14 0template turf004 9 0template greenrock003 7 
++0template 3grass001 12 0template turf002 7 0template grass3 11 
++0template junglecanyon002 14 0template searockdark002 1 
++0template Gdt001 14 0template 13martian001 5 0template junglecanyon003 11 
++0template Gdt001 8 0template junglecanyon003 7 
++0template junglecanyon001 10 0template Gdt001 5 
++0template rockwall005 12 0template pumus002 7 0template junglecanyon002 11 
++0template junglecanyon002 12 0template rockwall003 7 0template searockdark001 11 
++0template asphalt004 10 0template junglecanyon002 13 0template searockdark001 7 
+asphalt002
++0template 13martian001 10 0template asphalt002 5 
++0template Gdt001 10 0template rockwall002 5 
++0template Gdt001 4 0template rockwall004 11 
++0template Gdt001 8 0template rockwall003 7 
++0template greenrock004 14 0template Gdt001 1 
++0template 3grass002 14 0template 19bush001 9 0template greenrock004 7 
++0template Gmd001 14 0template 19bush001 5 0template asphalt002 11 
++0template asphalt002 2 0template Gmd001 13 
++0template asphalt004 4 0template Gdt001 11 
++0template 19bush001 14 0template asphalt001 13 0template Gmd001 11 0template Gdt001 7 
++0template 19bush001 8 0template Gmd001 7 
++0template turf003 14 0template greenrock004 5 0template 19bush001 11 
++0template grass3 10 0template turf002 13 0template 19bush001 7 
++0template 19bush001 12 0template gbdirt_grassy001 3 
++0template searockdark003 14 0template greenrock003 1 
++0template searockdark003 8 0template greenrock005 7 
++0template junglecanyon003 14 0template searockdark003 5 0template pumus003 11 
++0template 13martian001 14 0template junglecanyon003 9 0template pumus001 7 
++0template junglecanyon002 2 0template Gdt001 13 
++0template searockdark002 14 0template rockwall003 5 0template junglecanyon002 11 
++0template asphalt003 14 0template searockdark003 9 0template junglecanyon001 7 
++0template asphalt001 12 0template searockdark001 3 
++0template asphalt003 12 0template searockdark001 7 0template junglecanyon002 11 
++0template 13martian001 14 0template asphalt004 13 0template junglecanyon001 3 
++0template Gdt001 14 0template rockwall002 1 
++0template Gdt001 12 0template rockwall001 3 
++0template rockwall005 6 0template Gdt001 9 
++0template Gdt001 6 0template rockwall005 13 0template 13martian001 11 
++0template Gdt001 12 0template 13martian001 3 
++0template Gdt001 8 0template 13martian001 7 
++0template asphalt004 14 0template 19bush001 1 
++0template asphalt004 12 0template 19bush001 7 0template Gmd001 11 
++0template Gdt001 14 0template asphalt004 13 0template Gmd001 3 
++0template 19bush001 14 0template Gmd001 13 0template asphalt001 11 0template Gdt001 7 
++0template 19bush001 6 0template greenrock001 13 0template turf001 11 
++0template grass3 10 0template 19bush001 13 0template turf003 7 
++0template 19bush001 14 0template gbdirt_grassy001 9 0template grass3 7 
++0template greenrock003 14 0template 19bush001 9 0template gbdirt_grassy001 7 
++0template pumus004 10 0template searockdark004 13 0template greenrock003 7 
++0template rockwall001 10 0template pumus001 5 
++0template junglecanyon001 2 0template searockdark003 13 
++0template 13martian001 10 0template Gdt001 13 0template rockwall001 7 
++0template Gdt001 10 0template 13martian001 5 
++0template Gmd001 14 0template 19bush001 1 
++0template Gmd001 8 0template 19bush001 7 
++0template Gdt001 14 0template Gmd001 5 0template asphalt004 11 
++0template asphalt002 6 0template Gdt001 9 
++0template 19bush001 4 0template 3grass002 11 
++0template 19bush001 12 0template 3grass001 7 0template grass3 11 
++0template turf001 14 0template 19bush001 13 0template grass3 3 
++0template grass3 14 0template 9bush001 5 0template 5granite001 11 
++0template 19bush001 14 0template gbdirt_grassy001 13 0template grass3 3 
++0template 19bush001 12 0template grass3 7 0template 1bush002 11 
++0template 19bush001 12 0template 1bush001 3 
++0template greenrock003 14 0template 19bush001 9 0template 1bush002 7 
++0template pumus003 14 0template greenrock004 1 
++0template pumus003 12 0template greenrock001 3 
++0template junglecanyon003 10 0template pumus002 13 0template greenrock002 7 
++0template pumus003 14 0template junglecanyon003 13 0template 13martian001 3 
++0template pumus004 12 0template 13martian001 7 0template junglecanyon001 11 
++0template rockwall003 10 0template pumus004 13 0template junglecanyon003 7 
++0template rockwall001 14 0template junglecanyon001 5 0template Gdt001 11 
++0template rockwall001 12 0template Gdt001 7 0template junglecanyon001 11 
++0template 13martian001 14 0template rockwall005 9 0template junglecanyon001 7 
++0template 13martian001 12 0template rockwall005 7 0template junglecanyon001 11 
++0template Gdt001 14 0template 13martian001 13 0template junglecanyon002 3 
++0template Gdt001 12 0template junglecanyon001 3 
++0template Gmd001 10 0template 19bush001 5 
++0template asphalt002 10 0template Gmd001 5 
++0template Gdt001 10 0template asphalt001 5 
++0template 19bush001 14 0template Gdt001 5 0template grass3 11 
++0template 3grass001 14 0template 19bush001 13 0template grass3 3 
++0template grass3 4 0template aztec3 11 
++0template grass3 12 0template aztec3 3 
++0template grass3 8 0template aztec3 7 
++0template 1bush001 8 0template grass3 7 
++0template junglecanyon003 12 0template pumus002 7 0template asphalt003 11 
++0template Gdt001 10 0template junglecanyon002 13 0template 13martian001 7 
++0template Gdt001 4 0template greenrock005 11 
++0template greenrock003 2 0template Gdt001 13 
++0template asphalt004 6 0template Gmd001 13 0template Gdt001 11 
++0template Gdt001 6 0template asphalt002 13 0template Gmd001 11 
++0template grass3 10 0template Gdt001 13 0template Gmd001 7 
++0template aztec3 10 0template grass3 5 
++0template grass3 14 0template aztec3 5 0template 3grass001 11 
++0template 1bush002 14 0template grass3 13 0template 3grass002 3 
++0template junglecanyon002 8 0template greenrock003 7 
++0template asphalt003 10 0template pumus003 5 
++0template Gdt001 12 0template junglecanyon003 7 0template greenrock005 11 
++0template 19bush001 6 0template greenrock004 13 0template Gdt001 11 
++0template asphalt003 10 0template 19bush001 13 0template Gdt001 7 
++0template Gdt001 14 0template asphalt001 1 
++0template Gmd001 14 0template Gdt001 13 0template 19bush001 11 0template asphalt001 7 
++0template grass3 10 0template Gmd001 13 0template 19bush001 7 
++0template aztec3 14 0template grass3 5 0template 3grass002 11 
++0template aztec3 12 0template 3grass002 3 
++0template 3grass002 2 0template aztec3 13 
++0template 1bush001 14 0template 3grass001 5 0template grass3 11 
++0template junglecanyon003 4 0template blue_crest 11 
++0template junglecanyon001 12 0template blue_crest 3 
++0template junglecanyon002 8 0template blue_crest 7 
++0template asphalt003 14 0template pumus003 5 0template searockdark002 11 
++0template junglecanyon001 10 0template asphalt004 13 0template searockdark003 7 
++0template pumus003 10 0template junglecanyon003 13 0template 13martian001 7 
++0template 13martian001 12 0template junglecanyon003 7 0template greenrock003 11 
++0template junglecanyon001 14 0template 13martian001 13 0template greenrock005 3 
++0template greenrock003 6 0template junglecanyon002 13 0template 19bush001 11 
++0template Gdt001 2 0template 19bush001 13 
++0template asphalt001 10 0template Gdt001 5 
++0template 19bush001 14 0template asphalt002 5 0template greenrock005 11 
++0template grass3 14 0template 19bush001 9 0template greenrock004 7 
++0template grass3 4 0template aztec7_roof 11 
++0template 5granite001 14 0template grass3 13 0template aztec7_roof 3 
++0template grass3 10 0template 5granite002 13 0template aztec7_roof 7 
++0template 19bush001 12 0template 1bush002 7 0template 3grass002 11 
++0template 19bush001 12 0template 3grass001 3 
++0template greenrock002 14 0template 19bush001 9 0template 3grass002 7 
++0template asphalt004 10 0template junglecanyon003 5 
++0template blue_crest 10 0template junglecanyon002 13 0template 13martian001 7 
+blue_crest
++0template junglecanyon003 14 0template blue_crest 5 0template rockwall002 11 
++0template junglecanyon002 12 0template searockdark003 7 0template asphalt002 11 
++0template pumus001 14 0template 13martian001 1 
++0template pumus001 12 0template 13martian001 3 
++0template junglecanyon002 10 0template pumus001 13 0template 13martian001 7 
++0template junglecanyon003 4 0template greenrock001 11 
++0template junglecanyon002 12 0template greenrock001 3 
++0template 19bush001 4 0template Gdt001 11 
++0template Gdt001 6 0template 19bush001 13 0template asphalt001 11 
++0template asphalt002 2 0template Gdt001 13 
++0template greenrock001 10 0template asphalt004 5 
++0template Grs001 14 0template grass3 13 0template turf001 3 
++0template aztec7_roof 10 0template grass3 5 
+aztec7_roof
++0template grass3 10 0template aztec7_roof 5 
++0template 1bush001 12 0template grass3 7 0template gbdirt_grassy001 11 
++0template 3grass001 14 0template 1bush002 13 0template gbdirt_grassy001 3 
++0template 3grass002 8 0template gbdirt_grassy001 7 
++0template blue_crest 14 0template 13martian001 5 0template rockwall003 11 
++0template blue_crest 12 0template rockwall004 3 
++0template rockwall002 6 0template blue_crest 13 0template pumus002 11 
++0template searockdark001 14 0template rockwall001 13 0template pumus004 3 
++0template asphalt002 10 0template searockdark001 13 0template pumus002 7 
++0template 19bush001 12 0template Gdt001 3 
++0template asphalt002 6 0template Gdt001 13 0template Gmd001 11 
++0template asphalt003 8 0template Gmd001 7 
++0template asphalt002 4 0template 19bush001 11 
++0template greenrock001 10 0template asphalt003 13 0template 19bush001 7 
++0template turf002 10 0template grass3 13 0template Grs003 7 
++0template aztec7_roof 14 0template grass3 1 
++0template aztec7_roof 12 0template grass3 3 
++0template grass3 2 0template aztec7_roof 13 
++0template 19bush001 14 0template 3grass001 5 0template junglecanyon001 11 
++0template greenrock002 14 0template 19bush001 9 0template junglecanyon002 7 
++0template pumus004 10 0template rockwall003 13 0template junglecanyon002 7 
++0template asphalt002 14 0template pumus002 5 0template junglecanyon002 11 
++0template greenrock003 10 0template junglecanyon001 5 
++0template 19bush001 6 0template greenrock003 13 0template junglecanyon003 11 
++0template 19bush001 12 0template junglecanyon001 7 0template Gdt001 11 
++0template Gdt001 4 0template asphalt002 11 
++0template Gmd001 14 0template asphalt003 1 
++0template 19bush001 2 0template asphalt004 13 
++0template 9bush001 14 0template 3grass002 13 0template grass3 3 
++0template grass3 12 0template 3grass002 7 0template gbdirt_grassy001 11 
++0template 9bush002 14 0template grass3 5 0template 3grass002 11 
++0template 9bush001 12 0template 3grass003 7 0template Grs001 11 
++0template 9bush002 12 0template Grs002 7 0template 3grass002 11 
++0template grass3 14 0template 9bush001 9 0template 3grass001 7 
++0template grass3 12 0template 9bush002 7 0template greenrock004 11 
++0template grass3 12 0template greenrock001 7 0template Grs001 11 
++0template Grs002 2 0template grass3 13 
++0template junglecanyon002 14 0template 3grass003 1 
++0template 19bush001 10 0template junglecanyon001 13 0template 3grass001 7 
++0template junglecanyon002 14 0template greenrock005 5 0template 13martian001 11 
++0template pumus003 6 0template junglecanyon003 9 
++0template greenrock002 2 0template junglecanyon001 13 
++0template 19bush001 4 0template junglecanyon001 11 
++0template junglecanyon002 6 0template 19bush001 13 0template Gdt001 11 
++0template Gdt001 2 0template junglecanyon002 13 
++0template asphalt001 12 0template 19bush001 3 
++0template 19bush001 6 0template asphalt001 13 0template greenrock001 11 
++0template greenrock005 6 0template 19bush001 13 0template Gdt001 11 
++0template 3grass002 14 0template grass3 9 0template 5granite001 7 
++0template grass3 14 0template 9bush001 13 0template Grs002 11 0template 3grass002 7 
++0template 3grass001 2 0template grass3 13 
++0template Grs002 14 0template 9bush002 13 0template 3grass002 3 
++0template greenrock003 14 0template Grs001 9 0template 3grass002 7 
++0template Grs002 6 0template greenrock001 13 0template 3grass003 11 
++0template Grs002 12 0template 3grass003 7 0template greenrock004 11 
++0template turf002 14 0template Grs001 9 0template greenrock004 7 
++0template grass3 4 0template 1bush001 11 
++0template gbdirt_grassy001 10 0template grass3 13 0template 1bush001 7 
++0template 3grass001 14 0template gbdirt_grassy001 1 
++0template 13martian001 14 0template greenrock005 1 
++0template 13martian001 8 0template greenrock001 7 
++0template junglecanyon002 12 0template 13martian001 7 0template asphalt003 11 
++0template 13martian001 14 0template junglecanyon001 13 0template pumus001 3 
++0template 13martian001 12 0template pumus004 3 
++0template 13martian001 8 0template pumus001 7 
++0template junglecanyon002 4 0template 19bush001 11 
++0template greenrock003 10 0template junglecanyon003 13 0template 19bush001 7 
+asphalt004
++0template Gdt001 10 0template greenrock003 13 0template junglecanyon003 7 
++0template greenrock004 10 0template Gdt001 5 
++0template greenrock003 10 0template 3grass001 13 0template Grs002 7 
++0template greenrock002 4 0template Grs002 11 
++0template Grs002 2 0template greenrock002 13 
++0template turf001 14 0template Grs001 1 
++0template 1bush001 2 0template grass3 13 
++0template 13martian001 14 0template greenrock004 13 0template junglecanyon002 3 
++0template asphalt002 10 0template 13martian001 5 
++0template asphalt004 4 0template searockdark002 11 
++0template 13martian001 10 0template pumus004 5 
++0template 19bush001 14 0template junglecanyon003 13 0template greenrock002 3 
++0template Gdt001 10 0template junglecanyon003 5 
++0template greenrock003 14 0template Gdt001 5 0template 2gbdirt001 11 
++0template 19bush001 14 0template greenrock001 9 0template 2gbdirt002 7 
++0template greenrock002 14 0template Grs001 13 0template 3grass002 3 
++0template greenrock001 8 0template 3grass002 7 
++0template Grs001 14 0template greenrock005 1 
++0template 1bush001 10 0template grass3 5 
++0template 1bush001 4 0template grass3 11 
++0template gbdirt_grassy001 10 0template 1bush002 13 0template grass3 7 
++0template asphalt004 14 0template 13martian001 13 0template junglecanyon002 3 
++0template 13martian001 14 0template pumus004 5 0template junglecanyon002 11 
++0template junglecanyon003 14 0template 19bush001 13 0template Gdt001 3 
++0template Gdt001 6 0template junglecanyon003 13 0template asphalt003 11 
++0template 2gbdirt001 10 0template Gdt001 5 
++0template greenrock002 14 0template 2gbdirt002 1 
++0template grass3 12 0template 19bush001 7 0template 3grass001 11 
++0template grass3 14 0template 1bush001 1 
++0template 3grass002 14 0template Grs003 13 0template 9bush002 3 
++0template Grs002 8 0template 9bush001 7 
++0template greenrock001 10 0template Grs001 5 
++0template 5granite001 14 0template grass3 9 0template 9bush002 7 
++0template 9bush001 10 0template Grs001 13 0template grass3 7 
++0template grass3 10 0template 1bush002 5 
++0template junglecanyon002 12 0template greenrock002 7 0template searockdark004 11 
++0template asphalt001 12 0template junglecanyon001 7 0template 13martian001 11 
++0template 13martian001 2 0template asphalt004 13 
++0template junglecanyon001 4 0template Gdt001 11 
++0template pumus001 14 0template junglecanyon003 9 0template rockwall001 7 
++0template 2gbdirt002 14 0template Gdt001 1 
++0template 2gbdirt002 12 0template Gdt001 3 
++0template greenrock004 10 0template 2gbdirt001 13 0template Gdt001 7 
++0template 1bush001 14 0template 19bush001 5 0template 3grass001 11 
++0template grass3 14 0template 1bush002 9 0template 3grass001 7 
++0template grass3 12 0template 1bush001 7 0template 3grass001 11 
++0template 3grass001 14 0template Grs003 13 0template 9bush001 11 0template grass3 7 
++0template 9bush001 14 0template 3grass003 13 0template Grs001 3 
++0template 9bush002 12 0template Grs001 3 
++0template Grs001 4 0template greenrock005 11 
++0template Grs003 8 0template greenrock001 7 
++0template 19bush001 10 0template 3grass001 13 0template gbdirt_grassy001 7 
++0template greenrock001 4 0template searockdark004 11 
++0template searockdark003 2 0template greenrock002 13 
++0template searockdark002 4 0template junglecanyon002 11 
++0template 13martian001 14 0template junglecanyon003 5 0template pumus004 11 
++0template junglecanyon001 10 0template 13martian001 13 0template pumus002 7 
++0template Gdt001 6 0template junglecanyon001 9 
++0template greenrock005 4 0template 13martian001 11 
++0template junglecanyon001 10 0template greenrock001 13 0template 13martian001 7 
++0template 3grass001 10 0template 19bush001 5 
++0template 3grass002 4 0template 1bush001 11 
++0template grass3 14 0template 1bush001 5 0template Grs001 11 
++0template grass3 6 0template 1bush002 9 
++0template grass3 14 0template 1bush001 5 0template 9bush001 11 
++0template Grs001 6 0template 3grass003 13 0template turf003 11 
++0template 19bush001 14 0template gbdirt_grassy001 5 0template Gdt001 11 
++0template greenrock005 14 0template 19bush001 9 0template Gdt001 7 
++0template searockdark004 14 0template greenrock002 9 0template 19bush001 7 
++0template searockdark004 12 0template greenrock003 7 0template junglecanyon001 11 
++0template 3grass002 14 0template 19bush001 5 0template Grs001 11 
++0template 1bush001 14 0template 3grass002 9 0template Grs001 7 
++0template grass3 14 0template 3grass003 5 0template 1bush002 11 
++0template 9bush002 14 0template 1bush002 5 0template grass3 11 
++0template 3grass002 10 0template Grs001 13 0template grass3 7 
++0template turf001 14 0template 3grass001 5 0template Grs002 11 
++0template 1bush002 14 0template 3grass003 13 0template grass3 11 0template Grs001 7 
++0template Gdt001 14 0template gbdirt_grassy001 5 0template 19bush001 11 
++0template junglecanyon001 14 0template greenrock002 5 0template searockdark002 11 
++0template junglecanyon001 6 0template rockwall002 13 0template greenrock002 11 
++0template greenrock004 6 0template Gdt001 13 0template 19bush001 11 
++0template grass3 14 0template 3grass002 13 0template 1bush002 3 
++0template 1bush001 12 0template 3grass002 7 0template turf004 11 
++0template searockdark002 14 0template junglecanyon002 5 0template Gmd001 11 
++0template searockdark001 12 0template Gmd001 3 
++0template junglecanyon001 10 0template searockdark003 13 0template Gmd001 7 
++0template Grs001 14 0template 19bush001 5 0template 3grass002 11 
++0template 3grass001 12 0template Grs003 7 0template 1bush002 11 
++0template turf002 14 0template Grs003 13 0template 1bush002 3 
++0template turf001 14 0template 1bush001 5 0template 9bush001 11 
++0template 1bush001 14 0template turf004 13 0template grass3 11 0template 9bush002 7 
++0template Bdt001 14 0template Grs003 1 
++0template Grs003 2 0template Bdt001 13 
++0template 9bush002 2 0template Grs001 13 
++0template Grs001 14 0template 9bush001 5 0template 3grass002 11 
++0template Gmd001 14 0template junglecanyon001 5 0template searockdark001 11 
++0template Gmd001 12 0template searockdark001 3 
++0template junglecanyon001 14 0template Gmd001 13 0template 13martian001 11 0template searockdark003 7 
++0template Gdt001 14 0template junglecanyon003 5 0template gbdirt_rocky001 11 
++0template greenrock005 10 0template Gdt001 13 0template gbdirt_rocky001 7 
++0template Grs002 12 0template 3grass002 7 0template 1bush001 11 
++0template 1bush002 2 0template Grs003 13 
++0template 1bush001 4 0template rockwall003 11 
++0template 9bush002 10 0template 1bush002 13 0template rockwall001 7 
++0template grass3 14 0template 9bush001 5 0template rockwall001 11 
++0template grass3 8 0template rockwall002 7 
++0template Grs001 12 0template grass3 7 0template 9bush002 11 
++0template 9bush002 4 0template turf002 11 
++0template Grs001 10 0template 9bush002 13 0template turf001 7 
++0template 1bush002 6 0template grass3 9 
++0template searockdark002 8 0template junglecanyon003 7 
++0template searockdark004 12 0template junglecanyon001 7 0template 13martian001 11 
++0template 13martian001 6 0template searockdark001 13 0template greenrock001 11 
++0template asphalt003 4 0template Gmd001 11 
++0template gbdirt_rocky001 14 0template junglecanyon003 1 
++0template greenrock001 10 0template gbdirt_rocky001 13 0template junglecanyon002 7 
++0template 1bush002 12 0template 3grass002 7 0template 9bush002 11 
++0template rockwall003 14 0template 1bush002 13 0template 9bush001 3 
++0template 9bush002 6 0template rockwall002 9 
++0template rockwall005 6 0template 9bush001 9 
++0template grass3 14 0template rockwall003 13 0template 9bush001 3 
++0template turf002 14 0template 9bush002 13 0template Grs002 11 0template grass3 7 
++0template Grs003 6 0template turf001 9 
++0template Grs001 8 0template turf001 7 
++0template Grs003 14 0template grass3 5 0template gbdirt_grassy001 11 
++0template 19bush001 6 0template Gdt001 13 0template greenrock002 11 
++0template 13martian001 14 0template junglecanyon002 5 0template greenrock002 11 
++0template greenrock002 2 0template 13martian001 13 
++0template Gmd001 14 0template asphalt004 5 0template 19bush001 11 
++0template asphalt002 14 0template Gmd001 13 0template 19bush001 3 
++0template pumus002 14 0template junglecanyon002 13 0template asphalt002 3 
++0template pumus001 8 0template asphalt001 7 
++0template 1bush002 14 0template 19bush001 5 0template gbdirt_grassy001 11 
++0template 1bush001 12 0template gbdirt_grassy001 7 0template 3grass002 11 
++0template 1bush001 12 0template Grs002 7 0template 3grass003 11 
++0template rockwall002 14 0template 9bush002 13 0template Grs002 3 
++0template 9bush002 10 0template rockwall001 13 0template Grs002 7 
++0template 9bush002 4 0template rockwall004 11 
++0template grass3 14 0template 9bush002 9 0template rockwall005 7 
++0template grass3 12 0template 9bush001 7 0template Grs001 11 
++0template turf001 14 0template Grs002 9 0template grass3 7 
++0template turf001 6 0template Grs003 9 
++0template 19bush001 10 0template gbdirt_grassy001 13 0template Grs003 7 
++0template Gdt001 6 0template 19bush001 13 0template Gmd001 11 
++0template asphalt002 10 0template Gdt001 13 0template Gmd001 7 
++0template pumus004 14 0template asphalt004 5 0template junglecanyon003 11 
++0template pumus003 12 0template junglecanyon001 7 0template 13martian001 11 
++0template junglecanyon002 14 0template pumus002 13 0template 13martian001 3 
++0template gbdirt_grassy001 10 0template 19bush001 5 
++0template 1bush001 10 0template 3grass002 13 0template gbdirt_grassy001 7 
++0template 3grass001 14 0template 1bush002 5 0template turf003 11 
++0template 1bush002 10 0template 3grass002 13 0template turf004 7 
++0template rockwall002 14 0template 9bush002 5 0template Grs001 11 
++0template 9bush001 14 0template rockwall002 13 0template Grs002 3 
++0template grass3 14 0template Grs001 5 0template 9bush001 11 
++0template grass3 12 0template 9bush001 7 0template 3grass001 11 
++0template gbdirt_grassy001 14 0template grass3 5 0template 19bush001 11 
++0template Grs001 14 0template gbdirt_grassy001 13 0template 19bush001 3 
++0template 19bush001 4 0template asphalt002 11 
++0template Gdt001 14 0template 19bush001 13 0template asphalt002 3 
++0template Gmd001 14 0template Gdt001 13 0template asphalt002 3 
++0template Gdt001 6 0template asphalt002 13 0template 19bush001 11 
++0template asphalt004 14 0template junglecanyon001 9 0template pumus003 7 
++0template 3grass003 14 0template 1bush002 9 0template gbdirt_grassy001 7 
++0template 3grass002 10 0template turf001 13 0template 1bush001 7 
++0template 1bush001 10 0template Grs002 13 0template 3grass001 7 
++0template 9bush001 2 0template 3grass003 13 
++0template grass3 14 0template Grs003 5 0template 3grass001 11 
++0template junglecanyon001 12 0template greenrock001 7 0template 13martian001 11 
++0template asphalt002 2 0template 19bush001 13 
++0template Gdt001 14 0template asphalt004 13 0template 19bush001 3 
++0template junglecanyon003 6 0template 13martian001 9 
++0template 1bush001 14 0template gbdirt_grassy001 9 0template 19bush001 7 
++0template 3grass003 6 0template 1bush002 9 
++0template 3grass002 12 0template 1bush002 7 0template 9bush002 11 
++0template 3grass002 14 0template Grs003 5 0template 1bush002 11 
++0template 1bush002 14 0template 3grass002 5 0template Grs003 11 
++0template 9bush002 14 0template 1bush002 13 0template 3grass002 11 0template Grs001 7 
++0template Grs001 6 0template 9bush002 13 0template 3grass003 11 
++0template 13martian001 10 0template greenrock002 13 0template junglecanyon003 7 
++0template 19bush001 6 0template greenrock003 13 0template asphalt004 11 
++0template asphalt004 12 0template Gdt001 7 0template 19bush001 11 
++0template junglecanyon002 14 0template 13martian001 5 0template searockdark001 11 
++0template pumus003 14 0template junglecanyon003 13 0template 13martian001 11 0template searockdark004 7 
++0template 3grass003 14 0template 1bush001 5 0template plaid001 11 
++0template 3grass003 12 0template plaid002 3 
++0template 9bush001 14 0template 3grass001 9 0template plaid001 7 
++0template 1bush001 6 0template 3grass002 9 
++0template 9bush002 14 0template 1bush002 13 0template 3grass003 3 
++0template 1bush002 14 0template 9bush002 13 0template Grs003 11 0template 3grass003 7 
++0template Grs003 6 0template 1bush002 13 0template 9bush002 11 
++0template 9bush001 14 0template Grs002 5 0template grass3 11 
++0template 13martian001 10 0template junglecanyon003 13 0template greenrock004 7 
++0template 13martian001 14 0template junglecanyon001 5 0template asphalt001 11 
++0template 13martian001 12 0template asphalt004 3 
++0template searockdark004 14 0template 13martian001 13 0template asphalt002 3 
++0template searockdark001 8 0template asphalt003 7 
++0template 13martian001 10 0template searockdark004 5 
++0template plaid002 14 0template 1bush001 13 0template gbdirt_grassy001 3 
++0template plaid001 8 0template gbdirt_grassy001 7 
++0template 3grass002 14 0template plaid002 1 
++0template 3grass002 8 0template plaid003 7 
++0template 1bush002 12 0template 3grass003 7 0template Grs002 11 
++0template 3grass003 10 0template 1bush002 13 0template Grs003 7 
++0template 9bush001 14 0template 1bush001 5 0template Grs001 11 
++0template 1bush002 10 0template 9bush001 13 0template Grs002 7 
++0template 19bush001 10 0template grass3 13 0template gbdirt_grassy001 7 
++0template 13martian001 14 0template greenrock004 5 0template junglecanyon003 11 
++0template 19bush001 12 0template Gdt001 7 0template asphalt001 11 
++0template searockdark001 10 0template asphalt002 5 
++0template gbdirt_grassy001 4 0template plaid002 11 
++0template plaid003 2 0template gbdirt_grassy001 13 
+plaid003
+plaid002
++0template 3grass001 10 0template plaid001 5 
++0template 19bush001 10 0template gbdirt_grassy001 13 0template grass3 7 
++0template Gmd001 14 0template asphalt001 5 0template Gdt001 11 
++0template asphalt004 10 0template junglecanyon003 13 0template 13martian001 7 
++0template plaid001 14 0template gbdirt_grassy001 1 
++0template Grs002 10 0template plaid001 5 
++0template 19bush001 14 0template grass3 13 0template gbdirt_grassy001 11 0template 3grass002 7 
++0template 19bush001 12 0template asphalt001 3 
++0template asphalt002 14 0template 13martian001 1 
++0template asphalt002 12 0template 13martian001 7 0template pumus003 11 
++0template asphalt003 12 0template pumus003 3 
++0template junglecanyon001 10 0template asphalt002 13 0template pumus004 7 
++0template 13martian001 14 0template pumus003 13 0template junglecanyon003 3 
++0template plaid003 12 0template gbdirt_grassy001 7 0template 3grass003 11 
++0template plaid001 12 0template 3grass003 3 
++0template 3grass003 6 0template plaid003 13 0template turf001 11 
++0template 1bush002 14 0template 3grass001 9 0template turf002 7 
++0template 1bush001 14 0template 3grass001 5 0template 9bush002 11 
++0template 1bush001 12 0template 9bush002 3 
++0template gbdirt002 14 0template grass3 5 0template 3grass003 11 
++0template gbdirt_grassy001 10 0template gbdirt002 13 0template 3grass003 7 
++0template 19bush001 14 0template greenrock002 5 0template asphalt003 11 
++0template junglecanyon002 12 0template asphalt003 7 0template searockdark001 11 
++0template 13martian001 4 0template pumus002 11 
++0template junglecanyon001 14 0template 13martian001 13 0template pumus003 3 
++0template turf002 10 0template 3grass002 5 
++0template 1bush002 14 0template 3grass001 13 0template turf003 3 
++0template 3grass002 14 0template 1bush001 13 0template turf003 3 
++0template 3grass003 12 0template turf002 7 0template 1bush001 11 
++0template Grs002 14 0template 3grass002 9 0template 1bush001 7 
++0template 1bush002 10 0template 9bush002 5 
++0template grass3 10 0template Grs002 13 0template 3grass003 7 
++0template gbdirt_grassy001 14 0template Grs003 9 0template 3grass001 7 
++0template gbdirt_grassy001 12 0template Grs002 7 0template gbdirt002 11 
++0template gbdirt_grassy001 8 0template gbdirt002 7 
++0template gbdirt002 14 0template gbdirt_grassy001 1 
++0template 19bush001 10 0template gbdirt002 13 0template gbdirt_grassy001 7 
++0template searockdark003 14 0template asphalt004 1 
++0template pumus002 14 0template junglecanyon001 9 0template 13martian001 7 
++0template turf004 10 0template 1bush002 13 0template 3grass001 7 
++0template 3grass001 14 0template grass3 5 0template turf001 11 
++0template Grs001 10 0template 3grass001 13 0template turf001 7 
++0template 9bush001 6 0template grass3 13 0template Grs002 11 
++0template gbdirt_grassy001 14 0template Grs001 5 0template 3grass003 11 
++0template gbdirt_grassy001 8 0template 3grass003 7 
++0template greenrock001 14 0template 19bush001 5 0template Gmd001 11 
++0template asphalt002 14 0template greenrock004 13 0template Gmd001 3 
++0template asphalt002 12 0template Gmd001 7 0template Gdt001 11 
++0template asphalt003 12 0template Gdt001 3 
++0template pumus004 14 0template 13martian001 13 0template junglecanyon003 3 
++0template 13martian001 12 0template junglecanyon003 7 0template asphalt002 11 
++0template junglecanyon003 14 0template 13martian001 13 0template asphalt001 3 
++0template greenrock002 14 0template junglecanyon003 13 0template asphalt004 3 
++0template 19bush001 14 0template greenrock001 9 0template asphalt001 7 
++0template turf003 10 0template Grs003 13 0template gbdirt_grassy001 7 
++0template Grs003 14 0template turf003 5 0template 3grass001 11 
++0template Grs003 4 0template 1bush001 11 
++0template grass3 14 0template Grs002 13 0template 1bush002 3 
++0template Grs002 14 0template 9bush002 5 0template Gdt001 11 
++0template grass3 14 0template Grs001 13 0template Gdt001 3 
++0template grass3 8 0template Gdt001 7 
++0template 3grass003 14 0template grass3 5 0template Grs002 11 
++0template gbdirt_grassy001 14 0template Grs003 1 
++0template 19bush001 4 0template Gmd001 11 
++0template Gmd001 2 0template 19bush001 13 
+Gmd001
++0template Gdt001 14 0template Gmd001 5 0template 19bush001 11 
+red_crest
++0template turf003 10 0template gbdirt_grassy001 5 
++0template turf001 4 0template 9bush001 11 
++0template turf003 8 0template 9bush001 7 
++0template 3grass002 12 0template turf003 7 0template Grs002 11 
++0template 3grass002 12 0template Grs001 7 0template 9bush001 11 
++0template 1bush002 14 0template 3grass002 13 0template Grs002 3 
++0template turf003 14 0template grass3 13 0template Grs001 11 0template 3grass001 7 
++0template 9bush001 14 0template grass3 5 0template Gdt001 11 
++0template 9bush002 12 0template Gdt001 7 0template Grs002 11 
++0template Gdt001 10 0template 9bush002 13 0template Grs001 7 
++0template grass3 10 0template Gdt001 5 
++0template gbdirt_grassy001 14 0template 3grass002 5 0template Grs003 11 
++0template Gmd001 8 0template Gdt001 7 
++0template 19bush001 10 0template Gmd001 5 
++0template searockdark003 6 0template asphalt003 13 0template junglecanyon002 11 
++0template searockdark003 2 0template junglecanyon001 13 
++0template asphalt003 14 0template searockdark003 1 
++0template turf003 14 0template gbdirt_grassy001 9 0template 19bush001 7 
++0template turf001 8 0template gbdirt_grassy001 7 
++0template 9bush002 14 0template turf004 1 
++0template turf003 2 0template 9bush001 13 
++0template turf001 14 0template 3grass002 1 
++0template turf003 12 0template 3grass001 7 0template Grs003 11 
++0template Gdt001 14 0template grass3 5 0template 9bush002 11 
++0template Grs002 10 0template Gdt001 13 0template 9bush001 7 
++0template Gdt001 10 0template Grs003 5 
++0template grass3 14 0template Gdt001 5 0template 9bush002 11 
++0template Bdt001 14 0template grass3 1 
++0template 3grass003 14 0template grass3 5 0template 19bush001 11 
++0template Grs003 14 0template 3grass003 13 0template 19bush001 3 
++0template Gmd001 12 0template Gdt001 7 0template 19bush001 11 
++0template 19bush001 2 0template Gmd001 13 
++0template asphalt004 14 0template 13martian001 5 0template junglecanyon002 11 
++0template searockdark004 14 0template junglecanyon003 13 0template 13martian001 3 
++0template searockdark001 12 0template 13martian001 7 0template junglecanyon002 11 
++0template junglecanyon001 10 0template 13martian001 13 0template asphalt003 7 
++0template turf001 14 0template gbdirt_grassy001 13 0template 19bush001 3 
++0template Grs001 14 0template 9bush002 9 0template 3grass003 7 
++0template 9bush001 6 0template Grs003 13 0template 3grass001 11 
++0template 1bush002 14 0template Grs001 13 0template 9bush001 3 
++0template Grs001 14 0template 9bush001 1 
++0template Gdt001 10 0template Grs001 13 0template 9bush002 7 
++0template Gdt001 4 0template Grs003 11 
++0template 9bush002 14 0template Gdt001 9 0template Grs003 7 
++0template 9bush002 8 0template Gdt001 7 
++0template 9bush001 4 0template Gdt001 11 
++0template 3grass001 14 0template 9bush001 13 0template Gdt001 3 
++0template 3grass002 8 0template Gdt001 7 
++0template 19bush001 6 0template grass3 13 0template greenrock004 11 
++0template Gdt001 10 0template Gmd001 13 0template 19bush001 7 
++0template 19bush001 14 0template Gdt001 1 
++0template turf004 14 0template 19bush001 1 
++0template 1bush002 14 0template 9bush001 9 0template 3grass001 7 
++0template 1bush002 12 0template Grs001 3 
++0template Grs003 6 0template 1bush001 13 0template 3grass002 11 
++0template 9bush002 14 0template Grs001 13 0template 3grass003 3 
++0template 1bush002 12 0template 9bush002 7 0template 3grass001 11 
++0template Grs003 14 0template 1bush001 13 0template 3grass001 3 
++0template Gdt001 14 0template 9bush001 13 0template grass3 3 
++0template Grs001 10 0template Gdt001 13 0template grass3 7 
++0template 9bush001 10 0template Gdt001 5 
++0template Gdt001 14 0template 9bush002 5 0template Grs003 11 
++0template Gdt001 12 0template Grs002 7 0template 3grass001 11 
++0template 3grass001 2 0template Gdt001 13 
++0template Gdt001 8 0template 19bush001 7 
++0template Gdt001 4 0template castle3 11 
++0template 19bush001 14 0template Gdt001 9 0template castle3 7 
++0template 19bush001 8 0template Gdt001 7 
++0template 13martian001 12 0template greenrock004 7 0template junglecanyon002 11 
++0template 13martian001 14 0template junglecanyon002 9 0template asphalt004 7 
++0template 13martian001 14 0template asphalt001 13 0template searockdark004 3 
++0template junglecanyon002 10 0template 13martian001 13 0template searockdark001 7 
++0template greenrock003 14 0template junglecanyon002 13 0template 13martian001 3 
++0template greenrock004 12 0template 13martian001 7 0template junglecanyon002 11 
++0template 9bush001 10 0template 3grass003 13 0template 1bush001 7 
++0template Grs003 14 0template 9bush002 5 0template 1bush002 11 
++0template 3grass002 14 0template Grs002 13 0template 1bush001 11 0template 9bush001 7 
++0template Gdt001 14 0template Grs003 13 0template 5granite002 11 0template grass3 7 
++0template 9bush002 14 0template Gdt001 13 0template Grs001 11 0template 5granite001 7 
++0template Grs002 6 0template 9bush002 13 0template Gdt001 11 
++0template Grs001 12 0template Gdt001 3 
++0template 3grass003 14 0template Grs003 13 0template Gdt001 3 
++0template grass3 10 0template 3grass003 13 0template Gdt001 7 
++0template 19bush001 14 0template grass3 13 0template greenrock003 11 0template turf002 7 
++0template castle3 14 0template Gdt001 9 0template 19bush001 7 
++0template Gdt001 6 0template castle3 13 0template Gmd001 11 
++0template 19bush001 4 0template gbdirt_grassy001 11 
++0template 1bush002 14 0template turf002 1 
++0template 3grass003 10 0template 1bush002 13 0template turf003 7 
++0template 9bush001 10 0template 1bush002 5 
++0template 3grass002 6 0template Grs001 13 0template 1bush002 11 
++0template 3grass002 12 0template 1bush001 7 0template Grs002 11 
++0template 9bush002 14 0template 3grass003 13 0template Grs002 11 0template 1bush002 7 
++0template 3grass001 10 0template 9bush001 13 0template Grs001 7 
++0template Grs002 14 0template grass3 9 0template 5granite002 7 
++0template Gdt001 14 0template 3grass003 13 0template Grs001 11 0template 9bush002 7 
++0template Gdt001 12 0template Grs003 7 0template 9bush002 11 
++0template Gdt001 12 0template 9bush002 7 0template Grs002 11 
++0template grass3 10 0template Gdt001 13 0template Grs001 7 
++0template greenrock005 14 0template turf004 1 
++0template greenrock003 12 0template turf003 3 
++0template greenrock004 8 0template turf002 7 
++0template Gmd001 14 0template Gdt001 5 0template castle3 11 
++0template 19bush001 10 0template Gmd001 13 0template castle3 7 
++0template gbdirt_grassy001 14 0template 19bush001 5 0template grass3 11 
++0template junglecanyon002 12 0template greenrock005 7 0template Gdt001 11 
++0template asphalt001 12 0template searockdark002 7 0template 13martian001 11 
++0template junglecanyon002 10 0template asphalt003 13 0template 13martian001 7 
++0template junglecanyon002 14 0template pumus003 5 0template 13martian001 11 
++0template searockdark004 10 0template junglecanyon002 13 0template 13martian001 7 
++0template 13martian001 14 0template junglecanyon003 9 0template searockdark004 7 
++0template Grs002 14 0template 9bush001 13 0template 1bush001 11 0template 3grass001 7 
++0template 1bush001 6 0template Grs001 9 
++0template rockwall004 14 0template 1bush002 1 
++0template 9bush001 14 0template Grs003 5 0template 3grass002 11 
++0template grass3 14 0template 3grass001 13 0template 9bush001 3 
++0template greenrock004 10 0template turf004 5 
++0template castle3 10 0template Gdt001 13 0template Gmd001 7 
++0template 19bush001 10 0template castle3 5 
++0template Gdt001 14 0template greenrock001 9 0template 19bush001 7 
++0template junglecanyon001 14 0template Gdt001 13 0template greenrock002 3 
++0template 13martian001 2 0template searockdark002 13 
++0template 13martian001 2 0template pumus002 13 
++0template searockdark004 10 0template 13martian001 5 
++0template searockdark001 4 0template asphalt001 11 
++0template searockdark001 12 0template asphalt002 3 
++0template junglecanyon001 10 0template searockdark003 13 0template asphalt002 7 
++0template 1bush001 12 0template turf004 3 
++0template 9bush002 8 0template 3grass001 7 
++0template Grs002 14 0template 9bush001 13 0template grass3 3 
++0template 5granite002 14 0template Grs002 13 0template Gdt001 11 0template grass3 7 
++0template 9bush001 14 0template 5granite001 13 0template grass3 11 0template Gdt001 7 
++0template grass3 12 0template 3grass003 7 0template 5granite002 11 
++0template castle3 10 0template Gmd001 13 0template Gdt001 7 
++0template 19bush001 6 0template greenrock004 13 0template gbdirt_grassy001 11 
++0template searockdark004 14 0template 13martian001 13 0template junglecanyon002 3 
++0template asphalt002 10 0template searockdark004 13 0template junglecanyon003 7 
++0template turf003 10 0template 3grass002 13 0template 1bush002 7 
++0template 3grass003 4 0template rockwall003 11 
++0template Gdt001 14 0template grass3 1 
++0template grass3 2 0template Gdt001 13 
++0template 5granite002 14 0template 3grass002 1 
++0template grass3 10 0template 5granite002 13 0template 3grass002 7 
++0template greenrock001 12 0template turf003 7 0template 19bush001 11 
++0template castle3 14 0template Gdt001 1 
++0template 19bush001 10 0template castle3 13 0template Gdt001 7 
++0template grass3 14 0template 19bush001 1 
++0template gbdirt_grassy001 14 0template 19bush001 13 0template grass3 3 
++0template gbdirt_grassy001 10 0template 19bush001 13 0template grass3 7 
++0template Gdt001 14 0template greenrock003 1 
++0template asphalt004 14 0template junglecanyon001 13 0template 13martian001 3 
++0template asphalt004 12 0template 13martian001 7 0template junglecanyon001 11 
++0template greenrock005 14 0template junglecanyon001 9 0template searockdark003 7 
++0template turf003 14 0template 19bush001 5 0template Grs002 11 
++0template turf002 10 0template 3grass002 13 0template 9bush002 7 
++0template Grs002 14 0template 3grass002 9 0template turf004 7 
++0template rockwall001 14 0template 9bush001 13 0template 3grass003 3 
++0template 3grass002 2 0template rockwall003 13 
++0template 19bush001 14 0template turf003 13 0template grass3 3 
++0template 19bush001 4 0template grass3 11 
++0template grass3 6 0template 19bush001 13 0template 9bush002 11 
++0template gbdirt_grassy001 12 0template grass3 7 0template greenrock001 11 
++0template 19bush001 14 0template gbdirt_grassy001 13 0template Grs002 11 0template greenrock005 7 
++0template greenrock001 14 0template 19bush001 13 0template gbdirt_grassy001 11 0template Grs002 7 
++0template greenrock005 12 0template gbdirt_grassy001 7 0template 19bush001 11 
++0template Gdt001 12 0template greenrock004 3 
++0template Gdt001 8 0template greenrock004 7 
++0template junglecanyon001 14 0template Gdt001 1 
++0template searockdark002 14 0template junglecanyon002 5 0template asphalt004 11 
++0template junglecanyon002 14 0template searockdark001 13 0template asphalt004 3 
++0template greenrock005 10 0template junglecanyon002 13 0template asphalt002 7 
++0template turf001 10 0template Grs001 13 0template 19bush001 7 
++0template 3grass002 14 0template Grs002 9 0template turf002 7 
++0template 9bush001 10 0template 3grass001 13 0template Grs002 7 
++0template rockwall002 14 0template 3grass002 5 0template turf002 11 
++0template 9bush002 14 0template grass3 9 0template 19bush001 7 
++0template gbdirt_grassy001 14 0template Grs001 9 0template greenrock002 7 
++0template 19bush001 14 0template gbdirt_grassy001 13 0template Grs003 3 
++0template turf003 14 0template 9bush001 5 0template 3grass002 11 
++0template Grs001 14 0template grass3 9 0template 9bush001 7 
++0template Grs001 14 0template Bdt001 13 0template grass3 3 
++0template 19bush001 14 0template Grs002 13 0template grass3 3 
++0template greenrock005 14 0template 19bush001 9 0template grass3 7 
++0template junglecanyon003 14 0template Gdt001 9 0template greenrock002 7 
++0template asphalt003 12 0template searockdark002 7 0template greenrock003 11 
++0template greenrock003 6 0template asphalt004 13 0template 19bush001 11 
++0template 19bush001 4 0template turf004 11 
++0template turf003 12 0template 9bush002 3 
++0template 9bush002 6 0template turf002 9 
++0template 9bush001 14 0template 1bush002 13 0template turf001 3 
++0template Grs003 14 0template 9bush002 13 0template turf004 3 
++0template 1bush001 14 0template Grs003 13 0template 3grass003 11 0template turf002 7 
++0template 1bush002 14 0template Grs003 5 0template 3grass001 11 
++0template grass3 14 0template 9bush002 9 0template 1bush002 7 
++0template 9bush001 14 0template grass3 5 0template 5granite002 11 
++0template 3grass003 14 0template grass3 13 0template Grs001 11 0template 9bush001 7 
++0template Gdt001 14 0template 19bush001 9 0template grass3 7 
++0template 13martian001 14 0template junglecanyon003 13 0template asphalt004 3 
++0template 13martian001 8 0template asphalt001 7 
++0template greenrock003 10 0template searockdark001 5 
++0template 9bush002 12 0template turf001 3 
++0template 1bush001 14 0template 3grass002 13 0template Grs002 11 0template turf002 7 
++0template turf001 14 0template 1bush001 9 0template Grs002 7 
++0template turf003 12 0template 1bush001 7 0template 3grass003 11 
++0template 1bush002 14 0template Grs002 13 0template turf002 3 
++0template turf001 2 0template 1bush002 13 
++0template 9bush001 14 0template Grs003 13 0template grass3 3 
++0template Grs001 14 0template 9bush002 9 0template grass3 7 
++0template 3grass001 10 0template Grs002 13 0template 9bush002 7 
++0template 19bush001 10 0template grass3 13 0template 5granite001 7 
++0template grass3 6 0template turf003 9 
++0template 13martian001 14 0template asphalt004 5 0template searockdark001 11 
++0template 13martian001 12 0template searockdark004 7 0template junglecanyon001 11 
++0template greenrock001 14 0template searockdark002 5 0template junglecanyon001 11 
++0template grass3 12 0template 5granite002 7 0template 3grass002 11 
++0template Gmd001 10 0template Gdt001 5 
++0template 19bush001 14 0template Gmd001 5 0template Gdt001 11 
++0template grass3 14 0template 19bush001 5 0template turf004 11 
++0template grass3 14 0template turf004 1 
++0template turf003 6 0template grass3 9 
++0template grass3 6 0template turf004 13 0template 5granite001 11 
++0template searockdark002 10 0template asphalt004 13 0template junglecanyon001 7 
++0template turf003 2 0template 3grass001 13 
++0template 19bush001 14 0template 3grass003 13 0template grass3 3 
++0template turf004 4 0template 3grass002 11 
++0template turf003 4 0template grass3 11 
++0template Gdt001 12 0template 19bush001 7 0template Gmd001 11 
++0template turf001 14 0template 19bush001 9 0template Gdt001 7 
++0template 19bush001 12 0template grass3 7 0template gbdirt_grassy001 11 
++0template junglecanyon003 14 0template greenrock005 13 0template 19bush001 3 
++0template junglecanyon001 12 0template 19bush001 7 0template greenrock001 11 
++0template 9bush001 10 0template turf004 5 
++0template turf002 14 0template 9bush001 1 
++0template Gdt001 12 0template Gmd001 3 
++0template Grs003 14 0template grass3 5 0template 5granite001 11 
++0template 5granite002 6 0template Grs002 13 0template grass3 11 
++0template Grs003 14 0template 5granite001 13 0template grass3 3 
++0template 9bush001 2 0template turf002 13 
++0template turf003 6 0template 9bush002 9 
++0template grass3 6 0template 9bush001 13 0template 3grass002 11 
++0template 19bush001 14 0template Grs002 1 
++0template Gmd001 14 0template 19bush001 13 0template aztec3 11 0template Grs001 7 
++0template Gmd001 12 0template aztec3 3 
++0template 19bush001 14 0template Gmd001 13 0template aztec3 3 
++0template Grs003 10 0template 19bush001 13 0template aztec3 7 
++0template 5granite002 14 0template grass3 9 0template Grs003 7 
++0template grass3 6 0template 5granite001 13 0template Grs001 11 
++0template grass3 4 0template Gdt001 11 
++0template grass3 12 0template Gdt001 3 
++0template Grs002 4 0template aztec3 11 
++0template aztec3 2 0template Grs003 13 
++0template Grs001 14 0template aztec3 1 
++0template Grs002 8 0template aztec3 7 
++0template 19bush001 14 0template grass3 5 0template 5granite001 11 
++0template 19bush001 8 0template 5granite001 7 
++0template grass3 12 0template Grs003 7 0template Gdt001 11 
++0template grass3 12 0template Gdt001 7 0template 5granite001 11 
++0template grass3 12 0template 5granite001 7 0template Grs002 11 
++0template Gdt001 14 0template grass3 13 0template Grs002 3 
++0template Gdt001 8 0template Grs002 7 
++0template grass3 14 0template Gdt001 5 0template Grs002 11 
++0template grass3 12 0template Gdt001 7 0template 3grass001 11 
++0template Grs003 10 0template grass3 13 0template 5granite001 7 
++0template Grs002 12 0template aztec4 3 
++0template aztec3 14 0template Grs002 13 0template aztec4 3 
++0template aztec3 12 0template aztec4 3 
++0template Grs002 14 0template aztec3 13 0template aztec4 3 
++0template Grs002 8 0template aztec4 7 
++0template 19bush001 14 0template 5granite001 13 0template grass3 3 
++0template Grs003 10 0template 3grass003 13 0template 9bush001 7 
++0template 3grass002 14 0template Grs003 5 0template Gdt001 11 
++0template 3grass001 12 0template Gdt001 7 0template 9bush002 11 
++0template Gdt001 14 0template 3grass002 5 0template Grs003 11 
++0template 5granite001 10 0template Gdt001 13 0template Grs003 7 
++0template Grs003 10 0template 5granite002 5 
++0template Gdt001 14 0template Grs003 9 0template 3grass001 7 
++0template Grs003 2 0template Gdt001 13 
++0template Gdt001 14 0template Grs002 5 0template 3grass001 11 
++0template 5granite001 14 0template Grs002 9 0template 3grass001 7 
++0template Grs001 14 0template aztec4 1 
++0template Gdt001 14 0template 3grass002 1 
++0template 9bush001 14 0template Gdt001 9 0template 3grass002 7 
++0template Grs003 14 0template 3grass001 13 0template 9bush002 11 0template Gdt001 7 
++0template 5granite002 14 0template Grs001 13 0template 9bush002 3 
++0template Grs002 14 0template 5granite001 13 0template 9bush002 3 
++0template 9bush001 14 0template Grs001 9 0template 3grass003 7 
++0template 19bush001 4 0template Grs001 11 
++0template turf001 10 0template 19bush001 13 0template Grs002 7 
++0template Gdt001 6 0template 3grass003 9 
++0template Gdt001 12 0template 3grass003 7 0template 5granite002 11 
++0template 9bush002 12 0template 3grass003 7 0template Gdt001 11 
++0template Grs002 14 0template 9bush001 13 0template Gdt001 3 
++0template 3grass003 10 0template Grs001 13 0template Gdt001 7 
++0template Grs003 14 0template 19bush001 5 0template grass3 11 
++0template Gdt001 14 0template 3grass003 9 0template Grs003 7 
++0template Grs002 14 0template 5granite002 13 0template Gdt001 11 0template 3grass001 7 
++0template Gdt001 8 0template 3grass003 7 
++0template 3grass003 10 0template Gdt001 5 
++0template aztec4 4 0template Grs003 11 
++0template grass3 14 0template 3grass002 5 0template 9bush001 11 
++0template grass3 2 0template 19bush001 13 
++0template turf001 12 0template grass3 7 0template 9bush001 11 
++0template turf003 12 0template 9bush001 7 0template grass3 11 
++0template Grs001 14 0template grass3 5 0template Gdt001 11 
++0template 3grass001 14 0template Grs002 9 0template Gdt001 7 
++0template Gdt001 12 0template 3grass003 7 0template 9bush002 11 
++0template 3grass002 10 0template Gdt001 13 0template 9bush002 7 
++0template 3grass003 6 0template Gdt001 13 0template 9bush002 11 
++0template Grs002 10 0template aztec4 5 
++0template Gdt001 10 0template grass3 5 
++0template Gdt001 4 0template 9bush002 11 
++0template 3grass001 10 0template 9bush002 13 0template Gdt001 7 
++0template turf001 14 0template grass3 13 0template 9bush001 3 
++0template 9bush001 14 0template Gdt001 1 
++0template Grs001 14 0template 9bush001 13 0template greenrock002 11 0template Gdt001 7 
++0template 9bush001 14 0template Grs002 9 0template greenrock005 7 
++0template 3grass002 14 0template 9bush002 13 0template Grs001 3 
++0template 3grass003 12 0template Grs003 7 0template Gdt001 11 
++0template 3grass001 12 0template Gdt001 7 0template Grs001 11 
++0template aztec4 8 0template Grs003 7 
++0template Grs002 14 0template 3grass003 5 0template 9bush002 11 
++0template 9bush002 6 0template grass3 13 0template 3grass001 11 
++0template turf002 14 0template 9bush001 13 0template grass3 3 
++0template Gdt001 14 0template grass3 5 0template Grs001 11 
++0template 3grass001 14 0template greenrock004 13 0template Gdt001 3 
++0template 3grass001 6 0template Grs001 13 0template 5granite001 11 
++0template Grs003 14 0template 3grass003 9 0template 5granite001 7 
++0template Gdt001 14 0template Grs001 1 
++0template Grs001 6 0template Gdt001 9 
++0template aztec4 10 0template Grs001 5 
++0template Gdt001 12 0template Grs002 3 
++0template 5granite001 14 0template 3grass003 13 0template Grs002 3 
++0template Grs003 2 0template 5granite002 13 
++0template Grs003 6 0template Gdt001 13 0template 4rough.001 11 
++0template Grs002 8 0template 4rough.001 7 
++0template 3grass002 12 0template Gdt001 3 
++0template aztec4 2 0template Grs003 13 
++0template 4rough.001 14 0template Grs001 5 0template Gdt001 11 
++0template Grs002 14 0template 4rough.001 9 0template Gdt001 7 
++0template Gdt001 10 0template Grs003 13 0template 4rough.001 7 
++0template 3grass003 14 0template Gdt001 13 0template Grs001 3 
++0template 4rough.001 14 0template Gdt001 13 0template Grs001 3 
++0template Gdt001 14 0template 4rough.001 9 0template Grs002 7 
++0template Grs003 10 0template Gdt001 13 0template 4rough.001 7 
++0template Grs003 4 0template 4rough.001 11 
++0template Grs001 12 0template 4rough.001 3 
++0template 4rough.001 6 0template Grs002 13 0template Gdt001 11 
++0template 3grass001 14 0template 4rough.001 13 0template Gdt001 3 
++0template turf004 12 0template grass3 7 0template Grs002 11 
++0template 9bush002 14 0template turf002 13 0template 3grass002 3 
++0template turf004 10 0template 9bush002 13 0template Grs001 7 
++0template Grs001 6 0template turf004 13 0template 3grass002 11 
++0template 3grass003 14 0template grass3 5 0template Gdt001 11 
++0template Grs003 10 0template 3grass003 13 0template Gdt001 7 
++0template Grs002 14 0template 3grass002 9 0template 9bush001 7 
++0template Grs002 14 0template 4rough.001 13 0template Gdt001 3 
++0template 4rough.001 10 0template Grs002 13 0template Gdt001 7 
++0template 4rough.001 4 0template Grs002 11 
++0template Gdt001 14 0template 4rough.001 13 0template Grs003 3 
++0template Grs003 14 0template Gdt001 1 
++0template Grs002 12 0template Gdt001 7 0template 3grass001 11 
++0template grass3 12 0template 3grass001 7 0template 9bush002 11 
++0template turf004 14 0template 3grass002 9 0template grass3 7 
++0template turf002 12 0template Grs003 7 0template 3grass003 11 
++0template Gdt001 14 0template Grs002 13 0template 3grass003 3 
++0template Gdt001 12 0template 3grass001 7 0template Grs003 11 
++0template 4rough.001 14 0template Gdt001 9 0template Grs001 7 
++0template Grs002 10 0template 4rough.001 13 0template Gdt001 7 
++0template Grs001 4 0template Gdt001 11 
++0template Gdt001 2 0template Grs001 13 
++0template Grs001 6 0template grass3 13 0template 3grass002 11 
++0template Grs002 12 0template 3grass002 7 0template olmec1 11 
++0template Grs002 12 0template olmec1 3 
++0template Grs001 12 0template olmec1 7 0template olmec2 11 
++0template Grs003 12 0template olmec2 7 0template 9bush002 11 
++0template Gdt001 14 0template 3grass001 5 0template 9bush001 11 
++0template Grs003 10 0template Gdt001 5 
++0template 4rough.001 14 0template Grs003 1 
++0template Grs002 2 0template 4rough.001 13 
++0template aztec3 4 0template Grs002 11 
++0template aztec4 12 0template Grs002 3 
++0template 9bush002 14 0template grass3 9 0template 3grass003 7 
++0template Grs003 14 0template grass3 13 0template 3grass003 3 
+olmec8_ear
+olmec1
+olmec2
+olmec7_ear
++0template Grs003 10 0template 9bush001 13 0template 3grass002 7 
++0template aztec4 4 0template 3grass003 11 
++0template aztec4 8 0template 3grass002 7 
+olmec9_fade
+olmec6_dark
++0template 5granite002 4 0template 3grass003 11 
++0template 3grass003 2 0template 5granite001 13 
++0template grass3 4 0template pumus003 11 
++0template 3grass002 14 0template grass3 13 0template pumus001 3 
++0template 3grass001 12 0template pumus004 3 
++0template Grs002 14 0template 3grass003 9 0template pumus001 7 
++0template 3grass002 12 0template Grs003 7 0template 5granite002 11 
++0template 3grass003 14 0template Grs003 5 0template rockwall004 11 
++0template 3grass002 12 0template rockwall004 3 
++0template 3grass002 8 0template rockwall001 7 
++0template 3grass001 10 0template pumus003 5 
++0template aztec5_stairs 10 0template aztec4 13 0template Grs001 7 
++0template aztec4 14 0template aztec5_stairs 5 0template Grs001 11 
++0template rockwall003 10 0template Grs001 5 
++0template rockwall003 4 0template 5granite002 11 
++0template 3grass001 14 0template rockwall003 9 0template 5granite002 7 
++0template Grs002 14 0template 3grass002 9 0template rockwall003 7 
++0template 3grass001 6 0template Grs001 13 0template rockwall005 11 
++0template 9bush001 10 0template Grs002 13 0template 3grass002 7 
++0template marslava003 4 0template marsky001 11 
++0template marslava001 8 0template marsky001 7 
++0template Gdt001 12 0template 3grass003 3 
++0template 3grass001 6 0template Gdt001 9 
++0template aztec5_stairs 14 0template Grs001 1 
++0template aztec5_stairs 12 0template Grs001 3 
++0template Grs001 2 0template aztec5_stairs 13 
++0template rockwall005 14 0template Grs001 5 0template 3grass001 11 
++0template 5granite001 14 0template rockwall003 13 0template 3grass003 3 
++0template rockwall003 10 0template 5granite002 13 0template 3grass003 7 
++0template 3grass002 14 0template rockwall001 5 0template 5granite002 11 
++0template 3grass001 8 0template 5granite002 7 
++0template rockwall003 10 0template 3grass003 5 
++0template 3grass002 14 0template rockwall002 1 
++0template grass3 14 0template 3grass001 9 0template 9bush001 7 
++0template marsky001 14 0template marslava001 1 
++0template marslava003 2 0template marsky001 13 
++0template 3grass001 14 0template pumus002 5 0template 9bush002 11 
++0template Gdt001 10 0template 3grass003 5 
++0template Grs001 12 0template 3grass001 7 0template rockwall005 11 
++0template rockwall002 2 0template Grs003 13 
++0template 5granite001 14 0template rockwall004 1 
++0template Grs002 14 0template 5granite002 13 0template rockwall004 3 
++0template 3grass001 14 0template rockwall004 5 0template Grs001 11 
++0template Grs001 6 0template 3grass003 13 0template rockwall003 11 
++0template 3grass002 10 0template Grs001 13 0template rockwall002 7 
++0template pumus004 14 0template grass3 13 0template Grs001 11 0template 3grass002 7 
++0template pumus003 8 0template Grs002 7 
+marslava003
++0template 9bush002 14 0template pumus003 1 
++0template 3grass001 10 0template 9bush002 13 0template pumus001 7 
++0template Grs001 12 0template 3grass003 7 0template 4rough.001 11 
++0template 3grass002 14 0template Grs002 9 0template 4rough.001 7 
++0template rockwall001 14 0template 3grass002 5 0template Grs002 11 
++0template rockwall002 12 0template Grs001 7 0template 3grass001 11 
++0template rockwall003 12 0template 3grass003 3 
++0template rockwall003 8 0template 3grass003 7 
++0template rockwall005 4 0template Grs002 11 
++0template Grs003 6 0template rockwall003 13 0template 5granite001 11 
++0template rockwall001 14 0template Grs002 13 0template 5granite001 3 
++0template Grs002 14 0template rockwall003 9 0template 5granite002 7 
++0template 3grass001 14 0template Grs002 9 0template rockwall005 7 
++0template pumus002 10 0template Grs003 13 0template 3grass002 7 
++0template Grs001 14 0template Gdt001 13 0template 3grass003 3 
++0template 4rough.001 14 0template 3grass001 9 0template Grs003 7 
++0template 4rough.001 8 0template 3grass003 7 
++0template Grs002 14 0template 4rough.001 1 
++0template 3grass002 12 0template Grs003 7 0template 4rough.001 11 
++0template 3grass001 12 0template 4rough.001 7 0template Grs003 11 
++0template Grs001 6 0template 3grass001 13 0template 4rough.001 11 
++0template 3grass001 14 0template Grs003 13 0template 4rough.001 3 
++0template rockwall003 14 0template 3grass002 1 
++0template Grs003 14 0template rockwall001 13 0template 3grass001 3 
++0template 5granite002 14 0template Grs001 13 0template rockwall002 3 
++0template rockwall001 6 0template 5granite001 13 0template Grs002 11 
++0template Grs003 6 0template rockwall002 9 
++0template Grs002 8 0template rockwall004 7 
++0template pumus004 14 0template Grs001 1 
++0template 3grass001 14 0template Gdt001 9 0template Grs002 7 
++0template 4rough.001 14 0template 3grass002 13 0template Grs001 3 
++0template 4rough.001 8 0template Grs003 7 
++0template 4rough.001 6 0template Grs002 9 
++0template Grs003 6 0template 4rough.001 9 
++0template 4rough.001 2 0template Grs003 13 
++0template 3grass002 14 0template 4rough.001 9 0template Grs003 7 
++0template 3grass002 12 0template 4rough.001 3 
++0template rockwall003 14 0template 3grass003 9 0template 4rough.001 7 
++0template rockwall001 14 0template Grs003 13 0template 3grass002 3 
++0template pumus001 12 0template Grs003 3 
++0template pumus002 4 0template 3grass002 11 
++0template 3grass002 2 0template pumus003 13 
++0template Grs002 14 0template 3grass001 9 0template Gdt001 7 
++0template 4rough.001 14 0template Grs003 13 0template 3grass002 3 
++0template 3grass001 10 0template 4rough.001 5 
++0template Grs002 4 0template 5granite001 11 
++0template 3grass003 10 0template Grs002 13 0template 5granite002 7 
++0template 3grass001 12 0template Grs002 7 0template Bdt001 11 
++0template 3grass003 12 0template Bdt001 7 0template Grs002 11 
++0template 3grass003 12 0template 5granite002 7 0template Grs002 11 
++0template Bdt001 14 0template 9bush001 1 
++0template Grs003 10 0template Bdt001 13 0template 9bush001 7 
++0template pumus001 12 0template Grs003 7 0template 3grass002 11 
++0template Grs002 14 0template pumus001 13 0template 3grass001 3 
++0template 3grass002 10 0template Gdt001 13 0template Grs001 7 
++0template Grs003 14 0template Gdt001 9 0template 3grass003 7 
+4rough.001
++0template Grs002 10 0template 4rough.001 5 
++0template 4rough.001 10 0template Grs002 5 
++0template 3grass001 14 0template 4rough.001 5 0template Grs003 11 
++0template Grs003 14 0template 3grass002 13 0template 4rough.001 3 
++0template Bdt001 12 0template Grs002 3 
++0template Bdt001 8 0template Grs003 7 
++0template Grs001 14 0template Bdt001 1 
++0template 3grass001 14 0template Grs003 13 0template Bdt001 3 
++0template 3grass003 12 0template Bdt001 3 
++0template Bdt001 10 0template Grs001 5 
++0template Bdt001 4 0template Grs001 11 
++0template 9bush002 14 0template Grs001 5 0template 5granite002 11 
++0template 9bush002 12 0template 5granite002 7 0template Grs003 11 
++0template Bdt001 14 0template 9bush001 13 0template Grs001 3 
++0template Grs002 10 0template Bdt001 5 

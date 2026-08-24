@@ -1,0 +1,31 @@
+<P><P><P>
+Navigation Commands
+<BR>
+-------------------
+<P>
+w:            Forward
+<BR>
+s:            Backward
+<BR>
+a:            Slide Left
+<BR>
+d:            Slide Right
+<P>
+arrow keys:   Forward, backward, turn left, turn right
+<P>
+
+q:            Raise hovering altitude
+<BR>
+a:            Lower hovering altitude
+<P>
+
+m:            Go to map screen
+<BR>
+n:            Cycle between visual, altitude, slope maps
+<P>
+j:            Activate jumpjets (tank only)
+<P>
+Numpad 0:     Set thrust to 0
+<BR>
+Numpad 1-9:   Set forward thrusters to various speeds
+<P>

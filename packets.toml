@@ -44,27 +44,48 @@ max_health = 100
 regen_or_health_related = 100.0
 
 [behavior.vehicle_physics]
-speed = 20.0            # Default: 20.0
-accel = 4.0             # Default: 4.0
-engine_torque = 700     # Default: 700
-suspension_stiffness = 550 # Default: 550
-ground_friction = 0.8   # Default: 0.8
-turn_rate = 0.05        # Default: Tank: 0.05 Scout: 0.15
-suspension_dampening = 1.3 # Default: Tank: 1.3 Scout: 1.1
-mass = 33000            # Default: Tank: 33000 Scout: 13000
+# Tank/type-0 defaults from VehicleInfo_CreateForType (0x004e5a20).
+bang_min_velocity = 20.0
+scrape_min_velocity = 4.0
+bang_interval_ms = 700
+scrape_interval_ms = 550
+starting_jet_strength = 0.8
+minimum_jet_strength = 0.05
+jet_response_coefficient = 1.3
+max_weapon_weight = 0
+max_fuel = 33000
+
+[behavior.scout_vehicle_physics]
+# Medic/scout/type-1 defaults from VehicleInfo_CreateForType (0x004e5a20).
+bang_min_velocity = 20.0
+scrape_min_velocity = 4.0
+bang_interval_ms = 700
+scrape_interval_ms = 550
+starting_jet_strength = 0.8
+minimum_jet_strength = 0.15
+jet_response_coefficient = 1.1
+max_weapon_weight = 0
+max_fuel = 13000
 
 [behavior.active_vehicle_physics]
+# Tank tuning. The stock server_params max altitude is 3.25; the emulator
+# uses 4x stock for better terrain and base-unit clearance.
 turn_adjust = 4.5   # Default: 4.5
 move_adjust = 85.0  # Default: 85.0
-move_backward_adjust = 38.0 # Default: 38.0 (Scout only?)
-strafe_adjust = 69.7 # Default: Tank: 69.7 Scout: 72.0
-max_velocity = 80.0  # Default: Tank: 80.0 Scout: 85.0
-low_fuel_level = 2000.0 # Default: 2000.0
-hover_height = 9.75  # Default tank hover was 3.25; tripled for better clearance.
-max_speed_height_pickup = 3.5 # Default: 3.5 (Scout only?)
-gravity_pct = 1.0   # Default: 1.0
-jet_reaction_width = 2.0
-jet_reaction_length = 2.0
-jet_reaction_z = -0.5
-jet_reaction_normal_z = -0.75
-jet_reaction_range = 5.0
+strafe_adjust = 69.7
+max_velocity = 80.0
+low_fuel_level = 2000.0
+hover_height = 13.0
+gravity_pct = 1.0
+
+[behavior.medic_vehicle_physics]
+# Scout tuning from MedicVehicleTuning_ConstructDefaults (0x004f6690).
+turn_adjust = 4.5
+move_forward_adjust = 85.0
+move_backward_adjust = 38.0
+strafe_adjust = 72.0
+max_velocity = 85.0
+low_fuel_level = 2000.0
+max_altitude = 4.9
+max_speed_height_pickup = 3.5
+gravity_pct = 1.0

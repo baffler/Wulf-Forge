@@ -1,0 +1,69 @@
+groundstruct001
+groundstruct002
++0template groundstruct002 4 0template smallbuilding2 11 
++0template groundstruct002 12 0template smallbuilding2 3 
++0template groundstruct001 8 0template smallbuilding2 7 
++0template castle2 4 0template smallbuilding2 11 
++0template smallbuilding2 2 0template castle2 13 
+smallbuilding2
++0template groundstruct001 10 0template smallbuilding2 5 
++0template smallbuilding2 10 0template castle2 5 
++0template smallbuilding2 4 0template groundstruct001 11 
++0template smallbuilding2 12 0template groundstruct001 3 
++0template smallbuilding2 8 0template groundstruct001 7 
++0template smallbuilding2 4 0template groundstruct22 11 
++0template smallbuilding2 12 0template groundstruct22 3 
++0template smallbuilding2 12 0template groundstruct22 7 0template marsh002 11 
++0template smallbuilding2 12 0template marsh004 3 
++0template smallbuilding2 12 0template marsh003 7 0template groundstruct002 11 
++0template smallbuilding2 10 0template groundstruct002 5 
++0template groundstruct22 10 0template smallbuilding2 5 
+groundstruct22
++0template marsh004 10 0template groundstruct22 5 
+marsh002
+marsh004
+marsh003
+marsh001
++0template groundstruct002 10 0template marsh004 5 
++0template groundstruct001 4 0template groundstruct22 11 
++0template groundstruct001 12 0template groundstruct22 3 
++0template smallbuilding2 10 0template groundstruct001 13 0template groundstruct22 7 
++0template groundstruct22 14 0template smallbuilding2 5 0template smallbuilding1 11 
++0template groundstruct22 12 0template smallbuilding1 3 
++0template groundstruct22 8 0template smallbuilding1 7 
++0template groundstruct22 10 0template groundstruct002 5 
++0template smallbuilding2 10 0template groundstruct22 5 
++0template smallbuilding1 10 0template smallbuilding2 5 
++0template smallbuilding1 4 0template smallbuilding2 11 
++0template smallbuilding1 12 0template smallbuilding2 3 
++0template groundstruct22 14 0template smallbuilding1 9 0template smallbuilding2 7 
++0template smallbuilding2 10 0template smallbuilding1 5 
++0template groundstruct22 10 0template smallbuilding1 5 
++0template groundstruct22 4 0template groundstruct001 11 
++0template smallbuilding2 10 0template groundstruct22 13 0template groundstruct001 7 
++0template smallbuilding1 14 0template smallbuilding2 1 
++0template smallbuilding2 6 0template smallbuilding1 13 0template groundstruct22 11 
++0template smallbuilding1 10 0template smallbuilding2 13 0template groundstruct22 7 
++0template groundstruct22 14 0template groundstruct002 1 
++0template groundstruct22 12 0template groundstruct001 3 
++0template groundstruct001 2 0template groundstruct22 13 
++0template groundstruct22 2 0template smallbuilding2 13 
++0template smallbuilding1 14 0template groundstruct22 1 
++0template groundstruct22 2 0template smallbuilding1 13 
++0template smallbuilding1 8 0template smallbuilding2 7 
+smallbuilding1
++0template smallbuilding2 14 0template smallbuilding1 1 
++0template smallbuilding1 2 0template smallbuilding2 13 
++0template smallbuilding1 14 0template smallbuilding2 5 0template groundstruct22 11 
++0template smallbuilding1 12 0template groundstruct22 3 
++0template groundstruct001 14 0template smallbuilding2 1 
++0template smallbuilding2 2 0template groundstruct002 13 
++0template groundstruct22 14 0template smallbuilding2 1 
++0template groundstruct22 12 0template smallbuilding2 3 
++0template marsh001 14 0template groundstruct22 13 0template smallbuilding2 3 
++0template marsh004 12 0template smallbuilding2 3 
++0template groundstruct002 14 0template marsh004 13 0template smallbuilding2 3 
++0template groundstruct002 2 0template smallbuilding2 13 
++0template smallbuilding2 14 0template groundstruct001 1 
++0template groundstruct30 14 0template groundstruct002 1 
++0template groundstruct002 2 0template groundstruct30 13 

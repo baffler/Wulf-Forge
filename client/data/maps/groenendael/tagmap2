@@ -1,0 +1,654 @@
+turf002
+turf003
+turf001
+turf004
++0template junglecanyon001 10 0template turf002 5 
++0template turf002 10 0template junglecanyon003 5 
++0template turf002 4 0template junglecanyon003 11 
++0template turf001 12 0template junglecanyon002 3 
++0template turf004 8 0template junglecanyon001 7 
+groundrunway002
+groundrunway001
++0template turf003 2 0template junglecanyon003 13 
++0template turf004 14 0template junglecanyon003 5 0template brown/08 11 
++0template turf003 12 0template brown/08 3 
++0template turf004 12 0template brown/08 7 0template junglecanyon003 11 
+groundstruct32
+gn1
+groundstruct34
++0template turf004 4 0template brown/08 11 
+junglecanyon001
++0template turf003 14 0template junglecanyon003 1 
++0template brown/08 10 0template junglecanyon001 5 
+brown/08
++0template junglecanyon002 2 0template turf003 13 
+groundstruct002
+groundstruct001
++0template groundrunway001 4 0template Gmd001 11 
++0template brown/08 14 0template turf001 13 0template Gmd001 3 
++0template brown/08 8 0template Gmd001 7 
++0template groundrunway001 10 0template brown/08 5 
++0template turf001 14 0template junglecanyon001 5 0template groundrunway002 11 
++0template junglecanyon001 10 0template turf001 13 0template groundrunway002 7 
+junglecanyon002
+Gdt001
++0template Gmd001 10 0template groundrunway002 5 
+Gmd001
++0template groundrunway002 10 0template Gmd001 5 
++0template groundrunway002 2 0template brown/08 13 
++0template gn1 2 0template junglecanyon003 13 
+5granite002
++0template brown/08 14 0template 5granite002 1 
++0template brown/08 12 0template 5granite002 3 
++0template 5granite001 2 0template brown/08 13 
+5granite001
++0template Gmd001 14 0template groundrunway001 1 
++0template Gmd001 12 0template 5granite001 3 
++0template brown/08 14 0template Gmd001 13 0template 5granite002 3 
++0template groundrunway002 14 0template 5granite002 1 
++0template groundrunway001 12 0template 5granite002 3 
++0template 5granite002 2 0template groundrunway002 13 
++0template junglecanyon001 14 0template turf003 1 
+6martian001
+groundstruct30
+olmec5
+castle3
++0template groundstruct30 4 0template Gdt001 11 
++0template Gdt001 10 0template groundstruct30 5 
++0template Gdt001 4 0template easterhead2 11 
++0template Gdt001 12 0template easterhead2 3 
++0template Gdt001 8 0template easterhead2 7 
++0template easterhead2 10 0template Gdt001 5 
+easterhead2
++0template Gdt001 10 0template easterhead2 5 
++0template turf004 4 0template 19bush001 11 
++0template turf004 12 0template 19bush001 3 
++0template turf001 8 0template 19bush001 7 
++0template 6martian001 4 0template Gdt001 11 
++0template 6martian001 12 0template Gdt001 3 
++0template groundrunway001 8 0template Gdt001 7 
++0template 19bush001 10 0template turf004 5 
+19bush001
++0template turf003 10 0template 19bush001 5 
++0template Gdt001 10 0template junglecanyon001 5 
++0template junglecanyon003 4 0template turf004 11 
++0template junglecanyon003 12 0template turf002 3 
++0template Gdt001 14 0template junglecanyon001 1 
++0template Gdt001 8 0template junglecanyon001 7 
++0template junglecanyon002 14 0template Gdt001 5 0template Gmd001 11 
++0template groundmetal002 12 0template Gmd001 3 
++0template Gdt001 10 0template junglecanyon001 13 0template Gmd001 7 
++0template junglecanyon003 10 0template Gdt001 5 
++0template junglecanyon002 4 0template Gmd001 11 
++0template 5granite001 10 0template Gdt001 5 
+rockwall003
++0template easterhead2 14 0template 5granite002 1 
++0template easterhead2 12 0template 5granite001 3 
++0template easterhead2 12 0template junglecanyon003 7 0template Gdt001 11 
++0template Gdt001 2 0template easterhead2 13 
++0template Gdt001 10 0template groundmetal002 13 0template Gmd001 7 
++0template Gdt001 14 0template 5granite001 1 
++0template 19bush001 14 0template turf003 1 
++0template 19bush001 12 0template turf001 3 
++0template turf003 2 0template 19bush001 13 
+pumus002
+pumus001
++0template Gdt001 12 0template junglecanyon002 3 
++0template Gdt001 4 0template Gmd001 11 
++0template Gdt001 12 0template Gmd001 3 
++0template Gdt001 8 0template Gmd001 7 
++0template 5granite001 2 0template Gdt001 13 
+pumus004
+pumus003
+rockwall001
++0template junglecanyon003 2 0template Gdt001 13 
++0template Gmd001 10 0template junglecanyon003 5 
++0template Gdt001 14 0template Gmd001 5 0template junglecanyon001 11 
++0template Gdt001 12 0template 5granite002 3 
++0template Gdt001 14 0template Gmd001 1 
++0template Gdt001 12 0template Gmd001 7 0template junglecanyon002 11 
+junglecanyon003
++0template Gmd001 10 0template 5granite001 5 
++0template Gmd001 4 0template groundstruct30 11 
++0template Gmd001 12 0template groundstruct30 3 
++0template Gmd001 8 0template groundstruct30 7 
++0template Gmd001 4 0template 5granite002 11 
++0template 5granite002 2 0template Gmd001 13 
+bridge2
++0template junglecanyon001 12 0template gbdirt001 3 
++0template junglecanyon001 8 0template gbdirt001 7 
++0template Gmd001 12 0template junglecanyon001 7 0template groundstruct30 11 
++0template Gmd001 12 0template groundstruct30 7 0template junglecanyon001 11 
++0template Gmd001 8 0template junglecanyon002 7 
++0template Gmd001 4 0template junglecanyon003 11 
++0template groundstruct30 10 0template Gmd001 13 0template 5granite002 7 
++0template Gmd001 14 0template groundstruct30 5 0template 5granite001 11 
++0template gbdirt002 2 0template junglecanyon002 13 
+gbdirt001
++0template junglecanyon001 14 0template gbdirt002 1 
+gbdirt002
++0template groundstruct30 10 0template 5granite001 5 
++0template 5granite001 10 0template groundstruct30 5 
++0template Gmd001 14 0template 5granite001 5 0template groundstruct30 11 
++0template 5granite001 10 0template Gmd001 13 0template groundstruct30 7 
++0template 5granite001 4 0template Gdt001 11 
++0template junglecanyon003 4 0template gbdirt002 11 
++0template groundstruct30 14 0template 5granite002 5 0template Gmd001 11 
++0template groundstruct30 12 0template Gmd001 3 
++0template 5granite002 10 0template groundstruct30 13 0template Gmd001 7 
++0template junglecanyon002 10 0template gbdirt002 5 
++0template pumus004 12 0template 5granite002 3 
++0template gbdirt002 10 0template junglecanyon002 13 0template 5granite002 7 
++0template gbdirt001 4 0template Gdt001 11 
++0template gbdirt002 12 0template Gdt001 3 
++0template gbdirt002 8 0template Gdt001 7 
++0template gbdirt001 10 0template junglecanyon002 5 
++0template gbdirt001 4 0template gbdirt_grassy001 11 
++0template gbdirt002 8 0template gbdirt_grassy001 7 
++0template junglecanyon001 12 0template Gmd001 3 
++0template gbdirt001 8 0template junglecanyon003 7 
++0template gbdirt002 10 0template 5granite001 5 
++0template Gdt001 10 0template gbdirt002 5 
++0template gbdirt001 10 0template Gdt001 5 
++0template gbdirt_grassy001 14 0template gbdirt001 1 
++0template gbdirt002 2 0template gbdirt_grassy001 13 
++0template Gdt001 14 0template junglecanyon002 13 0template Gmd001 3 
++0template easterhead2 14 0template Gdt001 1 
++0template easterhead2 12 0template Gdt001 3 
++0template Gmd001 10 0template groundmetal002 5 
++0template Gdt001 14 0template gbdirt002 1 
++0template Gdt001 12 0template gbdirt002 3 
++0template gbdirt001 2 0template Gdt001 13 
++0template gbdirt002 4 0template 19bush001 11 
++0template gbdirt001 8 0template 19bush001 7 
+groundmetal002
+groundmetal001
++0template 5granite002 10 0template Gmd001 5 
++0template gbdirt002 4 0template junglecanyon003 11 
++0template gbdirt002 12 0template junglecanyon002 3 
++0template junglecanyon002 2 0template gbdirt001 13 
++0template groundmetal001 10 0template Gmd001 5 
++0template gbdirt001 14 0template junglecanyon003 1 
++0template 19bush001 2 0template gbdirt001 13 
++0template gbdirt001 10 0template 19bush001 5 
++0template Gmd001 14 0template junglecanyon001 13 0template gbdirt001 3 
++0template Gmd001 12 0template gbdirt002 3 
++0template 5granite002 14 0template Gmd001 13 0template gbdirt002 3 
++0template 5granite002 12 0template gbdirt001 3 
++0template gbdirt002 2 0template 5granite001 13 
++0template 19bush001 14 0template gbdirt001 1 
++0template 19bush001 12 0template gbdirt001 3 
++0template gbdirt001 2 0template 19bush001 13 
+groundstruct29
++0template junglecanyon002 14 0template Gmd001 13 0template gbdirt002 3 
++0template gbdirt002 4 0template 2gbdirt001 11 
++0template gbdirt001 8 0template 2gbdirt001 7 
++0template junglecanyon001 12 0template gbdirt002 7 0template Gmd001 11 
++0template 5granite001 12 0template Gmd001 7 0template groundstruct30 11 
++0template 5granite002 12 0template groundstruct30 3 
++0template 5granite002 12 0template groundstruct30 7 0template Gmd001 11 
++0template Gmd001 14 0template junglecanyon003 13 0template groundstruct30 3 
++0template junglecanyon002 14 0template Gmd001 5 0template groundstruct30 11 
++0template gbdirt002 10 0template junglecanyon003 13 0template Gmd001 7 
++0template 2gbdirt001 14 0template gbdirt001 1 
++0template gbdirt002 2 0template 2gbdirt002 13 
++0template Gmd001 10 0template gbdirt002 5 
++0template groundstruct30 10 0template Gmd001 5 
++0template Gmd001 10 0template groundstruct30 5 
++0template gbdirt002 10 0template Gmd001 5 
++0template Gmd001 14 0template gbdirt002 5 0template junglecanyon003 11 
++0template groundstruct30 14 0template Gmd001 13 0template 5granite001 3 
++0template groundstruct30 12 0template 5granite002 3 
++0template Gmd001 14 0template groundstruct30 13 0template 5granite001 3 
++0template groundstruct30 12 0template junglecanyon002 7 0template Gmd001 11 
++0template Gmd001 2 0template groundstruct30 13 
++0template groundstruct30 14 0template Gmd001 5 0template junglecanyon001 11 
++0template gbdirt002 10 0template Gmd001 13 0template junglecanyon002 7 
++0template turf003 14 0template 19bush001 1 
++0template junglecanyon002 8 0template turf003 7 
+groundstruct27
++0template Gmd001 12 0template junglecanyon002 7 0template Gdt001 11 
++0template groundmetal001 14 0template Gmd001 13 0template Gdt001 3 
++0template 19bush001 8 0template turf004 7 
++0template Gmd001 10 0template groundmetal002 13 0template Gdt001 7 
++0template gbdirt002 12 0template gbdirt_grassy001 7 0template Gdt001 11 
+machuwall_F003
+machuwall_F002
+machuwall_F001
++0template Gmd001 14 0template Gdt001 1 
++0template gbdirt_grassy001 14 0template gbdirt002 5 0template Gdt001 11 
++0template Gdt001 2 0template gbdirt_grassy001 13 
+machuwall4
+machuwall3
++0template turf001 10 0template junglecanyon001 13 0template easterhead4 7 
++0template gbdirt002 12 0template Gdt001 7 0template 5granite002 11 
++0template gbdirt001 12 0template 5granite002 3 
++0template gbdirt002 12 0template 5granite002 7 0template Gdt001 11 
+machuwall2
+w2blu_bottomback
++0template turf004 10 0template easterhead4 5 
++0template gbdirt002 12 0template gbdirt_grassy001 3 
++0template Gdt001 10 0template 5granite001 5 
+machuwall6
+machuwall5
++0template easterhead4 4 0template turf003 11 
++0template turf003 2 0template easterhead4 13 
++0template gbdirt_grassy001 10 0template gbdirt001 5 
+gbdirt_grassy001
++0template gbdirt001 10 0template gbdirt_grassy001 5 
++0template turf002 14 0template easterhead4 1 
++0template turf003 8 0template easterhead4 7 
++0template gbdirt_grassy001 12 0template gbdirt002 3 
++0template gbdirt002 8 0template pumus001 7 
++0template gbdirt002 4 0template pumus002 11 
++0template gbdirt002 12 0template pumus003 3 
++0template Gdt001 14 0template gbdirt001 13 0template pumus003 3 
++0template Gdt001 12 0template pumus001 3 
++0template gbdirt002 14 0template Gdt001 13 0template pumus001 3 
++0template Gdt001 14 0template gbdirt002 13 0template 5granite002 11 0template pumus002 7 
++0template gbdirt002 14 0template Gdt001 13 0template pumus003 11 0template 5granite001 7 
++0template pumus004 2 0template gbdirt001 13 
++0template gbdirt002 14 0template pumus002 1 
++0template gbdirt001 10 0template pumus002 5 
++0template turf003 10 0template easterhead4 13 0template junglecanyon001 7 
++0template pumus001 10 0template gbdirt001 5 
++0template 5granite002 10 0template pumus004 5 
++0template pumus004 10 0template 5granite002 5 
++0template pumus001 4 0template junglecanyon002 11 
++0template pumus004 8 0template junglecanyon003 7 
++0template pumus001 4 0template 5granite001 11 
++0template 5granite002 2 0template pumus002 13 
++0template pumus004 14 0template 5granite002 1 
++0template pumus002 8 0template 5granite002 7 
++0template junglecanyon003 10 0template pumus004 5 
++0template pumus004 10 0template junglecanyon003 5 
++0template junglecanyon003 14 0template pumus004 1 
++0template pumus004 12 0template junglecanyon002 3 
++0template pumus002 2 0template junglecanyon003 13 
++0template 5granite002 4 0template pumus001 11 
++0template 5granite002 12 0template pumus003 3 
++0template 5granite001 8 0template pumus002 7 
++0template junglecanyon002 2 0template pumus003 13 
++0template pumus003 14 0template junglecanyon001 1 
++0template 5granite001 14 0template pumus003 13 0template junglecanyon001 3 
++0template 5granite001 12 0template junglecanyon003 7 0template pumus003 11 
++0template pumus003 2 0template 5granite002 13 
++0template 5granite001 14 0template pumus001 1 
++0template 5granite002 12 0template pumus001 7 0template junglecanyon002 11 
++0template pumus001 14 0template 5granite002 13 0template junglecanyon002 3 
++0template pumus003 4 0template castle3 11 
++0template pumus001 8 0template castle3 7 
++0template castle3 14 0template junglecanyon001 1 
++0template junglecanyon002 2 0template castle3 13 
++0template gbdirt001 4 0template groundstruct3 11 
++0template pumus001 12 0template junglecanyon001 7 0template castle3 11 
++0template pumus003 12 0template castle3 3 
++0template junglecanyon001 10 0template pumus001 13 0template castle3 7 
++0template castle3 14 0template pumus002 1 
++0template pumus003 2 0template castle3 13 
++0template marslava002 14 0template gbdirt001 5 0template junglecanyon001 11 
+groundstruct3
++0template gbdirt002 10 0template groundstruct3 5 
++0template castle3 12 0template junglecanyon001 3 
++0template castle3 8 0template junglecanyon001 7 
++0template junglecanyon003 10 0template castle3 5 
++0template gbdirt_grassy001 14 0template gbdirt001 9 0template Gdt001 7 
++0template junglecanyon003 4 0template pumus003 11 
++0template junglecanyon003 12 0template pumus004 3 
++0template pumus002 2 0template groundstruct3 13 
++0template junglecanyon002 8 0template pumus003 7 
++0template junglecanyon001 4 0template castle3 11 
++0template junglecanyon002 8 0template castle3 7 
++0template junglecanyon002 14 0template pumus002 5 0template castle3 11 
++0template junglecanyon002 10 0template groundstruct3 5 
++0template castle3 14 0template pumus003 5 0template Gdt001 11 
++0template 5granite002 12 0template Gdt001 3 
++0template junglecanyon001 8 0template Gdt001 7 
++0template gbdirt002 12 0template gbdirt_grassy001 7 0template redsands001 11 
++0template gbdirt002 8 0template groundstruct3 7 
++0template junglecanyon001 6 0template castle3 9 
++0template Gdt001 10 0template pumus001 5 
++0template castle3 10 0template Gdt001 5 
++0template redsands001 10 0template gbdirt_grassy001 13 0template gbdirt001 7 
+groundstruct37
+groundstruct35
++0template groundstruct3 8 0template pumus001 7 
++0template pumus002 4 0template Gdt001 11 
++0template Gdt001 2 0template pumus003 13 
++0template junglecanyon001 12 0template pumus004 7 0template gn1 11 
++0template redsands001 14 0template gbdirt002 13 0template junglecanyon002 3 
+groundstruct36
++0template groundstruct3 12 0template pumus002 3 
++0template Gdt001 8 0template pumus002 7 
++0template pumus002 10 0template Gdt001 5 
++0template pumus002 2 0template Gdt001 13 
++0template gn1 14 0template pumus003 1 
++0template gn1 12 0template pumus003 3 
++0template junglecanyon003 14 0template gn1 13 0template pumus001 3 
++0template groundstruct3 14 0template pumus002 1 
++0template pumus001 6 0template junglecanyon002 9 
++0template pumus003 12 0template Gdt001 3 
++0template gbdirt001 2 0template pumus001 13 
++0template groundstruct32 2 0template junglecanyon001 13 
++0template Gdt001 12 0template pumus003 7 0template building2 11 
++0template pumus002 14 0template Gdt001 13 0template building2 3 
+groundstruct18
+groundstruct21
++0template Gdt001 2 0template groundrunway3 13 
++0template Gdt001 4 0template pumus004 11 
++0template pumus001 4 0template groundstruct3 11 
++0template pumus003 8 0template groundstruct3 7 
++0template Gdt001 14 0template building2 1 
++0template Gdt001 12 0template building2 7 0template pumus002 11 
++0template turf001 10 0template junglecanyon001 13 0template Gmd001 7 
++0template building2 10 0template pumus003 5 
+building2
++0template pumus002 14 0template gbdirt001 1 
++0template pumus001 8 0template gbdirt001 7 
++0template junglecanyon001 14 0template pumus002 5 0template castle1 11 
++0template pumus002 14 0template junglecanyon001 13 0template castle1 3 
++0template 2gbdirt001 12 0template castle1 3 
++0template 2gbdirt002 12 0template castle1 7 0template castle3 11 
++0template junglecanyon002 14 0template 2gbdirt001 13 0template castle3 3 
++0template Gdt001 10 0template junglecanyon001 13 0template castle3 7 
++0template pumus004 12 0template groundstruct3 3 
++0template pumus001 10 0template building2 5 
++0template turf002 10 0template Gmd001 5 
+groundstruct20
++0template castle1 10 0template pumus001 5 
+castle1
++0template castle3 10 0template castle1 5 
++0template Gdt001 14 0template castle3 1 
++0template Gdt001 12 0template castle3 7 0template junglecanyon003 11 
++0template junglecanyon002 6 0template gbdirt001 13 0template bdtdark001 11 
++0template junglecanyon002 12 0template bdtdark001 7 0template castle3 11 
+groundstruct19
++0template castle1 10 0template 2gbdirt001 5 
++0template castle1 4 0template castle3 11 
++0template castle3 2 0template castle1 13 
++0template junglecanyon002 14 0template castle3 5 0template 2gbdirt001 11 
++0template Gdt001 10 0template gbdirt001 13 0template gbdirt_grassy001 7 
++0template junglecanyon003 14 0template gbdirt002 5 0template castle3 11 
++0template bdtdark001 14 0template junglecanyon003 13 0template castle3 3 
++0template castle3 2 0template bdtdark001 13 
++0template castle1 4 0template Gdt001 11 
++0template castle1 12 0template Gdt001 3 
++0template castle3 14 0template castle1 13 0template Gdt001 3 
++0template castle3 8 0template Gdt001 7 
++0template castle3 4 0template castle1 11 
++0template castle3 12 0template castle1 3 
++0template 2gbdirt001 10 0template castle3 13 0template castle1 7 
++0template junglecanyon001 12 0template pumus001 7 0template 5granite002 11 
++0template pumus004 14 0template junglecanyon002 13 0template 5granite001 3 
++0template Gdt001 14 0template gbdirt_grassy001 13 0template gbdirt002 3 
++0template gbdirt001 4 0template rockwall005 11 
++0template castle3 14 0template gbdirt001 13 0template rockwall002 3 
++0template castle3 8 0template rockwall002 7 
++0template castle3 4 0template olmec10_helm 11 
++0template building2 4 0template pumus004 11 
++0template pumus001 2 0template building2 13 
++0template gbdirt002 6 0template Gdt001 13 0template gbdirt_grassy001 11 
++0template junglecanyon001 14 0template pumus004 13 0template 5granite001 3 
++0template junglecanyon001 8 0template 5granite002 7 
++0template Gdt001 10 0template castle1 5 
+metal1
+groundrunway1
+groundrunway3
++0template castle1 10 0template castle3 5 
++0template 2gbdirt002 10 0template castle1 5 
++0template rockwall001 14 0template gbdirt002 5 0template marslava002 11 
++0template olmec10_helm 14 0template castle3 1 
++0template junglecanyon003 14 0template turf003 13 0template 19bush001 3 
++0template groundrunway001 8 0template 19bush001 7 
++0template groundstruct3 10 0template pumus004 5 
++0template junglecanyon003 14 0template 5granite002 13 0template pumus002 3 
++0template groundstruct3 10 0template junglecanyon003 5 
+e2top
+groundrunway7
+groundrunway5
++0template castle3 14 0template Gdt001 5 0template castle1 11 
++0template castle1 2 0template castle3 13 
++0template 2gbdirt002 10 0template castle1 13 0template castle3 7 
++0template gbdirt001 14 0template pumus002 5 0template junglecanyon001 11 
++0template pumus003 14 0template building2 1 
++0template pumus002 12 0template building2 7 0template groundrunway002 11 
++0template groundrunway001 10 0template 19bush001 5 
+sk2dishblue
+sk2dish
++0template castle1 10 0template Gdt001 5 
++0template 2gbdirt001 10 0template castle3 5 
++0template junglecanyon001 14 0template pumus003 13 0template Gdt001 11 0template 5granite001 7 
++0template gbdirt001 14 0template junglecanyon002 13 0template Gdt001 3 
++0template groundrunway002 10 0template building2 5 
+groundstruct33
++0template groundrunway002 2 0template 19bush001 13 
+groundstruct31
++0template castle3 14 0template castle1 1 
++0template building2 14 0template junglecanyon001 1 
++0template building2 12 0template junglecanyon002 3 
++0template groundrunway002 14 0template building2 13 0template junglecanyon001 3 
++0template groundrunway001 12 0template junglecanyon003 3 
++0template groundrunway002 12 0template junglecanyon001 7 0template marslava003 11 
++0template jupi_bark001 10 0template groundrunway002 13 0template marslava002 7 
++0template jupi_bark001 4 0template junglecanyon003 11 
++0template turf003 10 0template Gmd001 13 0template junglecanyon001 7 
++0template Gmd001 8 0template 19bush001 7 
++0template building2 10 0template pumus002 13 0template junglecanyon001 7 
++0template pumus002 14 0template building2 5 0template junglecanyon002 11 
++0template gbdirt001 12 0template groundstruct3 7 0template Gdt001 11 
++0template pumus001 10 0template gbdirt002 13 0template Gdt001 7 
++0template gbdirt001 10 0template Gdt001 13 0template 5granite002 7 
++0template groundstruct3 10 0template gbdirt001 5 
++0template jupi_bark002 6 0template marslava003 13 0template junglecanyon001 11 
++0template junglecanyon001 2 0template jupi_bark002 13 
++0template bridge3 14 0template junglecanyon003 1 
++0template bridge3 12 0template junglecanyon002 3 
++0template olmec10_helm 14 0template junglecanyon001 1 
++0template olmec10_helm 12 0template junglecanyon001 3 
++0template junglecanyon001 2 0template olmec10_helm 13 
++0template junglecanyon002 10 0template 19bush001 5 
++0template groundstruct3 12 0template junglecanyon002 3 
++0template junglecanyon001 2 0template building2 13 
++0template junglecanyon003 14 0template gbdirt002 5 0template 5granite002 11 
++0template Gdt001 14 0template junglecanyon003 13 0template 5granite002 3 
++0template pumus004 14 0template Gdt001 13 0template 5granite002 3 
++0template junglecanyon002 10 0template rplanding3 5 
++0template 5granite002 10 0template gbdirt001 5 
++0template gbdirt001 10 0template 5granite001 13 0template Gdt001 7 
++0template junglecanyon003 14 0template gbdirt001 5 0template jupi_funky002 11 
++0template junglecanyon002 2 0template 19bush001 13 
++0template 5granite001 14 0template gbdirt002 5 0template junglecanyon003 11 
++0template 5granite002 12 0template junglecanyon003 7 0template Gdt001 11 
++0template 5granite002 12 0template Gdt001 7 0template pumus004 11 
++0template Gdt001 4 0template gbdirt002 11 
++0template jupi_funky001 10 0template gbdirt002 5 
++0template jupi_bark002 14 0template junglecanyon002 5 0template building2 11 
++0template jupi_bark002 8 0template building2 7 
++0template junglecanyon002 14 0template rplanding3 1 
++0template junglecanyon001 12 0template rplanding3 3 
++0template junglecanyon001 12 0template bridge3 3 
++0template junglecanyon002 12 0template bridge3 7 0template castle3 11 
++0template junglecanyon003 12 0template castle3 3 
+bridge3
++0template groundstruct3 4 0template building2 11 
++0template junglecanyon002 12 0template building2 3 
++0template junglecanyon003 12 0template building2 7 0template pumus004 11 
++0template Gdt001 10 0template junglecanyon001 13 0template gbdirt002 7 
++0template Gdt001 14 0template 5granite002 13 0template gbdirt001 11 0template pumus002 7 
++0template jupi_funky002 14 0template gbdirt002 5 0template junglecanyon001 11 
++0template junglecanyon003 12 0template jupi_bark001 3 
++0template junglecanyon001 12 0template jupi_bark002 7 0template building2 11 
++0template building2 2 0template junglecanyon003 13 
++0template jupi_bark002 14 0template building2 5 0template junglecanyon002 11 
++0template building2 10 0template junglecanyon002 13 0template pumus001 7 
++0template gbdirt001 10 0template junglecanyon002 13 0template pumus003 7 
++0template pumus003 10 0template Gdt001 13 0template gbdirt002 7 
++0template junglecanyon001 14 0template gbdirt002 5 0template marslava001 11 
++0template jupi_bark002 8 0template jupi_funky002 7 
++0template junglecanyon003 10 0template building2 5 
++0template 19bush001 12 0template turf004 7 0template junglecanyon002 11 
++0template jupi_bark001 14 0template jupi_funky002 13 0template junglecanyon002 3 
++0template groundstruct3 12 0template Gdt001 3 
++0template groundstruct3 8 0template Gdt001 7 
++0template groundstruct3 14 0template pumus003 5 0template gbdirt001 11 
++0template gbdirt001 2 0template groundstruct3 13 
++0template 2gbdirt001 14 0template castle3 5 0template junglecanyon003 11 
++0template junglecanyon002 14 0template Gdt001 1 
++0template Gdt001 12 0template gbdirt002 7 0template gbdirt_grassy001 11 
++0template gbdirt001 10 0template Gdt001 13 0template gbdirt_grassy001 7 
++0template Gdt001 14 0template castle1 1 
++0template Gdt001 12 0template castle1 3 
++0template castle1 2 0template Gdt001 13 
++0template building2 10 0template pumus002 13 0template Gdt001 7 
++0template gbdirt002 4 0template turf003 11 
++0template gbdirt002 8 0template turf001 7 
++0template pumus001 14 0template castle3 5 0template junglecanyon001 11 
++0template Gdt001 4 0template 2gbdirt002 11 
++0template Gdt001 12 0template 2gbdirt001 3 
++0template Gdt001 8 0template 2gbdirt001 7 
++0template building2 14 0template Gdt001 1 
++0template building2 8 0template Gdt001 7 
+w2rt_jetsides
+w2rt_topflt
+w2rt_topbrgt
++0template castle1 12 0template 2gbdirt002 3 
++0template castle1 12 0template 2gbdirt001 7 0template junglecanyon002 11 
++0template castle1 12 0template junglecanyon001 3 
++0template castle1 12 0template junglecanyon002 7 0template 2gbdirt002 11 
++0template castle3 14 0template castle1 13 0template 2gbdirt001 3 
++0template castle3 12 0template 2gbdirt001 3 
+blue/bluet
++0template building2 14 0template rockwall001 13 0template 5granite001 3 
++0template building2 12 0template 5granite001 7 0template Gdt001 11 
++0template junglecanyon002 14 0template building2 13 0template Gdt001 3 
++0template 2gbdirt001 10 0template Gdt001 5 
+2gbdirt002
++0template Gdt001 10 0template 2gbdirt002 5 
++0template building2 14 0template Gdt001 5 0template pumus004 11 
+w2rt_barrel
++0template 2gbdirt002 14 0template Gdt001 1 
++0template 2gbdirt001 12 0template Gdt001 3 
++0template Gdt001 2 0template 2gbdirt002 13 
++0template Gdt001 4 0template junglecanyon002 11 
++0template Gdt001 10 0template groundstruct3 5 
++0template groundstruct3 10 0template Gdt001 5 
+p2sidetwangerR
+groundstruct14a
++0template Gdt001 14 0template groundstruct34 1 
++0template Gdt001 12 0template groundstruct30 3 
++0template groundstruct34 2 0template Gdt001 13 
++0template pumus004 10 0template gbdirt001 13 0template gbdirt_grassy001 7 
++0template junglecanyon002 12 0template 19bush001 7 0template turf003 11 
++0template pumus001 10 0template gbdirt_grassy001 5 
++0template pumus001 14 0template gbdirt_grassy001 13 0template gbdirt001 3 
++0template Gdt001 8 0template 6martian001 7 
++0template gbdirt001 14 0template pumus002 5 0template Gdt001 11 
++0template Gdt001 10 0template 6martian001 5 
++0template junglecanyon003 10 0template pumus001 13 0template 5granite001 7 
++0template 6martian001 14 0template Gdt001 1 
++0template Gdt001 2 0template 6martian001 13 
++0template junglecanyon002 14 0template 5granite002 5 0template pumus003 11 
++0template Gdt001 14 0template pumus004 5 0template gbdirt002 11 
++0template pumus002 4 0template gbdirt001 11 
++0template pumus003 12 0template gbdirt001 3 
++0template pumus002 12 0template gbdirt002 7 0template junglecanyon001 11 
++0template 5granite002 8 0template Gdt001 7 
++0template pumus003 10 0template junglecanyon003 13 0template gbdirt001 7 
+w2rt_backpart
+w2rt_botpieces
+w2blu_wingtopback
++0template Gdt001 2 0template 5granite001 13 
++0template pumus002 14 0template 5granite002 13 0template gbdirt001 11 0template Gdt001 7 
+w2rt_botback
+w2rt_topback
++0template Gdt001 4 0template 5granite001 11 
++0template gbdirt002 12 0template Gdt001 7 0template gbdirt_grassy001 11 
+w2blu_topmid
++0template 5granite001 14 0template Gdt001 1 
++0template gbdirt_grassy001 14 0template Gdt001 1 
++0template gbdirt001 10 0template gbdirt_grassy001 13 0template Gdt001 7 
+ml2
+ml5
+groundstruct39
+w2blu_backside
++0template 5granite001 14 0template Gdt001 13 0template 4rough.001 11 0template gbdirt001 7 
++0template 5granite002 12 0template 4rough.001 3 
++0template Gdt001 14 0template 5granite001 13 0template junglecanyon001 11 0template 4rough.001 7 
++0template Gdt001 12 0template junglecanyon001 7 0template gbdirt001 11 
+w2blu_barrel
+4rough.001
++0template junglecanyon001 14 0template 4rough.001 5 0template gbdirt002 11 
++0template Gdt001 12 0template junglecanyon002 7 0template Gmd001 11 
++0template gbdirt001 10 0template 4rough.001 5 
++0template 6martian001 12 0template easterhead2 3 
+Msentry2
+Msentry7_fntop
++0template 4rough.001 10 0template gbdirt002 5 
++0template gbdirt002 14 0template Gdt001 5 0template gbdirt_grassy001 11 
++0template 5granite002 12 0template Gmd001 3 
+Msentry6_bktop
++0template 4rough.001 14 0template gbdirt002 1 
++0template 4rough.001 12 0template gbdirt002 3 
++0template gbdirt001 6 0template 4rough.001 13 0template gbdirt_grassy001 11 
++0template gbdirt_grassy001 14 0template Gdt001 13 0template gbdirt001 3 
++0template gbdirt002 4 0template Gmd001 11 
++0template Gmd001 2 0template junglecanyon003 13 
+mlaunch3
+w2blu_exhast
++0template gbdirt001 2 0template Gmd001 13 
++0template Gmd001 14 0template gbdirt002 1 
++0template gbdirt002 12 0template junglecanyon002 7 0template Gmd001 11 
++0template gbdirt002 12 0template Gmd001 3 
++0template gbdirt001 12 0template Gmd001 7 0template junglecanyon001 11 
++0template gbdirt002 8 0template Gmd001 7 
++0template 5granite001 4 0template groundstruct30 11 
++0template junglecanyon002 12 0template groundstruct30 3 
++0template 5granite002 8 0template groundstruct30 7 
++0template pumus004 4 0template groundstruct30 11 
+bluestar011
++0template Gmd001 14 0template junglecanyon003 13 0template Gdt001 3 
++0template Gmd001 12 0template Gdt001 7 0template junglecanyon002 11 
++0template Gdt001 14 0template gbdirt002 5 0template gbdirt_grassy001 11 
++0template Gdt001 8 0template gbdirt_grassy001 7 
++0template Gmd001 12 0template bridge2 7 0template Gdt001 11 
++0template Gdt001 2 0template Gmd001 13 
++0template 5granite001 14 0template groundstruct30 1 
++0template pumus004 8 0template groundstruct30 7 
++0template groundstruct30 10 0template pumus001 5 
++0template pumus001 10 0template groundstruct30 5 
++0template groundstruct30 12 0template Gmd001 7 0template 5granite001 11 
++0template pumus002 2 0template groundstruct30 13 
++0template Gmd001 14 0template 5granite002 1 
++0template gbdirt002 6 0template gbdirt_grassy001 13 0template junglecanyon003 11 
++0template pumus003 4 0template Gmd001 11 
++0template groundstruct30 10 0template 5granite001 13 0template Gmd001 7 
++0template junglecanyon002 14 0template Gmd001 1 
++0template 5granite002 4 0template Gmd001 11 
++0template Gmd001 2 0template groundmetal002 13 
++0template groundstruct30 14 0template Gmd001 1 
++0template groundrunway002 14 0template groundstruct30 13 0template Gmd001 3 
++0template Gmd001 10 0template Gdt001 5 
++0template bridge2 14 0template Gmd001 5 0template Gdt001 11 
++0template bridge2 12 0template Gdt001 3 
++0template Gmd001 12 0template Gdt001 7 0template 5granite001 11 
++0template Gmd001 8 0template 5granite001 7 
++0template Gdt001 10 0template Gmd001 13 0template 5granite001 7 
+rockwall005
++0template Gmd001 12 0template Gdt001 3 
++0template Gmd001 8 0template Gdt001 7 
++0template Gmd001 4 0template Gdt001 11 
++0template Gmd001 12 0template Gdt001 7 0template groundmetal002 11 
++0template Gmd001 12 0template groundmetal002 3 
++0template Gdt001 10 0template Gmd001 13 0template groundmetal001 7 
++0template bridge2 10 0template Gdt001 5 
++0template Gmd001 14 0template Gdt001 5 0template groundmetal001 11 
++0template groundstruct30 12 0template Gdt001 3 
++0template groundrunway002 4 0template 19bush001 11 
++0template groundrunway001 12 0template 19bush001 3 
++0template Gmd001 12 0template 19bush001 3 
++0template 19bush001 10 0template groundrunway002 5 
++0template 19bush001 10 0template junglecanyon002 5 
++0template 19bush001 14 0template groundrunway002 1 
++0template 19bush001 12 0template junglecanyon003 7 0template turf002 11 
++0template junglecanyon003 14 0template 19bush001 13 0template turf004 3 
++0template 19bush001 14 0template junglecanyon001 13 0template turf002 3 

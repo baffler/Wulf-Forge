@@ -1,7 +1,11 @@
 # core/entity_manager.py
 from typing import Dict, List, Optional
 from core.entity import GameEntity, UpdateMask
-from network.packets.update_array import UpdateArrayPacket
+from network.packets.update_array import (
+    UpdateArrayPacket,
+    get_entity_update_bit_length,
+    get_update_array_header_bit_length,
+)
 from network.packets.gameplay import DeleteObjectPacket
 
 STATIC_ANCHOR_MASK = (
@@ -11,6 +15,11 @@ STATIC_ANCHOR_MASK = (
     | UpdateMask.SPIN
     | UpdateMask.HARD_SYNC
 )
+
+# Keep update datagrams below a conservative UDP payload ceiling. This avoids
+# IP fragmentation while leaving room for VPN/tunnel overhead.
+MAX_UPDATE_PACKET_BYTES = 1200
+MAX_UPDATE_ENTITIES = 255
 
 class EntityManager:
     def __init__(self):
@@ -65,57 +74,162 @@ class EntityManager:
 
     # --- PACKET GENERATION ---
 
-    def build_update_packet(self, entities: List[GameEntity], sequence_num: int, 
-                           is_view_update: bool, 
-                           local_stats: tuple[float, float] | None = None) -> Optional[bytes]:
-        """
-        Constructs the payload for an UpdateArrayPacket.
-        Crucially, this does NOT clear dirty flags, allowing you to reuse 
-        the dirty state for multiple clients.
-        """
-        # If no entities changed and we aren't forcing local stats (like a heartbeat), return None
-        if not entities and not local_stats:
-            return None
-
+    def _serialize_update_entries(
+        self,
+        entries: list[tuple[GameEntity, bool, int | None]],
+        sequence_num: int,
+        is_view_update: bool,
+        local_stats: tuple[float, float] | None,
+    ) -> bytes:
         packet = UpdateArrayPacket(sequence_id=sequence_num, is_view_update=is_view_update)
-        
-        # 1. Set Local Stats (Health/Energy) - Only used for 0x0F (View)
-        if local_stats:
+        if local_stats is not None:
             packet.set_local_stats(health=local_stats[0], energy=local_stats[1])
-            
-        # 2. Add Entities
-        for entity in entities:
-             # If the DEFINITION bit is set, we must tell the packet to write the full spawn info
-             force_spawn = bool(entity.pending_mask & UpdateMask.DEFINITION)
-             packet.add_entity(entity, force_spawn=force_spawn)
 
-        return packet.get_bytes()
+        for entity, force_spawn, forced_mask in entries:
+            packet.add_entity(
+                entity,
+                force_spawn=force_spawn,
+                forced_mask=forced_mask,
+            )
 
-    def build_static_anchor_packet(
+        opcode = b'\x0F' if is_view_update else b'\x0E'
+        return opcode + packet.get_bytes()
+
+    def _build_batched_update_packets(
+        self,
+        entries: list[tuple[GameEntity, bool, int | None]],
+        sequence_num: int,
+        is_view_update: bool,
+        local_stats: tuple[float, float] | None,
+        max_packet_bytes: int = MAX_UPDATE_PACKET_BYTES,
+    ) -> List[bytes]:
+        """Greedily pack complete entity records into MTU-safe update arrays."""
+        if max_packet_bytes < 1:
+            raise ValueError("max_packet_bytes must be at least 1")
+
+        if not entries:
+            if local_stats is None:
+                return []
+            payload = self._serialize_update_entries(
+                [], sequence_num, is_view_update, local_stats
+            )
+            if len(payload) > max_packet_bytes:
+                raise ValueError("update-array header exceeds max_packet_bytes")
+            return [payload]
+
+        payloads: List[bytes] = []
+        current_entries: list[tuple[GameEntity, bool, int | None]] = []
+        header_bits = get_update_array_header_bit_length(
+            is_view_update,
+            local_stats,
+        )
+        current_bits = header_bits
+
+        def serialize_checked(
+            batch: list[tuple[GameEntity, bool, int | None]],
+        ) -> bytes:
+            payload = self._serialize_update_entries(
+                batch,
+                sequence_num,
+                is_view_update,
+                local_stats,
+            )
+            if len(payload) > max_packet_bytes:
+                raise AssertionError(
+                    "measured update batch exceeded max_packet_bytes after encoding"
+                )
+            return payload
+
+        for entry in entries:
+            entry_bits = get_entity_update_bit_length(
+                entry[0],
+                force_spawn=entry[1],
+                forced_mask=entry[2],
+            )
+            candidate_count = len(current_entries) + 1
+            candidate_bytes = 1 + ((current_bits + entry_bits + 7) // 8)
+            exceeds_count = candidate_count > MAX_UPDATE_ENTITIES
+            exceeds_bytes = candidate_bytes > max_packet_bytes
+
+            if not current_entries and exceeds_bytes:
+                raise ValueError(
+                    f"entity {entry[0].net_id} update exceeds max_packet_bytes"
+                )
+
+            if current_entries and (exceeds_count or exceeds_bytes):
+                payloads.append(serialize_checked(current_entries))
+                current_entries = [entry]
+                current_bits = header_bits + entry_bits
+                single_entry_bytes = 1 + ((current_bits + 7) // 8)
+                if single_entry_bytes > max_packet_bytes:
+                    raise ValueError(
+                        f"entity {entry[0].net_id} update exceeds max_packet_bytes"
+                    )
+            else:
+                current_entries.append(entry)
+                current_bits += entry_bits
+
+        if current_entries:
+            payloads.append(serialize_checked(current_entries))
+
+        return payloads
+
+    def build_update_packets(
+        self,
+        entities: List[GameEntity],
+        sequence_num: int,
+        is_view_update: bool,
+        local_stats: tuple[float, float] | None = None,
+        max_packet_bytes: int = MAX_UPDATE_PACKET_BYTES,
+    ) -> List[bytes]:
+        """
+        Constructs one or more complete UpdateArray packets without clearing
+        dirty flags, allowing the same state to be reused for every client.
+        """
+        entries = [
+            (entity, bool(entity.pending_mask & UpdateMask.DEFINITION), None)
+            for entity in entities
+        ]
+        return self._build_batched_update_packets(
+            entries,
+            sequence_num,
+            is_view_update,
+            local_stats,
+            max_packet_bytes,
+        )
+
+    def build_static_anchor_packets(
         self,
         sequence_num: int,
         local_stats: tuple[float, float] | None = None,
-    ) -> Optional[bytes]:
+        max_packet_bytes: int = MAX_UPDATE_PACKET_BYTES,
+    ) -> List[bytes]:
         """
         Reasserts unmanned map objects so client-side collision impulses do not
-        make static base props drift away locally.
+        make static base props drift away locally.  The updates are split into
+        MTU-safe datagrams so the correction is not lost to IP fragmentation.
         """
         static_entities = [e for e in self._entities.values() if not e.is_manned]
         if not static_entities:
-            return None
-
-        packet = UpdateArrayPacket(sequence_id=sequence_num, is_view_update=False)
-        if local_stats is not None:
-            packet.set_local_stats(health=local_stats[0], energy=local_stats[1])
+            return []
 
         for entity in static_entities:
             entity.vel = (0.0, 0.0, 0.0)
             entity.spin = (0.0, 0.0, 0.0)
-            packet.add_entity(entity, force_spawn=False, forced_mask=STATIC_ANCHOR_MASK)
 
-        return b'\x0E' + packet.get_bytes()
+        entries = [
+            (entity, False, int(STATIC_ANCHOR_MASK))
+            for entity in static_entities
+        ]
+        return self._build_batched_update_packets(
+            entries,
+            sequence_num,
+            False,
+            local_stats,
+            max_packet_bytes,
+        )
 
-    def build_forced_update_packet(
+    def build_forced_update_packets(
         self,
         entities: List[GameEntity],
         sequence_num: int,
@@ -123,50 +237,56 @@ class EntityManager:
         forced_mask: int,
         local_stats: tuple[float, float] | None = None,
         force_spawn: bool = True,
-    ) -> Optional[bytes]:
+        max_packet_bytes: int = MAX_UPDATE_PACKET_BYTES,
+    ) -> List[bytes]:
         """
         Constructs an UpdateArray payload with an explicit mask instead of each
         entity's pending dirty state. This is useful for join-in-progress catch-up
         snapshots where the target client missed an earlier DEFINITION update.
         """
-        if not entities and not local_stats:
-            return None
+        entries = [(entity, force_spawn, forced_mask) for entity in entities]
+        return self._build_batched_update_packets(
+            entries,
+            sequence_num,
+            is_view_update,
+            local_stats,
+            max_packet_bytes,
+        )
 
-        packet = UpdateArrayPacket(sequence_id=sequence_num, is_view_update=is_view_update)
-        if local_stats:
-            packet.set_local_stats(health=local_stats[0], energy=local_stats[1])
-
-        for entity in entities:
-            packet.add_entity(entity, force_spawn=force_spawn, forced_mask=forced_mask)
-
-        return packet.get_bytes()
-
-    def get_snapshot_packet(self, sequence_num: int, health: float = 1.0, energy: float = 1.0) -> bytes:
+    def get_snapshot_packets(
+        self,
+        sequence_num: int,
+        health: float = 1.0,
+        energy: float = 1.0,
+        max_packet_bytes: int = MAX_UPDATE_PACKET_BYTES,
+    ) -> List[bytes]:
         """
-        Returns a packet containing the FULL state of the world + Local Stats.
+        Returns packets containing the FULL state of the world + Local Stats.
         THREAD-SAFE: Does not modify entity state.
         """
-        packet = UpdateArrayPacket(sequence_id=sequence_num, is_view_update=True)
-
-        # Tell the client it is alive
-        packet.set_local_stats(health=health, energy=energy)
-
         # Define the mask we want for a full snapshot (Pos + Health + Def)
         snapshot_mask = UpdateMask.POS | UpdateMask.HEALTH | UpdateMask.DEFINITION
-        
-        for entity in self._entities.values():
-            # Pass the mask explicitly. Do NOT touch entity.pending_mask.
-            packet.add_entity(
-                entity, 
-                force_spawn=True, 
-                forced_mask=snapshot_mask
-            )
+        entries = [
+            (entity, True, int(snapshot_mask))
+            for entity in self._entities.values()
+        ]
+        return self._build_batched_update_packets(
+            entries,
+            sequence_num,
+            True,
+            (health, energy),
+            max_packet_bytes,
+        )
 
-        return b'\x0F' + packet.get_bytes()
-
-    def get_dirty_packet(self, sequence_num: int, health: float = 1.0, energy: float = 1.0) -> Optional[bytes]:
+    def get_dirty_packets(
+        self,
+        sequence_num: int,
+        health: float = 1.0,
+        energy: float = 1.0,
+        max_packet_bytes: int = MAX_UPDATE_PACKET_BYTES,
+    ) -> List[bytes]:
         """
-        Returns a packet containing ONLY changed entities.
+        Returns packets containing ONLY changed entities.
         Used in the main 10Hz update loop.
         Automatically clears the dirty flags of processed entities.
         """
@@ -176,26 +296,32 @@ class EntityManager:
         # to keep the health bar synced, but usually we only send if entities move.
         # For now, let's only send if there are entity updates OR if we want to force a heartbeat.
         if not dirty_entities:
-            return None
+            return []
 
-        packet = UpdateArrayPacket(sequence_id=sequence_num, is_view_update=False)
-        packet.set_local_stats(health=health, energy=energy)
-        
-        for entity in dirty_entities:
-            packet.add_entity(entity, force_spawn=False)
-
-        payload = packet.get_bytes()
+        payloads = self.build_update_packets(
+            dirty_entities,
+            sequence_num,
+            False,
+            (health, energy),
+            max_packet_bytes,
+        )
 
         # Need to clear_dirty AFTER we call packet.get_bytes()!
         for entity in dirty_entities:
             # Reset flags so we don't send it again until it changes
             entity.clear_dirty()
 
-        return b'\x0E' + payload
+        return payloads
     
-    def get_dirty_packet_view(self, sequence_num: int, health: float = 1.0, energy: float = 1.0) -> Optional[bytes]:
+    def get_dirty_packets_view(
+        self,
+        sequence_num: int,
+        health: float = 1.0,
+        energy: float = 1.0,
+        max_packet_bytes: int = MAX_UPDATE_PACKET_BYTES,
+    ) -> List[bytes]:
         """
-        Returns a packet containing ONLY changed entities.
+        Returns packets containing ONLY changed entities.
         Used in the main update loop.
         Automatically clears the dirty flags of processed entities.
         """
@@ -205,19 +331,19 @@ class EntityManager:
         # to keep the health bar synced, but usually we only send if entities move.
         # For now, let's only send if there are entity updates OR if we want to force a heartbeat.
         if not dirty_entities:
-            return None
+            return []
 
-        packet = UpdateArrayPacket(sequence_id=sequence_num, is_view_update=True)
-        packet.set_local_stats(health=health, energy=energy)
-        
-        for entity in dirty_entities:
-            packet.add_entity(entity, force_spawn=False)
-
-        payload = packet.get_bytes()
+        payloads = self.build_update_packets(
+            dirty_entities,
+            sequence_num,
+            True,
+            (health, energy),
+            max_packet_bytes,
+        )
 
         # Need to clear_dirty AFTER we call packet.get_bytes()!
         for entity in dirty_entities:
             # Reset flags so we don't send it again until it changes
             entity.clear_dirty()
 
-        return b'\x0F' + payload
+        return payloads

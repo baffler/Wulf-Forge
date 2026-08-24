@@ -1,0 +1,210 @@
+4sand001
+4sand004
+4sand002
+4sand003
++0template 4sand002 4 0template gbdirt001 11 
++0template 4sand003 12 0template gbdirt002 3 
++0template 4sand002 8 0template gbdirt002 7 
++0template gbdirt002 10 0template 4sand004 5 
+gbdirt002
+gbdirt001
++0template 4sand002 10 0template gbdirt002 5 
+greekcolumn
+greekwall1
++0template gbdirt002 4 0template crusty004 11 
++0template gbdirt001 12 0template crusty004 3 
+groundstruct30
+ULgreekwall001
+romanfloor001
+bluestar026
+romanfloor002
+bluestar023
++0template gbdirt001 12 0template crusty001 7 0template plaid001 11 
++0template gbdirt001 8 0template plaid001 7 
++0template crusty003 10 0template gbdirt001 5 
+crusty004
+UC1greekwall
+UDgreekwall001
+UC3greekwall
++0template plaid001 14 0template crusty001 1 
++0template gbdirt001 10 0template plaid003 13 0template crusty002 7 
+crusty003
+greekfloor
+crusty001
++0template gbdirt001 10 0template crusty004 5 
+crusty002
+UC4greekwall
+UC2greekwall
++0template crusty003 4 0template plaid001 11 
++0template gbdirt002 10 0template crusty001 13 0template plaid003 7 
++0template greekcolumn 4 0template plaid002 11 
++0template greekwall1 12 0template plaid003 3 
++0template greekcolumn 8 0template plaid001 7 
++0template plaid002 10 0template crusty004 5 
++0template gbdirt001 10 0template plaid003 5 
++0template plaid003 2 0template greekwall1 13 
+plaid002
++0template 4sand003 12 0template crusty001 3 
++0template 4sand001 12 0template crusty002 7 0template plaid002 11 
++0template 4sand004 12 0template plaid003 3 
++0template greekwall1 8 0template plaid002 7 
+plaid003
++0template greekwall1 4 0template plaid003 11 
++0template crusty001 12 0template plaid002 3 
++0template plaid002 2 0template crusty002 13 
+plaid001
++0template crusty002 14 0template plaid001 5 0template 1french004 11 
++0template 4sand001 14 0template crusty003 9 0template 1french001 7 
++0template 4sand001 4 0template crusty001 11 
++0template 4sand003 12 0template plaid001 7 0template crusty003 11 
++0template 4sand004 8 0template crusty004 7 
++0template 4sand001 4 0template 1french003 11 
++0template crusty001 10 0template 4sand003 13 0template 1french004 7 
++0template plaid003 14 0template crusty001 5 0template 1french003 11 
++0template plaid003 12 0template 1french004 7 0template crusty001 11 
++0template plaid001 12 0template crusty002 3 
++0template crusty003 14 0template gbdirt001 5 0template plaid002 11 
++0template crusty001 8 0template plaid002 7 
++0template 4sand004 14 0template crusty003 5 0template 1french003 11 
++0template 4sand003 12 0template 1french001 7 0template plaid003 11 
++0template plaid003 2 0template 4sand001 13 
++0template plaid001 4 0template crusty001 11 
++0template plaid003 12 0template crusty002 7 0template 1french001 11 
++0template 1french002 2 0template plaid003 13 
++0template crusty003 14 0template 1french003 1 
++0template crusty004 14 0template 4sand001 13 0template 1french003 3 
++0template plaid003 14 0template crusty003 13 0template 1french003 3 
++0template crusty004 10 0template plaid001 13 0template 1french001 7 
++0template 4sand003 10 0template crusty001 5 
++0template 1french002 2 0template 4sand003 13 
++0template 1french002 6 0template crusty003 9 
++0template crusty002 2 0template 1french001 13 
++0template plaid003 14 0template gbdirt002 5 0template crusty001 11 
++0template crusty001 6 0template plaid001 13 0template 1french002 11 
++0template plaid001 10 0template 1french001 13 0template crusty003 7 
++0template crusty004 10 0template plaid001 5 
++0template crusty003 12 0template plaid001 7 0template 1french004 11 
++0template plaid003 8 0template 1french001 7 
++0template plaid001 4 0template 1french001 11 
++0template crusty004 14 0template plaid002 13 0template 1french001 3 
++0template 1french001 2 0template crusty002 13 
+1french003
+1french001
++0template greekfloor 14 0template 1french002 1 
++0template greekfloor 12 0template 1french004 7 0template crusty002 11 
++0template 1french002 14 0template greekfloor 13 0template crusty003 3 
++0template 1french004 12 0template crusty004 3 
++0template 1french004 12 0template crusty003 7 0template plaid001 11 
++0template crusty002 10 0template 1french002 13 0template plaid001 7 
++0template 4sand003 12 0template 1french002 7 0template crusty002 11 
++0template 1french004 10 0template 4sand001 13 0template crusty002 7 
++0template 1french004 4 0template 2plaid002 11 
++0template 1french001 12 0template 2plaid002 7 0template plaid002 11 
++0template crusty002 14 0template 1french002 13 0template plaid003 3 
++0template crusty004 12 0template 1french004 3 
++0template crusty003 12 0template 1french001 7 0template plaid003 11 
++0template crusty001 8 0template 1french002 7 
++0template plaid002 6 0template crusty001 9 
++0template crusty002 4 0template 1french004 11 
++0template crusty002 6 0template 1french002 9 
++0template plaid002 10 0template crusty001 13 0template 1french001 7 
++0template 1french004 4 0template plaid001 11 
++0template plaid002 6 0template 1french004 9 
++0template 1french003 12 0template plaid001 3 
++0template 1french004 8 0template plaid003 7 
+1french002
++0template crusty001 10 0template 1french004 5 
++0template 1french002 6 0template crusty001 13 0template plaid003 11 
++0template 1french004 14 0template crusty002 13 0template plaid002 3 
++0template 2plaid002 14 0template 1french004 9 0template plaid003 7 
++0template plaid002 14 0template 2plaid002 13 0template 2french002 11 0template 1french004 7 
++0template plaid002 12 0template 2french003 3 
++0template 1french002 14 0template plaid002 9 0template 2french003 7 
++0template plaid002 6 0template 1french002 13 0template crusty001 11 
++0template plaid001 8 0template crusty003 7 
++0template 1french001 14 0template plaid001 5 0template crusty004 11 
++0template crusty002 2 0template plaid002 13 
++0template 1french003 14 0template crusty001 9 0template plaid003 7 
++0template 1french004 14 0template crusty001 1 
++0template plaid002 14 0template 1french002 13 0template crusty003 3 
++0template crusty004 6 0template plaid001 9 
++0template 1french004 10 0template crusty002 13 0template plaid002 7 
++0template 1french003 4 0template crusty001 11 
++0template 1french002 14 0template plaid001 13 0template crusty002 3 
++0template 1french004 10 0template plaid002 5 
++0template crusty003 4 0template 4sand001 11 
++0template crusty002 12 0template 4sand002 3 
++0template plaid003 14 0template crusty002 13 0template 4sand002 3 
++0template 1french003 14 0template plaid001 13 0template 4sand002 3 
++0template plaid002 14 0template 1french003 13 0template 4sand002 3 
++0template plaid001 12 0template 4sand004 3 
++0template plaid003 12 0template 4sand001 7 0template 1french002 11 
++0template 1french003 6 0template plaid003 9 
++0template 2french001 14 0template 1french001 13 0template plaid003 3 
++0template 2french002 12 0template plaid003 3 
++0template plaid003 2 0template 2french002 13 
++0template plaid001 14 0template crusty004 9 0template 1french003 7 
++0template plaid001 14 0template gbdirt001 5 0template 4sand003 11 
++0template crusty003 14 0template plaid001 13 0template 4sand002 3 
++0template crusty001 14 0template 1french004 13 0template 4sand003 3 
++0template crusty003 8 0template 4sand004 7 
++0template 1french002 14 0template 4sand001 5 0template crusty004 11 
++0template gbdirt002 8 0template UDgreekwall001 7 
++0template gbdirt002 10 0template UDgreekwall001 5 
++0template UDgreekwall001 14 0template greekfloor 1 
++0template UDgreekwall001 12 0template greekfloor 3 
++0template gbdirt001 2 0template UDgreekwall001 13 
++0template UC1greekwall 8 0template plaid002 7 
++0template crusty004 8 0template gbdirt002 7 
++0template 1french003 10 0template crusty002 5 
+1french004
++0template 4sand001 14 0template crusty004 1 
++0template crusty002 2 0template 4sand003 13 
++0template 4sand003 2 0template crusty001 13 
++0template crusty001 14 0template 4sand004 1 
++0template crusty004 14 0template gbdirt002 5 0template 4sand003 11 
++0template crusty004 10 0template 4sand003 5 
++0template gbdirt002 10 0template crusty004 13 0template 4sand004 7 
++0template mural3 2 0template 4sand004 13 
+mural2
+mural3
+Bdt001
+wall2
++0template mural3 10 0template gbdirt001 5 
++0template 4sand004 14 0template mural3 1 
+sand
++0template gbdirt002 10 0template mural3 5 
++0template Bdt001 12 0template wall2 3 
++0template mural2 8 0template wall2 7 
++0template mural3 10 0template wall2 5 
++0template sand 10 0template gbdirt001 5 
++0template gbdirt001 10 0template sand 5 
+toproof
+archway
++0template sand 10 0template 4sand001 5 
++0template 4sand004 10 0template sand 5 
++0template 4sand003 14 0template sand 1 
++0template 4sand003 8 0template sand 7 
++0template 4sand001 4 0template sand 11 
++0template sand 2 0template 4sand001 13 
++0template sand 14 0template 4sand003 1 
++0template sand 8 0template 4sand002 7 
++0template sand 4 0template 4sand001 11 
++0template 4sand003 2 0template sand 13 
++0template 4sand001 2 0template gbdirt002 13 
++0template wall2 8 0template sand 7 
++0template 4sand002 12 0template wall2 3 
++0template wall2 12 0template gbdirt001 3 
+bluestar032
++0template sand 8 0template gbdirt002 7 
++0template sand 4 0template gbdirt002 11 
+bluestar030
++0template gbdirt002 2 0template 4sand002 13 
++0template 4sand001 14 0template gbdirt001 1 
++0template wall2 10 0template gbdirt001 5 
++0template gbdirt001 10 0template wall2 5 
++0template wall2 14 0template gbdirt002 1 
++0template gbdirt002 14 0template 4sand002 1 
++0template gbdirt002 8 0template 4sand003 7 
++0template gbdirt002 2 0template wall2 13 
++0template gbdirt002 12 0template 4sand002 3 

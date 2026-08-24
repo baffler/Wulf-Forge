@@ -166,20 +166,18 @@ class BehaviorPacket(Packet):
         # SECTION 4: GENERIC VEHICLE BEHAVIOR (2 records * 36 bytes = 72 bytes)
         # ----------------------------------------------------------------------
         # Wire order: Tank (type 0), Medic / Scout (type 1)
-        vp = cfg.vehicle_physics
-        for _ in range(cfg.vehicle_physics_count):
-            pkt.write_fixed1616(vp.speed)                 # dBangMinVelocity
-            pkt.write_fixed1616(vp.accel)                 # dScrapeMinVelocity
-
-            pkt.write_int32(vp.engine_torque)             # nBangInterval (ms)
-            pkt.write_int32(vp.suspension_stiffness)      # nScrapeInterval (ms)
-
-            pkt.write_fixed1616(vp.ground_friction)       # dStartingJetStrength
-            pkt.write_fixed1616(vp.turn_rate)             # dMinimumJetStrength
-            pkt.write_fixed1616(vp.suspension_dampening)  # dJetResponseCoefficient
-
-            pkt.write_int32(vp.unknown_int_30)            # nMaxWeaponWeight
-            pkt.write_int32(vp.mass)                      # nMaxFuel
+        vehicle_profiles = (cfg.vehicle_physics, cfg.scout_vehicle_physics)
+        for profile_index in range(cfg.vehicle_physics_count):
+            vp = vehicle_profiles[min(profile_index, len(vehicle_profiles) - 1)]
+            pkt.write_fixed1616(vp.bang_min_velocity)
+            pkt.write_fixed1616(vp.scrape_min_velocity)
+            pkt.write_int32(vp.bang_interval_ms)
+            pkt.write_int32(vp.scrape_interval_ms)
+            pkt.write_fixed1616(vp.starting_jet_strength)
+            pkt.write_fixed1616(vp.minimum_jet_strength)
+            pkt.write_fixed1616(vp.jet_response_coefficient)
+            pkt.write_int32(vp.max_weapon_weight)
+            pkt.write_int32(vp.max_fuel)
 
         # ----------------------------------------------------------------------
         # SECTION 5: TEAM-SPECIFIC VEHICLE JET SHAPES (4 blocks = 480 bytes)
@@ -195,30 +193,31 @@ class BehaviorPacket(Packet):
         # SECTION 6: CONCRETE VEHICLE MODEL TAIL (108 bytes total)
         # ----------------------------------------------------------------------
         # Registry order: Tank (7 fields), Medic/Scout (9 fields), Bomber (11 fields)
-        av = cfg.active_vehicle_physics
+        tank = cfg.active_vehicle_physics
+        medic = cfg.medic_vehicle_physics
 
         for i in range(cfg.active_vehicles_count):
             if i == 0:
                 # TANK (7 fixed-point values = 28 bytes)
-                pkt.write_fixed1616(av.turn_adjust)
-                pkt.write_fixed1616(av.move_adjust)
-                pkt.write_fixed1616(av.strafe_adjust)
-                pkt.write_fixed1616(av.max_velocity)
-                pkt.write_fixed1616(av.low_fuel_level)
-                pkt.write_fixed1616(av.max_altitude)
-                pkt.write_fixed1616(av.gravity_pct)
+                pkt.write_fixed1616(tank.turn_adjust)
+                pkt.write_fixed1616(tank.move_adjust)
+                pkt.write_fixed1616(tank.strafe_adjust)
+                pkt.write_fixed1616(tank.max_velocity)
+                pkt.write_fixed1616(tank.low_fuel_level)
+                pkt.write_fixed1616(tank.tank_hover_height)
+                pkt.write_fixed1616(tank.gravity_pct)
 
             elif i == 1:
                 # SCOUT / MEDIC (9 fixed-point values = 36 bytes)
-                pkt.write_fixed1616(av.turn_adjust)
-                pkt.write_fixed1616(av.move_adjust)      # forward_move_adjust
-                pkt.write_fixed1616(38.0)                # backward_move_adjust
-                pkt.write_fixed1616(72.0)                # strafe_adjust
-                pkt.write_fixed1616(85.0)                # max_velocity
-                pkt.write_fixed1616(av.low_fuel_level)
-                pkt.write_fixed1616(4.9)                 # max_altitude
-                pkt.write_fixed1616(3.5)                 # max_speed_height_pickup
-                pkt.write_fixed1616(av.gravity_pct)
+                pkt.write_fixed1616(medic.turn_adjust)
+                pkt.write_fixed1616(medic.move_forward_adjust)
+                pkt.write_fixed1616(medic.move_backward_adjust)
+                pkt.write_fixed1616(medic.strafe_adjust)
+                pkt.write_fixed1616(medic.max_velocity)
+                pkt.write_fixed1616(medic.low_fuel_level)
+                pkt.write_fixed1616(medic.max_altitude)
+                pkt.write_fixed1616(medic.max_speed_height_pickup)
+                pkt.write_fixed1616(medic.gravity_pct)
 
             elif i == 2:
                 # BOMBER (11 fixed-point values = 44 bytes)
@@ -232,7 +231,7 @@ class BehaviorPacket(Packet):
                 pkt.write_fixed1616(340.0)               # turn_zero
                 pkt.write_fixed1616(1000.0)              # very_high
                 pkt.write_fixed1616(1800.0)              # ceiling
-                pkt.write_fixed1616(av.low_fuel_level)
+                pkt.write_fixed1616(tank.low_fuel_level)
 
         # ----------------------------------------------------------------------
         # FINAL PAYLOAD ASSEMBLY: 0x24 + Body (3,564 bytes total)

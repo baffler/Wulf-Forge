@@ -1,0 +1,35 @@
+<P><P><P>
+Miscellaneous Commands
+<BR>
+----------------------
+<P>
+Insert/Delete:           Zoom in/out (useful for sniping)
+<BR>
+Shift-Insert:            Zoom in pretty far
+<BR>
+Shift-Delete:            Zoom out all the way
+<P>
+
+ENTER:                   Send a message
+Page Up:                 Scroll message text upward
+<BR>
+Page Down:               Scroll message text downward
+<P>
+
+F2:                      Cycle between different camera views
+<BR>
+
+, :                      Drop cargo
+<BR>
+. :                      Deploy cargo
+Pause:                   Status report
+<BR>
+Shift-Pause:             Distress call
+<P>
+
+Escape:                  Main menu
+<BR>
+P:                       Show player list
+<BR>
+Alt-P:                   Show your team's carrying list
+<BR>

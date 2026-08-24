@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<clips path="intro">
+    <clip title="Intro" file="intro.flv" />
+    <clip title="Rules" file="rules.flv" />
+    <clip title="Accounts" file="accounts.flv" />
+    <clip title="Training" file="training.flv" />
+    <clip title="Tech Support" file="techsupport.flv" />
+    <clip title="Support Wulfram" file="support.flv" />
+</clips>
+
+<urls>
+    <url tag="Make Account" url="http://www.wulfram.com/ureg.php?mode=agreement" />
+    <url tag="Play Now" url="http://www.wulfram.com/server_info.php" />
+</urls>
+

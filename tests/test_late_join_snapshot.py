@@ -18,7 +18,7 @@ class FakeEntityBuilder:
     def __init__(self):
         self.calls = []
 
-    def build_forced_update_packet(
+    def build_forced_update_packets(
         self,
         entities,
         sequence_num,
@@ -37,7 +37,7 @@ class FakeEntityBuilder:
                 "force_spawn": force_spawn,
             }
         )
-        return b"forced"
+        return [b"\x0Eforced-1", b"\x0Eforced-2"]
 
 
 class LateJoinSnapshotTests(unittest.TestCase):
@@ -99,10 +99,10 @@ class LateJoinSnapshotTests(unittest.TestCase):
 
         self.assertTrue(did_send)
         self.assertEqual(tcp_sent, [])
-        self.assertEqual(len(udp_sent), 2)
+        self.assertEqual(len(udp_sent), 3)
         self.assertIsInstance(udp_sent[0], BirthNoticePacket)
         self.assertEqual(udp_sent[0].player_id, 2)
-        self.assertEqual(udp_sent[1], b"\x0Eforced")
+        self.assertEqual(udp_sent[1:], [b"\x0Eforced-1", b"\x0Eforced-2"])
 
         call = server.entities.calls[0]
         self.assertEqual([entity.net_id for entity in call["entities"]], [20])
