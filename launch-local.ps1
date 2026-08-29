@@ -8,6 +8,9 @@ param(
     [string[]]$ClientArgs = @("-root", "-windowed"),
     [switch]$NoServer,
     [switch]$NoClient,
+    [switch]$Capture,
+    [int]$CaptureSeconds = 60,
+    [double]$CaptureHz = 10,
     [switch]$DryRun
 )
 
@@ -77,6 +80,9 @@ if ($DryRun) {
     Write-Host "[Wulf-Forge] Dry run only."
     Write-Host "[Wulf-Forge] Would start server: $Python $ServerScript"
     Write-Host "[Wulf-Forge] Would start client: $ClientExe $($ClientArgs -join ' ')"
+    if ($Capture) {
+        Write-Host "[Wulf-Forge] Would start ELEVATED capture: $Python tools\capture_drive.py $CaptureSeconds $CaptureHz"
+    }
     exit 0
 }
 
@@ -103,4 +109,23 @@ if (-not $NoClient) {
         -FilePath $ClientExe `
         -WorkingDirectory $ResolvedGameDir `
         -ArgumentList $ClientArgs
+}
+
+if ($Capture) {
+    # The drive capture reads the (elevated) game's memory, so it must run
+    # elevated too -- this triggers a UAC prompt. It waits up to 90s for you to
+    # spawn in, then logs ground-truth pos/vel/yaw to tools\drive_capture.csv
+    # for offline physics calibration. Runs in a -NoExit window so you can read
+    # the result. Opt-in via -Capture.
+    $CaptureScript = Resolve-RequiredPath -Path (Join-Path $RepoRoot "tools\capture_drive.py") -Description "Capture script"
+    $repoArg = Escape-SingleQuoted $RepoRoot
+    $pythonArg = Escape-SingleQuoted $Python
+    $captureCommand = "Set-Location -LiteralPath '$repoArg'; & '$pythonArg' 'tools\capture_drive.py' $CaptureSeconds $CaptureHz"
+
+    Write-Host "[Wulf-Forge] Starting ELEVATED drive capture ($CaptureSeconds s @ $CaptureHz Hz)."
+    Write-Host "[Wulf-Forge]   -> Approve the UAC prompt, then spawn in and drive a varied route."
+    Start-Process `
+        -FilePath "powershell.exe" `
+        -Verb RunAs `
+        -ArgumentList @("-NoExit", "-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", $captureCommand)
 }

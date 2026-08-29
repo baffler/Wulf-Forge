@@ -34,6 +34,10 @@ from network.packets.packet_logger import PacketLogger, log_packet
 
 from core.entity import GameEntity, UpdateMask
 from core.entity_manager import EntityManager
+from core.cargo import CargoSystem, CARGO_BOX_UNIT_TYPE
+from core.sim.tank import TankSim
+from core.sim.inputs import controls_from_actions
+from core.sim.terrain import load_map_heightmap
 from core.map_loader import MapLoader, ensure_team_repair_pads, resolve_spawn_entry
 from core.commands import commands
 from network.packets.update_array import UpdateArrayPacket
@@ -121,9 +125,20 @@ class WulframServerContext:
         self.cfg = Config.load()
         self.packet_cfg = PacketConfig.load("packets.toml")
         self.logger = PacketLogger()
+        if self.cfg.debug.log_all_opcodes:
+            # Log every opcode (including per-tick traffic). Lines are teed to
+            # the logs/ file by setup_logging, so this captures all to disk.
+            self.logger.spam_opcodes = set()
         self.entities = EntityManager()
+        self.cargo = CargoSystem(
+            self.entities,
+            pickup_radius=self.packet_cfg.cargo.pickup_radius,
+            ground_z=self.packet_cfg.cargo.ground_z,
+        )
+        self.tank_sim = TankSim(self.packet_cfg)
         self.first_map_load = False
         self.current_map_name = self.cfg.game.map_name
+        self.refresh_sim_terrain()
 
         # Session Management
         self.sessions: list[ClientSession] = []
@@ -160,6 +175,17 @@ class WulframServerContext:
         pid = self._next_player_id
         self._next_player_id += 1
         return pid
+
+    def refresh_sim_terrain(self, map_name: str | None = None) -> None:
+        """Load the current map's heightmap into the tank sim (flat if absent)."""
+        name = map_name or self.current_map_name
+        hm = load_map_heightmap(name)
+        if hm is not None:
+            self.tank_sim.set_terrain(hm)
+            print(f"[Sim] terrain heightmap loaded for '{name}' "
+                  f"({hm.gw}x{hm.gh} over {hm.world_w:.0f}x{hm.world_h:.0f}).")
+        else:
+            print(f"[Sim] no land heightmap for '{name}'; tank sim uses flat terrain.")
 
     def enqueue_mod_client_state(self, session: ClientSession, state: ClientStateV1) -> None:
         self.mod_state_queue.put((session, state))
@@ -569,6 +595,48 @@ def send_existing_player_entity_definitions(ctx: TcpContext | UdpContext, reason
     return True
 
 
+def cargo_pickup_tick(server: WulframServerContext) -> list:
+    """Collect automatic cargo pickups for all in-world players this tick.
+
+    Server-authoritative and independent of the sync mode: it runs in both
+    server_simulation and client_state_relay (the relay updates entity.pos,
+    so proximity is evaluated against the player's live position). Returns the
+    packets to broadcast (CARRYING_INFO + DeleteObject per pickup).
+    """
+    packets = []
+    for session in server.sessions:
+        if session.entity and session.is_logged_in:
+            packets.extend(
+                server.cargo.try_pickup(session.entity, session.player_id)
+            )
+    return packets
+
+def player_sim_tick(server: WulframServerContext, dt: float) -> None:
+    """Integrate every in-world player's tank from its inputs (server-authoritative).
+
+    Single writer of simulated state; runs only in server_simulation mode.
+    """
+    phys_debug = getattr(server.cfg.debug, "debug_physics_sim", False)
+    for session in server.sessions:
+        if session.entity and session.is_logged_in:
+            ent = session.entity
+            server.tank_sim.step(ent, dt)
+            if phys_debug:
+                # Dump EVERY non-zero action id (not just the mapped 4) so we can
+                # see which channel actually carries turn/aim when driving.
+                active = {k: round(v, 2) for k, v in ent.actions.items() if abs(v) > 0.001}
+                if active:
+                    inp = controls_from_actions(ent.actions)
+                    print(
+                        f"[PHYS-SIM] pid={session.player_id} net_id={ent.net_id} "
+                        f"actions={active} "
+                        f"-> in(thr={inp.throttle:+.2f} turn={inp.turn:+.2f} "
+                        f"str={inp.strafe:+.2f} vert={inp.vertical:+.2f}) "
+                        f"pos=({ent.pos[0]:.1f},{ent.pos[1]:.1f},{ent.pos[2]:.1f}) "
+                        f"vel=({ent.vel[0]:.1f},{ent.vel[1]:.1f},{ent.vel[2]:.1f}) "
+                        f"yaw={ent.rot[2]:+.3f}"
+                    )
+
 def global_game_loop(server: WulframServerContext):
     """
     Main Server Tick (Targeting ~10Hz).
@@ -587,6 +655,8 @@ def global_game_loop(server: WulframServerContext):
             _drain_mod_state_queue(server)
         
         if should_run_server_simulation(server):
+            # --- 1. Server-authoritative tank simulation ---
+            player_sim_tick(server, dt=FRAME_TIME)
             # --- 1. Process Inputs (Physics/Actions) ---
             # Apply actions (jump/hover) for every active player
             for session in server.sessions:
@@ -605,6 +675,13 @@ def global_game_loop(server: WulframServerContext):
                         my_ent.mark_dirty(UpdateMask.VEL)
                         my_ent.actions[4] = 0.0 # Reset trigger
 
+        # --- 1b. Cargo pickup scan ---
+        # Server-authoritative and mode-independent: runs in BOTH server
+        # simulation and client_state_relay. A slow/low uncarried vehicle near
+        # a cargo box grabs it -> CARRYING_INFO (0x29) + DeleteObject.
+        for pkt in cargo_pickup_tick(server):
+            broadcast(server, pkt)
+
         # --- 2. Gather Dirty State ---
         # We get the list ONCE. The state remains valid for all clients.
         dirty_entities = server.entities.get_dirty_entities()
@@ -616,6 +693,9 @@ def global_game_loop(server: WulframServerContext):
             last_static_anchor_time = start_time
 
         # --- 3. Broadcast Loop ---
+        sim_mode = should_run_server_simulation(server)
+        phys_debug = getattr(server.cfg.debug, "debug_physics_sim", False)
+        correct_owner = getattr(server.cfg.debug, "correct_owner_in_sim", False)
         if dirty_entities or static_anchor_due:
             for session in server.sessions:
                 # CHECK: Must be logged in AND ready for updates
@@ -649,26 +729,53 @@ def global_game_loop(server: WulframServerContext):
                         session.udp_context.send(b'\x0E' + payload)
 
                 # --- B. PACKET FOR "SELF" (0x0F - View Update) ---
-                # Check if "I" am dirty. If so, send View Update.
                 if my_entity in dirty_entities:
-                    skip_owner_echo = (
-                        my_entity.net_id in server.mod_relay_dirty_entity_ids
-                        and not server.cfg.mod_relay.echo_owner_state
-                    )
-
-                    if not skip_owner_echo:
-                        # Build payload (Includes Timestamp, Includes Local Stats)
-                        stats = (my_entity.health, my_entity.energy)
-                        
-                        payload = server.entities.build_update_packet(
-                            [my_entity], 
-                            sequence_num=current_tick, 
-                            is_view_update=True, 
-                            local_stats=stats
+                    if sim_mode and not correct_owner:
+                        # Server-authoritative tank sim is APPROXIMATE; echoing the
+                        # owner's own simulated pos/vel/rot back every tick fights the
+                        # client's local prediction (wobble / can't-turn). The client
+                        # owns its own tank view; send only a stats-only view update so
+                        # the HUD stays synced. Other players still receive this tank
+                        # via the 0x0E "others" packet above.
+                        stats_payload = server.entities.build_update_packet(
+                            [],
+                            sequence_num=current_tick,
+                            is_view_update=True,
+                            local_stats=(my_entity.health, my_entity.energy),
                         )
-                        if payload:
-                            # Prepend OpCode 0x0F
-                            session.udp_context.send(b'\x0F' + payload)
+                        if stats_payload:
+                            session.udp_context.send(b'\x0F' + stats_payload)
+                        if phys_debug:
+                            print(
+                                f"[PHYS-SIM] owner-correction SUPPRESSED pid={session.player_id} "
+                                f"net_id={my_entity.net_id} "
+                                f"sim_pos=({my_entity.pos[0]:.1f},{my_entity.pos[1]:.1f},{my_entity.pos[2]:.1f}) "
+                                f"yaw={my_entity.rot[2]:+.3f} (client predicts locally; stats-only sent)"
+                            )
+                    else:
+                        skip_owner_echo = (
+                            my_entity.net_id in server.mod_relay_dirty_entity_ids
+                            and not server.cfg.mod_relay.echo_owner_state
+                        )
+                        if not skip_owner_echo:
+                            # Build payload (Includes Timestamp, Includes Local Stats)
+                            stats = (my_entity.health, my_entity.energy)
+
+                            payload = server.entities.build_update_packet(
+                                [my_entity],
+                                sequence_num=current_tick,
+                                is_view_update=True,
+                                local_stats=stats
+                            )
+                            if payload:
+                                # Prepend OpCode 0x0F
+                                session.udp_context.send(b'\x0F' + payload)
+                            if phys_debug:
+                                print(
+                                    f"[PHYS-SIM] owner-correction SENT pid={session.player_id} "
+                                    f"net_id={my_entity.net_id} "
+                                    f"pos=({my_entity.pos[0]:.1f},{my_entity.pos[1]:.1f},{my_entity.pos[2]:.1f})"
+                                )
 
                 if static_anchor_due:
                     static_anchor_payload = server.entities.build_static_anchor_packet(
@@ -1417,6 +1524,25 @@ def on_action_dump(ctx: UdpContext, payload: bytes):
 def on_action_update(ctx: UdpContext, payload: bytes):
     parse_action_packet(ctx, payload, is_dump=False)
 
+@dispatcher.route(0x2B)
+def on_drop_request(ctx: UdpContext, payload: bytes):
+    """DROP_REQUEST: deploy (flag=1) or drop (flag=0) the carried cargo.
+
+    Body after the opcode is a single int32 written by deploy_cargo /
+    drop_cargo in the client (wulfram2.exe @ 0x0045de40 / 0x0045de00).
+    """
+    if not ctx.session or not ctx.session.entity:
+        return
+    reader = PacketReader(payload)
+    reader.read_byte()  # opcode 0x2B
+    deploy = reader.read_int32() != 0
+
+    packets = ctx.server.cargo.handle_drop_request(
+        ctx.session.entity, ctx.session.player_id, deploy=deploy
+    )
+    for pkt in packets:
+        broadcast(ctx.server, pkt)
+
 # --------------------
 # COMMANDS
 # --------------------
@@ -1591,7 +1717,11 @@ def cmd_loadmap(ctx, map_name="bpass"):
             send_system_message(ctx, f"Created {created_pads} fallback repair pads.")
             print(f"[MapLoader] Created {created_pads} fallback repair pads for {map_name}.")
         print(f"[MapLoader] Map {map_name}: loaded {loaded_count} state entities.")
-        
+
+        # Load this map's terrain heightmap into the tank sim so it tracks the
+        # real ground/slopes instead of a flat plane.
+        ctx.server.refresh_sim_terrain(map_name)
+
         # Just send the full snapshot
         #ctx.outgoing_seq += 1
         snapshot = ctx.server.entities.get_snapshot_packet(sequence_num=get_ticks(), health=1.0, energy=1.0)
@@ -1627,8 +1757,8 @@ def cmd_carry(ctx, item_id="13"):
     ctx.send(CarryingInfoPacket(
         player_id=ctx.session.player_id,
         has_cargo=True,
-        unk_v2=1,
-        item_id=int(item_id)
+        cargo_type=int(item_id),
+        variant=ctx.session.team,
     ))
 
 @commands.command("drop")
@@ -1636,9 +1766,51 @@ def cmd_drop(ctx):
     ctx.send(CarryingInfoPacket(
         player_id=ctx.session.player_id,
         has_cargo=False,
-        unk_v2=1,
-        item_id=0
+        cargo_type=0,
+        variant=ctx.session.team,
     ))
+
+@commands.command("spawncargo")
+def cmd_spawncargo(ctx, contained_type="25"):
+    """Spawn a cargo box (unit_type 19) near the player for pickup testing.
+
+    Usage: /s spawncargo [contained_unit_type]   (default 25 = power cell)
+    """
+    try:
+        contained = int(contained_type)
+    except ValueError:
+        contained = 25
+
+    pos = (100.0, 100.0, 0.0)
+    if ctx.session.entity:
+        px, py, _ = ctx.session.entity.pos
+        pos = (px + 5.0, py, 0.0)
+
+    box = ctx.server.entities.create_entity(
+        unit_type=CARGO_BOX_UNIT_TYPE, team_id=ctx.session.team, pos=pos
+    )
+    box.is_manned = False
+    box.cargo_contained_type = contained
+    send_system_message(ctx, f"Spawned cargo box (contains unit {contained}) at {pos}.")
+
+@commands.command("cargostatus")
+def cmd_cargostatus(ctx):
+    """Report this player's cargo pickup state — why a pickup does/doesn't fire."""
+    ent = ctx.session.entity
+    if not ent:
+        send_system_message(ctx, "No entity yet (spawn first).")
+        return
+
+    d = ctx.server.cargo.describe_pickup(ent)
+    nd = d["nearest_dist"]
+    nearest = f"{nd:.1f}" if nd is not None else "none"
+    send_system_message(
+        ctx,
+        f"carrying={d['carrying']} eligible={d['eligible']} | "
+        f"pos=({ent.pos[0]:.0f},{ent.pos[1]:.0f},{ent.pos[2]:.0f}) "
+        f"nearestBox={nearest}/{d['pickup_radius']:.1f}",
+    )
+    print(f"[CARGO-STATUS] pid={ctx.session.player_id} pos={ent.pos} {d}")
 
 # -------------------------------------------------------------------------
 # HELPERS

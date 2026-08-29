@@ -1,0 +1,4 @@
+# phys_sim — isolated dependencies (use a venv inside ./phys_sim)
+ursina>=7.0.0        # 3D engine: render, input, built-in sliders, mesh
+flask>=3.0           # REST API for live tuning
+pymem>=1.13; sys_platform == "win32"   # OPTIONAL: live attach to a running wulfram2.exe

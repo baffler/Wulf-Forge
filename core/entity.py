@@ -41,6 +41,19 @@ class GameEntity:
     
     # Flags
     is_manned: bool = True
+
+    # --- Cargo ---
+    # When this entity is a carrier holding cargo: the contained unit type it
+    # is carrying (None = not carrying) and the team/colour variant byte sent
+    # in CARRYING_INFO (0x29).
+    carried_cargo_type: int | None = None
+    carried_variant: int = 0
+    # When this entity IS a cargo box (unit_type 19): the unit type stored
+    # inside it, written into the DEFINITION block (ID_BITS_UNIT_CARGO).
+    cargo_contained_type: int = 25
+    # Available/output power for the deferred deploy power-network validation
+    # (mirrors client entity +0xD4).
+    available_power: float = 0.0
     
     # Dirty flags: These determine what gets sent in the next packet
     pending_mask: int = 0 
